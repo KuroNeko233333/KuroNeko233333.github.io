@@ -1,0 +1,314 @@
+{
+	"_meta": {
+		"internalCopies": [
+			"monsterFluff"
+		]
+	},
+	"monsterFluff": [
+		{
+			"ENG_name": "Ambush Drake",
+			"name": "伏击龙兽",
+			"source": "HotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/HotDQ/Ambush Drake.webp"
+					},
+					"width": 1000,
+					"height": 498
+				}
+			]
+		},
+		{
+			"ENG_name": "Azbara Jos",
+			"name": "阿兹巴拉·乔斯",
+			"source": "HotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/HotDQ/Azbara Jos.webp"
+					},
+					"width": 850,
+					"height": 1144
+				}
+			]
+		},
+		{
+			"ENG_name": "Blagothkus",
+			"name": "布拉戈提库斯",
+			"source": "HotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/HotDQ/Blagothkus.webp"
+					},
+					"width": 690,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Captain Othelstan",
+			"name": "奥瑟斯坦队长",
+			"source": "HotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/HotDQ/Captain Othelstan.webp"
+					},
+					"width": 850,
+					"height": 1250
+				}
+			]
+		},
+		{
+			"ENG_name": "Dragonclaw",
+			"name": "龙爪",
+			"source": "HotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/HotDQ/Dragonclaw.webp"
+					},
+					"width": 1700,
+					"height": 3045
+				}
+			]
+		},
+		{
+			"ENG_name": "Dralmorrer Borngray",
+			"name": "德拉莫瑞·灰生",
+			"source": "HotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/HotDQ/Dralmorrer Borngray.webp"
+					},
+					"width": 878,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Four-Armed Troll",
+			"name": "四臂巨魔",
+			"source": "HotDQ",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"有时当一只巨魔失去一条肢体时，它会再生出两条肢体来替代它失去的那一条。这可能导致巨魔拥有多条手臂。一个四臂巨魔使用巨魔的统计数据块，除了它是一个挑战等级6的怪物（2300 XP），并且有替代的动作选项。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/HotDQ/Four-Armed Troll.webp"
+					},
+					"width": 850,
+					"height": 1054
+				}
+			]
+		},
+		{
+			"ENG_name": "Frulam Mondath",
+			"name": "弗鲁兰·蒙达斯",
+			"source": "HotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/HotDQ/Frulam Mondath.webp"
+					},
+					"width": 850,
+					"height": 1331
+				}
+			]
+		},
+		{
+			"ENG_name": "Jamna Gleamsilver",
+			"name": "贾姆娜·烁银",
+			"source": "HotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/HotDQ/Jamna Gleamsilver.webp"
+					},
+					"width": 923,
+					"height": 1666
+				}
+			]
+		},
+		{
+			"ENG_name": "Langdedrosa Cyanwrath",
+			"name": "兰德卓萨·青怒",
+			"source": "HotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/HotDQ/Langdedrosa Cyanwrath.webp"
+					},
+					"width": 900,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Leosin Erlanthar",
+			"name": "Leosin Erlanthar",
+			"source": "HotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/HotDQ/015-tod-02-04.webp"
+					},
+					"width": 841,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Ontharr Frume",
+			"name": "昂塔尔·弗鲁姆",
+			"source": "HotDQ",
+			"entries": [
+				"{@b 理想}: 责任，更大的利益 (\"强者必须保护弱者，无论代价如何。\")",
+				"{@b 个性特点}: 友好，易怒",
+				"{@b 承诺资源}：圣武士和治疗牧师，以支持对抗提亚马特势力的战斗"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/HotDQ/021-tod-04-02.webp"
+					},
+					"width": 819,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Pharblex Spattergoo",
+			"name": "法布列斯·溅黏",
+			"source": "HotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/HotDQ/Pharblex Spattergoo.webp"
+					},
+					"width": 812,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Rath Modar",
+			"name": "拉斯·莫达",
+			"source": "HotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/HotDQ/Rath Modar.webp"
+					},
+					"width": 850,
+					"height": 1089
+				}
+			]
+		},
+		{
+			"ENG_name": "Rezmir",
+			"name": "瑞兹米尔",
+			"source": "HotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/HotDQ/Rezmir.webp"
+					},
+					"width": 1700,
+					"height": 1828
+				}
+			]
+		},
+		{
+			"ENG_name": "Sandesyl Morgia",
+			"name": "桑德西尔·莫吉亚",
+			"source": "HotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/HotDQ/053-tod-08-05.webp"
+					},
+					"width": 636,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Talis the White",
+			"name": "白袍塔利斯",
+			"source": "HotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/HotDQ/Talis the White.webp"
+					},
+					"width": 850,
+					"height": 1217
+				}
+			]
+		},
+		{
+			"ENG_name": "Trepsin",
+			"name": "特雷普辛",
+			"source": "HotDQ",
+			"_copy": {
+				"ENG_name": "Four-Armed Troll",
+				"name": "四臂巨魔",
+				"source": "HotDQ"
+			}
+		}
+	]
+}

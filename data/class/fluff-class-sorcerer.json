@@ -1,0 +1,761 @@
+{
+	"_meta": {
+		"internalCopies": [
+			"subclassFluff"
+		]
+	},
+	"classFluff": [
+		{
+			"ENG_name": "Sorcerer",
+			"name": "术士",
+			"source": "PHB",
+			"entries": [
+				{
+					"ENG_name": "Sorcerer",
+					"name": "术士",
+					"type": "section",
+					"entries": [
+						"人类金色的双眼不断闪耀着光芒，抬手间便放出其经脉中燃烧的龙炎。炼狱的狂怒瞬间将敌人吞没，而她则生出一双肉翼一飞冲天。",
+						"咒术之风扬起半精灵满头长发。他张开双手抬头后仰，并随着体内透出的魔法波动漂浮到空中。魔力穿过其身躯，化作一片威力无穷的爆裂闪电喷涌而出。",
+						"躲在石笋后的半身人伸手射出一发火焰，精准的击中那个冲过来的穴居人，又迅速的躲回岩层后方。她嘴角不禁扬起了一个微笑，却全然没发现狂野魔法已经使皮肤亮成了蓝色。",
+						"术士驾驭着与生俱来的魔法。这种魔法，可能来自超自然的血脉，来自异界的影响，或者来自暴露于某种未知的大宇宙力量的经历。你不可能像学习语言一样学习术法，正如你不可能学习如何度过传奇般的人生。没人可以选择术法，但术法的力量却选择了你。",
+						{
+							"ENG_name": "Raw Magic",
+							"name": "原生魔法",
+							"type": "entries",
+							"entries": [
+								"魔法本身即是术士的组成部分。这股潜藏的力量弥漫在术士的身体、心灵和灵魂深处，等待着被释放而出。一些术士驾驭的魔法来自先祖血脉中满溢的龙族魔力。而另一些术士则驾驭不受控的原生魔法，释放出无法预测的混乱风暴。",
+								"术法力量的显现条件非常难以预测。某些龙族血脉的家族里，每一代都只有一个术士，却也有一家全是术士的家系。术法天赋的显现大多纯属侥幸。一些术士甚至无法说出其力量的起源，而也有一部分术士可以准确回忆起其生命中的某个奇怪事件：恶魔的触碰，树妖对新生儿的祝福，饮过的神秘魔泉，都可能激起术法天赋的火苗。此外还有魔法之神的恩赐，暴露于内层位面的元素力量或者混沌海中狂暴混乱魔力中的经历，或是曾瞥见现实本身的内部运作规律也可能是获得术法力量的契机。",
+								"术士不需要用到法师们必不可少的法术书和其他古籍魔典，也不像魔契师那样依靠契约获取法术。他们只需通过学习和演练掌握控制引导天生魔力的方法，就能够逐渐开发出更有效的方式释放其天赋魔力。"
+							]
+						},
+						{
+							"ENG_name": "Unexplained Powers",
+							"name": "未知力量",
+							"type": "entries",
+							"entries": [
+								"术士在世间并不多见，而不以某种方式参与冒险生活的术士更不寻常。经脉中潜藏魔力的人们会发现这种力量并不安分。术士的魔法时刻渴求着释放，如果不以某种方式加以利用，它们就会以难以预测的方式喷薄而出。",
+								"驱使术士冒险的动机通常或隐晦或空幻。有些术士想要深入了解影响着自己的魔法力量，另一些则想要搞清其力量的起源。还有一些术士会想要摆脱力量的束缚，又或者想要彻底解放其力量的全部潜能。不论其目的为何，术士在一支冒险小队中的作用与法师相当，尽管其在深奥的魔法知识上有所不及，却在法术的灵活性上扳回一城。"
+							]
+						},
+						{
+							"ENG_name": "Creating a Sorcerer",
+							"name": "创建术士",
+							"type": "entries",
+							"entries": [
+								"创造一名术士角色时，你要考虑的最重要的问题是：你力量的起源为何？当你构建角色时，你就要选择你的魔法源于与龙族血脉的联系，或是受狂野魔法的影响。其后，你还可以为其设定一个具体的起源细节。这是不是你的远古祖先传承下来的家族诅咒？或者某些特别的事件使你留下创伤，同时也给予你这份天赐魔力？",
+								"你对流淌于自己体内的魔力作何感受？你敞开心扉接受它，或者试图掌控它，抑或沉迷于其不可预测的天性？这是祝福还是诅咒？是你追寻它，还是它找到了你？你是否曾有机会拒绝它，或者你希望你曾有过这种机会？你想用这力量做什么？也许你相信你被赐予这力量去完成高尚非凡的功业，或者你会说这力量给了你为所欲为取所欲取，凌驾于凡人的权柄？或许你的力量将你与某个强大的存在联系在一起\u2014\u2014出生时祝福你的妖精，将血脉融入你家族中的巨龙，将你作为试验素体创造出来的巫妖，或是拣选你保管这份力量的神灵？",
+								{
+									"ENG_name": "Quick Build",
+									"name": "快速建卡",
+									"type": "entries",
+									"entries": [
+										"你可以按以下建议快速创建一名术士。首先，将你的最高属性分配给魅力，次高属性分配给体质。然后选择隐者背景。最后，选择戏法{@spell 光亮术}，{@spell 魔法伎俩}，{@spell 冷冻射线}，{@spell 电爪}，以及1环法术{@spell 护盾术}和法术 {@spell 魔法飞弹}。"
+									]
+								}
+							]
+						}
+					],
+					"page": 99,
+					"source": "PHB"
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"真正的力量是与身俱来的，非主流才需要学习与锻炼"
+							],
+							"by": "海涅特，提亚马特后裔"
+						},
+						"谈到在需要时发挥自己的能力时，术士比其他人更容易。他们的力量不仅存在于他们体内，而且可能还需要付出一些努力才能遏制。每个术士都是天生的，抑或是偶然具有此番能力的。与其他人不同，他们必须积极学习、拥抱和追求自己的才能，术士的力量强加在他们身上。",
+						"因为很多人都不太认同与一个天生具有魔法的生物一起旅行，所以术士往往会从他们遇到的其他人里得到不信任和怀疑。尽管如此，许多术士通过让魔法天赋不如他们的同代人受益成功地克服了这种偏见。",
+						"术士通常是由围绕其力量表现的事件来定义的。对于那些将其视为与生俱来的权利的人来说，它的出现是值得庆祝的。其他术士则被视为被排斥者，在他们突然而可怕的能力到来后被逐出家园。",
+						"扮演术士角色既富有挑战性，又充满回报。以下部分提供了有关如何充实和个性化你的角色的建议。",
+						{
+							"type": "quote",
+							"entries": [
+								"神术？奥术？追究魔法从何而来有意义么？你要么就拥有魔法，要么就没有。幸运的是，我有一大堆这玩意儿。"
+							],
+							"by": "珊娜萨"
+						},
+						{
+							"ENG_name": "Arcane Origins",
+							"name": "奥法起源",
+							"type": "entries",
+							"entries": [
+								"一些术士知道他们的力量源自何处，基于他们的能力如何展现。其他术士只能推测，因他们的力量以不固定的原因及形式展现。",
+								"你的角色知道你的魔法力量吗？它是否与某个遥远的亲戚，一个宇宙事件，或者是某种机缘巧合联系在一起？如果你的术士不知道他的力量是从哪来的，你的DM可以使用以下表格（或选择一个起源），并在冒险中向你揭示它。",
+								{
+									"type": "table",
+									"caption": "奥法起源",
+									"colLabels": [
+										"{@dice d6}",
+										"起源"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"你的力量来自于你家族的血统。你与某些强大的生物有关，或你继承了祝福或诅咒。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"你是另一个存在的本位面的化身。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"一个强大的实体进入了这个世界。它的魔力改变了你"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"你的出生被古代的经文所预言，它预言了你的力量将被用来达到可怕的目的。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"你是几代人精心培育的产物。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"你是在一个炼金术士的大桶里做成的。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Reaction",
+							"name": "反应",
+							"type": "entries",
+							"entries": [
+								"当一个新的术士进入这个世界，无论是在出生的时候，还是当他的力量变得明显的时候，这个事件的后果很大程度上取决于它的目击者对他们所看到的事物的反应。",
+								"当你的魔法力量出现时，你周围的世界是如何反应的？旁人是支持，害怕，还是介于两者之间？",
+								{
+									"type": "table",
+									"caption": "反应",
+									"colLabels": [
+										"{@dice d6}",
+										"反应"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"你的力量被你周围的人视为一种巨大的祝福，你也被期望用它们来为身边人服务。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"你的力量在他们变得明显的时候造成了毁灭，甚至死亡，你被当作罪犯对待。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"你的邻居憎恨你，害怕你的力量，他们离你躲得远远的。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"你开始注意到有一个邪恶的邪教组织，他们计划着利用你的能力。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"你周围的人都认为你的力量是对你的家庭的一种诅咒，因为过去的罪行。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"据传，你的力量与一个古老的疯王、在一个世纪前的血腥起义中有某些关联。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Supernatural Mark",
+							"name": "超自然标记",
+							"type": "entries",
+							"entries": [
+								"休息时的术士几乎与正常人没有什么区别。 只有当魔力绽放时，术士才会显露出他们的真实本性。 即便如此，许多术士都有一种微妙但很能说明问题的身体特征，使他们与其他人区分开来。",
+								"如果你的术士有超自然标记，它可能很容易隐藏，或可能是你不断展示的骄傲的源泉。",
+								{
+									"type": "table",
+									"caption": "超自然标记",
+									"colLabels": [
+										"{@dice d6}",
+										"标记"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"你的眼睛是一种不寻常的颜色，比如红色。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"你的脚上有一个额外的脚趾。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"你的一只耳朵明显比另一只大。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"你的头发长得惊人。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"当你咀嚼的时候，你会不断地皱起鼻子。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"某天你的脖子上出现一个红色斑点，但一小时后就消失了。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Signs of Sorcery",
+							"name": "术法迹象",
+							"type": "entries",
+							"entries": [
+								"正如世人所知道的，一些术士在控制他们的法术时比其他人更出色。有时，一种魔力的疯狂表现，来自于一个法术的魔法师。但是，即使当一个人的魔法按计划进行时，演员的表演通常也会有一个明显的迹象，让人清楚地知道魔法能量是从哪里来的。",
+								"当你的术士角色施展咒语时，会显示出魔法的迹象吗？这个符号与你的法术起源，或其他方面有关，还是一个看似随机的现象",
+								{
+									"type": "table",
+									"caption": "术法迹象",
+									"colLabels": [
+										"{@dice d6}",
+										"标志"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"你用泰坦的声音来传递你法术的言语成分。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"在你施展魔法之后的一段时间里，你周围的区域会变得黑暗而阴郁。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"你在施放一段时间的法术和之后的几秒内大量出汗。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"你的头发和衣服在你发出咒语的时候，会像是被微风吹过一般。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"如果你在施放一个咒语，你会在空气中上升6寸，然后轻轻地浮在空中"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"当你开始铸造时，虚幻的蓝色火焰缠绕在你的头上，然后突然消失。"
+										]
+									]
+								}
+							]
+						}
+					],
+					"page": 48,
+					"source": "XGE"
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/PHB/Sorcerer.webp"
+					},
+					"width": 773,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Sorcerer",
+			"name": "术士",
+			"source": "XPHB",
+			"entries": [
+				{
+					"ENG_name": "Sorcerer",
+					"name": "术士",
+					"type": "section",
+					"source": "XPHB",
+					"page": 138,
+					"entries": [
+						"术士操纵着已经深深刻入他们存在之中的天生法术。一些术士不知道自己力量的起源，另一些则将自己的力量与家族或个人遇到的奇异事件关联起来。巨龙的恩赐，婴儿出生时在场的树精，抑或晴空万里时被闪电劈中，都可能激活术士的天赋。神祇的赠礼，暴露于其他位面的奇异魔法之下，或是朝着现实原理的一瞥，亦可使术士成为术士。无论术士的起源如何，它都会在术士身上留下不可磨灭的印记\u2014\u2014一股可传承千秋万代的汹涌魔力。",
+						"术士不学习魔法，翻腾的原始魔力是他们与生俱来的一部分。术士需要掌握的必要能力就是学习如何掌控和引导自己的天生魔法，使其有机会发现全新而令人惊异的魔力放出方式。随着术士逐渐精于控制他们的天生魔法，他们自身也与其本源更加协调，发展出与其力量之源相称的独特威能。",
+						"术士非常稀少。一些家族每一代只会出现正好一名术士，但更多时候，术法之才的现世只是偶然。拥有此种魔力的人会很快发现它一点都不安稳\u2014\u2014术士的魔法在渴求着释放。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"title": "一位充满天赋魔法的炫目法师",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Sorcerer.webp"
+					},
+					"credit": "Evyn Fong",
+					"width": 1700,
+					"height": 2076
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/112-04-027.delina.webp"
+					},
+					"title": "术士戴琳娜（Delina）操纵狂野魔法，创造出难以预料的奇迹",
+					"credit": "Wisnu Tan",
+					"width": 1843,
+					"height": 1440
+				}
+			]
+		}
+	],
+	"subclassFluff": [
+		{
+			"ENG_name": "Wild Magic",
+			"name": "狂野魔法",
+			"shortName": "狂野魔法",
+			"source": "PHB",
+			"className": "术士",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/PHB/Wild Sorcerer.webp"
+					},
+					"width": 455,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Divine Soul",
+			"name": "神圣之魂",
+			"shortName": "神圣之魂",
+			"source": "XGE",
+			"className": "术士",
+			"classSource": "PHB",
+			"_copy": {
+				"ENG_name": "Sorcerer",
+				"name": "术士",
+				"shortName": "术士",
+				"source": "XGE",
+				"className": "术士",
+				"classSource": "PHB"
+			},
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"为啥这些个天界玩意都长着鸟翅膀，而那些个炼狱玩意都长着蝙蝠翅膀？这看起来好不公平。这得有一个\"蝙蝠天使\"才对啊！"
+					],
+					"by": "珊娜萨"
+				}
+			]
+		},
+		{
+			"ENG_name": "Shadow Magic",
+			"name": "暗影魔法",
+			"shortName": "幽影",
+			"source": "XGE",
+			"className": "术士",
+			"classSource": "PHB",
+			"_copy": {
+				"ENG_name": "Sorcerer",
+				"name": "术士",
+				"shortName": "术士",
+				"source": "XGE",
+				"className": "术士",
+				"classSource": "PHB"
+			},
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"有时候我看到我的影子我就想解离它\u2014\u2014我总以为那是另外一只眼魔来找我麻烦了呢！"
+					],
+					"by": "珊娜萨"
+				}
+			]
+		},
+		{
+			"ENG_name": "Sorcerer",
+			"name": "术士",
+			"shortName": "术士",
+			"source": "XGE",
+			"className": "术士",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/XGE/Sorcerer.webp"
+					},
+					"width": 2517,
+					"height": 938
+				}
+			]
+		},
+		{
+			"ENG_name": "Storm Sorcery",
+			"name": "风暴术法",
+			"shortName": "风暴",
+			"source": "XGE",
+			"className": "术士",
+			"classSource": "PHB",
+			"_copy": {
+				"ENG_name": "Sorcerer",
+				"name": "术士",
+				"shortName": "术士",
+				"source": "XGE",
+				"className": "术士",
+				"classSource": "PHB"
+			},
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"天气怎么样关你我什么事？",
+						"反正这破天空哭就哭，叫就叫，离我这么远与我无关。"
+					],
+					"by": "珊娜萨"
+				}
+			]
+		},
+		{
+			"ENG_name": "Aberrant Mind",
+			"name": "畸变心智",
+			"shortName": "畸变心智",
+			"source": "TCE",
+			"className": "术士",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/TCE/Aberrant Mind Sorcerer.webp"
+					},
+					"width": 800,
+					"height": 1463
+				}
+			]
+		},
+		{
+			"ENG_name": "Clockwork Soul",
+			"name": "时械之魂",
+			"shortName": "时械之魂",
+			"source": "TCE",
+			"className": "术士",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/TCE/Clockwork Soul Sorcerer.webp"
+					},
+					"width": 800,
+					"height": 1332
+				}
+			]
+		},
+		{
+			"ENG_name": "Lunar Sorcery",
+			"name": "月之术法",
+			"shortName": "月",
+			"source": "DSotDQ",
+			"className": "术士",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/DSotDQ/Lunar Sorcerer.webp"
+					},
+					"width": 850,
+					"height": 1313
+				}
+			]
+		},
+		{
+			"ENG_name": "Aberrant Sorcery",
+			"name": "畸变术法",
+			"shortName": "畸变",
+			"source": "XPHB",
+			"className": "术士",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"title": "畸变术法子职",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Aberrant Sorcerer.webp"
+					},
+					"credit": "Ignatius Budi",
+					"width": 850,
+					"height": 2185
+				}
+			]
+		},
+		{
+			"ENG_name": "Clockwork Sorcery",
+			"name": "时械术法",
+			"shortName": "时械",
+			"source": "XPHB",
+			"className": "术士",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"title": "时械术法子职",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Clockwork Sorcerer.webp"
+					},
+					"credit": "Olivier Bernard",
+					"width": 850,
+					"height": 2175
+				}
+			]
+		},
+		{
+			"ENG_name": "Draconic Sorcery",
+			"name": "龙族术法",
+			"shortName": "龙族血脉",
+			"source": "XPHB",
+			"className": "术士",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"title": "龙族术法子职",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Draconic Sorcerer.webp"
+					},
+					"credit": "Lauren Walsh",
+					"width": 850,
+					"height": 2146
+				}
+			]
+		},
+		{
+			"ENG_name": "Wild Magic Sorcery",
+			"name": "狂野术法",
+			"shortName": "狂野魔法",
+			"source": "XPHB",
+			"className": "术士",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"title": "狂野术法子职",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Wild Magic Sorcerer.webp"
+					},
+					"credit": "Ekaterina Burmark",
+					"width": 850,
+					"height": 1891
+				}
+			]
+		},
+		{
+			"ENG_name": "Spellfire Sorcery",
+			"name": "咒火术法",
+			"shortName": "咒火",
+			"source": "FRHoF",
+			"className": "术士",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/FRHoF/Spellfire Sorcerer.webp"
+					},
+					"credit": "Ioannis Fiore",
+					"width": 850,
+					"height": 2561
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/FRHoF/Spellfire Sorcerer 2.webp"
+					},
+					"title": "咒火具有多种形态",
+					"credit": "Taras Susak",
+					"width": 1700,
+					"height": 1101
+				}
+			]
+		},
+		{
+			"ENG_name": "Shadow Sorcery",
+			"name": "幽影术法",
+			"shortName": "幽影",
+			"source": "RHW",
+			"className": "术士",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/RHW/Shadow Sorcery Sorcerer.webp"
+					},
+					"title": "幽影术法术士",
+					"credit": "Ignatius Budi",
+					"width": 850,
+					"height": 1221
+				}
+			]
+		}
+	]
+}

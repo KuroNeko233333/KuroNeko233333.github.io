@@ -1,0 +1,1393 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
+		"internalCopies": [
+			"monster"
+		]
+	},
+	"monster": [
+		{
+			"ENG_name": "Angel",
+			"name": "天使",
+			"source": "PSZ",
+			"page": 21,
+			"_copy": {
+				"ENG_name": "Deva",
+				"name": "天神使徒",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "天神使徒",
+						"with": "天使"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Archon of Redemption",
+			"name": "救赎天使",
+			"type": "celestial",
+			"source": "PSZ",
+			"page": 22,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 136,
+				"formula": "16d8 + 64"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 90
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 17,
+			"wis": 20,
+			"cha": 20,
+			"save": {
+				"wis": "+9",
+				"cha": "+9"
+			},
+			"skill": {
+				"insight": "+9",
+				"perception": "+9"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 19,
+			"resist": [
+				"光耀",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌"
+			],
+			"languages": [
+				"所有",
+				"心灵感应 120 尺"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"天使的天赋施法能力是魅力（法术豁免{@dc 17}）。天使天生能够施展以下法术，只需要语言成分："
+					],
+					"will": [
+						"{@spell 侦测善恶}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 湮灭波}",
+							"{@spell 指使术}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Angelic Weapons",
+					"name": "天使武器",
+					"entries": [
+						"天界生物的武器攻击具有魔法效果。当天界生物用任何武器命中目标时，该武器额外造成{@damage 3d8}点光耀伤害（包含在攻击中）。"
+					]
+				},
+				{
+					"ENG_name": "Axiomatic Mind",
+					"name": "公理之念",
+					"entries": [
+						"天使长不能被迫以违背其本性或其对正义的理解的方式行事。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"星落统领为抵抗法术和其他魔法效应所作的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "One Being",
+					"name": "一个存在",
+					"entries": [
+						"尽管看起来像是一个类人生物骑着坐骑，但天使是一个单一的存在。所谓的\"骑手\"不能被卸下，除非天使死亡，否则没有其他方法可以将天使存在的两部分分开。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"天使长进行两次攻击：一次使用它的剑，一次使用它的爪子。"
+					]
+				},
+				{
+					"ENG_name": "Sword",
+					"name": "剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}8（{@damage 1d8 + 4}）挥砍伤害加上13（{@damage 3d8}）光耀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及：10尺，单一目标。{@h}11（{@damage 2d6 + 4}）点穿刺伤害加上13（{@damage 3d8}）光耀伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"P",
+				"R",
+				"S"
+			],
+			"damageTagsSpell": [
+				"N",
+				"R",
+				"T",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Baloth",
+			"name": "巴洛斯",
+			"source": "PSZ",
+			"page": 33,
+			"_copy": {
+				"ENG_name": "Triceratops",
+				"name": "三角龙",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "三角龙",
+						"with": "巴洛斯"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Boulderfoot Giant",
+			"name": "巨石足巨人",
+			"source": "PSZ",
+			"page": 30,
+			"_copy": {
+				"ENG_name": "Stone Giant",
+				"name": "石巨人",
+				"source": "MM"
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Caustic Crawler",
+			"name": "腐蚀爬行者",
+			"source": "PSZ",
+			"page": 27,
+			"_copy": {
+				"ENG_name": "Ankheg",
+				"name": "掘地虫",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "掘地虫",
+						"with": "爬行者"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Drake (Large)",
+			"name": "龙兽（大型）",
+			"source": "PSZ",
+			"page": 24,
+			"_copy": {
+				"ENG_name": "Giant Eagle",
+				"name": "巨鹰",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鹰",
+						"with": "龙兽"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Drake (Small)",
+			"name": "幼龙（小型）",
+			"source": "PSZ",
+			"page": 24,
+			"_copy": {
+				"ENG_name": "Pteranodon",
+				"name": "翼龙",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "翼龙",
+						"with": "龙兽"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Emrakul",
+			"name": "伊莫库",
+			"isNamedCreature": true,
+			"source": "PSZ",
+			"page": 38,
+			"_copy": {
+				"ENG_name": "Tarrasque",
+				"name": "泰拉斯奎",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Eldrazi",
+						"name": "埃德拉扎",
+						"source": "PSZ"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "泰拉斯奎",
+						"with": "伊莫库",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Felidar",
+			"name": "晶角兽",
+			"type": "celestial",
+			"source": "PSZ",
+			"page": 23,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 67,
+				"formula": "9d10 + 18"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 15,
+			"int": 11,
+			"wis": 17,
+			"cha": 16,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"麻痹",
+				"中毒"
+			],
+			"languages": [
+				"天界语",
+				"心灵感应 60 尺"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"狻猊的天赋施法能力是魅力（法术豁免{@dc 14}）。狻猊天生能够无成分施展以下法术："
+					],
+					"will": [
+						"{@spell 侦测善恶}",
+						"{@spell 光亮术}",
+						"{@spell 奇术}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 安定心神}",
+							"{@spell 昼明术}",
+							"{@spell 驱逐善恶}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Pounce",
+					"name": "猛扑",
+					"entries": [
+						"如果猎豹在同一回合内直线移动至少20尺向一个生物，并随后以爪击命中它，目标必须成功通过一次{@dc 15}的力量豁免，否则将被击倒{@condition 倒地}。如果目标已经{@condition 倒地}，猎豹可以用一次额外动作对它进行一次咬击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"费利达在对抗法术和其他魔法效果的豁免检定上有优势。"
+					]
+				},
+				{
+					"ENG_name": "Magic Weapons",
+					"name": "魔法武器",
+					"entries": [
+						"狻猊的武器攻击具有魔法效果。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"费利达使用其爪子进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}11 ({@damage 2d6 + 4}) 点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及 5 尺，单一目标。{@h}8 ({@damage 1d8 + 4}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Healing Touch (3/Day)",
+					"name": "治愈之触 (3/日)",
+					"entries": [
+						"费利达用它的角触摸另一个生物。目标生物神奇地恢复了11点生命值（{@dice 2d8 + 2}）。此外，这种触摸消除了目标生物所患的所有疾病，并中和了所有毒素"
+					]
+				},
+				{
+					"ENG_name": "Teleport (1/Day)",
+					"name": "传送 (1/日)",
+					"entries": [
+						"费利达尔能够将自己和它能看到的最多三名愿意的生物，以及它们穿戴或携带的任何装备，通过魔法传送到费利达尔熟悉的位置，距离可达1英里。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"费利达用它的爪子进行一次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Shimmering Shield (Costs 2 Actions)",
+					"name": "闪光护盾 (消耗 2动作)",
+					"entries": [
+						"狻猊在自己或它能看到的60尺内的另一个生物周围创造出一个闪烁的魔法场。目标在狻猊下一个回合结束前获得AC上的+2加值。"
+					]
+				},
+				{
+					"ENG_name": "Heal Self (Costs 3 Actions)",
+					"name": "自愈 (消耗 3动作)",
+					"entries": [
+						"费利达尔通过魔法恢复了11点（{@dice 2d8 + 2}）生命值。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性",
+				"魔法武器",
+				"猛扑"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击",
+				"传送术"
+			],
+			"languageTags": [
+				"CE",
+				"TP"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Gnarlid",
+			"name": "格纳尔利德",
+			"source": "PSZ",
+			"page": 34,
+			"_copy": {
+				"ENG_name": "Brown Bear",
+				"name": "棕熊",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "黑熊",
+						"with": "格纳尔利德"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Gomazoa",
+			"name": "戈马索亚",
+			"source": "PSZ",
+			"page": 26,
+			"_copy": {
+				"ENG_name": "Roper",
+				"name": "石绳怪",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "石绳怪",
+						"with": "戈马索亚"
+					}
+				}
+			},
+			"speed": {
+				"fly": 10
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Great Cat",
+			"name": "大猫",
+			"source": "PSZ",
+			"page": 34,
+			"_copy": {
+				"ENG_name": "Saber-Toothed Tiger",
+				"name": "剑齿虎",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "老虎",
+						"with": "猫"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Griffin (Type 1)",
+			"name": "狮鹫（类型1）",
+			"source": "PSZ",
+			"page": 22,
+			"_copy": {
+				"ENG_name": "Griffon",
+				"name": "狮鹫",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "狮鹫",
+						"with": "狮鹫兽"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Griffin (Type 2)",
+			"name": "狮鹫（类型2）",
+			"source": "PSZ",
+			"page": 22,
+			"_copy": {
+				"ENG_name": "Hippogriff",
+				"name": "骏鹰",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "骏鹰",
+						"with": "狮鹫兽"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Heartstabber Mosquito",
+			"name": "刺心蚊",
+			"source": "PSZ",
+			"page": 27,
+			"_copy": {
+				"ENG_name": "Stirge",
+				"name": "蚊蝠",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "蚊蝠",
+						"with": "蚊子"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Hellion",
+			"name": "小恶魔",
+			"source": "PSZ",
+			"page": 32,
+			"_copy": {
+				"ENG_name": "Remorhaz",
+				"name": "百足魔兽",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "百足魔兽",
+						"with": "小恶魔"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Hurda",
+			"name": "哈达",
+			"source": "PSZ",
+			"page": 30,
+			"_copy": {
+				"ENG_name": "Hill Giant",
+				"name": "山丘巨人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "巨人",
+						"with": "哈达"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "多重攻击",
+							"items": {
+								"ENG_name": "Multiattack",
+								"name": "多重攻击",
+								"entries": [
+									"赫达进行两次猛击攻击。"
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "巨棒",
+							"items": {
+								"ENG_name": "Smash",
+								"name": "砸毁",
+								"entries": [
+									"{@atk mw} 命中{@hit 8}，触及10尺，单一目标。{@h}18 ({@damage 3d8 + 5}) 点钝击伤害。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Iona",
+			"name": "约娜",
+			"isNamedCreature": true,
+			"source": "PSZ",
+			"page": 21,
+			"_copy": {
+				"ENG_name": "Solar",
+				"name": "炽天神侍",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "太阳灵",
+						"with": "约娜",
+						"flags": "i"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Kozilek",
+			"name": "科兹雷克",
+			"isNamedCreature": true,
+			"source": "PSZ",
+			"page": 38,
+			"_copy": {
+				"ENG_name": "Kraken",
+				"name": "克拉肯",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Eldrazi",
+						"name": "埃德拉扎",
+						"source": "PSZ"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "克拉肯",
+						"with": "科兹雷克",
+						"flags": "i"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"damageTagsLegendary": [],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Kraken",
+			"name": "克拉肯",
+			"type": "monstrosity",
+			"source": "PSZ",
+			"page": 25,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 230,
+				"formula": "20d12 + 100"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 50
+			},
+			"str": 29,
+			"dex": 14,
+			"con": 20,
+			"int": 16,
+			"wis": 18,
+			"cha": 18,
+			"skill": {
+				"athletics": "+14",
+				"perception": "+9"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 19,
+			"resist": [
+				"寒冷"
+			],
+			"immune": [
+				"闪电",
+				"雷鸣"
+			],
+			"languages": [
+				"通用语"
+			],
+			"cr": "13",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"克拉肯的天赋施法能力是魅力（法术豁免{@dc 17}）。克拉肯天生能够无成分施展以下法术："
+					],
+					"daily": {
+						"3e": [
+							"{@spell 操控天气}",
+							"{@spell 水下呼吸}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"克拉肯可以在空气和水中呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"克拉肯进行两次攻击：一次使用它的爪子，一次使用它的触手。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及10尺，单一目标。{@h}30（{@damage 6d6 + 9}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Tentacles",
+					"name": "触须",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及：20尺，单一目标。{@h}30（{@damage 6d6 + 9}）钝击伤害，并且目标{@condition 受擒}（逃脱{@dc 17}）。直到这次抓住结束，目标{@condition 束缚}。"
+					]
+				},
+				{
+					"ENG_name": "Lightning Strike {@recharge 5}",
+					"name": "闪电打击 {@recharge 5}",
+					"entries": [
+						"克拉肯向它能看到的500尺内的一个点投掷一个魔法闪电。每个在那点周围10尺内生物必须进行一次敏捷豁免{@dc 17}，豁免失败将受到54点（{@damage 12d8}）闪电伤害，成功则伤害减半。"
+					]
+				}
+			],
+			"soundClip": {
+				"type": "internal",
+				"path": "bestiary/kraken.opus"
+			},
+			"traitTags": [
+				"水陆两栖"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击",
+				"触须"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"受擒",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Linvala",
+			"name": "林瓦拉",
+			"isNamedCreature": true,
+			"source": "PSZ",
+			"page": 21,
+			"_copy": {
+				"ENG_name": "Planetar",
+				"name": "异界神侍",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "异界神侍",
+						"with": "林瓦拉",
+						"flags": "i"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Ogre Channeler",
+			"name": "食人魔咒术师",
+			"source": "PSZ",
+			"page": 31,
+			"_copy": {
+				"ENG_name": "Oni",
+				"name": "恶鬼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "增益",
+						"with": "食人魔"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Oxen",
+			"name": "牛",
+			"source": "PSZ",
+			"page": 34,
+			"_copy": {
+				"ENG_name": "Giant Goat",
+				"name": "巨山羊",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "山羊",
+						"with": "牛"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Pestilence Demon",
+			"name": "瘟疫恶魔",
+			"source": "PSZ",
+			"page": 27,
+			"_copy": {
+				"ENG_name": "Vrock",
+				"name": "鹫魔",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鹫魔",
+						"with": "恶魔"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shade",
+			"name": "幽影",
+			"source": "PSZ",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Shadow",
+				"name": "幽影",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "幽影",
+						"with": "幽影"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shatterskull Giant",
+			"name": "碎颅巨人",
+			"source": "PSZ",
+			"page": 30,
+			"_copy": {
+				"ENG_name": "Boulderfoot Giant",
+				"name": "巨石足巨人",
+				"source": "PSZ"
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shoal Serpent",
+			"name": "浅滩蛇",
+			"source": "PSZ",
+			"page": 26,
+			"_copy": {
+				"ENG_name": "Plesiosaurus",
+				"name": "蛇颈龙",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "蛇颈龙",
+						"with": "蛇"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Sphinx (Type 1)",
+			"name": "斯芬克斯（类型1）",
+			"source": "PSZ",
+			"page": 24,
+			"_copy": {
+				"ENG_name": "Androsphinx",
+				"name": "男面斯芬克斯",
+				"source": "MM"
+			},
+			"damageTagsLegendary": [],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Sphinx (Type 2)",
+			"name": "斯芬克斯（类型2）",
+			"source": "PSZ",
+			"page": 24,
+			"_copy": {
+				"ENG_name": "Gynosphinx",
+				"name": "女面斯芬克斯",
+				"source": "MM"
+			},
+			"tokenCustom": true,
+			"damageTagsLegendary": [],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Spirit",
+			"name": "精魄",
+			"source": "PSZ",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Ghost",
+				"name": "幽魂",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "幽魂",
+						"with": "精魄"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Surrakar",
+			"name": "苏拉卡",
+			"source": "PSZ",
+			"page": 26,
+			"_copy": {
+				"ENG_name": "Lizardfolk",
+				"name": "蜥蜴人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "蜥蜴人",
+						"with": "苏拉卡"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Terastodon",
+			"name": "泰拉斯多顿",
+			"source": "PSZ",
+			"page": 34,
+			"_copy": {
+				"ENG_name": "Mammoth",
+				"name": "猛犸",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "猛犸",
+						"with": "泰拉斯多顿"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Terra Stomper",
+			"name": "大地践踏者",
+			"source": "PSZ",
+			"page": 34,
+			"_copy": {
+				"ENG_name": "Tyrannosaurus Rex",
+				"name": "霸王龙",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "霸王龙",
+						"with": "大地践踏者"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Timbermaw",
+			"name": "森林之喉",
+			"source": "PSZ",
+			"page": 34,
+			"_copy": {
+				"ENG_name": "Grick",
+				"name": "穴居攫怪",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "穴居攫怪",
+						"with": "森林之喉"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Trench Giant",
+			"name": "沟壑巨人",
+			"source": "PSZ",
+			"page": 30,
+			"_copy": {
+				"ENG_name": "Fomorian",
+				"name": "废陋巨人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "废陋巨人",
+						"with": "巨人"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Turntimber Giant",
+			"name": "转木巨人",
+			"source": "PSZ",
+			"page": 30,
+			"_copy": {
+				"ENG_name": "Cloud Giant",
+				"name": "云巨人",
+				"source": "MM"
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Ulamog",
+			"name": "乌尔阿莫格",
+			"isNamedCreature": true,
+			"source": "PSZ",
+			"page": 38,
+			"_copy": {
+				"ENG_name": "Empyrean",
+				"name": "至高天",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Eldrazi",
+						"name": "埃德拉扎",
+						"source": "PSZ"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "至高天",
+						"with": "乌尔阿莫格",
+						"flags": "i"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Vampire Null",
+			"name": "吸血鬼转化躯壳",
+			"source": "PSZ",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Zombie",
+				"name": "丧尸",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "丧尸",
+						"with": "null"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Woodcrasher Baloth",
+			"name": "破坏森林的巴洛斯",
+			"source": "PSZ",
+			"page": 33,
+			"_copy": {
+				"ENG_name": "Baloth",
+				"name": "巴洛斯",
+				"source": "PSZ"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 50
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Wraith",
+			"name": "邪灵",
+			"source": "PSZ",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Wraith",
+				"name": "邪灵",
+				"source": "MM"
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Wurm",
+			"name": "亚龙",
+			"source": "PSZ",
+			"page": 32,
+			"_copy": {
+				"ENG_name": "Purple Worm",
+				"name": "紫虫",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "虫",
+						"with": "亚龙"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Zendikar Dragon",
+			"name": "赞迪卡龙",
+			"source": "PSZ",
+			"page": 29,
+			"_copy": {
+				"ENG_name": "Young Red Dragon",
+				"name": "青年红龙",
+				"source": "MM"
+			},
+			"int": 8,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Zendikar Golem",
+			"name": "赞迪卡魔像",
+			"source": "PSZ",
+			"page": 36,
+			"_copy": {
+				"ENG_name": "Stone Golem",
+				"name": "石魔像",
+				"source": "MM"
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}

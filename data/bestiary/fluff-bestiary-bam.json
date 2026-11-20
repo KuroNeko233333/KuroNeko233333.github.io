@@ -1,0 +1,2189 @@
+{
+	"_meta": {
+		"internalCopies": [
+			"monsterFluff"
+		]
+	},
+	"monsterFluff": [
+		{
+			"ENG_name": "Aartuk Elder",
+			"name": "蔬菜人长者",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Aartuks",
+				"name": "蔬菜人",
+				"source": "BAM"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Aartuk Elder.webp"
+					},
+					"credit": "Christopher Burdett",
+					"width": 1000,
+					"height": 1060
+				}
+			]
+		},
+		{
+			"ENG_name": "Aartuk Starhorror",
+			"name": "蔬菜人怖星者",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Aartuks",
+				"name": "蔬菜人",
+				"source": "BAM"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Aartuk Starhorror.webp"
+					},
+					"credit": "Matt Stewart",
+					"width": 1000,
+					"height": 921
+				}
+			]
+		},
+		{
+			"ENG_name": "Aartuk Weedling",
+			"name": "蔬菜剪灭人",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Aartuks",
+				"name": "蔬菜人",
+				"source": "BAM"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Aartuk Weedling.webp"
+					},
+					"credit": "Christopher Burdett",
+					"width": 1000,
+					"height": 1232
+				}
+			]
+		},
+		{
+			"ENG_name": "Aartuks",
+			"name": "蔬菜人",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"蔬菜人是为战争而生的智慧植物生物。眼魔摧毁了它们原本的家乡世界，并将生还者分散到整个物质位面。这些生还者形成了小型游牧聚落。",
+						"蔬菜人聚落可以在荒宇中任何地方包括其前船员基本已经被蔬菜人杀害或驱逐出船的魔法船中找到。",
+						"蔬菜人的身体形似一颗五角星，其上覆盖着厚实却灵活的植皮。它那枝条状的五肢末端是吸盘，令它们能够在垂直表面和天花板上攀爬，每个吸盘中还藏有3个可伸缩的伪足，用于操控各种小物件。",
+						"蔬菜人的头部位于一个6英尺高的茎杆顶部，该茎杆可以从其星星状身体的中心伸出。头部包含了蔬菜人的感知器官，包括一条用作武器的长舌头。",
+						"蔬菜人偏好的攻击方法是射出它黏糊糊的舌头，并用它来将敌人拖到自己的身体中心，以更好地用自己有力的枝条攻击敌人。它也能够喷吐出光耀能量的小球。",
+						"蔬菜人语由沙沙声、咔嚓声、啪啪声和嘶嘶声组成。并不包含文字。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Adult Lunar Dragon",
+			"name": "成年月亮龙",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Lunar Dragons",
+				"name": "月亮龙",
+				"source": "BAM",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									{
+										"ENG_name": "A Lunar Dragon's Lair",
+										"name": "月亮龙巢",
+										"type": "entries",
+										"entries": [
+											"月亮龙巢穴所在的洞穴群包含充足的储存食物的空间，以及一至多个用来贮藏其宝藏的隐藏空间。根据卫星的具体组成和特征，这种巢穴可能包含天然泉水和地热口、野生花园、晶体构造、魔法现象，甚至是一个适应与龙共生的低等生命们所组成的生态系统。"
+										]
+									}
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Adult Solar Dragon",
+			"name": "成年太阳龙",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Solar Dragon",
+				"name": "太阳龙",
+				"source": "BAM"
+			}
+		},
+		{
+			"ENG_name": "Ancient Lunar Dragon",
+			"name": "远古月亮龙",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Lunar Dragons",
+				"name": "月亮龙",
+				"source": "BAM",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									{
+										"ENG_name": "A Lunar Dragon's Lair",
+										"name": "月亮龙巢",
+										"type": "entries",
+										"entries": [
+											"月亮龙巢穴所在的洞穴群包含充足的储存食物的空间，以及一至多个用来贮藏其宝藏的隐藏空间。根据卫星的具体组成和特征，这种巢穴可能包含天然泉水和地热口、野生花园、晶体构造、魔法现象，甚至是一个适应与龙共生的低等生命们所组成的生态系统。"
+										]
+									}
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Ancient Lunar Dragon.webp"
+					},
+					"credit": "Svetlin Velinov",
+					"width": 773,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Ancient Solar Dragon",
+			"name": "远古太阳龙",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Solar Dragon",
+				"name": "太阳龙",
+				"source": "BAM",
+				"_mod": {
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "internal",
+									"path": "bestiary/BAM/Ancient Solar Dragon.webp"
+								},
+								"credit": "Zoltan Boros",
+								"width": 773,
+								"height": 1000
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Astral Elf Aristocrat",
+			"name": "星界精灵贵族",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Astral Elves",
+				"name": "星界精灵",
+				"source": "BAM",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"星界精灵贵族是荣光焕发、出身显赫的领导者，它们生来便拥有魔法力量，这份力量包括了引导阳光与召唤太阳龙。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Astral Elf Aristocrat.webp"
+					},
+					"credit": "Randy Vargas",
+					"width": 982,
+					"height": 1805
+				}
+			]
+		},
+		{
+			"ENG_name": "Astral Elf Commander",
+			"name": "星界精灵指挥官",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Astral Elves",
+				"name": "星界精灵",
+				"source": "BAM",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"星界精灵指挥官领导着战士们进入战斗，通常有一艘或更多艘魔法船直接听其指挥。指挥官能够在武器中引导星光之力，并能在手下战士们危难之际使用神赐的传送力量，将它们救出战场。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Astral Elf Commander.webp"
+					},
+					"credit": "Julio Reyna",
+					"width": 1000,
+					"height": 1175
+				}
+			]
+		},
+		{
+			"ENG_name": "Astral Elf Honor Guard",
+			"name": "星界精灵荣耀守卫",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Astral Elves",
+				"name": "星界精灵",
+				"source": "BAM",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"重要人员与地点的安全被委托给星界精灵荣耀守卫，这些训练有素的战士完全有能力在战斗中坚守阵地。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Astral Elf Honor Guard.webp"
+					},
+					"credit": "Marta Nael",
+					"width": 794,
+					"height": 1439
+				}
+			]
+		},
+		{
+			"ENG_name": "Astral Elf Star Priest",
+			"name": "星界精灵星辰祭司",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Astral Elves",
+				"name": "星界精灵",
+				"source": "BAM",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"星辰祭司们从精灵诸神的万神殿中汲取力量，并监督星界精灵社会中的宗教活动。它们经常在魔法船上服务，不仅是作为诸神的使者，也是作为法驱者。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Astral Elf Star Priest.webp"
+					},
+					"credit": "Merlin G. G.",
+					"width": 681,
+					"height": 1467
+				}
+			]
+		},
+		{
+			"ENG_name": "Astral Elf Warrior",
+			"name": "星界精灵战士",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Astral Elves",
+				"name": "星界精灵",
+				"source": "BAM",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"星界精灵战士们负责操作精灵魔法船，并防御星界之中的精灵堡垒。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Astral Elf Warrior.webp"
+					},
+					"credit": "Zuzanna Wužyk",
+					"width": 854,
+					"height": 1457
+				}
+			]
+		},
+		{
+			"ENG_name": "Astral Elves",
+			"name": "星界精灵",
+			"source": "BAM",
+			"entries": [
+				{
+					"ENG_name": "Astral Elves",
+					"name": "星界精灵",
+					"type": "entries",
+					"entries": [
+						"许久岁月以前，有一些精灵前往了星光位面以更接近它们的神明。在星界之中，它们停止了衰老，且无需物质给养便可永续生命。",
+						"星界精灵是最早定居于银色虚空之中的生物之一。在其他探索者们朝着群星进发时，星界精灵们则必须与那些暴力的邻居与陌生的来访者们打交道。随着时间的推移，星界精灵与无数的入侵者们发生了冲突，诸如灵蠕妖、夺心魔和吉斯洋基人。在与外族来往时，星界精灵习惯用华丽的面甲遮挡容貌，以此成为它们信仰的神明们的无面代行者。它们对精灵诸神们奉上热情的信仰，而后得到了神圣力量作为回报。比如说，精灵诸神赋予了星界精灵战士们在武器中引导星光之辉的能力，它们还给予了星界精灵领导者们施展法术与召唤太阳龙的能力。",
+						"星界精灵们用它们自己设计的舰船畅游于星界海与荒宇之中。这些舰船装饰着从荒宇系中得来的水晶，来自于植物的有机材料将这些水晶紧密结合在一起，使它们坚若陶瓷。精灵们将这些材料塑造为不同的样式，以创造出星蛾（见《{@i 星界冒险者指南}》）与其他舰船。精灵们还会重塑漂浮于银色虚空中已死之神的石化神尸，它们会将这些神尸转化为自己的浮游城市与堡垒。",
+						"尽管银色虚空是它们的家园，星界精灵们仍经常进入荒宇系中，并将它们的舰船与堡垒置于环绕恒星的轨道上。星界精灵们这么做有几个原因。与恒星接近能让星界精灵们与太阳龙建立契约并收集星光，精灵们用这些星光来培养水晶和修补它们的舰船。最重要的是，星界精灵们利用它们在星界深渊之外的时间来繁育并培养子嗣，以增长自己族群的数量。",
+						"许多星界精灵的年龄数以千计（而有的时候，它们的年龄可能会数以万计）。无论它们的性情如何，长生久视都给予了星界精灵一种鲜有其他种类生物能够认同的时间观。无论它们选择静思度日，还是主动出击探索多元宇宙的遥远角落，星界精灵们总是倾向于将发生在别处的事情视为与它们无关或毫无意义。",
+						{
+							"ENG_name": "Astral Elves of Xaryxis",
+							"name": "扎里克西斯的星界精灵",
+							"type": "inset",
+							"entries": [
+								"冒险《{@i 萨利希斯之光}》中有一个名为扎里克西安帝国的无道德星界精灵社会。这个帝国位于扎里克西斯空间，一个由名为扎里克西斯的巨大光耀太阳照亮的荒宇系。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Autognome",
+			"name": "自动侏儒",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"自动侏儒是机械侏儒的一种，外表与它们的创造者岩侏儒相似，但永远不会被错认成是侏儒。无论内部构造如何，它们的外部都装上了带有侏儒特征的金属外壳。它们的步态相当僵硬，走到哪里都会发出各种各样的声音：叮叮当当，咳咳咔咔，呼呼哗哗和呜呜嗡嗡。",
+						"一个自动侏儒正常运行时会遵守创造者的命令，但某个设计上的缺陷可以让它忘掉命令自行其是，在荒宇中漫游，做任何违背其设计初衷的事情。",
+						"自动侏儒的制作材料并不非得是相同的；它们的智慧是由魔法所赋予。大多数自动侏儒都遵循以下三条命令：保护被非侏儒攻击的侏儒；受到攻击时自卫；保护婴儿与未成年免受伤害。最后一条命令虽然出于纯粹的善意，但没有规定物种，所以，举例来说，如果一个自动侏儒看到一群成年生物在与一条月亮龙雏龙战斗时，它就会去保护雏龙。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Autognome.webp"
+					},
+					"credit": "Zuzanna Wužyk",
+					"width": 1000,
+					"height": 1267
+				}
+			]
+		},
+		{
+			"ENG_name": "B'rohg",
+			"name": "毕罗格四臂巨人",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"毕罗格四臂巨人是肩膀宽阔的四臂巨人，高达15尺，有着焦橙色的皮肤。它们有着扁平的鼻子、尖尖的耳朵，以及从秃顶的背面和侧面垂落下来的长发。它们穿着简朴的衣物，喜欢投掷沉重的岩石。毕罗格四臂巨人的四条手臂均可持用武器，但它更喜欢用拳头猛击敌人以及用赤手空拳将更小的生物撕成碎片。",
+						"毕罗格四臂巨人通过咕噜声和基础的手势交流；它们没有语言或文字。它们喜欢独处，因此通常不会对其他更小的生物构成威胁。但由于它们拥有的体型和力量，角斗场往往用它们来吸引观众，令其被迫为食物而战。",
+						"毕罗格四臂巨人已习惯于在自己的自然栖息地中勉强生存，很少与其他种类的生物联合。从陌生人的善意行为中受益的毕罗格四臂巨人首先会对这种努力感到疑惑，然后是警惕。如果这种善意足以赢得其信任的话，毕罗格四臂巨人就会努力回报陌生人\u2014\u2014也许是为他们携带装备或帮助他们穿越危险的地形。一个被冒险者队伍结识的独行毕罗格四臂巨人可能会跟随他们一段时间，但它很快就会厌倦他们的陪伴，再次寻找其他同类。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Brohg.webp"
+					},
+					"credit": "Kai Carpenter",
+					"width": 843,
+					"height": 1939
+				}
+			]
+		},
+		{
+			"ENG_name": "Braxat",
+			"name": "巴夏特角兽巨人",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"巴夏特角兽巨人是一种体型高大的温血肉食生物，背负厚重的分节甲壳，近似方形的头顶长着角质突起，粗壮的胳膊末端是对生拇指的大手。这种二足直立行走的生物的口音与人类相似。",
+						"巴夏特角兽巨人通常单独或成对捕猎，为此在沙漠、干燥的峡谷、荒芜的废土和偏僻的小行星上巡弋搜索猎物。巴夏特角兽巨人也可以喷吐强酸，但往往只作为最后手段，因为强酸会溶解并破坏它们渴求的血肉。",
+						"巴夏特角兽巨人会在自己身边投射出隐形的灵能障壁来增强自己的天生护甲，并且可以放大这股魔法能量来创造涌动的力场屏障偏转攻击并吸收魔法飞弹法术。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Braxat.webp"
+					},
+					"credit": "Shawn Wood",
+					"width": 1000,
+					"height": 1165
+				}
+			]
+		},
+		{
+			"ENG_name": "Brown Scavver",
+			"name": "棕色独眼印鱼",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Scavvers",
+				"name": "独眼印鱼",
+				"source": "BAM",
+				"_mod": {
+					"entries": {
+						"mode": "setProp",
+						"value": [
+							{
+								"type": "entries",
+								"entries": [
+									"棕色独眼印鱼长达10尺，颜色从阳光下的棕金色到深褐色不等。它们消化一餐的食物需要好几天，在这段时间内，它们只会出于自卫而攻击。",
+									"棕色独眼印鱼喜欢把猎物囫囵吞下。这种生物的胃里充满了有毒气体，能杀死所有被吞下后尚且存活的生物。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Brown Scavver.webp"
+					},
+					"credit": "Jessica Nguyen",
+					"width": 897,
+					"height": 448
+				}
+			]
+		},
+		{
+			"ENG_name": "Chwinga Astronaut",
+			"name": "怯蕴阿灵航天士",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"生活在荒宇中的怯蕴阿灵通常居住在宜居的卫星和小行星上，不过它们偶尔也会偷渡到魔法船上或骑乘太空孔雀鱼。利用其魔法赠礼能力，怯蕴阿灵航天士可以赐予以下其中一个恩惠，以替代{@book 第七章|DMG|7|其他奖励}中描述的那些。",
+						{
+							"type": "list",
+							"items": [
+								"{@reward 空气泡泡护咒|BAM}",
+								"{@reward 临时工具护咒|BAM}"
+							],
+							"columns": 3
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Chwinga Astronaut.webp"
+					},
+					"credit": "Shawn Wood",
+					"width": 1700,
+					"height": 1442
+				}
+			]
+		},
+		{
+			"ENG_name": "Cosmic Horror",
+			"name": "宇宙恐怪",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"宇宙恐怪是偶然间脱离了遥远国度的束缚，漂流至星界的巨大而恶毒的实体。被遥远群星的光芒所吸引，这些生物入侵了荒宇系并将一个个世界化作荒芜。在它用某个世界中居民的心智和血肉将自己填饱之后，宇宙恐怪通常会返回虚空，并在那里陷入深度休眠，漫无目的地漂流直到饥饿或是其他刺激将它唤醒。",
+						"宇宙恐怪是遥远国度所衍生的最为强大的生物之一。没有任何两个宇宙恐怪完全相同，但它们的外观确实有着某些共通之处：每一个都有大约100尺长或高，而它们的物理形态往往是一种眼睛，嘴巴，翅膀，触须和难以辨认的器官与附肢的不可思议的组合。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Cosmic Horror.webp"
+					},
+					"credit": "Simon Dominic",
+					"width": 416,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Dohwar",
+			"name": "多瓦尔企鹅人",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"多瓦尔企鹅人是矮小、粗胖、不会飞的鸟类生物，外形和动作都像企鹅。多瓦尔企鹅人从妖精荒野迁徙到星界，通常在那里遇到。它们秘密进行交易，即使买卖的东西不违法或危险，也喜欢在黑街暗巷和偏僻地方会面。它们倾向于穿着花里胡哨的混搭服装，但许多也会披着连帽斗篷。",
+						"多瓦尔企鹅人平均身高3尺，拥有与彩虹光谱中特定颜色相匹配的鲜艳羽毛。这种颜色会在多瓦尔企鹅人生命中的不可预测时刻发生变化，通常是在其经历强烈情绪时。它们没有翅膀，而是有胳膊和微型小手。",
+						"多瓦尔企鹅人喜欢用一种它们称之为交融的心灵感应方式交流，即两个多瓦尔企鹅人保持精神联系，同时都与第三个生物进行心灵感应链接。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Dohwar.webp"
+					},
+					"credit": "Brynn Metheney",
+					"width": 1000,
+					"height": 647
+				}
+			]
+		},
+		{
+			"ENG_name": "Esthetic",
+			"name": "美学舰兽",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"每一只美学舰兽，都是一位雷加尔人创造出来的生化共生体。其本质上是一艘有且只有最基本意识的有机舰船。如果没有雷加尔人的引导，美学舰兽就会像一个没有思想的实体一样，只具备自我保护的本能。",
+						"雷加尔人使用它们的美学舰兽作为法驱战舰。当乘坐着美学舰兽的敌对雷加尔人遇上了另一艘太空航行的船只，它会使用一种魔法性的振动波让对方船只的法驱魔舵失效。接着雷加尔人就会命令美学舰兽抓住对面船上的船员，让它的触须分泌酸液将它们的血肉溶解。",
+						"每一只美学舰兽的外观都是独一无二的。可能一只是左右对称的（两个匹配的半边，就像类人生物沿着垂直轴的身体一样），另一只则是放射性对称的（像海星），又或者干脆没有可定义的形状。从远处看，美学舰兽很容易会被误认为是一只生活在太空中的巨大水母或者头足纲动物。其外壳是由一种会发出生物光的树脂制成的。",
+						"美学舰兽内部的空间足以舒适地容纳它的雷加尔主人以及额外最多六位中型乘客。船只的舱口只能通过雷加尔人（除此以外谁都不行）的触摸来打开或关闭。",
+						"美学舰兽可以在星光位面永远存活，前提是它的创造者同样在世。如果美学舰兽的创造者死亡，美学舰兽会在{@dice 1d12}天内生病，然后逝去。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Esthetic.webp"
+					},
+					"credit": "Shawn Wood",
+					"width": 850,
+					"height": 1256
+				}
+			]
+		},
+		{
+			"ENG_name": "Eye Monger",
+			"name": "大眼游星",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"当它巨大的眼睛和嘴巴合上时，大眼游星看上去只是一颗12尺直径的小行星。当它感受到周围的空间内有振动时，它便会睁开眼睛，露出自己危险的真面目。",
+						"大眼游星用不上宝藏，但它的肚子里可能会有相当数量它无法消化的贵重物品，包括钱币、金属武器、宝石和属于那些被它囫囵吞下的生物的魔法物品。",
+						"虽然大眼游星无法像眼魔那样从眼中放射出反魔法锥，但它的食道能够抑制魔法，这能够阻止被吞噬的生物使用魔法从中逃跑。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Eye Monger.webp"
+					},
+					"credit": "Shawn Wood",
+					"width": 1000,
+					"height": 647
+				}
+			]
+		},
+		{
+			"ENG_name": "Feyr",
+			"name": "惊怖魔",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"惊怖魔（读作\"fear\"）是一种带触手的恐怪，以强烈的情绪为食。为了尽量减少自己受伤的可能性，它更喜欢在其它生物入睡时吞噬它们的噩梦。",
+						"惊怖魔回避明亮的光亮，但不会因光亮而受伤。因此，它们在荒宇的虚空中就像在黑暗的小巷和地牢里一样自在。遇到魔法船的惊怖魔会试图进入船只的气囊并藏匿起来，保持隐蔽和隐形，直到它找到一个沉睡的受害者来攻击。它宁可逃跑也不允许自己在对抗中丧生。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Feyr.webp"
+					},
+					"credit": "Shawn Wood",
+					"width": 1000,
+					"height": 625
+				}
+			]
+		},
+		{
+			"ENG_name": "Gaj",
+			"name": "劫心六足甲",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"劫心六足甲是狰狞的猎手，以其他智慧生命为食。它们用六条昆虫般的腿爬行，并用大颚来攻击。它们埋伏在沙子或淤泥下，潜伏在黑暗的洞穴中，或栖息在天然石壁上，与周围环境融为一体，以此来伏击猎物。劫心六足甲没有语言，但它们有能听懂其他生物语言的魔法能力。",
+						"劫心六足甲的头部是一个直径约2英尺的海绵状球体，头顶有三根羽毛状的触角。头部周围有六只复眼，嘴上还挂着六根手指般的颚齿。劫心六足甲可以通过把它的触角缠绕在另一个智慧生物的头上来尝试阅读该生物的思想。无论这种尝试是否成功，这种精神刺探都是痛苦的，并对受害者的健康造成影响。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Gaj.webp"
+					},
+					"credit": "Shawn Wood",
+					"width": 1000,
+					"height": 652
+				}
+			]
+		},
+		{
+			"ENG_name": "Giant Space Hamster",
+			"name": "巨型太空仓鼠",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"巨型太空仓鼠是一种如同棕熊一样巨大的超可爱啮齿类食草动物。它们往往会避开其他生物，尤其是具有威胁性的。但它们也可以被训练成坐骑或驮兽。侏儒曾经试图建造由巨型太空仓鼠转轮驱动的魔法船，但迄今为止仍然未告成功。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Giant Space Hamster.webp"
+					},
+					"credit": "Zoltan Boros",
+					"width": 850,
+					"height": 2352
+				}
+			]
+		},
+		{
+			"ENG_name": "Giff",
+			"name": "诘弗人",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"诘弗船员，它们组成了大多数诘弗人船只上的船员主体，是纪律严明的水手。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"诘弗突击兵经过了专门的训练，以对敌方据点发动猛烈突袭。每个诘弗突击兵都擅长先在远处用枪械削弱敌军，再冲锋上前扫荡还没有倒下的对手。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"一位身为独立雇佣兵且拥有高等军衔的诘弗人，可能会积攒起足够的实力和影响力，成为一名军阀。",
+						"一名诘弗军阀通常指挥着一支小型的法驱舰队，并坐在一个防守严密的据点内运筹帷幄。任何与该军阀拥有共同理念的人都可以加入其部队，无论这个理念具体是什么。诘弗军阀的部队主要由为舰队掌舵和提供魔法火力的魔法师、物种不尽相同的雇佣兵还有收钱打仗的诘弗突击兵所组成。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Giff Shipmate",
+			"name": "诘弗船员",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Giff",
+				"name": "诘弗人",
+				"source": "BAM",
+				"_mod": {
+					"entries": {
+						"mode": "setProp",
+						"value": [
+							{
+								"type": "entries",
+								"entries": [
+									"诘弗船员，它们组成了大多数诘弗人船只上的船员主体，是纪律严明的水手。"
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Giff Shock Trooper",
+			"name": "诘弗突击兵",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"诘弗突击兵经过了专门的训练，以对敌方据点发动猛烈突袭。每个诘弗突击兵都擅长先在远处用枪械削弱敌军，再冲锋上前扫荡还没有倒下的对手。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Giff Shock Trooper.webp"
+					},
+					"credit": "Robson Michel",
+					"width": 967,
+					"height": 1251
+				}
+			]
+		},
+		{
+			"ENG_name": "Giff Warlord",
+			"name": "诘弗军阀",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"一位身为独立雇佣兵且拥有高等军衔的诘弗人，可能会积攒起足够的实力和影响力，成为一名军阀。",
+						"一名诘弗军阀通常指挥着一支小型的法驱舰队，并坐在一个防守严密的据点内运筹帷幄。任何与该军阀拥有共同理念的人都可以加入其部队，无论这个理念具体是什么。诘弗军阀的部队主要由为舰队掌舵和提供魔法火力的魔法师、物种不尽相同的雇佣兵还有收钱打仗的诘弗突击兵所组成。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Giff Warlord.webp"
+					},
+					"credit": "Robson Michel",
+					"width": 850,
+					"height": 1084
+				}
+			]
+		},
+		{
+			"ENG_name": "Githyanki",
+			"name": "吉斯洋基人",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"吉斯洋基人海盗们在星界中寻找财富，然后将搜刮来的财富带回星界深渊的隐藏堡垒中。它们中的许多人是失去了为巫妖女王维拉基斯服务的意志的战士；它们更喜欢按照自己的准则生活，或者陶醉于自己那肆无忌惮的自由。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"吉斯洋基人星辰先知相信星星是多元宇宙的眼睛。它们利用魔法联系埃克马、凯丰、哈达等远古星际实体，希望了解它们的秘密，然后将这些秘密记录在日记中。它们也在荒宇中搜索新的实体，希望成为第一个联系它们的人。",
+						"先知们所学到的一些秘密是如此神秘，以至于需要多年的研究才能破译，但对于主要居住在星界的星辰先知来说，时间并不那么重要。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"吉斯洋基人异质操者前往荒宇和星界海的最远处，甚至不时访问主物质位面的世界，研究和编录它从未遇到过的生物。与智能生物的友好接触可以将异质操者的外交技能发挥到极致，而敌对接触则成为对异质操者生存技能的考验。",
+						"有时，异质操者的研究需要捕获并监禁样本（以研究其行为）或杀死并解剖（以研究或收集其内部构造）。许多异质操者更喜欢在它们位于星光位面的实验室里做这项工作。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Githyanki Buccaneer",
+			"name": "吉斯洋基人海盗",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Githyanki",
+				"name": "吉斯洋基人",
+				"source": "BAM",
+				"_mod": {
+					"entries": {
+						"mode": "setProp",
+						"value": [
+							{
+								"type": "entries",
+								"entries": [
+									"吉斯洋基人海盗们在星界中寻找财富，然后将搜刮来的财富带回星界深渊的隐藏堡垒中。它们中的许多人是失去了为巫妖女王维拉基斯服务的意志的战士；它们更喜欢按照自己的准则生活，或者陶醉于自己那肆无忌惮的自由。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Githyanki Buccaneer.webp"
+					},
+					"credit": "Andrew Mar",
+					"width": 605,
+					"height": 1017
+				}
+			]
+		},
+		{
+			"ENG_name": "Githyanki Star Seer",
+			"name": "吉斯洋基人星辰先知",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"吉斯洋基人星辰先知相信星星是多元宇宙的眼睛。它们利用魔法联系埃克马、凯丰、哈达等远古星际实体，希望了解它们的秘密，然后将这些秘密记录在日记中。它们也在荒宇中搜索新的实体，希望成为第一个联系它们的人。",
+						"先知们所学到的一些秘密是如此神秘，以至于需要多年的研究才能破译，但对于主要居住在星界的星辰先知来说，时间并不那么重要。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Githyanki Star Seer.webp"
+					},
+					"credit": "Andrew Mar",
+					"width": 583,
+					"height": 957
+				}
+			]
+		},
+		{
+			"ENG_name": "Githyanki Xenomancer",
+			"name": "吉斯洋基人异质操者",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"吉斯洋基人异质操者前往荒宇和星界海的最远处，甚至不时访问主物质位面的世界，研究和编录它从未遇到过的生物。与智能生物的友好接触可以将异质操者的外交技能发挥到极致，而敌对接触则成为对异质操者生存技能的考验。",
+						"有时，异质操者的研究需要捕获并监禁样本（以研究其行为）或杀死并解剖（以研究或收集其内部构造）。许多异质操者更喜欢在它们位于星光位面的实验室里做这项工作。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Githyanki Xenomancer.webp"
+					},
+					"credit": "Andrew Mar",
+					"width": 822,
+					"height": 1048
+				}
+			]
+		},
+		{
+			"ENG_name": "Gray Scavver",
+			"name": "灰色独眼印鱼",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"灰色独眼印鱼长达6尺，通常结群而行。血液的气味会让它们疯狂地掠食，但只要伤害到它就会削弱它的力量，让它放弃攻击。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Gray Scavver.webp"
+					},
+					"credit": "Jessica Nguyen",
+					"width": 546,
+					"height": 190
+				}
+			]
+		},
+		{
+			"ENG_name": "Hadozee Explorer",
+			"name": "鼯猴人探索者",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Hadozees",
+				"name": "鼯猴人",
+				"source": "BAM",
+				"_mod": {
+					"entries": {
+						"mode": "setProp",
+						"value": [
+							{
+								"type": "entries",
+								"entries": [
+									"鼯猴人探索者在荒宇系中寻找财富和冒险。它们经常在魔法船上担任领航员。对它们来说，星界是一个值得进一步探索、大部分尚未绘制的广阔空间。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Hadozee Explorer.webp"
+					},
+					"credit": "Zuzanna Wužyk",
+					"width": 595,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Hadozee Shipmate",
+			"name": "鼯猴人船员",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"鼯猴人船员在一些魔法船上的船员中占有相当的比例。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Hadozee Shipmate.webp"
+					},
+					"credit": "Claudio Pozas",
+					"width": 630,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Hadozee Warrior",
+			"name": "鼯猴人战士",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"鼯猴人战士以佣兵为生，有时则与海盗为伍。战士们的队伍经常会采用丰富多彩的名字，如\"飞翔的鼯猴人（Soaring Hadozees）\"、\"囚人的翼蝠（Jammin' Wingbats）\"和\"夜嚎者（Night Howlers）\"。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Hadozee Warrior.webp"
+					},
+					"credit": "David Auden Nash",
+					"width": 500,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Hadozees",
+			"name": "鼯猴人",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"鼯猴人探索者在荒宇系中寻找财富和冒险。它们经常在魔法船上担任领航员。对它们来说，星界是一个值得进一步探索、大部分尚未绘制的广阔空间。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"鼯猴人船员在一些魔法船上的船员中占有相当的比例。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"鼯猴人战士以佣兵为生，有时则与海盗为伍。战士们的队伍经常会采用丰富多彩的名字，如\"飞翔的鼯猴人（Soaring Hadozees）\"、\"囚人的翼蝠（Jammin' Wingbats）\"和\"夜嚎者（Night Howlers）\"。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Jammer Leech",
+			"name": "星舰水蛭",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"星舰水蛭是一种类似藤壶的生物，其初始形态是一种附着在魔法船船体上的太空孢子，内有幼虫魔状态的水蛭。附着在船上数天之后的孢子会刺破船体，并开始形成与船体颜色大致相同的硬壳。这种硬壳由水蛭分泌而出的胶状物质固定在船上，它会一直生长到约1英尺的直径大小。紫红色的水蛭居住在壳内，其形状类似一只蜗牛。它的一端长有一只水汪汪的眼睛，眼睛的下方伸出来一条用以自卫的尖刺触手。",
+						"一对交配的水蛭每月会产下 {@dice 1d6} 个孢子。这些孢子中的一部分可能会与它们的父母攀上同一个船体，而另一部分孢子则会飘离，等待着将自己附着在另一艘缺乏警惕的船只上。",
+						"星舰水蛭会对它所附着的船体造成破坏，并从舰船的法驱魔舵中吸收魔法。它可以时不时地释放这种魔法来当作防御措施。如果船上的船员发现了附着的水蛭，它们通常会尝试将水蛭从船体上刮下来，而不是用武器攻击它们。消灭附着在船上的水蛭是极其危险的，因为船上的法驱者可以感觉到它死亡的创伤，后者会因震慑而变得虚弱且陷入失能。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Jammer Leech.webp"
+					},
+					"credit": "Shawn Wood",
+					"width": 1000,
+					"height": 748
+				}
+			]
+		},
+		{
+			"ENG_name": "Kindori",
+			"name": "鲸驮骊",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"鲸驮骊没有明显的嘴部。它身体的前缘布满了许多小眼睛，可以发出明亮的光束，用以在逃跑时致盲猎手。鲸驮骊彼此之间通过眼睛发出的闪光信号进行远距离交流，它们从太阳和星辰的光辉中汲取营养。",
+						"鲸驮骊巨大到能够拥有自己的重力平面和气囊，让更小的生物得以在它们的身上生活和旅行。苔藓、霉菌以及其他寄生生物会生长在它们的表皮上，也同样能引来其他捕食者将它们清理掉。有些独眼印鱼会以这些寄生生物为食，而鲸驮骊自己也不会在意。如果一条鲸驮骊身上的藤蔓和植被生长得过于茂盛，那么这条鲸驮骊要么是极度年老，要么患了病。",
+						"即使是在被各种寄生生物吃干抹净以后，死去的鲸驮骊的硬骨和软骨都不会变质。在鲸驮骊的骷髅中安装一座法驱魔舵就可以让其变成一艘魔法船。",
+						"鲸驮骊是性情温顺的生物，但天敌众多，包括月亮龙、太阳龙以及各种居住在荒宇的族裔。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Kindori.webp"
+					},
+					"credit": "Jessica Nguyen",
+					"width": 1000,
+					"height": 647
+				}
+			]
+		},
+		{
+			"ENG_name": "Lunar Dragon Wyrmling",
+			"name": "月亮龙雏龙",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Lunar Dragons",
+				"name": "月亮龙",
+				"source": "BAM"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Lunar Dragon Wyrmling.webp"
+					},
+					"credit": "Lars Grant-West",
+					"width": 1700,
+					"height": 1300
+				}
+			]
+		},
+		{
+			"ENG_name": "Lunar Dragons",
+			"name": "月亮龙",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"月亮龙（也称卫星龙或月相龙）是任性且排外的生物，它们通过在岩石中挖洞筑巢于荒凉的卫星。",
+						"在产卵之前，雌性月亮龙会在她的巢穴中储存食物；她不会再次离开巢穴，直到卵孵化且后代长大到可以独立生存。月亮龙蛋拥有石质的外壳，呈淡白色至浅灰色。月亮龙在刚孵化时呈雪花石膏白色，随着年龄的增长逐渐变暗。远古月亮龙是板岩的颜色。",
+						"月亮龙更喜欢夺走其他生物的宝藏，而不是自己收集宝藏。在卫星龙宝库中的宝藏中经常会发现一个或多个从敢于入侵龙之领地的船只上取下的法驱魔舵（参见《{@i 星界冒险者指南}》）。",
+						"月亮龙可以变成虚体，但做不到可以穿过其他生物或固体的程度。在这种半虚体状态下，龙的身体大约有一半是漆黑、模糊不清的幽灵形态。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Megapede",
+			"name": "万足",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"万足是体长可达150英尺的巨型蜈蚣，但大多数样本的长度在100到120英尺之间。它们拥有着数十条腿，每条都有5英尺长，尖端带有灵活的爪子，而它们的甲壳上覆盖着毛皮。生活在沙地环境中的万足经常会将自己埋在沙子里，等待着猎物漫游到它的附近，但万足也会在洞穴般的地下空腔中筑巢。",
+						"万足的啃咬是剧毒的。此外，这种生物具有使其成为优秀捕食者的魔法能力。它可以发出一种汲取生命能量的隐形灵光，或者它也可以通过凝视一名生物将一颗心灵炸弹植入该生物的心智。",
+						"万足在产卵之后会使用粘性唾液将卵附着在身体上，然后将它们背在背上直至卵孵化。新孵化出来的万足会通过尽可能多地进食在几周内完全成长，而在食物稀缺的情况下它们的食用对象甚至可能包括彼此。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Megapede.webp"
+					},
+					"credit": "Craig J Spearing",
+					"width": 1000,
+					"height": 423
+				}
+			]
+		},
+		{
+			"ENG_name": "Mercane",
+			"name": "星海商族",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"星海商族是一个或多个神祇的神秘魔法造物，这些神祇的权柄围绕着公平交易。它们身高12尺，是瘦长的蓝色生物，穿着优雅的长袍，有着细长的头部和修长纤细的手指。",
+						"星海商族主要在荒宇和星界海进行他们的商业活动。对星海商族而言，商业可以采取殊形同归的形式，从商品和服务的交易到思想和信息的交易。然而，星海商族最为人所知的是采购和销售魔法物品，包括神器与魔法船舵。虽然星海商族通常会有下属或保镖陪同，但一次看到多个星海商族的情况很罕见。",
+						"星海商族会以公平诚信的可靠态度与任何人做买卖，只要对方并没有在过去伤害或欺骗过另一位星海商族。星海商族有着一种特殊的心灵感应能力，使它们能够在多元宇宙之间彼此进行交流。星海商族会用这个能力警告其他星海商族危险或不可靠的对象。当某个人冒犯了星海商族之后，想要再赢回它们的好感是几近不可能的。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Mercane.webp"
+					},
+					"credit": "Shawn Wood",
+					"width": 1000,
+					"height": 647
+				}
+			]
+		},
+		{
+			"ENG_name": "Murder Comet",
+			"name": "杀戮彗星",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"邪恶的施法者通过融合土元素和火元素的精华创造出了杀戮彗星。一颗杀戮彗星看起来像是一颗尖啸的岩石脑袋，周身环绕着火焰。当它拖着燃烧的尾迹在荒宇中飞行时，无论是单独还是与其他杀戮彗星一起，杀戮彗星都会寻找船只、船员或其他毫无防备的目标，然后将它们统统摧毁殆尽。",
+						"杀戮彗星的创造者可以将自己的灵魂绑定于彗星身上。在这种形态下，彗星的创造者会停止衰老，变得不朽，脱离空气、睡眠和物质给养的桎梏，自由地在荒宇中飞驰。杀戮彗星的面孔会呈现出其创造者的容貌，而其具体数值发生以下改变：",
+						{
+							"type": "list",
+							"items": [
+								"将彗星的智力、感知和魅力替换为其创造者的数值。",
+								"将彗星的阵营和语言替换为其创造者的阵营和语言。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Murder Comet.webp"
+					},
+					"credit": "Titus Lunter",
+					"width": 1000,
+					"height": 647
+				}
+			]
+		},
+		{
+			"ENG_name": "Neh-thalggu",
+			"name": "纳-萨古",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"纳-萨古在多元宇宙中被广泛称呼为\"脑髓收藏家\"，它吞噬类人生物的大脑并将它们用作容器来增强自己的魔法能力。",
+						"纳-萨古出生在噩梦般的遥远国度，但它们遍布星界，并寻找通往物质位面各个世界的道路，因为那里的大脑更多。纳-萨古有一个球根状的身体和六只类似于甲壳类动物的腿，四只凸出的眼睛和一张长满牙齿的嘴占据了它丑陋的面容。在这些特征的后背之上，一个或多个肿块从它的身体中突出，每个肿块都包含一个被纳-萨古吃掉的大脑。",
+						"纳-萨古杀死受害者后，会用自己的螯钳切开受害者的头部并取出大脑，然后将之整个吞掉。收集到的大脑将存储在纳-萨古头部的囊袋之中。一旦它以这种方式收集了十二个大脑，它就会被一种返回遥远国度的冲动所支配，并开始将所有的精力投入到寻找回家的道路上。",
+						"在遭遇一只纳-萨古时，掷{@dice d12}来确定它已经收集了多少大脑。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Neh-thalggu.webp"
+					},
+					"credit": "April Prime",
+					"width": 1000,
+					"height": 711
+				}
+			]
+		},
+		{
+			"ENG_name": "Neogi",
+			"name": "纽吉怪",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"纽吉怪能活大约一个世纪。当一个个体因年龄增长而日益虚弱时，群体中的其他纽吉怪会制服它并给它注入一种特殊的毒药。这种毒素把年老的纽吉怪转变成一团臃肿的肉块。年轻的纽吉怪在它上面产卵，当幼体出壳时，它们会吃掉年迈的纽吉怪并相互吞食，直到只剩下几个最强壮的新生儿。有时候，这些新生儿会为一个邪恶的目标而联合起来，形成一个跳跃前行的集群。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"纽吉怪海盗是在夜蛛（见《{@i 星界冒险者指南}》）或其他纽吉怪控制的船只上作为船员的成年纽吉怪。",
+						"纽吉怪们的社会没有个体之间的区别，只有是否能奴役它人的能力差异，而且它们也无法理解人类和其他类似存在所体会到的情感。对于一个纽吉怪来说，仇恨是和爱一样陌生的感受，而在缺少权威的情况下表现出忠诚是愚蠢的行为。",
+						"纽吉怪海盗（和一般的成年纽吉怪）通过染料、变化法术和其他旨在彰显个体的领导地位、成就和身份的记号来标记他们自身和被捕获的奴隶。通过这些记号，纽吉怪们能够确定彼此在阶级中的位置，它们必须服从更高位的纽吉怪，否则将面临严厉的惩罚。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"纽吉怪虚空猎手比一般的纽吉怪成体要大，通常会在夜蛛（见《{@i 星界冒险者指南}》）上担任船长的角色。虚空猎手向一个或多个星际实体效忠，以换得体验它们所拥有的巨大力量的资格。这些被称为埃克马（Acamar）、凯丰（Caiphon）、吉拜斯（Gibbeth）和哈达（Hadar）的实体，看上去像是星辰，由邪恶的精华所构成。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Neogi Hatchling Swarm",
+			"name": "纽吉怪幼体集群",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Neogi",
+				"name": "纽吉怪",
+				"source": "BAM",
+				"_mod": {
+					"entries": {
+						"mode": "setProp",
+						"value": [
+							{
+								"type": "entries",
+								"entries": [
+									"纽吉怪能活大约一个世纪。当一个个体因年龄增长而日益虚弱时，群体中的其他纽吉怪会制服它并给它注入一种特殊的毒药。这种毒素把年老的纽吉怪转变成一团臃肿的肉块。年轻的纽吉怪在它上面产卵，当幼体出壳时，它们会吃掉年迈的纽吉怪并相互吞食，直到只剩下几个最强壮的新生儿。有时候，这些新生儿会为一个邪恶的目标而联合起来，形成一个跳跃前行的集群。"
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Neogi Pirate",
+			"name": "纽吉怪海盗",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"纽吉怪海盗是在夜蛛（见《{@i 星界冒险者指南}》）或其他纽吉怪控制的船只上作为船员的成年纽吉怪。",
+						"纽吉怪们的社会没有个体之间的区别，只有是否能奴役它人的能力差异，而且它们也无法理解人类和其他类似存在所体会到的情感。对于一个纽吉怪来说，仇恨是和爱一样陌生的感受，而在缺少权威的情况下表现出忠诚是愚蠢的行为。",
+						"纽吉怪海盗（和一般的成年纽吉怪）通过染料、变化法术和其他旨在彰显个体的领导地位、成就和身份的记号来标记他们自身和被捕获的奴隶。通过这些记号，纽吉怪们能够确定彼此在阶级中的位置，它们必须服从更高位的纽吉怪，否则将面临严厉的惩罚。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Neogi Void Hunter",
+			"name": "纽吉怪虚空猎手",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"纽吉怪虚空猎手比一般的纽吉怪成体要大，通常会在夜蛛（见《{@i 星界冒险者指南}》）上担任船长的角色。虚空猎手向一个或多个星际实体效忠，以换得体验它们所拥有的巨大力量的资格。这些被称为埃克马（Acamar）、凯丰（Caiphon）、吉拜斯（Gibbeth）和哈达（Hadar）的实体，看上去像是星辰，由邪恶的精华所构成。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Night Scavver",
+			"name": "夜色独眼印鱼",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"夜色独眼印鱼长达15尺。它们的颜色就如同荒宇本身：白色斑点（代表星星）洒落在黑暗的斑点和彩色的图案中。它们会毫不畏惧地闯进魔法船的气囊之中，并攻击甲板上的船员。",
+						"煮熟的夜色独眼印鱼肉在荒宇间的酒馆中非常流行。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Night Scavver.webp"
+					},
+					"credit": "Jessica Nguyen",
+					"width": 1251,
+					"height": 463
+				}
+			]
+		},
+		{
+			"ENG_name": "Plasmoid Boss",
+			"name": "流浆体头目",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Plasmoids",
+				"name": "流浆体",
+				"source": "BAM",
+				"_mod": {
+					"entries": {
+						"mode": "setProp",
+						"value": [
+							{
+								"type": "entries",
+								"entries": [
+									"有时，由于某种生体异常，一个流浆体在成年（20岁左右）后会产生体积膨胀。流浆体利用其增大的体型和力量对更弱小的生物发号施令，从而可以轻易地篡取权力，聚拢起一帮忠诚的下属、佞臣和潜在的篡夺者。流浆体头目可能会是一个公会的主人，一个犯罪企业的领导者，一个流浆体社区的大王，或是一艘魔法船的船长。无论它们为自己争取到什么样的角色，除了已有的力量和体型之外，流浆体头目还需要不可小觑的魅力和智慧，才能长久地保有权力。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Plasmoid Boss.webp"
+					},
+					"credit": "Cory Trego-Erdner",
+					"width": 1000,
+					"height": 986
+				}
+			]
+		},
+		{
+			"ENG_name": "Plasmoid Explorer",
+			"name": "流浆体探索者",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"漫游癖迫使一些流浆体探索星界并探访物质位面的不同世界。这样的探索者通常会轻装上阵，将其财产放在背包或类似的容器中。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Plasmoid Explorer.webp"
+					},
+					"credit": "Brian Valeza",
+					"width": 1000,
+					"height": 1167
+				}
+			]
+		},
+		{
+			"ENG_name": "Plasmoid Warrior",
+			"name": "流浆体战士",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"这些经过战斗淬炼的流浆体可以使其外表面变得更加坚硬，使其自身的防护能力可与轻型护甲相比。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Plasmoid Warrior.webp"
+					},
+					"credit": "Irina Nordsol",
+					"width": 1000,
+					"height": 1279
+				}
+			]
+		},
+		{
+			"ENG_name": "Plasmoids",
+			"name": "流浆体",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"有时，由于某种生体异常，一个流浆体在成年（20岁左右）后会产生体积膨胀。流浆体利用其增大的体型和力量对更弱小的生物发号施令，从而可以轻易地篡取权力，聚拢起一帮忠诚的下属、佞臣和潜在的篡夺者。流浆体头目可能会是一个公会的主人，一个犯罪企业的领导者，一个流浆体社区的大王，或是一艘魔法船的船长。无论它们为自己争取到什么样的角色，除了已有的力量和体型之外，流浆体头目还需要不可小觑的魅力和智慧，才能长久地保有权力。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"漫游癖迫使一些流浆体探索星界并探访物质位面的不同世界。这样的探索者通常会轻装上阵，将其财产放在背包或类似的容器中。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"这些经过战斗淬炼的流浆体可以使其外表面变得更加坚硬，使其自身的防护能力可与轻型护甲相比。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Psurlon",
+			"name": "灵蠕妖",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"灵蠕妖是一种邪恶的、生活在星界的蠕虫状生物。一个完全长大的样本有7英尺长。它们的腿部末端是蹄子，手臂的末端则是三根长长的手指。灵蠕妖没有眼睛的头部类似于蚯蚓，上面有一张长满牙齿的大嘴。灵蠕妖以色彩丰富的长袍为装饰，很少穿戴盔甲或携带武器。",
+						"灵蠕妖的寿命长达数千年，因为它们大部分时间都居住在星界深渊。每隔一百年左右，灵蠕妖就会离开它们的星界据点，入侵荒宇系，并沉浸在一个被称为\"凡世盛宴\"的、长达7年的仪式中，在此期间，它们会尽可能多地吞噬知性生命，然后返回星界。灵蠕妖更喜欢人类和半身人的肉，但也不介意在其它种族身上大快朵颐。它们会利用自己的法术能力，来潜入它们的目标受害者的定居点。",
+						"在物质位面中，已知灵蠕妖会与夺心魔合作。它们会一起收集可以进食的受害者；夺心魔吞噬受害者的大脑，而灵蠕妖则享用猎物的其余部分。由于这个联盟，吉斯洋基人憎恶灵蠕妖，并攻击在星界深渊中能找到的灵蠕妖堡垒。",
+						"当灵蠕妖死亡时，其它灵蠕妖会将其尸体存放在一个安全的地方。当尸体腐烂时，灵蠕妖就在里面产下一个或多个卵。这些卵在24小时后孵化，每一个都会诞生出一条微型蠕虫。在接下来的七天里，这些蠕虫以尸体为食并相互吞食，直到只剩下一只。这条蠕虫从其死亡宿主的腐烂遗体中爬出来，成为一个成年灵蠕妖。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Psurlon.webp"
+					},
+					"credit": "Brynn Metheney",
+					"width": 995,
+					"height": 1292
+				}
+			]
+		},
+		{
+			"ENG_name": "Psurlon Leader",
+			"name": "灵蠕妖领袖",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"每一百个灵蠕妖中就有一个突变体，在身体两端各有一个头，而且智力超群。其他灵蠕妖都会寻求双头者的领导。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Psurlon Leader.webp"
+					},
+					"credit": "Brynn Metheney",
+					"width": 1000,
+					"height": 965
+				}
+			]
+		},
+		{
+			"ENG_name": "Psurlon Ringer",
+			"name": "灵蠕妖假替者",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"灵蠕妖可以使用魔法来模仿一个特定中型类人生物。首先，灵蠕妖必须吃下它想模仿的生物。然后它进入持续8小时的心灵出神状态，结束时它就会变成所吃生物的样子。灵蠕妖会获得该生物的记忆和语言，但不会获得其职业特性或其它能力。这种转变是永久性的，只有通过祈愿术才能解除。无论外表如何，灵蠕妖假替者仍然是一个异怪，其它灵蠕妖也能认出它的真身。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Reigar",
+			"name": "雷加尔人",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"雷加尔人曾是类似于章鱼的头足纲动物。他们居住在伊斯加德的波涛汹涌的大海之中，直到该位面的诸神改造了他们。他们具有能发出生物光的雀斑和改变肤色的能力。荣光（或称光晕）围绕在他们每个个体的身边。这团明灭不定的魔法性尘云会随机改变颜色以及反制攻击。",
+						"带着天生的大胆，雷加尔人从伊斯加德的大海中走出，踏向陆地以检验自身的勇气。而当伊斯加德无休止的战斗开始令他们感到厌倦之后，一些雷加尔人就选择了前往星界海与荒宇之中寻求荣光。许多个体都受到了艺术追求的驱使，但每一个雷加尔人都有自己对艺术的定义。对于一些雷加尔人来说，战争即是艺术的最高形式。但也有其他的雷加尔人创造了一些更温和的艺术。",
+						"雷加尔人在荒宇和星界海间漫游以寻求艺术灵感，他们乘坐自己创造的有机共生体船舰旅行（见\"美学舰兽\"）。每位雷加尔人都拥有一件名为华严的魔法物品，这是雷加尔人创造且只有他们自己能够与之同调的物品。如果该物品丢失或被毁，雷加尔人需要花费{@dice 1d10 + 20}天来制作另一件。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Reigar.webp"
+					},
+					"credit": "Shawn Wood",
+					"width": 1000,
+					"height": 1232
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Reigar-2.webp"
+					},
+					"credit": "Simon Dominic",
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Scavvers",
+			"name": "独眼印鱼",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"棕色独眼印鱼长达10尺，颜色从阳光下的棕金色到深褐色不等。它们消化一餐的食物需要好几天，在这段时间内，它们只会出于自卫而攻击。",
+						"棕色独眼印鱼喜欢把猎物囫囵吞下。这种生物的胃里充满了有毒气体，能杀死所有被吞下后尚且存活的生物。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"灰色独眼印鱼长达6尺，通常结群而行。血液的气味会让它们疯狂地掠食，但只要伤害到它就会削弱它的力量，让它放弃攻击。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"夜色独眼印鱼长达15尺。它们的颜色就如同荒宇本身：白色斑点（代表星星）洒落在黑暗的斑点和彩色的图案中。它们会毫不畏惧地闯进魔法船的气囊之中，并攻击甲板上的船员。",
+						"煮熟的夜色独眼印鱼肉在荒宇间的酒馆中非常流行。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"虚空独眼印鱼长达20尺。每条都是有着漆黑皮革的独狼威胁。当大部分其他独眼印鱼还满足于厨房残羹剩饭时，虚空独眼印鱼已经在追逐厨师本人。",
+						"虚空独眼印鱼可以从眼中放出一条隐形射线，令其目标陷入恐慌，考虑到虚空独眼印鱼的体型和习性，这种恐惧往往只会更为强烈。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Solar Dragon",
+			"name": "太阳龙",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"太阳龙（也被称为光耀龙或恒星龙）出生在恒星的中心。它在巢穴外的时间主要用于巡逻其领土和猎取食物。这种龙拥有着蛇形的身体，一对位于腹侧的肢体末端是长长的鳍，散发光芒的雾状翅膀，以及闪闪发光的五彩鳞片。它即使在刺眼的强光下也能看得很清楚。",
+						"太阳龙和所有的龙类一样喜欢宝藏，但是在荒宇这个没有空气的虚空中，它们更看重食物。太阳龙通常以鲸驮骊、独眼印鱼和其他形式的太空野生动物为食。一条太阳龙可能会将远处的魔法船误认为是潜在的猎物，并且在意识到自己的错误并转向离开之前就进入了船只武器的射程之内。一个聪明或有经验的船长不会把龙的接近当作敌意的信号。众所周知，被攻击的太阳龙会将那些冒犯它的船只打得粉身碎骨。",
+						"太阳龙是领地性的食肉动物，它们的行为也与此相符。一条青年太阳龙可能会宣称对一条小行星带拥有主权，因为那里食物相对充足；而一条远古太阳龙可能会将整个荒宇系视为自己的狩猎场。它们往往对类人生物敬而远之，因为它们觉得类人生物既暴力又令人厌烦。在太阳龙巢穴中被发现的入侵者可能会遭到抵抗，随后则是对他们的敌意，尤其是在巢穴中有蛋的情况下。",
+						"太阳龙蛋拥有着黑曜石材质的、黑色的、发光的、不透明的壳。当蛋接近孵化时，蛋壳会变成半透明的，让来自未诞雏龙的翅膀之光穿过。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Solar Dragon Eggs.webp"
+					},
+					"credit": "Olga Drebas",
+					"width": 850,
+					"height": 889
+				}
+			]
+		},
+		{
+			"ENG_name": "Solar Dragon Wyrmling",
+			"name": "太阳龙雏龙",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Solar Dragon",
+				"name": "太阳龙",
+				"source": "BAM",
+				"_mod": {
+					"images": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "image",
+								"href": {
+									"type": "internal",
+									"path": "bestiary/BAM/Solar Dragon Wyrmling.webp"
+								},
+								"credit": "Lars Grant-West",
+								"width": 884,
+								"height": 1000
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Space Clown",
+			"name": "太空小丑",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"太空小丑是一处名叫\"小丑天宇\"的荒宇系内的居民。这些人类曾经住在这个荒宇系中的三个环形世界中，并将信仰奉献给一位狂欢之神。它们的崇拜仪式以庆典和滑稽为主。随着时间的推移，人们的幸福已经紧紧系于对一种名为\"激颤狂喜（Thrill Joy）\"的灵药之上，对它的消费需求也是日益增长。直到人们对其上瘾以后才发现，这种灵药是它们信仰的牧师以从恶魔脓液与傻瓜花（Bozo Flower）的花蜜中提取出来的成分制作的。最终，\"激颤狂喜\"将这些忠实的信徒们变成了如同邪魔一般的生物，而它们小丑一样的外表正是所谓的\"祝福\"。",
+						"太空小丑从多瓦尔企鹅人商人（见\"{@creature 多瓦尔企鹅人|BAM}\"）那里获取了它们的第一个法驱魔舵。随后又探访了其他的荒宇系，与许多族裔都有过接触。通过这些遭遇，对小丑的爱与恐惧被散播到了多元宇宙的各个角落，正如太空小丑们自己正在做的那样。",
+						"太空小丑们四处劫掠，以类人生物的血肉为食。它们搭乘着装饰华丽的舰船航行于太空之中，时而会停留在有生物居住的星球上，它们会在那里搭起狂欢的帐篷，吸引那些好奇的观客走进它们的魔爪。它们装备着只有它们能够使用、色彩各异的射线枪；这些玩具在别人手里是完全无害的。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Space Clown.webp"
+					},
+					"credit": "Scott Murphy",
+					"width": 1000,
+					"height": 972
+				}
+			]
+		},
+		{
+			"ENG_name": "Space Eel",
+			"name": "太空鳗鱼",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"太空鳗鱼会避免与比自己巨大的生物发生正面接触，除非它们饿得发慌。这些5尺长的食腐动物可能会尾随一艘魔法船，并以它们从船体上剥落的藤壶为食。荒宇的猎人们会试图捕杀这些鳗鱼来获取它们的肉\u2014\u2014这工作说起来容易做起来难。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Space Eel.webp"
+					},
+					"credit": "Matt Stewart",
+					"width": 1000,
+					"height": 1281
+				}
+			]
+		},
+		{
+			"ENG_name": "Space Guppy",
+			"name": "太空孔雀鱼",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"太空孔雀鱼是种2-3尺长，如同鱼一样的生物，会游弋在荒宇和星界海中。怯蕴阿灵航天士、妖精以及其他微型生物偶尔也会将太空孔雀鱼当作坐骑。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Space Guppy.webp"
+					},
+					"credit": "Alayna Danner",
+					"width": 1000,
+					"height": 812
+				}
+			]
+		},
+		{
+			"ENG_name": "Space Hamster",
+			"name": "太空仓鼠",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"第一批太空仓鼠是法师们用魔法将巨型太空仓鼠缩小到迷你的尺寸所制造出来的，因此它们的创造者称它们为迷你巨型太空仓鼠。这种魔法还让太空仓鼠变得更聪明，甚至能够心灵感应。",
+						"这些温和的啮齿类动物是产自荒宇的生物，但有不可计数的成员已经找到了前往物质位面其他世界的通路，在那里，它们直接被称之为仓鼠。它们还会小心翼翼地不让附近的大多数生物注意到它们能够进行心灵感应。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Space Mollymawk",
+			"name": "太空信天翁",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"太空信天翁在荒宇中就像物质位面里的信天翁一样常见。它们会栖息在魔法船的船体上，在需要时会从一艘船的气囊飞到另一艘船上的气囊去。",
+						"完全成长的个体高约3尺，翼展约10尺，吃一切能吃的东西。如果找到了一个可靠的食物来源，就会在附近逗留（一般来说是艘船），直到食物匮乏以后才会离开。迷信的荒宇航天士们普遍认为杀死太空信天翁是非常不吉利的。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Space Mollymawk.webp"
+					},
+					"credit": "Olga Drebas",
+					"width": 1000,
+					"height": 1157
+				}
+			]
+		},
+		{
+			"ENG_name": "Space Swine",
+			"name": "太空猪",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"太空猪是一种有翼野猪，由多瓦尔企鹅人为了多种用途而饲养。它们可以作为小型生物的坐骑，也能成为优秀的追踪者和有力的驮兽。为战斗而训练的太空猪通常穿戴半身板甲具装，并被称为死灭嚎风。",
+						"完全成长的个体肩高约3尺，长5至6尺。太空猪什么都吃，但更喜欢吃松露。太空猪肉如果配苹果酱烤着吃会十分美味。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Space Swine.webp"
+					},
+					"credit": "Brynn Metheney",
+					"width": 1000,
+					"height": 708
+				}
+			]
+		},
+		{
+			"ENG_name": "Ssurran",
+			"name": "沙蜥人",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"沙蜥人污染者可以使周遭植物变得荒芜，同时从身处这些地方的其他生物身上汲取生命能量。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"沙蜥人投毒者在它们的武器上涂上毒素并投掷能够释放有毒气体的炸弹。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ssurran Defiler",
+			"name": "沙蜥人污染者",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Ssurran",
+				"name": "沙蜥人",
+				"source": "BAM",
+				"_mod": {
+					"entries": {
+						"mode": "setProp",
+						"value": [
+							{
+								"type": "entries",
+								"entries": [
+									"沙蜥人污染者可以使周遭植物变得荒芜，同时从身处这些地方的其他生物身上汲取生命能量。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Ssurran Defiler.webp"
+					},
+					"credit": "Shawn Wood",
+					"width": 858,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Ssurran Poisoner",
+			"name": "沙蜥人投毒者",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"沙蜥人投毒者在它们的武器上涂上毒素并投掷能够释放有毒气体的炸弹。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Ssurran Poisoner.webp"
+					},
+					"credit": "Shawn Wood",
+					"width": 916,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Starlight Apparition",
+			"name": "星光幽体",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"那些在荒宇和星界海中殒命的不幸灵魂所产生的透明投影被称为星光幽体。每个星光幽体都有一个发光的、无实体的外观，与以前的自己很相似，但眼睛会发光。",
+						"星光幽体与幽魂不同。幽魂注定在其葬身之地不断萦绕，直到它尚在人世时无法实现的承诺与目标得以完成，而星光幽体的目的却是为了帮助它人避开或克服危险的障碍，又或完成一项艰难壮举。当一个死者的灵魂从来世的安息之地，在神灵或其他强大的天界实体的帮助下，将自己的一个灵体副本投射到遥远的地方时，星光幽体就诞生了。幽体的存在只是为了完成其想要完成的任务；当使命完结，就将消散，永不复还。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Starlight Apparition.webp"
+					},
+					"credit": "Nikki Dawes",
+					"width": 740,
+					"height": 1782
+				}
+			]
+		},
+		{
+			"ENG_name": "Thri-kreen",
+			"name": "螳螂人",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"螳螂人角斗士喜欢在战斗中检验自己的能力，并经常用敌人的鲜血涂抹自己的甲壳。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"螳螂人猎手是熟练的觅食者和追踪者。在荒宇中遇到的一位螳螂人猎手可能正在追捕一名逃犯或领导着一群海盗。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"螳螂人秘术师使用灵能来应对荒宇中的困难地形、变为隐形，并从猎物身上汲取生命。它们通常作为螳螂人船只的法驱者。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Thri-kreen Gladiator",
+			"name": "螳螂人角斗士",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Thri-kreen",
+				"name": "螳螂人",
+				"source": "BAM",
+				"_mod": {
+					"entries": {
+						"mode": "setProp",
+						"value": [
+							{
+								"type": "entries",
+								"entries": [
+									"螳螂人角斗士喜欢在战斗中检验自己的能力，并经常用敌人的鲜血涂抹自己的甲壳。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Thri-kreen Gladiator.webp"
+					},
+					"credit": "Cory Trego-Erdner",
+					"width": 1000,
+					"height": 1163
+				}
+			]
+		},
+		{
+			"ENG_name": "Thri-kreen Hunter",
+			"name": "螳螂人猎手",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"螳螂人猎手是熟练的觅食者和追踪者。在荒宇中遇到的一位螳螂人猎手可能正在追捕一名逃犯或领导着一群海盗。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Thri-kreen Hunter.webp"
+					},
+					"credit": "Brian Valeza",
+					"width": 850,
+					"height": 1304
+				}
+			]
+		},
+		{
+			"ENG_name": "Thri-kreen Mystic",
+			"name": "螳螂人秘术师",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"螳螂人秘术师使用灵能来应对荒宇中的困难地形、变为隐形，并从猎物身上汲取生命。它们通常作为螳螂人船只的法驱者。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Thri-kreen Mystic.webp"
+					},
+					"credit": "Claudio Pozas",
+					"width": 1000,
+					"height": 823
+				}
+			]
+		},
+		{
+			"ENG_name": "Vampirate",
+			"name": "吸血骇盗",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"吸血骇盗是那些拒绝平静地进入来世的已死海盗的会行走和说话的躯壳。它们驾驶着船只在虚空中穿梭，掠夺毫无戒心的船只，并以那些不幸与他们遭遇的人的生命能量为食。",
+						"吸血骇盗的外形十分憔悴，眼睛是乳白色的，皮肤干燥得如同羊皮纸一样。有些人会用假腿和钩爪代替肢体，那是它们不幸往事留下来的纪念。吸血骇盗和吸血鬼一样有着尖牙，但它们不会用尖牙从猎物身上吸取生物体液，它们觉得这种行为十分的不体面。取而代之，吸血骇盗通过触摸，或者是在短距离内吸取另一个生物的能量来补充生命能量。当饱食了其他生物的能量以后，它们的外表看起来会更加健壮，但依然不像是个活人。",
+						"吸血骇盗也会吃、喝和睡，但只是出于喜好，而不是出于必要。它们在木制的棺材或装满坟墓泥土的箱子里休息。如果没有这样的容器，它们也可以把自己的船舱看作是一个大棺材，然后躺在货舱的中间。当它们不在睡觉或掠劫的时候，吸血骇盗们就会用朗姆酒和唱些悲伤的船歌来打发时间。",
+						"一艘由吸血骇盗驾驶的船舶通常载有一个或更多的幽影\u2014\u2014那是部分吸血骇盗受害者的不死生物残骸。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Vampirate.webp"
+					},
+					"credit": "Julio Reyna",
+					"width": 1000,
+					"height": 1466
+				}
+			]
+		},
+		{
+			"ENG_name": "Vampirate Captain",
+			"name": "吸血骇盗船长",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"一群吸血骇盗船员的行为方式完全取决于船长的情绪和性格。一艘船的船员可能表现得像一群凶残的暴徒，而另一艘船可能遵守古老的骑士准则。一位船长可能允许被掠夺船只的船员活下来，而另一位船长可能只会在海盗的尾迹中留下漂浮物和废弃物。",
+						"吸血骇盗船长通常由一名不朽者同伴陪同，例如蠕行之爪或鬼火。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Vampirate Mage",
+			"name": "吸血骇盗魔法师",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"吸血骇盗们的船需要一个施法者来操纵法驱魔舵。吸血骇盗魔法师几乎不会离开魔舵。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Void Scavver",
+			"name": "虚空独眼印鱼",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"虚空独眼印鱼长达20尺。每条都是有着漆黑皮革的独狼威胁。当大部分其他独眼印鱼还满足于厨房残羹剩饭时，虚空独眼印鱼已经在追逐厨师本人。",
+						"虚空独眼印鱼可以从眼中放出一条隐形射线，令其目标陷入恐慌，考虑到虚空独眼印鱼的体型和习性，这种恐惧往往只会更为强烈。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Void Scavver.webp"
+					},
+					"width": 1695,
+					"height": 619
+				}
+			]
+		},
+		{
+			"ENG_name": "Young Lunar Dragon",
+			"name": "青年月亮龙",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Lunar Dragons",
+				"name": "月亮龙",
+				"source": "BAM"
+			}
+		},
+		{
+			"ENG_name": "Young Solar Dragon",
+			"name": "青年太阳龙",
+			"source": "BAM",
+			"_copy": {
+				"ENG_name": "Solar Dragon",
+				"name": "太阳龙",
+				"source": "BAM"
+			}
+		},
+		{
+			"ENG_name": "Zodar",
+			"name": "佐达尔人",
+			"source": "BAM",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"佐达尔人是一种二足的实体，其整个身体都被包裹在一层黑曜石外骨骼中。除了两道好似眼睛一般的垂直而狭长的缝隙以外，它的面部没有任何特征，它的脸上更是看不出任何的情绪或痛苦。而在它的盔甲外骨骼下，就是佐达尔人那由极度紧密的肌肉纤维所组成的身体，这让它超乎想象地强壮和沉重。一位佐达尔人重达1500磅。",
+						"没有人知道有多少佐达尔人存在或它们来自哪里，但最流行的假设是，它们是某些早已被遗忘之神的造物。佐达尔人与其他智慧生物交互的方式比单纯的冷漠更冷。它们只是保持沉默。而当某个佐达尔人最终开始有所动作的时候，这行动背后的动机也并不总是确切明晰。",
+						"对这种行为的一种解释是，每个佐达尔人都身负一项特定的使命，并且会不懈地追求目标，但它对不涉及其任务的情况会有奇怪的反应，因为它不知道自己还能做什么。另一种理论则是，所有佐达尔人都在协同工作以实现某些主要目标。第三种不那么不祥的想法是，佐达尔人在它们的造物主消失后失去了目标感，它们正在努力寻找自己的新角色。",
+						"佐达尔人一生中有三次机会可以通过周围的空气发出声音。当它感到有必要说话时，它会明智地斟酌语句。它还能通过扭曲多元宇宙的结构来施放祈愿术法术作为自己的最终行动\u2014\u2014一旦法术被施放，它也将随之被摧毁。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BAM/Zodar.webp"
+					},
+					"credit": "Shawn Wood",
+					"width": 850,
+					"height": 1011
+				}
+			]
+		}
+	]
+}

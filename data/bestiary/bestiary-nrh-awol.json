@@ -1,0 +1,41 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
+		"otherSources": {
+			"monster": {
+				"NRH-TCMC": "NRH-AWoL",
+				"MM": "NRH-AWoL"
+			}
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Szikzith",
+			"name": "Szikzith",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "NRH-AWoL",
+			"page": 6,
+			"_copy": {
+				"ENG_name": "Giant Wolf Spider",
+				"name": "巨狼蛛",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "蜘蛛",
+						"with": "Szikzith",
+						"flags": "i"
+					}
+				}
+			},
+			"int": 8,
+			"tokenCustom": true,
+			"hasToken": true
+		}
+	]
+}

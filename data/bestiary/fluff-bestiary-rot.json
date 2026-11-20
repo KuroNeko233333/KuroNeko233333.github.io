@@ -1,0 +1,151 @@
+{
+	"monsterFluff": [
+		{
+			"ENG_name": "Ice Toad",
+			"name": "冰蟾蜍",
+			"source": "RoT",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"阿劳瑟托尔吸引了许多冰蟾蜍来到奥亚维加顿，它们帮助维护冰山和龙的众多财宝和战利品。这些冰蟾蜍在这方面做得很好，这要归功于他们异常聪明的领袖，玛夫尔布。",
+										"以海豹、海鸟和冰猎者为它们捕捉的鱼为食，奥亚维加顿的冰蟾并不自动对陌生人表现出敌意。一旦角色进入阿拉索托的巢穴，他们可能会发现这些生物对他们的任务有所帮助。冰蟾通常只说它们自己晦涩难懂的语言。奥亚维加顿的冰蟾懂得一点龙语和乌卢克语（冰猎者的语言），但他们的口音很重，发音糟糕。马尔夫尔布由于与阿拉索托长时间交谈，精通龙语。",
+										"当角色遇到冰蟾蜍时，它们的智能在它们行动或尝试说话之前都不会显现出来。即便如此，角色们可能也不会意识到冰蟾蜍的叫声是一种语言。冰蟾蜍用四肢行走，但它们有蹼的前脚出奇地灵巧。一些冰蟾蜍在脖子上挂着的袋子里携带工具和有用物品。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Iskander",
+			"name": "伊斯坎德尔",
+			"source": "RoT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/RoT/Iskander.webp"
+					},
+					"width": 714,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Maccath the Crimson",
+			"name": "绯红的麦卡丝",
+			"source": "RoT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/RoT/Maccath the Crimson.webp"
+					},
+					"width": 697,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Naergoth Bladelord",
+			"name": "纳尔戈斯·剑领主",
+			"source": "RoT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/RoT/Naergoth Bladelord.webp"
+					},
+					"width": 680,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Neronvain",
+			"name": "内洛维",
+			"source": "RoT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/RoT/Neronvain.webp"
+					},
+					"width": 850,
+					"height": 1229
+				}
+			]
+		},
+		{
+			"ENG_name": "Severin",
+			"name": "赛维林",
+			"source": "RoT",
+			"entries": [
+				{
+					"ENG_name": "Nelvik the Pseudodragon",
+					"name": "伪龙奈尔维克",
+					"type": "inset",
+					"entries": [
+						"赛维林有一只名为奈尔维克的中立邪恶{@creature 伪龙}同伴。这只伪龙从不远离它的主人。在召唤提亚马特的仪式期间，它畏缩在龙女王庙宇的中央尖塔的一个岩架上。如果赛维林被杀，奈尔维克会试图与赛维林的杀戮者交友，等待合适的时机进行复仇。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/RoT/Severin.webp"
+					},
+					"width": 667,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Tiamat",
+			"name": "提亚马特",
+			"source": "RoT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/RoT/Tiamat.webp"
+					},
+					"width": 1277,
+					"height": 856
+				}
+			]
+		},
+		{
+			"ENG_name": "Varram",
+			"name": "瓦拉姆",
+			"source": "RoT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/RoT/Varram.webp"
+					},
+					"width": 796,
+					"height": 1000
+				}
+			]
+		}
+	]
+}

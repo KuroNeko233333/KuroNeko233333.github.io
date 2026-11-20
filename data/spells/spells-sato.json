@@ -1,0 +1,103 @@
+{
+	"spell": [
+		{
+			"ENG_name": "Gate Seal",
+			"name": "界门封锁",
+			"source": "SatO",
+			"page": 12,
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "minute"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "一把损坏的传送门钥匙，作为本法术的耗材",
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"选择施法距离内你可见的一处30尺立方区域，你加固这片区域的位面结构。这片区域内的所有传送门都将关闭且在法术持续时间内无法被再次开启。任何能进行位面旅行或开启传送门的法术和其他效应（例如{@spell 异界之门}或{@spell 位面转移}）如果被用于进入这片区域或离开这片区域的话，都将自动失败。这片立方区域是无法移动的。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"当你使用6环或更高环阶的法术位施展本法术时，本法术将一直持续至被解除为止。"
+					]
+				}
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Warp Sense",
+			"name": "侦测扭曲",
+			"source": "SatO",
+			"page": 12,
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "刃藤的一片叶子"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"持续时间内，你能够感知到你周围30尺范围内的传送门，且不论那些传送门是否开启。",
+				"如果你以这种方式侦查到一个传送门，你可以使用你的动作来研究它。进行一次{@dc 15}的施法属性检定。若检定成功，你将得知传送门的目的地位面及其所需的传送门钥匙，随后法术结束。若检定失败，你将一无所获且无法再次使用该法术探测该传送门，除非你再次施放该法术。",
+				"本法术的侦测能力可以穿透大部分的障碍，但3尺厚的木材或泥土、1尺厚的岩石、1寸厚的常见金属、或薄薄一层铅都能阻挡本法术的侦测。"
+			],
+			"miscTags": [
+				"UA"
+			],
+			"translator": "不全书"
+		}
+	]
+}

@@ -1,0 +1,162 @@
+{
+	"monsterFluff": [
+		{
+			"ENG_name": "Clockwork Behir",
+			"name": "发条青足龙蛇",
+			"source": "OoW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OoW/Clockwork Behir.webp"
+					},
+					"width": 1000,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Dagdra Deepforge",
+			"name": "达格德拉·深炉",
+			"source": "OoW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"牧师将他们神明的教诲带给普通民众。他们是寺庙和神殿的精神领袖，通常在他们的社区中拥有影响力。邪恶的牧师可能公开在暴君下工作，或者他们可能是隐藏在善良社会阴影中的宗教派别的领袖，监督堕落的仪式。一个牧师通常有一个或多个助手来帮助进行宗教仪式和其他神圣的职责。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/AI/Dagdra Deepforge.webp"
+					},
+					"width": 1222,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Enormous Tentacle",
+			"name": "巨大的触手",
+			"source": "OoW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/AI/Enormous Tentacle.webp"
+					},
+					"width": 792,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Gildha Duhn",
+			"name": "吉尔达·杜恩",
+			"source": "OoW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OoW/Gildha Duhn.webp"
+					},
+					"width": 792,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Grunka",
+			"name": "格朗卡",
+			"source": "OoW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/OoW/Grunka.webp"
+					},
+					"width": 818,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Onyx",
+			"name": "缟玛瑙",
+			"source": "OoW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"Onyx 是一只普通的猫，具有特殊特征和修改后的攻击方式，这些仅在 {@adventure 黑曜石升腾者|OoW|6|黑曜石升腾者} 遭遇中使用时适用。",
+						"更多信息可以在那次遭遇中找到，了解如何进行。",
+						"如果没有那次遭遇的特殊情况，Onyx可以被视为一只标准的猫"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/AI/Onyx.webp"
+					},
+					"width": 783,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Two Dry Cloaks",
+			"name": "两件干斗篷",
+			"source": "OoW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"统治者、贵族、商人、行会首领以及其他富有的个体，在残酷政治的世界中利用间谍来获取优势。间谍经过训练，能秘密收集信息。忠诚的间谍宁愿死亡，也不愿泄露可能危及自身或雇主的信息。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/AI/Two Dry Cloaks.webp"
+					},
+					"width": 792,
+					"height": 1000
+				}
+			]
+		}
+	]
+}

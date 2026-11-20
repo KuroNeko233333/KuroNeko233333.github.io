@@ -1,0 +1,177 @@
+{
+	"monsterFluff": [
+		{
+			"ENG_name": "Ash Zombie",
+			"name": "灰烬丧尸",
+			"source": "LMoP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"黑暗中的某处传来断断续续的咕噜呻吟声。一个拖着残腿，举着肿胀胳臂和破损手掌的身影，蹒跚地出现在视野。僵尸不停的前进，摧毁任何未能逃脱的生物。"
+									]
+								},
+								{
+									"ENG_name": "Ash Zombies",
+									"name": "灰烬丧尸",
+									"type": "entries",
+									"entries": [
+										"这些丧尸是由三十年前霍特诺山喷发时的魔法灾难所创造。它们使用丧尸资料卡，并具有以下额外特性。",
+										{
+											"ENG_name": "Ash Puff",
+											"name": "灰烬喷发",
+											"type": "entries",
+											"entries": [
+												"丧尸第一次受到伤害时，其5尺范围内的任何活体生物必须成功通过{@dc 10}的体质豁免检定，否则在攻击检定、豁免检定和属性检定上获得劣势，持续1分钟。生物可以在其每回合结束时重复进行豁免检定，若成功则提前终止效应。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Evil Mage",
+			"name": "邪恶法师",
+			"source": "LMoP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"邪恶的法师（例如Iarno Albrek和Hamun Kost）渴望获得奥术力量，并居住在偏远的地方，在那里他们可以不受干扰地进行可怕的魔法实验。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mormesk the Wraith",
+			"name": "缚灵·墨梅斯克",
+			"source": "LMoP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"一个邪灵是特别怀有恶意的生物的无形残余。大多数邪灵可以将其杀死的生物变成邪灵不死生物仆从。莫梅斯克选择不这样做，更倾向于让死者安息。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/LMoP/Mormesk the Wraith.webp"
+					},
+					"width": 651,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Nezznar the Black Spider",
+			"name": "\"黑蜘蛛\"那兹纳尔",
+			"source": "LMoP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"卓尔（黑暗精灵）是一个狡猾、阴谋多端的地下种族，他们崇拜蜘蛛恶魔女王洛斯。",
+								"卓尔社会是严格的母系社会。男性卓尔被降为仆人的角色，虽然大多数接受战士训练，但少数人，比如内扎尔，成为了熟练的法师。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/LMoP/Nezznar the Black Spider.webp"
+					},
+					"width": 635,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Redbrand Ruffian",
+			"name": "红标帮恶霸",
+			"source": "LMoP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"红标暴徒是些小流氓和无情的执行者，擅长恐吓和暴力。他们为了金钱工作，没有任何顾忌。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Sildar Hallwinter",
+			"name": "修达·霍温特",
+			"source": "LMoP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"希达尔·哈尔温特是一位退役士兵和雇佣剑客，他来自无冬城特城。他是联盟领主的忠诚成员，这是一个统一北方各自由城市和城镇的政治组织。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Venomfang",
+			"name": "毒牙",
+			"source": "LMoP",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/LMoP/Venomfang.webp"
+					},
+					"width": 1300,
+					"height": 1330
+				}
+			]
+		}
+	]
+}

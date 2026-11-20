@@ -1,0 +1,266 @@
+{
+	"monsterFluff": [
+		{
+			"ENG_name": "Ebonclaw",
+			"name": "黑檀爪",
+			"source": "ToFW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToFW/ParvazOpheliaEbonclaw.webp"
+					},
+					"width": 1700,
+					"height": 1136
+				}
+			]
+		},
+		{
+			"ENG_name": "Eyestalk of Gzemnid",
+			"name": "格泽姆尼德的眼柄",
+			"source": "ToFW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"格泽姆尼德是一个欺骗、气体和遮蔽的巨眼魔神。",
+						"巨眼怪神Gzemnid的领域位于外域之下。大多数进入这些神秘、充满气体的洞穴的入口都位于混乱对齐的城门城镇附近\u2014\u2014比如Bedlam、Sylvania或Xaos\u2014\u2014但Gzemnid的领域即使按照外域变化无常的标准来看也是难以捉摸的。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Farrow",
+			"name": "法罗",
+			"source": "ToFW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToFW/FarrowPlum.webp"
+					},
+					"width": 850,
+					"height": 2267
+				}
+			]
+		},
+		{
+			"ENG_name": "Gertrube",
+			"name": "格特鲁布",
+			"source": "ToFW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToFW/Gertrube.webp"
+					},
+					"width": 850,
+					"height": 2266
+				}
+			]
+		},
+		{
+			"ENG_name": "Josbert Plum",
+			"name": "乔斯伯特·布拉姆",
+			"source": "ToFW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToFW/FarrowPlum.webp"
+					},
+					"width": 850,
+					"height": 2267
+				}
+			]
+		},
+		{
+			"ENG_name": "Kopoha",
+			"name": "科波哈",
+			"source": "ToFW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToFW/Kopoha.webp"
+					},
+					"width": 1700,
+					"height": 1136
+				}
+			]
+		},
+		{
+			"ENG_name": "Modron Planar Incarnate",
+			"name": "魔冢位面化身",
+			"source": "ToFW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToFW/X01Modron.webp"
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Morte",
+			"name": "莫提",
+			"source": "ToFW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"会说话的骷髅莫特（Morte）是一个脾气暴躁的跨位面旅行者，他从九层地狱的永恒惩罚中被解救出来。莫特因生前所撒的谎言而受折磨，他用一种病态的幽默感和令人难以忍受的讽刺来掩饰自己的痛苦。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToFW/Morte.webp"
+					},
+					"width": 682,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Ophelia",
+			"name": "奥菲莉亚",
+			"source": "ToFW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToFW/ParvazOpheliaEbonclaw.webp"
+					},
+					"width": 1700,
+					"height": 1136
+				}
+			]
+		},
+		{
+			"ENG_name": "Parvaz",
+			"name": "帕瓦兹",
+			"source": "ToFW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToFW/ParvazOpheliaEbonclaw.webp"
+					},
+					"width": 1700,
+					"height": 1136
+				}
+			]
+		},
+		{
+			"ENG_name": "R04M",
+			"name": "R04M",
+			"source": "ToFW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToFW/R04M.webp"
+					},
+					"width": 850,
+					"height": 1147
+				}
+			]
+		},
+		{
+			"ENG_name": "Shariel",
+			"name": "沙里尔",
+			"source": "ToFW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToFW/Shariel.webp"
+					},
+					"width": 850,
+					"height": 1532
+				}
+			]
+		},
+		{
+			"ENG_name": "Vecna Impersonator",
+			"name": "维克那模仿者",
+			"source": "ToFW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToFW/VecnaImpersonator.webp"
+					},
+					"width": 850,
+					"height": 1942
+				}
+			]
+		},
+		{
+			"ENG_name": "Whirlwyrm",
+			"name": "漩涡龙",
+			"source": "ToFW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToFW/Whirlwyrm.webp"
+					},
+					"width": 1700,
+					"height": 1136
+				}
+			]
+		},
+		{
+			"ENG_name": "X01",
+			"name": "X01",
+			"source": "ToFW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToFW/X01Modron.webp"
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Zaythir",
+			"name": "扎伊西尔",
+			"source": "ToFW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToFW/Zaythir.webp"
+					},
+					"width": 1700,
+					"height": 1136
+				}
+			]
+		}
+	]
+}

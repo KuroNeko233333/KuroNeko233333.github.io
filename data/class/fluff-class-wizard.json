@@ -1,0 +1,720 @@
+{
+	"classFluff": [
+		{
+			"ENG_name": "Wizard",
+			"name": "法师",
+			"source": "PHB",
+			"entries": [
+				{
+					"ENG_name": "Wizard",
+					"name": "法师",
+					"type": "section",
+					"entries": [
+						"精灵身上的银袍正是其身份象征。只见她凝神闭眼，摒除战场干扰后平静的咏唱法术。随着手指在身前轻盈的舞动，完成的法术结成一枚小小的火焰宝珠直投向敌人的队伍中，转瞬爆发成一片火海吞噬了所有的士兵。",
+						"经过反复认真的检查，人类法师终于在光滑石地板上刻完这幅复杂的法阵。他将铁粉撒过每一条或平直或柔曲的刻线，再念起一串冗长的咒语。而随着咒语完成，法阵中打开一个深邃的洞穴，并带来一股异域的硫磺气味。",
+						"地城某个交叉路口中，一个侏儒伏在地上掷出几块刻着神秘符记的碎骨，喃喃着充满力量的词句。他闭眼细看着影像，并缓缓点着头，然后睁开双眼指向左面的路。",
+						"法师是最优秀的魔法使用者，他们以其独特的施法方式被归类定义为一个职业。汲取弥漫于宇宙的精妙魔力后，法师可以用法术生成爆发的火焰和射弧的闪电，或是施行微妙的欺瞒或强硬的精神控制。他们的魔法可以从其他存在位面唤来怪物，可以透过时间的缝隙瞥见未来，还可以将敌人的尸体化作绝对听命的丧尸。他们最强大的法术甚至可以转化物质，唤来陨石，甚至撕裂次元的障壁，打开前往其他世界的传送门。",
+						{
+							"ENG_name": "Scholars of the Arcane",
+							"name": "奥术学者",
+							"type": "entries",
+							"entries": [
+								"魔法狂野而神秘，多样而实用。它的力量促使着想要掌控其神秘的人们不断研究探索。其中一些人甚至渴求着随意塑造现实的神之力。施法作业表面上只是简单的念些奇怪的词句，时而还要挥舞下手势或是需要一点特殊的材料，而这表象的背后还包含着必须经历多年的学徒生涯，以及无数个小时的研究才能习得的专业知识。",
+								"法师们为魔法而生，也为魔法而死，此外其他的一切都属次要。他们通过实验增长经验并学习新的法术，有时也会向其他法师学习，或者从古老典和碑文中研究，甚至向一些精通魔法的古老生物（比如各种妖精）求教。"
+							]
+						},
+						{
+							"ENG_name": "The Lure of Knowledge",
+							"name": "知识的诱惑",
+							"type": "entries",
+							"entries": [
+								"法师的生活几乎从不平凡。法师能过上的最\"平凡\"生活也就是在大学或者图书馆中当一名智者或讲师，为人们传授多元宇宙的奥秘。还有一些法师则会出售其服务而成为预言家，服役于军队，或者甚至用其力量实施犯罪或支配他人。",
+								"不过知识与力量的诱惑足以令最不想冒险的法师走出其安全的图书馆和实验室，前往那些废墟和失落城市中。绝大多数法师坚信远古时代的同行们掌握了一些现今已失传许久的魔法奥秘。而只要找到这些秘密，就能获得远超现有魔法的强大力量。"
+							]
+						},
+						{
+							"ENG_name": "Creating a Wizard",
+							"name": "创建法师",
+							"type": "entries",
+							"entries": [
+								"创建一名法师时，他的背景故事必须要以至少一次不同寻常的事件为主导。你的角色第一次接触魔法时又何感受？你如何发现自己有着施法天赋？你是具有天生的才能，还是只靠努力学习坚持练习？你是否曾遇见过魔法生物或者古老的典籍，而它教给你魔法的基础？",
+								"什么敦促你在研习之路上不断前进？你第一次尝试了魔法的知识后是否让你产生更多饥渴？你是否听说了一个隐秘的知识宝库，而它尚未被其他法师搜刮过？也许你仅仅是渴望在面对危险时，实际运用一下你新学到的魔法技能？",
+								{
+									"ENG_name": "Quick Build",
+									"name": "快速建卡",
+									"type": "entries",
+									"entries": [
+										"你可以按以下建议快速构建一名法师。首先，将你的最高属性分配给智力，次高属性分配给体质和敏捷。然后选择{@background 智者}背景。最后，选择戏法{@spell 法师之手}、{@spell 光亮术}和{@spell 冷冻射线}，以及1环法术{@spell 燃烧之手}、{@spell 魅惑类人}、{@spell 羽落术}、{@spell 法师护甲}、{@spell 魔法飞弹}和{@spell 睡眠术}，并将其加入法术书。"
+									]
+								}
+							]
+						}
+					],
+					"page": 112,
+					"source": "PHB"
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"巫艺需要理解，了解魔法怎样而又为何运作。我们努力增进对其的理解，并已然铸就数个世纪以来文明的超卓进步。"
+							],
+							"by": "幻术师金宝"
+						},
+						"世间仅有少数人能施行魔法，而在他们之中，法师站在此技艺之巅。纵然是他们中最差劲的，也能够操纵魔力并嘲笑大自然的法则。而他们中学识最为渊博者，其法术能让整个世界为之战栗。",
+						"法师为他们的技艺付出最昂贵的代价便是时光。学习、授课与实验耗费数年的光阴，以求驾驭魔法并将之牢记于心。对于冒险的法师与其他向往着魔法的至高境界的施法者来说，学习永不终结，对力量与知识的渴求亦如是。",
+						"假若你正在扮演一个法师，利用好这个机会，使得你的角色不仅仅是一个老套的念咒机。使用下面的建议添加一些有趣的细节，诠释你的法师与世界的交互方式。",
+						{
+							"type": "quote",
+							"entries": [
+								"看好。我最喜欢这个把戏。",
+								"嗨，法师，你现在不能使用魔法咯。哦，现在你可以了。哦，现在你又不能了，哈哈哈！"
+							],
+							"by": "珊娜萨"
+						},
+						{
+							"ENG_name": "Spellbook",
+							"name": "法术书",
+							"type": "entries",
+							"entries": [
+								"你的法师角色最为珍贵的财富\u2014\u2014你的法术书，可能看起来平淡无奇，封面并未暗示着里面的内容。或者你可能布置一些特别之处，就如同许多法师那样，创造一个与众不同的法术书。假如你还没有这样的玩意儿，你的目标之一可能便是找寻一个让你不同于他人的法术书\u2014\u2014因其独特的外观或制造手段。",
+								{
+									"type": "table",
+									"caption": "法术书",
+									"colLabels": [
+										"{@dice d6}",
+										"法术书"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"铁铸卷册，酸蚀为文。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"写满咒文的长带的皮革，为便于携带而缠于法杖之上。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"一个破损的卷宗，写满了仅有你能识别的象形文字。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"刻有符文的石头，存于布袋之中。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"一本被龙炎所焚坏的书，裸露出其中的法术笔迹。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"由完全漆黑的纸面组成的卷册，笔迹仅于昏暗与黑暗中可见。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Ambition",
+							"name": "野心",
+							"type": "entries",
+							"entries": [
+								"鲜有法师扛起魔法研习的重担而不抱有个人目的。许多法师将魔法作为获得切实利益的工具，亦或是追求物质，亦或是渴求地位，亦或是为了自己，亦或是为了同伴。对于另外一些法师，魔法的理论本身极富吸引力，推动这些法师们追逐知识，以支撑奥法的新论或验证旧说。",
+								"除了那些显而易见的理由，为什么你的法师角色学习魔法？你想达到怎么样的成就？如果你没有仔细思量过这些问题，你现在就可以这样做，而你给出的答案很可能会影响你未来的路。",
+								{
+									"type": "table",
+									"caption": "野心",
+									"colLabels": [
+										"{@dice d6}",
+										"野心"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"你将证明，诸神并未如人们所想象得那般强大。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"你学海的终点乃是不朽。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"假若你能充分了解魔法，你能够解锁其全部的威能以开创一个平等的新纪元。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"魔法是危险的工具，你以之保卫你所爱。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"奥术的威能必须从滥用者手中夺去。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"你将成为，世上数代人所能见过的，最伟大的法师。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Eccentricity",
+							"name": "怪癖",
+							"type": "entries",
+							"entries": [
+								"夜以继日孤苦的研习，会对任何人的社交能力造成负面影响。纵然是一开始就不同于凡人的法师，亦不例外。一两个怪癖未必是缺点，其提供趣味或是成为多种多样的标签。",
+								"假如你的角色拥有一个怪癖，它是身体上的抽搐亦或是心灵上的？你是因为它才在某些圈子里变得众所皆知的吗？你是否为克服之而斗争，亦或是拥抱了那使你名声更盛的戏言。",
+								{
+									"type": "table",
+									"caption": "怪癖",
+									"colLabels": [
+										"{@dice d6}",
+										"怪癖"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"你无止地跺脚并时常惹恼周边的人。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"你记忆力超乎凡人，但你可以毫不顾忌地假装心不在焉\u2014\u2014如果这符合你的目的的话。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"你从不在看看天花板上悬挂什么之前就走进一个房间。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"你最为珍爱的财富是一个放在药瓶里的死虫子。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"当你希望他人不要打扰你的时候，你便开始自言自语，这通常很有效。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"你的时尚感和妆容，或更多缺乏的东西，时常让人误以为你是个乞丐。"
+										]
+									]
+								}
+							]
+						}
+					],
+					"page": 58,
+					"source": "XGE"
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/PHB/Wizard.webp"
+					},
+					"width": 826,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Wizard",
+			"name": "法师",
+			"source": "XPHB",
+			"entries": [
+				{
+					"ENG_name": "Wizard",
+					"name": "法师",
+					"type": "section",
+					"source": "XPHB",
+					"page": 164,
+					"entries": [
+						"法师以他们对魔法内在运作机理的详尽研究而著称。他们施展的法术既可以化为爆焰、电弧，亦可以进行微妙的欺瞒与壮丽转化。他们的魔法可以从其他存在位面咒唤怪物、预见未来、或形成防护屏障。他们最强大的法术可以将一种物质转化为另一种，从天空召来流星，抑或打开通往其他世界的大门。",
+						"大多数法师将魔法当作学术研究。他们研究魔法的理论基础，特别是诸法术学派的分类。在此基础上，像毕格比Bigby，塔莎Tasha，魔邓肯Mordenkainen和悠兰德Yolande等著名法师还发明了他们的标志性法术，这些法术至今仍在被多元宇宙各处的施法者使用。",
+						"贤者或讲师可能是法师最接近平凡的生活。其他法师则充当提供有偿服务的顾问，在军队中服役，或是致力于以犯罪与支配为生。",
+						"然而，即使是最不喜冒险的法师也会因知识的诱惑走出安全的实验室和图书馆，一头扎进失落的城市和遗迹。大多数法师相信他们古代文明的同行知晓失落于时间长河中的魔法之秘，而发现这些秘密则会解锁通往力量之路，当代的任何魔法都无法与之匹敌。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"title": "一位博学的奥术法力使用者",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Wizard.webp"
+					},
+					"credit": "Billy Christian",
+					"width": 1700,
+					"height": 2259
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/120-04-035.elf-queen-yolande.webp"
+					},
+					"title": "精灵女王悠兰德（Yolande）施展法术\"悠兰德王者威仪（Yolande's Regal Presence）\"用以震慑红龙",
+					"credit": "April Prime",
+					"width": 2037,
+					"height": 1440
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/121-04-036.wizard-book.webp"
+					},
+					"credit": "Jane Katsubo",
+					"width": 1934,
+					"height": 731
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/122-04-037.wizard-leomund.webp"
+					},
+					"title": "法师李欧蒙（Leomund）研读法术书，准备他的魔法",
+					"credit": "Michele Giorgi",
+					"width": 2155,
+					"height": 1440
+				}
+			]
+		}
+	],
+	"subclassFluff": [
+		{
+			"ENG_name": "War Magic",
+			"name": "战争魔法",
+			"shortName": "战争",
+			"source": "XGE",
+			"className": "法师",
+			"classSource": "PHB",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"战争魔法？它会让你变成一名战法师么？我听说这群人啊，他们都穿的一身紫。然后我看你穿的不紫... 哦，那你失格了！换个职业去！"
+					],
+					"by": "珊娜萨"
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/XGE/War Wizard.webp"
+					},
+					"width": 858,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Chronurgy Magic",
+			"name": "时间魔法",
+			"shortName": "时间",
+			"source": "EGW",
+			"className": "法师",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/EGW/Chronurgy Wizard.webp"
+					},
+					"width": 753,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Graviturgy Magic",
+			"name": "重力魔法",
+			"shortName": "重力",
+			"source": "EGW",
+			"className": "法师",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/EGW/Graviturgy Wizard.webp"
+					},
+					"width": 811,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Bladesinging",
+			"name": "剑咏者",
+			"shortName": "剑咏者",
+			"source": "TCE",
+			"className": "法师",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/TCE/Bladesinging Wizard.webp"
+					},
+					"width": 1200,
+					"height": 935
+				}
+			]
+		},
+		{
+			"ENG_name": "Order of Scribes",
+			"name": "书士会",
+			"shortName": "书士",
+			"source": "TCE",
+			"className": "法师",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/TCE/Scribes Wizard.webp"
+					},
+					"width": 800,
+					"height": 1353
+				}
+			]
+		},
+		{
+			"ENG_name": "Abjurer",
+			"name": "防护师",
+			"shortName": "防护师",
+			"source": "XPHB",
+			"className": "法师",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"title": "防护师子职",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Abjurer Wizard.webp"
+					},
+					"credit": "Caroline Gariba",
+					"width": 1071,
+					"height": 1440
+				}
+			]
+		},
+		{
+			"ENG_name": "Diviner",
+			"name": "预言师",
+			"shortName": "预言师",
+			"source": "XPHB",
+			"className": "法师",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"title": "预言师子职",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Diviner Wizard.webp"
+					},
+					"credit": "Jodie Muir",
+					"width": 850,
+					"height": 1725
+				}
+			]
+		},
+		{
+			"ENG_name": "Evoker",
+			"name": "塑能师",
+			"shortName": "塑能师",
+			"source": "XPHB",
+			"className": "法师",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"title": "塑能师子职",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Evoker Wizard.webp"
+					},
+					"credit": "Caroline Gariba",
+					"width": 803,
+					"height": 1440
+				}
+			]
+		},
+		{
+			"ENG_name": "Illusionist",
+			"name": "幻术师",
+			"shortName": "幻术师",
+			"source": "XPHB",
+			"className": "法师",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"title": "幻术师子职",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Illusionist Wizard.webp"
+					},
+					"credit": "Polar Engine",
+					"width": 850,
+					"height": 2211
+				}
+			]
+		},
+		{
+			"ENG_name": "Bladesinger",
+			"name": "剑咏者",
+			"shortName": "剑咏者",
+			"source": "FRHoF",
+			"className": "法师",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/FRHoF/Bladesinger Wizard.webp"
+					},
+					"credit": "Erion Makuo",
+					"width": 850,
+					"height": 2375
+				}
+			]
+		},
+		{
+			"ENG_name": "Conjurer",
+			"name": "咒法师",
+			"shortName": "咒法师",
+			"source": "AU",
+			"className": "法师",
+			"classSource": "XPHB",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"魔网之中并不存在物理距离这一概念。只要拥有足够的魔力，仅凭一个念头，你便能抵达存在中的任何地方。"
+					],
+					"by": "艾拉斯卓"
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/AU/Conjurer Wizard.webp"
+					},
+					"title": "咒法法师",
+					"credit": "Ignatius Budi",
+					"width": 850,
+					"height": 2213
+				}
+			]
+		},
+		{
+			"ENG_name": "Enchanter",
+			"name": "惑控师",
+			"shortName": "惑控师",
+			"source": "AU",
+			"className": "法师",
+			"classSource": "XPHB",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"在魔法面前，意识就像粘土一样可被轻易揉捏塑造。切记，不可滥用此等力量。"
+					],
+					"by": "艾拉斯卓"
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/AU/Enchanter Wizard.webp"
+					},
+					"title": "惑控法师",
+					"credit": "Gaboleps",
+					"width": 850,
+					"height": 2139
+				}
+			]
+		},
+		{
+			"ENG_name": "Necromancer",
+			"name": "死灵师",
+			"shortName": "死灵师",
+			"source": "AU",
+			"className": "法师",
+			"classSource": "XPHB",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"对于强大的魔法师而言，生与死不过是可以相互转换的存在状态。"
+					],
+					"by": "艾拉斯卓"
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/AU/Necromancer Wizard.webp"
+					},
+					"title": "死灵法师",
+					"credit": "Jordan Kerbow",
+					"width": 850,
+					"height": 1955
+				}
+			]
+		},
+		{
+			"ENG_name": "Transmuter",
+			"name": "变化师",
+			"shortName": "变化师",
+			"source": "AU",
+			"className": "法师",
+			"classSource": "XPHB",
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"与魔网共鸣，你肉身的局限便会逐渐消解。"
+					],
+					"by": "艾拉斯卓"
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/AU/Transmuter Wizard.webp"
+					},
+					"title": "变化法师",
+					"credit": "Michele Giorgi",
+					"width": 850,
+					"height": 2077
+				}
+			]
+		}
+	]
+}

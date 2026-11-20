@@ -1,0 +1,153 @@
+html:root .bk-opt-head {
+  display: grid;
+  grid-template: "art name source" auto "art info info" 1fr / auto minmax(0, 1fr) auto;
+  gap: 8px 10px;
+  align-items: start;
+  container-type: inline-size;
+}
+html:root .bk-opt-name { grid-area: name; min-width: 0; }
+html:root .bk-opt-name > * { min-width: 0; }
+html:root .bk-opt .ve-stats__h-name { overflow-wrap: anywhere; }
+html:root .bk-opt .stats__wrp-h-source { grid-area: source; }
+html:root .bk-opt .bk-opt-head > :is(.bk-opt-cells, .bk-opt-meta) { grid-area: info; }
+html:root .bk-opt-art {
+  grid-area: art;
+  align-self: start;
+  position: relative;
+  display: grid;
+  place-items: center;
+  box-sizing: border-box;
+  width: 64px;
+  height: 64px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1.5px solid var(--bk-gold);
+  border-radius: 6px;
+  color: var(--bk-head);
+  background: radial-gradient(circle at 50% 40%, color-mix(in srgb, var(--bk-gold) 18%, transparent), transparent 70%),
+    radial-gradient(closest-side, var(--bk-glow), transparent);
+}
+html:root .bk-opt-portrait { width: 88px; height: 112px; }
+html:root .bk-opt-art svg { width: 30px; height: 30px; border-radius: 50%; outline: 1px solid var(--bk-gold); outline-offset: 6px; }
+html:root .bk-opt-art img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; visibility: hidden; }
+html:root .bk-opt-art img.bk-opt-landscape { object-fit: cover; object-position: center; }
+html:root .bk-opt-art[data-kind="image"] { cursor: zoom-in; }
+html:root .bk-opt-art[data-kind="image"] img { visibility: visible; }
+html:root .bk-opt-art[data-kind="image"] svg { visibility: hidden; }
+html:root .bk-opt-art:focus-visible { outline: 2px solid var(--bk-gold); outline-offset: 2px; }
+html:root .bk-opt-cells {
+  display: grid;
+  grid-template-columns: repeat(var(--bk-opt-columns), minmax(0, 1fr));
+  overflow: hidden;
+  gap: 1px;
+  margin-bottom: 4px;
+  border: 1px solid color-mix(in srgb, var(--bk-gold) 45%, var(--v3-rule));
+  border-radius: 6px;
+  background: color-mix(in srgb, var(--bk-gold) 28%, var(--v3-card));
+}
+html:root .bk-opt-cell {
+  min-width: 0;
+  padding: 2px 8px;
+  background: var(--v3-card);
+  color: var(--v3-ink);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+  font-variant-numeric: tabular-nums;
+}
+html:root .bk-opt-wide { grid-column: 1 / -1; }
+html:root .bk-opt-cell > .bk-opt-label { display: block; color: var(--v3-ink2); font-size: 11px; font-weight: 400; }
+html:root .bk-opt-meta { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 5px; color: var(--v3-ink2); font-size: 13px; font-weight: 400; line-height: 1.4; }
+html:root .bk-opt-meta > i { font-style: normal; }
+html:root .bk-opt .bk-opt-tag { display: inline; border-radius: 999px; padding: 1px 6px; background: var(--v3-deep); color: var(--v3-ink2); font-size: 12px; font-weight: 700; }
+html:root .bk-opt .bk-opt-foot { color: var(--v3-ink2); font-size: 12px; }
+html:root .bk-opt-foot > .orn {
+  position: relative;
+  height: 1px;
+  margin: 0 0 5px;
+  background: linear-gradient(90deg, transparent, var(--bk-gold) 12%, var(--bk-gold) 88%, transparent);
+}
+html:root .bk-opt-foot > .orn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -3px;
+  width: 6px;
+  height: 6px;
+  border: 1px solid var(--bk-gold);
+  background: var(--v3-card);
+  transform: rotate(45deg);
+}
+html:root .bk-opt .entry-title-inner:not(.tag) { font-family: var(--bk-heading-font); font-weight: 900; color: var(--bk-head); }
+html:root .bk-opt .bk-opt-en { font: italic 400 13px Georgia, serif; color: var(--v3-ink2); }
+html:root .bk-opt .ve-rd__table th { font-size: 11px; border-bottom: 1px solid var(--bk-gold); color: var(--v3-ink2); }
+html:root .bk-opt .ve-rd__table > tbody > tr:nth-child(even) > td { background-color: var(--bk-row-stripe); }
+html:root .bk-opt .ve-rd__table > tbody > tr > td:first-child { font-family: var(--bk-heading-font); font-weight: 900; font-variant-numeric: tabular-nums; }
+html:root .bk-opt-list-icon,
+html:root .bk-opt-list-icon svg,
+html:root .bk-opt-filter svg { display: inline-block; flex: none; width: 14px; height: 14px; color: var(--bk-head); }
+html:root .bk-opt-list-icon, html:root .bk-opt-filter svg { vertical-align: -2px; margin-inline-end: 4px; }
+html:root .bk-opt-filter[aria-pressed="true"] svg { color: inherit; }
+html.nt4.ours-l5 #pagecontent .ve-stats__th-name > .bk-opt-head { align-items: start; padding-bottom: 3px; }
+html:root #stat-tabs:has(.stat-tab-gen) + #wrp-pagecontent #pagecontent .bk-opt-head { padding-top: 8px; }
+html.nt3 .bk-opt .bk-opt-summary-only::before,
+html.nt3 .bk-opt .bk-opt-summary-only::after { content: none; }
+@layer vetools {
+  html:root .bk-opt .ve-rd__table > tbody > tr > td:first-child,
+  html:root .bk-opt .ve-rd__table > tbody > tr > td:first-child .ve-muted { color: var(--bk-head) !important; }
+  html:root .ve-hwin .bk-opt-preview > tbody > tr > :is(th, td) { padding-inline: 12px !important; }
+  html:root .ve-hwin:has(.bk-opt-preview) .ve-hoverborder { background-color: var(--v3-rule) !important; border-color: var(--bk-gold) !important; }
+  html:root .bk-opt .bk-opt-foot { padding-top: 5px !important; }
+}
+@container (width < 560px) {
+  html:root .bk-opt-cells { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+/* The disclosure is a sibling of the native link, with its own hit target. */
+html.nt4.ours-l5[data-ours-page="races"] #listcontainer:has(.rf-list) #filtertools {
+	display: flex !important;
+	align-items: center;
+	height: 24px;
+}
+html.nt4.ours-l5[data-ours-page="races"] #filtertools .sort {
+	flex: 1;
+	color: var(--v3-ink2);
+}
+html.nt4.ours-l5[data-ours-page="races"] #filtertools [aria-pressed="true"] {
+	color: var(--bk-head);
+	font-weight: 700;
+}
+.rf-list { display: flex; flex-direction: column; reading-flow: flex-visual; }
+.rf-list > .ve-lst__row { position: relative; flex: none; }
+html.nt4.ours-l5 #listcontainer .rf-list .ve-lst__row-inner { min-height: 38px; }
+/* Every family row keeps the triangle slot, so names line up whether or not it has variants. */
+html.nt4.ours-l5 #listcontainer .rf-list > .ve-lst__row:not(.rf-child) > a {
+	padding-left: 32px !important;
+}
+html.nt4.ours-l5 #listcontainer .rf-list .rf-child > a {
+	padding-left: 44px !important;
+}
+.rf-toggle {
+	position: absolute;
+	z-index: 1;
+	inset: 0 auto 0 3px;
+	margin: auto 0;
+	width: 27px;
+	height: 30px;
+	display: grid;
+	place-items: center;
+	background: transparent;
+	color: var(--v3-ink2);
+	border: 0;
+	border-radius: 3px;
+	cursor: pointer;
+}
+.rf-toggle:hover, .rf-toggle:focus-visible { color: var(--bk-head); background: var(--v3-deep); }
+.rf-toggle::before { content: ""; border: 4px solid transparent; border-right: 0; border-left: 6px solid currentColor; }
+.rf-toggle[aria-expanded="true"]::before { transform: rotate(90deg); }
+.rf-variant { margin-left: 6px; font-size: 12px; color: var(--v3-ink2); }
+html.nt4.ours-l5 #listcontainer .rf-list .rf-current > a {
+	background: var(--v3-card);
+	box-shadow: inset 3px 0 0 var(--bk-head);
+}

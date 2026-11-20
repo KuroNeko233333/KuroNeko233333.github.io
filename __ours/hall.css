@@ -1,0 +1,51 @@
+/* Core-book illustrations; fixed geometry keeps stats and cards independent of image IO. */
+html.nt4 .oh-hero {
+  position: relative; box-sizing: border-box; max-width: none; isolation: isolate;
+  padding: 10px 20px; border: 1px solid var(--bk-class-border); border-radius: 6px;
+  background: var(--v3-card); box-shadow: var(--bk-shadow); overflow: hidden;
+}
+html.nt4 .oh-hero > :not(.oh-art) { position: relative; z-index: 1; width: calc(58% - 20px); }
+html.nt4 .oh-hero .oh-title { margin: 2px 0 4px; }
+html.nt4 .oh-hero .oh-search { margin: 10px 0 6px; border-radius: 6px; background: var(--v3-panel); }
+html.nt4 .oh-art { position: absolute; inset: 0 0 0 58%; z-index: 0; background: repeating-linear-gradient(45deg, var(--bk-art-clear) 0 24px, var(--bk-die) 24px 25px), radial-gradient(ellipse, var(--bk-glow), var(--bk-art-clear) 72%); }
+html.nt4 .oh-art::before { content: ""; position: absolute; left: calc(50% - 23px); top: calc(50% - 23px); width: 46px; height: 46px; border: 1px solid var(--bk-gold); box-shadow: inset 0 0 0 9px var(--v3-card), inset 0 0 0 10px var(--bk-gold); transform: rotate(45deg); }
+html.nt4 .oh-art img, html.nt4 .oh-thumb img { display: block; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: transform .18s; }
+html.nt4 .oh-art img { position: absolute; inset: 0; filter: brightness(var(--bk-hall-brightness)); }
+html.nt4 .oh-art[data-state="ready"] img, html.nt4 .oh-thumb.is-ready img { opacity: 1; }
+html.nt4 .oh-art::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--v3-card), var(--bk-art-clear) 120px); pointer-events: none; }
+html.nt4 .oh-art-caption { position: absolute; z-index: 2; bottom: 8px; right: 8px; display: flex; align-items: center; gap: 10px; max-width: calc(100% - 24px); padding: 5px 8px; border: 1px solid var(--bk-class-border); border-radius: 4px; background: var(--v3-card); color: var(--v3-ink2); font: 12px/18px var(--nt-font); }
+html.nt4 .oh-art-source { color: var(--v3-ink2) !important; text-decoration: none; }
+html.nt4 .oh-art-source:hover { text-decoration: underline; }
+html.nt4 .oh-art-next { flex: none; border: 0; padding: 0; background: var(--bk-art-clear); color: var(--bk-head); font: inherit; cursor: pointer; }
+html.nt4 :is(.oh-art-source,.oh-art-next):focus-visible { outline: 2px solid var(--bk-gold); outline-offset: 2px; }
+html.nt4 .oh-card { position: relative; isolation: isolate; overflow: hidden; border-radius: 6px; }
+html.nt4 :is(.oh-thumb,.oh-thumb-failed) { position: absolute; inset: 0 0 0 70%; z-index: -1; pointer-events: none; overflow: hidden; --oh-thumb-safe-stop: 24px; --oh-thumb-mask-end: 28px; }
+html.nt4 .oh-thumb-failed { z-index: 0; }
+html.nt4 .oh-card:has(.oh-thumb-failed) .oh-card__body { position: relative; z-index: 1; }
+html.nt4 .oh-thumb-failed .bk-img-status > .bk-img-retry:not(:focus-visible) { inset-inline-start: auto; width: 28px; box-sizing: border-box; }
+html.nt4 .oh-thumb-failed img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+/* A shared 28px edge only; everything to its right is the unmasked bitmap. */
+html.nt4 .oh-thumb::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, var(--v3-card) 0px, color-mix(in srgb, var(--v3-card) 92%, var(--bk-art-clear)) var(--oh-thumb-safe-stop), var(--bk-art-clear) var(--oh-thumb-mask-end)); }
+html.nt4 .oh-thumb img { filter: brightness(var(--bk-hall-thumb-brightness)); scale: var(--oh-thumb-crop, 1); }
+html.nt4 .oh-card:hover { background: var(--v3-card); }
+html.nt4 .oh-card:hover .oh-thumb img { transform: scale(1.035); }
+html.nt4 :is(.oh-dir__h,.oh-foot) { color: var(--v3-ink2); }
+@media (min-width: 640px) and (max-width: 899px) {
+  html.nt4 .oh-hero { padding-top: 154px; }
+  html.nt4 .oh-hero > :not(.oh-art) { width: 100%; }
+  html.nt4 .oh-art { inset: 0 0 auto; height: 140px; }
+  html.nt4 .oh-art::after { background: linear-gradient(0deg, var(--v3-card), var(--bk-art-clear) 50px); }
+}
+@media (max-width: 639px) {
+  html.nt4 :is(.oh-thumb,.oh-thumb-failed) { display: none; }
+  html.nt4 .oh-card { border-radius: 12px; }
+  html.nt4 .oh-card:hover { background: var(--bk-btn-card-hover-bg); }
+  html.nt4 .oh-art { display: none; }
+  html.nt4 .oh-hero > :not(.oh-art) { width: 100%; }
+  html.nt4 .oh-hero { padding: 10px 12px; }
+  html.nt4 .oh-hero .oh-search { padding: 0 10px; font-size: 15px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html.nt4 :is(.oh-art,.oh-thumb) img { transition: none; }
+  html.nt4 .oh-card:hover .oh-thumb img { transform: none; }
+}

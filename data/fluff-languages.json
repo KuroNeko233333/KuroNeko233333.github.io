@@ -1,0 +1,420 @@
+{
+	"languageFluff": [
+		{
+			"ENG_name": "Alzhedo",
+			"name": "阿兹多语",
+			"source": "SCAG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/SCAG/Thorass Common.webp"
+					},
+					"width": 850,
+					"height": 278
+				}
+			]
+		},
+		{
+			"ENG_name": "Chessentan",
+			"name": "阙森坦语",
+			"source": "SCAG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/SCAG/Thorass Common.webp"
+					},
+					"width": 850,
+					"height": 278
+				}
+			]
+		},
+		{
+			"ENG_name": "Chondathan",
+			"name": "琼达斯语",
+			"source": "SCAG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/SCAG/Thorass Common.webp"
+					},
+					"width": 850,
+					"height": 278
+				}
+			]
+		},
+		{
+			"ENG_name": "Damaran",
+			"name": "达马拉语",
+			"source": "SCAG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/SCAG/Thorass Common.webp"
+					},
+					"width": 850,
+					"height": 278
+				}
+			]
+		},
+		{
+			"ENG_name": "Draconic",
+			"name": "龙语",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/PHB/Draconic.webp"
+					},
+					"width": 1000,
+					"height": 336
+				}
+			]
+		},
+		{
+			"ENG_name": "Dwarvish",
+			"name": "矮人语",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/PHB/Dwarvish.webp"
+					},
+					"width": 1000,
+					"height": 336
+				}
+			]
+		},
+		{
+			"ENG_name": "Elvish",
+			"name": "精灵语",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/PHB/Elvish.webp"
+					},
+					"width": 1000,
+					"height": 336
+				}
+			]
+		},
+		{
+			"ENG_name": "Giant",
+			"name": "巨人语",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/PHB/Dwarvish.webp"
+					},
+					"width": 1000,
+					"height": 336
+				}
+			]
+		},
+		{
+			"ENG_name": "Gnomish",
+			"name": "侏儒语",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/PHB/Dwarvish.webp"
+					},
+					"width": 1000,
+					"height": 336
+				}
+			]
+		},
+		{
+			"ENG_name": "Goblin",
+			"name": "地精语",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/PHB/Dwarvish.webp"
+					},
+					"width": 1000,
+					"height": 336
+				}
+			]
+		},
+		{
+			"ENG_name": "Illuskan",
+			"name": "伊路斯坎语",
+			"source": "SCAG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/SCAG/Thorass Common.webp"
+					},
+					"width": 850,
+					"height": 278
+				}
+			]
+		},
+		{
+			"ENG_name": "Midani",
+			"name": "米达尼语",
+			"source": "SCAG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/SCAG/Thorass Common.webp"
+					},
+					"width": 850,
+					"height": 278
+				}
+			]
+		},
+		{
+			"ENG_name": "Mulhorandi",
+			"name": "穆尔霍兰德语",
+			"source": "SCAG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/SCAG/Thorass Common.webp"
+					},
+					"width": 850,
+					"height": 278
+				}
+			]
+		},
+		{
+			"ENG_name": "Orc",
+			"name": "兽人语",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/PHB/Dwarvish.webp"
+					},
+					"width": 1000,
+					"height": 336
+				}
+			]
+		},
+		{
+			"ENG_name": "Primordial",
+			"name": "原初语",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/PHB/Dwarvish.webp"
+					},
+					"width": 1000,
+					"height": 336
+				}
+			]
+		},
+		{
+			"ENG_name": "Rashemi",
+			"name": "莱瑟曼语",
+			"source": "SCAG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/SCAG/Thorass Common.webp"
+					},
+					"width": 850,
+					"height": 278
+				}
+			]
+		},
+		{
+			"ENG_name": "Roushoum",
+			"name": "鲁述姆语",
+			"source": "SCAG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/SCAG/Thorass Common.webp"
+					},
+					"width": 850,
+					"height": 278
+				}
+			]
+		},
+		{
+			"ENG_name": "Shou",
+			"name": "受国语",
+			"source": "SCAG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/SCAG/Thorass Common.webp"
+					},
+					"width": 850,
+					"height": 278
+				}
+			]
+		},
+		{
+			"ENG_name": "Sylvan",
+			"name": "木族语",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/PHB/Elvish.webp"
+					},
+					"width": 1000,
+					"height": 336
+				}
+			]
+		},
+		{
+			"ENG_name": "Thayan",
+			"name": "赛尔语",
+			"source": "SCAG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/SCAG/Thorass Common.webp"
+					},
+					"width": 850,
+					"height": 278
+				}
+			]
+		},
+		{
+			"ENG_name": "Tuigan",
+			"name": "图坎语",
+			"source": "SCAG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/SCAG/Thorass Common.webp"
+					},
+					"width": 850,
+					"height": 278
+				}
+			]
+		},
+		{
+			"ENG_name": "Turmic",
+			"name": "图拉米语",
+			"source": "SCAG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/SCAG/Thorass Common.webp"
+					},
+					"width": 850,
+					"height": 278
+				}
+			]
+		},
+		{
+			"ENG_name": "Uluik",
+			"name": "乌鲁逊语",
+			"source": "SCAG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/SCAG/Thorass Common.webp"
+					},
+					"width": 850,
+					"height": 278
+				}
+			]
+		},
+		{
+			"ENG_name": "Undercommon",
+			"name": "地底通用语",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/PHB/Elvish.webp"
+					},
+					"width": 1000,
+					"height": 336
+				}
+			]
+		},
+		{
+			"ENG_name": "Untheric",
+			"name": "恩瑟语",
+			"source": "SCAG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/SCAG/Thorass Common.webp"
+					},
+					"width": 850,
+					"height": 278
+				}
+			]
+		},
+		{
+			"ENG_name": "Waelan",
+			"name": "威兰语",
+			"source": "SCAG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "languages/SCAG/Thorass Common.webp"
+					},
+					"width": 850,
+					"height": 278
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,270 @@
+{
+	"_meta": {
+		"otherSources": {
+			"monster": {
+				"MM": "LRDT"
+			}
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Alax Jadescales",
+			"name": "阿拉克斯·玉鳞",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"龙裔"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "LRDT",
+			"page": 11,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 58,
+				"formula": "9d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 10,
+			"con": 14,
+			"int": 11,
+			"wis": 16,
+			"cha": 15,
+			"skill": {
+				"animal handling": "+5",
+				"survival": "+5"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"resist": [
+				"毒素"
+			],
+			"languages": [
+				"通用语",
+				"龙语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"阿拉克斯施展下列法术之一，以感知为其施法属性（法术豁免{@dc 13}）："
+					],
+					"will": [
+						"{@spell 德鲁伊伎俩}",
+						"{@spell 抵抗术}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 疗伤术}",
+							"{@spell 妖火}",
+							"{@spell 净化饮食}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"阿拉克斯发动两次火焰打击。"
+					]
+				},
+				{
+					"ENG_name": "Fire Strike",
+					"name": "火焰打击",
+					"entries": [
+						"{@atk ms,rs} 命中{@hit 5}，触及5尺或射程60尺，单一目标。{@h}10 ({@damage 2d6 + 3}) 点火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "Breath Weapon (Recharges after a Short or Long Rest)",
+					"name": "吐息武器（短休或长休后充能）",
+					"entries": [
+						"阿拉克斯喷出覆盖15尺锥形区域的火焰，该区域内所有生物须进行一次{@dc 12}的敏捷豁免检定，豁免失败者将受到14（{@damage 4d6}）的火焰伤害，豁免成功者只受半数伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"吐息武器",
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"F"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Ervan Soulfallen",
+			"name": "埃尔文·堕落灵魂",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "LRDT",
+			"page": 11,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 84,
+				"formula": "13d8 + 26"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 14,
+			"int": 11,
+			"wis": 8,
+			"cha": 17,
+			"skill": {
+				"arcana": "3",
+				"deception": "+6"
+			},
+			"passive": 9,
+			"languages": [
+				"通用语",
+				"龙语"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"埃尔文施展下列法术之一，以魅力为其施法属性（法术豁免{@dc 14}）："
+					],
+					"will": [
+						"{@spell 光亮术}",
+						"{@spell 法师之手}"
+					],
+					"daily": {
+						"2": [
+							"{@spell 任意门}"
+						],
+						"1e": [
+							"{@spell 易容术}",
+							"{@spell 浮空术}",
+							"{@spell 法师护甲}"
+						]
+					},
+					"ability": "叉",
+					"displayAs": "action"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"埃尔文使用法杖发动三次奥能爆发。"
+					]
+				},
+				{
+					"ENG_name": "Arcane Blast",
+					"name": "奥能爆发",
+					"entries": [
+						"{@atk ms,rs} 命中{@hit 6}，触及5尺或射程120尺，单一目标。{@h}13（{@damage 3d6 + 3}）点力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Acid Rain (Recharges after a Short or Long Rest)",
+					"name": "酸雨（短休或长休后充能）",
+					"entries": [
+						"酸液从天而降，以埃尔文视野范围120尺内指定的一处为中心点，形成半径10尺高20尺的圆柱形，该区域内所有生物须进行一次{@dc 14}的敏捷豁免检定，豁免失败者受到22（{@damage 4d10}）强酸伤害，豁免成功者只受半数伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"A",
+				"O"
+			],
+			"damageTagsSpell": [
+				"O"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		}
+	]
+}

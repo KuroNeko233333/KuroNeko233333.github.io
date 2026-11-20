@@ -1,0 +1,2343 @@
+{
+	"vehicleFluff": [
+		{
+			"ENG_name": "Apparatus of Kwalish",
+			"name": "夸力许装置",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/DMG/Apparatus of Kwalish.webp"
+					},
+					"credit": "Aaron Hübrich",
+					"width": 1000,
+					"height": 631
+				}
+			]
+		},
+		{
+			"ENG_name": "Apparatus of Kwalish",
+			"name": "夸力许装置",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "items/XDMG/Apparatus of Kwalish.webp"
+					},
+					"credit": "Conceptopolis",
+					"width": 1000,
+					"height": 631
+				}
+			]
+		},
+		{
+			"ENG_name": "Astral Brig",
+			"name": "星界帆船",
+			"source": "MTF",
+			"entries": [
+				"星界战舰是吉斯洋基族的标准军事船只。它需要五名船员操作，并能运送多达六十名乘客。战舰长90尺，宽30尺，甲板下有两层用于住宿和储物空间。它配备了两台弩炮，每台由两名船员操作，并具有每小时12英里的最高速度。"
+			]
+		},
+		{
+			"ENG_name": "Astral Skiff",
+			"name": "星界快艇",
+			"source": "MTF",
+			"entries": [
+				"一艘星界小舟由三名船员操作，可搭载多达一打乘客。吉斯洋基使用这种小型船只，长30尺，宽10尺，在星界进行巡逻，并在物质界进行针对特定目标的快速突袭。小舟的最高速度为每小时15英里。除了乘客携带的武器外，它没有其他武器，并且存储空间有限。"
+			]
+		},
+		{
+			"ENG_name": "Battle Balloon",
+			"name": "战斗气球",
+			"source": "AI",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"{@i 透过这座杳无人烟的山峰上城堡周围的冬日铅云，你看到一个影子出壳。如此巨大的东西，你无法相信它真的能飞行。}",
+								"飞艇在《被遗忘的国度冒险公司》中相对罕见，据信其舰队中拥有的数量不超过五艘。但这些飞行器在商业和战斗中的无与伦比的实用性，使得公司标准的战斗气球成为任何分部都梦寐以求的升级。",
+								{
+									"ENG_name": "Origins and Operations",
+									"name": "起源与运营",
+									"type": "entries",
+									"entries": [
+										"商业保密条令和好斗的市场营销让人很难搞清楚飞船到底起源于何处。有些人认为战斗气球是由艾奎兹玄有限责任公司前端奥术研究所与开发部共同设计的。但哈鲁阿的法师们在很久以前就开发出了相似的飞船；而拜龙教的空中载具也广为人知。尽管如此，在已知拥有或建造飞船的少数派系和组织中，艾奎兹玄有限责任公司可能因其高调的空中冒险而最为人所知。可以肯定的是，哈鲁阿的魔法师们和拜龙教的教徒们从未把桶装机器人招上船，更不要说直接用船把一头暴龙压扁了。"
+									]
+								},
+								{
+									"ENG_name": "The Hard Cloud",
+									"name": "铅云号",
+									"type": "inset",
+									"entries": [
+										"铅云号是艾奎兹玄有限责任公司的旗舰，正因如此，它配得上一篇旁注。这艘伟大的战斗气球上武器多如牛毛，包括船头一支凶猛的猎龙长矛，而且看起来用过不止一次。铅云号历经无数战斗行动，至今仍完好无损。除了这艘船的功绩传说外，关于这奇妙载具的谣言也层出不穷。它是否如某些人所说，是靠一个被束缚的火巨灵提供动力？船舱里是否有着艾奎兹玄有限责任公司所有高层的克隆体，包括欧米·德兰本人？食堂里是否真的雇佣了一位可怕的幽灵大厨？答案就在甲板之下，很少有人有机会得知真相。"
+									]
+								},
+								{
+									"ENG_name": "Flying Battle Vehicle",
+									"name": "浮空战船",
+									"type": "entries",
+									"entries": [
+										"本公司飞船的标准设计特色是一个覆盖着绳网的巨型气球。几条拖曳绳索将气球与下方悬挂的金属和木制船体连接在一起。在甲板中央，气球正下方，坐落着一个大型魔法熔炉，其强大的升力据传与困在其中的元素生物有关。飞船船长控制着这个奥术熔炉，并通过位于船尾的螺旋桨提供前进推力，在船头通过舵轮操控船只。飞船底部的金属滑条让战斗气球能够降落在地面上。"
+									]
+								},
+								{
+									"ENG_name": "Options and Armaments",
+									"name": "选项与武装",
+									"type": "entries",
+									"entries": [
+										"每个组织或机构都会定制其飞艇的进攻能力，但大多数战斗气球都配备多门鱼叉炮，非常适合对抗和捕捉空中威胁。经历大量战斗的战斗气球通常都储备充足的其他远程武器和长杆兵器，用于船对船和船员对船员的战斗。",
+										"无论是私人出资还是在总部极其谨慎的条款下租借，战斗气球都可以通过独特装备进行定制\u2014\u2014不同的攻城武器、起吊和货物装备等等\u2014\u2014使每艘飞艇都独一无二。然而，大多数被收购公司战斗气球上最具威力的武器是绿色火焰弩炮，这是一种巨大的弩炮，其弩箭带有奥术能量脉冲，无论命中何处都会以强大的爆炸力场引爆。"
+									]
+								},
+								{
+									"ENG_name": "Vehicle Rules",
+									"name": "载具规则",
+									"type": "inset",
+									"entries": [
+										"战斗气球与机械眼魔是载具，因此它们有与之相关的特殊规则。最相关的是，载具拥有六项属性值（力量、敏捷、体质、智力、感知和魅力）及相应的调整值。载具的力量决定了它的体型和重量。敏捷代表了它控制的难易程度。载具的体质涵盖了它的耐久性和构造质量。载具通常在智力、感知和魅力上的属性值为0。如果载具某项属性值为0，它会自动在任何使用该属性值的属性检定或豁免检定中失败。载具如何配备船员以及它在回合中可以采取什么动作在载具的资料卡中描述。"
+									]
+								},
+								{
+									"ENG_name": "Mobile Franchise Headquarters",
+									"name": "移动总部",
+									"type": "entries",
+									"entries": [
+										"战斗气球或许是加盟公司可用的移动总部选项中最受追捧的一个。浮空船的多样性允许快速运输货物、雇佣兵和战利品。这样的船只还能让你从棘手的局势和失败的交易中快速脱身。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AI/battle-balloon.webp"
+					},
+					"credit": "Kim Van Deun",
+					"width": 1501,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Bombard",
+			"name": "炮舰",
+			"source": "AAG",
+			"entries": [
+				"炮舰们由诘弗人打造。她们的主要特征便是口径硕大的巨炮，其发射的巨型炮弹能将其他舰船炸成碎片（大炮售价包含在舰船的价格之中）。一艘炮舰可以最多携带 14 枚巨型炮弹，每个重达 10 吨。而这些炮弹也占据了舰船大部分的载货量。在舰船尾甲板上安装有一个绞盘，它被用于将巨型炮弹装填到舰船上。",
+				"炮舰可以漂浮和航行于水上，但是无法安全地降落于地面（它的龙骨会导致它侧翻）。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Bombard.webp"
+					},
+					"credit": "Ned Rogers",
+					"width": 1700,
+					"height": 1135
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Bombard Map.webp"
+					},
+					"imageType": "map",
+					"id": "000",
+					"title": "炮舰甲板平面图",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 150,
+						"offsetX": 37,
+						"offsetY": 9,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Bombard Map Player Version.webp"
+					},
+					"imageType": "mapPlayer",
+					"mapParent": {
+						"id": "000"
+					},
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 150,
+						"offsetX": 37,
+						"offsetY": 9,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Damselfly Ship",
+			"name": "蜻蛉舰",
+			"source": "AAG",
+			"entries": [
+				"这艘快速但小巧的舰船主要由金属制成。她不能漂浮在水面上，但她的腿使其能够安全地降落在地面上。 机翼后方的滑动舱口可以用来进入舰船的投石机炮塔。 舰船上的货舱可以很容易地改装成船员舱或另一个武器甲板。",
+				"蜻蛉舰通常用作信使舰船和武装运输工具。 探险家和海盗喜欢她们，因为她们既快速又坚固。 出于同样的原因，军事领袖也酷爱将它们用作指挥舰。",
+				"蜻蛉舰的主人们是骄傲的，热衷于给他们的舰船涂上五颜六色的图案，也喜欢用特殊的设备来定制他们的舰船。蜻蛉舰船主们的大型私人聚会并不少见；他们利用这些聚会来炫耀自己的舰船，并在小行星带和其他障碍赛道中相互比赛，以获得奖金或吹嘘的权利。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Damselfly Ship.webp"
+					},
+					"credit": "Kent Davis",
+					"width": 1700,
+					"height": 1135
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Damselfly Ship Map.webp"
+					},
+					"imageType": "map",
+					"id": "000",
+					"title": "蜻蛉舰甲板平面图",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 78,
+						"offsetX": -22,
+						"offsetY": 17
+					},
+					"width": 1700,
+					"height": 2200
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Damselfly Ship Map Player Version.webp"
+					},
+					"imageType": "mapPlayer",
+					"mapParent": {
+						"id": "000"
+					},
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 78,
+						"offsetX": -22,
+						"offsetY": 17
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Demon Grinder",
+			"name": "恶魔粉碎者",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"恶魔粉碎者是一辆庞大的装甲四轮战车，当它用它那巨大的粉碎球几岁路上额障碍物和敌人时，会发出巨大的轰鸣声。战车前前部装备有铁爪，让它看着有点像是垃圾车。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/BGDIA/Demon Grinder.webp"
+					},
+					"width": 1702,
+					"height": 1101
+				}
+			]
+		},
+		{
+			"ENG_name": "Devil's Ride",
+			"name": "魔鬼座驾",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"魔鬼座驾是一种两轮的地狱战争机器，操纵方式类似于摩托车。它配备有尖刺轮胎，发出尖啸声的引擎，以及外形像是一个正在咧嘴笑的魔鬼的整流罩，还配有喇叭和刹车。这种战车用速度和操作性能来弥补其武器的不足。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/BGDIA/Devil's Ride.webp"
+					},
+					"width": 1702,
+					"height": 1101
+				}
+			]
+		},
+		{
+			"ENG_name": "Flying Fish Ship",
+			"name": "飞鱼舰",
+			"source": "AAG",
+			"entries": [
+				"除了{@vehicle 太空帆船|AAG|太空帆船}，飞鱼舰是荒宇中最常见的舰船，深受商人和冒险者的喜爱。",
+				"飞鱼舰可以在水上漂浮和航行，但她不是为降落在地面上而建造的（在着陆时腹鳍会在舰船的重量下折断，而龙骨会使舰船侧翻）。",
+				"飞鱼舰上的标准武器包括前置的投石机和后置的弩炮。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Flying Fish Ship.webp"
+					},
+					"credit": "David Rene Christensen",
+					"width": 1700,
+					"height": 1135
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Flying Fish Ship Map.webp"
+					},
+					"imageType": "map",
+					"id": "000",
+					"title": "飞鱼舰甲板平面图",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 141,
+						"offsetX": -23,
+						"offsetY": -16,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Flying Fish Ship Map Player Version.webp"
+					},
+					"imageType": "mapPlayer",
+					"mapParent": {
+						"id": "000"
+					},
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 141,
+						"offsetX": -23,
+						"offsetY": -16,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Galley",
+			"name": "桨帆船",
+			"source": "GoS",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"加莱船是依靠帆和大量划桨手移动的长型船只。这些船只可以携带攻城武器和士兵前往战场，或者为商人运输大量货物。无论船只的目的是什么，船员几乎总是雇佣额外的保护，因为加莱船对于海盗来说是大型且货物丰富的目标。",
+						"一艘加莱船具有以下特点：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Ceilings",
+									"name": "天花板",
+									"type": "item",
+									"entry": "厨房下层甲板的天花板高度为8尺。"
+								},
+								{
+									"ENG_name": "Light",
+									"name": "光线",
+									"type": "item",
+									"entry": "悬挂的灯笼在船上投下明亮的光线。"
+								},
+								{
+									"ENG_name": "Rigging",
+									"name": "索具",
+									"type": "item",
+									"entry": "船上的绳索可以无需属性检定就能攀爬。"
+								},
+								{
+									"ENG_name": "Sails and Oars",
+									"name": "帆和桨",
+									"type": "item",
+									"entry": "加莱船有一个120尺高的桅杆，配有帆布以捕捉风力，并在下层甲板上有桨用于划动船只。"
+								}
+							]
+						},
+						{
+							"ENG_name": "Example Galley Crew",
+							"name": "桨帆船船员示例",
+							"type": "entries",
+							"entries": [
+								"一艘加莱船需要80名船员才能正确航行或划桨，并且可能搭载额外的乘客或士兵。如果角色是加莱船上的客人，船员由以下生物组成，除了他们正常的具体数值外，所有这些生物都对水上交通工具有熟练度：",
+								{
+									"type": "list",
+									"items": [
+										"一名船长（{@creature 匪帮队长}）",
+										"其他五名官员：大副、水手长、领航员、外科医生和厨师（{@creature 斥候||斥候}）",
+										"四十二名水手（{@creature 平民||平民}）",
+										"十二名攻城工程师（{@creature 警卫||警卫}）",
+										"二十名{@creature 警卫||警卫}"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Main Deck",
+							"name": "主甲板",
+							"type": "entries",
+							"entries": [
+								"厨房的主甲板具有以下特点：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Ballistas",
+											"name": "弩炮",
+											"type": "item",
+											"entry": "四台弩炮（DMG，第8章）固定在甲板前端。每台弩炮附近都堆放并固定了十支弩箭。"
+										},
+										{
+											"ENG_name": "Mangonels",
+											"name": "投石机",
+											"type": "item",
+											"entry": "两台投石机（DMG，第8章）安装在甲板的尾部。每台投石机附近都堆放并固定着十块投石机石块。"
+										},
+										{
+											"ENG_name": "Naval Ram",
+											"name": "撞角",
+											"type": "item",
+											"entry": "这艘桨帆船的船尾装有一个铁制海军冲角，用于攻击其他船只。"
+										},
+										{
+											"ENG_name": "Opening",
+											"name": "开口",
+											"type": "item",
+											"entry": "一个10尺宽、80尺长的开放空间位于甲板中央，从前至后延伸，并通往下层甲板。"
+										},
+										{
+											"ENG_name": "Railing",
+											"name": "栏杆",
+											"type": "item",
+											"entry": "甲板周围建有一道3英尺高的栏杆，为中等体型生物提供{@quickref 掩护||3||半身掩护}，为小型生物提供{@quickref 掩护||3||四分之三掩护}。"
+										},
+										{
+											"ENG_name": "Rowboats",
+											"name": "划艇",
+											"type": "item",
+											"entry": "八艘小艇在这个甲板上分成两组，每组四艘叠放。绳索和滑轮可以将这些小艇吊入水中或吊出水面。"
+										},
+										{
+											"ENG_name": "Timpani",
+											"name": "定音鼓",
+											"type": "item",
+											"entry": "一只带有两把附连槌子的鼓放在主甲板的尾部，就在通往下层甲板的开口前。一名船员在下层甲板的水手划桨时演奏这个乐器，节奏帮助同步划手的划桨动作。"
+										},
+										{
+											"ENG_name": "Wheel",
+											"name": "轮子",
+											"type": "item",
+											"entry": "船舵位于甲板的尾部。"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Lower Deck",
+							"name": "底层甲板",
+							"type": "entries",
+							"entries": [
+								"加莱船狭窄的下层甲板散发着体味，具有以下特点：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Cargo Holds",
+											"name": "货舱",
+											"type": "item",
+											"entry": "下层甲板的前部和后部的货舱存放着用绳索固定的箱子、桶和弹药。"
+										},
+										{
+											"ENG_name": "Oars",
+											"name": "桨",
+											"type": "item",
+											"entry": "甲板上建有32个长椅，每个长椅配有一根20尺长的桨。当船只划行时，船员坐在这些长椅上操作桨。墙上挂着10根备用桨。"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/GoS/galley-ship.webp"
+					},
+					"title": "桨帆船船舶",
+					"imageType": "map",
+					"credit": "Mike Schley",
+					"grid": {
+						"type": "square",
+						"size": 83,
+						"offsetX": 15,
+						"offsetY": 13
+					},
+					"width": 2100,
+					"height": 2850
+				}
+			]
+		},
+		{
+			"ENG_name": "Hammerhead Ship",
+			"name": "锤头鲨舰",
+			"source": "AAG",
+			"entries": [
+				"锤头鲨舰是一种流行的舰船，尤其是在对载货量有需求的海盗和商人中。她们可以漂浮在水面上并在水上航行，但它们不是为降落在地面上而建造的（她们的龙骨会使她们侧翻）。锤头舰上的标准武器包括前置和后置的投石机、弩炮和用于撞击的加固弓形船头。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Hammerhead Ship.webp"
+					},
+					"credit": "Ralph Horsley",
+					"width": 1700,
+					"height": 1135
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Hammerhead Ship Map.webp"
+					},
+					"imageType": "map",
+					"id": "000",
+					"title": "锤头鲨舰甲板平面图",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 120,
+						"offsetX": 66,
+						"offsetY": 23,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Hammerhead Ship Map Player Version.webp"
+					},
+					"imageType": "mapPlayer",
+					"mapParent": {
+						"id": "000"
+					},
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 120,
+						"offsetX": 66,
+						"offsetY": 23,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Keelboat",
+			"name": "龙骨船",
+			"source": "GoS",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"龙骨艇是最小的帆船之一，可以由一个人驾驶或划桨。这些船只通常运输少量货物或乘客。它们非常适合休闲巡游，因为它们比大型船只更易于操作且成本更低。",
+						"一艘平底船具有以下特点：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Light",
+									"name": "光线",
+									"type": "item",
+									"entry": "一两个悬挂的灯笼在船上投射出明亮的光线。"
+								},
+								{
+									"ENG_name": "Rigging",
+									"name": "索具",
+									"type": "item",
+									"entry": "船上的绳索可以无需属性检定就能攀爬。"
+								},
+								{
+									"ENG_name": "Sails",
+									"name": "帆",
+									"type": "item",
+									"entry": "这艘平底船有一个10尺高的桅杆和帆。"
+								}
+							]
+						},
+						{
+							"ENG_name": "Example Keelboat Crew",
+							"name": "龙骨船船员示例",
+							"type": "entries",
+							"entries": [
+								"一艘平底船需要一名船员才能顺利操作。如果角色们是平底船上的客人，船员由一名船长组成，他具有{@creature 匪帮队长}的属性，并且精通水上载具。"
+							]
+						},
+						{
+							"ENG_name": "Keelboat Deck",
+							"name": "龙骨船甲板",
+							"type": "entries",
+							"entries": [
+								"平底船的甲板具有以下特点：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Ballista",
+											"name": "弩炮",
+											"type": "item",
+											"entry": "一台弩炮（DMG，第8章）安装在甲板的前部。十个弩炮箭矢被堆放并固定在附近。"
+										},
+										{
+											"ENG_name": "Oars",
+											"name": "桨",
+											"type": "item",
+											"entry": "船的甲板上有十二个长椅和四根15尺长的桨。当船只划行时，船员坐在这些长椅上操作桨。"
+										},
+										{
+											"ENG_name": "Railing",
+											"name": "栏杆",
+											"type": "item",
+											"entry": "甲板周围有3英尺高的栏杆，为中等体型生物提供{@quickref 掩护||3||半身掩护}，为小型体型生物提供{@quickref 掩护||3||四分之三掩护}。"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Keelboat Cabin",
+							"name": "平底船舱",
+							"type": "entries",
+							"entries": [
+								"平底船舱具有以下特点：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Footlockers",
+											"name": "脚锁箱",
+											"type": "item",
+											"entry": "每张床下都有一个储物箱。这些储物箱是铁制的，有AC 19，18点生命值，并且对毒素和心灵伤害免疫。"
+										},
+										{
+											"ENG_name": "Furnishings",
+											"name": "家具",
+											"type": "item",
+											"entry": "两张床和一张带有椅子的桌子位于船舱的后部。"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/GoS/smaller-ships.webp"
+					},
+					"title": "小型船只",
+					"imageType": "map",
+					"credit": "Mike Schley",
+					"grid": {
+						"type": "square",
+						"size": 151,
+						"offsetX": 25,
+						"offsetY": 65,
+						"scale": 2
+					},
+					"width": 2063,
+					"height": 1425
+				}
+			]
+		},
+		{
+			"ENG_name": "Lamprey Ship",
+			"name": "七鳃鳗舰",
+			"source": "AAG",
+			"entries": [
+				"七鳃鳗舰十分老派，是仍在使用的最古老的法驱舰船之一。{@creature 灵蠕妖|BAM|灵蠕妖们}（详见{@book 布布的星界怪兽展|BAM}）特别喜欢她们。",
+				"通过安置在船头的金属抓握钩爪，七鳃鳗舰可以让自己吸附在另一艘舰船上，这是跳帮动作中的一个关键特性。其他标准武器包括主甲板上的四门弩炮。",
+				"七鳃鳗舰可以漂浮在水面上，但不能安全地降落在地面上。降落在地面上的七鳃鳗舰往往会完全翻转，不少船员因此遭罪。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Lamprey Ship.webp"
+					},
+					"credit": "Kent Davis",
+					"width": 1700,
+					"height": 1135
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Lamprey Ship Map.webp"
+					},
+					"imageType": "map",
+					"id": "000",
+					"title": "七鳃鳗舰甲板平面图",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 184,
+						"offsetX": 84,
+						"offsetY": 21,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Lamprey Ship Map Player Version.webp"
+					},
+					"imageType": "mapPlayer",
+					"mapParent": {
+						"id": "000"
+					},
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 184,
+						"offsetX": 84,
+						"offsetY": 21,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Living Ship",
+			"name": "生物舰",
+			"source": "AAG",
+			"entries": [
+				"德鲁伊、游侠和献身于自然诸神的牧师经常出现在生物舰上，那些不想在长途航行中担心他们的舰船气囊变得脏污的荒宇探险家们也是一样。",
+				"这种舰船的主要特色是后甲板上的完全成熟的{@creature 树人}。树人的速度为0，因为它的根系与甲板交织在一起；它和舰船是不可分割的。如果这艘舰船的生命值降至0，树人就会死于休克。如果舰船的树人死亡，这艘舰船还能继续航行，但死去的树人永远不能被另一个替换。",
+				"当树人完成一次长休后，它会修复舰船的船体，使舰船恢复 {@dice 4d12} 点生命值，并更新舰船的气囊（将致命空气变成污秽空气，或将污秽空气变成新鲜空气）。",
+				"一艘生物舰可以漂浮在水面上并在上面航行，但它不能安全地降落在地面上（她的龙骨会导致她侧翻）。她的标准武器是一门后置的弩炮。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Living Ship.webp"
+					},
+					"credit": "Alfven Ato",
+					"width": 1700,
+					"height": 1099
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Living Ship Map.webp"
+					},
+					"imageType": "map",
+					"id": "000",
+					"title": "生物舰甲板平面图",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 66,
+						"offsetX": 34,
+						"offsetY": 33
+					},
+					"width": 1700,
+					"height": 2200
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Living Ship Map Player Version.webp"
+					},
+					"imageType": "mapPlayer",
+					"mapParent": {
+						"id": "000"
+					},
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 66,
+						"offsetX": 34,
+						"offsetY": 33
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Longship",
+			"name": "单帆长船",
+			"source": "GoS",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"长船是依靠划桨船员和帆来在海上移动的船只。这些船通常用于运送士兵进入战斗。长船的尺寸使得部队能够快速上下船，使其成为执行突袭的完美船只。",
+						"长船具有以下特点：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Light",
+									"name": "光线",
+									"type": "item",
+									"entry": "悬挂的灯笼在甲板上投下明亮的光。"
+								},
+								{
+									"ENG_name": "Rigging",
+									"name": "索具",
+									"type": "item",
+									"entry": "船上的绳索可以无需属性检定就能攀爬。"
+								},
+								{
+									"ENG_name": "Rudder",
+									"name": "舵",
+									"type": "item",
+									"entry": "船只通过甲板尾部的舵控制来操纵方向。"
+								},
+								{
+									"ENG_name": "Sails",
+									"name": "帆",
+									"type": "item",
+									"entry": "长船有一个20尺高的桅杆，配有帆，可以用来航行。"
+								}
+							]
+						},
+						{
+							"ENG_name": "Example Longship Crew",
+							"name": "单帆长船船员示例",
+							"type": "entries",
+							"entries": [
+								"一艘长船需要40名船员才能正确航行或划桨，并且经常搭载额外的乘客或士兵。如果角色是长船上的客人，船员由以下生物组成，除了他们正常的具体数值外，所有这些生物都对水上交通工具有熟练度：",
+								{
+									"type": "list",
+									"items": [
+										"一名船长（{@creature 狂战士}）",
+										"其他五名官员：一名大副、一名水手长、一名事务长、一名外科医生和一名厨师（{@creature 狂战士||狂战士们}）",
+										"三十四名水手（{@creature 平民||平民}）"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Longship Deck",
+							"name": "长船甲板",
+							"type": "entries",
+							"entries": [
+								"长船的甲板具有以下特点：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Oars",
+											"name": "桨",
+											"type": "item",
+											"entry": "船上有十六张长凳，每张长凳配有一根15尺长的桨。当船划行时，船员们坐在这些长凳上操作桨。墙上挂着五根备用桨。"
+										},
+										{
+											"ENG_name": "Railing",
+											"name": "栏杆",
+											"type": "item",
+											"entry": "甲板的周围有一道3英尺高的栏杆，上面覆盖着木制盾牌，为中等体型生物提供{@quickref 掩护||3||半身掩护}，为小型生物提供{@quickref 掩护||3||四分之三掩护}。"
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/GoS/smaller-ships.webp"
+					},
+					"title": "小型船只",
+					"imageType": "map",
+					"credit": "Mike Schley",
+					"grid": {
+						"type": "square",
+						"size": 151,
+						"offsetX": 25,
+						"offsetY": 65,
+						"scale": 2
+					},
+					"width": 2063,
+					"height": 1425
+				}
+			]
+		},
+		{
+			"ENG_name": "Lyrandar Air Cruiser",
+			"name": "林兰德风巡舰",
+			"source": "EFA",
+			"entries": [
+				"被巨大的元素能量光环所环绕，林兰德风行者号在天空中航行时投下巨大的阴影。这些飞艇是{@book 科瓦雷|ERLW|5|科瓦雷的国度}最大且最具代表性的空中旅行方式，载着富裕的精英们穿越{@book 五国|ERLW|0|五国}及更远的地方。尽管自几年前问世以来，飞艇已变得稍微普遍一些，但一艘完全运行的风行者号仍然是令人印象深刻的景象。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/EFA/Lyrandar Air Cruiser.webp"
+					},
+					"credit": "Dave Sarabia",
+					"width": 850,
+					"height": 465
+				}
+			]
+		},
+		{
+			"ENG_name": "Lyrandar Skyskiff",
+			"name": "林兰德天空轻舟",
+			"source": "EFA",
+			"entries": [
+				"一项最近的创新，林兰德天空小艇是一种迅捷且紧凑的飞艇，用于短程旅行和救援任务。当更大的飞艇因元素引擎故障或其他故障而搁浅在天空时，船员们通常会召集一支天空小艇舰队将搁浅的船只拖到维修塔楼进行维护。"
+			]
+		},
+		{
+			"ENG_name": "Mechanical Beholder",
+			"name": "机械眼魔",
+			"source": "AI",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"{@i 当你听到机械眼魔咔哒启动时，它听起来像是死亡本身在掰动自己的手指。}",
+								"机械眼魔的外型看起来就像一个巨型的眼魔，其主眼是一个观察窗。这艘飞船既是交通工具，又是实验室，还是攻城武器，可以运送最多六名类人生物通过任何地形或介质，包括水下和穿过坚硬的岩石。原始的机械眼魔通过复杂且危险的齿轮、杠杆和按钮控制，但较新的型号采用魔法控制，可响应语音命令\u2014\u2014尽管并不总是准确。",
+								{
+									"ENG_name": "Equipment and Options",
+									"name": "装备和选项",
+									"type": "entries",
+									"entries": [
+										"机械眼魔可以配备各种传感器、探针和仪表，使其能够执行多种功能，例如测定炼金成分、侦测魔法灵光或调制大师级的干马提尼。其武器系统包括模仿其同名怪物的解体射线（出于责任考虑，该功能被宣传为专为废物清除而设计）。舷窗和舱门允许角色从眼魔内部进行远程和魔法攻击。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AI/mechanical-beholder.webp"
+					},
+					"credit": "Chris Walton",
+					"width": 841,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Nautiloid",
+			"name": "鹦鹉螺",
+			"source": "AAG",
+			"entries": [
+				"由{@creature 夺心魔||夺心魔们}制造和使用的鹦鹉螺专为空间旅行设计。她们不能漂浮在水面上，也不能安全降落在地面上。",
+				"作为一个动作，一个与鹦鹉螺的{@item 法驱魔舵|AAG}同调并与舰船有物理接触的生物可以将鹦鹉螺和她上面的所有生物和物体传送到另一个存在位面，出现在法驱者预想的目的地或其附近（或该位面的随机位置，如果法驱者没有想象具体目的地）。这项能力是鹦鹉螺的特性，而非{@item 法驱魔舵|AAG}的。每次使用此能力时，掷一次{@dice d6}。若结果为5-6，该能力会在1分钟后充能完毕；否则在24小时内不能再次使用。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Nautiloid.webp"
+					},
+					"credit": "Kent Davis",
+					"width": 1700,
+					"height": 1012
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Nautiloid Map.webp"
+					},
+					"imageType": "map",
+					"id": "000",
+					"title": "鹦鹉螺甲板平面图",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 138,
+						"offsetY": -24,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Nautiloid Map Player Version.webp"
+					},
+					"imageType": "mapPlayer",
+					"mapParent": {
+						"id": "000"
+					},
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 138,
+						"offsetY": -24,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Nightspider",
+			"name": "夜蛛",
+			"source": "AAG",
+			"entries": [
+				"纽吉怪打造的舰船令整个荒宇感到胆寒，而这些舰船被其他人称之为夜蛛。这些舰船经常蛰伏等待其他舰船以进行伏击。一旦目标舰船被发现，纽吉怪就会试图偷走她的{@item 法驱魔舵|AAG}并俘虏她的船员。",
+				"夜蛛的船员通常由十九名纽吉怪和最多六只{@creature 掘土巨怪||掘土巨怪}组成，纽吉怪一般将它们用作突击部队。",
+				"夜蛛是专为空间旅行而设计的，不能漂浮在水上或安全降落在地面上（舰船的重量会折断她细长的腿，并且在此过程中破坏它的网状索具）。夜蛛上的标准武器包括四门弩炮（两门前向和两门后向）和一门前向的投石机。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Nightspider.webp"
+					},
+					"credit": "Jessica Nguyen",
+					"width": 1700,
+					"height": 1135
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Nightspider Map.webp"
+					},
+					"imageType": "map",
+					"id": "000",
+					"title": "夜蛛甲板平面图",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 120,
+						"offsetY": -24,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Nightspider Map Player Version.webp"
+					},
+					"imageType": "mapPlayer",
+					"mapParent": {
+						"id": "000"
+					},
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 120,
+						"offsetY": -24,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Planar Raider",
+			"name": "位面掠夺者",
+			"source": "MTF",
+			"entries": [
+				"吉斯洋基族最大的船只，位面突袭者在对吉斯洋基族敌人的主要攻击中充当移动指挥部。它需要十名船员，并能搭载超过一百名乘客。位面突袭者可以以每小时12英里的速度行驶。它宽40尺，长120尺，甲板下有两层，装备有三台弩炮和一台弹射器。"
+			]
+		},
+		{
+			"ENG_name": "Rowboat",
+			"name": "划艇",
+			"source": "GoS",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"这艘不起眼的小船用于在大型船只之间运送乘客，或者在湖泊和河流中航行。由于其简单、多功能的设计，小船没有甲板或典型的船员。重100磅的小船易于运输，可能被大型船只携带。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Sailing Ship",
+			"name": "帆船",
+			"source": "GoS",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"帆船是专注于旅行的快速移动设计。",
+						"一艘帆船具有以下特点：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Ceilings",
+									"name": "天花板",
+									"type": "item",
+									"entry": "下层甲板、货舱和船舱的天花板高度为8尺，门高为6尺。"
+								},
+								{
+									"ENG_name": "Doors",
+									"name": "门",
+									"type": "item",
+									"entry": "船门由木头制成，具有AC 15、18点生命值，并且对毒素和心灵伤害免疫。锁可以通过使用盗贼工具成功通过一次{@dc 15}敏捷检定来撬开，或者可以通过成功通过一次{@dc 20}力量（运动）检定强行打开。"
+								},
+								{
+									"ENG_name": "Footlockers",
+									"name": "脚锁箱",
+									"type": "item",
+									"entry": "船上的脚镣是铁制的，具有19点护甲等级，18点生命值，并对毒素和心灵伤害免疫。"
+								},
+								{
+									"ENG_name": "Light",
+									"name": "光线",
+									"type": "item",
+									"entry": "悬挂的灯笼在船上投下明亮的光线。"
+								},
+								{
+									"ENG_name": "Rigging",
+									"name": "索具",
+									"type": "item",
+									"entry": "船上的绳索可以无需属性检定就能攀爬。"
+								},
+								{
+									"ENG_name": "Sails",
+									"name": "帆",
+									"type": "item",
+									"entry": "这艘船有三根80尺高的桅杆，上面挂着帆以捕捉风力，在下层甲板上还有桨用于划船。"
+								}
+							]
+						},
+						{
+							"ENG_name": "Example Crew",
+							"name": "船员示例",
+							"type": "entries",
+							"entries": [
+								"一艘帆船需要一支大型船员团队才能正确驾驶船只。如果角色们是帆船上的客人，船员由以下生物组成，除了他们正常的属性外，他们都对水上交通工具有熟练度：",
+								{
+									"type": "list",
+									"items": [
+										"一名船长（{@creature 匪帮队长}）",
+										"其他四位官员：大副、船员长、事务长和厨师（{@creature 贵族||贵族们}）",
+										"二十五名水手（{@creature 平民||平民}）"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "1. Main Deck",
+							"name": "1. 主牌组",
+							"type": "entries",
+							"entries": [
+								"船的主甲板具有以下特点：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Mangonel",
+											"name": "投石机",
+											"type": "item",
+											"entry": "帆船上固定有一台{@object 投石机}（DMG，第8章）。每件武器旁边都堆叠并固定着10块石弹。"
+										},
+										{
+											"ENG_name": "Hatch",
+											"name": "舱门",
+											"type": "item",
+											"entry": "一个覆盖的10尺见方的开口通向下层甲板（区域W8）。"
+										},
+										{
+											"ENG_name": "Railing",
+											"name": "栏杆",
+											"type": "item",
+											"entry": "主甲板周围有3英尺高的栏杆，为中等体型的生物提供{@quickref 掩护||3||半身掩护}，为小型生物提供{@quickref 掩护||3||四分之三掩护}。"
+										},
+										{
+											"ENG_name": "Rowboats",
+											"name": "划艇",
+											"type": "item",
+											"entry": "四艘{@vehicle 划艇||划艇}在这个甲板上堆叠在一起。绳索和滑轮可以将这些船只吊入水中或吊出水面。"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "2. Officers' Quarters",
+							"name": "2. 军官舱",
+							"type": "entries",
+							"entries": [
+								"四张床位于军官舱。每张床下都有一个铁制的储物箱，用来存放军官的个人物品。军官们轮流睡觉，以确保总有人值班指挥船员并执行船长的命令。"
+							]
+						},
+						{
+							"ENG_name": "3. Captain's Quarters",
+							"name": "3. 船长舱室",
+							"type": "entries",
+							"entries": [
+								"船长舱室里有一张床和一张书桌。床下有一个铁制的行李箱，存放着船长的物品。"
+							]
+						},
+						{
+							"ENG_name": "4. Siege Weapon Ammunition",
+							"name": "4. 攻城武器弹药",
+							"type": "entries",
+							"entries": [
+								"这个船舱的墙壁上安装有架子和绳索，用来固定石弹和弩箭。"
+							]
+						},
+						{
+							"ENG_name": "5. Supplies",
+							"name": "5. 补给品",
+							"type": "entries",
+							"entries": [
+								"这个区域存放着工具、沥青桶、绳索、备用帆布等，以及维护船只所需的其他补给品。"
+							]
+						},
+						{
+							"ENG_name": "6. Forecastle",
+							"name": "6. 前甲板",
+							"type": "entries",
+							"entries": [
+								"前甲板具有以下特点：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Ballista",
+											"name": "弩炮",
+											"type": "item",
+											"entry": "一个{@object 弩炮}（DMG，第8章）安装在甲板上。十支弩炮箭已经堆叠并固定在附近。"
+										},
+										{
+											"ENG_name": "Railing",
+											"name": "栏杆",
+											"type": "item",
+											"entry": "船头的周围有一道3英尺高的栏杆，为中等体型生物提供{@quickref 掩护||3||半身掩护}，为小型生物提供{@quickref 掩护||3||四分之三掩护}。"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "7. Quarterdeck",
+							"name": "7. 舰桥",
+							"type": "entries",
+							"entries": [
+								"后甲板具有以下特点：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Railing",
+											"name": "栏杆",
+											"type": "item",
+											"entry": "舰桥周围有3英尺高的栏杆，为中等体型生物提供{@quickref 掩护||3||半身掩护}，为小型生物提供{@quickref 掩护||3||四分之三掩护}。"
+										},
+										{
+											"ENG_name": "Wheel",
+											"name": "轮子",
+											"type": "item",
+											"entry": "船舵位于后甲板的尾部。"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "8. Oar Deck",
+							"name": "8. 桨手甲板",
+							"type": "entries",
+							"entries": [
+								"下层甲板上建了二十二张长凳，每张长凳配有一根20尺长的桨。当船划行时，船员们坐在这些长凳上操作桨。船的墙上挂着十根备用桨。"
+							]
+						},
+						{
+							"ENG_name": "9. Privy",
+							"name": "9. 厕所",
+							"type": "entries",
+							"entries": [
+								"这个房间的墙壁上排列着长凳。上面雕刻的四个洞放置了便器。"
+							]
+						},
+						{
+							"ENG_name": "10. Medical Cabin",
+							"name": "10. 医疗舱",
+							"type": "entries",
+							"entries": [
+								"墙上的钩子和架子上挂着医疗工具、绷带、药膏、补药、装有水蛭的罐子等，随时准备治疗战斗或航行意外造成的伤口。"
+							]
+						},
+						{
+							"ENG_name": "11. Guest Cabin",
+							"name": "11. 客舱",
+							"type": "entries",
+							"entries": [
+								"这个船舱是为旅途中的客人和随行的高级官员准备的。"
+							]
+						},
+						{
+							"ENG_name": "12. Hold",
+							"name": "12. 货舱",
+							"type": "entries",
+							"entries": [
+								"这个区域既容纳乘客也存放货物。船上的休息班组在食物、水和其他供应品的箱子和桶之间铺床铺睡觉。"
+							]
+						},
+						{
+							"ENG_name": "13. Armory",
+							"name": "13. 武器库",
+							"type": "entries",
+							"entries": [
+								"这艘船的武器和盔甲存放在这个舱室里。墙壁上装有内置的武器和盔甲架。这个舱室的门通常是锁着的，钥匙由船上的一名军官保管。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/GoS/sailing-ship.webp"
+					},
+					"title": "帆船",
+					"imageType": "map",
+					"credit": "Mike Schley",
+					"grid": {
+						"type": "square",
+						"size": 157,
+						"offsetX": 32,
+						"offsetY": -16,
+						"scale": 2
+					},
+					"width": 2100,
+					"height": 2850
+				}
+			]
+		},
+		{
+			"ENG_name": "Scavenger",
+			"name": "拾荒者",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"清道夫的造型类似小型巴士，用于在战场的残骸中收集金属碎片以及其他有回收价值的材料。战车的背部连接着一个起重机，起重机铰链的尾端是一个铁爪以及 50 尺长的锁链。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/BGDIA/Scavenger.webp"
+					},
+					"width": 1702,
+					"height": 1101
+				}
+			]
+		},
+		{
+			"ENG_name": "Scorpion Ship",
+			"name": "蝎舰",
+			"source": "AAG",
+			"entries": [
+				"蝎舰是老派的金属战舰，但其受欢迎程度经久不衰，究其原因主要是她们的泛用性。铰接式支腿使蝎舰能够安全降落在地面上，并以30尺的步行速度穿过坚实地面。然而，这艘舰船不能漂浮在水面上。在顶层甲板上装有一门弩炮，而尾部的末端装有一门投石机。这艘舰船的两个爪子在战斗中的效率相对较低，但当爪子抓住一个生物时，很快就可以让它无法行动。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Scorpion Ship.webp"
+					},
+					"credit": "David Rene Christensen",
+					"width": 1700,
+					"height": 1136
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Scorpion Ship Map.webp"
+					},
+					"imageType": "map",
+					"id": "000",
+					"title": "蝎舰甲板平面图",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 79,
+						"offsetX": -10,
+						"offsetY": 28
+					},
+					"width": 1700,
+					"height": 2200
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Scorpion Ship Map Player Version.webp"
+					},
+					"imageType": "mapPlayer",
+					"mapParent": {
+						"id": "000"
+					},
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 79,
+						"offsetX": -10,
+						"offsetY": 28
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Shrike Ship",
+			"name": "伯劳鸟舰",
+			"source": "AAG",
+			"entries": [
+				"这种迅捷的舰船是一种相对现代的设计，一经推出很快就受到商人和海盗的欢迎。伯劳鸟舰的腿使她能够安全地降落在地面上。这艘舰船可以漂浮，但不是为在水上航行而建造的，并且在波涛汹涌的大海中会迅速地下沉。",
+				"伯劳鸟舰上的标准武器包括三门弩炮\u2014\u2014一门在艏楼，一门在顶层甲板的中间，一门在舰船尾。在危急情况下，该舰的加固船首可用作穿刺撞角。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Shrike Ship.webp"
+					},
+					"credit": "Olly Lawson",
+					"width": 1700,
+					"height": 1099
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Shrike Ship Map.webp"
+					},
+					"imageType": "map",
+					"id": "000",
+					"title": "伯劳鸟舰甲板平面图",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 172,
+						"offsetX": 21,
+						"offsetY": 86,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Shrike Ship Map Player Version.webp"
+					},
+					"imageType": "mapPlayer",
+					"mapParent": {
+						"id": "000"
+					},
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 172,
+						"offsetX": 21,
+						"offsetY": 86,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Space Galleon",
+			"name": "太空帆船",
+			"source": "AAG",
+			"entries": [
+				"太空帆船是在荒宇和星界海航行的众多舰船中的中流砥柱。太空帆船可以轻易当作普通航海帆船使用，因为她们可以像同其名称一样降落在水上并航行，因此她们可以航行到陆地世界的港口而不会引起过多关注。和普通的加利恩帆船一样，太空帆船并不是为了降落在地面上而建造的（她的龙骨会导致她侧翻）。该舰的标准武器包括两门前置弩炮和一门后置投石机。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Space Galleon.webp"
+					},
+					"credit": "David Rene Christensen",
+					"width": 1700,
+					"height": 1135
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Space Galleon Map.webp"
+					},
+					"imageType": "map",
+					"id": "000",
+					"title": "太空帆船甲板平面图",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 158,
+						"offsetX": -109,
+						"offsetY": -14,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Space Galleon Map Player Version.webp"
+					},
+					"imageType": "mapPlayer",
+					"mapParent": {
+						"id": "000"
+					},
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 158,
+						"offsetX": -109,
+						"offsetY": -14,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Squid Ship",
+			"name": "鱿鱼舰",
+			"source": "AAG",
+			"entries": [
+				"在最古老的魔法船类型中，鱿鱼舰很受私掠者的欢迎，经常被用作巡逻舰船。鱿鱼舰上的标准武器包括一门前置的投石机、两门后置的弩炮和一个用于撞击的加固船首。从船头伸出的触须几乎占了舰船龙骨长度的一半。",
+				"鱿鱼舰可以在水上漂浮和航行，并且可以在地面上着陆。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Squid Ship.webp"
+					},
+					"credit": "Katerina Ladon",
+					"width": 1700,
+					"height": 1136
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Squid Ship Map.webp"
+					},
+					"imageType": "map",
+					"id": "000",
+					"title": "鱿鱼舰甲板平面图",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 161,
+						"offsetX": -40,
+						"offsetY": 66,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Squid Ship Map Player Version.webp"
+					},
+					"imageType": "mapPlayer",
+					"mapParent": {
+						"id": "000"
+					},
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 161,
+						"offsetX": -40,
+						"offsetY": 66,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Star Moth",
+			"name": "星蛾",
+			"source": "AAG",
+			"entries": [
+				"星蛾是由星界精灵建造并驾驶的舰船，他们不喜欢这些舰船落入他人之手。",
+				"星蛾的船体由生长并雕刻而成的有机材质构成，其巨大的装饰性飞翼由闪烁的水晶制成。这艘舰船专为空间旅行而建造，但其设计也使其能够漂浮在水面上或安全地降落在地面上。标准武器包括安装在星蛾眼窝中的两门弩炮，以及架设在舰桥上方的一门投石机。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Star Moth.webp"
+					},
+					"credit": "Bruce Brenneise",
+					"width": 1700,
+					"height": 1099
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Star Moth Map.webp"
+					},
+					"imageType": "map",
+					"id": "000",
+					"title": "星蛾甲板平面图",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 176,
+						"offsetX": -47,
+						"offsetY": -28,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Star Moth Map Player Version.webp"
+					},
+					"imageType": "mapPlayer",
+					"mapParent": {
+						"id": "000"
+					},
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 176,
+						"offsetX": -47,
+						"offsetY": -28,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Strider Airship",
+			"name": "漫游者飞艇",
+			"source": "EFA",
+			"entries": [
+				"漫游者飞艇受到独立商人、探险家和私掠者的青睐。比天舟大但比巡天舰小，这些可靠的船只提供了充足的速度和防护，用于在天空中运送货物。",
+				"许多飞艇船员对他们的船舶情有独钟，修改工作站并添加独特的花园装饰以反映船员的构图。一艘船可能有金丝细工和发条飞翼夹击其船体，而另一艘船可能有一个燃烧的弩炮自豪地骑乘在船首。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/EFA/Strider Airship.webp"
+					},
+					"imageType": "map",
+					"id": "000",
+					"title": "漫游者飞艇地图",
+					"credit": "Sean Macdonald",
+					"width": 3165,
+					"height": 4096,
+					"grid": {
+						"type": "square",
+						"size": 116,
+						"offsetX": -21,
+						"offsetY": 11
+					}
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/EFA/Strider Airship Player Version.webp"
+					},
+					"imageType": "mapPlayer",
+					"mapParent": {
+						"id": "000"
+					},
+					"title": "玩家版本",
+					"width": 3165,
+					"height": 4096,
+					"grid": {
+						"type": "square",
+						"size": 116,
+						"offsetX": -21,
+						"offsetY": 11
+					}
+				}
+			]
+		},
+		{
+			"ENG_name": "Tormentor",
+			"name": "摧残者",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"摧残者类似于沙漠越野车，主要用于侦查和劫掠。带着利刃的轮胎驱使着战车前行。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/BGDIA/Tormentor.webp"
+					},
+					"width": 1702,
+					"height": 1101
+				}
+			]
+		},
+		{
+			"ENG_name": "Turtle Ship",
+			"name": "海龟舰",
+			"source": "AAG",
+			"entries": [
+				"海龟舰被包裹在一个保护性的金属外壳中，正如其名，并配备了武器。除了宽敞的住所外，它还可以携带相当大量的货物，使其在商人和其他需要大量货物空间的人中很受欢迎。这种舰船可以降落在地面上，也可以漂浮在水面上。滑动面板可以关闭以使船体密闭，从而使舰船能够安全地在水下航行，甚至可以到达很深的地方。如果舰船在水上或水下受到伤害，可以密封内部舱口以防止舰船完全进水。",
+				"海龟舰上的标准武器包括三门前置的弩炮和一门后置的投石机。这些武器不能在舰船水下时使用。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Turtle Ship.webp"
+					},
+					"credit": "Alfven Ato",
+					"width": 1700,
+					"height": 1135
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Turtle Ship Map.webp"
+					},
+					"imageType": "map",
+					"id": "000",
+					"title": "海龟舰甲板平面图",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 192,
+						"offsetX": 18,
+						"offsetY": -58,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Turtle Ship Map Player Version.webp"
+					},
+					"imageType": "mapPlayer",
+					"mapParent": {
+						"id": "000"
+					},
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 192,
+						"offsetX": 18,
+						"offsetY": -58,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Tyrant Ship",
+			"name": "暴君舰",
+			"source": "AAG",
+			"entries": [
+				"{@creature 眼魔||眼魔}使用他们的解离射线从石头中雕刻出暴君舰，并使用这些舰船在星界漫游，寻找要征服的世界和要摧毁的敌对眼魔。没有两艘暴君舰长得一模一样，但她们都有一个或多个让人想起其创造者的特征，比如球根般的形状和眼柄。",
+				"暴君舰指挥甲板上的球形房间视同一个只有眼魔才能同调的{@item 法驱魔舵|AAG}。任何占据这个房间的眼魔都可以与其进行同调。 将暴君舰的生命值降至 0 不仅会摧毁她本身，还会摧毁舰上的{@item 法驱魔舵|AAG}和眼柄光炮。",
+				"暴君舰不能漂浮在水上，但可以安全地降落在地面上。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Tyrant Ship.webp"
+					},
+					"credit": "Olly Lawson",
+					"width": 1700,
+					"height": 1135
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Tyrant Ship Map.webp"
+					},
+					"imageType": "map",
+					"id": "000",
+					"title": "暴君舰甲板平面图",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 122,
+						"offsetX": 9,
+						"offsetY": -9,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Tyrant Ship Map Player Version.webp"
+					},
+					"imageType": "mapPlayer",
+					"mapParent": {
+						"id": "000"
+					},
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 122,
+						"offsetX": 9,
+						"offsetY": -9,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Warship",
+			"name": "战舰",
+			"source": "GoS",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"战舰是速度慢、重武装的船只，能够携带大量货物。",
+						"一艘战舰具有以下特点：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Ceilings",
+									"name": "天花板",
+									"type": "item",
+									"entry": "下层甲板、货舱和船舱的天花板高度为8尺，门高为6尺。"
+								},
+								{
+									"ENG_name": "Doors",
+									"name": "门",
+									"type": "item",
+									"entry": "船门由木头制成，具有AC 15、18点生命值，并且对毒素和心灵伤害免疫。锁可以通过使用盗贼工具成功通过一次{@dc 15}敏捷检定来撬开，或者可以通过成功通过一次{@dc 20}力量（运动）检定强行打开。"
+								},
+								{
+									"ENG_name": "Footlockers",
+									"name": "脚锁箱",
+									"type": "item",
+									"entry": "船上的脚镣是铁制的，具有19点护甲等级，18点生命值，并对毒素和心灵伤害免疫。"
+								},
+								{
+									"ENG_name": "Light",
+									"name": "光线",
+									"type": "item",
+									"entry": "悬挂的灯笼在船上投下明亮的光线。"
+								},
+								{
+									"ENG_name": "Rigging",
+									"name": "索具",
+									"type": "item",
+									"entry": "船上的绳索可以无需属性检定就能攀爬。"
+								},
+								{
+									"ENG_name": "Sails",
+									"name": "帆",
+									"type": "item",
+									"entry": "这艘船有三根80尺高的桅杆，上面挂着帆以捕捉风力，在下层甲板上还有桨用于划船。"
+								}
+							]
+						},
+						{
+							"ENG_name": "Example Crew",
+							"name": "船员示例",
+							"type": "entries",
+							"entries": [
+								"一艘战舰需要一支大型船员队伍来正确航行这艘船。战舰携带额外的士兵进行战斗并发射攻城武器。如果角色是战舰上的客人，船员由以下生物组成，除了他们正常的具体数值外，他们都对水上交通工具有熟练度：",
+								{
+									"type": "list",
+									"items": [
+										"一名船长（{@creature 匪帮队长}）",
+										"其他四位官员：大副、船员长、事务长和厨师（{@creature 贵族||贵族们}）",
+										"二十五名水手（{@creature 平民||平民}）"
+									]
+								},
+								"战舰通常包括以下额外的船员，以增强其战斗能力：",
+								{
+									"type": "list",
+									"items": [
+										"四十名士兵({@creature 警卫||警卫})",
+										"八名攻城工程师（{@creature 警卫||警卫}）",
+										"一名{@creature 祭司}（船上的外科医生）"
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "1. Main Deck",
+							"name": "1. 主牌组",
+							"type": "entries",
+							"entries": [
+								"船的主甲板具有以下特点：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Mangonel",
+											"name": "投石机",
+											"type": "item",
+											"entry": "帆船上装有一台{@object 投石机}（DMG，第8章）固定在甲板上。战舰上有两台mangonels（DMG，第8章）。每件武器附近都堆放并固定了10块mangonel石。"
+										},
+										{
+											"ENG_name": "Hatch",
+											"name": "舱门",
+											"type": "item",
+											"entry": "一个覆盖的10尺见方的开口通向下层甲板（区域W8）。"
+										},
+										{
+											"ENG_name": "Railing",
+											"name": "栏杆",
+											"type": "item",
+											"entry": "主甲板周围有3英尺高的栏杆，为中等体型的生物提供{@quickref 掩护||3||半身掩护}，为小型生物提供{@quickref 掩护||3||四分之三掩护}。"
+										},
+										{
+											"ENG_name": "Rowboats",
+											"name": "划艇",
+											"type": "item",
+											"entry": "四艘{@vehicle 划艇||划艇}在这个甲板上堆叠在一起。绳索和滑轮可以将这些船只吊入水中或吊出水面。"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "2. Officers' Quarters",
+							"name": "2. 军官舱",
+							"type": "entries",
+							"entries": [
+								"四张床位于军官舱。每张床下都有一个铁制的储物箱，用来存放军官的个人物品。军官们轮流睡觉，以确保总有人值班指挥船员并执行船长的命令。"
+							]
+						},
+						{
+							"ENG_name": "3. Captain's Quarters",
+							"name": "3. 船长舱室",
+							"type": "entries",
+							"entries": [
+								"船长舱室里有一张床和一张书桌。床下有一个铁制的行李箱，存放着船长的物品。"
+							]
+						},
+						{
+							"ENG_name": "4. Siege Weapon Ammunition",
+							"name": "4. 攻城武器弹药",
+							"type": "entries",
+							"entries": [
+								"这个船舱的墙壁上安装有架子和绳索，用来固定石弹和弩箭。"
+							]
+						},
+						{
+							"ENG_name": "5. Supplies",
+							"name": "5. 补给品",
+							"type": "entries",
+							"entries": [
+								"这个区域存放着工具、沥青桶、绳索、备用帆布等，以及维护船只所需的其他补给品。"
+							]
+						},
+						{
+							"ENG_name": "6. Forecastle",
+							"name": "6. 前甲板",
+							"type": "entries",
+							"entries": [
+								"前甲板具有以下特点：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Ballista",
+											"name": "弩炮",
+											"type": "item",
+											"entry": "一个{@object 弩炮}（DMG，第8章）安装在甲板上。十支弩炮箭已经堆叠并固定在附近。"
+										},
+										{
+											"ENG_name": "Figurehead",
+											"name": "船首像",
+											"type": "item",
+											"entry": "战舰的前甲板前端有一个铁制船首像，通常被塑造成可怕的海洋掠食者的形象。这个船首像作为船的海军冲角。"
+										},
+										{
+											"ENG_name": "Railing",
+											"name": "栏杆",
+											"type": "item",
+											"entry": "船头的周围有一道3英尺高的栏杆，为中等体型生物提供{@quickref 掩护||3||半身掩护}，为小型生物提供{@quickref 掩护||3||四分之三掩护}。"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "7. Quarterdeck",
+							"name": "7. 舰桥",
+							"type": "entries",
+							"entries": [
+								"后甲板具有以下特点：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Ballista",
+											"name": "弩炮",
+											"type": "item",
+											"entry": "在战舰上，一座{@object 弩炮}（DMG，第8章）被固定在甲板上。十支弩炮箭矢被堆放并固定在附近。"
+										},
+										{
+											"ENG_name": "Railing",
+											"name": "栏杆",
+											"type": "item",
+											"entry": "舰桥周围有3英尺高的栏杆，为中等体型生物提供{@quickref 掩护||3||半身掩护}，为小型生物提供{@quickref 掩护||3||四分之三掩护}。"
+										},
+										{
+											"ENG_name": "Wheel",
+											"name": "轮子",
+											"type": "item",
+											"entry": "船舵位于后甲板的尾部。"
+										}
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "8. Oar Deck",
+							"name": "8. 桨手甲板",
+							"type": "entries",
+							"entries": [
+								"下层甲板上建了二十二张长凳，每张长凳配有一根20尺长的桨。当船划行时，船员们坐在这些长凳上操作桨。船的墙上挂着十根备用桨。"
+							]
+						},
+						{
+							"ENG_name": "9. Privy",
+							"name": "9. 厕所",
+							"type": "entries",
+							"entries": [
+								"这个房间的墙壁上排列着长凳。上面雕刻的四个洞放置了便器。"
+							]
+						},
+						{
+							"ENG_name": "10. Medical Cabin",
+							"name": "10. 医疗舱",
+							"type": "entries",
+							"entries": [
+								"墙上的钩子和架子上挂着医疗工具、绷带、药膏、补药、装有水蛭的罐子等，随时准备治疗战斗或航行意外造成的伤口。"
+							]
+						},
+						{
+							"ENG_name": "11. Brig",
+							"name": "11. 禁闭室",
+							"type": "entries",
+							"entries": [
+								"这个客舱是为客人和随行的高级官员准备的。由于战舰通常更需要关押囚犯而不是客人，因此这类船只上的每张床都配有一套{@item 镣铐|phb}（见《玩家手册》第5章）。"
+							]
+						},
+						{
+							"ENG_name": "12. Hold",
+							"name": "12. 货舱",
+							"type": "entries",
+							"entries": [
+								"这个区域既容纳乘客也存放货物。船上的休息班组在食物、水和其他供应品的箱子和桶之间铺床铺睡觉。"
+							]
+						},
+						{
+							"ENG_name": "13. Armory",
+							"name": "13. 武器库",
+							"type": "entries",
+							"entries": [
+								"这艘船的武器和盔甲存放在这个舱室里。墙壁上装有内置的武器和盔甲架。这个舱室的门通常是锁着的，钥匙由船上的一名军官保管。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/GoS/warship.webp"
+					},
+					"title": "战舰",
+					"imageType": "map",
+					"credit": "Mike Schley",
+					"grid": {
+						"type": "square",
+						"size": 78,
+						"offsetX": 37,
+						"offsetY": 19
+					},
+					"width": 2100,
+					"height": 2850
+				}
+			]
+		},
+		{
+			"ENG_name": "Wasp Ship",
+			"name": "黄蜂舰",
+			"source": "AAG",
+			"entries": [
+				"黄蜂舰是一种轻型木质舰船，能够安全降落在地面上，但不能降落在水上。 她们对冒险家很有吸引力，因为她们价格实惠且不需要大量的船员。 同时海盗也因其迅捷而喜欢她们。 贵族们喜欢将她们用作飞行游艇，因为舰船上的货舱可以很容易地改造成奢华的居住区。",
+				"这种舰船的背部为武器阵地提供了高地，通常会配备一门弩炮。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Wasp Ship.webp"
+					},
+					"credit": "Olly Lawson",
+					"width": 1700,
+					"height": 1135
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Wasp Ship Map.webp"
+					},
+					"imageType": "map",
+					"id": "000",
+					"title": "黄蜂舰甲板平面图",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 162,
+						"offsetX": 63,
+						"offsetY": 71,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "vehicles/AAG/Wasp Ship Map Player Version.webp"
+					},
+					"imageType": "mapPlayer",
+					"mapParent": {
+						"id": "000"
+					},
+					"title": "未标记版本",
+					"credit": "Dyson Logos",
+					"grid": {
+						"type": "square",
+						"size": 162,
+						"offsetX": 63,
+						"offsetY": 71,
+						"scale": 3
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		}
+	]
+}

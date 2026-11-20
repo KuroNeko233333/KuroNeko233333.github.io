@@ -1,0 +1,196 @@
+{
+	"spellFluff": [
+		{
+			"ENG_name": "Barkskin",
+			"name": "树肤术",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/PHB/Barkskin.webp"
+					},
+					"width": 377,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Burning Hands",
+			"name": "燃烧之手",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/PHB/Burning Hands.webp"
+					},
+					"width": 377,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Cloudkill",
+			"name": "死云术",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/PHB/Cloudkill.webp"
+					},
+					"width": 1000,
+					"height": 1375
+				}
+			]
+		},
+		{
+			"ENG_name": "Dimension Door",
+			"name": "任意门",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/PHB/Dimension Door.webp"
+					},
+					"width": 753,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Fireball",
+			"name": "火球术",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/PHB/Fireball.webp"
+					},
+					"width": 449,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Guardian of Faith",
+			"name": "信仰守卫",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/PHB/Guardian of Faith.webp"
+					},
+					"width": 750,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Insect Plague",
+			"name": "疫病虫群",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/PHB/Insect Plague.webp"
+					},
+					"width": 449,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Magic Missile",
+			"name": "魔法飞弹",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/PHB/Magic Missile.webp"
+					},
+					"width": 1359,
+					"height": 1700
+				}
+			]
+		},
+		{
+			"ENG_name": "Mordenkainen's Sword",
+			"name": "魔邓肯之剑",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/PHB/Mordenkainen's Sword.webp"
+					},
+					"width": 449,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Prismatic Spray",
+			"name": "虹光喷射",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/PHB/Prismatic Spray.webp"
+					},
+					"width": 729,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Sacred Flame",
+			"name": "圣火术",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/PHB/Sacred Flame.webp"
+					},
+					"width": 449,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Web",
+			"name": "蛛网术",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/PHB/Web.webp"
+					},
+					"width": 739,
+					"height": 1000
+				}
+			]
+		}
+	]
+}

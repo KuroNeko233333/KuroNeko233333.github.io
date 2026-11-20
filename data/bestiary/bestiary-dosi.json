@@ -1,0 +1,776 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
+		"internalCopies": [
+			"monster"
+		],
+		"otherSources": {
+			"monster": {
+				"MM": "DoSI"
+			}
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Fume Drake",
+			"name": "烟雾龙兽",
+			"type": "elemental",
+			"source": "DoSI",
+			"page": 41,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d6 + 5"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 6,
+			"dex": 14,
+			"con": 12,
+			"int": 6,
+			"wis": 10,
+			"cha": 11,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"immune": [
+				"火焰",
+				"毒素"
+			],
+			"conditionImmune": [
+				"中毒"
+			],
+			"languages": [
+				"龙语",
+				"火族语"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"ENG_name": "Death Burst",
+					"name": "自爆",
+					"entries": [
+						"当烟雾龙兽死去时，它以一团有毒迷雾的形式炸裂。每个在烟雾龙兽 5 尺内的生物都需要通过一个{@dc 11}的体质豁免否则承受 4（{@damage 1d8}）点毒素伤害。"
+					]
+				},
+				{
+					"ENG_name": "Unusual Nature",
+					"name": "非凡本质",
+					"entries": [
+						"烟雾龙兽不需要食物，喝水或睡觉。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}4（{@damage 1d4 + 2}）点火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "Scalding Breath {@recharge}",
+					"name": "灼热吐息{@recharge}",
+					"entries": [
+						"烟雾龙兽呼出灼热气息并覆盖 15 尺的锥状区域。该区域内的每个生物都必须进行一次{@dc 11}的敏捷豁免检定。豁免失败则受到 4（{@damage 1d8}）点火焰伤害，豁免成功受到半数伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"traitTags": [
+				"自爆",
+				"非凡本质"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"吐息武器"
+			],
+			"languageTags": [
+				"DR",
+				"IG"
+			],
+			"damageTags": [
+				"F",
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Kobold Tinkerer",
+			"name": "狗头人修补匠",
+			"type": "humanoid",
+			"source": "DoSI",
+			"page": 43,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 10,
+				"formula": "3d6"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 10
+			},
+			"str": 7,
+			"dex": 14,
+			"con": 10,
+			"int": 15,
+			"wis": 7,
+			"cha": 9,
+			"skill": {
+				"arcana": "+4",
+				"perception": "+0"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"languages": [
+				"通用语",
+				"龙语"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"ENG_name": "Inquiring Mind (1/Day)",
+					"name": "探究精神（1/日）",
+					"entries": [
+						"狗头人可以释放{@spell 侦测魔法}且不需要法术材料。 当你使用此特性施展这些法术时，智力是你的施法关键属性。"
+					]
+				},
+				{
+					"ENG_name": "Pack Tactics",
+					"name": "集群战术",
+					"entries": [
+						"狗头人至少有一个未处于{@condition 失能}的盟友在目标生物 5 尺内时，它对该生物发动的攻击检定有优势。"
+					]
+				},
+				{
+					"ENG_name": "Sunlight Sensitivity",
+					"name": "日照敏感",
+					"entries": [
+						"受阳光照射时，狗头人进行的攻击检定和依赖视觉进行的感知（{@skill 察觉}）检定具有劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及 5 尺或射程 20/60 尺，单一目标。{@h}4（{@damage 1d4 + 2}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Alchemical Flame {@recharge}",
+					"name": "炼金火焰{@recharge}",
+					"entries": [
+						"狗头人释放火焰并覆盖一处 15 尺锥形区域。该区域内的每个生物都必须进行一次{@dc 12}的敏捷豁免，豁免失败者将受到 10（{@damage 3d6}）点火焰伤害，豁免成功则伤害减半。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"traitTags": [
+				"集群战术",
+				"日照敏感"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Merrow Extortionist",
+			"name": "迈罗人鱼敲诈者",
+			"type": "monstrosity",
+			"source": "DoSI",
+			"page": 0,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 30,
+				"formula": "4d10 + 8"
+			},
+			"speed": {
+				"walk": 10,
+				"swim": 40
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 15,
+			"int": 8,
+			"wis": 10,
+			"cha": 9,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"languages": [
+				"深渊语",
+				"水族语",
+				"通用语"
+			],
+			"cr": {
+				"cr": "1",
+				"xp": 100
+			},
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"迈罗人鱼可在水里和空气中呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"迈罗人鱼进行两次撕裂攻击。"
+					]
+				},
+				{
+					"ENG_name": "Rend",
+					"name": "撕裂",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及10尺，单一目标。{@h}8（{@damage 2d4 + 3}）点穿刺伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"水陆两栖"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AB",
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Myla",
+			"name": "米拉",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DoSI",
+			"page": 9,
+			"_copy": {
+				"ENG_name": "Kobold Tinkerer",
+				"name": "狗头人修补匠",
+				"source": "DoSI",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "狗头人",
+						"with": "米拉",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Runara",
+			"name": "茹娜拉",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DoSI",
+			"page": 40,
+			"_copy": {
+				"ENG_name": "Adult Bronze Dragon",
+				"name": "成年青铜龙",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "龙",
+						"with": "茹娜拉",
+						"flags": "i"
+					},
+					"action": [
+						{
+							"mode": "removeArr",
+							"names": "尾击"
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "变形",
+							"items": {
+								"ENG_name": "Change Shape",
+								"name": "变形",
+								"type": "entries",
+								"entries": [
+									"茹娜拉可以用魔法变形为中型或小型的类人生物或野兽，并保持她的游戏数据（除了体型）。这种变形持续到茹娜拉的生命值降为 0 或她用一个附赠动作解除。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"cr": "13",
+			"legendary": null,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Sinensa",
+			"name": "塞娜萨",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DoSI",
+			"page": 45,
+			"_copy": {
+				"ENG_name": "Myconid Sovereign",
+				"name": "蕈人王",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "蕈人",
+						"with": "塞娜萨",
+						"flags": "i"
+					},
+					"action": [
+						{
+							"mode": "removeArr",
+							"names": [
+								"活化孢子 (3/日)",
+								"安抚孢子"
+							]
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "多重攻击",
+							"items": {
+								"ENG_name": "Multiattack",
+								"name": "多重攻击",
+								"type": "entries",
+								"entries": [
+									"蕈人可以先发动拳击攻击，然后再使用致幻孢子。"
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "拳击",
+							"items": {
+								"ENG_name": "Fist",
+								"name": "拳击",
+								"type": "entries",
+								"entries": [
+									"{@atk mw} 命中{@hit 3}，触及5尺，一目标。{@h}8 ({@damage 3d4 + 1}) 点钝击伤害加上7 ({@damage 2d4}) 点毒素伤害。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Spore Servant Octopus",
+			"name": "孢子仆从八爪鱼",
+			"type": "plant",
+			"source": "DoSI",
+			"page": 46,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d10 + 8"
+			},
+			"speed": {
+				"walk": 5,
+				"swim": 50
+			},
+			"str": 17,
+			"dex": 13,
+			"con": 13,
+			"int": 2,
+			"wis": 6,
+			"cha": 1,
+			"senses": [
+				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+			],
+			"passive": 8,
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"恐慌",
+				"麻痹"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Hold Breath",
+					"name": "屏息",
+					"entries": [
+						"当离开水时，章鱼可以屏住呼吸长达1小时。"
+					]
+				},
+				{
+					"ENG_name": "Water Breathing",
+					"name": "水下呼吸",
+					"entries": [
+						"章鱼只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Tentacles",
+					"name": "触须",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及 15 尺，单一目标 {@h}7 ({@damage 1d8 + 3}) 点钝击伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"屏息",
+				"水下呼吸"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"触须"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Tarak",
+			"name": "塔拉克",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DoSI",
+			"page": 47,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 27,
+				"formula": "6d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 10,
+			"int": 12,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"deception": "+5",
+				"insight": "+4",
+				"medicine": "+4",
+				"nature": "+3"
+			},
+			"passive": 12,
+			"languages": [
+				"通用语",
+				"龙语",
+				"盗贼黑话"
+			],
+			"cr": "1",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"塔拉克使用三次匕首攻击。"
+					]
+				},
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 5}，触及5尺或射程20/60尺，单一目标。{@h}5 ({@damage 1d4 + 3}) 点穿刺伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Cunning Action",
+					"name": "灵巧动作",
+					"entries": [
+						"塔拉克执行{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"TC"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Varnoth",
+			"name": "瓦努斯",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DoSI",
+			"page": 47,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 39,
+				"formula": "6d8 + 12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"athletics": "+5",
+				"history": "+2",
+				"perception": "+2",
+				"religion": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"通用语"
+			],
+			"cr": "2",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"瓦努斯发动三次短剑攻击。"
+					]
+				},
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}6（{@damage 1d6 + 3}）点穿刺伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"短剑|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Violet Fungus",
+			"name": "紫腐菌",
+			"source": "DoSI",
+			"page": 48,
+			"referenceSources": [
+				"BMT",
+				"PaBTSO"
+			],
+			"_copy": {
+				"ENG_name": "Violet Fungus",
+				"name": "紫腐菌",
+				"source": "MM",
+				"_mod": {
+					"trait": [
+						{
+							"mode": "replaceArr",
+							"replace": "无定形",
+							"items": {
+								"ENG_name": "False Appearance",
+								"name": "无定形",
+								"type": "entries",
+								"entries": [
+									"如果紫腐菌在战斗开始时保持静止，它在先攻检定上具有优势。此外，如果一个生物没有观察到紫腐菌移动或行动，该生物必须成功通过一个{@dc 18}智力（{@skill 调查}）检定才能辨别出紫腐菌并非普通蕈类。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		}
+	]
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head><script>window.__OURS_WEB={};</script><script src="__ours/web.js"></script>
+	<!--5ETOOLS_CMP-->
+	<!--5ETOOLS_ADCODE-->
+	<meta charset="utf-8">
+	<meta name="description" content="DND 5e 人生生成器，随机生成角色的背景故事和人生经历。">
+	<meta name="keywords" content="DND,5e,人生生成器,背景故事,角色经历,龙与地下城">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<title>这是你的人生 - 5etools</title>
+	<link rel="canonical" href="https://5e.kiwee.top/lifegen.html">
+
+	<!-- Open Graph -->
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="zh_CN">
+	<meta property="og:site_name" content="5etools">
+	<meta property="og:title" content="这是你的人生 - 5etools">
+	<meta property="og:description" content="DND 5e 人生生成器，随机生成角色的背景故事和人生经历。">
+	<meta property="og:url" content="https://5e.kiwee.top/lifegen.html">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="这是你的人生 - 5etools">
+	<meta name="twitter:description" content="DND 5e 人生生成器，随机生成角色的背景故事和人生经历。">
+	<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","name":"这是你的人生 - 5etools","description":"DND 5e 人生生成器，随机生成角色的背景故事和人生经历。","url":"https://5e.kiwee.top/lifegen.html","inLanguage":"zh-CN","isPartOf":{"@type":"WebSite","name":"5etools","url":"https://5e.kiwee.top/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首页","item":"https://5e.kiwee.top/"},{"@type":"ListItem","position":2,"name":"这是你的人生","item":"https://5e.kiwee.top/lifegen.html"}]}]}</script>
+
+	<link rel="ours-stylesheet" data-ours-src="/css/bootstrap.css">
+	<link rel="ours-stylesheet" data-ours-src="/css/main.css">
+	<link rel="ours-stylesheet" data-ours-src="/css/lifegen.css">
+
+	<!-- Favicons -->
+	<link rel="icon" type="image/svg+xml" href="favicon.svg">
+	<link rel="icon" type="image/png" sizes="256x256" href="favicon-256x256.png">
+	<link rel="icon" type="image/png" sizes="144x144" href="favicon-144x144.png">
+	<link rel="icon" type="image/png" sizes="128x128" href="favicon-128x128.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="favicon-64x64.png">
+	<link rel="icon" type="image/png" sizes="48x48" href="favicon-48x48.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+	<!-- Chrome Web App Icons -->
+	<link rel="manifest" href="manifest.webmanifest">
+	<meta name="application-name" content="5etools">
+	<meta name="theme-color" content="#815463">
+
+	<!-- Windows Start Menu tiles -->
+	<meta name="msapplication-config" content="browserconfig.xml"/>
+	<meta name="msapplication-TileColor" content="#815463">
+
+	<!-- Apple Touch Icons -->
+	<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+	<link rel="apple-touch-icon" sizes="360x360" href="apple-touch-icon-360x360.png">
+	<link rel="apple-touch-icon" sizes="167x167" href="apple-touch-icon-167x167.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+	<meta name="apple-mobile-web-app-title" content="5etools">
+
+	<!-- macOS Safari Pinned Tab and Touch Bar -->
+	<link rel="mask-icon" href="safari-pinned-tab.svg" color="#815463">
+
+	<!-- OpenSearch -->
+	<link rel="search" href="open-search.xml" title="Search 5etools" type="application/opensearchdescription+xml">
+
+	
+
+	<script type="application/x-ours-script" data-ours-src="/js/styleswitch.js" data-ours-kind="module"></script>
+	<script type="application/x-ours-script" data-ours-src="/js/locale-data.js" data-ours-kind="classic"></script>
+	<script type="application/x-ours-script" data-ours-src="/js/locale.js" data-ours-kind="classic"></script>
+	<script type="application/x-ours-script" data-ours-src="/js/navigation.js" data-ours-kind="classic"></script>
+	<script type="application/x-ours-script" data-ours-src="/js/browsercheck.js" data-ours-kind="module"></script>
+
+	
+</head>
+
+<body>
+
+<div class="overlay-noise no-print"></div>
+
+<div class="cancer__wrp-leaderboard cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__wrp-leaderboard-inner cancer__wrp-interactive"><!--5ETOOLS_AD_LEADERBOARD--></div></div>
+
+<div class="ve-flex-col" data-cancer-id="cancer-header">
+	<header class="ve-mobile-sm__hidden page__header">
+		<div class="container ve-flex-v-baseline">
+			<h1 class="page__title ve-no-wrap ve-my-0" id="page__title">这是你的人生</h1>
+			<p class="page__subtitle ve-no-wrap ve-my-0" id="page__subtitle">填写生成参数，然后点击生成。</p>
+		</div>
+	</header>
+
+	<nav class="container page__nav" id="navigation">
+		<ul class="nav nav-pills page__nav-inner" id="navbar"></ul>
+	</nav>
+</div>
+
+<div class="cancer__wrp-sidebar cancer__wrp-sidebar-lhs cancer__wrp-sidebar-lhs--scrolling-page cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__sidebar-inner cancer__sidebar-inner--top cancer__wrp-interactive"><!--5ETOOLS_AD_LEFT_1--></div><div class="cancer__sidebar-inner cancer__sidebar-inner--bottom cancer__wrp-interactive"><!--5ETOOLS_AD_LEFT_2--></div></div>
+<div class="cancer__wrp-sidebar cancer__wrp-sidebar-rhs cancer__wrp-sidebar-rhs--scrolling-page cancer__anchor"><div class="cancer__disp-cancer"></div><div class="cancer__sidebar-inner cancer__sidebar-inner--top cancer__wrp-interactive"><!--5ETOOLS_AD_RIGHT_1--></div><div class="cancer__sidebar-inner cancer__sidebar-inner--bottom cancer__wrp-interactive"><!--5ETOOLS_AD_RIGHT_2--></div></div>
+
+<main class="container" data-cancer-id="cancer-wrapper">
+	<div class="ve-flex no-print">
+		<div class="form-group ve-col-2-4 ve-mr-2">
+			<label for="race">种族</label>
+			<select class="ve-form-control form-inline" id="race" disabled><option>加载中...</option></select>
+		</div>
+
+		<div class="form-group ve-col-2-4 ve-mr-2">
+			<label for="cha">魅力调整值</label>
+			<select class="ve-form-control form-inline" id="cha" disabled><option>加载中...</option></select>
+		</div>
+
+		<div class="form-group ve-col-2-4 ve-mr-2">
+			<label for="race">背景</label>
+			<select class="ve-form-control form-inline" id="background" disabled><option>加载中...</option></select>
+		</div>
+
+		<div class="form-group ve-col-2-4 ve-mr-2">
+			<label for="race">职业</label>
+			<select class="ve-form-control form-inline" id="class" disabled><option>加载中...</option></select>
+		</div>
+
+		<div class="form-group ve-col-2-4">
+			<label for="age"><i>年龄</i></label>
+			<select class="ve-form-control form-inline" id="age" disabled><option>加载中...</option></select>
+		</div>
+	</div>
+	<div class="ve-flex no-print">
+		<div class="form-group ve-col-12">
+			<button class="ve-btn ve-btn-default" id="btn-generate">生成</button>
+		</div>
+	</div>
+
+	<div class="ve-flex-col no-print ve-py-0">
+		<p>这个生成器是基于<a href="#" id="xge_link">《姗纳萨的万事指南》</a>第61-73页的规则和表格。</p>
+		<p><i>意：以斜体显示所产生的文本内容是为了让使用变得更容易和快速，它们并不对应原本生成器中的任何表格。随你喜好忽视它们。</i></p>
+	</div>
+
+	<hr class="life__output ve-hidden">
+	<div class="ve-flex-col life__output ve-bg-solid ve-shadow-big ve-b-1p ve-bc-5p ve-my-3 ve-py-1 ve-px-3 ve-hidden">
+		<div class="wrp-sect-head"><h4>双亲</h4><button class="ve-btn ve-btn-xs ve-btn-default no-print" id="btn-reroll-parents">重骰</button></div>
+		<p id="parents"></p>
+	</div>
+	<div class="ve-flex-col life__output ve-bg-solid ve-shadow-big ve-b-1p ve-bc-5p ve-my-3 ve-py-1 ve-px-3 ve-hidden">
+		<div class="wrp-sect-head"><h4>出生地</h4><button class="ve-btn ve-btn-xs ve-btn-default no-print" id="btn-reroll-birthplace">重骰</button></div>
+		<p id="birthplace"></p>
+	</div>
+	<div class="ve-flex-col life__output ve-bg-solid ve-shadow-big ve-b-1p ve-bc-5p ve-my-3 ve-py-1 ve-px-3 ve-hidden">
+		<div class="wrp-sect-head"><h4>兄弟姊妹</h4><button class="ve-btn ve-btn-xs ve-btn-default no-print" id="btn-reroll-siblings">重骰</button></div>
+		<p id="siblings"></p>
+	</div>
+	<div class="ve-flex-col life__output ve-bg-solid ve-shadow-big ve-b-1p ve-bc-5p ve-my-3 ve-py-1 ve-px-3 ve-hidden">
+		<div class="wrp-sect-head"><h4>家族和朋友</h4><button class="ve-btn ve-btn-xs ve-btn-default no-print" id="btn-reroll-family">重骰</button></div>
+		<p id="family"></p>
+	</div>
+	<div class="ve-flex-col life__output ve-bg-solid ve-shadow-big ve-b-1p ve-bc-5p ve-my-3 ve-py-1 ve-px-3 ve-hidden">
+		<div class="wrp-sect-head"><h4>个人抉择</h4><button class="ve-btn ve-btn-xs ve-btn-default no-print" id="btn-reroll-personal">重骰</button></div>
+		<p id="personal"></p>
+	</div>
+	<div class="ve-flex-col life__output ve-bg-solid ve-shadow-big ve-b-1p ve-bc-5p ve-my-3 ve-py-1 ve-px-3 ve-hidden">
+		<div class="wrp-sect-head"><h4>职业训练</h4><button class="ve-btn ve-btn-xs ve-btn-default no-print" id="btn-reroll-class">重骰</button></div>
+		<p id="clss"></p>
+	</div>
+	<div class="ve-flex-col life__output ve-bg-solid ve-shadow-big ve-b-1p ve-bc-5p ve-my-3 ve-py-1 ve-px-3 ve-hidden">
+		<div class="wrp-sect-head"><h4>人生大事</h4><button class="ve-btn ve-btn-xs ve-btn-default no-print" id="btn-reroll-events">重骰</button></div>
+		<p id="events"></p>
+	</div>
+	<div class="ve-h-50h"></div>
+</main>
+
+	<div class="ve-text-center">
+		<div class="mt-2">
+			<span id="icp-beian"><a href="https://beian.miit.gov.cn/" target="_blank">津ICP备2024020109号-1</a></span><script>if (location.hostname === "5e.kiwee.top") document.getElementById("icp-beian").style.display = "inline";</script>
+		</div>
+	</div>
+<!--5ETOOLS_SCRIPT_ANCHOR-->
+<!--5ETOOLS_AD_ADHESION-->
+
+<script type="application/x-ours-script" data-ours-src="/js/parser.js" data-ours-kind="classic"></script>
+<script type="application/x-ours-script" data-ours-src="/js/utils.js" data-ours-kind="classic"></script>
+<script type="application/x-ours-script" data-ours-src="/js/utils-ui.js" data-ours-kind="classic"></script>
+<script type="application/x-ours-script" data-ours-src="/lib/localforage.js" data-ours-kind="classic"></script>
+<script type="application/x-ours-script" data-ours-src="/js/omnidexer.js" data-ours-kind="module"></script>
+<script type="application/x-ours-script" data-ours-src="/js/omnisearch.js" data-ours-kind="module"></script>
+<script type="application/x-ours-script" data-ours-src="/js/filter.js" data-ours-kind="module"></script>
+<script type="application/x-ours-script" data-ours-src="/js/utils-dataloader.js" data-ours-kind="module"></script>
+<script type="application/x-ours-script" data-ours-src="/js/utils-font.js" data-ours-kind="module"></script>
+<script type="application/x-ours-script" data-ours-src="/js/utils-brew.js" data-ours-kind="module"></script>
+<script type="application/x-ours-script" data-ours-src="/js/utils-config.js" data-ours-kind="module"></script>
+<script type="application/x-ours-script" data-ours-src="/js/render.js" data-ours-kind="classic"></script>
+<script type="application/x-ours-script" data-ours-src="/js/render-dice.js" data-ours-kind="classic"></script>
+<script type="application/x-ours-script" data-ours-src="/js/shim-esmodules.js" data-ours-kind="module"></script>
+<script type="application/x-ours-script" data-ours-src="/js/hist.js" data-ours-kind="classic"></script>
+<script type="application/x-ours-script" data-ours-src="/js/lifegen.js" data-ours-kind="module"></script>
+<script type="application/x-ours-script" data-ours-src="/js/list2.js" data-ours-kind="module"></script>
+<script type="application/x-ours-script" data-ours-src="/lib/marked.js" data-ours-kind="classic"></script>
+<script type="application/x-ours-script" data-ours-src="/lib/elasticlunr.js" data-ours-kind="classic"></script>
+
+<script type="application/x-ours-script" data-ours-src="/lib/lunr.min.js" data-ours-kind="classic"></script>
+<script type="application/x-ours-script" data-ours-src="/lib/tinyseg.js" data-ours-kind="classic"></script>
+<script type="application/x-ours-script" data-ours-src="/lib/lunr.stemmer.support.min.js" data-ours-kind="classic"></script>
+<script type="application/x-ours-script" data-ours-src="/lib/lunr.zh.min.js" data-ours-kind="classic"></script>
+
+<link rel="ours-stylesheet" data-ours-src="/__ours/ours.css"><script type="application/x-ours-script" data-ours-src="/__ours/ours.js" data-ours-kind="classic"></script><script>window.__OURS_WEB.boot();</script></body>
+</html>

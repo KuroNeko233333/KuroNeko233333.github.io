@@ -1,0 +1,170 @@
+{
+	"spell": [
+		{
+			"ENG_name": "Antagonize",
+			"name": "敌意术",
+			"source": "BMT",
+			"page": 50,
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 30
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一张描绘着 浪客Rogue 的卡牌"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你以魔法之词低语，令施法距离内你选择的一个生物产生敌意。目标必须进行一次感知豁免。若豁免失败，目标会受到 {@damage 4d4} 点心灵伤害，且必须立即使用反应对你选择的另一个你能看到的生物发动一次近战攻击。如果目标无法发动这次攻击（例如它的触及范围内没有生物，或者因为它的反应无法使用），那么在你的下一回合开始前，目标的下一次攻击检定具有劣势。若豁免成功，目标仅会受到一半的伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"当你使用4环或更高法术位施放该法术时，伤害对3环以上的每个法术位环阶增加{@scaledamage 4d4|3-9|1d4}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Spirit of Death",
+			"name": "死神灵魄",
+			"source": "BMT",
+			"page": 50,
+			"level": 4,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "一张描绘着死神化身的镀金纸牌，至少价值400gp",
+					"cost": 40000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你唤来一个象征死神的灵魄。其在施法距离内你可见的一个未占据位置化为实体，并使用{@creature 收割者灵魄|BMT}的数据。当其生命值降至0或法术结束时，灵魄会消失。",
+				"该灵魄在法术持续时间内对你和你的同伴们友好。在战斗中，该生物与你共享先攻值，其回合紧跟在你的回合之后。它遵从于你的口头指令（无需任何动作）。如果你不发令，它将执行{@action 回避}动作并远离危险。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"使用5环或更高法术位施放本法术时，该法术召唤的收割者灵魄数据中使用更高的法术环阶。"
+					]
+				}
+			],
+			"miscTags": [
+				"SGT",
+				"SMN"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Spray of Cards",
+			"name": "卡牌喷射",
+			"source": "BMT",
+			"page": 50,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "cone",
+				"distance": {
+					"type": "feet",
+					"amount": 15
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一副牌组"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你向一处15尺锥状区域喷射卡牌，该区域内的生物必须进行一次敏捷豁免。豁免失败的生物受到 {@damage 2d10} 点力场伤害伤害并陷入{@condition 目盲}，持续直至其下一个回合结束。豁免成功则仅会受到一半伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"使用三环或更高法术位施展该法术时，你使用的法术位每比二环高一环，其伤害就增加{@scaledamage 2d10|2-9|1d10}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"目盲"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"translator": "不全书"
+		}
+	]
+}

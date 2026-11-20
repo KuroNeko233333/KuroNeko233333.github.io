@@ -1,0 +1,633 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM",
+				"MPP"
+			]
+		},
+		"otherSources": {
+			"monster": {
+				"MPP": "ToFW",
+				"MM": "ToFW",
+				"DMG": "ToFW"
+			}
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Aza Dowling",
+			"name": "阿扎·道林",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ToFW",
+			"page": 17,
+			"_copy": {
+				"ENG_name": "Society of Sensation Muse",
+				"name": "感觉团·缪斯乐师",
+				"source": "MPP",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "缪斯",
+						"with": "阿扎",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Ebonclaw",
+			"name": "黑檀爪",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ToFW",
+			"page": 50,
+			"_copy": {
+				"ENG_name": "Saber-Toothed Tiger",
+				"name": "剑齿虎",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "老虎",
+						"with": "黑檀爪",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Eyestalk of Gzemnid",
+			"name": "格泽姆尼德的眼柄",
+			"source": "ToFW",
+			"page": 88,
+			"_copy": {
+				"ENG_name": "Purple Worm",
+				"name": "紫虫",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "\\u5b54\\u866b",
+						"with": "触手眼"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "多重攻击",
+							"items": {
+								"ENG_name": "Multiattack",
+								"name": "多重攻击",
+								"entries": [
+									"触手眼用其咬击攻击，并使用根除凝视。"
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "尾刺",
+							"items": {
+								"ENG_name": "Eradication Gaze {@recharge 5}",
+								"name": "根除凝视 {@recharge 5}",
+								"entries": [
+									"眼柄在一个150英尺的锥形区域内制造了一个魔法毁灭区域。该区域内的任何生物都必须成功通过一个{@dc 16}的敏捷豁免检定，否则将受到55（{@damage 10d10}）点暗影伤害。如果这次伤害将一个生物的生命值降至0点，它的身体将变成一堆细小的紫色尘埃。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"tokenCredit": "@hamosart",
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Farrow",
+			"name": "法罗",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ToFW",
+			"page": 17,
+			"_copy": {
+				"ENG_name": "Spy",
+				"name": "间谍",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "间谍",
+						"with": "法罗",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Gertrube",
+			"name": "格特鲁布",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ToFW",
+			"page": 18,
+			"_copy": {
+				"ENG_name": "Thug",
+				"name": "暴徒",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "暴徒",
+						"with": "格特鲁布",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Giant Whirlwyrm",
+			"name": "巨大的漩涡龙",
+			"source": "ToFW",
+			"page": 55,
+			"_copy": {
+				"ENG_name": "Behir",
+				"name": "青足龙蛇",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "青足龙蛇",
+						"with": "漩涡龙"
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "闪电吐息{@recharge 5}",
+						"items": {
+							"ENG_name": "Thunder Breath {@recharge 5}",
+							"name": "雷霆之息 {@recharge 5}",
+							"entries": [
+								"旋风龙吐出一道20尺长、5尺宽的雷霆线。位于该直线上的每个生物必须进行一次{@dc 16}敏捷豁免，豁免失败则受到66（{@damage 12d10}）点雷鸣伤害，豁免成功则伤害减半。"
+							]
+						}
+					}
+				}
+			},
+			"speed": {
+				"walk": 50,
+				"swim": 60
+			},
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Josbert Plum",
+			"name": "乔斯伯特·布拉姆",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ToFW",
+			"page": 17,
+			"_copy": {
+				"ENG_name": "Harmonium Peacekeeper",
+				"name": "和谐营·和平卫士",
+				"source": "MPP",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "和平守护者",
+						"with": "乔斯伯特",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Kal the Crisp",
+			"name": "焦脆卡尔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ToFW",
+			"page": 17,
+			"_copy": {
+				"ENG_name": "Hands of Havoc Fire Starter",
+				"name": "祸乱之手·纵火狂徒",
+				"source": "MPP",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "火种",
+						"with": "卡尔",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Kopoha",
+			"name": "科波哈",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ToFW",
+			"page": 61,
+			"_copy": {
+				"ENG_name": "Empyrean",
+				"name": "至高天",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "至高天",
+						"with": "科波哈",
+						"flags": "i"
+					},
+					"action": {
+						"mode": "removeArr",
+						"names": "巨锤"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Modron Planar Incarnate",
+			"name": "魔冢位面化身",
+			"type": "fiend",
+			"source": "ToFW",
+			"page": 92,
+			"_copy": {
+				"ENG_name": "Planar Incarnate",
+				"name": "位面显化",
+				"source": "MPP",
+				"_mod": {
+					"trait": {
+						"mode": "removeArr",
+						"names": "位面形态"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "能量箭",
+							"items": {
+								"ENG_name": "Energy Bolt",
+								"name": "能量箭",
+								"entries": [
+									"{@atk rs} 命中{@hit 12}，射程120尺，单一目标。{@h}32点（{@damage 5d12}）暗蚀伤害。"
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "位面洪流 {@recharge 5}",
+							"items": {
+								"ENG_name": "Planar Exhalation {@recharge 5}",
+								"name": "位面洪流 {@recharge 5}",
+								"entries": [
+									"化身呼出其位面特有的浓缩能量，形成一个60尺的锥形区域。该区域内的每个生物必须进行一次{@dc 23}体质豁免。若豁免失败，生物将受到52（{@damage 8d12}）点暗蚀伤害，并且在化身的下一回合结束前获得{@condition 目盲}状态。若豁免成功，生物仅受到一半的伤害。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Morte",
+			"name": "莫提",
+			"type": "undead",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ToFW",
+			"page": 10,
+			"referenceSources": [
+				"MPP"
+			],
+			"size": [
+				"T"
+			],
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 22,
+				"formula": "4d4 + 12"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 30,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 16,
+			"int": 13,
+			"wis": 10,
+			"cha": 12,
+			"skill": {
+				"arcana": "+3",
+				"stealth": "+5"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"immune": [
+				"毒素"
+			],
+			"vulnerable": [
+				"钝击"
+			],
+			"conditionImmune": [
+				"力竭",
+				"中毒"
+			],
+			"languages": [
+				"通用语"
+			],
+			"cr": "1/4",
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及 5 尺，单一目标。{@h}5（{@damage 1d4 + 3}）的穿刺伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Ophelia",
+			"name": "奥菲莉亚",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ToFW",
+			"page": 49,
+			"_copy": {
+				"ENG_name": "Elephant",
+				"name": "大象",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "大象",
+						"with": "奥菲莉亚",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"int": 10,
+			"wis": 14,
+			"cha": 14,
+			"languages": [
+				"通用语"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Parvaz",
+			"name": "帕瓦兹",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ToFW",
+			"page": 50,
+			"_copy": {
+				"ENG_name": "Giant Eagle",
+				"name": "巨鹰",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鹰",
+						"with": "帕瓦兹",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"int": 16,
+			"cha": 14,
+			"languages": [
+				"通用语"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "R04M",
+			"name": "R04M",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ToFW",
+			"page": 75,
+			"_copy": {
+				"ENG_name": "Monodrone",
+				"name": "单元冢",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "单元冢",
+						"with": "R04M",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"int": 8,
+			"languages": [
+				"通用语",
+				"魔冢语"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shariel",
+			"name": "沙里尔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ToFW",
+			"page": 65,
+			"_copy": {
+				"ENG_name": "Deva",
+				"name": "天神使徒",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "天神使徒",
+						"with": "沙里尔",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Vecna Impersonator",
+			"name": "维克那模仿者",
+			"source": "ToFW",
+			"page": 26,
+			"_copy": {
+				"ENG_name": "Doppelganger",
+				"name": "变形怪",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "变形怪",
+						"with": "冒名顶替者"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Whirlwyrm",
+			"name": "漩涡龙",
+			"source": "ToFW",
+			"page": 52,
+			"_copy": {
+				"ENG_name": "Giant Crocodile",
+				"name": "巨鳄",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鳄鱼",
+						"with": "漩涡龙"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "X01",
+			"name": "X01",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ToFW",
+			"page": 91,
+			"_copy": {
+				"ENG_name": "Hexton Modron",
+				"name": "六次魔冢",
+				"source": "MPP",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "赫克斯顿",
+						"with": "X01",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Zaythir",
+			"name": "扎伊西尔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "ToFW",
+			"page": 32,
+			"_copy": {
+				"ENG_name": "Githzerai Uniter",
+				"name": "吉斯泽莱统念者",
+				"source": "MPP",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "吉斯泽莱",
+						"with": "扎伊西尔",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		}
+	]
+}

@@ -1,0 +1,71 @@
+/* 我们的 5etools —— 手机版（屏幕宽度 ≤ 760px）。电脑上不生效。
+ * 外壳：一行顶栏 = ✦ + 可左右滑的页面标签 + 搜索 + 菜单；资料范围和版本开关收进菜单（mobile.js 搬过去）。
+ * 页面：职业页的职业列表变成一条横向可滑的职业条；成长表左右滑、等级列固定；其余列表页收紧边距、不被截掉。 */
+@media screen and (max-width: 760px) {
+	/* ============================================================ 外壳（shell.html） */
+	html.nt3 #bar { gap: 4px; padding: 0 6px 0 4px; }
+	html.nt3 #brand { margin: 0; padding: 0 8px; height: 36px; }
+	html.nt3 #brand > b { font-size: 15px; }
+	html.nt3 #tabs { flex: 1 1 auto; min-width: 0; scroll-snap-type: x proximity; overscroll-behavior-x: contain;
+		-webkit-mask-image: linear-gradient(90deg, #000 calc(100% - 22px), transparent); mask-image: linear-gradient(90deg, #000 calc(100% - 22px), transparent); }
+	html.nt3 .tab { height: 38px; padding: 0 11px 2px; font-size: 15px; scroll-snap-align: start; }
+	html.nt3 .tab .x { display: none; }
+	html.nt3 #bar > #switch, html.nt3 #bar > #edsw, html.nt3 #bar > #mem, html.nt3 #bar > #status { display: none !important; }
+	html.nt3 #sbsearch, html.nt3 #more { width: 38px; height: 38px; padding: 0; justify-content: center; font-size: 0; gap: 0; flex: none; border-radius: 9px; }
+	html.nt3 #sbsearch .ic svg, html.nt3 #more .ic svg { width: 20px; height: 20px; }
+	html.nt3 #sbsearch kbd { display: none; }
+
+	/* 菜单：从顶栏下方展开的整宽卡片 */
+	html.nt3 #moremenu { left: 8px; right: 8px; width: auto; top: calc(var(--top) + 6px); padding: 6px 0 10px; max-height: calc(100vh - var(--top) - 16px); overflow-y: auto; border-radius: 14px; }
+	html.nt3 #moremenu .mob-sw { padding: 6px 14px 4px; }
+	html.nt3 #moremenu .mob-sw__h { margin: 6px 0 6px; font-size: 12px; color: var(--tex3); letter-spacing: .04em; }
+	html.nt3 #moremenu .mob-sw__h small { margin-left: 6px; font-size: 12px; letter-spacing: 0; color: var(--tex3); opacity: .85; }
+	html.nt3 #moremenu #switch, html.nt3 #moremenu #edsw { display: grid; grid-auto-flow: column; grid-auto-columns: 1fr; padding: 3px; gap: 2px; border-radius: 10px; background: rgba(130, 60, 0, .08); }
+	html.nt3 #moremenu .seg[data-mode=manual] { display: none !important; }
+	html.nt3 #moremenu .seg, html.nt3 #moremenu .eds { justify-content: center; height: 36px; padding: 0 4px; border-radius: 8px; font-size: 15px; color: var(--tex2); }
+	html.nt3 #moremenu .seg.on { background: #e5bd62; color: #3a1a08; }
+	html.nt3 #moremenu .eds.on { background: #bcd6ee; color: #12324f; }
+	html.nt3 #moremenu .mob-sw__tip { margin: 6px 2px 0; font-size: 12px; line-height: 17px; color: var(--tex3); }
+	html.nt3 #moremenu .mob-sep { height: 1px; margin: 10px 0 4px; background: var(--line2); }
+
+	/* ============================================================ 所有页面（iframe 里） */
+	html.nt3 body { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+	/* 列表页：网站的外框比屏幕宽（428 / 390），右边的来源列和按钮被截掉 → 外框收回屏宽 */
+	html.nt3 .view-col-wrapper { width: 100% !important; max-width: 100% !important; padding-left: 8px !important; padding-right: 8px !important; box-sizing: border-box; }
+	html.nt3 .view-col-wrapper > .view-col { margin-left: 0 !important; margin-right: 0 !important; min-width: 0; max-width: 100%; }
+	html.nt3 #filter-search-group > * { min-width: 0; }
+	/* 列表行：次要列收窄并省略 */
+	html.nt3 .list .ve-lst__row-inner > span, html.nt3 .list .ve-lst__row-inner > span.ve-flex > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+	html.nt3 .list .ve-lst__row-inner .ve-code { font-size: 12px; }   /* 书库：出版日期 */
+	/* 「管理自制内容」等按钮：手机上不用（网站的工具类带 !important，只能这样藏） */
+	html.nt3 #listcontainer > .ve-my-3:has(#btngroup-manager), html.nt3 #btngroup-manager { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+
+	/* ============================================================ 职业页（V4） */
+	html.nt2 main.classes.ntc-on { display: block !important; }
+	html.nt2 main.classes.ntc-on #listcontainer { position: static; height: auto; padding: 8px 12px 8px; border-right: 0; border-bottom: 1px solid var(--v3-rule, #e4d3ae); }
+	html.nt4 .n4-ltabs { margin: 0 0 6px; }
+	html.nt2 main.classes.ntc-on #list.cls__list { display: flex; flex-direction: row; flex-wrap: nowrap; gap: 6px; overflow-x: auto; overflow-y: hidden; max-height: none; margin: 0 -12px; padding: 2px 12px 4px; scrollbar-width: none; scroll-snap-type: x proximity; }
+	html.nt2 main.classes.ntc-on #list.cls__list::-webkit-scrollbar { display: none; }
+	html.nt2 main.classes.ntc-on #list.cls__list > * { flex: none; scroll-snap-align: start; }
+	html.nt2 main.classes.ntc-on #list.cls__list > .ve-lst__row::before { display: none !important; }
+	html.nt4 .cls__list .ve-lst__row-inner { min-height: 34px; padding: 0 12px !important; border-radius: 17px; background: var(--v3-card, #fffaf0); box-shadow: inset 0 0 0 1px var(--v3-rule, #e4d3ae); }
+	html.nt4 .cls__list .ve-lst__row--focused .ve-lst__row-inner, html.nt4 .cls__list .list-multi-selected .ve-lst__row-inner { background: var(--v3-red, #822000); box-shadow: none; }
+	html.nt4 .cls__list .ve-lst__row--focused .ve-lst__row-inner *, html.nt4 .cls__list .list-multi-selected .ve-lst__row-inner * { color: #fff6e0 !important; }
+	html.nt4 .cls__list .n4-merged .ve-lst__row-inner > .nt-name { font-size: 15px; }
+
+	html.nt2 main.classes.ntc-on > .ntc { padding: 12px 14px 120px !important; }
+	html.nt4 .ntc-title { font-size: 26px; }
+	html.nt4 .ntc-actions { display: none; }
+	html.nt4 .n4-facts { flex-basis: 100%; font-size: 14px; }
+	html.nt4 .n4-fact { padding: 0 10px; }
+	html.nt2 .ntc-toc { display: none; }
+	/* 成长表：左右滑，等级列固定在左边 */
+	html.nt2 .ntc-sec--table { margin-left: -14px; margin-right: -14px; }
+	html.nt2 .ntc-sec--table #classtable { overflow-x: auto; -webkit-overflow-scrolling: touch; padding: 0 14px; }
+	html.nt2 .ntc-sec--table .ve-cls-tbl td.ve-cls-tbl__col-level, html.nt2 .ntc-sec--table .ve-cls-tbl th.ve-cls-tbl__col-level { position: sticky; left: 0; z-index: 2; background: var(--v3-card, #fffaf0); }
+	/* 子职业：标题单独一行，按钮自动换行；浏览面板占满屏宽 */
+	html.nt4 .ntc-sec--sub { flex-wrap: wrap; }
+	html.nt4 .ntc-sec--sub > .ntc-sec__head { flex-basis: 100%; }
+	html.nt4 .n4-pop { position: fixed; left: 8px; right: 8px; top: 56px; max-height: calc(100vh - 72px); }
+	html.nt2 #pagecontent.cls__stats { font-size: 16px; }
+}

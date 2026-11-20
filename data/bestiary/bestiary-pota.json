@@ -1,0 +1,6883 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
+		"internalCopies": [
+			"monster"
+		],
+		"otherSources": {
+			"monster": {
+				"MM": "PotA",
+				"VGM": "PotA",
+				"MTF": "PotA",
+				"RoT": "PotA"
+			}
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Aerisi Kalinoth",
+			"name": "阿莉希·卡罗娜斯",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 192,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				13,
+				{
+					"ac": 16,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 66,
+				"formula": "12d8 + 12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 12,
+			"int": 17,
+			"wis": 10,
+			"cha": 16,
+			"skill": {
+				"arcana": "+6",
+				"history": "+6",
+				"perception": "+3"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"resist": [
+				"闪电"
+			],
+			"languages": [
+				"气族语",
+				"通用语",
+				"精灵语"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Aerisi 是一位 12 级的施法者。她的施法能力是智力（法术豁免难度 {@dc 14}，法术攻击命中骰 {@hit 6}）。Aerisi 准备了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 舞风术|xge}",
+								"{@spell 法师之手}",
+								"{@spell 传讯术}",
+								"{@spell 魔法伎俩}",
+								"{@spell 冷冻射线}",
+								"{@spell 电爪}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 魅惑类人}",
+								"{@spell 羽落术}",
+								"{@spell 法师护甲}",
+								"{@spell 雷鸣波}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 龙卷尘暴|xge}",
+								"{@spell 造风术}",
+								"{@spell 隐形术}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 飞行术}",
+								"{@spell 气化形体}",
+								"{@spell 闪电束}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 冰风暴}",
+								"{@spell 风暴法球|xge}"
+							]
+						},
+						"5": {
+							"slots": 2,
+							"spells": [
+								"{@spell 死云术}",
+								"{@spell 伪装术}（每日施放）"
+							]
+						},
+						"6": {
+							"slots": 1,
+							"spells": [
+								"{@spell 连锁闪电}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Fey Ancestry",
+					"name": "妖精血统",
+					"entries": [
+						"Aerisi在对抗{@condition 魅惑}的豁免检定上有优势，魔法无法使她入睡。"
+					]
+				},
+				{
+					"ENG_name": "Howling Defeat",
+					"name": "哀嚎败退",
+					"entries": [
+						"当艾瑞西的生命值降至0点时，她的身体在一阵呼啸的旋风中消失，这阵旋风迅速无害地散去。她所穿戴或携带的任何物品都会留下。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (2/Day)",
+					"name": "传奇抗性（2/日）",
+					"entries": [
+						"如果艾瑞西豁免检定失败，她可以选择成功。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Windvane",
+					"name": "风标",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 9}，触及5尺或20/60尺，单一目标。{@h}9 ({@damage 1d6 + 6}) 点穿刺伤害，或者如果用双手进行近战攻击则为10 ({@damage 1d8 + 6}) 点穿刺伤害，外加3 ({@damage 1d6})闪电伤害。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Aerisi Kalinoth",
+				"name": "阿莉希·卡罗娜斯",
+				"source": "PotA"
+			},
+			"attachedItems": [
+				"风标|PotA"
+			],
+			"traitTags": [
+				"妖精血统",
+				"传奇抗性"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AU",
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"L",
+				"P"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"I",
+				"L",
+				"T"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflictSpell": [
+				"魅惑",
+				"隐形"
+			],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"体质",
+				"敏捷",
+				"力量",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Aquatic Ghoul",
+			"name": "水生食尸鬼",
+			"source": "PotA",
+			"page": 87,
+			"_copy": {
+				"ENG_name": "Ghoul",
+				"name": "食尸鬼",
+				"source": "MM"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Bastian Thermandar",
+			"name": "巴斯蒂安·萨曼德",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "元素裔",
+						"prefix": "火焰"
+					}
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 201,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 78,
+				"formula": "12d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 15,
+			"int": 11,
+			"wis": 9,
+			"cha": 18,
+			"skill": {
+				"arcana": "+3",
+				"deception": "+7"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 9,
+			"resist": [
+				"火焰"
+			],
+			"languages": [
+				"通用语",
+				"火族语"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Bastian 的天生施法能力是体质（法术豁免难度 {@dc 13}，法术攻击命中骰 {@hit 5}）。他天生可以施放以下法术："
+					],
+					"will": [
+						"{@spell 燃火术}"
+					],
+					"daily": {
+						"1": [
+							"{@spell 燃烧之手}"
+						]
+					},
+					"ability": "con"
+				},
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Bastian 是一个 9 级施法者。他的施法能力是魅力（法术豁免难度 {@dc 15}，法术攻击命中需要 {@hit 7}）。Bastian 知道以下巫师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 火焰箭}",
+								"{@spell 法师之手}",
+								"{@spell 传讯术}",
+								"{@spell 魔法伎俩}",
+								"{@spell 电爪}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 法师护甲}",
+								"{@spell 魔法飞弹}",
+								"{@spell 护盾术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 迷踪步}",
+								"{@spell 灼热射线}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 法术反制}",
+								"{@spell 火球术}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 任意门}",
+								"{@spell 火墙术}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell 定身怪物}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 5}，触及5尺或射程20/60尺，单一目标。{@h}4 ({@damage 1d4 + 2}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"IG"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"F",
+				"L",
+				"O"
+			],
+			"spellcastingTags": [
+				"CS",
+				"I"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Black Earth Guard",
+			"name": "黑土守卫",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 195,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 板甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 39,
+				"formula": "6d8 + 12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 11,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 9,
+			"skill": {
+				"intimidation": "+1",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"通用语"
+			],
+			"cr": "2",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"守卫进行两次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Morningstar",
+					"name": "钉头锤",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}7 ({@damage 1d8 + 3}) 点穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Unyielding",
+					"name": "不可撼动",
+					"entries": [
+						"当守卫受到一个会将其移动、击倒{@condition 倒地}或两者都有的效果时，它可以使用其反应来不被移动或被击倒{@condition 倒地}。"
+					]
+				}
+			],
+			"attachedItems": [
+				"钉头锤|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Black Earth Priest",
+			"name": "黑土祭司",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 195,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item 板条甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d8 + 14"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 11,
+			"con": 14,
+			"int": 12,
+			"wis": 10,
+			"cha": 16,
+			"skill": {
+				"intimidation": "+5",
+				"religion": "+3",
+				"persuasion": "+5"
+			},
+			"passive": 10,
+			"languages": [
+				"通用语",
+				"土族语"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"牧师是5级施法者。其施法能力是魅力（法术豁免难度{@dc 13}，法术攻击命中骰{@hit 5}）。它知道以下巫师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 酸液飞溅}",
+								"{@spell 剑刃防护}",
+								"{@spell 光亮术}",
+								"{@spell 修复术}",
+								"{@spell 塑土术|xge}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 地颤|xge}",
+								"{@spell 脚底抹油}",
+								"{@spell 护盾术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 粉碎音波}",
+								"{@spell 蛛行术}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell 缓慢术}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"祭司进行两次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Glaive",
+					"name": "长柄刀",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及10尺，单一目标。{@h}7 ({@damage 1d10 + 2}) 挥砍伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Unyielding",
+					"name": "不可撼动",
+					"entries": [
+						"当祭司受到一个会使它移动、击倒{@condition 倒地}或两者兼有的效果时，它可以使用反应来避免被移动或击倒{@condition 倒地}。"
+					]
+				}
+			],
+			"attachedItems": [
+				"长柄刀|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"T"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"T"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RCH"
+			],
+			"conditionInflictSpell": [
+				"倒地"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Braelen Hatherhand",
+			"name": "布雷伦·哈瑟汉德",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 156,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"hp": {
+				"average": 2,
+				"formula": "1d8"
+			},
+			"action": null,
+			"tokenCustom": true,
+			"miscTags": [],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Bronzefume",
+			"name": "青铜香炉",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 92,
+			"_copy": {
+				"ENG_name": "Dragon Turtle",
+				"name": "龙龟",
+				"source": "MM"
+			},
+			"hp": {
+				"average": 220,
+				"formula": "22d20 + 110"
+			},
+			"cr": "13",
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Burrowshark",
+			"name": "穴居鲨鱼",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 196,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 板甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 82,
+				"formula": "11d8 + 33"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 16,
+			"int": 10,
+			"wis": 11,
+			"cha": 13,
+			"skill": {
+				"animal handling": "+2",
+				"athletics": "+6",
+				"intimidation": "+3",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"通用语"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"ENG_name": "Bond of the Black Earth",
+					"name": "黑土之缚",
+					"entries": [
+						"鲨蜥兽被魔法绑定到一只训练有素的地龙上，作为其坐骑。当骑在地龙上时，鲨蜥兽共享地龙的感官，并且可以在地龙挖掘时骑乘。绑定的地龙服从鲨蜥兽的命令。如果其坐骑死亡，鲨蜥兽可以训练一只新的地龙来作为其绑定坐骑，这个过程需要一个月的时间。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"地穴鲨鱼进行三次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Spear",
+					"name": "矛",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 6}，触及5尺或范围20/60尺，单一目标。{@h}7（{@damage 1d6 + 4}）穿刺伤害，或使用双手进行近战攻击时8（{@damage 1d8 + 4}）穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Unyielding",
+					"name": "不可撼动",
+					"entries": [
+						"当掘地鲨受到一个效果，该效果会移动它、使其{@condition 倒地}，或两者兼有时，它可以利用反应使自己既不被移动，也不会{@condition 倒地}。"
+					]
+				}
+			],
+			"attachedItems": [
+				"矛|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Cavil Zaltobar",
+			"name": "卡维尔·扎尔托巴尔",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 182,
+			"_copy": {
+				"ENG_name": "Mage",
+				"name": "魔法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔法师",
+						"with": "卡维尔",
+						"flags": "i"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Crushing Wave Priest",
+			"name": "破碎波涛祭司",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 205,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item 链甲衫|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 11,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 16,
+			"skill": {
+				"deception": "+5",
+				"religion": "+2",
+				"stealth": "+2"
+			},
+			"passive": 10,
+			"languages": [
+				"水族语",
+				"通用语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"牧师是5级施法者。其施法能力是魅力（法术豁免难度{@dc 13}，法术攻击命中骰{@hit 5}）。它知道以下巫师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 颤栗之触}",
+								"{@spell 法师之手}",
+								"{@spell 次级幻象}",
+								"{@spell 魔法伎俩}",
+								"{@spell 冷冻射线}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 脚底抹油}",
+								"{@spell 冰刃|xge}",
+								"{@spell 魔法飞弹}",
+								"{@spell 护盾术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 朦胧术}",
+								"{@spell 定身类人}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell 雪雨暴}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Quarterstaff",
+					"name": "长棍",
+					"entries": [
+						"{@atk mw} {@hit 4} 命中，触及 5 尺，单一目标。{@h}6（{@damage 1d8 + 2}）钝击伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"长棍|phb"
+			],
+			"languageTags": [
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"C",
+				"N",
+				"O",
+				"P"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Crushing Wave Reaver",
+			"name": "破碎波涛掠夺者",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 205,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item 盾牌|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "4d8 + 4"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 13,
+			"int": 10,
+			"wis": 11,
+			"cha": 8,
+			"skill": {
+				"athletics": "+4",
+				"stealth": "+4"
+			},
+			"passive": 10,
+			"languages": [
+				"通用语"
+			],
+			"cr": "1/2",
+			"action": [
+				{
+					"ENG_name": "Sharktoothed Longsword",
+					"name": "鲨齿长剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6 ({@damage 1d8 + 2})挥砍伤害，或者如果用双手使用则为7 ({@damage 1d10 + 2})挥砍伤害。对抗未穿戴护甲的目标，这把剑额外造成一次骰的伤害。"
+					]
+				},
+				{
+					"ENG_name": "Javelin",
+					"name": "标枪",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及5尺或射程30/120尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"标枪|phb"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Darathra Shendrel",
+			"name": "达拉斯拉·珊德瑞尔",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 37,
+			"_copy": {
+				"ENG_name": "Knight",
+				"name": "骑士",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "骑士",
+						"with": "达拉斯拉",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Dark Tide Knight",
+			"name": "暗潮骑士",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 205,
+			"referenceSources": [
+				"SLW"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 58,
+				"formula": "9d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 11,
+			"skill": {
+				"athletics": "+7",
+				"stealth": "+7"
+			},
+			"passive": 10,
+			"languages": [
+				"通用语"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Bonded Mount",
+					"name": "乘骑纽带",
+					"entries": [
+						"这位骑士被魔法绑定到一只具有天生游泳速度的野兽上，经过训练作为其坐骑。当骑乘这只野兽时，骑士获得了野兽的感官和在水下呼吸的能力。绑定的坐骑服从骑士的命令。如果它的坐骑死亡，骑士可以训练一只新的野兽来作为其绑定的坐骑，这个过程需要一个月的时间。"
+					]
+				},
+				{
+					"ENG_name": "Sneak Attack",
+					"name": "偷袭",
+					"entries": [
+						"当骑士使用武器攻击命中目标并在攻击检定中具有优势时，或者当目标位于骑士的盟友（未处于{@condition 失能}状态）5英尺范围内且骑士在攻击检定中没有劣势时，骑士造成额外的7（{@damage 2d6}）点伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"骑士进行两次短剑攻击。"
+					]
+				},
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}6（{@damage 1d6 + 3}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Lance",
+					"name": "骑枪",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及10尺，单一目标。{@h}9（{@damage 1d12 + 3}）点穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Uncanny Dodge",
+					"name": "直觉闪避",
+					"entries": [
+						"当骑士能看到的攻击者对其发动攻击并命中时，骑士可以将其受到的伤害减半。"
+					]
+				}
+			],
+			"attachedItems": [
+				"骑枪|phb",
+				"短剑|phb"
+			],
+			"traitTags": [
+				"偷袭"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RCH"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Deseyna Majarra",
+			"name": "德塞娜·马贾拉",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 126,
+			"_copy": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "贵族",
+						"with": "德塞伊娜",
+						"flags": "i"
+					}
+				}
+			},
+			"action": null,
+			"tokenCustom": true,
+			"miscTags": [],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Drannin Splithelm",
+			"name": "德兰宁·拆盔者",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "矮人",
+						"prefix": "盾"
+					}
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 210,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 板甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 93,
+				"formula": "11d8 + 44"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 19,
+			"dex": 10,
+			"con": 18,
+			"int": 11,
+			"wis": 8,
+			"cha": 12,
+			"skill": {
+				"athletics": "+7",
+				"intimidation": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 9,
+			"resist": [
+				"寒冷",
+				"毒素"
+			],
+			"languages": [
+				"通用语",
+				"矮人语"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"ENG_name": "Action Surge (Recharges after a Short or Long Rest)",
+					"name": "动作如潮 (短休或长休之后充能)",
+					"entries": [
+						"德兰宁在他的回合上获得一个额外的动作。"
+					]
+				},
+				{
+					"ENG_name": "Brute",
+					"name": "残暴",
+					"entries": [
+						"当德兰宁用近战武器命中时，该武器会额外造成一个额外的伤害骰（包含在攻击中）。"
+					]
+				},
+				{
+					"ENG_name": "Dwarven Resilience",
+					"name": "矮人体魄",
+					"entries": [
+						"Drannin在对抗毒素的豁免检定上有优势。"
+					]
+				},
+				{
+					"ENG_name": "Indomitable (Recharges after a Short or Long Rest)",
+					"name": "不屈 (短休或长休之后充能)",
+					"entries": [
+						"德兰宁可以重新掷一次他失败的豁免检定。他必须使用新的掷骰结果。"
+					]
+				},
+				{
+					"ENG_name": "Second Wind (Recharges after a Short or Long Rest)",
+					"name": "回气 (短休或长休之后充能)",
+					"entries": [
+						"德拉宁可以使用一个附赠动作来恢复16 ({@dice 1d10 + 11}) 点生命值。"
+					]
+				},
+				{
+					"ENG_name": "Special Equipment",
+					"name": "特殊装备",
+					"entries": [
+						"德兰宁佩戴着一个控制护身符，用于控制他的{@creature 构装盾卫}（见《怪物手册》），并且他还佩戴着一个{@item 寒冷抗性戒指}。他还携带着一瓶{@item 霜巨人之力药水}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"德兰宁使用他的双手巨斧进行三次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Greataxe",
+					"name": "巨斧",
+					"entries": [
+						"{@atk mw} {@hit 7}命中，触及5尺，单一目标。{@h}17（{@damage 2d12 + 4}）挥砍伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"巨斧|phb"
+			],
+			"traitTags": [
+				"残暴"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Elizar Dryflagon",
+			"name": "埃力萨·空壶",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 202,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item 兽皮甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 71,
+				"formula": "11d8 + 22"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 15,
+			"con": 14,
+			"int": 11,
+			"wis": 18,
+			"cha": 10,
+			"skill": {
+				"arcana": "+3",
+				"deception": "+3"
+			},
+			"passive": 14,
+			"languages": [
+				"通用语",
+				"德鲁伊语"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Elizar 是一位 7 级的施法者。他的施法能力是感知（法术豁免难度 {@dc 15}，法术攻击命中骰 {@hit 7}）。Elizar 准备了以下德鲁伊法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 德鲁伊伎俩}",
+								"{@spell 神导术}",
+								"{@spell 毒气喷涌}",
+								"{@spell 燃火术}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 化兽为友}",
+								"{@spell 妖火}",
+								"{@spell 治愈真言}",
+								"{@spell 跳跃术}",
+								"{@spell 雷鸣波}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 火焰刀}",
+								"{@spell 荆棘丛生}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 解除魔法}",
+								"{@spell 臭云术}"
+							]
+						},
+						"4": {
+							"slots": 2,
+							"spells": [
+								"{@spell 枯萎术}",
+								"{@spell 火墙术}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Summon Mephits (Recharges after a Long Rest)",
+					"name": "召唤魔蝠 (长休之后充能)",
+					"entries": [
+						"通过抽他的烟斗，埃利扎可以使用一个动作来施放{@spell 咒唤微元素群}。如果他这样做，他会召唤出四个烟雾魔蝠。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger +1",
+					"name": "+1 匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 6}，触及5尺或20/60尺，单一目标。{@h}5 ({@damage 1d4 + 3}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"+1 匕首|dmg"
+			],
+			"languageTags": [
+				"C",
+				"DU"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"F",
+				"I",
+				"N",
+				"P",
+				"T"
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Emberhorn Minotaur",
+			"name": "焰角牛头人",
+			"source": "PotA",
+			"page": 120,
+			"_copy": {
+				"ENG_name": "Minotaur",
+				"name": "牛头人",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "prependArr",
+						"items": {
+							"ENG_name": "Burning Breath {@recharge 5}",
+							"name": "灼热吐息 {@recharge 5}",
+							"entries": [
+								"牛头人在一枚15英尺的锥形范围内呼出一团燃烧的火星。该区域内的每个生物都必须进行一次{@dc 14}敏捷豁免，豁免失败则受到21（{@damage 6d6}）点火焰伤害，豁免成功则受到一半的伤害。"
+							]
+						}
+					}
+				}
+			},
+			"immune": [
+				"火焰"
+			],
+			"actionTags": [
+				"吐息武器"
+			],
+			"damageTags": [
+				"F",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Eternal Flame Guardian",
+			"name": "永恒火焰守护者",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 200,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item 胸甲|phb}",
+						"{@item 盾牌|phb}"
+					]
+				},
+				{
+					"ac": 15,
+					"condition": "在使用弩时"
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d8 + 14"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 13,
+			"con": 14,
+			"int": 8,
+			"wis": 11,
+			"cha": 13,
+			"skill": {
+				"intimidation": "+3",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"resist": [
+				"火焰"
+			],
+			"languages": [
+				"通用语"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "Flaming Weapon (Recharges after a Short or Long Rest)",
+					"name": "火焰武器 (短休或长休之后充能)",
+					"entries": [
+						"作为附赠动作，守卫可以将他持有的一件近战武器缠绕在火焰中。守卫不受这火焰伤害，火焰持续到守卫下一个回合结束。当武器被火焰缠绕时，每次命中额外造成3（{@damage 1d6}）火焰伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"守卫进行两次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Longsword",
+					"name": "长剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6（{@damage 1d8 + 2}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Heavy Crossbow",
+					"name": "重弩",
+					"entries": [
+						"{@atk rw} 命中{@hit 3}，射程100/400尺，单一目标。{@h}6（{@damage 1d10 + 1}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"重弩|phb",
+				"长剑|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Eternal Flame Priest",
+			"name": "永恒火焰祭司",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 200,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 16,
+			"skill": {
+				"deception": "+5",
+				"intimidation": "+5",
+				"religion": "+2"
+			},
+			"passive": 10,
+			"resist": [
+				"火焰"
+			],
+			"languages": [
+				"通用语",
+				"火族语"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"牧师是5级施法者。其施法能力是魅力（法术豁免难度{@dc 13}，法术攻击命中骰{@hit 5}）。它知道以下巫师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 控火术|xge}",
+								"{@spell 创造篝火|xge}",
+								"{@spell 火焰箭}",
+								"{@spell 光亮术}",
+								"{@spell 次级幻象}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 燃烧之手}",
+								"{@spell 脚底抹油}",
+								"{@spell 法师护甲}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 朦胧术}",
+								"{@spell 灼热射线}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell 火球术}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及 5 尺或射程 20/60 尺，单一目标。{@h}4（{@damage 1d4 + 2}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"languageTags": [
+				"C",
+				"IG"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Fathomer",
+			"name": "测深者",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 207,
+			"referenceSources": [
+				"GoS"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				10,
+				{
+					"ac": 13,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 11,
+			"cha": 15,
+			"skill": {
+				"arcana": "+2",
+				"perception": "+4",
+				"stealth": "+4"
+			},
+			"passive": 14,
+			"languages": [
+				"水族语",
+				"通用语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting (Human Form Only)",
+					"name": "施法（仅人形态）",
+					"type": "spellcasting",
+					"headerEntries": [
+						"深渊者是一个5级施法者。其施法能力是魅力（法术豁免难度{@dc 12}，法术攻击命中需要{@hit 4}）。它有两个3环法术位，这些法术位在完成短休或长休后会恢复，并且知道以下魔契师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 颤栗之触}",
+								"{@spell 魔能爆}",
+								"{@spell 法师之手}"
+							]
+						},
+						"3": {
+							"lower": 1,
+							"slots": 2,
+							"spells": [
+								"{@spell 黯冰狱铠}",
+								"{@spell 脚底抹油}",
+								"{@spell 脆弱诅咒}",
+								"{@spell 隐形术}",
+								"{@spell 吸血鬼之触}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Shapechanger (2/Day)",
+					"name": "变形生物 (2/日)",
+					"entries": [
+						"深潜者可以使用它的行动来变化成一只由水组成的中型蛇形生物，或者恢复其真实形态。在变化过程中，深潜者穿戴或携带的任何物品都会被吸收进蛇形形态中，在深潜者恢复真实形态之前无法取用。深潜者在4小时后会自动恢复其真实形态，除非它能够再次使用这个特性。如果深潜者被击昏{@condition 昏迷}或死亡，它也会恢复其真实形态。",
+						"当处于蛇形态时，深潜者获得40尺的游泳速度，水下呼吸能力，对毒素伤害的免疫，以及对非魔法攻击造成的火焰伤害和钝击、穿刺、挥砍伤害的抗性。它还对以下状态免疫：{@condition 力竭}、{@condition 受擒}、{@condition 麻痹}、{@condition 中毒}、{@condition 束缚}、{@condition 倒地}、{@condition 昏迷}。蛇形态可以进入敌对生物的空间并在其中停留。此外，如果水可以通过一个空间，蛇也可以在不挤压的情况下通过。"
+					]
+				},
+				{
+					"ENG_name": "Olhydra's Armor (Human Form Only)",
+					"name": "奥莉德拉之护甲 (仅人类型态)",
+					"entries": [
+						"探渊者可以随意施放{@spell 法师护甲}，且无需消耗材料成分。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Constrict (Serpent Form Only)",
+					"name": "绞缠（仅巨蛇形态）",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及范围5尺，单一目标。{@h}9 ({@damage 2d6 + 2}) 钝击伤害。如果目标是中型或更小，它将{@condition 受擒}（逃脱{@dc 12}）。直到摔跤结束，目标将{@condition 束缚}，并且深潜者不能再挤压另单一目标。"
+					]
+				},
+				{
+					"ENG_name": "Dagger (Human Form Only)",
+					"name": "匕首 (仅人类型态)",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及 5 尺或射程 20/60 尺，单一目标。{@h}4（{@damage 1d4 + 2}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"traitTags": [
+				"变形生物"
+			],
+			"languageTags": [
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"damageTagsSpell": [
+				"C",
+				"N",
+				"O"
+			],
+			"spellcastingTags": [
+				"CL",
+				"F"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"受擒",
+				"束缚"
+			],
+			"conditionInflictSpell": [
+				"隐形"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Feathergale Knight",
+			"name": "羽风骑士",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 189,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 鳞甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 33,
+				"formula": "6d8 + 6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 10,
+			"cha": 14,
+			"skill": {
+				"animal handling": "+2",
+				"history": "+2"
+			},
+			"passive": 10,
+			"languages": [
+				"气族语",
+				"通用语"
+			],
+			"cr": "1",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"骑士是一名1级施法者。其施法能力是魅力（法术豁免难度{@dc 12}，法术攻击命中{@hit 4}）。它知道以下巫师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 舞风术|xge}",
+								"{@spell 光亮术}",
+								"{@spell 传讯术}",
+								"{@spell 冷冻射线}"
+							]
+						},
+						"1": {
+							"slots": 2,
+							"spells": [
+								"{@spell 脚底抹油}",
+								"{@spell 羽落术}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"骑士发动两次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Longsword",
+					"name": "长剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6 ({@damage 1d8 + 2}) 点挥砍伤害，或者如果用双手使用则为7 ({@damage 1d10 + 2}) 点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Spear",
+					"name": "矛",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及5尺或射程20/60尺，单一目标。{@h}5 ({@damage 1d6 + 2}) 点穿刺伤害，或者如果用双手进行近战攻击则为6 ({@damage 1d8 + 2}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"长剑|phb",
+				"矛|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AU",
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"C"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Fennor",
+			"name": "芬诺尔",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 170,
+			"_copy": {
+				"ENG_name": "Berserker",
+				"name": "狂战士",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "狂战士",
+						"with": "芬诺尔",
+						"flags": "i"
+					}
+				}
+			},
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item 链甲衫|phb}"
+					]
+				}
+			],
+			"cr": "3",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"芬诺用她的大剑进行两次攻击"
+					]
+				},
+				{
+					"ENG_name": "Greatsword",
+					"name": "巨剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）点挥砍伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"巨剑|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"miscTags": [
+				"MLW"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Flamewrath",
+			"name": "怒火者",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 201,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 105,
+				"formula": "14d8 + 42"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 16,
+			"int": 11,
+			"wis": 10,
+			"cha": 16,
+			"skill": {
+				"arcana": "+3",
+				"religion": "+3"
+			},
+			"passive": 10,
+			"immune": [
+				"火焰"
+			],
+			"languages": [
+				"通用语",
+				"火族语"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"焰怒是一个7级施法者。它的施法能力是魅力（法术豁免{@dc 14}，法术攻击命中{@hit 6}）。它知道以下术士法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 控火术|xge}",
+								"{@spell 火焰箭}",
+								"{@spell 交友术}",
+								"{@spell 光亮术}",
+								"{@spell 次级幻象}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 燃烧之手}",
+								"{@spell 七彩喷射}",
+								"{@spell 法师护甲}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 灼热射线}",
+								"{@spell 暗示术}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 火球术}",
+								"{@spell 催眠图纹}"
+							]
+						},
+						"4": {
+							"slots": 1,
+							"spells": [
+								"{@spell 火焰护盾}（见火焰环绕）"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Wreathed in Flame",
+					"name": "烈焰缠身",
+					"entries": [
+						"对于火焰之怒来说，温暖版的{@spell 火焰护盾}法术的持续时间是\"直到被驱散\"。火焰之怒死后，火焰盾牌会燃烧10分钟，消耗其身体。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 5}，触及5尺或射程20/60尺，单一目标。{@h}4 ({@damage 1d4 + 2}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"languageTags": [
+				"C",
+				"IG"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Gar Shatterkeel",
+			"name": "戈尔·碎骨",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 208,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 97,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 15,
+			"dex": 15,
+			"con": 16,
+			"int": 12,
+			"wis": 18,
+			"cha": 13,
+			"skill": {
+				"nature": "+9",
+				"survival": "+8"
+			},
+			"passive": 14,
+			"resist": [
+				"寒冷"
+			],
+			"languages": [
+				"水族语",
+				"通用语"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"加尔是一位9级施法者。他的施法能力是感知（法术豁免难度{@dc 16}，法术攻击命中骰{@hit 8}）。他准备了以下德鲁伊法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 修复术}",
+								"{@spell 抵抗术}",
+								"{@spell 操水术|xge}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 造水术/枯水术}",
+								"{@spell 疗伤术}",
+								"{@spell 云雾术}",
+								"{@spell 雷鸣波}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 黑暗视觉}",
+								"{@spell 定身类人}",
+								"{@spell 防护毒素}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 召雷术}",
+								"{@spell 雪雨暴}",
+								"{@spell 潮涌|xge}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 操控水体}",
+								"{@spell 冰风暴}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell 探知术}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"Gar 可以呼吸空气和水。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (2/Day)",
+					"name": "传奇抗性（2/日）",
+					"entries": [
+						"如果Gar未能通过豁免检定，他可以选择成功。"
+					]
+				},
+				{
+					"ENG_name": "Water Walk",
+					"name": "水上行走",
+					"entries": [
+						"加尔能够在液态表面上站立和移动，就像它们是坚实的地面一样。"
+					]
+				},
+				{
+					"ENG_name": "Watery Fall",
+					"name": "化水落",
+					"entries": [
+						"当加尔降至0生命值时，他的身体崩溃成一滩墨水般的液体，迅速散开。他穿戴或携带的任何物品都被遗留下来。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"加尔进行两次近战攻击，一次用他的爪子，一次用{@item 水溺|PotA}。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及范围5尺，单一目标。{@h}9点（{@damage 2d6 + 2}）钝击伤害，并且目标{@condition 受擒}（逃脱{@dc 13}）。直到抓住结束，加尔不能使用他的爪子攻击其他生物。"
+					]
+				},
+				{
+					"ENG_name": "Drown",
+					"name": "水溺",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 7}，触及5尺或20/60尺，单一目标。{@h}6 ({@damage 1d6 + 3}) 点穿刺伤害加上4 ({@damage 1d8})寒冷伤害。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Gar Shatterkeel",
+				"name": "戈尔·碎骨",
+				"source": "PotA"
+			},
+			"attachedItems": [
+				"水溺|PotA"
+			],
+			"traitTags": [
+				"水陆两栖",
+				"传奇抗性"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"P"
+			],
+			"damageTagsLegendary": [
+				"L",
+				"N"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"L",
+				"T"
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"受擒"
+			],
+			"conditionInflictSpell": [
+				"麻痹",
+				"倒地"
+			],
+			"savingThrowForcedLegendary": [
+				"敏捷"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"力量",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Ghald",
+			"name": "格哈德",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"鲨华鱼人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 210,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 102,
+				"formula": "12d10 + 36"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 50
+			},
+			"str": 19,
+			"dex": 17,
+			"con": 16,
+			"int": 14,
+			"wis": 13,
+			"cha": 17,
+			"save": {
+				"dex": "+6",
+				"con": "+6",
+				"int": "+5",
+				"wis": "+4"
+			},
+			"skill": {
+				"insight": "+4",
+				"perception": "+7"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 17,
+			"languages": [
+				"通用语",
+				"鲨华语"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"ENG_name": "Assassinate",
+					"name": "暗杀",
+					"entries": [
+						"在其第一个回合，Ghald对任何尚未行动的生物进行攻击检定时具有优势。Ghald对处于{@status 突袭}状态的生物造成的任何命中均为重击。"
+					]
+				},
+				{
+					"ENG_name": "Limited Amphibiousness",
+					"name": "有限两栖",
+					"entries": [
+						"加尔德可以呼吸空气和水，但他需要至少每4小时潜入水中一次以避免窒息。"
+					]
+				},
+				{
+					"ENG_name": "Shark Telepathy",
+					"name": "鲨心感应",
+					"entries": [
+						"加尔德能通过有限的心灵感应魔法命令他周围120尺内的任何鲨鱼。"
+					]
+				},
+				{
+					"ENG_name": "Sneak Attack",
+					"name": "偷袭",
+					"entries": [
+						"当Ghald使用武器攻击命中目标且在攻击检定时具有优势，或者目标在Ghald的一个未处于{@condition 失能}状态的盟友5英尺范围内且Ghald在攻击检定时不具有劣势时，Ghald额外造成14（{@damage 4d6}）点伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"加尔德进行三次攻击，一次用他的咬击，两次用他的短剑。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及范围5尺，单一生物。{@h}9点（{@damage 2d4 + 4}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一生物。{@h}11 ({@damage 2d6 + 4}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Garrote",
+					"name": "绞索",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及范围5尺，一个中体型或小体型生物，对这次攻击掷骰有优势。{@h}造成9点（{@damage 2d4 + 4}）钝击伤害，并且目标{@condition 受擒}（逃脱{@dc 15}）。直到摔跤结束，目标不能呼吸，并且Ghald对它的攻击掷骰有优势。"
+					]
+				}
+			],
+			"attachedItems": [
+				"短剑|phb"
+			],
+			"traitTags": [
+				"偷袭"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"OTH"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"受擒"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Grumink the Renegade",
+			"name": "叛逆的格鲁明克",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"矮人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 210,
+			"_copy": {
+				"ENG_name": "Assassin",
+				"name": "刺客",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "刺客",
+						"with": "格鲁明克",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"senseTags": [
+				"D"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Hellenrae",
+			"name": "海伦蕾",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 198,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 78,
+				"formula": "12d8 + 24"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 13,
+			"dex": 18,
+			"con": 14,
+			"int": 10,
+			"wis": 15,
+			"cha": 13,
+			"skill": {
+				"acrobatics": "+7",
+				"athletics": "+4",
+				"insight": "+5",
+				"perception": "+5"
+			},
+			"senses": [
+				"盲视60尺（范围外视为目盲）"
+			],
+			"passive": 15,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"目盲",
+				"中毒"
+			],
+			"languages": [
+				"通用语",
+				"土族语"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Evasion",
+					"name": "反射闪避",
+					"entries": [
+						"如果海伦瑞受到允许她通过敏捷豁免检定以只承受一半伤害的效果影响，如果她成功通过豁免检定，则不承受任何伤害；如果失败，则只承受一半伤害。"
+					]
+				},
+				{
+					"ENG_name": "Stunning Strike {@recharge 5}",
+					"name": "震慑拳 {@recharge 5}",
+					"entries": [
+						"当赫伦拉用近战武器攻击命中目标时，目标必须在进行一次{@dc 13}体质豁免检定，否则在赫伦拉的下一回合结束前被{@condition 震慑}。"
+					]
+				},
+				{
+					"ENG_name": "Unarmored Defense",
+					"name": "无甲防御",
+					"entries": [
+						"当赫伦瑞不穿戴盔甲且未持有盾牌时，她的护甲等级（AC）包括她的感知调整值。"
+					]
+				},
+				{
+					"ENG_name": "Unarmored Movement",
+					"name": "无甲移动",
+					"entries": [
+						"当赫伦瑞不穿戴任何盔甲且不持有盾牌时，她的速度增加20尺（已包含在她的速度中）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"海伦瑞进行三次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Unarmed Strike",
+					"name": "徒手打击",
+					"entries": [
+						"{@atk mw} 命中{@hit 7} ，触及5尺，单一目标。{@h}9（{@damage 1d10 + 4}）点钝击伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Parry and Counter",
+					"name": "招架反击",
+					"entries": [
+						"海伦瑞对一次命中她的近战或远程武器攻击在其护甲等级上额外增加3点。为此，她必须能够通过她的盲视感知到攻击者。如果攻击未命中，海伦瑞可以在攻击者处于她的触及范围内的情况下对攻击者进行一次近战攻击。"
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"T"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"震慑"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Howling Hatred Initiate",
+			"name": "啸怨新晋者",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 190,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item 皮甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 9,
+				"formula": "2d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 10,
+			"int": 10,
+			"wis": 9,
+			"cha": 11,
+			"skill": {
+				"deception": "+2",
+				"religion": "+2",
+				"stealth": "+4"
+			},
+			"passive": 9,
+			"languages": [
+				"通用语"
+			],
+			"cr": "1/8",
+			"trait": [
+				{
+					"ENG_name": "Guiding Wind (Recharges after a Short or Long Rest)",
+					"name": "指引之风 (短休或长休之后充能)",
+					"entries": [
+						"作为附赠动作，入门者在下回合结束前进行的下一次远程攻击检定获得优势。"
+					]
+				},
+				{
+					"ENG_name": "Hold Breath",
+					"name": "屏息",
+					"entries": [
+						"新手可以屏住呼吸长达30分钟。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及 5 尺或射程 20/60 尺，单一目标。{@h}4（{@damage 1d4 + 2}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"traitTags": [
+				"屏息"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Howling Hatred Priest",
+			"name": "啸怨祭司",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 190,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 镶钉皮甲|phb|镶钉皮甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "10d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 10,
+			"int": 14,
+			"wis": 10,
+			"cha": 14,
+			"skill": {
+				"acrobatics": "+5",
+				"intimidation": "+4",
+				"religion": "+4"
+			},
+			"passive": 10,
+			"languages": [
+				"气族语",
+				"通用语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"这位牧师是一名5级施法者。其施法能力是魅力（法术豁免难度{@dc 12}，法术攻击命中{@hit 4}）。他知道以下巫师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 剑刃防护}",
+								"{@spell 舞风术|xge}",
+								"{@spell 光亮术}",
+								"{@spell 魔法伎俩}",
+								"{@spell 电爪}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 羽落术}",
+								"{@spell 护盾术}",
+								"{@spell 巫术箭}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 龙卷尘暴|xge}",
+								"{@spell 造风术}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell 气化形体}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Hold Breath",
+					"name": "屏息",
+					"entries": [
+						"这位牧师可以屏住呼吸长达30分钟。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"牧师进行两次近战攻击或两次远程攻击。"
+					]
+				},
+				{
+					"ENG_name": "Scimitar",
+					"name": "弯刀",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}6（{@damage 1d6 + 3}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 5}，触及5尺或射程20/60尺，单一目标。{@h}5 ({@damage 1d4 + 3}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb",
+				"弯刀|phb"
+			],
+			"traitTags": [
+				"屏息"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AU",
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"B",
+				"L"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Hurricane",
+			"name": "飓风",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 191,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 33,
+				"formula": "6d8 + 6"
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 13,
+			"int": 10,
+			"wis": 12,
+			"cha": 10,
+			"skill": {
+				"acrobatics": "+5"
+			},
+			"passive": 11,
+			"languages": [
+				"气族语",
+				"通用语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"飓风是一个3级施法者。其施法能力是感知（法术豁免难度{@dc 11}，法术攻击命中需要{@hit 3}）。它知道以下巫师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 剑刃防护}",
+								"{@spell 舞风术|xge}",
+								"{@spell 光亮术}",
+								"{@spell 魔法伎俩}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 羽落术}",
+								"{@spell 跳跃术}",
+								"{@spell 雷鸣波}"
+							]
+						},
+						"2": {
+							"slots": 2,
+							"spells": [
+								"{@spell 造风术}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Unarmored Defense",
+					"name": "无甲防御",
+					"entries": [
+						"当飓风不穿戴盔甲且不持盾时，其护甲等级包括其感知属性调整值。"
+					]
+				},
+				{
+					"ENG_name": "Unarmored Movement",
+					"name": "无甲移动",
+					"entries": [
+						"当飓风没有穿戴任何护甲且没有持盾时，它的行走速度增加15尺（已包含在其速度中）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"飓风进行两次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Unarmed Strike",
+					"name": "徒手打击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及 5 尺，单一目标。{@h}6 ({@damage 1d6 + 3}) 点钝击伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Deflect Missiles",
+					"name": "拨挡飞弹",
+					"entries": [
+						"当飓风被远程武器攻击击中时，它将攻击造成的伤害减少{@dice 1d10 + 9}。如果伤害减少到0，飓风如果能够用一只手握住并且至少有一只手是空闲的，就可以抓住导弹。"
+					]
+				}
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AU",
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"T"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Imix",
+			"name": "伊米西",
+			"type": "elemental",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 214,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 325,
+				"formula": "26d12 + 156"
+			},
+			"speed": {
+				"walk": 50,
+				"fly": 50
+			},
+			"str": 19,
+			"dex": 24,
+			"con": 22,
+			"int": 15,
+			"wis": 16,
+			"cha": 23,
+			"save": {
+				"dex": "+13",
+				"con": "+12",
+				"cha": "+12"
+			},
+			"senses": [
+				"盲视 120 尺"
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"火焰",
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚"
+			],
+			"languages": [
+				"通用语",
+				"火族语"
+			],
+			"cr": "19",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"伊米克斯的天赋施法能力是魅力（法术豁免{@dc 20}，法术攻击命中{@hit 12}）。他天生能够施展以下法术，无需任何材料成分："
+					],
+					"will": [
+						"{@spell 火球术}",
+						"{@spell 火墙术}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell 火焰风暴}",
+							"{@spell 加速术}",
+							"{@spell 传送术}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Empowered Attacks",
+					"name": "赋能攻击",
+					"entries": [
+						"伊米克斯的猛击攻击被视为魔法攻击，用于绕过对非魔法攻击的抗性和免疫。"
+					]
+				},
+				{
+					"ENG_name": "Fire Aura",
+					"name": "火焰灵光",
+					"entries": [
+						"在伊米克斯的每个回合开始时，他10尺范围内的每个生物受到17（{@damage 5d6}）火焰伤害，光环中的易燃物体如果不是穿戴或携带的则会点燃。如果生物触摸伊米克斯或在他10尺范围内进行近战攻击并命中，它也会受到17（{@damage 5d6}）火焰伤害，并且当伊米克斯在回合中首次移动到生物的空间时，生物也会受到该伤害。击中伊米克斯的非魔法武器在对他造成伤害后会立即被火焰摧毁。"
+					]
+				},
+				{
+					"ENG_name": "Fire Form",
+					"name": "火焰形态",
+					"entries": [
+						"伊米克斯可以进入一个敌对生物的空间并停留在那里。如果火能通过那个空间，他可以穿过宽度仅为1英寸的空间而不需要挤压。"
+					]
+				},
+				{
+					"ENG_name": "Illumination",
+					"name": "照明",
+					"entries": [
+						"伊米克斯在60尺半径内散发出明亮的光芒，并且在额外的60尺内散发出微光。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性 (3/日)",
+					"entries": [
+						"如果伊米克斯豁免检定失败，他可以选择成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"伊米克斯在对抗法术和其他魔法效果的豁免检定上有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"伊米克斯进行两次猛击攻击或两次火焰冲击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及10尺，单一目标。{@h}18（{@damage 2d10 + 7}）钝击伤害加18（{@damage 5d6}）火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "Flame Blast",
+					"name": "烈焰爆破",
+					"entries": [
+						"{@atk rs} 命中{@hit 12}，射程250尺，单一目标。{@h}35 ({@damage 10d6})火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "Summon Elementals (1/Day)",
+					"name": "召唤元素生物 (1/日)",
+					"entries": [
+						"伊米克斯可以召唤最多三个{@creature 火元素||火元素}，并且每召唤一个元素，他就会失去30点生命值。召唤出的元素拥有最大生命值，出现在伊米克斯100尺范围内，如果伊米克斯的生命值降至0，则这些元素会消失。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Heat Wave",
+					"name": "热浪",
+					"entries": [
+						"伊米克斯在自己300尺范围内创造出一股热浪。区域内与金属物体有物理接触的每个生物（例如，携带金属武器或穿戴金属盔甲）将受到9（{@damage 2d8}）火焰伤害。区域内不抗火或免疫火焰伤害的每个生物必须进行一次{@dc 21}体质豁免检定，否则获得一级{@condition 力竭}状态。"
+					]
+				},
+				{
+					"ENG_name": "Teleport (Costs 2 Actions)",
+					"name": "传送 (消耗 2动作)",
+					"entries": [
+						"伊米克斯可以魔法传送至他能看到的120尺内的未被占据的空间。伊米克斯穿戴或携带的任何物品不会随他一起传送。"
+					]
+				},
+				{
+					"ENG_name": "Combustion (Costs 3 Actions)",
+					"name": "焚烧 (消耗 3动作)",
+					"entries": [
+						"伊米克斯使他能看到的30尺内的生物之一爆炸成火焰。目标必须进行一次体质豁免检定（{@dc 21}）。豁免失败，目标受到70点（{@damage 20d6}）火焰伤害并着火。着火的目标在开始其回合时受到10点（{@damage 3d6}）火焰伤害，并保持着火状态，直到它或其他生物采取行动扑灭火焰。豁免成功，目标受到的伤害减半，并且不会着火。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Imix",
+				"name": "伊米西",
+				"source": "PotA"
+			},
+			"traitTags": [
+				"照明",
+				"传奇抗性",
+				"魔法抗性"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"IG"
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"damageTagsLegendary": [
+				"B",
+				"F"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"力竭"
+			],
+			"conditionInflictLegendary": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"savingThrowForcedLegendary": [
+				"体质",
+				"敏捷",
+				"力量"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Lyzandra \"Lyzzie\" Calderos",
+			"name": "莱赞德拉 \"莱茜\" 卡尔德罗斯",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 110,
+			"_copy": {
+				"ENG_name": "Mage",
+				"name": "魔法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔法师",
+						"with": "莉赞德拉",
+						"flags": "i"
+					}
+				}
+			},
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"莉赞德拉是一名9级施法者。她的施法能力是智力（法术豁免难度{@dc 14}，法术攻击命中{@hit 6}）。莉赞德拉准备了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 火焰箭}",
+								"{@spell 光亮术}",
+								"{@spell 法师之手}",
+								"{@spell 魔法伎俩}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 侦测魔法}",
+								"{@spell 法师护甲}",
+								"{@spell 魔法飞弹}",
+								"{@spell 护盾术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 迷踪步}",
+								"{@spell 暗示术}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 法术反制}",
+								"{@spell 火球术}",
+								"{@spell 飞行术}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 高等隐形术}",
+								"{@spell 火墙术}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell 焚烧术|xge}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"tokenCustom": true,
+			"damageTagsSpell": [
+				"F",
+				"O"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Maegla Tarnlar",
+			"name": "梅格拉·塔恩拉",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 25,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Marlos Urnrayle",
+			"name": "马洛斯·恩雷尔",
+			"type": "monstrosity",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 199,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 136,
+				"formula": "16d8 + 64"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 11,
+			"con": 18,
+			"int": 12,
+			"wis": 13,
+			"cha": 17,
+			"skill": {
+				"arcana": "+4",
+				"deception": "+6",
+				"perception": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺",
+				"震颤感知 60 尺"
+			],
+			"passive": 14,
+			"resist": [
+				"强酸"
+			],
+			"languages": [
+				"通用语",
+				"土族语"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"ENG_name": "Earthen Defeat",
+					"name": "化土败退",
+					"entries": [
+						"当马洛斯的生命值降至0点时，他的身体变成了泥浆，坍塌成一个泥潭。他穿戴或携带的任何物品都被留了下来。"
+					]
+				},
+				{
+					"ENG_name": "Earth Passage",
+					"name": "地土穿行",
+					"entries": [
+						"马洛斯可以在由泥土或石头构成的{@quickref 困难地形||3}上移动，就像它是普通地形一样。他可以像穿过{@quickref 困难地形||3}一样穿过实心的泥土和岩石。如果他在那个地方结束回合，他会被传送到他最后占据的最近空间。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (2/Day)",
+					"name": "传奇抗性（2/日）",
+					"entries": [
+						"如果马洛斯未能通过豁免检定，他可以选择成功。"
+					]
+				},
+				{
+					"ENG_name": "Petrifying Gaze",
+					"name": "石化凝视",
+					"entries": [
+						"当一个可以看到马洛斯眼睛的生物在距离他30英尺内开始其回合时，如果马洛斯未处于{@condition 失能}状态且能看到该生物，马洛斯可以迫使其进行一个{@dc 14}体质豁免检定。如果豁免检定失败且差值达到5或更多，该生物会立即被{@condition 石化}。否则，豁免失败生物开始变为石头并被{@condition 束缚}。被{@condition 束缚}的生物必须在其下一个回合结束时重复豁免检定，失败则被{@condition 石化}，成功则结束该效果。石化效果持续到该生物被{@spell 高等复原术}或其他魔法释放为止。",
+						"除非处于{@status 突袭}状态，否则生物可以在其回合开始时闭上眼睛以避免进行豁免检定。如果生物这样做了，它将无法看到Marlos，直到下一个回合开始时，它可以选择再次闭上眼睛。如果在此期间生物看了Marlos，它必须立即进行豁免检定。",
+						"如果马洛斯看到自己在30尺范围内的光亮表面上反射，并且处于明亮光线下，由于他的诅咒，马洛斯会受到自己目光的影响。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"马洛斯进行三次近战攻击，一次用他的蛇发攻击，两次使用{@item 铁牙|PotA}。"
+					]
+				},
+				{
+					"ENG_name": "Snake Hair",
+					"name": "蛇发",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}7（{@damage 1d8 + 3}）点穿刺伤害，外加14（{@damage 4d6}）毒素伤害。"
+					]
+				},
+				{
+					"ENG_name": "Ironfang",
+					"name": "铁牙",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及5尺，单一目标。{@h}7 ({@damage 1d8 + 3}) 点穿刺伤害加上4 ({@damage 1d8})雷鸣伤害。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Marlos Urnrayle",
+				"name": "马洛斯·恩雷尔",
+				"source": "PotA"
+			},
+			"attachedItems": [
+				"铁牙|PotA"
+			],
+			"traitTags": [
+				"传奇抗性"
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"T"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"T"
+			],
+			"damageTagsLegendary": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"石化",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"savingThrowForcedLegendary": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Miraj Vizann",
+			"name": "米拉吉·维扎恩",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "元素裔",
+						"prefix": "土"
+					}
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 198,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				10,
+				{
+					"ac": 13,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 82,
+				"formula": "11d8 + 33"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 10,
+			"con": 17,
+			"int": 13,
+			"wis": 11,
+			"cha": 18,
+			"skill": {
+				"arcana": "+4",
+				"deception": "+7"
+			},
+			"passive": 10,
+			"languages": [
+				"通用语",
+				"原初语"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"米拉吉的天赋施法能力是体质（法术豁免难度{@dc 14}）。他可以天赋地施放以下法术，无需任何材料："
+					],
+					"daily": {
+						"1": [
+							"{@spell 行动无踪}"
+						]
+					},
+					"ability": "con"
+				},
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"米拉杰是一位11级施法者。他的施法能力是魅力（法术豁免难度{@dc 15}，法术攻击命中骰{@hit 7}）。他知道以下术士法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 酸液飞溅}",
+								"{@spell 剑刃防护}",
+								"{@spell 交友术}",
+								"{@spell 光亮术}",
+								"{@spell 传讯术}",
+								"{@spell 塑土术|xge}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 繁彩球}",
+								"{@spell 法师护甲}",
+								"{@spell 魔法飞弹}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 麦克斯米利安的地之攫|xge}",
+								"{@spell 粉碎音波}",
+								"{@spell 暗示术}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 法术反制}",
+								"{@spell 土石喷发|xge}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 变形术}",
+								"{@spell 石肤术}"
+							]
+						},
+						"5": {
+							"slots": 2,
+							"spells": [
+								"{@spell 石墙术}"
+							]
+						},
+						"6": {
+							"slots": 1,
+							"spells": [
+								"{@spell 地动术}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Earth Walk",
+					"name": "地面行走",
+					"entries": [
+						"通过由泥土或石头构成的{@quickref 困难地形||3}不会额外消耗米拉杰的移动力。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Staff",
+					"name": "法杖",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}4（{@damage 1d6 + 1}）钝击伤害，或使用双手持用时5（{@damage 1d8 + 1}）钝击伤害。"
+					]
+				}
+			],
+			"languageTags": [
+				"C",
+				"P"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"O",
+				"T"
+			],
+			"spellcastingTags": [
+				"CS",
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"力量",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Molten Magma Roper",
+			"name": "熔岩岩浆石绳怪",
+			"source": "PotA",
+			"page": 143,
+			"_copy": {
+				"ENG_name": "Roper",
+				"name": "石绳怪",
+				"source": "MM",
+				"_mod": {
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "卷须",
+							"items": {
+								"ENG_name": "Tendril",
+								"name": "卷须",
+								"entries": [
+									"{@atk mw} 命中{@hit 7}，范围50尺，一个生物。{@h}4 ({@damage 1d8}) 火焰伤害且目标{@condition 受擒}（逃脱{@dc 15}）。直到擒抱结束，目标{@condition 束缚}且在力量检定和力量豁免掷骰上具有劣势，且掠夺者不能用同一触须攻击另一个目标。每当一个生物在其回合结束时被掠夺者擒抱，它将受到4 ({@damage 1d8}) 火焰伤害。"
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "啃咬",
+							"items": {
+								"ENG_name": "Bite",
+								"name": "啃咬",
+								"entries": [
+									"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}22（{@damage 4d8 + 4}）火焰伤害。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"immune": [
+				"火焰"
+			],
+			"vulnerable": [
+				"寒冷"
+			],
+			"damageTags": [
+				"F"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Nurvureem, The Dark Lady",
+			"name": "努尔维瑞姆，黑暗女士",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 180,
+			"_copy": {
+				"ENG_name": "Adult Black Dragon",
+				"name": "成年黑龙",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Legendary Shadow Dragon",
+						"name": "传奇幽影龙",
+						"source": "MM"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "龙",
+						"with": "努尔维雷姆",
+						"flags": "i"
+					}
+				}
+			},
+			"traitTags": [
+				"水陆两栖",
+				"传奇抗性",
+				"日照敏感"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"P",
+				"S"
+			],
+			"damageTagsLegendary": [],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Ogrémoch",
+			"name": "欧雷莫克",
+			"type": "elemental",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 216,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 526,
+				"formula": "27d20 + 243"
+			},
+			"speed": {
+				"walk": 50,
+				"burrow": 50
+			},
+			"str": 26,
+			"dex": 11,
+			"con": 28,
+			"int": 11,
+			"wis": 15,
+			"cha": 22,
+			"save": {
+				"str": "+14",
+				"con": "+15",
+				"wis": "+8"
+			},
+			"senses": [
+				"盲视 120 尺",
+				"震颤感知 120 尺"
+			],
+			"passive": 12,
+			"resist": [
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地"
+			],
+			"languages": [
+				"通用语",
+				"土族语"
+			],
+			"cr": "20",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"奥格莫克的天赋施法能力是魅力（法术豁免难度{@dc 20}，法术攻击命中需要{@hit 12}）。他可以天赋地施放以下法术，无需任何材料："
+					],
+					"will": [
+						"{@spell 融身入石}",
+						"{@spell 地动术}",
+						"{@spell 石墙术}"
+					],
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Empowered Attacks",
+					"name": "赋能攻击",
+					"entries": [
+						"奥格莫克的猛击攻击被视为魔法攻击，并且具有精金属性，用于绕过对非魔法攻击的抗性和免疫。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性 (3/日)",
+					"entries": [
+						"如果奥格莫克豁免检定失败，他可以选择成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"奥格莫克在对抗法术和其他魔法效果的豁免检定上有优势。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"奥格莫克用他的近战和远程武器攻击对物体和结构造成双倍伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"奥格莫克进行两次猛击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及15尺，单一目标。{@h}30（{@damage 4d10 + 8}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Boulder",
+					"name": "巨石",
+					"entries": [
+						"{@atk rw} 命中{@hit 6}，射程500尺，单一目标。{@h}造成46点（{@damage 7d10 + 8}）钝击伤害。如果目标是一个生物，它必须通过一次{@dc 23}力量豁免检定，否则会被击倒{@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "Summon Elementals (1/Day)",
+					"name": "召唤元素生物 (1/日)",
+					"entries": [
+						"奥格莫克召唤最多三个{@creature 土元素||土元素}，并且每召唤一个元素，他就会失去30点生命值。被召唤的元素拥有最大生命值，出现在奥格莫克100尺范围内，如果奥格莫克的生命值降至0点，这些元素就会消失。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Illuminating Crystals",
+					"name": "璀璨水晶",
+					"entries": [
+						"奥格莫克的水晶突起闪耀。在奥格莫克30尺范围内的每个生物都被橙色光线勾勒出轮廓，在10尺半径内散发微弱的光线。如果攻击者能看到受影响的生物，任何对其的攻击检定都有优势，并且受影响的生物不能从{@condition 隐形}状态中获益。"
+					]
+				},
+				{
+					"ENG_name": "Stomp (Costs 2 Actions)",
+					"name": "践踏 (消耗 2动作)",
+					"entries": [
+						"欧格玛赫跺击地面，产生一场半径30英尺的地震。站在该区域内地面上的其他生物必须成功通过一次{@dc 23}敏捷豁免检定，否则会陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Create Gargoyle (Costs 3 Actions)",
+					"name": "创造石像鬼 (消耗 3动作)",
+					"entries": [
+						"奥格雷莫克（Ogrémoch）的生命值减少 50，因为他从身体上分离出一块岩石并将其放置在距离他 15 英尺内的一个未被占据的空间。这块岩石瞬间转变为一只{@creature 石像鬼}，并与奥格雷莫克在同一先攻回合行动。如果奥格雷莫克的生命值为 50 或更低，则无法使用此动作。石像鬼服从奥格雷莫克的命令，战斗至被摧毁。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Ogrémoch",
+				"name": "欧雷莫克",
+				"source": "PotA"
+			},
+			"traitTags": [
+				"传奇抗性",
+				"魔法抗性",
+				"攻城怪物"
+			],
+			"senseTags": [
+				"B",
+				"T"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"T"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"B"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"conditionInflictLegendary": [
+				"倒地"
+			],
+			"conditionInflictSpell": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"敏捷",
+				"力量"
+			],
+			"savingThrowForcedLegendary": [
+				"敏捷"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Olhydra",
+			"name": "奥莉德拉",
+			"type": "elemental",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 218,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 324,
+				"formula": "24d12 + 168"
+			},
+			"speed": {
+				"walk": 50,
+				"swim": 100
+			},
+			"str": 21,
+			"dex": 22,
+			"con": 24,
+			"int": 17,
+			"wis": 18,
+			"cha": 23,
+			"save": {
+				"str": "+11",
+				"con": "+13",
+				"wis": "+10"
+			},
+			"senses": [
+				"盲视 120 尺"
+			],
+			"passive": 14,
+			"resist": [
+				"闪电",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"强酸",
+				"寒冷",
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚"
+			],
+			"languages": [
+				"水族语"
+			],
+			"cr": "18",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"奥莉赫德拉的天赋施法能力是魅力（法术豁免{@dc 20}，法术攻击命中{@hit 12}）。她天生能够施展以下法术，无需任何材料成分："
+					],
+					"will": [
+						"{@spell 冰墙术}"
+					],
+					"daily": {
+						"1": [
+							"{@spell 复仇风暴}"
+						],
+						"3": [
+							"{@spell 冰风暴}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Empowered Attacks",
+					"name": "赋能攻击",
+					"entries": [
+						"奥莉赫德拉的猛击攻击被视为魔法攻击，以便绕过对非魔法攻击的抗性和免疫。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性 (3/日)",
+					"entries": [
+						"如果奥莉德拉未能通过豁免检定，她可以选择成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"Olhydra在对抗法术和其他魔法效果的豁免检定上有优势。"
+					]
+				},
+				{
+					"ENG_name": "Water Form",
+					"name": "流水形态",
+					"entries": [
+						"奥赫德拉可以进入一个敌对生物的空间并停留在那里。她可以通过宽仅1英寸的空间而不被挤压。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"奥莉赫德拉进行两次猛击攻击或两次水柱攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及 10 尺，单一目标。{@h}21 ({@damage 3d10 + 5}) 钝击伤害，且目标{@condition 受擒}（逃脱 {@dc 19}）。欧莉德拉可以同时擒抱最多四个目标。当欧莉德拉移动时，所有被她擒抱的生物会随她一起移动。"
+					]
+				},
+				{
+					"ENG_name": "Water Jet",
+					"name": "水柱喷射",
+					"entries": [
+						"{@atk rw} 命中{@hit 12}，射程120尺，单一目标。{@h}21（{@damage 6d6}）钝击伤害，如果目标未能通过{@dc 19}力量豁免检定，则被击倒{@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "Summon Elementals (1/Day)",
+					"name": "召唤元素生物 (1/日)",
+					"entries": [
+						"奥莉德拉召唤最多三个{@creature 水元素||水元素}，并且每召唤一个元素，她就会失去30点生命值。被召唤的元素拥有最大生命值，出现在奥莉德拉100尺范围内，如果奥莉德拉的生命值降至0点，这些元素就会消失。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Crush",
+					"name": "碾压",
+					"entries": [
+						"奥赫德拉正在摔跤的一个生物被压碎，造成21点（{@damage 3d10 + 5}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Fling (Costs 2 Actions)",
+					"name": "抛掷 (消耗 2动作)",
+					"entries": [
+						"欧莉希拉释放她正在擒抱的一个生物，将其朝她选择的方向抛掷至多60英尺远。如果被抛掷的生物接触到固体表面，如墙壁或地板，则该生物每被抛掷10英尺，就会受到{@damage 1d6}的钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Water to Acid (Costs 3 Actions)",
+					"name": "化水为酸 (消耗 3动作)",
+					"entries": [
+						"奥莉德拉将她的水体转化为酸液。这个效果持续到奥莉德拉的下一回合。任何接触到奥莉德拉或在距离她5尺内用近战攻击击中她的生物，在其回合结束时会受到11 ({@damage 2d10}) 点强酸伤害。任何被奥莉德拉{@condition 受擒}的生物，在它的回合开始时会受到22 ({@damage 4d10}) 点强酸伤害。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Olhydra",
+				"name": "奥莉德拉",
+				"source": "PotA"
+			},
+			"traitTags": [
+				"传奇抗性",
+				"魔法抗性"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AQ"
+			],
+			"damageTags": [
+				"A",
+				"B"
+			],
+			"damageTagsLegendary": [
+				"C"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"L",
+				"T"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"受擒",
+				"倒地"
+			],
+			"conditionInflictLegendary": [
+				"恐慌",
+				"倒地"
+			],
+			"conditionInflictSpell": [
+				"耳聋"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"savingThrowForcedLegendary": [
+				"力量",
+				"感知"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "One-Eyed Shiver",
+			"name": "独眼战栗",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 207,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 49,
+				"formula": "9d8 + 9"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 13,
+			"wis": 13,
+			"cha": 17,
+			"skill": {
+				"arcana": "+3",
+				"perception": "+3",
+				"intimidation": "+5"
+			},
+			"passive": 13,
+			"immune": [
+				"寒冷"
+			],
+			"languages": [
+				"通用语"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"独眼寒颤是一个5级施法者。它的施法能力是魅力（法术豁免{@dc 13}，法术攻击命中{@hit 5}）。它知道以下巫师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 颤栗之触}",
+								"{@spell 法师之手}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 云雾术}",
+								"{@spell 法师护甲}",
+								"{@spell 雷鸣波}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 镜影术}",
+								"{@spell 迷踪步}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell 恐惧术}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Chilling Mist",
+					"name": "寒冷迷雾",
+					"entries": [
+						"当它活着时，独眼寒颤在其周围10尺内投射出一股冷雾光环。如果独眼寒颤在这个区域内对生物造成伤害，该生物还会额外受到5点（{@damage 1d10}）寒冷伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺或远程20/60尺，单一目标。{@h}4 ({@damage 1d4 + 2}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Eye of Frost",
+					"name": "霜冻之眼",
+					"entries": [
+						"独眼寒颤从它缺失的眼睛中施放{@spell 冷冻射线}。如果命中，目标也会被{@condition 束缚}。以这种方式被{@condition 束缚}的目标可以通过使用动作并成功进行{@dc 13}力量检定来结束这种状态。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"C",
+				"P"
+			],
+			"damageTagsSpell": [
+				"N",
+				"T"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"束缚"
+			],
+			"conditionInflictSpell": [
+				"恐慌"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Oreioth",
+			"name": "奥瑞欧斯",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 212,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				11,
+				{
+					"ac": 14,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 39,
+				"formula": "6d8 + 12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 13,
+			"con": 14,
+			"int": 16,
+			"wis": 9,
+			"cha": 11,
+			"save": {
+				"wis": "+1"
+			},
+			"skill": {
+				"arcana": "+5",
+				"investigation": "+5",
+				"medicine": "+1"
+			},
+			"passive": 9,
+			"languages": [
+				"深渊语",
+				"通用语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"奥雷奥斯是一名6级施法者。他的施法能力是智力（法术豁免难度{@dc 13}，法术攻击命中{@hit 5}）。他准备了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 颤栗之触}",
+								"{@spell 次级幻象}",
+								"{@spell 魔法伎俩}",
+								"{@spell 电爪}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 虚假生命}",
+								"{@spell 法师护甲}",
+								"{@spell 魔法飞弹}",
+								"{@spell 致病射线}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 疯狂冠冕}",
+								"{@spell 迷踪步}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 活化死尸}",
+								"{@spell 吸血鬼之触}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Grim Harvest",
+					"name": "惧怖收割",
+					"entries": [
+						"每当奥瑞斯在一回合内用1级或更高级别的法术击杀一个或多个生物时，他恢复的生命值等于法术等级的两倍。"
+					]
+				},
+				{
+					"ENG_name": "Swift Animation (Recharges after a Long Rest)",
+					"name": "快速复活 (长休之后充能)",
+					"entries": [
+						"当一个活着的中等或小型类人生物在距离奥瑞欧斯30尺内死亡时，他可以在下一回合使用动作来施放{@spell 活化死尸}在那个类人生物的尸体上，而不是使用法术的正常施法时间。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}3 ({@damage 1d4 + 1}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"I",
+				"L",
+				"N",
+				"O"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Padraich",
+			"name": "帕德雷克",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 170,
+			"_copy": {
+				"ENG_name": "Berserker",
+				"name": "狂战士",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "狂战士",
+						"with": "帕德雷克",
+						"flags": "i"
+					}
+				}
+			},
+			"action": [
+				{
+					"ENG_name": "Maul",
+					"name": "巨锤",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）点钝击伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"巨锤|phb"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MLW"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Razerblast",
+			"name": "爆刃",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 201,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item 板条甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 75"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 11,
+			"con": 16,
+			"int": 9,
+			"wis": 10,
+			"cha": 13,
+			"skill": {
+				"intimidation": "+4",
+				"perception": "+3"
+			},
+			"passive": 13,
+			"immune": [
+				"火焰"
+			],
+			"languages": [
+				"通用语",
+				"火族语"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Searing Armor",
+					"name": "灼热护甲",
+					"entries": [
+						"剃刀爆破兽的装甲很热。任何正在与剃刀爆破兽进行摔跤的生物或者被它{@condition 受擒}的生物，在该生物回合结束时会受到5 ({@damage 1d10}) 点火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "Shrapnel Explosion",
+					"name": "破片爆炸",
+					"entries": [
+						"当剃刀爆破兽的生命值降至0点时，其胸部的火焰球体爆炸，摧毁了剃刀爆破兽的身体，将其盔甲作为碎片四散。当剃刀爆破兽爆炸时，10尺范围内的生物必须进行一次{@dc 12}敏捷豁免检定，失败则受到21（{@damage 6d6}）点穿刺伤害，成功则伤害减半。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"雷射爆炸进行三次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Spear",
+					"name": "矛",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 6}，触及范围5尺或射程20/60尺，单一目标。{@h}6点（{@damage 1d6 + 3}）点穿刺伤害，或者如果用双手进行近战攻击则为7点（{@damage 1d8 + 3}）点穿刺伤害，外加3点（{@damage 1d6}）火焰伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"矛|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"IG"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Renwick",
+			"name": "兰维柯",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 66,
+			"_copy": {
+				"ENG_name": "Lich",
+				"name": "巫妖",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "巫妖",
+						"with": "兰维柯",
+						"flags": "i"
+					}
+				}
+			},
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"伦威克是一名18级施法者。他的施法能力是智力（法术豁免难度{@dc 20}，法术攻击命中{@hit 12}）。伦威克准备了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 法师之手}",
+								"{@spell 魔法伎俩}",
+								"{@spell 冷冻射线}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 侦测魔法}",
+								"{@spell 魔法飞弹}",
+								"{@spell 护盾术}",
+								"{@spell 雷鸣波}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 侦测思想}",
+								"{@spell 隐形术}",
+								"{@spell 马友夫强酸箭}",
+								"{@spell 镜影术}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 活化死尸}",
+								"{@spell 法术反制}",
+								"{@spell 解除魔法}",
+								"{@spell 火球术}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 枯萎术}",
+								"{@spell 任意门}"
+							]
+						},
+						"5": {
+							"slots": 3,
+							"spells": [
+								"{@spell 死云术}",
+								"{@spell 探知术}"
+							]
+						},
+						"6": {
+							"slots": 1,
+							"spells": [
+								"{@spell 解离术}",
+								"{@spell 法术无效结界}"
+							]
+						},
+						"7": {
+							"slots": 1,
+							"spells": [
+								"{@spell 死亡一指}",
+								"{@spell 位面转移}"
+							]
+						},
+						"8": {
+							"slots": 1,
+							"spells": [
+								"{@spell 支配怪物}",
+								"{@spell 律令震慑}"
+							]
+						},
+						"9": {
+							"slots": 1,
+							"spells": [
+								"{@spell 时间停止}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"tokenCustom": true,
+			"damageTagsLegendary": [],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"体质",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Rhundorth",
+			"name": "伦多斯",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 140,
+			"_copy": {
+				"ENG_name": "Guard",
+				"name": "警卫",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "警卫",
+						"with": "伦多斯",
+						"flags": "i"
+					}
+				}
+			},
+			"ac": [
+				11
+			],
+			"str": 18,
+			"action": [
+				{
+					"ENG_name": "Warhammer",
+					"name": "战锤",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}9（{@damage 1d8 + 4}）钝击伤害，或者如果用双手使用则为10（{@damage 1d10 + 4}）钝击伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"战锤|phb"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Sacred Stone Monk",
+			"name": "圣石僧",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 196,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 22,
+				"formula": "4d8 + 4"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 13,
+			"dex": 15,
+			"con": 12,
+			"int": 10,
+			"wis": 14,
+			"cha": 9,
+			"skill": {
+				"acrobatics": "+4",
+				"athletics": "+3",
+				"perception": "+4"
+			},
+			"senses": [
+				"震颤感知 10 尺"
+			],
+			"passive": 14,
+			"languages": [
+				"通用语"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Unarmored Defense",
+					"name": "无甲防御",
+					"entries": [
+						"当武僧没有穿戴盔甲且没有持盾时，其AC包含了其感知调整值。"
+					]
+				},
+				{
+					"ENG_name": "Unarmored Movement",
+					"name": "无甲移动",
+					"entries": [
+						"当武僧未穿戴盔甲且未持有盾牌时，其行走速度增加10尺（包含在其速度中）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"这位僧侣进行两次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Unarmed Strike",
+					"name": "徒手打击",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}5（{@damage 1d6 + 2}）点钝击伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Parry",
+					"name": "格挡",
+					"entries": [
+						"该武僧在其对一次近战或远程武器攻击的护甲等级上增加2点，以避免被击中。为此，武僧必须能看到攻击者。"
+					]
+				}
+			],
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"多重攻击",
+				"格挡"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shoalar Quanderil",
+			"name": "修拉·坎德拉",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "元素裔",
+						"prefix": "水"
+					}
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 208,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				10,
+				{
+					"ac": 13,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 60,
+				"formula": "8d8 + 24"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 11,
+			"dex": 12,
+			"con": 16,
+			"int": 14,
+			"wis": 10,
+			"cha": 17,
+			"skill": {
+				"arcana": "+4",
+				"deception": "+5",
+				"insight": "+2",
+				"persuasion": "+5"
+			},
+			"passive": 10,
+			"resist": [
+				"强酸"
+			],
+			"languages": [
+				"水族语",
+				"通用语"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Shoalar 的天生施法能力是体质（法术豁免难度 {@dc 13}，法术攻击命中骰 {@hit 5}）。他天生可以施放以下法术："
+					],
+					"will": [
+						"{@spell 操水术|xge}"
+					],
+					"daily": {
+						"1": [
+							"{@spell 造水术/枯水术}"
+						]
+					},
+					"ability": "con"
+				},
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"肖拉尔是一个5级施法者。他的施法能力是魅力（法术豁免{@dc 13}，法术攻击命中{@hit 5}）。他知道以下巫师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 酸液飞溅}",
+								"{@spell 颤栗之触}",
+								"{@spell 交友术}",
+								"{@spell 魔法伎俩}",
+								"{@spell 冷冻射线}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 易容术}",
+								"{@spell 法师护甲}",
+								"{@spell 魔法飞弹}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 定身类人}",
+								"{@spell 迷踪步}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell 潮涌|xge}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"肖拉尔能呼吸空气和水。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 3}，触及5尺或远程射程20/60尺，单一目标。{@h}3（{@damage 1d4 + 1}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"traitTags": [
+				"水陆两栖"
+			],
+			"languageTags": [
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"N",
+				"O"
+			],
+			"spellcastingTags": [
+				"CS",
+				"I"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Skyweaver",
+			"name": "空织匠",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 191,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 44,
+				"formula": "8d8 + 8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 10,
+			"cha": 16,
+			"skill": {
+				"deception": "+5",
+				"persuasion": "+5"
+			},
+			"passive": 10,
+			"languages": [
+				"气族语",
+				"通用语"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"天织者是一名6级施法者。其施法能力是魅力（法术豁免难度{@dc 13}，法术攻击命中{@hit 5}）。它知道以下巫师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 剑刃防护}",
+								"{@spell 光亮术}",
+								"{@spell 传讯术}",
+								"{@spell 冷冻射线}",
+								"{@spell 电爪}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 羽落术}",
+								"{@spell 法师护甲}",
+								"{@spell 巫术箭}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 造风术}",
+								"{@spell 隐形术}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 飞行术}",
+								"{@spell 闪电束}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及范围5尺或射程20/60尺，单一目标。{@h}3 ({@damage 1d4 + 1}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"languageTags": [
+				"AU",
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"C",
+				"L"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Stone Warrior",
+			"name": "石战士",
+			"source": "PotA",
+			"page": 97,
+			"_copy": {
+				"ENG_name": "Stone Golem",
+				"name": "石魔像",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "removeArr",
+						"names": "多重攻击"
+					}
+				}
+			},
+			"hp": {
+				"average": 102,
+				"formula": "17d10 + 85"
+			},
+			"cr": "4",
+			"actionTags": [],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Stonemelder",
+			"name": "融石者",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "PotA",
+			"page": 197,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item 板条甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d8 + 30"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 10,
+			"con": 16,
+			"int": 12,
+			"wis": 11,
+			"cha": 17,
+			"skill": {
+				"intimidation": "+5",
+				"perception": "+2"
+			},
+			"senses": [
+				"震颤感知 30 尺"
+			],
+			"passive": 12,
+			"languages": [
+				"通用语",
+				"土族语"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"石合者是一位7级施法者。它的施法能力是魅力（法术豁免难度 {@dc 13}，法术攻击命中骰 {@hit 5}）。它知道以下术士法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 酸液飞溅}",
+								"{@spell 剑刃防护}",
+								"{@spell 光亮术}",
+								"{@spell 修复术}",
+								"{@spell 塑土术|xge}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 脚底抹油}",
+								"{@spell 虚假生命}",
+								"{@spell 护盾术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 麦克斯米利安的地之攫|xge}",
+								"{@spell 粉碎音波}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 土石喷发|xge}",
+								"{@spell 融身入石}"
+							]
+						},
+						"4": {
+							"slots": 1,
+							"spells": [
+								"{@spell 石肤术}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Death Burst",
+					"name": "自爆",
+					"entries": [
+						"当石合者死亡时，它会化为石头并爆发成岩石碎片，变成一堆冒烟的废墟。在爆炸的石合者周围10尺内的每一个生物必须进行一次敏捷豁免检定（{@dc 14}），失败则受到11点（{@damage 2d10}）钝击伤害，成功则伤害减半。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Black Earth Rod",
+					"name": "黑土杖",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，范围 5 尺，单一目标。{@h}5 ({@damage 1d6 + 2}) 钝击伤害。石语者还可以消耗一个法术位来造成额外伤害，使用 1 环法术位时造成 {@damage 2d8} 钝击伤害，每高于 1 环一级则额外增加 {@dice 1d8} 伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"自爆"
+			],
+			"senseTags": [
+				"T"
+			],
+			"languageTags": [
+				"C",
+				"T"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"T"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Thurl Merosska",
+			"name": "瑟尔·梅洛斯卡",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 192,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 胸甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 71,
+				"formula": "11d8 + 21"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 11,
+			"wis": 10,
+			"cha": 15,
+			"skill": {
+				"animal handling": "+2",
+				"athletics": "+5",
+				"deception": "+4",
+				"persuasion": "+4"
+			},
+			"passive": 10,
+			"languages": [
+				"气族语",
+				"通用语"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"瑟尔是一个5级施法者。他的施法能力是魅力（法术豁免{@dc 12}，法术攻击命中{@hit 4}）。瑟尔知道以下术士法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 交友术}",
+								"{@spell 舞风术|xge}",
+								"{@spell 光亮术}",
+								"{@spell 传讯术}",
+								"{@spell 冷冻射线}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 脚底抹油}",
+								"{@spell 羽落术}",
+								"{@spell 跳跃术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 浮空术}",
+								"{@spell 迷踪步}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell 加速术}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"瑟尔进行两次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Greatsword",
+					"name": "巨剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Lance",
+					"name": "骑枪",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及10尺，单一目标。{@h}9（{@damage 1d12 + 3}）点穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Parry",
+					"name": "格挡",
+					"entries": [
+						"瑟尔对一次命中他的近战攻击在其护甲等级上额外增加2点。为此，瑟尔必须能看到攻击者并且手持近战武器。"
+					]
+				}
+			],
+			"attachedItems": [
+				"巨剑|phb",
+				"骑枪|phb"
+			],
+			"actionTags": [
+				"多重攻击",
+				"格挡"
+			],
+			"languageTags": [
+				"AU",
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"C"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RCH"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Tornscale",
+			"name": "撕裂鳞",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 90,
+			"_copy": {
+				"ENG_name": "Lizardfolk",
+				"name": "蜥蜴人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "蜥蜴人",
+						"with": "撕裂鳞",
+						"flags": "i"
+					}
+				}
+			},
+			"hp": {
+				"average": 36,
+				"formula": "4d8 + 4"
+			},
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Vanifer",
+			"name": "凡尼弗",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"提夫林"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 203,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 镶钉皮甲|phb|镶钉皮甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 17,
+			"int": 12,
+			"wis": 13,
+			"cha": 19,
+			"skill": {
+				"arcana": "+5",
+				"deception": "+8",
+				"performance": "+8"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 11,
+			"immune": [
+				"火焰"
+			],
+			"languages": [
+				"通用语",
+				"火族语",
+				"炼狱语"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"瓦尼弗是一个10级施法者。她的施法能力是魅力（法术豁免{@dc 16}，法术攻击命中{@hit 8}）。瓦尼弗知道以下巫师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 颤栗之触}",
+								"{@spell 火焰箭}",
+								"{@spell 交友术}",
+								"{@spell 法师之手}",
+								"{@spell 传讯术}",
+								"{@spell 燃火术}",
+								"{@spell 奇术}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 燃烧之手}",
+								"{@spell 繁彩球}",
+								"{@spell 炼狱叱喝}",
+								"{@spell 护盾术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 黑暗术}",
+								"{@spell 侦测思想}",
+								"{@spell 迷踪步}",
+								"{@spell 灼热射线}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 法术反制}",
+								"{@spell 火球术}",
+								"{@spell 催眠图纹}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 火墙术}"
+							]
+						},
+						"5": {
+							"slots": 2,
+							"spells": [
+								"{@spell 支配类人}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Funeral Pyre",
+					"name": "火葬",
+					"entries": [
+						"当Vanifer的生命值降至0点时，她的身体在火焰和烟雾的闪光中被吞噬。她所穿戴或携带的任何物品都留在了灰烬之中。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (2/Day)",
+					"name": "传奇抗性（2/日）",
+					"entries": [
+						"如果凡妮弗失败了一次豁免检定，她可以选择成功。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"凡尼弗进行2次攻击"
+					]
+				},
+				{
+					"ENG_name": "Tinderstrike",
+					"name": "焰袭",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 9}，触及5尺或远程射程20/60尺，单一目标。{@h}7（{@damage 1d4 + 5}）点穿刺伤害，外加7（{@damage 2d6}）火焰伤害。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Vanifer",
+				"name": "凡尼弗",
+				"source": "PotA"
+			},
+			"attachedItems": [
+				"焰袭|PotA"
+			],
+			"traitTags": [
+				"传奇抗性"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"I",
+				"IG"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"damageTagsLegendary": [
+				"F"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"T"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"savingThrowForcedLegendary": [
+				"敏捷",
+				"感知"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Wiggan Nettlebee",
+			"name": "维根·荨麻蜂",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"半身人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 212,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				11,
+				{
+					"ac": 16,
+					"condition": "{@spell 树肤术}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 36,
+				"formula": "8d6 + 8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 12,
+			"con": 12,
+			"int": 14,
+			"wis": 15,
+			"cha": 13,
+			"skill": {
+				"deception": "+3",
+				"insight": "+4"
+			},
+			"passive": 12,
+			"languages": [
+				"通用语",
+				"半身人语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Wiggan 是一个 4 级施法者。他的施法能力是感知（法术豁免难度 {@dc 12}，法术攻击命中需要 {@hit 4}）。他准备了以下牧师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 神导术}",
+								"{@spell 光亮术}",
+								"{@spell 修复术}",
+								"{@spell 橡棍术}",
+								"{@spell 奇术}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 化兽为友}",
+								"{@spell 疗伤术}",
+								"{@spell 治愈真言}",
+								"{@spell 致伤术}",
+								"{@spell 动物交谈}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 树肤术}",
+								"{@spell 荆棘丛生}",
+								"{@spell 灵体武器}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Brave Devotion",
+					"name": "英勇奉献",
+					"entries": [
+						"Wiggan在对抗被{@condition 魅惑}或{@condition 恐慌}的豁免检定中具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"威根用他的木杖进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Wooden Cane",
+					"name": "木杖",
+					"entries": [
+						"{@atk mw} {@hit 0} 命中（使用{@hit 4} 命中如果使用橡棍术），触及 5 尺，单一目标。{@h}1（{@damage 1d4 - 1}）钝击伤害，或者使用橡棍术时为 6（{@damage 1d8 + 2}）钝击伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"H"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"N",
+				"O",
+				"P"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"魅惑"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Windharrow",
+			"name": "犁风者",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"半精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 192,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 镶钉皮甲|phb|镶钉皮甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 55,
+				"formula": "10d8 + 10"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 12,
+			"int": 14,
+			"wis": 10,
+			"cha": 17,
+			"skill": {
+				"acrobatics": "+5",
+				"deception": "+7",
+				"persuasion": "+5",
+				"performance": "+7",
+				"stealth": "+5"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"languages": [
+				"气族语",
+				"通用语",
+				"精灵语"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Windharrow 是一位 8 级施法者。他的施法能力是魅力（法术豁免难度 {@dc 13}，法术攻击命中骰 {@hit 5}）。Windharrow 知道以下吟游诗人法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 交友术}",
+								"{@spell 魔法伎俩}",
+								"{@spell 恶言相加}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 易容术}",
+								"{@spell 不谐低语}",
+								"{@spell 雷鸣波}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 隐形术}",
+								"{@spell 粉碎音波}",
+								"{@spell 沉默术}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 回避侦测}",
+								"{@spell 短讯术}",
+								"{@spell 巧言术}"
+							]
+						},
+						"4": {
+							"slots": 2,
+							"spells": [
+								"{@spell 困惑术}",
+								"{@spell 任意门}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Fey Ancestry",
+					"name": "妖精血统",
+					"entries": [
+						"Windharrow在对抗{@condition 魅惑}的豁免检定上有优势，魔法无法使他入睡。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"风箭进行两次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Rapier",
+					"name": "刺剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一生物。{@h}7 ({@damage 1d8 + 3}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"刺剑|phb"
+			],
+			"traitTags": [
+				"妖精血统"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AU",
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"O",
+				"T",
+				"Y"
+			],
+			"spellcastingTags": [
+				"CB"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"耳聋",
+				"隐形"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Yan-C-Bin",
+			"name": "延西冰",
+			"type": "elemental",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 221,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 22,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 283,
+				"formula": "21d12 + 147"
+			},
+			"speed": {
+				"walk": 50,
+				"fly": 150
+			},
+			"str": 18,
+			"dex": 24,
+			"con": 24,
+			"int": 16,
+			"wis": 21,
+			"cha": 23,
+			"save": {
+				"dex": "+13",
+				"wis": "+11",
+				"cha": "+12"
+			},
+			"senses": [
+				"盲视 120 尺"
+			],
+			"passive": 15,
+			"resist": [
+				"寒冷",
+				"火焰",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"闪电",
+				"毒素",
+				"雷鸣"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚"
+			],
+			"languages": [
+				"气族语"
+			],
+			"cr": "18",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"严慈宾的天赋施法能力是魅力（法术豁免{@dc 20}，法术攻击命中{@hit 12}）。他天生能够施展以下法术，无需任何材料成分："
+					],
+					"will": [
+						"{@spell 造风术}",
+						"{@spell 隐形术}",
+						"{@spell 闪电束}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell 连锁闪电}",
+							"{@spell 死云术}",
+							"{@spell 加速术}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Air Form",
+					"name": "空气形态",
+					"entries": [
+						"严辰斌可以进入一个敌对生物的空间并停留在那里。如果空气能通过那个空间，他可以穿过宽度仅为1英寸的空间而不需要挤压。"
+					]
+				},
+				{
+					"ENG_name": "Empowered Attacks",
+					"name": "赋能攻击",
+					"entries": [
+						"严辰宾的猛击攻击被视为魔法攻击，以绕过对非魔法攻击的抗性和免疫。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性 (3/日)",
+					"entries": [
+						"如果严辰彬未能通过豁免检定，他可以选择成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"严长斌在对抗法术和其他魔法效果的豁免检定中具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"严辰斌进行两次猛击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及10尺，单一目标。{@h}20（{@damage 3d8 + 7}）力场伤害，外加10（{@damage 3d6}）闪电伤害。"
+					]
+				},
+				{
+					"ENG_name": "Thundercrack (Recharges after a Short or Long Rest)",
+					"name": "雷霆爆裂（在长休或短休之后充能）",
+					"entries": [
+						"Yan-C-Bin 在自身为中心半径100英尺的范围内释放出一声可怕的雷鸣。区域内的所有其他生物必须成功通过一次 {@dc 24} 体质豁免，否则将受到31（{@damage 9d6}）点雷鸣伤害，并被 {@condition 耳聋} 1分钟。豁免成功的生物仅受到一半伤害，并被 {@condition 耳聋} 直到 Yan-C-Bin 的下一个回合开始。"
+					]
+				},
+				{
+					"ENG_name": "Change Shape",
+					"name": "变形",
+					"entries": [
+						"严辰斌变化为一个中等体型的人形生物。在变形状态下，他周围环绕着旋转的微风，他的眼睛变得苍白而朦胧，同时失去了空气形态特性。他可以保持变形状态最多1小时。恢复到真实形态需要一个动作。"
+					]
+				},
+				{
+					"ENG_name": "Summon Elementals (1/Day)",
+					"name": "召唤元素生物 (1/日)",
+					"entries": [
+						"严辰斌可以召唤最多三个{@creature 气元素||气元素}，并且每召唤一个元素，他就会失去30点生命值。召唤出的元素拥有最大生命值，出现在严辰斌100尺范围内，如果严辰斌的生命值降至0，则这些元素会消失。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Peal of Thunder",
+					"name": "轰隆雷鸣",
+					"entries": [
+						"严长斌释放出一声雷鸣，其声可传至300尺之外。在严长斌周围30尺内的每一个生物都会受到5点（{@damage 1d10}）雷鸣伤害。"
+					]
+				},
+				{
+					"ENG_name": "Teleport (Costs 2 Actions)",
+					"name": "传送 (消耗 2动作)",
+					"entries": [
+						"严辰彬可以魔法传送至他能看到的120尺内的未被占据的空间。严辰彬穿戴或携带的任何物品都会随他一起传送。"
+					]
+				},
+				{
+					"ENG_name": "Suffocate (Costs 3 Actions)",
+					"name": "扼杀 (消耗 3动作)",
+					"entries": [
+						"严辰宾能在60尺内看到的一个生物必须进行一次体质豁免检定（{@dc 21}）。如果豁免失败，目标的生命值会降至0点，并且处于濒死状态。如果豁免成功，直到其下一回合开始前，目标不能呼吸或说话。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Yan-C-Bin",
+				"name": "延西冰",
+				"source": "PotA"
+			},
+			"traitTags": [
+				"传奇抗性",
+				"魔法抗性"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击",
+				"变形生物"
+			],
+			"languageTags": [
+				"AU"
+			],
+			"damageTags": [
+				"L",
+				"O",
+				"T"
+			],
+			"damageTagsLegendary": [
+				"B",
+				"L"
+			],
+			"damageTagsSpell": [
+				"I",
+				"L"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"耳聋"
+			],
+			"conditionInflictLegendary": [
+				"目盲"
+			],
+			"conditionInflictSpell": [
+				"隐形"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"savingThrowForcedLegendary": [
+				"体质",
+				"敏捷",
+				"感知"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Young Bulette",
+			"name": "青年鲨蜥兽",
+			"source": "PotA",
+			"page": 139,
+			"_copy": {
+				"ENG_name": "Rhinoceros",
+				"name": "犀牛",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "犀牛",
+						"with": "鲨蜥"
+					}
+				}
+			},
+			"hp": {
+				"average": 45,
+				"formula": "6d10 + 12"
+			},
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}14（{@damage 2d8 + 5}）点穿刺伤害。"
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Young Purple Worm",
+			"name": "青年紫虫",
+			"source": "PotA",
+			"page": 113,
+			"_copy": {
+				"ENG_name": "Purple Worm",
+				"name": "紫虫",
+				"source": "MM"
+			},
+			"hp": {
+				"average": 184,
+				"formula": "15d20 + 90"
+			},
+			"cr": "13",
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Zegdar",
+			"name": "泽格达尔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "PotA",
+			"page": 120,
+			"_copy": {
+				"ENG_name": "Emberhorn Minotaur",
+				"name": "焰角牛头人",
+				"source": "PotA",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "牛头人",
+						"with": "泽格达尔",
+						"flags": "i"
+					}
+				}
+			},
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 链甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 117,
+				"formula": "9d10 + 27"
+			},
+			"int": 11,
+			"hasToken": true,
+			"hasFluffImages": true
+		}
+	]
+}

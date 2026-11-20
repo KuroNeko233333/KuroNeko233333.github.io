@@ -1,0 +1,186 @@
+{
+	"_meta": {
+		"internalCopies": [
+			"objectFluff"
+		]
+	},
+	"objectFluff": [
+		{
+			"ENG_name": "Boilerdrak",
+			"name": "锅炉铁龙",
+			"source": "DSotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "objects/DSotDQ/Boilerdrak.webp"
+					},
+					"credit": "Kent Davis",
+					"width": 850,
+					"height": 1039
+				}
+			]
+		},
+		{
+			"ENG_name": "Captain A-Hole",
+			"name": "傻叉船长",
+			"source": "RMBRE",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "objects/RMBRE/Captain A-Hole.webp"
+					},
+					"credit": "Troy Little",
+					"width": 671,
+					"height": 800
+				}
+			]
+		},
+		{
+			"ENG_name": "Eldritch Cannon",
+			"name": "魔能炮台",
+			"source": "TCE",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "objects/TCE/Eldritch Cannon.webp"
+					},
+					"title": "人类魔炮师与魔能炮台",
+					"width": 800,
+					"height": 1197
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "objects/TCE/Eldritch Cannon 2.webp"
+					},
+					"title": "侏儒奇械师维与她的狮鹫兽般的奥术炮在雷电列车上与敌人战斗",
+					"width": 1200,
+					"height": 800
+				}
+			]
+		},
+		{
+			"ENG_name": "Eldritch Cannon, Flamethrower",
+			"name": "魔能炮台, 投火机",
+			"source": "TCE",
+			"_copy": {
+				"ENG_name": "Eldritch Cannon",
+				"name": "魔能炮台",
+				"source": "TCE"
+			}
+		},
+		{
+			"ENG_name": "Eldritch Cannon, Force Ballista",
+			"name": "魔能炮台, 力量弩炮",
+			"source": "TCE",
+			"_copy": {
+				"ENG_name": "Eldritch Cannon",
+				"name": "魔能炮台",
+				"source": "TCE"
+			}
+		},
+		{
+			"ENG_name": "Eldritch Cannon, Protector",
+			"name": "魔能炮台, 防御者",
+			"source": "TCE",
+			"_copy": {
+				"ENG_name": "Eldritch Cannon",
+				"name": "魔能炮台",
+				"source": "TCE"
+			}
+		},
+		{
+			"ENG_name": "Gnomeflinger",
+			"name": "侏儒特快投递器",
+			"source": "DSotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "objects/DSotDQ/Gnomeflinger.webp"
+					},
+					"credit": "Bruce Brenneise",
+					"width": 850,
+					"height": 907
+				}
+			]
+		},
+		{
+			"ENG_name": "Keg Launcher",
+			"name": "毒桶抛掷器",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "objects/XDMG/Keg Launcher.webp"
+					},
+					"credit": "Kent Davis",
+					"width": 850,
+					"height": 1038
+				}
+			]
+		},
+		{
+			"ENG_name": "Mangonel",
+			"name": "投石机",
+			"source": "XDMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "objects/XDMG/Mangonel.webp"
+					},
+					"credit": "Tom Babbey",
+					"width": 850,
+					"height": 1191
+				}
+			]
+		},
+		{
+			"ENG_name": "Spirit Blister",
+			"name": "精神疱疹",
+			"source": "JttRC",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "objects/JttRC/Spirit Blister.webp"
+					},
+					"title": "在悲伤之巅的灵泡",
+					"credit": "Brynn Metheney",
+					"width": 644,
+					"height": 850
+				}
+			]
+		},
+		{
+			"ENG_name": "Unborn Palanquin",
+			"name": "未成魔轿",
+			"source": "BMT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "objects/BMT/Unborn Palanquin.webp"
+					},
+					"credit": "Katerina Ladon",
+					"width": 391,
+					"height": 1000
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,1256 @@
+{
+	"_meta": {
+		"internalCopies": [
+			"monsterFluff"
+		]
+	},
+	"monsterFluff": [
+		{
+			"ENG_name": "Aberrant Zealot",
+			"name": "畸变狂热者",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"畸变狂热者是为了力量而勾结遥远国度的邪教徒。畸变狂热者的身躯充盈着诡异的能量，其凶残的伟力借自那些居于堕落位面的怖人存在。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Aberrant Zealot.webp"
+					},
+					"width": 730,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Ash Zombie",
+			"name": "灰烬丧尸",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Ash Zombie.webp"
+					},
+					"width": 1700,
+					"height": 1121
+				}
+			]
+		},
+		{
+			"ENG_name": "Ashenwights",
+			"name": "灰烬尸妖",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"ENG_name": "Ashenwights",
+							"name": "灰烬尸妖",
+							"type": "entries",
+							"entries": [
+								"惨死于受遥远国度所腐化之地的类人生物可能会复生为一只灰烬尸妖。这些骇人不死者皮肤枯槁，眼瞳中时常闪烁着异界力量。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Ashenwights.webp"
+					},
+					"width": 850,
+					"height": 848
+				}
+			]
+		},
+		{
+			"ENG_name": "Brain Breaker",
+			"name": "碎脑者",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"碎脑者者看起来像巨大的大脑，有着粗壮的腿，它们穿着由Ilvaash的符文（触手、大脑和让人想起颚部的锯齿状线条的结）相互连接的钢制盔甲。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Chishinix",
+			"name": "奇希尼克斯",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Chishinix.webp"
+					},
+					"width": 850,
+					"height": 1548
+				}
+			]
+		},
+		{
+			"ENG_name": "Cloaker Mutate",
+			"name": "斗篷怪异变体",
+			"source": "PaBTSO",
+			"_copy": {
+				"ENG_name": "Mutates",
+				"name": "异变体",
+				"source": "PaBTSO",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"遥远国度的恶性能量导致斗篷怪与其最后一餐的腐烂尸体融合，形成了一个丑陋的操纵怪物的异怪。斗篷怪突变体用幻影复制体的迷雾笼罩其行动。它利用与自己下侧融合的尸体来吸收伤害并攻击猎物。"
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "bestiary/PaBTSO/Cloaker Mutate.webp"
+							},
+							"width": 1000,
+							"height": 745
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Encephalon Cluster",
+			"name": "髓脑聚簇体",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"脑簇对主脑或其灵吸怪祖先毫不在意。这个怪异的生物在黑暗和被遗忘的洞穴中蹒跚而行，喷吐出扭曲的后代以实现繁殖。因此，许多灵吸怪将脑簇视为阴险的病毒。如果不加以控制，一个脑簇很快就会变成一个吞噬性的威胁，能够迅速压倒整个灵吸怪族群。"
+					]
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"ENG_name": "Encephalons",
+							"name": "髓脑体",
+							"type": "entries",
+							"entries": [
+								"当一个灵吸怪族群在其卵附近危险地靠近遥远国度裂缝时，卵囊有机会变异成所谓的脑团簇\u2014\u2014一种贪食的、黏滑的、灵能的、脑形的团块，它孵化出被称为脑团宝石幼体的恐怖生物。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Encephalon Cluster.webp"
+					},
+					"width": 831,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Encephalon Gemmule",
+			"name": "髓脑芽生体",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"由于遥远国度的影响，脑巢群中的卵不再孵化成灵吸怪蝌蚪。相反，当脑巢群中的一个卵成熟时，它会被从群体中弹出，成为一个脑巢宝石。",
+						"当生成时，脑核幼体看起来像是一个畸形的、细长腿的、金字塔形状的软肉块。如果任其自然发展，脑核幼体在几天内就会成长为一个脑核团簇，此时它开始产生自己的脑核幼体。"
+					]
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"ENG_name": "Encephalons",
+							"name": "髓脑体",
+							"type": "entries",
+							"entries": [
+								"当一个灵吸怪族群在其卵附近危险地靠近遥远国度裂缝时，卵囊有机会变异成所谓的脑团簇\u2014\u2014一种贪食的、黏滑的、灵能的、脑形的团块，它孵化出被称为脑团宝石幼体的恐怖生物。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Encephalon Gemmule.webp"
+					},
+					"width": 894,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Feral Ashenwight",
+			"name": "凶残灰烬尸妖",
+			"source": "PaBTSO",
+			"_copy": {
+				"ENG_name": "Ashenwights",
+				"name": "灰烬尸妖",
+				"source": "PaBTSO",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"野性灰烬鬼保留了它们生前的一丝火花。然而，它们没有记忆或思想，除了一种强迫性的欲望，那就是摧毁它们遇到的所有生物。"
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "bestiary/PaBTSO/Feral Ashenwight.webp"
+							},
+							"width": 1000,
+							"height": 955
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Fiendish Auger",
+			"name": "邪魔钻机",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"当一个邪恶的灵魂进入挖掘钻头时，就会创造出一个恶魔般的钻探机，使得这个巨大的螺旋钻头因地狱之火而明亮发光。",
+						"受到内在邪恶精神的激烈侵略性驱使，恶魔式钻探机能够迅速穿透坚硬的岩石。然而，使用恶魔式钻探机的人必须密切关注这台机器。如果没有仔细的指导，恶魔式钻探机会不加区别地钻穿生物和大地。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Fiendish Auger.webp"
+					},
+					"width": 1000,
+					"height": 962
+				}
+			]
+		},
+		{
+			"ENG_name": "Flesh Meld",
+			"name": "血肉融骸",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"带着无法满足的饥饿感，肉体融合体是一个由牙齿、血液和身体部位组成的庞大混合体。血腥的蜿蜒附肢，每个末端都是一个咀嚼的嘴巴，它们在将可怜的猎物拉入肉体融合体的核心之前咬住猎物。死亡的恶臭围绕着肉体融合体。",
+						"当一个生物被肉体融合体吞噬时，这个生物的意识会被融合进肉体融合体的意识中。更坚韧的意识可能会抵抗这种同化，但最终，意识不可避免地屈服于那些充满杀戮和吞噬的不和谐思想合唱。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Flesh Meld.webp"
+					},
+					"width": 738,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Goblin Psi Brawler",
+			"name": "地精灵斗士",
+			"source": "PaBTSO",
+			"_copy": {
+				"ENG_name": "Psionic Goblins",
+				"name": "灵能地精",
+				"source": "PaBTSO",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"小妖精心灵搏击者利用他们的心灵感应才能来增强他们的身体力量。他们的打击带有心灵能量的噼啪声，当他们愤怒时，小妖精心灵搏击者可以释放出足够强大的心灵感应冲击波，将敌人击倒在地。"
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "bestiary/PaBTSO/Goblin Psi Brawler.webp"
+							},
+							"width": 724,
+							"height": 1000
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Goblin Psi Commander",
+			"name": "地精控灵师",
+			"source": "PaBTSO",
+			"_copy": {
+				"ENG_name": "Psionic Goblins",
+				"name": "灵能地精",
+				"source": "PaBTSO",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"地精灵力指挥官是少数能够完全控制内在力量的灵能地精之一。当他们完全觉醒到自己灵能力量的广度时，地精灵力指挥官会挥舞着纯粹的心灵能量制成的刀刃。他们可以投掷精神力量的屏障，同时用一次心灵分裂的爆发击倒敌人。"
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "bestiary/PaBTSO/Goblin Psi Commander.webp"
+							},
+							"width": 868,
+							"height": 1000
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Grandlejaw",
+			"name": "格兰杰",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/GrandlejawandKellikilli.webp"
+					},
+					"width": 1700,
+					"height": 1129
+				}
+			]
+		},
+		{
+			"ENG_name": "Grell Psychic",
+			"name": "触须怪心灵感应者",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Grell Psychic.webp"
+					},
+					"width": 745,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Gundren Rockseeker",
+			"name": "刚铎·寻岩者",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Gundren Rockseeker.webp"
+					},
+					"width": 850,
+					"height": 1060
+				}
+			]
+		},
+		{
+			"ENG_name": "Gwyn Oresong",
+			"name": "格温·奥雷松",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Gwyn Oresong.webp"
+					},
+					"width": 850,
+					"height": 1464
+				}
+			]
+		},
+		{
+			"ENG_name": "Hashutu",
+			"name": "哈舒图",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Hashutu.webp"
+					},
+					"width": 850,
+					"height": 1262
+				}
+			]
+		},
+		{
+			"ENG_name": "Hjoldak Hollowhelm",
+			"name": "霍尔达克·空盔",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Hjoldak Hollowhelm.webp"
+					},
+					"width": 850,
+					"height": 783
+				}
+			]
+		},
+		{
+			"ENG_name": "Honna",
+			"name": "霍娜",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Honna.webp"
+					},
+					"width": 850,
+					"height": 1974
+				}
+			]
+		},
+		{
+			"ENG_name": "Humanoid Mutate",
+			"name": "类人异变体",
+			"source": "PaBTSO",
+			"_copy": {
+				"ENG_name": "Mutates",
+				"name": "异变体",
+				"source": "PaBTSO",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"当遥远国度的影响作用于人形生物时，由此产生的生物可能是噩梦中的事物。无数的蹼状翅膀沿着这个突变体的身体杂乱无章地生长出来。它的皮肤变得潮湿，像蜥蜴一样光滑。",
+										"一些智能人形突变体在暴露于遥远国度之前保留了他们的人格。有些人，被异世界力量的诱惑所驱使，寻求这种转变，成为邪恶的先知和使者。其他人则找到了魔法方法恢复到他们之前的形式。"
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "bestiary/PaBTSO/Humanoid Mutate.webp"
+							},
+							"width": 730,
+							"height": 1000
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Iarno \"Glasstaff\" Albrek",
+			"name": "伊阿尔诺 \"光杖\" 阿尔布雷克",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"格拉斯塔夫（Glasstaff）曾是领主联盟的一名成员，在潘达林（Phandalin）抓住了一个为自己谋取私利的机会。他原本的任务是建立一个警察部队，但他反而组织了一群歹徒和当地的流氓来巩固自己在城镇中的地位。",
+						"格拉斯塔夫装出一副文雅和礼貌的风度，称呼他的匪徒和暴徒为\"我的好伙计们\"，并把绑架或纵火等卑鄙行为称为\"那件不愉快的小事情\"或\"那些不幸的事件\"。他可能会称角色们为他的\"尊贵客人\"，并表示遗憾，因为他无法为他们到访的场合提供合适的娱乐。然而，在他文雅的外表下，格拉斯塔夫和红标帮的其他人一样暴力和傲慢。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Iarno Glasstaff Albrek.webp"
+					},
+					"width": 701,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Infected Elder Brain",
+			"name": "感染的主脑",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"遥远国度已经污染了为伊莉西诺克的灵吸怪提供能量的主脑。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Infected Elder Brain.webp"
+					},
+					"width": 1000,
+					"height": 668
+				}
+			]
+		},
+		{
+			"ENG_name": "Infected Townsperson",
+			"name": "被感染的镇民",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Infected Townsperson.webp"
+					},
+					"width": 786,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Intellect Snare",
+			"name": "思维黑阱",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"当遥远国度的奇异恐怖撕裂个体的心智时，一些迷失的思维碎片会聚集形成智力陷阱。智力陷阱看起来像是一个扭动的触手球，回荡着它所吞噬的每一个思想的刺耳声音。",
+						"智力陷阱是食腐动物，通常在灵吸怪人的袭击之后搜寻现场，以享用那些不幸留下的生物。智力陷阱通过用它的一个触手包裹住一个生物，然后吸取思想碎片来进食，留下一个破碎的心智。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Intellect Snare.webp"
+					},
+					"width": 1000,
+					"height": 895
+				}
+			]
+		},
+		{
+			"ENG_name": "Kellikilli",
+			"name": "凯利基利",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/GrandlejawandKellikilli.webp"
+					},
+					"width": 1700,
+					"height": 1129
+				}
+			]
+		},
+		{
+			"ENG_name": "Lowarnizel",
+			"name": "洛温泽尔",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"Lowarnizel是一只年轻的紫晶龙，他的伙伴是一个守序中立的人类法师，名叫Gossa。两者都憎恨遥远国度以及任何被其污染的事物。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Lowarnizel.webp"
+					},
+					"width": 856,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Malinia",
+			"name": "马利尼亚",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Malinia.webp"
+					},
+					"width": 1700,
+					"height": 1118
+				}
+			]
+		},
+		{
+			"ENG_name": "Mind Flayer Clairvoyant",
+			"name": "夺心魔洞见者",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"为了重建他们失去的帝国，一些灵吸怪转向了他们的家园位面\u2014\u2014遥远国度，寻求答案。一位灵吸怪千里眼深入那个位面的无星深渊，并随后被赋予了非凡的力量。",
+						"灵吸怪占卜师没有听从主脑，而是倾听来自遥远国度的声音和意愿。除了享用大脑，灵吸怪占卜师还可以召唤触手，撕裂现实的结构并扭曲敌人的心灵。"
+					]
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"ENG_name": "Mind Flayers",
+							"name": "夺心魔们",
+							"type": "entries",
+							"entries": [
+								"灵吸怪，也被称为伊斯利提德，以多元宇宙中类人生物的大脑为食。它们以紫色的皮肤和类似章鱼的头部为特征，头部伸出了扭动的触手。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Mind Flayer Clairvoyant.webp"
+					},
+					"width": 669,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Mind Flayer Nothic",
+			"name": "灵吸怪诺斯怪",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"诺斯怪是一种怪物，拥有可怕的爪子和一只巨大的眼睛。当它被迫采取暴力时，会用它那恐怖的目光使敌人的肉体从骨头上腐烂。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mind Flayer Prophet",
+			"name": "夺心魔预见师",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"一些灵吸怪致力于从现实之外的领域汲取深奥的真理。这种洞察力赋予了他们超自然的感官，并允许他们集中他们与生俱来的心灵感应力量。"
+					]
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"ENG_name": "Mind Flayers",
+							"name": "夺心魔们",
+							"type": "entries",
+							"entries": [
+								"灵吸怪，也被称为伊斯利提德，以多元宇宙中类人生物的大脑为食。它们以紫色的皮肤和类似章鱼的头部为特征，头部伸出了扭动的触手。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Mind Flayer Prophet.webp"
+					},
+					"width": 786,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Mormesk the Wraith",
+			"name": "缚灵·墨梅斯克",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Mormesk the Wraith.webp"
+					},
+					"width": 850,
+					"height": 1398
+				}
+			]
+		},
+		{
+			"ENG_name": "Mutates",
+			"name": "异变体",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"ENG_name": "Mutates",
+							"name": "异变体",
+							"type": "entries",
+							"entries": [
+								"一个生物如果暴露在遥远国度的奇异能量下，就有发展变异的风险。这样的生物会经历一种蜕变，因为遥远国度的力量重写了生物存在的根本。",
+								"任何生物都有可能变成变异体，并展现出与遥远国度相关的身体特征。一些生物在长时间暴露于遥远国度能量或来自那个奇异平面的魔法后变成变异体。其他生物则是故意改变自己，试图拥抱他们所崇拜的邪恶力量。变成变异体的生物在遥远国度的影响消退后，往往会莫名其妙地变回它们之前的形式。",
+								"对生物强制变形的尝试莫名其妙地失败了，尽管邪恶势力\u2014\u2014比如古老的灵吸怪帝国\u2014\u2014在这个话题上进行了大量的研究。几个世纪以来，灵吸怪一直试图创造变异生物大军，以横扫幽暗地域。然而，他们的努力总是徒劳无功，最终灵吸怪放弃了他们的阴谋。",
+								"存在几种常见的突变体。本节中具有统计数据块的个体出现在前面的冒险中，尽管还有其他的突变体存在。有些生物更容易变成遥远国度突变体，比如斗篷怪和奥图格。",
+								"变异生物经常获得心灵感应能力，长出翅膀，被异世界的黏液覆盖，或者表现出其他令人不安的特征。特定的变异生物在附录A中有更详细的描述。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Mutates.webp"
+					},
+					"width": 1700,
+					"height": 1128
+				}
+			]
+		},
+		{
+			"ENG_name": "Nezznar the Spider",
+			"name": "涅兹纳尔·蜘蛛",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"蜘蛛\u2014\u2014一个名叫Nezzar的黑暗精灵主谋\u2014\u2014正在寻找回声洞窟中的法术锻造场，这是一个在古代由矮人和侏儒用来打造强大魔法物品的魔法锻造场。",
+						"蜘蛛想要独自占有回声洞穴，并且他正在采取措施确保其他人不知道它的位置。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Nezznar the Spider.webp"
+					},
+					"width": 1000,
+					"height": 625
+				}
+			]
+		},
+		{
+			"ENG_name": "Nundro Rockseeker",
+			"name": "南卓·寻岩者",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Nundro Rockseeker.webp"
+					},
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Nythalyn Henlifel",
+			"name": "尼瑟林·亨利费尔",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/NythalynandYanthdel.webp"
+					},
+					"width": 1700,
+					"height": 1131
+				}
+			]
+		},
+		{
+			"ENG_name": "Oculorb",
+			"name": "融目眼魔",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"许多眼球魔是由巨眼怪梦入存在的。遥远国度的奇异力量可以渗透进巨眼怪的梦境，导致眼球魔的诞生。",
+						"眼球怪看起来像是许多大小和形状各异的眼睛的黏滑集合体。它们甚至被孕育它们的巨眼怪所畏惧。眼球怪是一团负面情感的纠缠\u2014\u2014其创造者的愤怒、忧郁和执念，都被赋予了可怕的实体形态。像巨眼怪一样，眼球怪可以从它的眼睛发射能量束，但眼球怪的眼睛缺乏巨眼怪眼梗的更复杂的魔法特性。相反，眼球怪释放出充满负面情绪的强大能量波，用绝望和愤怒震慑其敌人。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Oculorb.webp"
+					},
+					"width": 813,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Oshundo the Alhoon",
+			"name": "奥顺多·阿尔胡恩",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"Oshundo在许多世纪前灵吸怪帝国的鼎盛时期生活在伊尔瑟诺克，但因为练习奥术魔法而被驱逐。很明显，这种排斥仍然让Oshundo感到刺痛，它将伊尔瑟诺克早已死去的领导者称为\"无知的傻瓜\"，他们对奥术魔法的灵活性和力量\"封闭且不接受\"。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Oshundo the Alhoon.webp"
+					},
+					"width": 639,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Otyugh Mutate",
+			"name": "食腐兽异变体",
+			"source": "PaBTSO",
+			"_copy": {
+				"ENG_name": "Mutates",
+				"name": "异变体",
+				"source": "PaBTSO",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"从暴露于遥远国度能量的腐肉和污垢堆中升起，一个 食腐兽突变体在其肢体上生长出了甲壳质的、漆黑的外壳。这些板块与其肉体的半透明、几乎幽灵般的外观形成了鲜明的对比，为人们提供了一个令人作呕的窗口，透过它可以看到 食腐兽最近吞噬的有毒废物。"
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "bestiary/PaBTSO/Otyugh Mutate.webp"
+							},
+							"width": 1000,
+							"height": 814
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Psionic Ashenwight",
+			"name": "灵能灰烬尸妖",
+			"source": "PaBTSO",
+			"_copy": {
+				"ENG_name": "Ashenwights",
+				"name": "灰烬尸妖",
+				"source": "PaBTSO",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"当一个灰烬鬼在充满异常力量的水晶矿脉附近出现，或者在一个充满邪恶魔法的地区徘徊时，它有机会发展出精神能力。一个拥有精神能力的灰烬鬼明显比其他灰烬鬼更具有智慧，尽管由此产生的意识是一个与灰烬鬼生前完全不同的新创造。",
+										"一些灵能灰行者致力于拼凑他们以前的生活，而其他人则努力启迪其他灰行者了解这种新的灵能力量。"
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "bestiary/PaBTSO/Psionic Ashenwight.webp"
+							},
+							"width": 815,
+							"height": 1000
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Psionic Goblins",
+			"name": "灵能地精",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"ENG_name": "Psionic Goblins",
+							"name": "灵能地精",
+							"type": "entries",
+							"entries": [
+								"灵能地精是如何出现的具体情况各不相同。一些是天生的，由于来自遥远国度的能量泄露而发生变化。其他地精则利用自己的灵能力量进行转变，或者与其他异怪达成协议，作为突击队的交换帮助他们转变。无论如何，结果都是一样的：一个拥有不自然且几乎无法控制的心灵力量的地精。",
+								"心灵感应的小妖精经常难以控制他们心智和身体内动荡的心灵能量。那些学会如何安全利用这种心灵力量的心灵感应小妖精在战斗中是强大的力量。心灵感应小妖精经常用心灵感应增强他们的战斗技能，而心灵感应小妖精战士的秘密小队可以通过心灵感应进行沟通，使他们成为出色的渗透者和伏击者。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Psionic Goblins.webp"
+					},
+					"width": 850,
+					"height": 1104
+				}
+			]
+		},
+		{
+			"ENG_name": "Qunbraxel",
+			"name": "Qunbraxel",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"Qunbraxel是一个傲慢的灵吸怪魔契师。Qunbraxel总是由四个忠诚的幽邃盲族侍从陪同。他们与其他附近的幽邃盲族侍从轮流担任这个职责，尽管Qunbraxel几乎懒得分辨一个幽邃盲族侍从和另一个。",
+						"由于与任何值得的主脑魔Qunbraxel隔离，灵吸怪希望加入Ilvaash狂热者，并从遥远国度获得力量和洞察力。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Qunbraxel.webp"
+					},
+					"width": 865,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Redbrand Ruffian",
+			"name": "红标帮恶霸",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"红牌暴徒是无情的执行者，擅长恐吓和暴力。他们为了金钱工作，没有任何顾忌。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Redbrand Ruffian.webp"
+					},
+					"width": 1000,
+					"height": 668
+				}
+			]
+		},
+		{
+			"ENG_name": "Refraction of Ilvaash",
+			"name": "伊尔瓦什的折射体",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"Ilvaash是由灵吸怪之神Ilsensine，即神脑的残余部分形成的。当Ilsensine离开遥远国度去其他地方建立神域时，神脑的一部分脱落并觉醒为自我意识。这就是Ilvaash，不和谐的心灵。",
+						"Ilvaash的折射只拥有神灵一小部分的力量，但仍然是一个强大的对手。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Refraction of Ilvaash.webp"
+					},
+					"width": 1000,
+					"height": 985
+				}
+			]
+		},
+		{
+			"ENG_name": "Rivibiddel",
+			"name": "瑞维比德尔",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Rivibiddel.webp"
+					},
+					"width": 850,
+					"height": 1768
+				}
+			]
+		},
+		{
+			"ENG_name": "Ruxithid the Chosen",
+			"name": "鲁克西斯·天选者",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"数个世纪前，一个被遗弃的灰矮人矮人矿站，名为Zorzula's Rest，被灵吸怪占领，那里的地精暴露在灵吸怪的奇异力量之下，导致一部分地精发展出了不寻常的精神力量。灵吸怪最终离开了，但地精们留了下来，与世界其他地区隔绝，直到最近灵吸怪狂热者召唤他们。这些地精的后代中有些人拥有精神力量，这一点可以从组成他们行列的地精精神指挥官和地精精神格斗者（见附录A对两者的描述）中看出。总的来说，地精们自称为Sawplees：这是在灵吸怪的深语方言中\"地精\"一词的简化。",
+						"最近几周，萨普利小妖精的领袖发现了一块神秘的宝石。鲁克西斯·被选中者并不知道，一群从遥远国度汲取力量的灵吸怪狂热者为了让他找到而特意种植了它。这块宝石让鲁克西斯能够心灵感应地与灵吸怪沟通，他相信他们是神。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Ruxithid the Chosen.webp"
+					},
+					"width": 526,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Shalfi Lewin",
+			"name": "沙尔菲·卢温",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Shalfi Lewin.webp"
+					},
+					"width": 850,
+					"height": 963
+				}
+			]
+		},
+		{
+			"ENG_name": "Sildar Hallwinter",
+			"name": "修达·霍温特",
+			"source": "PaBTSO",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"Sildar 是一位将近五十岁的仁慈人类男性，在著名的深水城狮鹫骑兵中占有一席之地。他是领主联盟的一名代理人，这是一个沿着剑海岸的联盟政治力量，关注共同的安全和繁荣。该组织通过积极处理暴力威胁来确保费伦的城市和其他定居点的安全，成员们致力于给他们的领袖和祖国带来荣誉和荣耀。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Sildar Hallwinter.webp"
+					},
+					"width": 1000,
+					"height": 997
+				}
+			]
+		},
+		{
+			"ENG_name": "Varakkta",
+			"name": "瓦拉克塔",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Varakkta.webp"
+					},
+					"width": 850,
+					"height": 2271
+				}
+			]
+		},
+		{
+			"ENG_name": "Voalsh",
+			"name": "Voalsh",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Voalsh.webp"
+					},
+					"width": 850,
+					"height": 1163
+				}
+			]
+		},
+		{
+			"ENG_name": "Yanthdel Henlifel",
+			"name": "Yanthdel Henlifel",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/NythalynandYanthdel.webp"
+					},
+					"width": 1700,
+					"height": 1131
+				}
+			]
+		},
+		{
+			"ENG_name": "Zeond",
+			"name": "泽翁德",
+			"source": "PaBTSO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/PaBTSO/Zeond.webp"
+					},
+					"width": 850,
+					"height": 1198
+				}
+			]
+		}
+	]
+}

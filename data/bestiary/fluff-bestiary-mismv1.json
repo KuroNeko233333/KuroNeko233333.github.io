@@ -1,0 +1,210 @@
+{
+	"monsterFluff": [
+		{
+			"ENG_name": "Coral",
+			"name": "珊瑚",
+			"source": "MisMV1",
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						"{@note 由Kenzie C创作}",
+						"珊瑚生活在海洋和云层中，饼干是她最为喜欢的零食。她有能力帮助治愈其他生物，她还可以赋予动物短时间说话的能力。当她心情烦闷时，她的彩虹尾巴会有光亮起。如果她把尾巴拍在地上，神奇的魔法力量就会向外扩散并吞噬敌人，有可能将其化为尘土。当珊瑚打嗝时，她的角上就会冒出气泡。这些气泡会变成美味的饼干、爆发的闪光和恶臭的保护气体云。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MisMV1/Coral.webp"
+					},
+					"width": 869,
+					"height": 1000
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MisMV1/Coral (Original).webp"
+					},
+					"width": 1700,
+					"height": 1546
+				}
+			]
+		},
+		{
+			"ENG_name": "Dandylion",
+			"name": "蒲公英狮",
+			"source": "MisMV1",
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						"{@note 由Jones D.-D.创作}",
+						"蒲公英狮们是妖精荒野中的食草农民，它们培育瑰丽的花园与丰收的谷地。若他人以尊敬待之，蒲公英狮们则会乐于对感兴趣的人们分享自己关于种植的丰富知识。它们会提出园艺方面的真知灼见，其培育的水果与蔬菜也是健康又美味。它们培育的一些谷物还含有魔法成分，这些成分使谷物能作为珍贵的药水材料与法术成分。蒲公英狮们会凶猛地保护自己的农场，任何试图践踏、盗窃蒲公英狮之农场的人将会招致这头猛兽的怒火。想让一头蒲公英狮给出它所珍视的作物、花朵的最佳方法，是好好奉承它。",
+						"一头蒲公英狮有着柔软的绿色的毛皮，微小的树叶编织于毛发之间。位于蒲公英狮尾巴末端的一株小而多毛的柱头里保存着种子荚。这些种子会润泽大地，滋养健康的植物与丰盛的蔬果。蒲公英狮经常用来自它们花园中的花瓣编织项链，并吹嘘着他们土地的肥沃。蒲公英狮还喜欢吹嘘其亮黄色鬃毛的饱满。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MisMV1/Dandylion.webp"
+					},
+					"width": 604,
+					"height": 1000
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MisMV1/Dandylion (Original).webp"
+					},
+					"width": 1700,
+					"height": 1820
+				}
+			]
+		},
+		{
+			"ENG_name": "Rain",
+			"name": "雨",
+			"source": "MisMV1",
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						"{@note 由Kenzie C创作}",
+						"云雨居住在云上的欢乐草甸中，远离世间一切的邪恶。她喜欢纸杯蛋糕并会很容易接受它们为礼物。她有着火焰的翅膀与环绕在其角尖上的一轮光晕。当她面对坏蛋或恶徒时，她能够从其光束角中释放出彩虹色的正能量光波。云雨使用她的彩虹力量医治友方生物并惩罚恶者，她会将后者变成闪闪发光的花朵。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MisMV1/Rain.webp"
+					},
+					"width": 706,
+					"height": 1000
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MisMV1/Rain (Original).webp"
+					},
+					"width": 1700,
+					"height": 1808
+				}
+			]
+		},
+		{
+			"ENG_name": "Scrapper",
+			"name": "废铁战械",
+			"source": "MisMV1",
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						"{@note 由 Jake F. 创作}",
+						"废铁战械是一类身形高大，肩膀宽阔的自动机械，通常出现在肥料厂。它那从笨重的框架中散出的松散电线冒着火花。它们的机械心智由铅壳保护，保护其不受心灵伤害。",
+						"废铁战械以废金属为食，并用带电的线缆缠住敌人。而它那只伸出的眼睛则可以发射能量光束来攻击触及不到的敌人。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MisMV1/Scrapper.webp"
+					},
+					"width": 959,
+					"height": 1000
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MisMV1/Scrapper (Original).webp"
+					},
+					"width": 1700,
+					"height": 2018
+				}
+			]
+		},
+		{
+			"ENG_name": "Seth the Shapeshifting Dragon",
+			"name": "变形龙塞斯",
+			"source": "MisMV1",
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						"{@note 由Reese P.创作}",
+						"变形龙塞斯是一位喜欢藏在那些在瀑布，河流与湖泊附近的灌木丛中的素食主义者。塞斯在水中是隐形的，并且他可以爆发出极快的速度。他的吐息武器是一股强劲的冰水冲激。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MisMV1/Seth the Shapeshifting Dragon.webp"
+					},
+					"width": 504,
+					"height": 1000
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MisMV1/Seth the Shapeshifting Dragon (Original).webp"
+					},
+					"width": 1700,
+					"height": 1339
+				}
+			]
+		},
+		{
+			"ENG_name": "Sheldon the Blueberry Dragon",
+			"name": "蓝莓龙希尔顿",
+			"source": "MisMV1",
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						"{@note 由Samuel B创作}",
+						"希尔顿是一只友善、且善良的龙，他收集并以蓝莓为食。当他不参加任何派对时，他会居住在荒宙之中。他的身体会神奇的创造出空气，使他能在真空中成长，也让他拥有了产生强大的风流的能力。希尔顿利用这些风来击倒他的敌人，或是将自己推进到它的翅膀无法到达的远距离位置。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MisMV1/Sheldon the Blueberry Dragon.webp"
+					},
+					"width": 703,
+					"height": 1000
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MisMV1/Sheldon the Blueberry Dragon (Original).webp"
+					},
+					"width": 1700,
+					"height": 1822
+				}
+			]
+		}
+	]
+}

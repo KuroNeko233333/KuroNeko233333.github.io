@@ -1,0 +1,211 @@
+{
+	"monster": [
+		{
+			"ENG_name": "Yarnspinner",
+			"name": "编织者",
+			"type": {
+				"type": "fey",
+				"tags": [
+					"至高妖精"
+				]
+			},
+			"isNamedCreature": true,
+			"source": "DoD",
+			"page": 22,
+			"referenceSources": [
+				"WBtW"
+			],
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 138,
+				"formula": "12d12 + 60"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 24,
+			"dex": 16,
+			"con": 21,
+			"int": 18,
+			"wis": 21,
+			"cha": 19,
+			"save": {
+				"con": "+9",
+				"wis": "+9",
+				"cha": "+8"
+			},
+			"skill": {
+				"perception": "+13",
+				"stealth": "+7"
+			},
+			"senses": [
+				"真实视觉 120 尺"
+			],
+			"passive": 23,
+			"conditionImmune": [
+				"魅惑",
+				"恐慌"
+			],
+			"languages": [
+				"通用语",
+				"德鲁伊语",
+				"木族语"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"编织者施放以下法术之一，无需材料成分，并使用感知作为施法能力（法术豁免{@dc 17}）："
+					],
+					"will": [
+						"{@spell 妖火}",
+						"{@spell 动物交谈}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell 化兽为友}",
+							"{@spell 造粮术}",
+							"{@spell 回生术}"
+						],
+						"1e": [
+							"{@spell 启蒙术}（作为动作）",
+							"{@spell 行动无踪}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Fey Rebirth",
+					"name": "精类重生",
+					"entries": [
+						"如果 Yarnspinner 在其愉悦领域中死亡，他将在该领域内的一个安全地点在 {@dice 1d4} 天后复活，并且恢复所有生命值。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性 (3/日)",
+					"entries": [
+						"如果纱线编织者失败豁免检定，他可以选择成功。"
+					]
+				},
+				{
+					"ENG_name": "Spider Climb",
+					"name": "蛛行术",
+					"entries": [
+						"编织者可以攀登困难的表面，包括在天花板上倒挂，无需进行属性检定。"
+					]
+				},
+				{
+					"ENG_name": "Web Walker",
+					"name": "蛛网行者",
+					"entries": [
+						"Yarnspinner 忽略由蛛网引起的移动限制。"
+					]
+				},
+				{
+					"ENG_name": "Web Weaver (3/Day)",
+					"name": "织网者（每日3次）",
+					"entries": [
+						"编织者可以在1分钟内用蛛网编织出以下结构之一：",
+						{
+							"type": "list",
+							"items": [
+								"一堵由最多三个10尺见方的区域组成的3英寸厚的不透明蛛网墙，每个区域都必须至少由两面其他墙壁或表面固定。每个区域的护甲等级为12；有20点生命值；对火焰伤害易感；并对钝击、毒素和心灵伤害免疫。",
+								"一个足够小，可以放入10尺立方体的小木屋。这个小木屋配有一个可关闭的门和一个舒适的网状床，适合微型、小型或中型生物。",
+								"一条由不超过二十五个字符组成的消息，固定在不同点上，悬挂在空中。"
+							]
+						}
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"Yarnspinner 进行两次咬击，并使用一次法术施放或蛛网。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及10尺，单一目标。{@h}17点（{@damage 3d6 + 7}）点穿刺伤害，加上11点（{@damage 2d10}）毒素伤害。"
+					]
+				},
+				{
+					"ENG_name": "Web",
+					"name": "蛛网术",
+					"entries": [
+						"纺线者向一个他能看见的、距离他120英尺范围内的生物射出蛛网。目标必须成功通过一个{@dc 17}的力量豁免，否则将被{@condition 束缚}1小时。目标可以在每回合结束时重复进行豁免检定，成功则在该回合结束时解除此效果。"
+					]
+				}
+			],
+			"traitTags": [
+				"传奇抗性",
+				"蛛行术",
+				"蛛网行者"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DU",
+				"S"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"束缚"
+			],
+			"conditionInflictSpell": [
+				"魅惑"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}

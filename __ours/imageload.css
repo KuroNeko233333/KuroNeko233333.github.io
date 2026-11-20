@@ -1,0 +1,142 @@
+/* Decorations are absolute. The image and its existing slot determine layout. */
+.bk-img-native:not(.bk-img-native-token), .bk-img-preview { position: relative; }
+.bk-img-native-body { --bk-img-max-height: 60vh; }
+.bk-img-preview { --bk-img-max-height: 82vh; }
+.bk-class-image .bk-img-preview { --bk-img-max-height: calc(100vh - 60px); }
+.bk-img-preview img { display: block; }
+.bk-img-native-token { --bk-img-max-height: 110px; }
+.bk-img-map-fetch {
+  position: fixed;
+  z-index: 10000;
+  inset: 12px 12px auto auto;
+  width: min(280px, calc(100vw - 24px));
+  height: 160px;
+  border: 1px solid var(--bk-gold);
+  border-radius: 6px;
+  background: var(--bk-img-base);
+}
+.bk-img-map-fetch[data-bk-img="pending"] { visibility: visible; opacity: 0; pointer-events: none; }
+.bk-img-map-fetch > img { position: absolute; width: 100%; height: 100%; }
+.bk-img-map-fetch > button {
+  position: absolute;
+  z-index: 2;
+  inset: 5px 6px auto auto;
+  border: 1px solid var(--bk-gold);
+  border-radius: 4px;
+  background: var(--v3-card);
+  color: var(--v3-ink);
+}
+.bk-img-map-fetch[data-bk-img="pending"] > button { visibility: hidden; }
+
+/* Preserve the native SVG dimensions after it is swapped for the bitmap.
+   Entries without dimensions use the same reservation until the bitmap arrives. */
+:is(.bk-img-native-body,.bk-img-preview,.bk-img-native-token):is([data-bk-img="pending"],[data-bk-img="loading"],[data-bk-img="failed"]) .bk-img-media {
+  width: min(100%, var(--bk-img-width), calc(var(--bk-img-max-height) * (var(--bk-img-ratio))));
+  height: auto;
+  aspect-ratio: var(--bk-img-ratio);
+  object-fit: contain;
+}
+.bk-img-preview:is([data-bk-img="pending"],[data-bk-img="loading"],[data-bk-img="failed"]) {
+  width: min(82vw, var(--bk-img-width));
+}
+.bk-img-preview[data-bk-img="failed"] {
+  aspect-ratio: var(--bk-img-ratio);
+  min-height: 108px;
+  max-height: var(--bk-img-max-height);
+}
+.bk-img-native-token:is([data-bk-img="pending"],[data-bk-img="loading"],[data-bk-img="failed"]) { width: 110px; }
+:is([data-bk-img="pending"],[data-bk-img="loading"],[data-bk-img="failed"]) .bk-img-media { opacity: 0; }
+[data-bk-img="fade"] .bk-img-media { animation: bk-img-enter 180ms ease-out; }
+
+.bk-img-status {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 4px;
+  z-index: 1;
+  border-radius: inherit;
+  overflow: hidden;
+  pointer-events: none;
+  container-type: size;
+  color: var(--v3-ink);
+  font: 600 12px/1.4 var(--nt-font);
+  text-align: center;
+}
+.bk-img-native-body > .bk-img-status {
+  max-width: min(var(--bk-img-width), calc(var(--bk-img-max-height) * (var(--bk-img-ratio))));
+  margin-inline: auto;
+}
+[data-bk-img="loading"] > .bk-img-status { background: var(--bk-img-base); }
+[data-bk-img="loading"] > .bk-img-status::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(104deg, transparent 26%, var(--bk-img-light) 50%, transparent 74%);
+  opacity: 0;
+}
+[data-bk-img="loading"][data-bk-img-visible] > .bk-img-status::before { animation: bk-img-sweep 1.6s ease-in-out infinite; }
+.bk-img-indicator { width: 18px; height: 18px; border: 2px solid var(--bk-img-line); border-top-color: var(--bk-gold); border-radius: 50%; }
+[data-bk-img="loading"][data-bk-img-visible] > .bk-img-status > .bk-img-indicator { animation: bk-img-spin 1s linear infinite; }
+.bk-img-message { z-index: 1; padding: 2px 6px; border-radius: 3px; background: var(--bk-img-base); }
+[data-bk-img="failed"] > .bk-img-status {
+  background: repeating-linear-gradient(45deg, transparent 0 16px, var(--bk-img-line) 16px 17px), var(--bk-img-base);
+  box-shadow: inset 0 0 0 1px var(--bk-gold);
+}
+[data-bk-img="failed"] > .bk-img-status > .bk-img-indicator {
+  width: 15px;
+  height: 15px;
+  border-color: var(--bk-gold);
+  border-radius: 0;
+  background: var(--bk-img-base);
+  box-shadow: inset 0 0 0 3px var(--bk-img-base), inset 0 0 0 4px var(--bk-gold);
+  transform: rotate(45deg);
+}
+/* The class, option, item, monster, and hall frames already have a motif. */
+:is(.bk-class-art,.bk-opt-art,.bk-item-art,.bk-mon-portrait,.oh-art)[data-bk-img="failed"] > .bk-img-status { background: none; box-shadow: none; }
+:is(.bk-class-art,.bk-opt-art,.bk-item-art,.bk-mon-portrait,.oh-art)[data-bk-img="failed"] > .bk-img-status > .bk-img-indicator { display: none; }
+html:root .bk-img-status > .bk-img-retry {
+  pointer-events: auto;
+  display: block;
+  margin: 0;
+  padding: 2px 9px;
+  border: 1px solid var(--bk-gold);
+  border-radius: 4px;
+  background: var(--v3-card);
+  color: var(--v3-ink);
+  font: inherit;
+  cursor: pointer;
+}
+.bk-img-retry:focus-visible { outline: 2px solid var(--v3-link); outline-offset: -2px; }
+.bk-img-status--small > .bk-img-message { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); padding: 0; }
+html:root .bk-img-status--small > .bk-img-retry:not(:focus-visible) { position: absolute; inset: 0; opacity: 0; }
+@container (width < 130px) or (height < 88px) {
+  .bk-img-status > .bk-img-message { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); padding: 0; }
+  html:root .bk-img-status > .bk-img-retry:not(:focus-visible) { position: absolute; inset: 0; opacity: 0; }
+}
+.ours-card__art > .bk-img-media { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center 25%; }
+
+@keyframes bk-img-sweep {
+  from { transform: translateX(-90%); opacity: 0; }
+  25%, 75% { opacity: 1; }
+  to { transform: translateX(90%); opacity: 0; }
+}
+@keyframes bk-img-spin { to { transform: rotate(360deg); } }
+@keyframes bk-img-enter { from { opacity: 0; } to { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) {
+  [data-bk-img="loading"][data-bk-img-visible] > .bk-img-status::before,
+  [data-bk-img="loading"][data-bk-img-visible] > .bk-img-status > .bk-img-indicator,
+  [data-bk-img="fade"] .bk-img-media { animation: none; }
+  [data-bk-img="loading"] > .bk-img-status > .bk-img-indicator { display: none; }
+  [data-bk-img="loading"] > .bk-img-status > .bk-img-message {
+    position: static;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    clip-path: none;
+    padding: 0;
+    font-size: clamp(9px, 23cqi, 12px);
+    overflow-wrap: anywhere;
+  }
+}

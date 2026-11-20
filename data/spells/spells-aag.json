@@ -1,0 +1,96 @@
+{
+	"spell": [
+		{
+			"ENG_name": "Air Bubble",
+			"name": "空气泡泡",
+			"source": "AAG",
+			"page": 22,
+			"referenceSources": [
+				"LoX"
+			],
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 24
+					}
+				}
+			],
+			"entries": [
+				"你指定视线范围内的一个自愿生物，并在其头部创造一个散发幽光的球体。这个球体内会充满新鲜空气直到法术结束。如果这个生物有多个头，那么球体只会出现在它的一个头周围（若该生物的所有头颅共用同一套呼吸系统，那么这个法术也可以让它避免窒息）。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"当你使用3环或更高的环阶施放这个法术时，你使用的法术位每比2环高一环，就能额外创造两个新鲜空气球体。"
+					]
+				}
+			],
+			"miscTags": [
+				"SGT"
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Create Spelljamming Helm",
+			"name": "创造法驱魔舵",
+			"source": "AAG",
+			"page": 22,
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "一根价值至少5000gp的水晶权杖，作为法术的耗材",
+					"cost": 500000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"持握用于施法成分的那根权杖并触碰一个不超过大型、未被占据的座椅。水晶权杖消失，且这个座椅被转变为{@item 法驱魔舵|AAG}。"
+			],
+			"translator": "不全书"
+		}
+	]
+}

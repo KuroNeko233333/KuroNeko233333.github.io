@@ -1,0 +1,144 @@
+/* 我们的 5etools —— Notion 风格 V2（职业页重排 + 列表面板精修）。只在 html.nt2 下生效，V1（notion.css）原样保留作对照。
+ * 版式原则取自 Notion 页面实测：一栏正文（约 720–760px）、页头 = 40px 标题 + 属性、表格左对齐正文且可向右伸出、目录在右侧。 */
+
+/* ================================================================== class page layout */
+html.nt2 main.classes.ntc-on { display: grid !important; grid-template-columns: 232px minmax(0, 1fr); column-gap: 0; padding: 0 !important; align-items: start; }
+html.nt2 main.classes.ntc-on > .ntc { grid-column: 2; grid-row: 1; min-width: 0; padding: 32px 48px 160px 48px; box-sizing: border-box; }
+html.nt2 .ntc-hidden { display: none; }
+
+/* the class list: a quiet secondary panel, separated by one hairline (no third column any more) */
+html.nt2 main.classes.ntc-on #listcontainer { grid-column: 1; grid-row: 1; position: sticky; top: 0; height: 100vh; margin: 0; padding: 12px 10px 10px; box-sizing: border-box; display: flex; flex-direction: column;
+	border-right: 1px solid var(--nt-line2); background: var(--nt-surface); width: auto; max-width: none; }
+html.nt2 main.classes.ntc-on #listcontainer > .ve-night__shadow-big { flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; }
+html.nt2 main.classes.ntc-on #list.cls__list { flex: 1 1 auto; max-height: none; min-height: 0; overflow-y: auto; margin: 0 -4px 0 0; padding-right: 4px; }
+html.nt2 main.classes.ntc-on #listcontainer > .ve-my-3 { margin: 8px 0 0 !important; justify-content: flex-start; }
+html.nt2 #listcontainer #filtertools { height: 26px; border-bottom: 0; margin: 2px 0 2px; }
+html.nt2 #listcontainer #filtertools .sort { height: 26px !important; line-height: 26px !important; font-size: 12px; color: var(--nt-tex3); }
+/* list rows: Notion sidebar/list items — no grid lines, rounded hover, selected = grey + medium */
+html.nt2 .cls__list .ve-lst__row-inner { min-height: 28px; border-bottom: 0 !important; border-radius: 6px; padding: 0 4px 0 8px; }
+html.nt2 .cls__list .ve-lst__row-inner > .nt-name { font-weight: 400; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+html.nt2 .cls__list .list-multi-selected > .ve-lst__row-inner { background: var(--nt-active) !important; }
+html.nt2 .cls__list .list-multi-selected > .ve-lst__row-inner > .nt-name { font-weight: 600; }
+html.nt2 .cls__list .ve-lst__row-inner .nt-tag { height: 18px; line-height: 18px; font-size: 11px; padding: 0 5px; }
+html.nt2 #list.cls__list .ve-ours-cls-off + .ve-ours-cls-feat::before, html.nt2 #list.cls__list .ve-ours-cls-feat + .ve-ours-cls-rest::before, html.nt2 #list.cls__list .ve-ours-cls-off + .ve-ours-cls-rest::before {
+	padding: 14px 8px 4px; border-bottom: 0; color: var(--nt-tex3); }
+
+/* ---------------------------------------------------------------- page header: the focal point */
+html.nt2 .ntc-head { max-width: 1016px; margin-bottom: 8px; }
+html.nt2 .ntc-head__row { display: flex; align-items: flex-start; gap: 16px; }
+html.nt2 .ntc-title { flex: 1; margin: 0; font: 700 40px/1.2 var(--nt-font); color: var(--nt-tex); letter-spacing: 0; }
+html.nt2 .ntc-title__en { margin-left: 12px; font-weight: 400; color: var(--nt-tex3); font-size: 28px; }
+html.nt2 .ntc-actions { padding-top: 10px; }
+html.nt2 .ntc-actions .wrp-btn-readmode { margin: 0 !important; gap: 6px; }
+html.nt2 .ntc-actions .ve-btn { height: 28px !important; line-height: 28px !important; padding: 0 10px !important; font-size: 14px !important; color: var(--nt-tex2); box-shadow: none !important; background: transparent !important; margin: 0 !important; }
+html.nt2 .ntc-actions .ve-btn:hover { background: var(--nt-hover) !important; color: var(--nt-tex); }
+/* properties: two columns of Notion property rows (label 104px grey, value), long ones span the width */
+html.nt2 .ntc-props { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 32px; margin-top: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--nt-line2); max-width: 1016px; }
+html.nt2 .ntc-prop { display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: 0 8px; align-items: start; min-height: 30px; padding: 4px 0; font-size: 14px; line-height: 22px; }
+html.nt2 .ntc-prop--wide { grid-column: 1 / -1; }
+html.nt2 .ntc-prop__k { color: var(--nt-tex2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+html.nt2 .ntc-prop__v { color: var(--nt-tex); min-width: 0; }
+html.nt2 .ntc-prop__v > div, html.nt2 .ntc-prop__v > p { margin: 0; }
+html.nt2 .ntc-prop__v b, html.nt2 .ntc-prop__v strong { font-weight: 400; color: var(--nt-tex2); }
+html.nt2 .ntc-prop__v i { font-style: normal; color: var(--nt-tex2); }
+html.nt2 .ntc-prop__v .ve-py-2 { display: none; }
+html.nt2 .ntc-prop__v .nt-tag { margin-right: 6px; vertical-align: 1px; }
+html.nt2 .ntc-src-full { color: var(--nt-tex); }
+html.nt2 .ntc-src-sep { color: var(--nt-tex3); }
+
+/* ---------------------------------------------------------------- sections */
+html.nt2 .ntc-sec { margin-top: 30px; max-width: 1016px; }
+html.nt2 .ntc-sec__head { display: flex; align-items: center; gap: 10px; min-height: 32px; margin-bottom: 8px; }
+html.nt2 .ntc-h { margin: 0; font: 600 20px/1.3 var(--nt-font); color: var(--nt-tex); letter-spacing: 0; }
+html.nt2 .ntc-count { color: var(--nt-tex3); font-size: 14px; }
+
+/* growth table: as wide as its columns (Notion tables are not stretched), level column as row header */
+html.nt2 .ntc-sec--table #classtable { padding: 0; width: auto; max-width: none; overflow-x: auto; }
+html.nt2 .ntc-sec--table .ve-cls-tbl { width: auto !important; min-width: 560px; margin: 0 !important; border-top: 1px solid var(--nt-cell); border-bottom: 1px solid var(--nt-cell); }
+html.nt2 .ve-cls-tbl tr:has(> .ve-cls-tbl__disp-name) { display: none; }
+html.nt2 .ve-cls-tbl > tbody > tr > td { height: 29px; padding: 0 12px; border-right: 1px solid var(--nt-cell); border-bottom: 1px solid var(--nt-cell); font-variant-numeric: tabular-nums; }
+html.nt2 .ve-cls-tbl > tbody > tr > th { padding: 0 12px; }
+html.nt2 .ve-cls-tbl > tbody > tr:has(> th.ve-cls-tbl__col-level) > th { height: 34px; font-size: 13px; background: var(--nt-bg2); }
+html.nt2 .ve-cls-tbl > tbody > tr > td:first-child { color: var(--nt-tex2); text-align: right; }
+html.nt2 .ve-cls-tbl a, html.nt2 .ve-cls-tbl a:visited { text-decoration: none; }
+html.nt2 .ve-cls-tbl a:hover { text-decoration: underline; text-decoration-color: rgba(42, 28, 0, .45); }
+html.nt2 .ve-cls-tbl > tbody > tr:has(> td):hover > td { background: rgba(35, 131, 226, .05); }
+html.nt2 .ve-cls-tbl td:has(> a) { min-width: 220px; }
+
+/* subclasses: grouped; compact Notion option tags (no borders), group label above each group */
+html.nt2 .ntc-sec--sub .cls-tabs__wrp { display: block !important; padding: 0; margin: 0 !important; position: relative; }
+html.nt2 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap { display: flex !important; flex-wrap: wrap; gap: 4px; margin: 0 !important; padding: 0; border: 0; width: 100%; }
+html.nt2 .ntc-scg { flex: 0 0 100%; display: flex; align-items: baseline; gap: 6px; margin: 10px 0 2px; font-size: 12px; font-weight: 500; color: var(--nt-tex2); }
+html.nt2 .ntc-scg:first-child, html.nt2 .ntc-scg[style*="order: 0"] { margin-top: 0; }
+html.nt2 .ntc-scg__n { color: var(--nt-tex3); font-weight: 400; }
+html.nt2 .ntc-scg--empty { display: none; }
+html.nt2 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn { height: 26px !important; line-height: 26px !important; padding: 0 8px !important; margin: 0 !important; font-size: 14px; border-radius: 4px !important;
+	background: var(--nt-tag-gray) !important; box-shadow: none !important; color: var(--nt-tex) !important; transition: background .08s; }
+html.nt2 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn:hover { background: rgba(42, 28, 0, .12) !important; }
+html.nt2 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn > .ve-ml-1 { font-size: 12px; color: var(--nt-tex3); margin-left: 4px !important; }
+html.nt2 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn[class*="cls__btn-sc--active"] { font-weight: 500; }
+html.nt2 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn.cls__btn-sc--reprinted { background: transparent !important; box-shadow: inset 0 0 0 1px var(--nt-line) !important; }
+html.nt2 .ntc-sec--sub .cls-tabs__wrp > :not(.ve-flex-wrap):not(.ve-btn-group:first-child) { position: absolute; right: 0; top: -40px; }
+html.nt2 .ntc-sec--sub .cls-tabs__wrp i.ve-clickable, html.nt2 .ntc-sec--sub .cls-tabs__sc-not-shown { flex: 0 0 100%; margin-top: 8px; font-size: 12px; }
+
+/* 特性 / 变体 / 简介: Notion view switch beside the section title */
+html.nt2 .ntc-views { margin-left: 8px; }
+html.nt2 .ntc-views > .ve-btn-group { display: flex !important; gap: 2px; margin: 0 !important; }
+html.nt2 .ntc-views .ve-btn { height: 26px !important; line-height: 26px !important; padding: 0 8px !important; border-radius: 6px !important; box-shadow: none !important; background: transparent !important; color: var(--nt-tex3) !important; font-size: 14px; margin: 0 !important; }
+html.nt2 .ntc-views .ve-btn:hover { background: var(--nt-hover) !important; color: var(--nt-tex2) !important; }
+html.nt2 .ntc-views .ve-btn.cls__btn-cf--active, html.nt2 .ntc-views .ve-btn.ve-active { background: var(--nt-active) !important; color: var(--nt-tex) !important; font-weight: 500; }
+
+/* ---------------------------------------------------------------- reading: one 760px column + table of contents on the right */
+html.nt2 .ntc-read { display: grid; grid-template-columns: minmax(0, 760px) 200px; column-gap: 56px; align-items: start; }
+html.nt2 .ntc-text { min-width: 0; }
+html.nt2 .ntc-toc { position: sticky; top: 16px; max-height: calc(100vh - 32px); overflow-y: auto; scrollbar-width: none; }
+html.nt2 .ntc-toc::-webkit-scrollbar { display: none; }
+html.nt2 .ntc-toc .cls-nav { margin: 0; position: static; max-height: none; padding: 0; }
+html.nt2 .ntc-toc .cls-nav__head { font-size: 12px; color: var(--nt-tex3); }
+html.nt2 .ntc-toc .cls-nav__item { font-size: 13px; line-height: 18px; padding: 3px 8px; color: var(--nt-tex2); border-radius: 4px; }
+html.nt2 .ntc-toc .cls-nav__item:hover { color: var(--nt-tex); background: var(--nt-hover); }
+html.nt2 #pagecontent.cls__stats { font-size: 16px; }
+html.nt2 #pagecontent .ve-rd__h--0 { font-size: 18px; line-height: 1.4; margin: 28px 0 4px; }
+html.nt2 #pagecontent .ve-rd__h--1 { font-size: 16px; margin: 16px 0 2px; }
+html.nt2 #pagecontent .ve-rd__h--2 { font-size: 16px; margin: 12px 0 2px; }
+html.nt2 #pagecontent .ve-rd__b > p, html.nt2 #pagecontent .ve-rd__b > .ve-rd__p-list-item { margin: 0 0 6px; }
+html.nt2 #pagecontent .ve-rd__title-link { color: var(--nt-tex4) !important; }
+html.nt2 #pagecontent .ve-rd__h--0 .ve-rd__title-link, html.nt2 #pagecontent .ve-rd__h .ve-rd__h-toggle { opacity: 0; transition: opacity .1s; }
+html.nt2 #pagecontent .ve-rd__h:hover .ve-rd__title-link, html.nt2 #pagecontent .ve-rd__h:hover .ve-rd__h-toggle { opacity: 1; }
+/* subclass features: the site marks them; here a left rule in the subclass colour, so class vs subclass is visible while scrolling */
+html.nt2 #pagecontent [class*="cls__feature-subclass"], html.nt2 #pagecontent [class*="cls__feature-variant-subclass"], html.nt2 #pagecontent [class*="cls__feature-brew-subclass"], html.nt2 #pagecontent [class*="cls__feature-ua-subclass"] {
+	box-shadow: inset 3px 0 0 rgba(68, 131, 97, .35); padding-left: 16px !important; }
+html.nt2 #pagecontent [class*="cls__feature-brew-subclass"] { box-shadow: inset 3px 0 0 rgba(144, 101, 176, .35); }
+html.nt2 #pagecontent [class*="cls__feature-ua-subclass"] { box-shadow: inset 3px 0 0 rgba(217, 115, 13, .35); }
+/* links in the text: quieter underline, still visible */
+html.nt2 #pagecontent a, html.nt2 .ntc-props a { text-decoration-color: rgba(42, 28, 0, .2); }
+
+@media screen and (max-width: 1400px) {
+	html.nt2 .ntc-read { grid-template-columns: minmax(0, 1fr) 180px; column-gap: 36px; }
+	html.nt2 main.classes.ntc-on > .ntc { padding-left: 36px; padding-right: 32px; }
+}
+@media screen and (max-width: 1180px) {
+	html.nt2 .ntc-read { grid-template-columns: minmax(0, 1fr); }
+	html.nt2 .ntc-toc { display: none; }
+	html.nt2 .ntc-props { grid-template-columns: minmax(0, 1fr); }
+}
+/* the chosen subclass: Notion tag colour by kind of source (same meaning as the site's own colours) */
+html.nt2 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn.cls__btn-sc--active-fresh { background: var(--nt-tag-blue) !important; color: var(--nt-tag-blue-t) !important; }
+html.nt2 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn.cls__btn-sc--active-reprinted { background: rgba(42, 28, 0, .16) !important; color: var(--nt-tex) !important; }
+html.nt2 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn.cls__btn-sc--active-spicy { background: var(--nt-tag-green) !important; color: var(--nt-tag-green-t) !important; }
+html.nt2 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn.cls__btn-sc--active-stale { background: var(--nt-tag-yellow) !important; color: var(--nt-tag-yellow-t) !important; }
+html.nt2 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn.cls__btn-sc--active-brew { background: var(--nt-tag-purple) !important; color: var(--nt-tag-purple-t) !important; }
+html.nt2 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn.cls__btn-sc--active-rebrewed { background: var(--nt-tag-pink) !important; color: var(--nt-tag-pink-t) !important; }
+html.nt2 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn[class*="cls__btn-sc--active"] > .ve-ml-1 { color: inherit !important; opacity: .65; }
+html.nt2 .ve-cls-tbl .ve-cls-tbl__col-level, html.nt2 .ve-cls-tbl .ve-cls-tbl__col-prof-bonus { width: auto; }
+html.nt2 .ve-cls-tbl > tbody > tr > td.ve-cls-tbl__col-generic-center { min-width: 64px; }
+/* only the outermost subclass block carries the rule */
+html.nt2 #pagecontent [class*="cls__feature-subclass"] [class*="cls__feature-subclass"], html.nt2 #pagecontent [class*="cls__feature-brew-subclass"] [class*="cls__feature-brew-subclass"],
+html.nt2 #pagecontent [class*="cls__feature-ua-subclass"] [class*="cls__feature-ua-subclass"], html.nt2 #pagecontent [class*="cls__feature-variant-subclass"] [class*="cls__feature-variant-subclass"] { box-shadow: none; padding-left: 0 !important; }
+/* header keeps the properties you look up all the time; 起始装备 / 兼职 / 出处 sit right under the table, still open */
+html.nt2 .ntc-sec--more { margin-top: 18px; }
+html.nt2 .ntc-props--more { margin-top: 0; padding-bottom: 0; border-bottom: 0; grid-template-columns: minmax(0, 1fr); }
+html.nt2 .ntc-sec--more:not(:has(.ntc-prop)) { display: none; }
+html.nt2 .ntc-head .ntc-props { margin-top: 12px; padding-bottom: 12px; }
+@media screen and (max-width: 1180px) { html.nt2 .ntc-head .ntc-props { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media screen and (max-width: 900px) { html.nt2 .ntc-head .ntc-props { grid-template-columns: minmax(0, 1fr); } }

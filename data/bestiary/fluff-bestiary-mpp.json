@@ -1,0 +1,1837 @@
+{
+	"_meta": {
+		"internalCopies": [
+			"monsterFluff"
+		]
+	},
+	"monsterFluff": [
+		{
+			"ENG_name": "Adult Time Dragon",
+			"name": "成年时光龙",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"这些优雅的龙类掌握着能够操控过去，现在和未来的时光之力。时光龙雏龙有着闪耀的鳞片，其双角则是初生的小块。随着它们逐渐掌握时间的流动，其双角上便会生出遍布分支的虹彩脉络，谕示着时光运转的轨迹与可能性。远古时光龙能创造出与多元宇宙中特定时间和地点相连的时空门。凭借于此，时光龙与其盟友可以旅行至任何时间的任何地点，以影响决定命运的重要时刻，或是驱逐来自时光之外的威胁。时光龙能在不同的时代之间穿梭，这令它们经常表现得与当前的时间流脱节，并对何为过去，何为当下，何为未来有着很灵活的看法。",
+						"时光龙珍视对过去历史的记录、反映着失落文化的物品和早已逝去的创造者遗留的秘宝。它们对操纵时间的魔法和已被遗忘的知识非常感兴趣。偶然发现时光龙宝库的人也许会在其中发现关于过往年代的，极为珍贵的历史信息。"
+					]
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"ENG_name": "A Time Dragon's Lair",
+							"name": "时光龙的巢穴",
+							"type": "entries",
+							"entries": [
+								"时光龙通常栖息在古代文明的废墟或供奉已逝神灵的圣殿之中，并会尽全力保护这些历史遗迹。时光龙对知识的永恒渴望意味着它可能有不止一处这样的巢穴。",
+								"当远古或成年时光龙在巢穴中遭遇时，其挑战等级会上升1。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Adult Time Dragon.webp"
+					},
+					"width": 364,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Ancient Time Dragon",
+			"name": "远古时光龙",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Time Dragons",
+				"name": "时间龙",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "setProp",
+						"value": [
+							{
+								"type": "entries",
+								"entries": [
+									"这些优雅的龙类掌握着能够操控过去，现在和未来的时光之力。时光龙雏龙有着闪耀的鳞片，其双角则是初生的小块。随着它们逐渐掌握时间的流动，其双角上便会生出遍布分支的虹彩脉络，谕示着时光运转的轨迹与可能性。",
+									"远古时光龙能创造出与多元宇宙中特定时间和地点相连的时空门。凭借于此，时光龙与其盟友可以旅行至任何时间的任何地点，以影响决定命运的重要时刻，或是驱逐来自时光之外的威胁。时光龙能在不同的时代之间穿梭，这令它们经常表现得与当前的时间流脱节，并对何为过去，何为当下，何为未来有着很灵活的看法。",
+									"时光龙珍视对过去历史的记录、反映着失落文化的物品和早已逝去的创造者遗留的秘宝。它们对操纵时间的魔法和已被遗忘的知识非常感兴趣。偶然发现时光龙宝库的人也许会在其中发现关于过往年代的，极为珍贵的历史信息。"
+								]
+							},
+							{
+								"type": "section",
+								"entries": [
+									{
+										"ENG_name": "A Time Dragon's Lair",
+										"name": "时光龙的巢穴",
+										"type": "entries",
+										"entries": [
+											"时光龙通常栖息在古代文明的废墟或供奉已逝神灵的圣殿之中，并会尽全力保护这些历史遗迹。时光龙对知识的永恒渴望意味着它可能有不止一处这样的巢穴。",
+											"当远古或成年时光龙在巢穴中遭遇时，其挑战等级会上升1。"
+										]
+									}
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Ancient Time Dragon.webp"
+					},
+					"width": 773,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Archons",
+			"name": "统领",
+			"source": "MPP",
+			"entries": [
+				{
+					"ENG_name": "Archons",
+					"name": "统领",
+					"type": "entries",
+					"entries": [
+						"亚空天族是天界山的七层天堂的公民。它们自秩序与仁爱的力量中诞生，守卫家园免受邪魔势力的入侵，保护弱者以防邪恶力量的威胁。亚空天族还是专业的交涉者，能够说能够说出多元宇宙中的所有语言。当被卷进战斗时，它们倾向于制服敌人。但当面对邪魔时，亚空天族就会化身为愤怒的战士，展现出天界山的正义之怒，将邪恶之徒彻底击溃。",
+						"每个亚空天族的形态都与其在天界等级体系中的地位相对应。在战斗中遭遇敌人时，亚空天族会散发出上层位面的全部怒火，在为盟友提供支援的同时也能威慑敌人。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Athar Null",
+			"name": "神明非神会·抹消密使",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"神明非神会的所有人都否认神明的正确性，他们认定所谓的神只是一群强大的施法者。而为了战胜这些\"伪神\"，他们训练出了被冠以\"空无NULL\"之名的，可以抵消魔法使用者力量的\"抹消密使\"。抹消密使们藏于阴影之中，承担着神明非神会的刺客与间谍之职。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Athar Null.webp"
+					},
+					"width": 579,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Aurumach Rilmani",
+			"name": "黄金卿",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Rilmani",
+				"name": "御衡诸卿",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"在外域无极尖峰旁的堡垒中，黄金卿们监视着整个寰宇现状的维持状况，它们是御衡诸卿的领导者与战略家。黄金卿们依靠所行使的神秘魔法、隐秘计算与信息网络指挥着军队跨越位面。只有在位面平衡处于全面崩溃的威胁之下时，这些难以捉摸的金肤生物才会离开外域，显现出光耀剑刃，并摧毁那些威胁着宇宙稳定的存在。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Aurumach Rilmani.webp"
+					},
+					"width": 773,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Avoral Guardinal",
+			"name": "鹏羽天",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Guardinals",
+				"name": "盖丁天族",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"鹏羽天们形如有着鹰躯的双足生物，它们的臂膀生羽，其金色双目敏锐无比。鹏羽天们热爱漫游，这些翔于高空的天族比他们的同族更经常地离开极乐境，在外域中随着风的轨迹自在翱翔。鹏羽天们都是独立的斥候、散兵，它们也皆为灵巧的空战好手，能够迅捷地从空中向敌人俯冲而下，并用其锐利的鹰爪将敌人撕裂。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Avoral Guardinal.webp"
+					},
+					"width": 653,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Baernaloth",
+			"name": "贝纳罗斯魔",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"贝纳罗斯魔是哈迪斯的灰色荒野本土的尤格罗斯魔，它们高大、憔悴。贝纳罗斯魔灰色的干燥皮肤挂在骨头之上，其头部有着如长了角的马匹一样的头骨与灰烬一般的双眼。贤者们一直在为贝纳罗斯魔的本质是什么而争吵不休，而且《{@i 存储之书}》\u2014\u2014记载了初始尤格罗斯魔们真名的古老卷轴都没有在其中提及到贝纳罗斯魔的存在。有的假说认为这些神秘莫测的尤格罗斯魔是在其他尤格罗斯魔诞生以前就被某种原始邪恶原力所创造，它们也有可能来自现在的位面诸界形成之前的某个时代。贝纳罗斯魔拒绝开口说话，但它们痴迷于有关多元宇宙遥远过去与不可预测之未来的秘密与亵渎学识。这些掌握着渎神知识的稀少学者中的一大部分都想要在更伟大的层面上操控现实，而剩下的一部分则在诸位面之中进行着恐怖的实验。据说卡瑟利的第一个妖魔demodand就是由贝纳罗斯魔创造。",
+						"贝纳罗斯魔在它们遇到的任何生物之中散播着不谐与绝望。它们使用带有浓厚哈迪斯之阴晦的吐息来将密友化为敌人，而在它们的受害者意识到自己如何背叛了彼此之时，贝纳罗斯魔又会细细品味其中的恐惧。贝纳罗斯魔使用它们的邪秽力量使受到了致命伤的敌人续命以持续它们的折磨\u2014\u2014而这有时永无止境。即便举刀挥向一只贝纳罗斯魔，这种行为也会带来悲剧\u2014\u2014它们能够让攻击者的旧伤再次痛苦地裂开。而在任何时刻，贝纳罗斯魔都保持着令人不安的冷漠，它们毫无感情地观察着受害者们的痛苦。"
+					]
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"ENG_name": "A Baernaloth's Lair",
+							"name": "贝纳罗斯魔巢穴",
+							"type": "entries",
+							"entries": [
+								"无论是在哈迪斯的绝望领域中，或是偶尔它们潜伏于其他位面，贝纳罗斯魔的巢穴都是在偏远的山间峭壁与隐蔽洞穴之中。它们的巢穴有着充足的空间来装下并束缚\"访客\"们\u2014\u2014特别是那些贝纳罗斯魔用其魔法把人吊在生死边缘的那些人。",
+								"当在巢穴之中被遭遇时，贝纳罗斯魔的挑战等级为18。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Baernaloth.webp"
+					},
+					"width": 364,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Bariaur Wanderer",
+			"name": "人羊漂泊者",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"他们自 伊斯加德Ysgard 而来，人羊是一种形似人马的天族，他们的下半身如山羊、上身如类人生物，头上还有一对弯曲的角。有一些人羊会顺应自己的探索欲，而漂泊于自己的家园位面、外域The Outlands、与 巨轮The Great Wheel 之外的世界中。人羊漂泊者们常常在外域充当向导，他们热心的向游客推荐门镇内的景点与其他值得一看的事物。在他们的旅途中，这些生命力顽强的漂泊者们会吸取周遭的位面能量，适应着外层位面的各种复杂地形，并因此获得一些外层位面的独有外貌特征（见《{@book 莫提的位面游记|MPP}》前言章节的\"{@book 位面影响|MPP|0|位面影响}\"部分）。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Bariaur Wanderer.webp"
+					},
+					"width": 879,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Bleak Cabal Void Soother",
+			"name": "无望党·虚无医师",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"虚无医师会去照料那些遭受诅咒或是受各位面负面影响的生物们。这些战医们会行走于危险位面与冲突频发的地带，并为那里的人们提供治疗与救助。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Bleak Cabal Void Soother.webp"
+					},
+					"width": 574,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Cranium Rat Squeaker",
+			"name": "吱语颅鼠",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Cranium Rat Squeakers",
+				"name": "吱语颅鼠们",
+				"source": "MPP"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Cranium Rat Squeaker.webp"
+					},
+					"width": 850,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Cranium Rat Squeaker Swarm",
+			"name": "吱语颅鼠集群",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Cranium Rat Squeakers",
+				"name": "吱语颅鼠们",
+				"source": "MPP"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Cranium Rat Squeaker Swarm.webp"
+					},
+					"width": 370,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Cranium Rat Squeakers",
+			"name": "吱语颅鼠们",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"印记城的吱语颅鼠与那些创造它们祖先的夺心魔没有任何关系，恰恰相反，这些魔法性的啮齿动物只与众门之城的居民们共同生活在一起，有时还会与居民合作来满足某些野心。而当大量的吱语颅鼠聚集在一起，它们的集群就会形成一个具有强化灵能能力与共享全员记忆的强大智慧个体。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Cuprilach Rilmani",
+			"name": "紫铜卿",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Rilmani",
+				"name": "御衡诸卿",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"紫铜卿在整个多元宇宙之中作为密探与刺客渗透那些带有力量的位置。它们在黄金卿的命令下无情、坚决地发动外科手术式的打击。",
+									"紫铜卿们有着结实的铜制框架。它的躯干漂浮于腰部之上，两者之间由一个浮空的光亮球体所分隔。紫铜卿们灵敏机巧，配备着为数众多的潜伏魔法，它们会做任何必要之事以完成其任务。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Cuprilach Rilmani.webp"
+					},
+					"width": 651,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Dabus",
+			"name": "监护者",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"在印记城的街道上，熙熙攘攘的人群之中，你能看到一些灰色肌肤的、长着犄角的人形生物漂浮在那。这些人形所到之处，墙体的裂缝自行弥合，散落的砖块飘回原位，这些被毁坏的城镇建筑会被他们复原。它们是监护者，于沉默寡言中维护印记城之人，同时也是 痛苦女士Lady of Pain 的忠实仆人。",
+						"监护者巡游在众门之城之中，维护那些建筑物、传送门还有各种其他公共设施。它们会利用天生能力操控着印记城的基础设施，四处修复建筑，惩戒那些违反女士之令的人\u2014\u2014操纵砖块以砸向这些闹事者，再用地面的石头组成手掌以制服这些人。",
+						"当监护者说话时，它们不会\"说\"或\"写\"下文本，而是在自己面前创造出幻术的神秘图像与神秘符号。学者们曾尝试探寻过这些监护者\"真的很难理解\"的字谜的起源，却无果。不过，有些学者推测这种字谜的词源早于印记城本身。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Dabus.webp"
+					},
+					"width": 396,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Darkweaver",
+			"name": "暗织蛛",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"暗织蛛是原生于堕影冥界蛛形掠食者，它们居于洞穴，地城和多元宇宙中的其他黑暗地带，包括底层印记城和喧癫空隧的呼啸之暗。暗织蛛潜藏于其巢穴之中阴影，等待不幸的猎物经过。目标靠近后，暗织蛛便会向猎物射出纯粹的幽影之网，将受害者拖入黑暗之中。",
+						"暗织蛛偏爱感官刺激\u2014\u2014尤其是味觉......以及来自不同位面的生物如何感受现实。对它们来说，进食是一种兼顾了汲取与品味的重要体验，每一餐都要精致考虑。无论暗织蛛今天要吃的是一个恶魔、一位亚空、一个挣扎的半身人还是一只紧张的骡子，对它们来说，这些食物都是名为多元宇宙的伟大厨房为其提供的美味佳肴。这些恐怖大蜘蛛也喜欢对感官刺激的第二手描述，尤其是在其家园环境中鲜有机会经历的那些。暗织蛛的俘虏有可能会通过与这怪物分享自己的经历，尤其是关于美味宴席的经历来推迟被吃掉。甚至，如果承诺带着珍奇无比的香料或是独一无二的佳肴返回，有些人甚至可能说服暗织蛛暂时放过它们。当然，靠这种手段逃离了暗织蛛的猎物应谨慎考虑是否要返回蜘蛛巢穴，因为暗织蛛只是为了猎物所承诺的事物而暂时压制着对猎物的食欲。"
+					]
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"ENG_name": "A Darkweaver's Lair",
+							"name": "暗织蛛的巢穴",
+							"type": "entries",
+							"entries": [
+								"暗织蛛栖息于无光的洞穴，并更倾向于那些被幽暗的位面影响了的地区。诸如喧嚣空隧和堕影冥界。暗织蛛通常居住在与世隔绝的地方，因为在那里它们可以自在地编织幽影之网。",
+								"在巢穴中遭遇一只暗织蛛时其挑战等级会变为11（7,200 XP）。"
+							]
+						},
+						{
+							"ENG_name": "Darkweaver Webs",
+							"name": "暗织蛛的蛛网",
+							"type": "entries",
+							"entries": [
+								"一只暗织蛛的蛛网有50%概率拥有{@dice 1d6}颗茧。投掷黑暗蛛茧内容物表格以决定这些幽影般的茧块中包含了什么。",
+								{
+									"type": "table",
+									"colLabels": [
+										"d6",
+										"类别"
+									],
+									"colStyles": [
+										"col-2 text-center",
+										"col-10"
+									],
+									"rows": [
+										[
+											"1",
+											"掷一次骰，若结果为偶数，则蛛茧包含了一个类人生物的骨骸。若结果为奇数则蛛茧包含了一个非类人生物的骨骸，比如一个呋噜Flumph或一匹骡Mule。"
+										],
+										[
+											"2",
+											"一群可能是暗织蛛之子代的昆虫群Swarm of Insect"
+										],
+										[
+											"3",
+											"一个抱着一罐万溶剂Universal Solvent的尸体，盖子有点卡住了。"
+										],
+										[
+											"4",
+											"一本印记城的菜单合集"
+										],
+										[
+											"5",
+											"{@dice 4d12}枚混在消化物中的金币"
+										],
+										[
+											"6",
+											"一个暗织蛛忘了吃掉的半身人平民commoner或鼠首天musteval guardinal"
+										]
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Darkweaver.webp"
+					},
+					"width": 1000,
+					"height": 601
+				}
+			]
+		},
+		{
+			"ENG_name": "Decaton Modron",
+			"name": "十次魔冢",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Modrons",
+				"name": "魔冢",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"作为高阶魔冢中的最低阶成员，十次冢们管理着单元魔冢的身体状况。十次冢由两条坚实的腿支撑着它们的球状身体，十条机械触手从它们圆形框架的每个方向中延伸而出。它们的头部拥有十只随时准备监视周围单元魔冢们之行动的眼睛。在紧急状况下，一只十次魔冢能从每只眼睛中释放出一道闪电能量，并将这十道能量释放的时机同步以达到致命的效果。"
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "bestiary/MPP/Decaton Modron.webp"
+							},
+							"width": 913,
+							"height": 1000
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Demodands",
+			"name": "妖魔",
+			"source": "MPP",
+			"entries": [
+				{
+					"ENG_name": "Demodands",
+					"name": "妖魔",
+					"type": "entries",
+					"entries": [
+						"妖魔，又称为格莱斯魔gehreleths，它们是来自卡瑟利的流放深渊的邪魔。亘古以先，它们因早已被遗忘的罪孽而被投入到监狱位面之中，这些痛苦、卑劣的生物已经将自己视作这座位面的狱卒。妖魔们满怀恶意地保卫着那极其稀少的，能够通向卡瑟利之外的传送门，并无情地折磨着任何被困于此位面的生物。",
+						"成功离开卡瑟利的妖魔们都知道它们注定会返回；一个在卡瑟利之外死亡的妖魔会在{@dice 2d20}天内以极其痛苦的进程缓慢重组。即便那些在其他位面幸存下来的妖魔也会发现自己最终会因为位面束缚而不得不返回卡瑟利。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Doomguard Doom Lord",
+			"name": "末日守卫·末日领主",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"末日领主是末日守卫这一派系的最高阶级成员，它们的存在本身似乎就象征着多元宇宙必将坍塌成尘埃的命运。仅仅是末日领主站在那，就足以剥夺一切弱小敌人的性命，而最坚固的城墙也将坍塌在它的脚边。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Doomguard Doom Lord.webp"
+					},
+					"width": 670,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Doomguard Rot Blade",
+			"name": "末日守卫·衰亡之刃",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"衰亡之刃是末日守卫的一种\"熵能杠杆\"，用以来加速多元宇宙的自然腐朽。这些成员挥舞着充斥着暗蚀能量的武器，让它们的敌人统统化为灰烬。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Doomguard Rot Blade.webp"
+					},
+					"width": 712,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Eater of Knowledge",
+			"name": "知识噬者",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"这些迈着双足，肌肉噗叽作响的笨重怪物最初由夺心魔的神脑伊尔神斯因创造，而现在则由这位神明的追随者们制造。这些皱巴巴的巨怪通过吞噬其他生物的大脑来收集它们的信息，再将这些美味的秘密带回给它们的主人。和擅长用灵能冲垮敌人的夺心魔不同，知识噬者依靠其强大的力量捕获猎物，并用自己粗壮的触手\"解放\"受害者的大脑。知识噬者的灵能能力会伴随着其吞噬大脑而逐渐增强，每个被吞噬的大脑都会让这个怪物愈发致命。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Eater of Knowledge.webp"
+					},
+					"width": 1000,
+					"height": 701
+				}
+			]
+		},
+		{
+			"ENG_name": "Equinal Guardinal",
+			"name": "马首天",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Guardinals",
+				"name": "盖丁天族",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"长得像马一样的马首天是最强壮的盖丁天族。马首天们的脸部狭长，其头顶长有浓密的鬃毛；它们强壮的外弧形马腿能够支撑它们跨越很远的距离。这些天性善良且喧闹的天族们会在力气比赛中夸耀自己的力量，且它们从不在面对挑战时退却。健壮、英勇的马首天们会用自己的铁拳将邪恶砸成浆糊。它们也能释放出一阵有力的咆哮以阻止其敌人前进。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Equinal Guardinal.webp"
+					},
+					"width": 613,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Farastu Demodand",
+			"name": "法拉斯特魔",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Demodands",
+				"name": "妖魔",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"法拉斯特魔，又称为徘徊妖魔tarry demodand，乃是妖魔之中的最低阶。这些暴力的邪魔所滴落的粘稠的沥青会粘住任何它碰到的东西。法拉斯特魔傲慢而残忍，它们沉醉于折磨那些比自己更弱小的生物。得益于它们敏锐的感官与凶残的本性，法拉斯特魔有时也作为猎人去追猎那些逃离了卡瑟利的生物。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Farastu Demodand.webp"
+					},
+					"width": 823,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Fated Shaker",
+			"name": "定命盟·缴债税官",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"定命盟的缴债税官是一群讨要债务的混蛋，它的对手是那些欠下定命盟收税官与抄家者债务之人。这些执行者们还会使用魔法来恐吓或洗脑那些试图反抗他的人们。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Fated Shaker.webp"
+					},
+					"width": 697,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Ferrumach Rilmani",
+			"name": "黑铁卿",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Rilmani",
+				"name": "御衡诸卿",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"黑铁卿是御衡诸卿中的步卒，它们通过武力维护诸界之间的平衡。它们警醒地守护着无极尖峰并在黄金卿的命令之下保护着多元宇宙中的中立力量。黑铁卿们闪耀着赤铁的锋芒，它们的身躯被磨砺得如同剃刀般锋利，并能从中射出锐利的金属矢。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Ferrumach Rilmani.webp"
+					},
+					"width": 555,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Fraternity of Order Law Bender",
+			"name": "秩序厅·曲法律师",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"秩序厅的成员们发现并利用多元宇宙法则之中的各种漏洞。其中，曲法律师便是一群可以破坏概率与空间规则的裁判长，它们可以随意行动并操控身边发生的一切行动的结果。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Fraternity of Order Law Bender.webp"
+					},
+					"width": 588,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Githzerai",
+			"name": "吉斯泽莱人",
+			"source": "MPP",
+			"entries": [
+				{
+					"ENG_name": "Githzerai",
+					"name": "吉斯泽莱人",
+					"type": "entries",
+					"entries": [
+						"吉斯泽莱人与吉斯洋基人有着共同的祖先\u2014\u2014一个被夺心魔摧毁并改造的，古老的民族。许多吉斯泽莱人居于混沌海之中，在这混乱的位面中塑造家园，以磨练它们的灵能力量。而此处描述的吉斯泽莱人经常穿越印记城与外域的传送门至其他位面旅行，有关其他吉斯泽莱人的描述见《{@i 怪物图鉴}》。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Githzerai Futurist",
+			"name": "吉斯泽莱预视者",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Githzerai",
+				"name": "吉斯泽莱人",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"吉斯泽莱预视者专注的冥想已经足以使其超越原有的界限，捕捉来自未来的片段。它们能预见战斗中可能的走向，并利用这些预兆来促使胜利的天平向有利于他们的方向倾斜。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Githzerai Futurist.webp"
+					},
+					"width": 696,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Githzerai Traveler",
+			"name": "吉斯泽莱旅行者",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"吉斯泽莱旅行者在多元宇宙中漫游，在历练中寻求宇宙启迪。这些吉斯泽莱人学会了如何操控位面能量以产生惊异的效果。",
+						"吉斯泽莱人与吉斯洋基人有着共同的祖先\u2014\u2014一个被夺心魔摧毁并改造的，古老的民族。许多吉斯泽莱人居于混沌海之中，在这混乱的位面中塑造家园，以磨练它们的灵能力量。而此处描述的吉斯泽莱人经常穿越印记城与外域的传送门至其他位面旅行，有关其他吉斯泽莱人的描述见《{@i 怪物图鉴}》。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Githzerai Traveler.webp"
+					},
+					"width": 741,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Githzerai Uniter",
+			"name": "吉斯泽莱统念者",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Githzerai",
+				"name": "吉斯泽莱人",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"吉斯泽莱统念者崇尚智慧和团结，而非暴力。许多统念者都是莎萨库尔Sha'sal Khou的成员\u2014\u2014这是一个由致力于让吉斯人重新团结的吉斯洋基人和吉斯泽莱组成的团体。虽然统念者是强大的武术家，但它们更倾向于解除对手的武装并将其制服，而不是将其摧毁。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Githzerai Uniter.webp"
+					},
+					"width": 475,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Guardinals",
+			"name": "盖丁天族",
+			"source": "MPP",
+			"entries": [
+				{
+					"ENG_name": "Guardinals",
+					"name": "盖丁天族",
+					"type": "entries",
+					"entries": [
+						"盖丁天族们是来自极乐境的动物头天族，它们游牧为生，性情平和。盖丁天族们的外貌如同有野兽特征的类人生物。在与盖丁天族互动时，这些天族们表现着他们家园位面的精神\u2014\u2014美丽、冷静与正义。外域的每个角落都有可能存在盖丁天族，特别是通往极乐境的门镇喜乐界以及通往万兽乡的百兽乡。",
+						"尽管盖丁天族们通常友好而慢怒，但他们超然的美德会驱使他们介入到下层位面的邪恶事务中。盖丁天族仇视邪恶，它们在对抗不公与恶徒之时绝不会犹豫，且满怀着将威胁美与善的邪恶力量消灭的决心。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Hands of Havoc Fire Starter",
+			"name": "祸乱之手·纵火狂徒",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"这些被称之为\"纵火狂徒\"的狂热特工们，利用混乱与烈焰，烧毁、摧毁治安系统。他们挥舞着最适合粉碎一切，燃尽一切的武器\u2014\u2014那是一种，散发着魔法烈焰的大锤。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Hands of Havoc Fire Starter.webp"
+					},
+					"width": 666,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Harmonium Captain",
+			"name": "和谐营·军士队长",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"和谐营的军士队长带领着由 和平卫士Peacekeeper 组成的巡逻队，巡游在印记城之中。军士队长借助战斗强化自己的部下，并用自己的命令，将和谐营的重锤砸向\"嫌疑人\"。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Harmonium Captain.webp"
+					},
+					"width": 597,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Harmonium Peacekeeper",
+			"name": "和谐营·和平卫士",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"和平卫士穿着鲜艳的红色板甲，手持一种可以用前端金属钳夹住罪犯并阻止罪犯传送逃脱的长柄武器\"异界捕叉\"。他们大概是印记城中，最擅长抓捕那些不法分子的那群人。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Harmonium Peacekeeper.webp"
+					},
+					"width": 834,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Heralds of Dust Remnant",
+			"name": "灰烬先驱·驻世余烬",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"驻世余烬是归尘者中那些受仪式洗礼飞升为亡灵......但失败的人们。作为联络员与间谍，这些特工存在于生与死之间的中间地带。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Heralds of Dust Remnant.webp"
+					},
+					"width": 675,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Hexton Modron",
+			"name": "六次魔冢",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Modrons",
+				"name": "魔冢",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"当机械境的军队被动员去对抗混乱的军势时，六次冢就是指挥魔冢部队的指挥官。这些巨大的高阶魔冢带领着魔冢军队向机械境外进发，其中最著名的便是魔冢大行军。六次冢们有着坚固的躯干，六片闪闪发光的凸缘从体表突起。它们拥有一对手臂和触须，且手臂和触须的末端都连接着威力惊人的钳状武器。"
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "bestiary/MPP/Hexton Modron.webp"
+							},
+							"width": 1000,
+							"height": 394
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Hound Archon",
+			"name": "獒首神使",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Archons",
+				"name": "统领",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"獒首神使们是天界山的步兵，身担保护那些无辜者与无助者的职责。作为忠实的守卫，这些直立行走的战士挥舞着它们那金光闪耀的刀刃。它们还能化身为犬类形态，以狼或狗的身份，隐秘的藏身于社区之中，守护着社区的和平。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Hound Archon.webp"
+					},
+					"width": 692,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Kelubar Demodand",
+			"name": "克努巴尔魔",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Demodands",
+				"name": "妖魔",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"克努巴尔魔，有时也被称为谄媚妖魔slimy demodand，乃是卡瑟利之中的官吏，它们作为法拉斯特魔与煞托魔之间的调解者而存在。这些妖魔矮胖无比，且其皮肤上滴落着味道难闻的酸性黏液。克努巴尔魔们陶醉于别人对它的阿谀奉承之中，且它们更倾向于动口不动手\u2014\u2014就算动手，也是让自己的法拉斯特魔仆从，而非自己亲自战斗。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Kelubar Demodand.webp"
+					},
+					"width": 905,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Kolyarut",
+			"name": "协约者",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"协约机器the Kolyarut是由魔冢领袖奇点Primus所铸造的奇械造物，能在多方之间缔结具有约束力的合同。在印记城的和谐大厅中，协约机器负责研判各位面生物对特殊约束条款的需求，并铸造着绝无回旋余地的契约。那些违背了契约的生物将被猎杀者（详见《{@i 魔邓肯巨献:多元宇宙的怪物}》）所追猎，并被它以雷霆手段施以无情惩戒。",
+						"每当有一项契约的条款或者一个协议中的根本事实受到质疑时，协约机器便会将一部分自我子机送入诸界之中以寻求真相。这些被称为协约者kolyaruts的存在，是伟大协约机器的子显现体，他们穿梭于多元宇宙之间，扮演着调查者的角色，专门探寻特定难题的答案。它们一完成任务便会向自己的创造者报告，以便于让协约机器本尊进行准确的判决。",
+						"协约者们都是有着四臂的魔法机械。如同猎杀者一般，它们都是制裁者inevitables\u2014\u2014一种致力于在诸界中保持秩序平稳运行的生物。协约者们以致命效率挥舞着剑刃，这让它们能在调查旅途中保护自己，并斩断一切阻拦它们接触真相的存在。",
+						"和谐大厅偶尔也会派遣协约者到那些关注多元宇宙有序运转的守序生物身边，协助这些守序生物寻找着事关诸界要事的答案。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Kolyarut.webp"
+					},
+					"width": 1000,
+					"height": 923
+				}
+			]
+		},
+		{
+			"ENG_name": "Lantern Archon",
+			"name": "圣光神使",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Archons",
+				"name": "统领",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"作为最低阶级的亚空天族，圣光神使负责迎接初抵天界山的灵魂，并为那些心怀敬畏、旅行至此的人照耀道路。它们看起来像一颗闪耀的带翼球体，而球体像一个装有缥缈光雾的金属小灯笼；它们同烟雾一般，却没有实际的物质形态。",
+									"当遭遇那些心怀不正之人时，圣光神使将用灼热的光束打击这些敌人，并在攻击间隙灵活变换位置，以此来迷惑这些敌人。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Lantern Archon.webp"
+					},
+					"width": 842,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Maelephant",
+			"name": "魔象人",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"多元宇宙中的反派们会将魔象人尊为强大的守卫，这些邪魔有着大象一般的脑袋。它们能呼出毒烟，令敌人短暂遗忘战斗技艺，施法能力和其他技能。",
+						"魔象人会与邪恶施法者或其他来自下层位面的实体缔结契约，以守护某个地点或物品数十年。它们绝对忠诚地遵守契约，坚定不移地履行着条款中的职责，直至契约结束。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Maelephant.webp"
+					},
+					"width": 1000,
+					"height": 667
+				}
+			]
+		},
+		{
+			"ENG_name": "Mercykiller Bloodhound",
+			"name": "屠悯会·嗜血猎手",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"嗜血猎手们身披黑甲，从尖刺臂铠中探出钢爪。嗜血猎手们会追猎那些曾在印记城犯下严重罪孽的人们，并且会为了追逐那些罪犯，横跨数个位面。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Mercykiller Bloodhound.webp"
+					},
+					"width": 894,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Mind's Eye Matter Smith",
+			"name": "心灵之眼·造物魔匠",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"心灵之眼的成员们相信，超脱这多元宇宙的力量潜藏在每个人的身上。造物魔匠在印记城的 大铸造厂Great Foundry 中，利用着这股与生俱来的能力来不断重塑现实\u2014\u2014从虚无中创造出有用的工具。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Minds Eye Matter Smith.webp"
+					},
+					"width": 631,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Modrons",
+			"name": "魔冢",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						{
+							"ENG_name": "Modrons",
+							"name": "魔冢",
+							"type": "entries",
+							"entries": [
+								"魔冢是一种部分由机械组成的生物，它们被铸造于机械境位面，遵从着严格的阶级制度。每一个魔冢都恪尽职守地服从来自直接上级的命令，同时也指挥着直接下级，从而将最高秩序典范的意志层层传递到最低阶的一元冢。大部分魔冢都是低阶的基础魔冢base modrons......一元冢，二元冢，三元冢，四元冢，五元冢，而高阶魔冢hierarchy modron则作为领导者，维护着机械境与该位面之外的秩序。关于魔冢的更多资料，请查阅《{@i 怪物图鉴}》。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Modrons.webp"
+					},
+					"title": "魔冢",
+					"width": 1700,
+					"height": 2200
+				}
+			]
+		},
+		{
+			"ENG_name": "Musteval Guardinal",
+			"name": "鼠首天",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Guardinals",
+				"name": "盖丁天族",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"鼠首天们是娇小、鼠形的盖丁天族，它们精于躲避危险。鼠首天们的灵巧、其与生俱来的隐秘性和幻术魔法让他们非常适合作为密探去监视整个多元宇宙中的事务，以此来为更高的善道服务。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Musteval Guardinal.webp"
+					},
+					"width": 739,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Nonaton Modron",
+			"name": "九次魔冢",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Modrons",
+				"name": "魔冢",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"每当有魔冢反抗奇点的意志时，九次魔冢就会负责将这些离群rogue魔冢重置回到序列之中。这些监察者还负责审问那些被逮捕的机械境入侵者。九次魔冢有着蠕虫般的身躯，九条机械臂固定在其身躯上。"
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "bestiary/MPP/Nonaton Modron.webp"
+							},
+							"width": 793,
+							"height": 1000
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Octon Modron",
+			"name": "八次魔冢",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Modrons",
+				"name": "魔冢",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"机械境每一个片区的领导者是八次魔冢，这些高阶魔冢负责监视机械境的日常运行。它们向其他高阶魔冢提供数据，比如说向七次冢提供生产报告，向十次冢提供分析数据。八次冢有八条机械触手，它们用这些触手来操控物件并进行自我防卫，它们还会挥舞这些触手，组成一道钝击风暴。"
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "bestiary/MPP/Octon Modron.webp"
+							},
+							"width": 1000,
+							"height": 597
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Planar Incarnate",
+			"name": "位面显化",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"上层与下层位面是善良与邪恶、秩序与混乱的基础体现。在最为可怖与至关重要的情景中，这些层面可以显化出一道体现其伟力的本源化身。这一整个位面展现而出的力量被称为位面显化，其外表为漩涡一般的能量流，带有与创造它的位面相衬的特征。它们保卫家园不受破坏性力量或其他不相容力量的侵害，并在这之后回归其原生位面。",
+						"位面显化就如同捍卫并弘扬其原生位面之美德或邪念的天灾。下层位面的显化可能表现为一道由邪魔之炎构成的混沌浪涛或是其他邪恶形态，而上层位面的显化通常表现为绽放的光团环绕着复草的原野，或是类似的宏伟之形。极少数情况下，当位面显化会出现在其他位面中时，它们可能会以一种具现其哲学理念的独特形态显现。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Planar Incarnate (Celestial Form).webp"
+					},
+					"title": "位面显化（天族形态）",
+					"width": 562,
+					"height": 1000
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Planar Incarnate (Fiend Form).webp"
+					},
+					"title": "位面显化（邪魔形态）",
+					"width": 667,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Razorvine Blight",
+			"name": "枯刃藤怪",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"穿梭于印记城与下层位面的旅行者们都得小心避开那些\"刃藤\"\u2014\u2014刃藤，顾名思义，是一种有着长满尖刺的茎与锋利的叶片的匍匐植物。尽管一般情况下，刃藤往往只是环境中让你困扰或不想接近的存在，但一旦它们接触并吸收被划伤的吸血鬼流出的血液，它们就会转化为一种恐怖的存在......枯刃藤怪Razorvine Blight 。",
+						"枯刃藤怪常常埋伏在人来人往的道路上，静止不动时如同一株普通的刃藤。而那些粗心大意的旅行者路过这种不起眼的\"路边杂草\"时，枯刃藤怪就会展露出它们扭曲的、如人形的形态，向这些不幸的上门猎物发起攻击，用它们那锋利的刃形藤蔓来满足自己的嗜血欲望。",
+						"虽然普遍而言，枯刃藤怪是一种危险至极的生物，但在印记城，它们有时会模仿着城中居民的行为举止\u2014\u2014当然，不论好的还是坏的都模仿。像这样的枯萎怪至少有一名......被称为\"补丁Patch\"的，在城中散步自己复制体以组成间谍网络的枯萎怪，而它的目的是什么依旧是个谜。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Razorvine Blight.webp"
+					},
+					"width": 820,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Rilmani",
+			"name": "御衡诸卿",
+			"source": "MPP",
+			"entries": [
+				{
+					"ENG_name": "Rilmani",
+					"name": "御衡诸卿",
+					"type": "entries",
+					"entries": [
+						"御衡诸卿守护着多元宇宙不同原力与愿力之间的平衡。它们保持着诸界之间的平衡，确保着善良、邪恶、守序、混乱均不会过于强大或孱弱。对于御衡诸卿来说，每一种原力对于多元宇宙的存续都至关重要。凡有为己欲而威胁触碰平衡之线者出现或某个位面行将崩溃，御衡诸卿们便会前来御衡掣肘 。",
+						"虽然别处可能会有御衡诸卿的身影，它们在自己的家园位面\u2014\u2014外域之上最为常见。它们在这里确保没有原力在协调统一之境上过于扩张。",
+						"御衡诸卿们是身躯由活化金属铸造的双足生物，它们身躯金属的颜色有冷钢至耀金不等。大多数御衡诸卿有着光滑而无面部特征的脸，而它们非凡的身体构造常能展现出超常之力。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Septon Modron",
+			"name": "七次魔冢",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Modrons",
+				"name": "魔冢",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": {
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"七次魔冢是机械境中基础魔冢的审计员，它们在位面的每一个片区中记录着这些魔冢的活动以保持一切尽在完美秩序的控制下。它们非常好辨认，因为它们有七条可弯曲的肢体。"
+									]
+								}
+							]
+						}
+					},
+					"images": {
+						"mode": "prependArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "bestiary/MPP/Septon Modron.webp"
+							},
+							"width": 1000,
+							"height": 673
+						}
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Shator Demodand",
+			"name": "煞托魔",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Demodands",
+				"name": "妖魔",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"煞托魔，也被称为蓬乱妖魔shaggy demodand，主宰着妖魔们的社会。它们无情地驱使着自己的次等亲族们。煞托魔是身躯覆满真菌的巨大生物，它们自封卡瑟利的狱卒，手中记录了其下属与宣称属于它们的囚犯的细致信息。在罕见的情况下，煞托魔会进入物质位面，它们在那里操控凡人领导者与哲学家，用这些人作为散播毒害人心之言论的喉舌，并诱惑着灵魂们堕向卡瑟利中正虚位以待的锁链。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Shator Demodand.webp"
+					},
+					"width": 1000,
+					"height": 668
+				}
+			]
+		},
+		{
+			"ENG_name": "Shemeshka",
+			"name": "舍米莎卡",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"奥法罗斯魔舍米莎卡是印记城中最野心勃勃且最臭名昭著的犯罪头目之一。在她横跨多个位面的赌场\u2014\u2014命运之轮之中，她密谋操纵着位面间的隐秘与命运。舍米莎卡及其阴谋会在模组《{@i 命运之轮的轮转}》中详述。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Shemeshka.webp"
+					},
+					"width": 386,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Society of Sensation Muse",
+			"name": "感觉团·缪斯乐师",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"感觉团的这些被称为缪斯乐师之人是利用奇观与微弱的感官体验来取悦民众的表演家。当遭受威胁时，他们会让敌人陷入陶醉，利用他们的魔法演出来平息冲突。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Society of Sensation Muse.webp"
+					},
+					"width": 918,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Sunflies",
+			"name": "日光萤们",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"奇特，扑闪着翅膀嗡嗡作响的日光萤是外层位面的居民。这些生物的旅行范围广泛，并成为其居住区域的健康风向标：但日光萤出现痛苦和挣扎的迹象时，它们所栖息的区域亦是如此。日光萤能通过毒刺想其他生物注入毒素，其效果与它们所处的位面相关联，因为位面的魔法会改变他们毒素的成分。",
+						"许多位面居民都对日光萤抱有强烈的感情，将其视为恶心的害虫或可爱的宠物。在印记城，日光萤往往受到其主人的溺爱和保护。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Sunfly",
+			"name": "日光萤",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Sunflies",
+				"name": "日光萤们",
+				"source": "MPP"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Sunfly.webp"
+					},
+					"width": 1000,
+					"height": 713
+				}
+			]
+		},
+		{
+			"ENG_name": "Swarm of Sunflies",
+			"name": "日光萤集群",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Sunflies",
+				"name": "日光萤们",
+				"source": "MPP"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Swarm of Sunflies.webp"
+					},
+					"width": 378,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Time Dragon Wyrmling",
+			"name": "时光龙雏龙",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"这些优雅的龙类掌握着能够操控过去，现在和未来的时光之力。时光龙雏龙有着闪耀的鳞片，其双角则是初生的小块。随着它们逐渐掌握时间的流动，其双角上便会生出遍布分支的虹彩脉络，谕示着时光运转的轨迹与可能性。远古时光龙能创造出与多元宇宙中特定时间和地点相连的时空门。凭借于此，时光龙与其盟友可以旅行至任何时间的任何地点，以影响决定命运的重要时刻，或是驱逐来自时光之外的威胁。时光龙能在不同的时代之间穿梭，这令它们经常表现得与当前的时间流脱节，并对何为过去，何为当下，何为未来有着很灵活的看法。",
+						"时光龙珍视对过去历史的记录、反映着失落文化的物品和早已逝去的创造者遗留的秘宝。它们对操纵时间的魔法和已被遗忘的知识非常感兴趣。偶然发现时光龙宝库的人也许会在其中发现关于过往年代的，极为珍贵的历史信息。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Time Dragon Wyrmling.webp"
+					},
+					"width": 1000,
+					"height": 881
+				}
+			]
+		},
+		{
+			"ENG_name": "Time Dragons",
+			"name": "时间龙",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"这些优雅的龙类掌握着能够操控过去，现在和未来的时光之力。时光龙雏龙有着闪耀的鳞片，其双角则是初生的小块。随着它们逐渐掌握时间的流动，其双角上便会生出遍布分支的虹彩脉络，谕示着时光运转的轨迹与可能性。",
+						"远古时光龙能创造出与多元宇宙中特定时间和地点相连的时空门。凭借于此，时光龙与其盟友可以旅行至任何时间的任何地点，以影响决定命运的重要时刻，或是驱逐来自时光之外的威胁。时光龙能在不同的时代之间穿梭，这令它们经常表现得与当前的时间流脱节，并对何为过去，何为当下，何为未来有着很灵活的看法。",
+						"时光龙珍视对过去历史的记录、反映着失落文化的物品和早已逝去的创造者遗留的秘宝。它们对操纵时间的魔法和已被遗忘的知识非常感兴趣。偶然发现时光龙宝库的人也许会在其中发现关于过往年代的，极为珍贵的历史信息。"
+					]
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"ENG_name": "A Time Dragon's Lair",
+							"name": "时光龙的巢穴",
+							"type": "entries",
+							"entries": [
+								"时光龙通常栖息在古代文明的废墟或供奉已逝神灵的圣殿之中，并会尽全力保护这些历史遗迹。时光龙对知识的永恒渴望意味着它可能有不止一处这样的巢穴。",
+								"当远古或成年时光龙在巢穴中遭遇时，其挑战等级会上升1。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"这些优雅的龙类掌握着能够操控过去，现在和未来的时光之力。时光龙雏龙有着闪耀的鳞片，其双角则是初生的小块。随着它们逐渐掌握时间的流动，其双角上便会生出遍布分支的虹彩脉络，谕示着时光运转的轨迹与可能性。远古时光龙能创造出与多元宇宙中特定时间和地点相连的时空门。凭借于此，时光龙与其盟友可以旅行至任何时间的任何地点，以影响决定命运的重要时刻，或是驱逐来自时光之外的威胁。时光龙能在不同的时代之间穿梭，这令它们经常表现得与当前的时间流脱节，并对何为过去，何为当下，何为未来有着很灵活的看法。",
+						"时光龙珍视对过去历史的记录、反映着失落文化的物品和早已逝去的创造者遗留的秘宝。它们对操纵时间的魔法和已被遗忘的知识非常感兴趣。偶然发现时光龙宝库的人也许会在其中发现关于过往年代的，极为珍贵的历史信息。"
+					]
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"ENG_name": "A Time Dragon's Lair",
+							"name": "时光龙的巢穴",
+							"type": "entries",
+							"entries": [
+								"时光龙通常栖息在古代文明的废墟或供奉已逝神灵的圣殿之中，并会尽全力保护这些历史遗迹。时光龙对知识的永恒渴望意味着它可能有不止一处这样的巢穴。",
+								"当远古或成年时光龙在巢穴中遭遇时，其挑战等级会上升1。"
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"这些优雅的龙类掌握着能够操控过去，现在和未来的时光之力。时光龙雏龙有着闪耀的鳞片，其双角则是初生的小块。随着它们逐渐掌握时间的流动，其双角上便会生出遍布分支的虹彩脉络，谕示着时光运转的轨迹与可能性。远古时光龙能创造出与多元宇宙中特定时间和地点相连的时空门。凭借于此，时光龙与其盟友可以旅行至任何时间的任何地点，以影响决定命运的重要时刻，或是驱逐来自时光之外的威胁。时光龙能在不同的时代之间穿梭，这令它们经常表现得与当前的时间流脱节，并对何为过去，何为当下，何为未来有着很灵活的看法。",
+						"时光龙珍视对过去历史的记录、反映着失落文化的物品和早已逝去的创造者遗留的秘宝。它们对操纵时间的魔法和已被遗忘的知识非常感兴趣。偶然发现时光龙宝库的人也许会在其中发现关于过往年代的，极为珍贵的历史信息。"
+					]
+				},
+				{
+					"type": "entries",
+					"entries": [
+						"这些优雅的龙类掌握着能够操控过去，现在和未来的时光之力。时光龙雏龙有着闪耀的鳞片，其双角则是初生的小块。随着它们逐渐掌握时间的流动，其双角上便会生出遍布分支的虹彩脉络，谕示着时光运转的轨迹与可能性。远古时光龙能创造出与多元宇宙中特定时间和地点相连的时空门。凭借于此，时光龙与其盟友可以旅行至任何时间的任何地点，以影响决定命运的重要时刻，或是驱逐来自时光之外的威胁。时光龙能在不同的时代之间穿梭，这令它们经常表现得与当前的时间流脱节，并对何为过去，何为当下，何为未来有着很灵活的看法。",
+						"时光龙珍视对过去历史的记录、反映着失落文化的物品和早已逝去的创造者遗留的秘宝。它们对操纵时间的魔法和已被遗忘的知识非常感兴趣。偶然发现时光龙宝库的人也许会在其中发现关于过往年代的，极为珍贵的历史信息。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Transcendent Order Conduit",
+			"name": "超然社·无念宗师",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"超然社的成员们练就了无需思考便可采取行动的技艺，以及消除动作之中思想的功法。无念宗师参照着多元宇宙的节奏行动，无念宗师敏锐的反应能力如同预知能力一般，能在敌人行动前仅凭直觉击倒它们。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Transcendent Order Conduit.webp"
+					},
+					"width": 469,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Transcendent Order Instinct",
+			"name": "超然社·直感拳师",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"武艺之精锐，直感拳师习得了无需思考便能战斗的技艺。它们能够随意接下敌人接二连三的攻击。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Transcendent Order Instinct.webp"
+					},
+					"width": 438,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Vargouille Reflection",
+			"name": "诡脸飞首",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"飞首是一种会飞的邪魔，它的外形酷似一颗类人生物无身体的头颅，外加一对翅膀。虽然绝大多数飞首都会在各位面之中四处游荡，寻找并诅咒类人生物以创造更多的飞首，但有一种被称为诡脸飞首Vargouille Reflection 的飞首特殊变种仅生活在 底层印记城Undersigil。当这些诡脸飞首发现类人生物时，它就会变成那个生物的惊悚无身之首模样，以此让那个生物感到惊悚与恐惧。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Vargouille Reflection.webp"
+					},
+					"width": 375,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Warden Archon",
+			"name": "卫戍神使",
+			"source": "MPP",
+			"_copy": {
+				"ENG_name": "Archons",
+				"name": "统领",
+				"source": "MPP",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"卫戍神使是警惕的守护者，它们有着熊一般的外貌，守护着通往善良国度的传送门与通途。它们的身形高大且强壮，双足顶天立地，头如巨熊，眼如一池银色辉光。当卫戍神使开口，闪烁的光芒将从它们的嘴中涌现，点缀着它那低沉而又响亮的嗓音。",
+									"若有生物使用了这些亚空天族奉命守卫的传送门，它们会立刻知晓，即刻出发，审问这些尝试跨越位面边界之人。它们会用爪子与牙齿打击敌人，用魔法的咬痕标记并穷追那些来袭的入侵者。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MPP/Warden Archon.webp"
+					},
+					"width": 755,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Young Time Dragon",
+			"name": "青年时光龙",
+			"source": "MPP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"这些优雅的龙类掌握着能够操控过去，现在和未来的时光之力。时光龙雏龙有着闪耀的鳞片，其双角则是初生的小块。随着它们逐渐掌握时间的流动，其双角上便会生出遍布分支的虹彩脉络，谕示着时光运转的轨迹与可能性。远古时光龙能创造出与多元宇宙中特定时间和地点相连的时空门。凭借于此，时光龙与其盟友可以旅行至任何时间的任何地点，以影响决定命运的重要时刻，或是驱逐来自时光之外的威胁。时光龙能在不同的时代之间穿梭，这令它们经常表现得与当前的时间流脱节，并对何为过去，何为当下，何为未来有着很灵活的看法。",
+						"时光龙珍视对过去历史的记录、反映着失落文化的物品和早已逝去的创造者遗留的秘宝。它们对操纵时间的魔法和已被遗忘的知识非常感兴趣。偶然发现时光龙宝库的人也许会在其中发现关于过往年代的，极为珍贵的历史信息。"
+					]
+				}
+			]
+		}
+	]
+}

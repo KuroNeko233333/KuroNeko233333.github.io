@@ -1,0 +1,303 @@
+/* Shared book colours and heading font. */
+@font-face {
+  font-family: "Book Headings";
+  src: url("../__ours/fonts/book-headings.woff2") format("woff2");
+  font-weight: 600 900;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --v3-paper: #fbf3e1; --v3-card: #fffaf0; --v3-panel: #f4e9d0; --v3-deep: #ecdfc0;
+  --v3-ink: #2b2420; --v3-ink2: #6e604f; --v3-ink3: #a29480;
+  --bk-head: #7b1e12; --bk-num: #7b1e12; --bk-die: rgba(123,30,18,.08);
+  --v3-red: var(--bk-head); --v3-gold: #b08d48; --bk-gold: var(--v3-gold);
+  --v3-rule: #e2d3ab; --v3-rule2: #ece1c3; --v3-link: #225e96;
+  --nt-cell: rgba(128, 92, 24, .18);
+  --v3-k-off24: #225e96; --v3-k-off14: #4f6b82; --v3-k-ours: #753c8a; --v3-k-3p: #88415f; --v3-k-ua: #2b7d55;
+  --bk-bar: #4a1710; --bk-bar-ink: #f3dfc0; --bk-glow: transparent;
+  --bk-shadow: 0 18px 40px -26px rgba(90,58,26,.55);
+  --bk-selected-ink: #fffaf0; --bk-source-mix: #1c1208;
+  --bk-heading-font: "Book Headings", "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", serif;
+  --nt-tex: var(--v3-ink); --nt-tex2: var(--v3-ink2); --nt-tex3: var(--v3-ink2); --nt-tex4: var(--v3-ink3); --nt-texnav: var(--v3-ink2);
+  --nt-bg: var(--v3-paper); --nt-surface: var(--v3-card); --nt-bg2: var(--v3-panel); --nt-bg3: var(--v3-deep);
+  --nt-ico: var(--v3-ink2); --nt-line: var(--v3-rule); --nt-line2: var(--v3-rule2); --nt-line3: var(--v3-gold);
+  --nt-blue: var(--v3-link); --nt-focus: var(--v3-link); --nt-blue-bg: var(--v3-card);
+  --nt-hover: var(--bk-die); --nt-active: var(--bk-die);
+  --paper: var(--v3-paper); --card: var(--v3-card); --nav: var(--bk-bar); --nav-ink: var(--bk-bar-ink); --nav-ink2: var(--bk-bar-ink);
+  --tex: var(--v3-ink); --tex2: var(--v3-ink2); --tex3: var(--v3-ink2); --texnav: var(--v3-ink2); --ico: var(--v3-ink2); --line2: var(--v3-rule2);
+  --gold: var(--v3-gold); --red: var(--bk-head); --blue: var(--v3-link); --hover: var(--bk-die); --act: var(--bk-die);
+  --ours-ink: var(--v3-ink); --ours-paper: var(--v3-card); --ours-line: var(--v3-rule); --ours-gold: var(--v3-gold);
+  color-scheme: light;
+}
+:root[data-ours-theme="night"] {
+  --v3-paper: #17120e; --v3-card: #1e1813; --v3-panel: #211a14; --v3-deep: #2b221a;
+  --v3-ink: #ebe0cd; --v3-ink2: #b3a28b; --v3-ink3: #7e6f5c;
+  --bk-head: #eab987; --bk-num: #f29b6c; --bk-die: rgba(242,155,108,.12);
+  --v3-gold: #c9a15a; --v3-rule: #3a2e22; --v3-rule2: #2c231a; --v3-link: #8fbbe6;
+  --v3-k-off24: #8fbbe6; --v3-k-off14: #a9bccb; --v3-k-ours: #c99ddb; --v3-k-3p: #e3a2c6; --v3-k-ua: #7cc49c;
+  --bk-bar: #0b0806; --bk-bar-ink: #e6c99b; --bk-glow: rgba(226,110,48,.30);
+  --bk-shadow: 0 24px 50px -24px rgba(0,0,0,.85);
+  --bk-selected-ink: #17120e; --bk-source-mix: #fffaf0;
+  color-scheme: dark;
+}
+:root { --nt-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "PingFang SC", "Microsoft YaHei", "Apple Color Emoji", Arial, sans-serif; }
+:root {
+  --bk-portrait-glow: color-mix(in srgb, var(--bk-gold) 22%, transparent);
+}
+
+:root {
+  --bk-img-base: var(--v3-deep);
+  --bk-img-light: color-mix(in srgb, var(--bk-gold) 28%, transparent);
+  --bk-img-line: color-mix(in srgb, var(--bk-gold) 29%, var(--bk-img-base));
+}
+
+:root {
+  --v3-rule) 65%, var(--bk-gold));
+}
+
+:root[data-ours-theme="night"] {
+  --bk-portrait-glow: var(--bk-glow);
+}
+
+:root {
+  --bk-row-stripe: color-mix(in srgb, var(--v3-deep) 70%, var(--v3-card));
+}
+
+:root[data-ours-theme="night"] {
+  --bk-btn-primary-hover-bg: color-mix(in srgb, var(--bk-gold) 88%, var(--v3-ink));
+}
+
+:root {
+  --bk-page-scroll-thumb: #d9c8a0;
+  --bk-page-scroll-thumb-hover: #c4b081;
+  --bk-page-modal-overlay: rgba(50, 25, 5, .28);
+}
+
+:root[data-ours-theme="night"] {
+  --bk-page-scroll-thumb: var(--v3-panel);
+  --bk-page-scroll-thumb-hover: var(--v3-panel);
+  --bk-page-modal-overlay: color-mix(in srgb, var(--bk-head) 28%, transparent);
+  --v3-card);
+  --v3-ink) 38%, transparent);
+  --v3-card);
+  --v3-deep);
+  --v3-ink) 60%, transparent);
+  --v3-deep);
+  --v3-deep);
+  --v3-ink) 10%, transparent);
+  --v3-ink) 25%, transparent);
+  --v3-deep);
+  --v3-deep);
+  --v3-deep);
+  --v3-ink) 35%, transparent);
+  --v3-ink) 25%, transparent);
+  --v3-ink) 22%, transparent);
+  --v3-deep);
+}
+
+:root[data-ours-theme="night"] {
+  --v3-ink) 40%, transparent);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+}
+
+:root[data-ours-theme="night"] {
+  --v3-deep);
+  --v3-deep);
+  --v3-ink) 12%, transparent);
+  --v3-deep);
+  --v3-deep);
+  --v3-deep);
+  --v3-panel);
+  --v3-panel);
+  --v3-deep);
+  --v3-ink2);
+  --v3-ink) 10%, transparent);
+  --v3-ink2);
+  --v3-ink) 12%, transparent);
+  --v3-panel);
+  --v3-ink) 18%, transparent);
+  --v3-ink2);
+  --v3-panel);
+  --v3-ink2);
+  --v3-ink) 14%, transparent);
+  --v3-deep);
+}
+
+:root[data-ours-theme="night"] {
+  --v3-card);
+  --v3-ink2);
+  --v3-ink2);
+  --v3-ink2);
+}
+
+:root {
+  --bk-table-list-hover: rgba(130, 32, 0, .055);
+  --bk-table-row-stripe: rgba(201, 165, 90, .1);
+  --bk-table-list-paper-hover: rgba(255, 250, 240, .7);
+}
+
+:root[data-ours-theme="night"] {
+  --bk-table-list-hover: color-mix(in srgb, var(--bk-head) 5.5%, transparent);
+  --bk-table-row-stripe: color-mix(in srgb, var(--v3-ink) 10%, transparent);
+  --v3-ink) 11%, transparent);
+  --bk-table-list-paper-hover: color-mix(in srgb, var(--v3-ink) 70%, transparent);
+  --v3-ink) 15%, transparent);
+  --v3-ink) 7%, transparent);
+}
+
+:root {
+  --bk-btn-hover-wash: rgba(130, 32, 0, .06);
+  --bk-btn-selected-wash: rgba(130, 32, 0, .08);
+  --bk-btn-dice-hover-bg: rgba(130, 32, 0, .16);
+  --bk-btn-default-hover-bg: #f6ecd6;
+  --bk-btn-navigation-hover: rgba(130, 32, 0, .07);
+  --bk-btn-subclass-bg: #f1e5c8;
+  --bk-btn-subclass-hover-bg: #ead9b2;
+  --bk-btn-subclass-stale-bg: #5d8a74;
+  --bk-btn-class-tabs-bg: rgba(130, 60, 0, .08);
+  --bk-btn-class-edition-track: rgba(130, 60, 0, .09);
+  --bk-btn-edition-old-bg: rgba(110, 86, 40, .2);
+  --bk-btn-edition-old-ink: #4f4433;
+  --bk-btn-card-hover-bg: #fff;
+  --bk-btn-subclass-add-hover: rgba(130, 32, 0, .09);
+  --bk-btn-keyboard-hint-bg: rgba(130, 60, 0, .07);
+  --bk-btn-legacy-gold-gradient: #f6d27a;
+  --bk-btn-legacy-primary-ink: #3a2410;
+  --bk-btn-legacy-recessed-bg: rgba(0, 0, 0, .25);
+  --bk-btn-legacy-idle-bg: rgba(127, 127, 127, .08);
+  --bk-btn-legacy-hover-bg: rgba(217, 164, 65, .18);
+  --bk-btn-rating-hover-bg: rgba(255, 255, 255, .14);
+  --bk-btn-legacy-edition-gradient-start: #9fd3ff;
+  --bk-btn-legacy-edition-gradient-end: #4a90c8;
+  --bk-btn-legacy-edition-ink: #0f2233;
+}
+
+:root[data-ours-theme="night"] {
+  --bk-btn-hover-wash: color-mix(in srgb, var(--bk-head) 6%, transparent);
+  --bk-btn-selected-wash: color-mix(in srgb, var(--bk-head) 8%, transparent);
+  --bk-btn-dice-hover-bg: color-mix(in srgb, var(--bk-head) 16%, transparent);
+  --bk-btn-default-hover-bg: var(--v3-card);
+  --bk-btn-navigation-hover: color-mix(in srgb, var(--bk-head) 7%, transparent);
+  --bk-btn-subclass-bg: var(--v3-card);
+  --bk-btn-subclass-hover-bg: var(--v3-panel);
+  --bk-btn-subclass-stale-bg: var(--v3-deep);
+  --bk-btn-class-tabs-bg: color-mix(in srgb, var(--bk-head) 8%, transparent);
+  --bk-btn-class-edition-track: color-mix(in srgb, var(--bk-head) 9%, transparent);
+  --bk-btn-edition-old-bg: color-mix(in srgb, var(--bk-head) 20%, transparent);
+  --bk-btn-edition-old-ink: var(--v3-ink2);
+  --bk-btn-card-hover-bg: var(--v3-card);
+  --bk-btn-subclass-add-hover: color-mix(in srgb, var(--bk-head) 9%, transparent);
+  --bk-btn-keyboard-hint-bg: color-mix(in srgb, var(--bk-head) 7%, transparent);
+  --bk-btn-legacy-gold-gradient: var(--v3-panel);
+  --bk-btn-legacy-primary-ink: var(--v3-ink2);
+  --bk-btn-legacy-recessed-bg: color-mix(in srgb, var(--bk-head) 25%, transparent);
+  --bk-btn-legacy-idle-bg: color-mix(in srgb, var(--bk-head) 8%, transparent);
+  --bk-btn-legacy-hover-bg: color-mix(in srgb, var(--v3-ink) 18%, transparent);
+  --bk-btn-rating-hover-bg: color-mix(in srgb, var(--v3-ink) 14%, transparent);
+  --bk-btn-legacy-edition-gradient-start: var(--v3-panel);
+  --bk-btn-legacy-edition-gradient-end: var(--v3-deep);
+  --bk-btn-legacy-edition-ink: var(--v3-ink2);
+}
+
+:root[data-ours-theme="night"] {
+  --v3-ink) 50%, transparent);
+  --v3-rule);
+  --v3-ink) 45%, transparent);
+  --v3-rule);
+  --v3-ink) 55%, transparent);
+  --v3-ink) 45%, transparent);
+  --v3-ink) 20%, transparent);
+  --v3-rule);
+  --v3-ink) 15%, transparent);
+  --v3-rule);
+  --v3-ink) 50%, transparent);
+  --v3-ink) 25%, transparent);
+  --v3-ink) 60%, transparent);
+  --v3-ink) 40%, transparent);
+  --v3-rule);
+}
+
+:root[data-ours-theme="night"] {
+  --v3-deep);
+  --v3-deep);
+}
+
+:root[data-ours-theme="night"] {
+  --v3-deep);
+  --v3-deep);
+  --v3-deep);
+  --v3-deep);
+}
+
+:root[data-ours-theme="night"] {
+  --v3-deep);
+  --v3-deep);
+  --v3-deep);
+  --v3-deep);
+  --v3-deep);
+  --v3-panel);
+  --v3-deep);
+  --v3-deep);
+  --v3-panel);
+  --v3-panel);
+  --v3-deep);
+  --v3-panel);
+  --v3-deep);
+  --v3-panel);
+  --v3-panel);
+  --v3-panel);
+  --v3-panel);
+}
+
+:root {
+  --bk-rar-common: #605647;
+  --bk-rar-uncommon: #23642e;
+  --bk-rar-rare: #2453a0;
+  --bk-rar-very: #71359f;
+  --bk-rar-legendary: #87400e;
+  --bk-rar-artifact: #922318;
+  --bk-rar-common-bg: color-mix(in srgb, var(--bk-rar-common) 12%, transparent);
+  --bk-rar-uncommon-bg: color-mix(in srgb, var(--bk-rar-uncommon) 12%, transparent);
+  --bk-rar-rare-bg: color-mix(in srgb, var(--bk-rar-rare) 12%, transparent);
+  --bk-rar-very-bg: color-mix(in srgb, var(--bk-rar-very) 12%, transparent);
+  --bk-rar-legendary-bg: color-mix(in srgb, var(--bk-rar-legendary) 12%, transparent);
+  --bk-rar-artifact-bg: color-mix(in srgb, var(--bk-rar-artifact) 12%, transparent);
+  --bk-rarity-common: var(--bk-rar-common);
+  --bk-rarity-uncommon: var(--bk-rar-uncommon);
+  --bk-rarity-rare: var(--bk-rar-rare);
+  --bk-rarity-very: var(--bk-rar-very);
+  --bk-rarity-legendary: var(--bk-rar-legendary);
+  --bk-rarity-artifact: var(--bk-rar-artifact);
+}
+
+:root[data-ours-theme="night"] {
+  --bk-rar-common: #b9ae9d;
+  --bk-rar-uncommon: #8bd298;
+  --bk-rar-rare: #9dbbfa;
+  --bk-rar-very: #cd9cf4;
+  --bk-rar-legendary: #efb381;
+  --bk-rar-artifact: #ee9e96;
+}
+:root {--bk-text-table-heading:#4b3a26;}
+:root[data-ours-theme="night"] {--bk-text-table-heading:var(--v3-ink2);}

@@ -1,0 +1,36 @@
+{
+	"monsterFluff": [
+		{
+			"ENG_name": "Alax Jadescales",
+			"name": "阿拉克斯·玉鳞",
+			"source": "LRDT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/LRDT/Alax Jadescales.webp"
+					},
+					"width": 794,
+					"height": 969
+				}
+			]
+		},
+		{
+			"ENG_name": "Ervan Soulfallen",
+			"name": "埃尔文·堕落灵魂",
+			"source": "LRDT",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/LRDT/Ervan Soulfallen.webp"
+					},
+					"width": 1256,
+					"height": 1270
+				}
+			]
+		}
+	]
+}

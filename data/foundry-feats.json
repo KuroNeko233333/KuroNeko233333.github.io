@@ -1,0 +1,5219 @@
+{
+	"feat": [
+		{
+			"ENG_name": "Aberrant Anatomy",
+			"name": "异变内构",
+			"source": "RHW",
+			"activities": [
+				{
+					"ENG_name": "Warping Flesh",
+					"name": "血肉扭曲",
+					"type": "save",
+					"activation": {
+						"type": "special",
+						"condition": "在D20检定中掷出1点后立即"
+					},
+					"duration": {
+						"units": "轮",
+						"value": "1"
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"damage": {
+						"onSave": "none"
+					},
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"formula": "13 + @prof"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "aberrantAnatomy"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Extrasensory Perception",
+					"name": "超感知觉",
+					"transfer": true,
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "system.attributes.senses.ranges.blindsight",
+							"value": 15,
+							"mode": "UPGRADE"
+						}
+					],
+					"description": "你拥有15尺范围的&Reference[黑暗视觉]。"
+				},
+				{
+					"ENG_name": "Warping Flesh (Stunned)",
+					"name": "血肉扭曲（震慑）",
+					"foundryId": "aberrantAnatomy",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"value": 1,
+						"units": "回合",
+						"expiry": "回合开始"
+					},
+					"statuses": [
+						"stunned"
+					],
+					"description": "直到你的下个回合结束前，你处于&Reference[stunned apply=false]状态。",
+					"showIcon": 2
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Abjuration Adept",
+			"name": "防护专家",
+			"source": "AU",
+			"activities": [
+				{
+					"ENG_name": "Protective Ward",
+					"name": "守护结界",
+					"type": "heal",
+					"activation": {
+						"type": ""
+					},
+					"consumption": {
+						"scaling": {
+							"allowed": true,
+							"max": "9"
+						}
+					},
+					"target": {
+						"affects": {
+							"type": "creature",
+							"count": "1"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "30"
+					},
+					"healing": {
+						"types": [
+							"temphp"
+						],
+						"custom": {
+							"enabled": true,
+							"formula": "@scaling * 2"
+						},
+						"scaling": {
+							"number": 1
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Actor",
+			"name": "演员",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Mimicry",
+					"name": "拟声",
+					"type": "check",
+					"activation": {
+						"type": ""
+					},
+					"target": {
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"check": {
+						"associated": [
+							"INS"
+						],
+						"dc": {
+							"calculation": "cha"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Alert",
+			"name": "警觉",
+			"source": "PHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.dnd5e.initiativeAlert",
+							"mode": "OVERRIDE",
+							"value": true
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Alert",
+			"name": "警觉",
+			"source": "XPHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.dnd5e.initiativeAlert",
+							"mode": "ADD",
+							"value": true
+						}
+					]
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Arcane Artist",
+			"name": "奥法艺术家",
+			"source": "AU",
+			"activities": [
+				{
+					"ENG_name": "Inspiring Magic",
+					"name": "激励魔法",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "你施展一个幻术学派的法术"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "ally",
+							"count": "1"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "30"
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Arcane Eloquence",
+			"name": "奥法雄辩家",
+			"source": "AU",
+			"effects": [
+				{
+					"ENG_name": "Smooth Talker",
+					"name": "巧舌如簧",
+					"transfer": true,
+					"duration": {
+						"units": "秒"
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Arcane Infiltrator",
+			"name": "奥法渗透者",
+			"source": "AU",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Dodge",
+					"name": "回避",
+					"type": "utility",
+					"description": "以一个附赠动作执行回避动作。",
+					"activation": {
+						"type": "bonus"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "arcaneInfiltrato"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Dodging",
+					"name": "躲避",
+					"foundryId": "arcaneInfiltrato",
+					"duration": {
+						"units": "秒",
+						"expiry": "目标开始"
+					},
+					"statuses": [
+						"dodging"
+					],
+					"description": "&Reference[回避]"
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Arcane Omens",
+			"name": "奥法预言家",
+			"source": "AU",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Helpful Premonition",
+					"name": "助人预兆",
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "你或一个你在范围内可以看到的目标豁免失败"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "creature",
+							"count": "1",
+							"special": "可见"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "30"
+					},
+					"roll": {
+						"ENG_name": "Save Bonus",
+						"name": "豁免加值",
+						"formula": "1d4"
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Arcane Overload",
+			"name": "奥法超负荷",
+			"source": "AU",
+			"activities": [
+				{
+					"ENG_name": "Power Surge",
+					"name": "能量如潮",
+					"type": "damage",
+					"activation": {
+						"type": "special",
+						"condition": "当你施放一个塑能法术并以其造成伤害时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "any"
+						}
+					},
+					"range": {
+						"units": "任何"
+					},
+					"damage": {
+						"critical": {
+							"allow": true
+						},
+						"parts": [
+							{
+								"bonus": "@prof",
+								"types": [
+									"钝击",
+									"穿刺",
+									"挥砍",
+									"强酸",
+									"寒冷",
+									"火焰",
+									"力场",
+									"闪电",
+									"暗蚀",
+									"毒素",
+									"心灵",
+									"光耀",
+									"雷鸣"
+								]
+							}
+						]
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Arcane Safeguard",
+			"name": "奥法护佑者",
+			"source": "AU",
+			"system": {
+				"advancement.tkAWLfJZfdNCKVl7.configuration.spell.uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Sheltering Aid",
+					"name": "庇护之援",
+					"type": "heal",
+					"activation": {
+						"type": "special",
+						"condition": "当你采取协助动作来帮助盟友进行属性检定时"
+					},
+					"target": {
+						"affects": {
+							"type": "ally",
+							"count": "1"
+						}
+					},
+					"range": {
+						"units": "任何"
+					},
+					"healing": {
+						"types": [
+							"temphp"
+						],
+						"scaling": {
+							"number": 1
+						},
+						"bonus": "@prof"
+					}
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Cantrip Modifications",
+					"name": "戏法修改",
+					"type": "enchantment",
+					"transfer": true,
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "activities[forward].name",
+							"value": "Cast as Bonus Action",
+							"mode": "OVERRIDE"
+						},
+						{
+							"key": "activities[forward].activation.type",
+							"value": "bonus",
+							"mode": "OVERRIDE"
+						},
+						{
+							"key": "activities[forward].activation.override",
+							"value": true,
+							"mode": "OVERRIDE"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Arcane Undertaker",
+			"name": "奥法殡葬师",
+			"source": "AU",
+			"activities": [
+				{
+					"ENG_name": "Understanding of Death",
+					"name": "晓亡之理",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "你采取协助动作来稳定一个生物"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					}
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Knowledge from the Dead",
+					"name": "源死之识",
+					"transfer": true,
+					"duration": {
+						"units": "秒"
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Archery",
+			"name": "箭术",
+			"source": "XPHB",
+			"effects": [
+				{
+					"ENG_name": "Archery Style",
+					"name": "箭术风格",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.bonuses.rwak.attack",
+							"mode": "ADD",
+							"value": 2
+						}
+					]
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Blind Fighting",
+			"name": "盲斗",
+			"source": "XPHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.senses.blindsight",
+							"mode": "UPGRADE",
+							"value": 10
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Boon of Dimensional Travel",
+			"name": "次元旅行之恩惠",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Teleport",
+					"name": "传送术",
+					"type": "utility",
+					"activation": {
+						"type": "",
+						"condition": "在你进行攻击动作后立即"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "space",
+							"special": "未占据空间"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "30"
+					}
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Boon of Energy Resistance",
+			"name": "能量抗性之恩惠",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Choose Resistances",
+					"name": "选择抗性",
+					"type": "utility",
+					"img": "systems/dnd5e/icons/svg/trait-damage-immunities.svg",
+					"activation": {
+						"type": "",
+						"condition": "每当你完成一次长休"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "boonOfEnergyResi"
+						},
+						{
+							"foundryId": "boonOfEnergyRes1"
+						},
+						{
+							"foundryId": "boonOfEnergyRes2"
+						},
+						{
+							"foundryId": "boonOfEnergyRes3"
+						},
+						{
+							"foundryId": "boonOfEnergyRes4"
+						},
+						{
+							"foundryId": "boonOfEnergyRes5"
+						},
+						{
+							"foundryId": "boonOfEnergyRes6"
+						},
+						{
+							"foundryId": "boonOfEnergyRes7"
+						},
+						{
+							"foundryId": "boonOfEnergyRes8"
+						}
+					]
+				},
+				{
+					"ENG_name": "Energy Redirection",
+					"name": "能量重导",
+					"type": "save",
+					"activation": {
+						"type": "reaction"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature",
+							"special": "不处于全身掩护后方"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "60"
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 2,
+								"denomination": 12,
+								"bonus": "@abilities.con.mod",
+								"types": [
+									"强酸",
+									"钝击",
+									"寒冷",
+									"火焰",
+									"力场",
+									"闪电",
+									"暗蚀",
+									"穿刺",
+									"毒素",
+									"心灵",
+									"光耀",
+									"挥砍",
+									"雷鸣"
+								]
+							}
+						],
+						"onSave": "none"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Acid: Boon of Energy Resistance",
+					"name": "酸蚀：能量抗性恩赐",
+					"foundryId": "boonOfEnergyResi",
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "acid"
+						}
+					]
+				},
+				{
+					"ENG_name": "Cold: Boon of Energy Resistance",
+					"name": "冷冻: 能量抗性恩惠",
+					"foundryId": "boonOfEnergyRes1",
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "cold"
+						}
+					]
+				},
+				{
+					"ENG_name": "Fire: Boon of Energy Resistance",
+					"name": "火焰：能量抗性恩赐",
+					"foundryId": "boonOfEnergyRes2",
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "fire"
+						}
+					]
+				},
+				{
+					"ENG_name": "Lightning: Boon of Energy Resistance",
+					"name": "闪电：能量抗性恩惠",
+					"foundryId": "boonOfEnergyRes3",
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "lightning"
+						}
+					]
+				},
+				{
+					"ENG_name": "Necrotic: Boon of Energy Resistance",
+					"name": "暗蚀：能量抗性恩惠",
+					"foundryId": "boonOfEnergyRes4",
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "necrotic"
+						}
+					]
+				},
+				{
+					"ENG_name": "Poison: Boon of Energy Resistance",
+					"name": "毒素：能量抗性恩赐",
+					"foundryId": "boonOfEnergyRes5",
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "poison"
+						}
+					]
+				},
+				{
+					"ENG_name": "Psychic: Boon of Energy Resistance",
+					"name": "灵能：能量抗性恩惠",
+					"foundryId": "boonOfEnergyRes6",
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "psychic"
+						}
+					]
+				},
+				{
+					"ENG_name": "Radiant: Boon of Energy Resistance",
+					"name": "光辉：能量抗性恩惠",
+					"foundryId": "boonOfEnergyRes7",
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "radiant"
+						}
+					]
+				},
+				{
+					"ENG_name": "Thunder: Boon of Energy Resistance",
+					"name": "雷鸣：能量抗性恩赐",
+					"foundryId": "boonOfEnergyRes8",
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "thunder"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Boon of Erupting Spellpower",
+			"name": "咒能爆发之恩惠",
+			"source": "AU",
+			"activities": [
+				{
+					"ENG_name": "Spell Overload",
+					"name": "法术过载",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "当你使用法术位施展一个造成伤害的法术时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"range": {
+						"units": "任何"
+					},
+					"effects": [
+						{
+							"foundryId": "boonOfEruptingSp"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Prone",
+					"name": "倒地",
+					"foundryId": "boonOfEruptingSp",
+					"duration": {
+						"units": "秒"
+					},
+					"statuses": [
+						"prone"
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Boon of Fate",
+			"name": "扭曲命运之恩惠",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Improve Fate",
+					"name": "时来运转",
+					"type": "utility",
+					"activation": {
+						"type": "",
+						"condition": "当你或60尺内的另一生物在D20检定中成功或失败时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "60"
+					},
+					"roll": {
+						"ENG_name": "Bonus/Penalty",
+						"name": "加值/减值",
+						"formula": "2d4"
+					}
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Boon of Fortitude",
+			"name": "超凡强韧之恩惠",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Fortify Health",
+					"name": "强化生命值",
+					"type": "heal",
+					"activation": {
+						"type": "",
+						"condition": "每当你恢复生命值时"
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"healing": {
+						"types": [
+							"治疗"
+						],
+						"scaling": {
+							"number": 1
+						},
+						"bonus": "@abilities.con.mod"
+					}
+				}
+			],
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.hp.bonuses.overall",
+							"mode": "ADD",
+							"value": 40
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Boon of Recovery",
+			"name": "强力恢复之恩惠",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Last Stand",
+					"name": "背水一战",
+					"type": "heal",
+					"activation": {
+						"type": "",
+						"condition": "当你生命值将降至0点时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "activityUses",
+								"value": "1"
+							}
+						]
+					},
+					"uses": {
+						"recovery": [
+							{
+								"period": "lr",
+								"type": "recoverAll"
+							}
+						],
+						"max": "1"
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"healing": {
+						"types": [
+							"治疗"
+						],
+						"custom": {
+							"enabled": true,
+							"formula": "(floor((@attributes.hp.max / 2)))"
+						},
+						"scaling": {
+							"number": 1
+						}
+					}
+				},
+				{
+					"ENG_name": "Recover Vitality",
+					"name": "重获生机",
+					"type": "heal",
+					"activation": {
+						"type": "bonus"
+					},
+					"consumption": {
+						"scaling": {
+							"allowed": true,
+							"max": "10"
+						},
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1",
+								"scaling": {
+									"mode": "amount"
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"healing": {
+						"types": [
+							"治疗"
+						],
+						"custom": {
+							"enabled": true,
+							"formula": "(@scaling)d10"
+						},
+						"scaling": {
+							"number": 1
+						}
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Boon of Speed",
+			"name": "神行无拘之恩惠",
+			"source": "XPHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "ADD",
+							"value": 30
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Boon of Spell Recall",
+			"name": "法术溯回之恩惠",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Free Cast Roll",
+					"name": "自由施法骰",
+					"type": "utility",
+					"activation": {
+						"type": "",
+						"condition": "每当你使用1至4环法术位施放法术时"
+					},
+					"roll": {
+						"ENG_name": "Roll",
+						"name": "掷骰",
+						"formula": "1d4"
+					}
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Boon of the Night Spirit",
+			"name": "暗夜精魂之恩惠",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Merge with the Shadows",
+					"name": "与暗影融合",
+					"type": "utility",
+					"activation": {
+						"type": "bonus"
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "boonOfTheNightSp"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "acid"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "bludgeoning"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "cold"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "fire"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "force"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "lightning"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "necrotic"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "piercing"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "poison"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "slashing"
+						},
+						{
+							"key": "system.traits.dr.value",
+							"mode": "ADD",
+							"value": "thunder"
+						}
+					]
+				},
+				{
+					"ENG_name": "Merged with Shadows",
+					"name": "与暗影融合",
+					"foundryId": "boonOfTheNightSp",
+					"statuses": [
+						"invisible"
+					]
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Charger",
+			"name": "冲锋手",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Charge Attack",
+					"name": "冲锋攻击",
+					"type": "damage",
+					"activation": {
+						"type": "",
+						"condition": "如果你在近战攻击命中前直线移动至少10尺"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 1,
+								"denomination": 8,
+								"types": [
+									"强酸",
+									"钝击",
+									"寒冷",
+									"火焰",
+									"力场",
+									"闪电",
+									"暗蚀",
+									"穿刺",
+									"毒素",
+									"心灵",
+									"光耀",
+									"挥砍",
+									"雷鸣"
+								]
+							}
+						]
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Chef",
+			"name": "大厨",
+			"source": "XPHB",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Replenishing Meal",
+					"name": "大补食膳",
+					"type": "heal",
+					"activation": {
+						"type": "",
+						"condition": "作为短休的一部分"
+					},
+					"target": {
+						"affects": {
+							"count": "4 + @prof",
+							"type": "creature",
+							"special": "谁吃了食物"
+						}
+					},
+					"healing": {
+						"number": 1,
+						"denomination": 8,
+						"types": [
+							"治疗"
+						],
+						"scaling": {
+							"number": 1
+						}
+					}
+				},
+				{
+					"ENG_name": "Bolstering Treats",
+					"name": "应急零嘴",
+					"type": "heal",
+					"activation": {
+						"type": "hour",
+						"value": 1
+					},
+					"duration": {
+						"units": "小时",
+						"value": "8"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "-(@prof)"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"healing": {
+						"types": [
+							"temphp"
+						],
+						"scaling": {
+							"number": 1
+						},
+						"bonus": "@prof"
+					}
+				},
+				{
+					"ENG_name": "Eat Treat",
+					"name": "吃零食",
+					"type": "utility",
+					"activation": {
+						"type": ""
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Conjuration Adept",
+			"name": "咒法专家",
+			"source": "AU",
+			"effects": [
+				{
+					"ENG_name": "Conjuration Focus (INT)",
+					"name": "咒法专注（智力）",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "system.attributes.concentration.roll.bonus",
+							"value": "@abilities.int.mod",
+							"mode": "ADD"
+						}
+					]
+				},
+				{
+					"ENG_name": "Conjuration Focus (WIS)",
+					"name": "咒法专注（感知）",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "system.attributes.concentration.roll.bonus",
+							"value": "@abilities.wis.mod",
+							"mode": "ADD"
+						}
+					]
+				},
+				{
+					"ENG_name": "Conjuration Focus (CHA)",
+					"name": "咒法专注（CHA）",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "system.attributes.concentration.roll.bonus",
+							"value": "@abilities.cha.mod",
+							"mode": "ADD"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Defense",
+			"name": "防御",
+			"source": "XPHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": "ADD",
+							"value": 1
+						}
+					]
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Defensive Duelist",
+			"name": "防御式决斗",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Parry",
+					"name": "格挡",
+					"type": "utility",
+					"activation": {
+						"type": "reaction"
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "defensiveDuelist"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "defensiveDuelist",
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": "ADD",
+							"value": "@prof"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Divination Adept",
+			"name": "预言专家",
+			"source": "AU",
+			"activities": [
+				{
+					"ENG_name": "Prescient Intervention",
+					"name": "先见干预",
+					"type": "utility",
+					"activation": {
+						"type": "reaction"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "creature",
+							"count": "1"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "60"
+					}
+				},
+				{
+					"ENG_name": "Restore Use",
+					"name": "恢复使用",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "在使用法术位施放一个预言系法术后"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "-1"
+							}
+						]
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Dual Wielder",
+			"name": "双持客",
+			"source": "PHB",
+			"effects": [
+				{
+					"ENG_name": "AC Increase",
+					"name": "AC增加",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": "ADD",
+							"value": "+ 1"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Dueling",
+			"name": "对决",
+			"source": "XPHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.bonuses.mwak.damage",
+							"mode": "ADD",
+							"value": 2
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Durable",
+			"name": "耐性",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Speedy Recovery (Largest Die)",
+					"name": "快速恢复（最大骰）",
+					"type": "heal",
+					"activation": {
+						"type": "bonus"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "hitDice",
+								"value": "1",
+								"target": "最大"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"healing": {
+						"types": [
+							"治疗"
+						],
+						"custom": {
+							"enabled": true,
+							"formula": "@attributes.hd.largestAvailable"
+						},
+						"scaling": {
+							"number": 1
+						}
+					}
+				},
+				{
+					"ENG_name": "Speedy Recovery (Smallest Die)",
+					"name": "快速恢复（最小骰）",
+					"type": "heal",
+					"activation": {
+						"type": "bonus"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "hitDice",
+								"value": "1",
+								"target": "最小"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"healing": {
+						"types": [
+							"治疗"
+						],
+						"custom": {
+							"enabled": true,
+							"formula": "@attributes.hd.smallestAvailable"
+						},
+						"scaling": {
+							"number": 1
+						}
+					}
+				}
+			],
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.death.roll.mode",
+							"mode": "ADD",
+							"value": 1
+						}
+					],
+					"description": "你进行的死亡豁免具有优势。"
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Echoing Soul",
+			"name": "灵魂回荡",
+			"source": "RHW",
+			"activities": [
+				{
+					"ENG_name": "Intrusive Echos",
+					"name": "侵扰回响",
+					"type": "save",
+					"activation": {
+						"type": "special",
+						"condition": "在D20检定中掷出1点后立即"
+					},
+					"duration": {
+						"units": "轮",
+						"value": "1"
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"damage": {
+						"onSave": "none"
+					},
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"formula": "13 + @prof"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "echoingSoul"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Intrusive Echoes (Incapacitated)",
+					"name": "侵扰回响（失能）",
+					"foundryId": "echoingSoul",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"value": 1,
+						"units": "回合",
+						"expiry": "回合开始"
+					},
+					"statuses": [
+						"incapacitated"
+					],
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"value": 0.5,
+							"mode": "MULTIPLY"
+						},
+						{
+							"key": "system.attributes.movement.fly",
+							"value": 0.5,
+							"mode": "MULTIPLY"
+						},
+						{
+							"key": "system.attributes.movement.swim",
+							"value": 0.5,
+							"mode": "MULTIPLY"
+						},
+						{
+							"key": "system.attributes.movement.climb",
+							"value": 0.5,
+							"mode": "MULTIPLY"
+						},
+						{
+							"key": "system.attributes.movement.burrow",
+							"value": 0.5,
+							"mode": "MULTIPLY"
+						}
+					],
+					"description": "你获得&Reference[失能 apply=false]状态，直至你的下一个回合结束。当你以此方式处于失能状态时，你的速度减半。",
+					"showIcon": 2
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Elemental Familiar",
+			"name": "元素魔宠",
+			"source": "AU",
+			"activities": [
+				{
+					"ENG_name": "Acid Elemental Familiar",
+					"name": "强酸元素魔宠",
+					"type": "summon",
+					"foundryId": "elementalFamilia",
+					"activation": {
+						"type": "hour",
+						"value": 1
+					},
+					"target": {
+						"affects": {
+							"type": "space",
+							"count": "1"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "10"
+					},
+					"profiles": [
+						{
+							"ENG_name": "CR 0 Beast",
+							"name": "CR 0 野兽",
+							"cr": "0",
+							"types": [
+								"野兽"
+							]
+						}
+					],
+					"summon": {
+						"mode": "cr"
+					},
+					"creatureTypes": [
+						"天族",
+						"妖精",
+						"邪魔"
+					],
+					"match": {
+						"disposition": true
+					},
+					"effects": [
+						{
+							"foundryId": "elementalFamilia"
+						}
+					]
+				},
+				{
+					"ENG_name": "Cold Elemental Familiar",
+					"name": "寒冷元素魔宠",
+					"type": "summon",
+					"foundryId": "elementalFamili1",
+					"activation": {
+						"type": "hour",
+						"value": 1
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "space"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "10"
+					},
+					"profiles": [
+						{
+							"ENG_name": "CR 0 Beast",
+							"name": "CR 0 野兽",
+							"cr": "0",
+							"types": [
+								"野兽"
+							]
+						}
+					],
+					"summon": {
+						"mode": "cr"
+					},
+					"creatureTypes": [
+						"天族",
+						"妖精",
+						"邪魔"
+					],
+					"match": {
+						"disposition": true
+					},
+					"effects": [
+						{
+							"foundryId": "elementalFamili1"
+						}
+					]
+				},
+				{
+					"ENG_name": "Fire Elemental Familiar",
+					"name": "火焰元素魔宠",
+					"type": "summon",
+					"foundryId": "elementalFamili2",
+					"activation": {
+						"type": "hour",
+						"value": 1
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "space"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "10"
+					},
+					"profiles": [
+						{
+							"ENG_name": "CR 0 Beast",
+							"name": "CR 0 野兽",
+							"cr": "0",
+							"types": [
+								"野兽"
+							]
+						}
+					],
+					"summon": {
+						"mode": "cr"
+					},
+					"creatureTypes": [
+						"天族",
+						"妖精",
+						"邪魔"
+					],
+					"match": {
+						"disposition": true
+					},
+					"effects": [
+						{
+							"foundryId": "elementalFamili2"
+						}
+					]
+				},
+				{
+					"ENG_name": "Lightning Elemental Familiar",
+					"name": "闪电元素魔宠",
+					"type": "summon",
+					"foundryId": "elementalFamili3",
+					"activation": {
+						"type": "hour",
+						"value": 1
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "space"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "10"
+					},
+					"profiles": [
+						{
+							"ENG_name": "CR 0 Beast",
+							"name": "CR 0 野兽",
+							"cr": "0",
+							"types": [
+								"野兽"
+							]
+						}
+					],
+					"summon": {
+						"mode": "cr"
+					},
+					"creatureTypes": [
+						"天族",
+						"妖精",
+						"邪魔"
+					],
+					"match": {
+						"disposition": true
+					},
+					"effects": [
+						{
+							"foundryId": "elementalFamili3"
+						}
+					]
+				},
+				{
+					"ENG_name": "Thunder Elemental Familiar",
+					"name": "雷鸣元素魔宠",
+					"type": "summon",
+					"foundryId": "elementalFamili4",
+					"activation": {
+						"type": "hour",
+						"value": 1
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "space"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "10"
+					},
+					"profiles": [
+						{
+							"ENG_name": "CR 0 Beast",
+							"name": "CR 0 野兽",
+							"cr": "0",
+							"types": [
+								"野兽"
+							]
+						}
+					],
+					"summon": {
+						"mode": "cr"
+					},
+					"creatureTypes": [
+						"天族",
+						"妖精",
+						"邪魔"
+					],
+					"match": {
+						"disposition": true
+					},
+					"effects": [
+						{
+							"foundryId": "elementalFamili4"
+						}
+					]
+				},
+				{
+					"ENG_name": "Energy Pulse",
+					"name": "能量脉冲",
+					"type": "save",
+					"activation": {
+						"type": "bonus"
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "radius",
+							"size": "5"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "120"
+					},
+					"damage": {
+						"onSave": "none",
+						"parts": [
+							{
+								"number": 2,
+								"denomination": 4,
+								"types": [
+									"强酸",
+									"寒冷",
+									"火焰",
+									"闪电",
+									"雷鸣"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "spellcasting"
+						},
+						"visible": true
+					},
+					"effects": [
+						{
+							"foundryId": "elementalFamili5"
+						}
+					]
+				},
+				{
+					"ENG_name": "Elemental Energy",
+					"name": "元素赋能",
+					"type": "enchant",
+					"activation": {
+						"type": ""
+					},
+					"restrictions": {
+						"type": "spell"
+					},
+					"effects": [
+						{
+							"foundryId": "elementalFamili6",
+							"riders": {
+								"activity": [
+									{
+										"foundryId": "elementalFamilia"
+									},
+									{
+										"foundryId": "elementalFamili1"
+									},
+									{
+										"foundryId": "elementalFamili2"
+									},
+									{
+										"foundryId": "elementalFamili3"
+									},
+									{
+										"foundryId": "elementalFamili4"
+									}
+								]
+							}
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "elementalFamili6",
+					"type": "enchantment",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"units": "秒"
+					}
+				},
+				{
+					"ENG_name": "Acid Resistance",
+					"name": "强酸抗性",
+					"foundryId": "elementalFamilia",
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"value": "acid",
+							"mode": "ADD"
+						}
+					]
+				},
+				{
+					"ENG_name": "Cold Resistance",
+					"name": "冷冻抗性",
+					"foundryId": "elementalFamili1",
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"value": "cold",
+							"mode": "ADD"
+						}
+					]
+				},
+				{
+					"ENG_name": "Fire Resistance",
+					"name": "火焰抗性",
+					"foundryId": "elementalFamili2",
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"value": "fire",
+							"mode": "ADD"
+						}
+					]
+				},
+				{
+					"ENG_name": "Lightning Resistance",
+					"name": "闪电抗性",
+					"foundryId": "elementalFamili3",
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"value": "lightning",
+							"mode": "ADD"
+						}
+					]
+				},
+				{
+					"ENG_name": "Thunder Resistance",
+					"name": "雷鸣抗性",
+					"foundryId": "elementalFamili4",
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"value": "thunder",
+							"mode": "ADD"
+						}
+					]
+				},
+				{
+					"ENG_name": "Prone",
+					"name": "倒地",
+					"foundryId": "elementalFamili5",
+					"duration": {
+						"units": "秒"
+					},
+					"statuses": [
+						"prone"
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Elven Accuracy",
+			"name": "精灵之准",
+			"source": "XGE",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.dnd5e.elvenAccuracy",
+							"mode": "OVERRIDE",
+							"value": true
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Evocation Adept",
+			"name": "塑能专家",
+			"source": "AU",
+			"activities": [
+				{
+					"ENG_name": "Fueled Evocation (Smallest Hit Die)",
+					"name": "充能塑能（最小生命骰）",
+					"type": "damage",
+					"activation": {
+						"type": "special",
+						"condition": "当你施放一个塑能法术并造成伤害时"
+					},
+					"consumption": {
+						"scaling": {
+							"allowed": true,
+							"max": "2"
+						},
+						"targets": [
+							{
+								"type": "hitDice",
+								"value": "1",
+								"target": "最小",
+								"scaling": {
+									"mode": "amount"
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"critical": {
+							"allow": true
+						},
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(@scaling)d(@attributes.hd.smallestFace)"
+								},
+								"types": [
+									"钝击",
+									"穿刺",
+									"挥砍",
+									"强酸",
+									"寒冷",
+									"火焰",
+									"力场",
+									"闪电",
+									"暗蚀",
+									"毒素",
+									"心灵",
+									"光耀",
+									"雷鸣"
+								]
+							}
+						]
+					}
+				},
+				{
+					"ENG_name": "Fueled Evocation (Largest Hit Die)",
+					"name": "充能塑能（最大生命骰）",
+					"type": "damage",
+					"activation": {
+						"type": "special",
+						"condition": "当你施放一个塑能法术并造成伤害时"
+					},
+					"consumption": {
+						"scaling": {
+							"allowed": true,
+							"max": "2"
+						},
+						"targets": [
+							{
+								"type": "hitDice",
+								"value": "1",
+								"target": "最大",
+								"scaling": {
+									"mode": "amount"
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"critical": {
+							"allow": true
+						},
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(@scaling)d(@attributes.hd.largestFace)"
+								},
+								"types": [
+									"钝击",
+									"穿刺",
+									"挥砍",
+									"强酸",
+									"寒冷",
+									"火焰",
+									"力场",
+									"闪电",
+									"暗蚀",
+									"毒素",
+									"心灵",
+									"光耀",
+									"雷鸣"
+								]
+							}
+						]
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Familiar Friend",
+			"name": "魔宠密友",
+			"source": "AU",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Helpful Friend",
+					"name": "得力助手",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "当你的魔宠在范围内时，你进行属性检定可加上熟练加值"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "5"
+					}
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Fortified Familiar",
+					"name": "强韧魔宠",
+					"type": "enchantment",
+					"transfer": true,
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "activities[summon].bonuses.hp",
+							"value": "2 * @details.level",
+							"mode": "ADD"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Gathered Whispers",
+			"name": "汇灵低语",
+			"source": "RHW",
+			"activities": [
+				{
+					"ENG_name": "Message (Spirit Whispers)",
+					"name": "传讯术（灵语低语）",
+					"type": "cast",
+					"activation": {
+						"type": "action"
+					},
+					"spell": {
+						"uuid": "{!@ $.feat[name=Gathered-Whispers;source=RHW].activities[name=Message--Spirit-Whispers].spell.uuid.0}|{!@ $.feat[name=Gathered-Whispers;source=RHW].activities[name=Message--Spirit-Whispers].spell.uuid.1}",
+						"properties": [
+							"材质"
+						],
+						"spellbook": true
+					}
+				},
+				{
+					"ENG_name": "Augury (Spirit Whispers)",
+					"name": "卜筮术（灵语）",
+					"type": "cast",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "activityUses",
+								"value": "1"
+							}
+						]
+					},
+					"uses": {
+						"recovery": [
+							{
+								"period": "lr",
+								"type": "recoverAll"
+							}
+						],
+						"max": "1"
+					},
+					"spell": {
+						"uuid": "{!@ $.feat[name=Gathered-Whispers;source=RHW].activities[name=Augury--Spirit-Whispers].spell.uuid.0}|{!@ $.feat[name=Gathered-Whispers;source=RHW].activities[name=Augury--Spirit-Whispers].spell.uuid.1}",
+						"properties": [
+							"声音",
+							"姿势",
+							"材质",
+							"仪式"
+						],
+						"spellbook": true,
+						"level": 2
+					}
+				},
+				{
+					"ENG_name": "Unearthly Scream",
+					"name": "怪谲尖嚎",
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "当你被一次攻击掷骰命中时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "activityUses",
+								"value": "1"
+							}
+						]
+					},
+					"uses": {
+						"recovery": [
+							{
+								"period": "lr",
+								"type": "recoverAll"
+							}
+						],
+						"max": "@prof"
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"roll": {
+						"ENG_name": "Modified AC",
+						"name": "调整后护甲等级",
+						"formula": "@attributes.ac.value + @prof"
+					}
+				},
+				{
+					"ENG_name": "Voices from Beyond",
+					"name": "悠远之声",
+					"type": "save",
+					"activation": {
+						"type": "special",
+						"condition": "在D20检定中掷出1点后立即"
+					},
+					"duration": {
+						"units": "轮",
+						"value": "1"
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"damage": {
+						"onSave": "none"
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"formula": "13 + @prof"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "gatheredWhispers"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Voices from Beyond (Deafened)",
+					"name": "悠远之声（耳聋）",
+					"foundryId": "gatheredWhispers",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"value": 1,
+						"units": "回合",
+						"expiry": "回合开始"
+					},
+					"statuses": [
+						"deafened"
+					],
+					"changes": [
+						{
+							"key": "system.abilities.str.check.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.dex.check.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.con.check.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.int.check.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.wis.check.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.cha.check.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						}
+					],
+					"descriptionEntries": [
+						"当你处于耳聋状态时，你在属性检定和攻击掷骰上具有劣势。",
+						"{@i 攻击掷骰的劣势未被自动化。}"
+					],
+					"showIcon": 2
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Great Weapon Master",
+			"name": "巨武器大师",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Heavy Weapon Damage",
+					"name": "重型武器伤害",
+					"type": "damage",
+					"activation": {
+						"type": "",
+						"condition": "当你使用具有重型属性的武器在你的回合作为攻击动作的一部分命中一个生物时"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"bonus": "@prof",
+								"types": [
+									"强酸",
+									"钝击",
+									"寒冷",
+									"火焰",
+									"力场",
+									"闪电",
+									"暗蚀",
+									"穿刺",
+									"毒素",
+									"心灵",
+									"光耀",
+									"挥砍",
+									"雷鸣"
+								]
+							}
+						]
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Healer",
+			"name": "医疗师",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Heal d6",
+					"name": "治疗d6",
+					"type": "heal",
+					"activation": {
+						"type": "action"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"range": {
+						"units": "接触"
+					},
+					"healing": {
+						"types": [
+							"治疗"
+						],
+						"custom": {
+							"enabled": true,
+							"formula": "1d6r1 + @prof"
+						},
+						"scaling": {
+							"number": 1
+						}
+					}
+				},
+				{
+					"ENG_name": "Heal d8",
+					"name": "治疗d8",
+					"type": "heal",
+					"activation": {
+						"type": "action"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"range": {
+						"units": "接触"
+					},
+					"healing": {
+						"number": 1,
+						"denomination": 8,
+						"types": [
+							"治疗"
+						],
+						"custom": {
+							"enabled": true,
+							"formula": "1d8r1 + @prof"
+						},
+						"scaling": {
+							"number": 1
+						},
+						"bonus": "@prof"
+					}
+				},
+				{
+					"ENG_name": "Heal d10",
+					"name": "治疗d10",
+					"type": "heal",
+					"activation": {
+						"type": "action"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"range": {
+						"units": "接触"
+					},
+					"healing": {
+						"number": 1,
+						"denomination": 10,
+						"types": [
+							"治疗"
+						],
+						"custom": {
+							"enabled": true,
+							"formula": "1d10r1 + @prof"
+						},
+						"scaling": {
+							"number": 1
+						},
+						"bonus": "@prof"
+					}
+				},
+				{
+					"ENG_name": "Heal d12",
+					"name": "治疗骰d12",
+					"type": "heal",
+					"activation": {
+						"type": "action"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"range": {
+						"units": "接触"
+					},
+					"healing": {
+						"number": 1,
+						"denomination": 12,
+						"types": [
+							"治疗"
+						],
+						"custom": {
+							"enabled": true,
+							"formula": "1d12r1 + @prof"
+						},
+						"scaling": {
+							"number": 1
+						},
+						"bonus": "@prof"
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Heavy Armor Master",
+			"name": "重甲大师",
+			"source": "XPHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.traits.dm.amount.bludgeoning",
+							"mode": "ADD",
+							"value": "-(@prof)"
+						},
+						{
+							"key": "system.traits.dm.amount.piercing",
+							"mode": "ADD",
+							"value": "-(@prof)"
+						},
+						{
+							"key": "system.traits.dm.amount.slashing",
+							"mode": "ADD",
+							"value": "-(@prof)"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Inspiring Leader",
+			"name": "领袖之证",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Inspire with Wisdom",
+					"name": "以感知激励",
+					"type": "heal",
+					"activation": {
+						"type": "shortRest",
+						"condition": "当你完成一次短休或长休时"
+					},
+					"target": {
+						"affects": {
+							"count": "6",
+							"type": "creature"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "30"
+					},
+					"healing": {
+						"types": [
+							"temphp"
+						],
+						"custom": {
+							"formula": "@details.level + @abilities.wis.mod"
+						},
+						"scaling": {
+							"number": 1
+						},
+						"bonus": "@details.level + @abilities.wis.mod"
+					}
+				},
+				{
+					"ENG_name": "Inspire with Charisma",
+					"name": "以魅力鼓舞",
+					"type": "heal",
+					"activation": {
+						"type": "shortRest",
+						"condition": "当你完成一次短休或长休时"
+					},
+					"target": {
+						"affects": {
+							"count": "6",
+							"type": "creature"
+						}
+					},
+					"range": {
+						"value": "30",
+						"units": "ft"
+					},
+					"healing": {
+						"types": [
+							"temphp"
+						],
+						"scaling": {
+							"number": 1
+						},
+						"bonus": "@details.level + @abilities.cha.mod"
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Interception",
+			"name": "拦截",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Intercept",
+					"name": "拦截",
+					"type": "heal",
+					"activation": {
+						"type": "reaction",
+						"condition": "当一个你能看到的生物使用攻击掷骰命中你5尺范围内的另一个生物时"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"healing": {
+						"number": 1,
+						"denomination": 10,
+						"types": [
+							"治疗"
+						],
+						"scaling": {
+							"number": 1
+						},
+						"bonus": "@prof"
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Living Shadow",
+			"name": "活体幽影",
+			"source": "RHW",
+			"activities": [
+				{
+					"ENG_name": "Mage Hand (Grasping Shadow)",
+					"name": "法师之手（攫影）",
+					"type": "cast",
+					"activation": {
+						"type": "action"
+					},
+					"spell": {
+						"uuid": "{!@ $.feat[name=Living-Shadow;source=RHW].activities[name=Mage-Hand--Grasping-Shadow].spell.uuid.0}|{!@ $.feat[name=Living-Shadow;source=RHW].activities[name=Mage-Hand--Grasping-Shadow].spell.uuid.1}",
+						"properties": [
+							"声音",
+							"姿势",
+							"材质"
+						],
+						"spellbook": true
+					}
+				},
+				{
+					"ENG_name": "Lengthened Strike",
+					"name": "延伸打击",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "当你作为攻击或魔法动作的一部分进行近战攻击时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "activityUses",
+								"value": "1"
+							}
+						]
+					},
+					"uses": {
+						"recovery": [
+							{
+								"period": "lr",
+								"type": "recoverAll"
+							}
+						],
+						"max": "@prof"
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					}
+				},
+				{
+					"ENG_name": "Ominous Will",
+					"name": "不祥意志",
+					"type": "save",
+					"activation": {
+						"type": "special",
+						"condition": "在D20检定中掷出1点后立即"
+					},
+					"duration": {
+						"units": "轮",
+						"value": "1"
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"damage": {
+						"onSave": "none"
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"formula": "13 + @prof"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "livingShadow"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Ominous Will (Incapacitated)",
+					"name": "不祥意志（失能）",
+					"foundryId": "livingShadow",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"value": 1,
+						"units": "回合",
+						"expiry": "回合开始"
+					},
+					"statuses": [
+						"incapacitated"
+					],
+					"description": "豁免失败时，你将处于失能状态，直到你的下个回合开始。届时，你必须掷骰幽影意志表来决定你在该回合的行动。",
+					"showIcon": 2
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Lucky",
+			"name": "幸运",
+			"source": "PHB",
+			"system": {
+				"uses.max": 3,
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "none",
+						"value": 0
+					},
+					"roll": {
+						"formula": "1d20"
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Lucky",
+			"name": "幸运",
+			"source": "XPHB",
+			"system": {
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Advantage",
+					"name": "优势",
+					"type": "utility",
+					"img": "systems/dnd5e/icons/svg/dice/d20.svg",
+					"activation": {
+						"type": "",
+						"condition": "当你为 D20 检定投掷 d20 骰子时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					}
+				},
+				{
+					"ENG_name": "Disadvantage",
+					"name": "劣势",
+					"type": "utility",
+					"img": "systems/dnd5e/icons/svg/dice/d20.svg",
+					"activation": {
+						"type": "",
+						"condition": "当一个生物对你进行攻击检定并投掷d20时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Mage Slayer",
+			"name": "巫师杀手",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Guard Mind",
+					"name": "守御心灵",
+					"type": "utility",
+					"activation": {
+						"type": "",
+						"condition": "当你未能通过智力、感知或魅力豁免检定"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Medium Armor Master",
+			"name": "中甲大师",
+			"source": "XPHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.bonus",
+							"mode": "ADD",
+							"value": 1
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Mist Walker",
+			"name": "迷雾行者",
+			"source": "RHW",
+			"activities": [
+				{
+					"ENG_name": "Domain Traveler",
+					"name": "领域旅者",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "当你意图抵达某个领域而进入迷雾时"
+					},
+					"target": {
+						"affects": {
+							"type": "creature",
+							"special": "包括自身"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "30"
+					},
+					"roll": {
+						"ENG_name": "Hours of Travel",
+						"name": "旅行小时数",
+						"visible": true,
+						"formula": "1d6"
+					}
+				},
+				{
+					"ENG_name": "Mist Walk",
+					"name": "迷雾行走",
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "受到伤害或未能通过豁免检定以避开或结束擒抱或束缚状态"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "activityUses",
+								"value": "1"
+							}
+						]
+					},
+					"uses": {
+						"recovery": [
+							{
+								"period": "lr",
+								"type": "recoverAll"
+							}
+						],
+						"max": "@prof"
+					},
+					"target": {
+						"affects": {
+							"type": "space",
+							"count": "1",
+							"special": "无人占据"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "15"
+					}
+				},
+				{
+					"ENG_name": "Poisoned Roots",
+					"name": "已被毒害的根源",
+					"type": "save",
+					"activation": {
+						"type": "shortRest",
+						"condition": "在你进行长休的地点10英里范围内"
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"damage": {
+						"onSave": "none"
+					},
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"formula": "13 + @prof"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Mobile",
+			"name": "灵活移动",
+			"source": "PHB",
+			"effects": [
+				{
+					"ENG_name": "Movement Speed Increase",
+					"name": "移动速度增加",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "ADD",
+							"value": "+ 10"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Necromancy Adept",
+			"name": "死灵专家",
+			"source": "AU",
+			"activities": [
+				{
+					"ENG_name": "Life Manipulation (Smallest Hit Die)",
+					"name": "生命操控（最小生命骰）",
+					"type": "heal",
+					"activation": {
+						"type": "special",
+						"condition": "使用法术位施放一个死灵学派的法术"
+					},
+					"consumption": {
+						"scaling": {
+							"allowed": true,
+							"max": "2"
+						},
+						"targets": [
+							{
+								"type": "hitDice",
+								"value": "1",
+								"target": "最小",
+								"scaling": {
+									"mode": "amount"
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"healing": {
+						"types": [
+							"治疗"
+						],
+						"custom": {
+							"enabled": true,
+							"formula": "(@scaling)d(@attributes.hd.smallestFace)"
+						},
+						"scaling": {
+							"number": 1
+						}
+					}
+				},
+				{
+					"ENG_name": "Life Manipulation (Largest Hit Die)",
+					"name": "生命操控（最大生命骰）",
+					"type": "heal",
+					"activation": {
+						"type": "special",
+						"condition": "使用法术位施放一个死灵学派的法术"
+					},
+					"consumption": {
+						"scaling": {
+							"allowed": true,
+							"max": "2"
+						},
+						"targets": [
+							{
+								"type": "hitDice",
+								"value": "1",
+								"target": "最大",
+								"scaling": {
+									"mode": "amount"
+								}
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"healing": {
+						"types": [
+							"治疗"
+						],
+						"custom": {
+							"enabled": true,
+							"formula": "(@scaling)d(@attributes.hd.largestFace)"
+						},
+						"scaling": {
+							"number": 1
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Observant",
+			"name": "观察力",
+			"source": "PHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.dnd5e.observantFeat",
+							"mode": "OVERRIDE",
+							"value": true
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Otherworldly Familiar",
+			"name": "异界魔宠",
+			"source": "AU",
+			"activities": [
+				{
+					"ENG_name": "Enchant",
+					"name": "附魔",
+					"type": "enchant",
+					"activation": {
+						"type": ""
+					},
+					"restrictions": {
+						"type": "spell"
+					},
+					"effects": [
+						{
+							"foundryId": "otherworldlyFami",
+							"riders": {
+								"activity": [
+									{
+										"foundryId": "otherworldlyFami"
+									},
+									{
+										"foundryId": "otherworldlyFam1"
+									},
+									{
+										"foundryId": "otherworldlyFam2"
+									},
+									{
+										"foundryId": "otherworldlyFam3"
+									},
+									{
+										"foundryId": "otherworldlyFam4"
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"ENG_name": "Otherworldly Necrotic Familiar",
+					"name": "异界暗蚀魔宠",
+					"type": "summon",
+					"foundryId": "otherworldlyFami",
+					"activation": {
+						"type": "hour",
+						"value": 1
+					},
+					"profiles": [
+						{
+							"ENG_name": "CR 0 Beast",
+							"name": "CR 0 野兽",
+							"cr": "0",
+							"types": [
+								"野兽"
+							]
+						}
+					],
+					"summon": {
+						"mode": "cr"
+					},
+					"creatureTypes": [
+						"天族",
+						"妖精",
+						"邪魔"
+					],
+					"match": {
+						"disposition": true
+					},
+					"effects": [
+						{
+							"foundryId": "otherworldlyFam1"
+						}
+					]
+				},
+				{
+					"ENG_name": "Otherworldly Poison Familiar",
+					"name": "异界毒素魔宠",
+					"type": "summon",
+					"foundryId": "otherworldlyFam1",
+					"activation": {
+						"type": "hour",
+						"value": 1
+					},
+					"profiles": [
+						{
+							"ENG_name": "CR 0 Beast",
+							"name": "CR 0 野兽",
+							"cr": "0",
+							"types": [
+								"野兽"
+							]
+						}
+					],
+					"summon": {
+						"mode": "cr"
+					},
+					"creatureTypes": [
+						"天族",
+						"妖精",
+						"邪魔"
+					],
+					"match": {
+						"disposition": true
+					},
+					"effects": [
+						{
+							"foundryId": "otherworldlyFam2"
+						}
+					]
+				},
+				{
+					"ENG_name": "Otherworldly Psychic Familiar",
+					"name": "异界心灵魔宠",
+					"type": "summon",
+					"foundryId": "otherworldlyFam2",
+					"activation": {
+						"type": "hour",
+						"value": 1
+					},
+					"profiles": [
+						{
+							"ENG_name": "CR 0 Beast",
+							"name": "CR 0 野兽",
+							"cr": "0",
+							"types": [
+								"野兽"
+							]
+						}
+					],
+					"summon": {
+						"mode": "cr"
+					},
+					"creatureTypes": [
+						"天族",
+						"妖精",
+						"邪魔"
+					],
+					"match": {
+						"disposition": true
+					},
+					"effects": [
+						{
+							"foundryId": "otherworldlyFam3"
+						}
+					]
+				},
+				{
+					"ENG_name": "Otherworldly Radiant Familiar",
+					"name": "异界光耀魔宠",
+					"type": "summon",
+					"foundryId": "otherworldlyFam3",
+					"activation": {
+						"type": "hour",
+						"value": 1
+					},
+					"profiles": [
+						{
+							"ENG_name": "CR 0 Beast",
+							"name": "CR 0 野兽",
+							"cr": "0",
+							"types": [
+								"野兽"
+							]
+						}
+					],
+					"summon": {
+						"mode": "cr"
+					},
+					"creatureTypes": [
+						"天族",
+						"妖精",
+						"邪魔"
+					],
+					"match": {
+						"disposition": true
+					},
+					"effects": [
+						{
+							"foundryId": "otherworldlyFam4"
+						}
+					]
+				},
+				{
+					"ENG_name": "Otherworldly Thunder Familiar",
+					"name": "异界雷鸣魔宠",
+					"type": "summon",
+					"foundryId": "otherworldlyFam4",
+					"activation": {
+						"type": "hour",
+						"value": 1
+					},
+					"profiles": [
+						{
+							"ENG_name": "CR 0 Beast",
+							"name": "CR 0 野兽",
+							"cr": "0",
+							"types": [
+								"野兽"
+							]
+						}
+					],
+					"summon": {
+						"mode": "cr"
+					},
+					"creatureTypes": [
+						"天族",
+						"妖精",
+						"邪魔"
+					],
+					"match": {
+						"disposition": true
+					},
+					"effects": [
+						{
+							"foundryId": "otherworldlyFam5"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "otherworldlyFami",
+					"type": "enchantment",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"units": "秒"
+					}
+				},
+				{
+					"ENG_name": "Necrotic Resistance",
+					"name": "暗蚀抗性",
+					"foundryId": "otherworldlyFam1",
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"value": "necrotic",
+							"mode": "ADD"
+						}
+					]
+				},
+				{
+					"ENG_name": "Poison Resistance",
+					"name": "毒素抗性",
+					"foundryId": "otherworldlyFam2",
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"value": "poison",
+							"mode": "ADD"
+						}
+					]
+				},
+				{
+					"ENG_name": "Psychic Resistance",
+					"name": "心灵抗性",
+					"foundryId": "otherworldlyFam3",
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"value": "psychic",
+							"mode": "ADD"
+						}
+					]
+				},
+				{
+					"ENG_name": "Radiant Resistance",
+					"name": "光耀抗性",
+					"foundryId": "otherworldlyFam4",
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"value": "radiant",
+							"mode": "ADD"
+						}
+					]
+				},
+				{
+					"ENG_name": "Thunder Resistance",
+					"name": "雷鸣抗性",
+					"foundryId": "otherworldlyFam5",
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "system.traits.dr.value",
+							"value": "thunder",
+							"mode": "ADD"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Poisoner",
+			"name": "毒师",
+			"source": "XPHB",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Create Poison Doses",
+					"name": "制造毒素剂量",
+					"type": "utility",
+					"activation": {
+						"type": "hour",
+						"value": 1
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "-@prof"
+							}
+						]
+					}
+				},
+				{
+					"ENG_name": "Apply Poison",
+					"name": "涂抹毒药",
+					"type": "enchant",
+					"img": "systems/dnd5e/icons/svg/damage/poison.svg",
+					"activation": {
+						"type": "bonus"
+					},
+					"restrictions": {
+						"allowMagical": true
+					},
+					"effects": [
+						{
+							"foundryId": "poisoner",
+							"riders": {
+								"activity": [
+									{
+										"foundryId": "poisoner"
+									}
+								]
+							}
+						},
+						{
+							"foundryId": "poisoner1",
+							"riders": {
+								"activity": [
+									{
+										"foundryId": "poisoner1"
+									}
+								]
+							}
+						}
+					]
+				},
+				{
+					"ENG_name": "Poison Save (Dexterity)",
+					"name": "毒素豁免（敏捷）",
+					"type": "save",
+					"foundryId": "poisoner",
+					"descriptionChat": "失败时&参考[中毒]",
+					"activation": {
+						"type": ""
+					},
+					"duration": {
+						"units": "轮",
+						"value": "1"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "activityUses",
+								"value": "1"
+							}
+						]
+					},
+					"uses": {
+						"max": "1"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"range": {
+						"units": "任何"
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 2,
+								"denomination": 8,
+								"types": [
+									"毒素"
+								]
+							}
+						],
+						"onSave": "none"
+					},
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "dex"
+						}
+					}
+				},
+				{
+					"ENG_name": "Poison Save (Intelligence)",
+					"name": "毒素豁免（智力）",
+					"type": "save",
+					"foundryId": "poisoner1",
+					"descriptionChat": "失败时&参考[中毒]",
+					"activation": {
+						"type": ""
+					},
+					"duration": {
+						"units": "轮",
+						"value": "1"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "activityUses",
+								"value": "1"
+							}
+						]
+					},
+					"uses": {
+						"max": "1"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"range": {
+						"units": "任何"
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 2,
+								"denomination": 8,
+								"types": [
+									"毒素"
+								]
+							}
+						],
+						"onSave": "none"
+					},
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "int"
+						}
+					}
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Poisoned (Dex)",
+					"name": "中毒（敏捷）",
+					"type": "enchantment",
+					"foundryId": "poisoner",
+					"duration": {
+						"seconds": 60
+					},
+					"changes": [
+						{
+							"key": "name",
+							"mode": "ADD",
+							"value": ", Poisoned"
+						}
+					],
+					"description": "当生物因该中毒物品受到伤害时，该生物必须成功通过一次[[/save ability=con]]豁免检定（DC为8加上因该专长提升的能力调整值及你的熟练加值），否则将受到2d8点毒素伤害，并在你的下个回合结束前获得&Reference[Poisoned（中毒）]状态。"
+				},
+				{
+					"ENG_name": "Poisoned (Int)",
+					"name": "中毒（智力）",
+					"type": "enchantment",
+					"foundryId": "poisoner1",
+					"duration": {
+						"seconds": 60
+					},
+					"changes": [
+						{
+							"key": "name",
+							"mode": "ADD",
+							"value": ", Poisoned"
+						}
+					],
+					"description": "当生物因该中毒物品受到伤害时，该生物必须成功通过一次[[/save ability=con]]豁免检定（DC为8加上因该专长提升的能力调整值及你的熟练加值），否则将受到2d8点毒素伤害，并在你的下个回合结束前获得&Reference[Poisoned（中毒）]状态。"
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Polearm Master",
+			"name": "长柄武器大师",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Pole Strike",
+					"name": "长柄打击",
+					"type": "attack",
+					"activation": {
+						"type": "bonus"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"attack": {
+						"type": {
+							"value": "近战",
+							"classification": "武器"
+						}
+					},
+					"damage": {
+						"includeBase": true,
+						"parts": [
+							{
+								"number": 1,
+								"denomination": 4,
+								"types": [
+									"钝击"
+								]
+							}
+						]
+					}
+				},
+				{
+					"ENG_name": "Reactive Strike",
+					"name": "反应打击",
+					"type": "utility",
+					"img": "systems/dnd5e/icons/svg/damage/bludgeoning.svg",
+					"activation": {
+						"type": "reaction"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Portal Jumper",
+			"name": "穿界者",
+			"source": "AU",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Portal Step",
+					"name": "穿界步",
+					"type": "teleport",
+					"activation": {
+						"type": "special",
+						"condition": "消耗15尺移动力"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "space",
+							"count": "1",
+							"special": "无人占据"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "15"
+					},
+					"teleport": {
+						"units": "ft"
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Protection",
+			"name": "守护",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Protect",
+					"name": "保护",
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "当你可见的生物攻击一个在你5英尺内且不是你的目标时"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "protection"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Protected",
+					"name": "被保护",
+					"foundryId": "protection",
+					"duration": {
+						"turns": 1
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Ritual Caster",
+			"name": "仪式施法者",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Fast Ritual Cast",
+					"name": "快速仪式施法",
+					"type": "utility",
+					"activation": {
+						"type": "special"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Second Skin",
+			"name": "第二形态",
+			"source": "RHW",
+			"activities": [
+				{
+					"ENG_name": "Alter Self (Second Skin)",
+					"name": "变身术（第二形态）",
+					"type": "cast",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "activityUses",
+								"value": "1"
+							}
+						]
+					},
+					"uses": {
+						"recovery": [
+							{
+								"period": "lr",
+								"type": "recoverAll"
+							}
+						],
+						"max": "1"
+					},
+					"spell": {
+						"uuid": "{!@ $.feat[name=Second-Skin;source=RHW].activities[name=Alter-Self--Second-Skin].spell.uuid.0}|{!@ $.feat[name=Second-Skin;source=RHW].activities[name=Alter-Self--Second-Skin].spell.uuid.1}",
+						"properties": [
+							"声音",
+							"姿势",
+							"材质",
+							"专注"
+						],
+						"spellbook": true,
+						"level": 2
+					}
+				},
+				{
+					"ENG_name": "Involuntary Change",
+					"name": "被迫改变",
+					"type": "save",
+					"activation": {
+						"type": "special",
+						"condition": "在经历催化剂后的回合开始时"
+					},
+					"duration": {
+						"units": "轮",
+						"value": "1"
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"damage": {
+						"onSave": "none"
+					},
+					"save": {
+						"ability": [
+							"叉"
+						],
+						"dc": {
+							"formula": "13 + @prof"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "secondSkin"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Involuntary Change (Stunned)",
+					"name": "被迫改变（震慑）",
+					"foundryId": "secondSkin",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"value": 1,
+						"units": "回合",
+						"expiry": "回合开始"
+					},
+					"statuses": [
+						"stunned"
+					],
+					"description": "若你已消耗该特性的使用次数，则你改为陷入&Reference[震慑 apply=false]状态，直到你的下一回合开始。",
+					"showIcon": 2
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Sentinel",
+			"name": "哨兵",
+			"source": "XPHB",
+			"effects": [
+				{
+					"ENG_name": "Halted",
+					"name": "停滞",
+					"duration": {
+						"turns": 1
+					},
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "OVERRIDE",
+							"value": 0
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Sharp Eye",
+			"name": "锐眼",
+			"source": "RHW",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Expend Use on Success",
+					"name": "成功时消耗使用次数",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "当你对特定动作拥有优势并成功时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Shield Master",
+			"name": "盾牌大师",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Shield Bash",
+					"name": "盾击",
+					"type": "save",
+					"activation": {
+						"type": "",
+						"condition": "如果你在攻击动作中以一把近战武器命中5尺范围内的一个生物"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"str"
+						],
+						"dc": {
+							"calculation": "str"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "shieldMaster"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Shield Bashed",
+					"name": "盾牌猛击",
+					"foundryId": "shieldMaster",
+					"statuses": [
+						"prone"
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Skulker",
+			"name": "隐伏者",
+			"source": "XPHB",
+			"effects": [
+				{
+					"ENG_name": "Fog of War",
+					"name": "战争迷雾",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.skills.ste.roll.mode",
+							"mode": "ADD",
+							"value": 1
+						}
+					],
+					"descriptionEntries": [
+						{
+							"ENG_name": "Fog of War",
+							"name": "战争迷雾",
+							"type": "entries",
+							"entries": [
+								"你利用战斗中的分心，在战斗期间作为躲藏动作的一部分进行的任何敏捷（隐匿）检定中获得优势。"
+							]
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Slasher",
+			"name": "劈砍者",
+			"source": "XPHB",
+			"effects": [
+				{
+					"ENG_name": "Slashed",
+					"name": "挥砍",
+					"duration": {
+						"turns": 1
+					},
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "ADD",
+							"value": -10
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Speedy",
+			"name": "飙速跑者",
+			"source": "XPHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "ADD",
+							"value": 10
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Spell Resistant",
+			"name": "法术抗性",
+			"source": "AU",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Magic Resistant",
+					"name": "魔法抵抗",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "当你对抗法术或魔法效果的豁免检定失败时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"roll": {
+						"ENG_name": "Magic Resistant Bonus",
+						"name": "魔法抵抗加值",
+						"formula": "1d6"
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Spell Subterfuge",
+			"name": "法术诡计",
+			"source": "AU",
+			"activities": [
+				{
+					"ENG_name": "Shrouding Spells",
+					"name": "覆身法术",
+					"type": "utility",
+					"activation": {
+						"type": "bonus",
+						"condition": "当你使用法术位施放一个施法时间为一个动作的法术后"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Squat Nimbleness",
+			"name": "低身机敏",
+			"source": "XGE",
+			"effects": [
+				{
+					"ENG_name": "Movement Speed Increase",
+					"name": "移动速度增加",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "ADD",
+							"value": "+ 5"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Survivor",
+			"name": "生还者",
+			"source": "RHW",
+			"activities": [
+				{
+					"ENG_name": "Steel Yourself",
+					"name": "我心如铁",
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "你在避免或结束魅惑或恐慌状态的豁免检定中失败。"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "activityUses",
+								"value": "1"
+							}
+						]
+					},
+					"uses": {
+						"recovery": [
+							{
+								"period": "lr",
+								"type": "recoverAll"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"roll": {
+						"ENG_name": "Save Bonus",
+						"name": "豁免加值",
+						"formula": "@prof"
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Symbiotic Being",
+			"name": "共生存在",
+			"source": "RHW",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Sustained Symbiosis (Smallest HD)",
+					"name": "持续共生（最小生命骰）",
+					"type": "utility",
+					"img": "systems/dnd5e/icons/svg/dice/d4.svg",
+					"activation": {
+						"type": "reaction",
+						"condition": "你豁免检定失败"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "hitDice",
+								"value": "1",
+								"target": "最小"
+							},
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"roll": {
+						"ENG_name": "Save Bonus",
+						"name": "豁免加值",
+						"formula": "@consumed.hd"
+					}
+				},
+				{
+					"ENG_name": "Sustained Symbiosis (Largest HD)",
+					"name": "持续共生（最大生命骰）",
+					"type": "utility",
+					"img": "systems/dnd5e/icons/svg/dice/d12.svg",
+					"activation": {
+						"type": "reaction",
+						"condition": "你豁免检定失败"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "hitDice",
+								"value": "1",
+								"target": "最大"
+							},
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"roll": {
+						"ENG_name": "Save Bonus",
+						"name": "豁免加值",
+						"formula": "@consumed.hd"
+					}
+				},
+				{
+					"ENG_name": "Symbiotic Agenda",
+					"name": "共生目标",
+					"type": "save",
+					"activation": {
+						"type": "special",
+						"condition": "在D20检定中掷出1点后立即"
+					},
+					"duration": {
+						"units": "专长",
+						"value": "1",
+						"special": "1d12小时"
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"damage": {
+						"onSave": "none"
+					},
+					"save": {
+						"ability": [
+							"叉"
+						],
+						"dc": {
+							"formula": "13 + @prof"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "symbioticBeing"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Symbiotic Agenda (Charmed)",
+					"name": "共生目标（被魅惑）",
+					"foundryId": "symbioticBeing",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"value": 43200,
+						"units": "秒",
+						"expiry": "回合开始"
+					},
+					"statuses": [
+						"charmed"
+					],
+					"description": "你获得魅惑状态，持续1d12小时。在被魅惑期间，你必须尝试遵循共生体的命令并推进其目标，具体由DM决定。每当你受到伤害时，你可以重复此豁免检定，成功则结束该效果。",
+					"showIcon": 2
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Tavern Brawler",
+			"name": "酒馆斗殴者",
+			"source": "PHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.dnd5e.tavernBrawlerFeat",
+							"mode": "OVERRIDE",
+							"value": true
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Tavern Brawler",
+			"name": "酒馆斗殴者",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Enhanced Unarmed Strike",
+					"name": "强化徒手打击",
+					"type": "attack",
+					"activation": {
+						"type": "action"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"attack": {
+						"type": {
+							"value": "近战",
+							"classification": "徒手攻击"
+						}
+					},
+					"damage": {
+						"includeBase": true,
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "1d4r1 + @abilities.str.mod"
+								},
+								"number": 1,
+								"denomination": 4,
+								"bonus": "@abilities.str.mod",
+								"types": [
+									"钝击"
+								]
+							}
+						]
+					}
+				}
+			],
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.dnd5e.tavernBrawlerFeat",
+							"mode": "OVERRIDE",
+							"value": true
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Telekinetic",
+			"name": "念动力",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Telekinetic Shove: Intelligence",
+					"name": "念动推挤: 智力",
+					"type": "save",
+					"img": "systems/dnd5e/icons/svg/damage/psychic.svg",
+					"activation": {
+						"type": "bonus"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature",
+							"special": "你可以看到"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "30"
+					},
+					"damage": {
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"str"
+						],
+						"dc": {
+							"calculation": "int"
+						}
+					}
+				},
+				{
+					"ENG_name": "Telekinetic Shove: Wisdom",
+					"name": "念动推击：感知",
+					"type": "save",
+					"img": "systems/dnd5e/icons/svg/damage/psychic.svg",
+					"activation": {
+						"type": "bonus"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature",
+							"special": "你可以看到"
+						}
+					},
+					"range": {
+						"value": "30",
+						"units": "ft"
+					},
+					"damage": {
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"str"
+						],
+						"dc": {
+							"calculation": "wis"
+						}
+					}
+				},
+				{
+					"ENG_name": "Telekinetic Shove: Charisma",
+					"name": "念力推挤：魅力",
+					"type": "save",
+					"img": "systems/dnd5e/icons/svg/damage/psychic.svg",
+					"activation": {
+						"type": "bonus"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature",
+							"special": "你可以看到"
+						}
+					},
+					"range": {
+						"value": "30",
+						"units": "ft"
+					},
+					"damage": {
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"str"
+						],
+						"dc": {
+							"calculation": "cha"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Telepathic",
+			"name": "心灵感应",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Telepathic Utterance",
+					"name": "传心呢喃",
+					"type": "utility",
+					"img": "systems/dnd5e/icons/svg/damage/psychic.svg",
+					"activation": {
+						"type": ""
+					},
+					"range": {
+						"units": "ft",
+						"value": "60"
+					}
+				},
+				{
+					"ENG_name": "Expend Use",
+					"name": "消耗使用次数",
+					"type": "utility",
+					"activation": {
+						"type": ""
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Touch of Death",
+			"name": "往生咒",
+			"source": "RHW",
+			"activities": [
+				{
+					"ENG_name": "Chill Touch (Death Touch)",
+					"name": "死亡之触 (Death Touch)",
+					"type": "cast",
+					"activation": {
+						"type": "action"
+					},
+					"spell": {
+						"uuid": "{!@ $.feat[name=Touch-of-Death;source=RHW].activities[name=Chill-Touch--Death-Touch].spell.uuid.0}|{!@ $.feat[name=Touch-of-Death;source=RHW].activities[name=Chill-Touch--Death-Touch].spell.uuid.1}",
+						"properties": [
+							"声音",
+							"姿势",
+							"材质"
+						],
+						"spellbook": true
+					}
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Pull of the Grave",
+					"name": "坟冢之引",
+					"transfer": true,
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "system.attributes.death.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Tough",
+			"name": "健壮",
+			"source": "PHB",
+			"effects": [
+				{
+					"ENG_name": "HP Increase",
+					"name": "生命值增加",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.hp.bonuses.overall",
+							"mode": "ADD",
+							"value": "+(2 * @details.level)"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Tough",
+			"name": "健壮",
+			"source": "XPHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.hp.bonuses.level",
+							"mode": "ADD",
+							"value": 2
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Transmutation Adept",
+			"name": "变化专家",
+			"source": "AU",
+			"activities": [
+				{
+					"ENG_name": "Magical Augmentation",
+					"name": "魔法增幅",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "使用法术位施放一个变化法术"
+					},
+					"consumption": {
+						"scaling": {
+							"allowed": true,
+							"max": "9"
+						}
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "transmutationAde"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Magical Augmentation: Speed Increase",
+					"name": "魔法增幅：速度提升",
+					"foundryId": "transmutationAde",
+					"duration": {
+						"units": "秒",
+						"expiry": "回合结束"
+					},
+					"description": "在你的回合，当你使用法术位施放一个变化学派的法术时，你的速度会增加，增加的距离（以英尺计）等于所消耗法术位等级的五倍。此增益持续到回合结束。"
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Transmuted Anatomy",
+			"name": "万化本质",
+			"source": "AU",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "你未能通过体质豁免检定"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"roll": {
+						"ENG_name": "Save Bonus",
+						"name": "豁免加值",
+						"prompt": true,
+						"formula": "1d4"
+					}
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Lengthened Stride",
+					"name": "大步流星",
+					"transfer": true,
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "system.attributes.movement.bonus",
+							"value": 5,
+							"mode": "ADD"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Unarmed Fighting",
+			"name": "徒手战斗",
+			"source": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Unarmed Strike (Weapon in Hand)",
+					"name": "徒手打击（手持武器）",
+					"type": "attack",
+					"activation": {
+						"type": "action"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"attack": {
+						"type": {
+							"value": "近战",
+							"classification": "徒手攻击"
+						}
+					},
+					"damage": {
+						"includeBase": true,
+						"parts": [
+							{
+								"number": 1,
+								"denomination": 6,
+								"bonus": "@abilities.str.mod",
+								"types": [
+									"钝击"
+								]
+							}
+						]
+					}
+				},
+				{
+					"ENG_name": "Unarmed Strike (Empty Hand)",
+					"name": "徒手打击（空手）",
+					"type": "attack",
+					"activation": {
+						"type": "action"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"attack": {
+						"type": {
+							"value": "近战",
+							"classification": "徒手攻击"
+						}
+					},
+					"damage": {
+						"includeBase": true,
+						"parts": [
+							{
+								"number": 1,
+								"denomination": 8,
+								"bonus": "@abilities.str.mod",
+								"types": [
+									"钝击"
+								]
+							}
+						]
+					}
+				},
+				{
+					"ENG_name": "Grappled Damage",
+					"name": "擒抱伤害",
+					"type": "damage",
+					"activation": {
+						"type": "",
+						"condition": "在你的每个回合开始时"
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature",
+							"special": "被你擒抱"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"number": 1,
+								"denomination": 4,
+								"types": [
+									"钝击"
+								]
+							}
+						]
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "War Caster",
+			"name": "战地施法者",
+			"source": "PHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.concentration.roll.mode",
+							"mode": "OVERRIDE",
+							"value": "1"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "War Caster",
+			"name": "战地施法者",
+			"source": "XPHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.concentration.roll.mode",
+							"mode": "ADD",
+							"value": 1
+						}
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Warlike Familiar",
+			"name": "尚武魔宠",
+			"source": "AU",
+			"activities": [
+				{
+					"ENG_name": "Intercept Attack",
+					"name": "拦截攻击",
+					"type": "utility",
+					"activation": {
+						"type": "reaction",
+						"condition": "一个距离你的魔宠5尺内的生物被一次攻击掷骰命中"
+					},
+					"target": {
+						"affects": {
+							"type": "creature",
+							"count": "1"
+						}
+					},
+					"roll": {
+						"ENG_name": "Armor Class Bonus",
+						"name": "护甲等级加值",
+						"formula": "@prof"
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Watchers",
+			"name": "守望",
+			"source": "RHW",
+			"activities": [
+				{
+					"ENG_name": "Heightened Suspicion",
+					"name": "疑神疑鬼",
+					"type": "utility",
+					"img": "systems/dnd5e/icons/svg/dice/d4.svg",
+					"activation": {
+						"type": "special",
+						"condition": "每当你采取搜索行动时"
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"roll": {
+						"ENG_name": "Search Bonus",
+						"name": "搜索加值",
+						"formula": "1d4"
+					}
+				},
+				{
+					"ENG_name": "Incessant Watchers",
+					"name": "无终监视",
+					"type": "save",
+					"activation": {
+						"type": "special",
+						"condition": "在D20检定中掷出1点后立即"
+					},
+					"duration": {
+						"units": "分钟",
+						"value": "1"
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"damage": {
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"formula": "13 + @prof"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "watchers"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Paranoia",
+					"name": "被害妄想",
+					"foundryId": "watchers",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"value": 60,
+						"units": "秒",
+						"expiry": "回合开始"
+					},
+					"changes": [
+						{
+							"key": "system.abilities.str.check.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.str.save.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.dex.check.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.dex.save.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.con.check.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.con.save.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.int.check.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.int.save.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.wis.check.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.wis.save.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.cha.check.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.cha.save.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.attributes.death.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.attributes.concentration.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						}
+					],
+					"descriptionEntries": [
+						"{@i 攻击掷骰的劣势未被自动化。}"
+					]
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		}
+	]
+}

@@ -1,0 +1,404 @@
+{
+	"classFluff": [
+		{
+			"ENG_name": "Artificer",
+			"name": "奇械师",
+			"source": "TCE",
+			"entries": [
+				{
+					"ENG_name": "Artificer",
+					"name": "奇械师",
+					"type": "section",
+					"entries": [
+						"身为发明大师的奇械师能够通过巧思和魔法让物品发挥出非凡的性能。在他们心中，魔法是一个可以被用于驱动发明与法术，等待着被解码和操纵的复杂系统。在接下来的几节中，你将能找到扮演这样的一名发明家所需要的一切。奇械师通过各种工具来引导他们的奥法能量。在施法时，奇械师可能会使用炼金工具来调制出一剂神奇的灵药，可能会使用书法家工具在盟友的盔甲上绘制一个魔法印记，也可能会使用修补工具来制作一个临时的咒符。奇械师驱使的魔法和他们的工具与天赋息息相关，其他角色很少能像奇械师那样创造出目前最适用的工具。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Artificers in Many Worlds",
+									"name": "各个世界中的奇械师",
+									"type": "entries",
+									"entries": [
+										"在D&D多元宇宙中，奇械师制造的发明与魔法物品同时被用于和平和战争两方。一些奇械师的工作造福或拯救了许多生命，同时，也有许多生命因为奇械师造物所引发的大规模破坏而死去。",
+										"在被遗忘的国度里，兰檀岛Lantan是许多奇械师的家园，而在龙枪的世界里，修补匠侏儒经常是这个职业的一员。灰鹰世界障壁峰上的奇特技术启发了一些人走上奇械师的道路，在密斯塔拉，许多国家雇佣奇械师来维持飞艇和其他奇妙设备的运转。",
+										"在印记城，奇械师们分享着来自宇宙各地的发现，其中一个特别的人\u2014\u2014侏儒发明家Vi\u2014\u2014在那里经营着一家横跨多元宇宙的公司，吸引着冒险者们去解决那些别人认为无法被解决的问题。而在Vi的故乡世界艾伯伦，之所以魔法能被作为科学的一种形式加以利用，并广泛应用于社会各处，主要是奇械师那天马行空的聪明才智所造成的结果。"
+									]
+								},
+								{
+									"ENG_name": "Creating an Artificer",
+									"name": "创建一个奇械师",
+									"type": "entries",
+									"entries": [
+										"要创建一个奇械师角色，你需要参照下面的各小节，其中给出了你的生命值、熟练和起始装备。然后察看奇械师表格，了解在每个等级能够获得哪些特性。这些特性的详述被记载于\"奇械师特性\"节。"
+									]
+								},
+								{
+									"type": "quote",
+									"entries": [
+										"奇械师们发明了最前沿的问题，并试图解决它们\u2014\u2014然而过程十分吵闹且经常伴随着损害。"
+									],
+									"by": "塔莎"
+								},
+								{
+									"ENG_name": "Multiclassing and the Artificer",
+									"name": "兼职与奇械师 ",
+									"type": "entries",
+									"entries": [
+										"如果你的团队使用了记述于《{@book 玩家手册|PHB}》的兼职可选规则，以下是你兼职奇械师时需要知晓的内容。",
+										{
+											"ENG_name": "Ability Score Minimum",
+											"name": "最低属性值",
+											"type": "entries",
+											"entries": [
+												"作为一个兼职角色，你必须拥有至少13点的智力属性值才能兼职奇械师。如果你已是一名奇械师，你同样需要拥有至少13点的智力属性值才能兼职其他职业。"
+											]
+										},
+										{
+											"ENG_name": "Proficiencies Gained",
+											"name": "获得熟练项",
+											"type": "entries",
+											"entries": [
+												"若奇械师不是你的初始职业，你在获得第一个奇械师等级时获得以下熟练项：轻甲、中甲、盾牌、{@item 盗贼工具|PHB}、{@item 修补工具|PHB}。"
+											]
+										},
+										{
+											"ENG_name": "Spell Slots",
+											"name": "法术位",
+											"type": "entries",
+											"entries": [
+												"奇械师等级的一半（向上取整）将加上其他职业相应的等级来决定你可用的法术位"
+											]
+										}
+									]
+								}
+							]
+						}
+					],
+					"source": "TCE"
+				},
+				{
+					"ENG_name": "Artificer",
+					"name": "奇械师",
+					"type": "section",
+					"entries": [
+						"奇械师是最强的发明家，能够让普通的日常物品变成神奇的魔法物品。在他们心中，魔法是一个等待着被解码和操纵的复杂系统。奇械师使用工具来引导奥术能量，制造临时和永久的魔法物品。在施法时，奇械师可能会使用{@item 炼金工具|PHB}来调制出一剂神奇的灵药，可能会使用{@item 书法工具|PHB}在盟友的盔甲上绘制一个魔法印记，也可能会使用{@item 修补工具|PHB}来制作一个临时的咒符。奇械师驱使的魔法和他们的工具与天赋息息相关。",
+						{
+							"ENG_name": "Arcane Science",
+							"name": "奥术科学",
+							"type": "entries",
+							"entries": [
+								"在艾伯伦世界，奥术魔法被作为一种科学来加以利用，并应用于整个社会。奇械师正反映了这一发展。他们对魔法装置的知识和他们为普通物品注入魔法能量的能力，使得艾伯伦的宏大魔法工程能够持续进行。",
+								"在终末战争中，奇械师被大量训练出来。有许多人因为勇敢奇械师的发明而得救，也有无数人在奇械师发明所造成的大规模破坏中丧生。"
+							]
+						},
+						{
+							"ENG_name": "Seekers of New Lore",
+							"name": "新知识探索者",
+							"type": "entries",
+							"entries": [
+								"没有什么能比发现一种新金属或一种新的元素能量来源更让奇械师兴奋。在奇械师的圈子里，新发明和奇妙的发现总是最能让他们激动的东西。让要成名的奇械师必须搞出一样新东西，而不是复制他人的作品。",
+								"这种对新奇事物的追求促使奇械师成为冒险者。艾伯伦的主要旅行线路和人口稠密地区早已被探索过。因此，奇械师们走向文明的边缘，希望能在奥术研究领域中获得新的伟大发现。"
+							]
+						},
+						{
+							"ENG_name": "Creating an Artificer",
+							"name": "创建一个奇械师",
+							"type": "entries",
+							"entries": [
+								"当创造一个奇械师角色时，请考虑你角色的背景和冒险动力。这个角色有对手吗？这个角色与教授基本工艺的工匠或奇械师有什么关系？和你的DM谈谈奇械师在战役中所扮演的角色，以及你可能与哪些组织和NPC有联系。",
+								{
+									"ENG_name": "Artificers in Other Worlds",
+									"name": "异界奇械师",
+									"type": "inset",
+									"entries": [
+										"艾伯伦是与奇械师联系最紧密的世界，但是整个多元宇宙中都能看到这个职业的身影。例如，在被遗忘的国度里，兰檀岛是许多奇械师的家园，而在龙枪的世界里，修补匠侏儒经常是这个职业的一员。灰鹰世界障壁峰上的奇特技术启发了一些人走上奇械师的道路，在密斯塔拉，许多国家雇佣奇械师来维持飞艇和其他奇妙设备的运转。在印记城，奇械师们分享着来自宇宙各地的发现，其中一个特别的人侏儒发明家Vi在那里经营着一家横跨多元宇宙的公司。在世界之城拉尼卡，伊捷联盟培养了许多奇械师，他们的破坏力除了克莱恩的侏儒修补匠之外，无人能敌。"
+									]
+								},
+								{
+									"ENG_name": "Quick Build",
+									"name": "快速建卡",
+									"type": "entries",
+									"entries": [
+										"你可以按以下建议快速创建一名奇械师。首先，将最高属性分配给智力，次高属性分配给体质或敏捷。然后选择{@background 公会工匠}背景。"
+									]
+								},
+								{
+									"ENG_name": "Optional Rule: Multiclassing",
+									"name": "可选规则:兼职",
+									"type": "entries",
+									"entries": [
+										"如果你的团队使用了记述于《{@book 玩家手册|PHB}》的兼职可选规则，以下是你兼职奇械师时需要知晓的内容。",
+										{
+											"ENG_name": "Ability Score Minimum",
+											"name": "最低属性值",
+											"type": "entries",
+											"entries": [
+												"作为一个兼职角色，你必须拥有至少13点的智力属性值才能兼职奇械师。如果你已是一名奇械师，你同样需要拥有至少13点的智力属性值才能兼职其他职业。"
+											]
+										},
+										{
+											"ENG_name": "Proficiencies Gained",
+											"name": "获得熟练项",
+											"type": "entries",
+											"entries": [
+												"若奇械师不是你的初始职业，你在获得第一个奇械师等级时获得以下熟练项：轻甲、中甲、盾牌、{@item 盗贼工具|PHB}、{@item 修补工具|PHB}。"
+											]
+										},
+										{
+											"ENG_name": "Spell Slots",
+											"name": "法术位",
+											"type": "entries",
+											"entries": [
+												"奇械师等级的一半（向上取整）将加上其他职业相应的等级来决定你可用的法术位"
+											]
+										}
+									]
+								}
+							]
+						}
+					],
+					"source": "ERLW",
+					"page": 54
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/TCE/Artificer.webp"
+					},
+					"width": 1200,
+					"height": 800
+				}
+			]
+		},
+		{
+			"ENG_name": "Artificer",
+			"name": "奇械师",
+			"source": "EFA",
+			"entries": [
+				{
+					"ENG_name": "Artificer",
+					"name": "奇械师",
+					"type": "section",
+					"page": 1,
+					"entries": [
+						"发明大师，奇械师运用巧思与魔法来解锁物件中的非凡能力。他们将魔法视为一个等待被解码并随后用于法术和发明中的复杂系统。你可以在本章中找到扮演这些发明家所需的一切。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/EFA/Artificer.webp"
+					},
+					"credit": "Michael Broussard",
+					"width": 1700,
+					"height": 2160
+				}
+			]
+		}
+	],
+	"subclassFluff": [
+		{
+			"ENG_name": "Alchemist",
+			"name": "炼金师",
+			"shortName": "炼金师",
+			"source": "TCE",
+			"className": "奇械师",
+			"classSource": "TCE",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/TCE/Alchemist Artificer.webp"
+					},
+					"width": 800,
+					"height": 939
+				}
+			]
+		},
+		{
+			"ENG_name": "Armorer",
+			"name": "装甲师",
+			"shortName": "装甲师",
+			"source": "TCE",
+			"className": "奇械师",
+			"classSource": "TCE",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/TCE/Armorer Artificer.webp"
+					},
+					"width": 1200,
+					"height": 785
+				}
+			]
+		},
+		{
+			"ENG_name": "Artillerist",
+			"name": "魔炮师",
+			"shortName": "魔炮师",
+			"source": "TCE",
+			"className": "奇械师",
+			"classSource": "TCE",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/TCE/Artillerist Artificer.webp"
+					},
+					"width": 800,
+					"height": 1197
+				}
+			]
+		},
+		{
+			"ENG_name": "Battle Smith",
+			"name": "战地匠师",
+			"shortName": "战地匠师",
+			"source": "TCE",
+			"className": "奇械师",
+			"classSource": "TCE",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/TCE/Battle Smith Artificer.webp"
+					},
+					"width": 800,
+					"height": 780
+				}
+			]
+		},
+		{
+			"ENG_name": "Alchemist",
+			"name": "炼金师",
+			"shortName": "炼金师",
+			"source": "EFA",
+			"className": "奇械师",
+			"classSource": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/EFA/Alchemist Artificer.webp"
+					},
+					"credit": "John Grello",
+					"width": 850,
+					"height": 2087
+				}
+			]
+		},
+		{
+			"ENG_name": "Armorer",
+			"name": "装甲师",
+			"shortName": "装甲师",
+			"source": "EFA",
+			"className": "奇械师",
+			"classSource": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/EFA/Armorer Artificer.webp"
+					},
+					"credit": "John Grello",
+					"width": 850,
+					"height": 1866
+				}
+			]
+		},
+		{
+			"ENG_name": "Artillerist",
+			"name": "魔炮师",
+			"shortName": "魔炮师",
+			"source": "EFA",
+			"className": "奇械师",
+			"classSource": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/EFA/Artillerist Artificer.webp"
+					},
+					"credit": "John Thacker",
+					"width": 850,
+					"height": 1936
+				}
+			]
+		},
+		{
+			"ENG_name": "Battle Smith",
+			"name": "战地匠师",
+			"shortName": "战地匠师",
+			"source": "EFA",
+			"className": "奇械师",
+			"classSource": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/EFA/Battle Smith Artificer.webp"
+					},
+					"credit": "Michael Broussard",
+					"width": 850,
+					"height": 2009
+				}
+			]
+		},
+		{
+			"ENG_name": "Cartographer",
+			"name": "制图师",
+			"shortName": "制图师",
+			"source": "EFA",
+			"className": "奇械师",
+			"classSource": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/EFA/Cartographer Artificer.webp"
+					},
+					"credit": "Daarken",
+					"width": 850,
+					"height": 1998
+				}
+			]
+		},
+		{
+			"ENG_name": "Reanimator",
+			"name": "掘坟人",
+			"shortName": "掘坟人",
+			"source": "RHW",
+			"className": "奇械师",
+			"classSource": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/RHW/Reanimator Artificer.webp"
+					},
+					"title": "苏生师奇械师",
+					"credit": "Ignatius Budi",
+					"width": 850,
+					"height": 1762
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,163 @@
+{
+	"monsterFluff": [
+		{
+			"ENG_name": "Decapus",
+			"name": "十须怪",
+			"source": "TTP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"十须怪是独居的肉食性猎手，它们在树间荡来荡去，用10尺长的吸管触须捕捉猎物。十须怪也可以利用它们的触须攀爬墙壁和天花板。",
+								"在占据居高临下的有利位置后，十须怪会用一条触须悬挂，其他九条触须同时攻击。在地面上，十须怪行动速度较慢，危险性也较低。它必须用半数触须来支撑它的体重，剩下五条触须用来攻击和保护自己。",
+								{
+									"ENG_name": "Marine Decapus",
+									"name": "水生十须怪",
+									"type": "entries",
+									"entries": [
+										"水生十须怪与陆生十须怪相似，不同之处在于它具有 30 尺游泳速度，而且只能在水下呼吸。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/TTP/Decapus.webp"
+					},
+					"width": 668,
+					"height": 700
+				}
+			]
+		},
+		{
+			"ENG_name": "Geonid",
+			"name": "隐石",
+			"source": "TTP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"隐石也被称为石鱼或隐于岩石者，是一种小型智能穴居动物，起源于土元素位面 Elemental Plane of Earth。隐石的胳膊和腿从外壳底部的一个小洞里伸出来。隐石可以把它的四肢缩进壳里，然后将小洞闭合。当它这样做的时候，它看起来就像一颗大圆石。在这种状态下，隐石无法视物，只能依靠它的{@sense 震颤感知|MM}来探测附近的其他生物。",
+								{
+									"ENG_name": "Dark Lairs",
+									"name": "黑暗巢穴",
+									"type": "entries",
+									"entries": [
+										"隐石生活在天然隧道和洞穴中。它们主要以蜥蜴、老鼠、蛞蝓和其他害虫以及洞穴地衣和苔藓为食。隐石喜欢收集硬币和宝石，它们很少对抗比自己大的生物，除非是为了抢劫或吓跑它们。"
+									]
+								},
+								{
+									"ENG_name": "Stone Tell",
+									"name": "与石交谈",
+									"type": "entries",
+									"entries": [
+										"隐石可以与石头同调，从而让它们得知最近在该地区还有哪些其他生物。隐石利用这种能力来追踪猎物，并确定其他生物是否侵犯了它们的领地。收集到的信息并不精确，也不包括这些生物的具体身份或它们经过附近的确切时间。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/TTP/Geonid.webp"
+					},
+					"width": 773,
+					"height": 700
+				}
+			]
+		},
+		{
+			"ENG_name": "Topi",
+			"name": "脱皮丧尸",
+			"source": "TTP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"脱皮丧尸和丧尸类似。在它被活化之前，它的尸体萎缩到只有 2 英尺高，心脏被切除，然后用一个装有一条活毒蛇的皮质小包代替。这条蛇不需要空气和食物，它通过魔法使脱皮丧尸的爪子带毒。当一只脱皮丧尸死亡时，它体内的蛇也会死掉。创造脱皮丧尸的过程只有少数邪恶祭司和死灵法师知道。",
+								"脱皮丧尸比普通丧尸更难对付，而且它们的海绵状身体使它们对钝击伤害具有抗性。",
+								{
+									"ENG_name": "Undead Traits",
+									"name": "不死本质",
+									"type": "entries",
+									"entries": [
+										"脱皮丧尸无需空气、饮食和睡眠。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/TTP/Topi.webp"
+					},
+					"width": 779,
+					"height": 700
+				}
+			]
+		},
+		{
+			"ENG_name": "Two-Headed Plesiosaurus",
+			"name": "双头蛇颈龙",
+			"source": "TTP",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"双头蛇颈龙是一种海生恐龙，其紧凑的身体由强大的蹼推动。它具有捕食性和攻击性，会攻击遇到的任何生物。它灵活的颈部占其总长度的三分之一，使它可以向任何方向扭曲，以进行有力的咬击。",
+								{
+									"ENG_name": "Dinosaurs",
+									"name": "恐龙",
+									"type": "entries",
+									"entries": [
+										"恐龙，或称为巨兽，是世界上最古老的爬行动物之一。肉食性恐龙是野蛮的领地猎手。植食性恐龙较为温和，但它们可能会为了保护幼崽或在受到惊吓或骚扰时进行攻击。",
+										"恐龙有多种大小和形状。较大的种类通常颜色单调，而较小的恐龙则有着类似鸟类的鲜艳斑纹。恐龙漫游在人类很少涉足的崎岖和孤立的地区，包括遥远的山谷、难以到达的高原、热带岛屿和深沼泽。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MM/Plesiosaurus.webp"
+					},
+					"width": 1700,
+					"height": 1072
+				}
+			]
+		}
+	]
+}

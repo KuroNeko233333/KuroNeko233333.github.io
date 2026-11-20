@@ -1,0 +1,2199 @@
+{
+	"monster": [
+		{
+			"ENG_name": "Assassin Bug",
+			"name": "暗杀虫",
+			"type": "monstrosity",
+			"source": "MFF",
+			"page": 4,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 55,
+				"formula": "10d8 + 10"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 50
+			},
+			"str": 13,
+			"dex": 14,
+			"con": 13,
+			"int": 4,
+			"wis": 12,
+			"cha": 6,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"resist": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"麻痹"
+			],
+			"languages": [
+				"理解德鲁伊语但无法说"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Keen Smell",
+					"name": "敏锐嗅觉",
+					"entries": [
+						"刺客虫在进行依赖嗅觉的感知（{@skill 察觉}）检定时具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"刺客虫进行两次咬击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，范围 5 英尺，一个生物。{@h}7（{@damage 1d10 + 2}）点穿刺伤害，且目标必须成功通过一次{@dc 11} 体质豁免检定，否则将陷入{@condition 中毒}状态，持续 1 分钟。当目标以此方式{@condition 中毒}时，它将被{@condition 麻痹}。目标可以在其每个回合结束时重复进行豁免检定，成功则结束该效果。"
+					]
+				},
+				{
+					"ENG_name": "Ovipositor",
+					"name": "产卵器",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及 5 英尺，单一目标。{@h}目标被 {@dice 1d3} 个刺客虫卵侵染，这些虫卵会立即孵化成刺客虫蛆。在目标每回合开始时，目标每有一个蛆侵染就会受到 {@damage 1d6} 穿刺伤害。在目标的下个回合结束前对咬伤处使用火焰，会对目标造成 1 点火焰伤害并杀死这些刺客虫蛆。此后，蛆会深入皮肤内部无法被灼烧。",
+						"如果一个目标被刺客虫蛆寄生，并且在其回合结束时生命值降至0点，它将因为蛆虫钻入其心脏而死亡。任何治愈疾病的效应都能杀死寄生在目标上的所有刺客虫蛆。"
+					]
+				}
+			],
+			"traitTags": [
+				"敏锐感官"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"CS",
+				"DU"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"DIS",
+				"MW"
+			],
+			"conditionInflict": [
+				"麻痹",
+				"中毒"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Blindheim",
+			"name": "炫目者",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"炫目者"
+				]
+			},
+			"source": "MFF",
+			"page": 5,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 26,
+				"formula": "4d8 + 8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 16,
+			"con": 15,
+			"int": 8,
+			"wis": 10,
+			"cha": 9,
+			"skill": {
+				"athletics": "+3",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"地底通用语"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "Radiant Eyes",
+					"name": "辐照之眼",
+					"entries": [
+						"当盲海姆的眼睛张开时，它会在60尺的圆锥形区域内投射出明亮的光芒，并在额外的60尺内投射出昏暗的光芒。它在每个回合结束时设置这个圆锥形区域的方向。所有能看到盲海姆的生物在明亮光芒区域内以及距离盲海姆15尺内进行攻击检定时具有劣势。在明亮光芒区域内，具有阳光敏感特性的生物在看到盲海姆时进行攻击检定也具有劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw}命中{@hit 4}，触及5尺，单一目标。命中：5 ({@damage 1d6 + 2}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Radiant Blast",
+					"name": "光耀爆裂",
+					"entries": [
+						"辐射能量从盲光兽的眼睛中以15英尺的锥形爆发。该区域内的每个生物必须成功通过一个 {@dc 12} 体质豁免检定，否则将受到7（{@damage 2d6}）点光耀伤害并 {@condition 目盲} 直到盲光兽的下一回合结束。具有阳光敏感特性的生物在此豁免检定上有劣势。"
+					]
+				}
+			],
+			"languageTags": [
+				"U"
+			],
+			"damageTags": [
+				"P",
+				"R"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"目盲"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Crab Folk",
+			"name": "蟹人",
+			"type": "giant",
+			"source": "MFF",
+			"page": 6,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 68,
+				"formula": "8d10 + 24"
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 40
+			},
+			"str": 19,
+			"dex": 10,
+			"con": 17,
+			"int": 7,
+			"wis": 9,
+			"cha": 9,
+			"passive": 9,
+			"languages": [
+				"通用语",
+				"巨人语"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Limited Amphibiousness",
+					"name": "有限两栖",
+					"entries": [
+						"蟹人可以呼吸空气和水，但每24小时需要被淹没一次以避免窒息。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"蟹族进行两次爪击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及10尺，单一目标。{@h}7 ({@damage 1d6 + 4}) 钝击伤害，并且目标{@condition 受擒}（逃脱{@dc 14}）。直到这次抓住结束，蟹人可以自动用其爪击中目标，并且蟹人不能使用该爪对其他目标进行攻击。蟹人有两个爪，每个爪只能抓住单一目标。"
+					]
+				}
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"受擒"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Dire Corby",
+			"name": "恶鸦人",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"恶鸦人"
+				]
+			},
+			"source": "MFF",
+			"page": 7,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 16,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 13,
+			"dex": 14,
+			"con": 13,
+			"int": 6,
+			"wis": 8,
+			"cha": 7,
+			"skill": {
+				"acrobatics": "+4",
+				"perception": "+3"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"vulnerable": [
+				"雷鸣"
+			],
+			"conditionImmune": [
+				"恐慌"
+			],
+			"languages": [
+				"地底通用语"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Dire Cacophony",
+					"name": "恐怖尖啸",
+					"entries": [
+						"任何非恶鸦人的生物如果在恶鸦人60尺内开始其回合且能听到恶鸦人，必须进行一次{@dc 11}感知豁免检定。若豁免失败，该生物将无法使用{@action 疾走}动作，不能攀爬或施放除戏法外的法术，直到其下个回合开始。"
+					]
+				},
+				{
+					"ENG_name": "Keen Hearing",
+					"name": "敏锐听觉",
+					"entries": [
+						"凶残的科比在依赖于听觉的感知（{@skill 察觉}）检定上具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"恐怖的乌鸦用爪子进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6（{@damage 1d8 + 2}）点挥砍伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"敏锐感官"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"U"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Eye of Fear and Flame",
+			"name": "火惧之眼",
+			"type": "undead",
+			"source": "MFF",
+			"page": 8,
+			"referenceSources": [
+				"IMR"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 136,
+				"formula": "16d8 + 64"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 18,
+			"int": 18,
+			"wis": 17,
+			"cha": 18,
+			"save": {
+				"str": "+7",
+				"con": "+8",
+				"wis": "+7",
+				"cha": "+8"
+			},
+			"skill": {
+				"perception": "+7"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 17,
+			"resist": [
+				"暗蚀",
+				"心灵"
+			],
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"中毒",
+				"震慑"
+			],
+			"languages": [
+				"通用语",
+				"任何在其30尺范围内的生物所知道的所有语言"
+			],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"恐惧与火焰之眼的天生施法能力是智力（法术豁免{@dc 16}）。它能够天生施放以下法术，无需任何材料："
+					],
+					"will": [
+						"{@spell 侦测善恶}",
+						"{@spell 侦测思想}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 以太化}",
+							"{@spell 真知术}"
+						]
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Turn Immunity",
+					"name": "免疫驱散",
+					"entries": [
+						"恐惧与火焰之眼对驱散不死生物的效果免疫。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"恐惧与火焰之眼进行两次爪击并使用其宝石之眼。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}9 ({@damage 1d12 + 3}) 挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Gemstone Eyes",
+					"name": "宝石之眼",
+					"entries": [
+						"恐惧与火焰之眼发射以下魔法眼射线之一，选择它可以看到的90尺范围内的一个目标。",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Eye of Fear",
+									"name": "恐惧之眼",
+									"type": "item",
+									"entry": "目标及恐惧之眼和烈焰之选的最多四个生物，必须在目标10尺范围内，每个生物都必须进行一次{@dc 16}感知豁免检定，否则将被{@condition 恐慌}1分钟。受影响的生物可以在自己的每个回合结束时重复进行豁免检定，成功则结束该效果。"
+								},
+								{
+									"ENG_name": "Eye of Flame",
+									"name": "火焰之眼",
+									"type": "item",
+									"entry": "目标必须进行一次敏捷豁免检定，难度等级为{@dc 16}。豁免失败则目标受到44点({@damage 8d10})火焰伤害，如果目标是一个生物或易燃物体，则会被点燃。豁免成功则受到的伤害减半，并且不会被点燃。一个被点燃的目标在其每个回合开始时会受到5点({@damage 1d10})火焰伤害，直到有生物采取行动扑灭火焰。"
+								}
+							]
+						}
+					]
+				}
+			],
+			"traitTags": [
+				"免疫驱散"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"XX"
+			],
+			"damageTags": [
+				"F",
+				"S"
+			],
+			"damageTagsSpell": [
+				"O"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"恐慌"
+			],
+			"savingThrowForced": [
+				"敏捷",
+				"感知"
+			],
+			"savingThrowForcedSpell": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Fog Giant",
+			"name": "雾巨人",
+			"type": "giant",
+			"source": "MFF",
+			"page": 10,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 链甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 200,
+				"formula": "16d12 + 96"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 27,
+			"dex": 10,
+			"con": 22,
+			"int": 12,
+			"wis": 16,
+			"cha": 16,
+			"save": {
+				"con": "+10",
+				"wis": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"insight": "+7",
+				"perception": "+7",
+				"persuasion": "+7"
+			},
+			"passive": 17,
+			"languages": [
+				"通用语",
+				"巨人语"
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"巨人天生施法属性为魅力。巨人天生可以施展以下法术且不需要任何材料成分："
+					],
+					"will": [
+						"{@spell 侦测魔法}",
+						"{@spell 云雾术}",
+						"{@spell 光亮术}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell 羽落术}",
+							"{@spell 迷踪步}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Denizen of the Mist",
+					"name": "雾中居民",
+					"entries": [
+						"在其回合中，雾巨人忽略了由它或其他盟友雾巨人施放的{@spell 云雾术}法术的效果。"
+					]
+				},
+				{
+					"ENG_name": "Keen Smell",
+					"name": "敏锐嗅觉",
+					"entries": [
+						"巨人依赖嗅觉进行的感知（{@skill 察觉}）检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨人进行两次巨剑攻击并施放{@spell 云雾术}。"
+					]
+				},
+				{
+					"ENG_name": "Greatsword",
+					"name": "巨剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及10尺，单一目标。{@h}29 ({@damage 6d6 + 8}) 挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Rock",
+					"name": "掷石",
+					"entries": [
+						"{@atk rw} 命中{@hit 12}，射程60/240尺，单一目标。{@h}30 ({@damage 4d10 + 8}) 点钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Petty Tyrant {@recharge}",
+					"name": "凌弱暴君{@recharge}",
+					"entries": [
+						"雾巨人对它所控制的生物发出令人毛骨悚然的威胁。任何在其120尺范围内可见或可听的中等体型或更小的巨人盟友，可以使用其反应来进行一次近战攻击。"
+					]
+				}
+			],
+			"attachedItems": [
+				"巨剑|phb"
+			],
+			"traitTags": [
+				"敏锐感官"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Forlarren",
+			"name": "魔羊人",
+			"type": "fey",
+			"source": "MFF",
+			"page": 9,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "6d8 + 18"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 17,
+			"int": 12,
+			"wis": 11,
+			"cha": 18,
+			"skill": {
+				"acrobatics": "+5",
+				"deception": "+8",
+				"stealth": "+5"
+			},
+			"senses": [
+				"黑暗视觉 30 尺"
+			],
+			"passive": 10,
+			"languages": [
+				"通用语",
+				"木族语"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"弗洛拉伦的天赋施法能力是魅力（法术豁免{@dc 14}）。它能够天赋施放以下法术，无需任何材料组件："
+					],
+					"will": [
+						"{@spell 脚底抹油}",
+						"{@spell 虚假生命}",
+						"{@spell 次级幻象}",
+						"{@spell 魔法伎俩}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell 援助术}",
+							"{@spell 迷踪步}",
+							"{@spell 塔莎狂笑术}"
+						],
+						"1e": [
+							"{@spell 医疗术}",
+							"{@spell 灼热金属}",
+							"{@spell 镜影术}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"弗拉伦在对抗法术和其他魔法效果的豁免检定上具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"弗拉伦进行两次爪击和一次顶撞攻击，或者它进行三次七彩射线攻击。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}6（{@damage 1d6 + 3}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Gore",
+					"name": "顶撞",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}7 ({@damage 1d8 + 3}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Chromatic Ray",
+					"name": "繁彩射线",
+					"entries": [
+						"{@atk rs} 命中{@hit 6}，射程60尺，单一目标。{@h}3 ({@damage 1d6}) 闪电伤害加上3 ({@damage 1d6}) 火焰伤害再加上3 ({@damage 1d6}) 寒冷伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"S"
+			],
+			"damageTags": [
+				"C",
+				"F",
+				"L",
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Jermlaine",
+			"name": "杰莱鼠",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"杰莱鼠"
+				]
+			},
+			"source": "MFF",
+			"page": 11,
+			"size": [
+				"T"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 3,
+				"formula": "1d4 + 1"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 4,
+			"dex": 12,
+			"con": 13,
+			"int": 10,
+			"wis": 11,
+			"cha": 7,
+			"skill": {
+				"stealth": "+5"
+			},
+			"senses": [
+				"黑暗视觉 30 尺"
+			],
+			"passive": 10,
+			"languages": [
+				"地底通用语"
+			],
+			"cr": "1/8",
+			"trait": [
+				{
+					"ENG_name": "Lurkers in Shadow",
+					"name": "幽影潜伏者",
+					"entries": [
+						"杰尔梅因对黑暗视觉是{@condition 隐形}的。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"杰尔曼兽在对抗法术和其他魔法效果的豁免检定上有优势。"
+					]
+				},
+				{
+					"ENG_name": "Vermin Friend",
+					"name": "鼠之友",
+					"entries": [
+						"杰尔梅因能够与老鼠和巨型老鼠交流并理解它们。"
+					]
+				},
+				{
+					"ENG_name": "Swarming Rush",
+					"name": "乌合战术",
+					"entries": [
+						"当一个杰姆莱恩在距离另一个有意识的杰姆莱恩5英尺内时，它会在其武器伤害投掷上增加{@damage 1d4}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Club",
+					"name": "短棒",
+					"entries": [
+						"{@atk mw} {@hit -1} 攻击，触及 5 英尺，单一目标。{@h}1 ({@damage 1d4 - 3}) 钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Dart",
+					"name": "飞镖",
+					"entries": [
+						"{@atk rw} 命中{@hit 3}，射程20/60尺，单一目标。{@h}3 ({@damage 1d4 + 1}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"短棒|phb",
+				"飞镖|phb"
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"U"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Khargra",
+			"name": "土鱼",
+			"type": "elemental",
+			"source": "MFF",
+			"page": 12,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d6 + 4"
+			},
+			"speed": {
+				"walk": 5,
+				"fly": 30
+			},
+			"str": 13,
+			"dex": 10,
+			"con": 14,
+			"int": 5,
+			"wis": 11,
+			"cha": 6,
+			"skill": {
+				"perception": "+2",
+				"stealth": "+2"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 12,
+			"languages": [
+				"土族语"
+			],
+			"cr": "1/8",
+			"trait": [
+				{
+					"ENG_name": "Iron Scent",
+					"name": "铁质嗅觉",
+					"entries": [
+						"卡格拉可以在其周围30尺内嗅出铁质金属的位置。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}3 ({@damage 1d4 + 1}) 点穿刺伤害，如果目标穿戴着金属盔甲或携带金属盾牌，卡格拉会附着在该盔甲或盾牌上。附着期间，卡格拉不会攻击。相反，在每个卡格拉回合开始时，掷一个 {@dice d20}。如果掷出10或更高，该盔甲或盾牌提供的AC将永久性地累积减少-1。如果盔甲的AC降至10或盾牌的加值降至+0，则被摧毁。",
+						"卡格拉可以消耗5尺的移动来分离自身。一个生物，包括目标生物，可以使用它的行动来分离卡格拉。"
+					]
+				},
+				{
+					"ENG_name": "Earth Phasing",
+					"name": "土遁",
+					"entries": [
+						"直到它下一个回合结束，卡格拉可以在非魔法的土石中飞行。在这样做时，它不会扰乱它穿过的材料。它可以在土石中结束移动，但如果这个能力结束时它仍然在土石中，它将受到14 ({@damage 4d6}) 点力场伤害，并立即移动到最近的未被占据的空间。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Opportunistic Hunger",
+					"name": "伺饥待发",
+					"entries": [
+						"当一个生物用金属武器击中距离卡格拉5尺以内时，卡格拉可以对那个生物进行咬击。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"T"
+			],
+			"damageTags": [
+				"O",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Killmoulis",
+			"name": "旅居仙",
+			"type": "fey",
+			"source": "MFF",
+			"page": 13,
+			"size": [
+				"T"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 7,
+				"formula": "2d4 + 2"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 4,
+			"dex": 19,
+			"con": 13,
+			"int": 12,
+			"wis": 14,
+			"cha": 13,
+			"skill": {
+				"history": "+3",
+				"perception": "+4",
+				"stealth": "+8"
+			},
+			"senses": [
+				"黑暗视觉 30 尺"
+			],
+			"passive": 14,
+			"languages": [
+				"通用语",
+				"木族语",
+				"心灵感应 60 尺"
+			],
+			"cr": "0",
+			"action": [
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} {@hit -1} 攻击命中，触及 5 尺，单一目标。{@h}1 点钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Blessing of Bountiful Generosity (1/Day)",
+					"name": "慷慨祝福（1/日）",
+					"entries": [
+						"旅居仙针对其视野范围内100尺内的最多八个生物。当目标完成一次长休息时，它将恢复所有已使用的命中骰，并额外获得10点临时生命值。"
+					]
+				},
+				{
+					"ENG_name": "Curse of Poor Hospitality (1/Day)",
+					"name": "吝啬鬼诅咒（1/日）",
+					"entries": [
+						"旅居仙可以针对它能看到的100尺范围内的最多八个生物。当目标下一次完成长休息时，它不会恢复已使用的命中骰。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"S",
+				"TP"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"CUR",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Mite",
+			"name": "螨精",
+			"type": "fey",
+			"source": "MFF",
+			"page": 14,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 7,
+				"formula": "2d6"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 10,
+				"climb": 30
+			},
+			"str": 7,
+			"dex": 14,
+			"con": 11,
+			"int": 10,
+			"wis": 8,
+			"cha": 13,
+			"skill": {
+				"deception": "+3",
+				"stealth": "+6"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 9,
+			"languages": [
+				"木族语",
+				"地底通用语"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"ENG_name": "Vexing Presence",
+					"name": "惹人恼火",
+					"entries": [
+						"在能看见它的螨虫30尺范围内的非精类生物在敏捷检定和敏捷豁免检定上有劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及 5 尺或射程 20/60 尺，单一目标。{@h}4（{@damage 1d4 + 2}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Blood Boiling Hex {@recharge}",
+					"name": "沸血诅咒{@recharge}",
+					"entries": [
+						"这种螨虫可以在60尺内看到生物的地方施加一个诅咒，持续1分钟。如果螨虫隐藏起来，使用这种能力不会暴露它的位置。当生物受到这个诅咒的影响时，每当它进行攻击检定、属性检定或豁免检定时，它必须掷一个{@dice d6}，并将掷出的数字从{@dice d20}掷骰结果中减去。在任何回合中，如果它遭受诅咒的影响，目标可以作为反应攻击一个盟友，忽略诅咒的效果。然后它可以忽略诅咒的效果，直到它的回合结束。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"S",
+				"U"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Needle Lord",
+			"name": "针棘王",
+			"type": "plant",
+			"source": "MFF",
+			"page": 16,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "6d10 + 12"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 15,
+			"cha": 12,
+			"skill": {
+				"athletics": "+6",
+				"perception": "+4",
+				"stealth": "+2"
+			},
+			"senses": [
+				"盲视 30 尺"
+			],
+			"passive": 14,
+			"conditionImmune": [
+				"目盲",
+				"耳聋",
+				"力竭"
+			],
+			"languages": [
+				"木族语"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Needle Defense",
+					"name": "针棘防御",
+					"entries": [
+						"每当一个生物对针刺领主进行近战攻击时，它会受到2点穿刺伤害。一个生物可以选择以劣势攻击来避免这种伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"荨麻领主进行2次抓挠藤蔓攻击。"
+					]
+				},
+				{
+					"ENG_name": "Needle Volley",
+					"name": "万针齐发",
+					"entries": [
+						"针刺领主最多可以进行{@dice 1d6}次针刺攻击，但在其回合内不能对同一个目标进行超过两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Raking Vine",
+					"name": "纠缠藤蔓",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及10尺，单一目标。{@h}11 ({@damage 2d6 + 4}) 点穿刺伤害，并且目标{@condition 受擒}（逃脱{@dc 14}）。直到这个抓住结束，目标在其每个回合开始时受到11点穿刺伤害。藤蔓领主有两根抓挠藤蔓，每根只能抓住单一目标。"
+					]
+				},
+				{
+					"ENG_name": "Needle",
+					"name": "针",
+					"entries": [
+						"{@atk rw} 命中{@hit 2}，射程 60 尺，单一目标。{@h}2 ({@damage 1d4}) 穿刺伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"S"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"受擒"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Needle Spawn",
+			"name": "针棘怪",
+			"type": "plant",
+			"source": "MFF",
+			"page": 16,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 16,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 20
+			},
+			"str": 13,
+			"dex": 17,
+			"con": 12,
+			"int": 6,
+			"wis": 13,
+			"cha": 6,
+			"skill": {
+				"stealth": "+5"
+			},
+			"senses": [
+				"盲视 30 尺"
+			],
+			"passive": 11,
+			"conditionImmune": [
+				"目盲",
+				"耳聋",
+				"力竭"
+			],
+			"languages": [
+				"木族语"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Close Quarters Shooting",
+					"name": "近程射击",
+					"entries": [
+						"针刺生物在距离敌对生物5尺内时，如果攻击目标也位于针刺生物5尺内，且该生物可以看见针刺生物并且不是{@condition 失能}状态，针刺生物不会在远程攻击上遭受劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Needle Volley",
+					"name": "万针齐发",
+					"entries": [
+						"针刺虫在一回合内最多可以进行{@dice 1d6}次针刺攻击，但在其回合内不能对同一目标进行超过两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}6（{@damage 1d6 + 3}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Needle",
+					"name": "针",
+					"entries": [
+						"{@atk rw} 命中{@hit 5}，射程60尺，单一目标。{@h}5 ({@damage 1d4 + 3}) 点穿刺伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"languageTags": [
+				"S"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Norker",
+			"name": "诺克",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"类地精"
+				]
+			},
+			"source": "MFF",
+			"page": 17,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 16,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 10,
+			"con": 13,
+			"int": 8,
+			"wis": 8,
+			"cha": 7,
+			"skill": {
+				"athletics": "+3"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 9,
+			"languages": [
+				"通用语",
+				"地精语"
+			],
+			"cr": "1/2",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"诺克人进行一次钉头锤和一次咬击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}4（{@damage 1d6 + 1}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Mace",
+					"name": "硬头锤",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}4 ({@damage 1d6 + 1}) 点钝击伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Defensive Rebuke",
+					"name": "防守打击",
+					"entries": [
+						"如果一个生物在距离诺克5尺内对它进行近战攻击，诺克可以使用其反应来对它造成4点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"硬头锤|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Norker War Leader",
+			"name": "诺克战争领袖",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"类地精"
+				]
+			},
+			"source": "MFF",
+			"page": 17,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 39,
+				"formula": "6d8 + 12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 15,
+			"int": 12,
+			"wis": 11,
+			"cha": 13,
+			"skill": {
+				"athletics": "+5",
+				"intimidation": "+3",
+				"perception": "+2"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 12,
+			"languages": [
+				"通用语",
+				"地精语"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"诺克战争领袖进行一次巨斧攻击和一次咬击，并且还使用\"继续战斗，你们这些懒鬼\"。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}6（{@damage 1d6 + 3}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Greataxe",
+					"name": "巨斧",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}9（{@damage 1d12 + 3}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Fight On, You Slugs",
+					"name": "继续战斗，你们这些懒虫",
+					"entries": [
+						"诺克战争领袖可以选择60尺范围内能看到它的最多三名同盟地精类生物。被选中的生物每个都可以使用它们的反应来进行一次近战攻击。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Defensive Rebuke",
+					"name": "防守打击",
+					"entries": [
+						"如果一个生物在距离诺克5尺内对它进行近战攻击，诺克可以使用其反应来对它造成6点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"巨斧|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Screaming Devilkin",
+			"name": "尖叫小鬼",
+			"type": "fey",
+			"source": "MFF",
+			"page": 19,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 18,
+				"formula": "4d6 + 4"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": 40
+			},
+			"str": 4,
+			"dex": 16,
+			"con": 13,
+			"int": 5,
+			"wis": 8,
+			"cha": 11,
+			"senses": [
+				"黑暗视觉 30 尺"
+			],
+			"passive": 9,
+			"languages": [
+				"木族语"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Agile Flier",
+					"name": "敏捷飞越",
+					"entries": [
+						"当尖叫恶魔族在空中飞行时，对其进行的借机攻击有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Ceaseless Screaming",
+					"name": "持续尖叫",
+					"entries": [
+						"除了尖叫恶魔之外的任何生物，如果在听到尖叫的恶魔时，在其30尺范围内开始自己的回合，必须进行一次{@dc 10}",
+						"感知豁免检定。失败则生物将{@condition 失能}直到其下回合开始。成功则生物不受任何影响。"
+					]
+				},
+				{
+					"ENG_name": "Stunted Legs",
+					"name": "腿部残疾",
+					"entries": [
+						"尖叫恶魔族在进行攻击检定时具有劣势，并且在恶魔族不飞行时，所有对其的攻击检定获得优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Barbed Tail",
+					"name": "尾刺",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及 5 尺，单一目标。{@h}5（{@damage 1d4 + 3}）的穿刺伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"S"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"失能"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Xill",
+			"name": "希尔",
+			"type": "monstrosity",
+			"source": "MFF",
+			"page": 21,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 33,
+				"formula": "6d8 + 6"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 13,
+			"int": 11,
+			"wis": 14,
+			"cha": 9,
+			"skill": {
+				"acrobatics": "+6",
+				"athletics": "+4",
+				"perception": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 14,
+			"languages": [
+				"通用语"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Ethereal Jaunt",
+					"name": "以太漫游",
+					"entries": [
+						"作为附赠动作，西尔可以魔法地从物质界转移到以太界，或者反之亦然。"
+					]
+				},
+				{
+					"ENG_name": "Poison Stinger",
+					"name": "毒素螯针",
+					"entries": [
+						"希儿奇虫将毒液注入本轮中用爪子击中的一名生物体内。被选中的生物必须进行一次{@dc 11}体质豁免检定，如果本轮内被希儿奇虫击中多次，则处于劣势。豁免失败时，目标受到14（{@damage 4d6}）点毒素伤害，成功时则仅受到一半伤害。如果毒素伤害将目标的生命值降至0，目标将进入稳定状态但仍然{@condition 中毒}1小时，即使在恢复生命值后也是如此，并且在此{@condition 中毒}状态下{@condition 麻痹}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"希尔进行四次爪击。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}6（{@damage 1d4 + 4}）点穿刺伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"麻痹",
+				"中毒"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Ygorl, Lord of Entropy",
+			"name": "伊戈尔·熵之领主",
+			"type": "aberration",
+			"isNamedCreature": true,
+			"source": "MFF",
+			"page": 20,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 325,
+				"formula": "26d10 + 182"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40,
+				"swim": 40
+			},
+			"str": 24,
+			"dex": 18,
+			"con": 24,
+			"int": 20,
+			"wis": 16,
+			"cha": 26,
+			"save": {
+				"str": "+14",
+				"con": "+14",
+				"cha": "+15"
+			},
+			"skill": {
+				"arcana": "+12",
+				"deception": "+15",
+				"intimidation": "+15",
+				"persuasion": "+15"
+			},
+			"senses": [
+				"真实视觉 120 尺"
+			],
+			"passive": 13,
+			"resist": [
+				"强酸",
+				"寒冷",
+				"火焰",
+				"闪电",
+				"雷鸣"
+			],
+			"immune": [
+				"暗蚀",
+				"毒素",
+				{
+					"immune": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"中毒"
+			],
+			"languages": [
+				"所有",
+				"心灵感应 120 尺"
+			],
+			"cr": "23",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"伊戈尔的天生施法能力是魅力（法术豁免{@dc 23}，法术攻击命中{@hit 15}）。它天生可以施放以下法术，无需任何材料成分："
+					],
+					"will": [
+						"{@spell 枯萎术}",
+						"{@spell 闪现术}",
+						"{@spell 混乱箭|XGE}*",
+						"{@spell 侦测魔法}",
+						"{@spell 飞行术}",
+						"{@spell 护盾术}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell 死亡法阵}",
+							"{@spell 汲能术|XGE}*",
+							"{@spell 徽记术}（仅discord）"
+						],
+						"2e": [
+							"{@spell 死亡一指}",
+							"{@spell 重伤术}",
+							"*{@spell 精神监狱|XGE}"
+						],
+						"1e": [
+							"{@spell 律令死亡}",
+							"{@spell 律令震慑}",
+							"{@spell 徽记术}",
+							"{@spell 怪影杀手}"
+						]
+					},
+					"footerEntries": [
+						"* 来自《珊娜萨的万事指南》的法术"
+					],
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Entropic Aura",
+					"name": "熵之光环",
+					"entries": [
+						"每个非构装生物或不死生物在结束其回合时，如果位于伊戈尔15尺范围内，则会受到14点({@damage 4d6})暗蚀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性 (3/日)",
+					"entries": [
+						"如果伊戈尔未能通过豁免检定，它可以选择成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"伊戈尔在对抗法术和其他魔法效果的豁免检定上有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"伊戈尔进行三次攻击：两次使用其镰刀，一次使用其混乱之触。"
+					]
+				},
+				{
+					"ENG_name": "Scythe",
+					"name": "巨镰",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及10尺，单一生物。{@h}18 ({@damage 2d10 + 7}) 挥砍伤害加上19 ({@damage 3d12}) 暗蚀伤害。任何生物如果被这次攻击减少到0生命值，则其身体以及它穿戴和携带的所有物品（除了魔法物品）将爆炸成灰烬。该生物只能通过一个{@spell 祈愿术}法术来恢复生命。"
+					]
+				},
+				{
+					"ENG_name": "Entropic Touch",
+					"name": "熵能之触",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及 5 尺，单一目标。{@h}16 ({@damage 2d8 + 7}) 点暗蚀伤害，且目标必须成功通过一次 {@dc 22} 体质豁免，否则获得一级 {@condition 力竭}。"
+					]
+				},
+				{
+					"ENG_name": "Summon Slaadi (1/Day)",
+					"name": "召唤史拉蟾（1/日）",
+					"entries": [
+						"伊戈尔召唤{@dice 1d4 + 1} {@creature 史拉亡蟾||史拉亡蟾}。召唤出的史拉蟾出现在伊戈尔60尺内的未被占据的空间，作为伊戈尔的盟友行动，并且不能召唤其他史拉蟾族。它会持续存在1分钟，直到它或伊戈尔死亡，或者直到伊戈尔采取行动将其解散。"
+					]
+				},
+				{
+					"ENG_name": "Teleport",
+					"name": "传送",
+					"entries": [
+						"伊戈尔连同它穿戴或携带的任何装备一起传送，最多可以传送到120尺外它能看到的未被占据的空间。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Scythe",
+					"name": "巨镰",
+					"entries": [
+						"伊戈尔用其镰刀进行一次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Teleport",
+					"name": "传送",
+					"entries": [
+						"伊戈尔使用其传送动作。"
+					]
+				},
+				{
+					"ENG_name": "Call the Void (Costs 3 Actions)",
+					"name": "召唤虚空（花费3个动作）",
+					"entries": [
+						"在伊戈尔30尺范围内的每个生物，如果不是构装生物或不死生物，必须进行一次{@dc 22}体质豁免检定，以对抗混沌领主试图破坏生命的行为，失败则受到42 ({@damage 12d6})点暗蚀伤害，成功则只受到一半的伤害。然后伊戈尔恢复等于所有受影响生物所受伤害总和一半的生命值。"
+					]
+				}
+			],
+			"traitTags": [
+				"传奇抗性",
+				"魔法抗性"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"多重攻击",
+				"传送"
+			],
+			"languageTags": [
+				"TP",
+				"XX"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"O",
+				"T",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"力竭"
+			],
+			"conditionInflictSpell": [
+				"恐慌",
+				"失能",
+				"震慑",
+				"昏迷"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"体质",
+				"敏捷",
+				"智力",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}

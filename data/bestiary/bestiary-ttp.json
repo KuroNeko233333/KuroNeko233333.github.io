@@ -1,0 +1,505 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
+		"otherSources": {
+			"monster": {
+				"MTF": "TTP",
+				"MM": "TTP"
+			}
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Decapus",
+			"name": "十须怪",
+			"type": "monstrosity",
+			"source": "TTP",
+			"page": 21,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d10 + 20"
+			},
+			"speed": {
+				"walk": 15,
+				"climb": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 14,
+			"int": 4,
+			"wis": 10,
+			"cha": 7,
+			"skill": {
+				"athletics": "+4",
+				"perception": "+2",
+				"stealth": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 12,
+			"cr": "4",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"十须怪进行两次攻击，一次啃咬，一次触须。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一被十须怪{@condition 受擒}的目标。{@h} 7（{@damage 2d4 + 2}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Tentacles",
+					"name": "触须",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及10尺，单一目标。{@h}如果十须怪攀爬于高处，同时并未擒抱除了该目标外的其他生物，则造成24（{@damage 9d4 + 2}）点钝击伤害；否则造成14（{@damage 5d4 + 2}）点钝击伤害。如果十须怪并未{@condition 受擒}任何其他生物，则该目标被擒抱（挣脱{@dc 14}）。直至擒抱结束前，目标被{@condition 束缚}。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击",
+				"触须"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"受擒",
+				"束缚"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Geonid",
+			"name": "隐石",
+			"type": "elemental",
+			"source": "TTP",
+			"page": 22,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 26,
+				"formula": "4d6 + 12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 10,
+			"con": 16,
+			"int": 9,
+			"wis": 14,
+			"cha": 11,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+2"
+			},
+			"senses": [
+				"黑暗视觉 60 尺",
+				"震颤感知 30 尺"
+			],
+			"passive": 14,
+			"cr": "1/4",
+			"trait": [
+				{
+					"ENG_name": "Boulder Guise",
+					"name": "圆石伪装",
+					"entries": [
+						"当隐石完全缩回至自己的壳内时，它就无法视物，并且看起来跟一块普通圆石一模一样。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Club",
+					"name": "短棒",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}3 ({@damage 1d4 + 1}) 点钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Stone Tell",
+					"name": "与石交谈",
+					"entries": [
+						"隐石接触一件石质物体或表面，得知过去 24 小时内经过石头 10 英尺内的所有生物种类。隐石还可以确定每个种类的生物数量，但无法确定他们的身份。"
+					]
+				}
+			],
+			"attachedItems": [
+				"短棒|phb"
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Giant Slug",
+			"name": "巨蛞蝓",
+			"type": "monstrosity",
+			"source": "TTP",
+			"page": 18,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 66,
+				"formula": "6d10 + 18"
+			},
+			"speed": {
+				"walk": 10,
+				"climb": 10
+			},
+			"str": 14,
+			"dex": 13,
+			"con": 16,
+			"int": 1,
+			"wis": 12,
+			"cha": 5,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"languages": [
+				"深渊语",
+				"水族语",
+				"通用语"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"蛞蝓的天赋施法能力是感知（法术豁免{@dc 11}，法术攻击命中{@hit 3}）。它能够天赋施展以下法术，无需任何材料组件："
+					],
+					"daily": {
+						"1e": [
+							"{@spell 光导箭}",
+							"{@spell 庇护术}",
+							"{@spell 灵体武器}"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Keen Smell",
+					"name": "敏锐嗅觉",
+					"entries": [
+						"蛞蝓在依赖嗅觉的感知（{@skill 察觉})检定时具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Spider Climb",
+					"name": "蛛行术",
+					"entries": [
+						"这种蛞蝓能够攀爬困难的表面，包括在天花板上倒挂，无需进行属性检定。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"蛞蝓进行两次攻击：一次用它的触手，一次用它的咬击。"
+					]
+				},
+				{
+					"ENG_name": "Tentacles",
+					"name": "触须",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及10尺，单一生物。{@h}4（{@damage 1d4 + 2}）点毒素伤害，目标必须进行一次{@dc 13}的体质豁免，豁免失败则{@condition 中毒}1分钟，并在中毒期间陷入{@condition 麻痹}。目标可以在每个其自己回合结束时再进行一次该豁免，豁免成功则该中毒效应终止。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw}命中{@hit 4}，触及5 尺，单一目标。{@h}7（{@damage 2d4 + 2}）点穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Animate Tentacle",
+					"name": "活化触手",
+					"entries": [
+						"当蛞蝓在这个洞穴中受到伤害（{@adventure 乌姆贝尔利神庙|ttp|3|24. 乌姆贝尔莱的神龛}），它可以使用反应来激活克拉肯雕像的一根触手，并使其对雕像20尺范围内蛞蝓能看到的一个生物进行近战武器攻击（{@hit 3}命中）。触手在命中时造成8（{@damage 1d8 + 4}）点钝击伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"敏锐感官",
+				"蛛行术"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击",
+				"触须"
+			],
+			"languageTags": [
+				"AB",
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"damageTagsSpell": [
+				"O",
+				"R"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"麻痹",
+				"中毒"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"savingThrowForcedSpell": [
+				"感知"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Topi",
+			"name": "脱皮丧尸",
+			"type": "undead",
+			"source": "TTP",
+			"page": 22,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 13,
+				"formula": "3d6 + 3"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 7,
+			"dex": 15,
+			"con": 12,
+			"int": 6,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"resist": [
+				"钝击"
+			],
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"中毒"
+			],
+			"languages": [
+				"理解它生前所知的语言，但不会说"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Turn Resistance",
+					"name": "驱散抗性",
+					"entries": [
+						"脱皮丧尸为了抵抗驱散不死生物效应所进行的豁免检定具优势。"
+					]
+				},
+				{
+					"ENG_name": "Undead Fortitude",
+					"name": "不死坚韧",
+					"entries": [
+						"当脱皮丧尸因受非光耀非重击伤害而使其生命值减至 0 时，它必须进行一次 DC 为 5＋所受伤害值的体质豁免，豁免成功则生命值降至 1。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Venomous Claws",
+					"name": "毒爪",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}4 ({@damage 1d4 + 2}) 点挥砍伤害加上2 ({@damage 1d4}) 点毒素伤害，目标必须进行{@dc 11}的体质豁免，豁免失败则陷入{@condition 中毒}状态，持续至目标下回合结束时。"
+					]
+				}
+			],
+			"traitTags": [
+				"驱散抗性",
+				"不死坚韧"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"I",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"中毒"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Two-Headed Plesiosaurus",
+			"name": "双头蛇颈龙",
+			"source": "TTP",
+			"page": 18,
+			"_copy": {
+				"ENG_name": "Plesiosaurus",
+				"name": "蛇颈龙",
+				"source": "MM",
+				"_mod": {
+					"trait": [
+						{
+							"mode": "prependArr",
+							"items": {
+								"ENG_name": "Two Heads",
+								"name": "双头",
+								"entries": [
+									"双头蛇颈龙在感知（{@skill 察觉})检定上具有优势，并且在对抗{@condition 目盲}、{@condition 魅惑}、{@condition 耳聋}、{@condition 恐慌}、{@condition 昏迷}以及被击昏{@condition 震慑}的豁免检定上具有优势。"
+								]
+							}
+						}
+					],
+					"action": [
+						{
+							"mode": "prependArr",
+							"items": {
+								"ENG_name": "Multiattack",
+								"name": "多重攻击",
+								"entries": [
+									"双头蛇颈龙进行两次咬击。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"hp": {
+				"average": 100,
+				"formula": "8d10 + 24"
+			},
+			"cr": "4",
+			"actionTags": [
+				"多重攻击"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}

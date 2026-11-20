@@ -1,0 +1,29 @@
+{
+	"vehicleUpgrade": [
+		{
+			"ENG_name": "Reinforced Hull",
+			"name": "加固船体",
+			"source": "GoS",
+			"effects": [
+				{
+					"ENG_name": "HP Increase",
+					"name": "生命值增加",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.hp.max",
+							"mode": "MULTIPLY",
+							"value": "2"
+						},
+						{
+							"key": "system.attributes.hp.value",
+							"mode": "MULTIPLY",
+							"value": "2"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		}
+	]
+}

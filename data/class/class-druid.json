@@ -1,0 +1,5301 @@
+{
+	"_meta": {
+		"internalCopies": [
+			"subclass",
+			"subclassFeature"
+		]
+	},
+	"class": [
+		{
+			"ENG_name": "Druid",
+			"name": "德鲁伊",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"reprintedAs": [
+				"德鲁伊|XPHB"
+			],
+			"edition": "classic",
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"int",
+				"wis"
+			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "full",
+			"preparedSpells": "<$level$> + <$wis_mod$>",
+			"preparedSpellsChange": "restLong",
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"animal handling",
+								"insight",
+								"medicine",
+								"nature",
+								"perception",
+								"religion",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"{@item 短棒|phb|短棒}",
+					"{@item 匕首|phb|匕首}",
+					"{@item 飞镖|phb|飞镖}",
+					"{@item 标枪|phb|标枪}",
+					"{@item 硬头锤|phb|硬头锤}",
+					"{@item 长棍|phb|长棍}",
+					"{@item 弯刀|phb|弯刀}",
+					"{@item 镰刀|phb|镰刀}",
+					"{@item 投石索|phb|投石索}",
+					"{@item 矛|phb|三叉枪}"
+				],
+				"tools": [
+					"{@item 草药工具|phb}"
+				],
+				"toolProficiencies": [
+					{
+						"herbalism kit": true
+					}
+				],
+				"armor": [
+					"light",
+					"medium",
+					{
+						"proficiency": "shield",
+						"full": "shields (druids will not wear armor or use shields made of metal)"
+					}
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"medium": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"default": [
+					"(a) 一个木制{@item 盾牌|phb}或(b)任意{@filter 简易武器|items|source=phb|category=基础|type=简易武器}",
+					"(a) 一把 {@item 弯刀|phb} 或 (b) 任意{@filter 简易近战武器|items|source=phb|category=基础|type=简易武器;近战武器=sand}",
+					"{@item 皮甲|phb}, 一个 {@item 探索套组|phb}, 和一个 {@item 德鲁伊法器|phb}"
+				],
+				"goldAlternative": "{@dice 2d4 × 10|2d4 × 10|起始金币}",
+				"defaultData": [
+					{
+						"a": [
+							"盾牌|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimple"
+							}
+						]
+					},
+					{
+						"a": [
+							"弯刀|phb"
+						],
+						"b": [
+							{
+								"equipmentType": "weaponSimpleMelee"
+							}
+						]
+					},
+					{
+						"_": [
+							"皮甲|phb",
+							"探索套组|phb",
+							{
+								"equipmentType": "focusSpellcastingDruidic"
+							}
+						]
+					}
+				]
+			},
+			"multiclassing": {
+				"requirements": {
+					"wis": 13
+				},
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"medium",
+						{
+							"proficiency": "shield",
+							"full": "shields (druids will not wear armor or use shields made of metal)"
+						}
+					],
+					"armorProficiencies": [
+						{
+							"light": true,
+							"medium": true,
+							"shield": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"{@filter 已知戏法|spells|level=0|class=德鲁伊}"
+					],
+					"rows": [
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							2
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						]
+					]
+				},
+				{
+					"title": "每环法术位",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=德鲁伊}",
+						"{@filter 2nd|spells|level=2|class=德鲁伊}",
+						"{@filter 3rd|spells|level=3|class=德鲁伊}",
+						"{@filter 4th|spells|level=4|class=德鲁伊}",
+						"{@filter 5th|spells|level=5|class=德鲁伊}",
+						"{@filter 6th|spells|level=6|class=德鲁伊}",
+						"{@filter 7th|spells|level=7|class=德鲁伊}",
+						"{@filter 8th|spells|level=8|class=德鲁伊}",
+						"{@filter 9th|spells|level=9|class=德鲁伊}"
+					],
+					"rowsSpellProgression": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							2,
+							1,
+							1
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"德鲁伊语|德鲁伊||1",
+				"施法|德鲁伊||1",
+				"荒野形态|德鲁伊||2",
+				"荒野伙伴|德鲁伊||2|TCE",
+				{
+					"classFeature": "德鲁伊结社|德鲁伊||2",
+					"gainSubclassFeature": true
+				},
+				"荒野形态增效|德鲁伊||4",
+				"属性值提升|德鲁伊||4",
+				"替换戏法|德鲁伊||4|TCE",
+				{
+					"classFeature": "德鲁伊结社特性|德鲁伊||6",
+					"gainSubclassFeature": true
+				},
+				"荒野形态增效|德鲁伊||8",
+				"属性值提升|德鲁伊||8",
+				{
+					"classFeature": "德鲁伊结社特性|德鲁伊||10",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|德鲁伊||12",
+				{
+					"classFeature": "德鲁伊结社特性|德鲁伊||14",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|德鲁伊||16",
+				"不朽身|德鲁伊||18",
+				"兽形施法|德鲁伊||18",
+				"属性值提升|德鲁伊||19",
+				"大德鲁伊|德鲁伊||20"
+			],
+			"subclassTitle": "德鲁伊结社",
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Druid",
+			"name": "德鲁伊",
+			"source": "XPHB",
+			"page": 78,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"primaryAbility": [
+				{
+					"wis": true
+				}
+			],
+			"hd": {
+				"number": 1,
+				"faces": 8
+			},
+			"proficiency": [
+				"int",
+				"wis"
+			],
+			"spellcastingAbility": "wis",
+			"casterProgression": "full",
+			"preparedSpellsProgression": [
+				4,
+				5,
+				6,
+				7,
+				9,
+				10,
+				11,
+				12,
+				14,
+				15,
+				16,
+				16,
+				17,
+				17,
+				18,
+				18,
+				19,
+				20,
+				21,
+				22
+			],
+			"preparedSpellsChange": "restLong",
+			"cantripProgression": [
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4,
+				4
+			],
+			"additionalSpells": [
+				{
+					"prepared": {
+						"1": [
+							"动物交谈|xphb"
+						],
+						"2": [
+							"寻获魔宠|xphb"
+						]
+					}
+				}
+			],
+			"featProgression": [
+				{
+					"ENG_name": "Epic Boon",
+					"name": "传奇恩惠",
+					"category": [
+						"EB"
+					],
+					"progression": {
+						"19": 1
+					}
+				}
+			],
+			"startingProficiencies": {
+				"skills": [
+					{
+						"choose": {
+							"from": [
+								"arcana",
+								"animal handling",
+								"insight",
+								"medicine",
+								"nature",
+								"perception",
+								"religion",
+								"survival"
+							],
+							"count": 2
+						}
+					}
+				],
+				"weapons": [
+					"简易"
+				],
+				"tools": [
+					"{@item 草药工具|XPHB}"
+				],
+				"toolProficiencies": [
+					{
+						"herbalism kit": true
+					}
+				],
+				"armor": [
+					"light",
+					"shield"
+				],
+				"armorProficiencies": [
+					{
+						"light": true,
+						"shield": true
+					}
+				]
+			},
+			"startingEquipment": {
+				"additionalFromBackground": true,
+				"defaultData": [
+					{
+						"A": [
+							{
+								"item": "皮甲|xphb"
+							},
+							{
+								"item": "盾牌|xphb"
+							},
+							{
+								"item": "镰刀|xphb"
+							},
+							{
+								"item": "德鲁伊法器|xphb"
+							},
+							{
+								"item": "探索套组|xphb"
+							},
+							{
+								"item": "草药工具|xphb"
+							},
+							{
+								"value": 900
+							}
+						],
+						"B": [
+							{
+								"value": 5000
+							}
+						]
+					}
+				],
+				"entries": [
+					"{@i 选择A或B：} (A) {@item 皮甲|XPHB}, {@item 盾牌|XPHB}, {@item 镰刀|XPHB}, {@item 德鲁伊法器|XPHB|德鲁伊法器（长棍）}, {@item 探索套组|XPHB}, {@item 草药工具|XPHB}, 9金币; 或 (B) 50金币"
+				]
+			},
+			"multiclassing": {
+				"proficienciesGained": {
+					"armor": [
+						"light",
+						"shield"
+					],
+					"armorProficiencies": [
+						{
+							"light": true,
+							"shield": true
+						}
+					]
+				}
+			},
+			"classTableGroups": [
+				{
+					"colLabels": [
+						"荒野形态",
+						"{@filter 戏法|spells|level=0|class=德鲁伊}",
+						"{@filter 准备法术|spells|level=!0|class=德鲁伊}"
+					],
+					"rows": [
+						[
+							0,
+							2,
+							4
+						],
+						[
+							2,
+							2,
+							5
+						],
+						[
+							2,
+							2,
+							6
+						],
+						[
+							2,
+							3,
+							7
+						],
+						[
+							2,
+							3,
+							9
+						],
+						[
+							3,
+							3,
+							10
+						],
+						[
+							3,
+							3,
+							11
+						],
+						[
+							3,
+							3,
+							12
+						],
+						[
+							3,
+							3,
+							14
+						],
+						[
+							3,
+							4,
+							15
+						],
+						[
+							3,
+							4,
+							16
+						],
+						[
+							3,
+							4,
+							16
+						],
+						[
+							3,
+							4,
+							17
+						],
+						[
+							3,
+							4,
+							17
+						],
+						[
+							3,
+							4,
+							18
+						],
+						[
+							3,
+							4,
+							18
+						],
+						[
+							4,
+							4,
+							19
+						],
+						[
+							4,
+							4,
+							20
+						],
+						[
+							4,
+							4,
+							21
+						],
+						[
+							4,
+							4,
+							22
+						]
+					]
+				},
+				{
+					"title": "每环法术位",
+					"colLabels": [
+						"{@filter 1st|spells|level=1|class=德鲁伊}",
+						"{@filter 2nd|spells|level=2|class=德鲁伊}",
+						"{@filter 3rd|spells|level=3|class=德鲁伊}",
+						"{@filter 4th|spells|level=4|class=德鲁伊}",
+						"{@filter 5th|spells|level=5|class=德鲁伊}",
+						"{@filter 6th|spells|level=6|class=德鲁伊}",
+						"{@filter 7th|spells|level=7|class=德鲁伊}",
+						"{@filter 8th|spells|level=8|class=德鲁伊}",
+						"{@filter 9th|spells|level=9|class=德鲁伊}"
+					],
+					"rowsSpellProgression": [
+						[
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							1,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							1,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							1,
+							1,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							3,
+							3,
+							2,
+							2,
+							1,
+							1
+						]
+					]
+				}
+			],
+			"classFeatures": [
+				"德鲁伊语|德鲁伊|XPHB|1",
+				"原初职能|德鲁伊|XPHB|1",
+				"施法|德鲁伊|XPHB|1",
+				"荒野伙伴|德鲁伊|XPHB|2",
+				"荒野形态|德鲁伊|XPHB|2",
+				{
+					"classFeature": "德鲁伊子职|德鲁伊|XPHB|3",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|德鲁伊|XPHB|4",
+				"荒野复苏|德鲁伊|XPHB|5",
+				{
+					"classFeature": "子职特性|德鲁伊|XPHB|6",
+					"gainSubclassFeature": true
+				},
+				"元素之怒|德鲁伊|XPHB|7",
+				"属性值提升|德鲁伊|XPHB|8",
+				{
+					"classFeature": "子职特性|德鲁伊|XPHB|10",
+					"gainSubclassFeature": true
+				},
+				"属性值提升|德鲁伊|XPHB|12",
+				{
+					"classFeature": "子职特性|德鲁伊|XPHB|14",
+					"gainSubclassFeature": true
+				},
+				"元素狂怒|德鲁伊|XPHB|15",
+				"属性值提升|德鲁伊|XPHB|16",
+				"兽形施法|德鲁伊|XPHB|18",
+				"传奇恩惠|德鲁伊|XPHB|19",
+				"大德鲁伊|德鲁伊|XPHB|20"
+			],
+			"subclassTitle": "德鲁伊子职",
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	],
+	"subclass": [
+		{
+			"ENG_name": "Circle of the Land",
+			"name": "大地结社",
+			"shortName": "大地",
+			"source": "PHB",
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"page": 68,
+			"srd": true,
+			"reprintedAs": [
+				"大地|德鲁伊|XPHB|XPHB"
+			],
+			"edition": "classic",
+			"additionalSpells": [
+				{
+					"ENG_name": "Arctic",
+					"name": "极地",
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=德鲁伊"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": [
+							"定身类人",
+							"荆棘丛生"
+						],
+						"5": [
+							"雪雨暴",
+							"缓慢术"
+						],
+						"7": [
+							"行动自如",
+							"冰风暴"
+						],
+						"9": [
+							"问道自然",
+							"寒冰锥"
+						]
+					}
+				},
+				{
+					"ENG_name": "Coast",
+					"name": "海岸",
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=德鲁伊"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": [
+							"镜影术",
+							"迷踪步"
+						],
+						"5": [
+							"水下呼吸",
+							"水上行走"
+						],
+						"7": [
+							"操控水体",
+							"行动自如"
+						],
+						"9": [
+							"咒唤元素",
+							"探知术"
+						]
+					}
+				},
+				{
+					"ENG_name": "Desert",
+					"name": "荒漠",
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=德鲁伊"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": [
+							"朦胧术",
+							"沉默术"
+						],
+						"5": [
+							"造粮术",
+							"防护能量"
+						],
+						"7": [
+							"枯萎术",
+							"幻景"
+						],
+						"9": [
+							"疫病虫群",
+							"石墙术"
+						]
+					}
+				},
+				{
+					"ENG_name": "Forest",
+					"name": "森林",
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=德鲁伊"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": [
+							"树肤术",
+							"蛛行术"
+						],
+						"5": [
+							"召雷术",
+							"植物滋长"
+						],
+						"7": [
+							"预言术",
+							"行动自如"
+						],
+						"9": [
+							"问道自然",
+							"树跃术"
+						]
+					}
+				},
+				{
+					"ENG_name": "Grassland",
+					"name": "草地",
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=德鲁伊"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": [
+							"隐形术",
+							"行动无踪"
+						],
+						"5": [
+							"昼明术",
+							"加速术"
+						],
+						"7": [
+							"预言术",
+							"行动自如"
+						],
+						"9": [
+							"托梦术",
+							"疫病虫群"
+						]
+					}
+				},
+				{
+					"ENG_name": "Mountain",
+					"name": "山地",
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=德鲁伊"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": [
+							"蛛行术",
+							"荆棘丛生"
+						],
+						"5": [
+							"闪电束",
+							"融身入石"
+						],
+						"7": [
+							"塑石术",
+							"石肤术"
+						],
+						"9": [
+							"穿墙术",
+							"石墙术"
+						]
+					}
+				},
+				{
+					"ENG_name": "Swamp",
+					"name": "沼泽",
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=德鲁伊"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": [
+							"黑暗术",
+							"马友夫强酸箭"
+						],
+						"5": [
+							"水上行走",
+							"臭云术"
+						],
+						"7": [
+							"行动自如",
+							"生物定位术"
+						],
+						"9": [
+							"疫病虫群",
+							"探知术"
+						]
+					}
+				},
+				{
+					"ENG_name": "Underdark",
+					"name": "幽暗地域",
+					"known": {
+						"1": {
+							"_": [
+								{
+									"choose": "level=0|class=德鲁伊"
+								}
+							]
+						}
+					},
+					"prepared": {
+						"3": [
+							"蛛行术",
+							"蛛网术"
+						],
+						"5": [
+							"气化形体",
+							"臭云术"
+						],
+						"7": [
+							"高等隐形术",
+							"塑石术"
+						],
+						"9": [
+							"死云术",
+							"疫病虫群"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"大地结社|德鲁伊||大地||2",
+				"大地行者|德鲁伊||大地||6",
+				"自然之护|德鲁伊||大地||10",
+				"自然庇护|德鲁伊||大地||14"
+			]
+		},
+		{
+			"ENG_name": "Circle of the Land",
+			"name": "大地结社",
+			"shortName": "大地",
+			"source": "PHB",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"_copy": {
+				"ENG_name": "Circle of the Land",
+				"name": "大地结社",
+				"source": "PHB",
+				"shortName": "大地",
+				"className": "德鲁伊",
+				"classSource": "PHB",
+				"_preserve": {
+					"page": true,
+					"otherSources": true,
+					"referenceSources": true,
+					"srd": true,
+					"basicRules": true,
+					"reprintedAs": true
+				}
+			},
+			"subclassFeatures": [
+				"大地结社|德鲁伊|XPHB|大地||3",
+				"大地行者|德鲁伊||大地||6",
+				"自然之护|德鲁伊||大地||10",
+				"自然庇护|德鲁伊||大地||14"
+			]
+		},
+		{
+			"ENG_name": "Circle of the Moon",
+			"name": "月亮结社",
+			"shortName": "月亮",
+			"source": "PHB",
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"page": 69,
+			"reprintedAs": [
+				"月亮|德鲁伊|XPHB|XPHB"
+			],
+			"edition": "classic",
+			"additionalSpells": [
+				{
+					"known": {
+						"14": [
+							"变身术"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"月亮结社|德鲁伊||月亮||2",
+				"原力蛮击|德鲁伊||月亮||6",
+				"元素荒野形态|德鲁伊||月亮||10",
+				"千面相|德鲁伊||月亮||14"
+			]
+		},
+		{
+			"ENG_name": "Circle of the Moon",
+			"name": "月亮结社",
+			"shortName": "月亮",
+			"source": "PHB",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"_copy": {
+				"ENG_name": "Circle of the Moon",
+				"name": "月亮结社",
+				"source": "PHB",
+				"shortName": "月亮",
+				"className": "德鲁伊",
+				"classSource": "PHB",
+				"_preserve": {
+					"page": true,
+					"otherSources": true,
+					"referenceSources": true,
+					"srd": true,
+					"basicRules": true,
+					"reprintedAs": true
+				}
+			},
+			"subclassFeatures": [
+				"月亮结社|德鲁伊|XPHB|月亮||3",
+				"原力蛮击|德鲁伊||月亮||6",
+				"元素荒野形态|德鲁伊||月亮||10",
+				"千面相|德鲁伊||月亮||14"
+			]
+		},
+		{
+			"ENG_name": "Circle of Dreams",
+			"name": "梦境结社",
+			"shortName": "梦境",
+			"source": "XGE",
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"page": 22,
+			"edition": "classic",
+			"subclassFeatures": [
+				"梦境结社|德鲁伊||梦境|XGE|2",
+				"月光阴影的炉心|德鲁伊||梦境|XGE|6",
+				"隐匿通途|德鲁伊||梦境|XGE|10",
+				"梦境行者|德鲁伊||梦境|XGE|14"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Circle of Dreams",
+			"name": "梦境结社",
+			"shortName": "梦境",
+			"source": "XGE",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"_copy": {
+				"ENG_name": "Circle of Dreams",
+				"name": "梦境结社",
+				"source": "XGE",
+				"shortName": "梦境",
+				"className": "德鲁伊",
+				"classSource": "PHB",
+				"_preserve": {
+					"page": true,
+					"otherSources": true,
+					"referenceSources": true,
+					"srd": true,
+					"basicRules": true,
+					"reprintedAs": true
+				}
+			},
+			"subclassFeatures": [
+				"梦境结社|德鲁伊|XPHB|梦境|XGE|3",
+				"月光阴影的炉心|德鲁伊||梦境|XGE|6",
+				"隐匿通途|德鲁伊||梦境|XGE|10",
+				"梦境行者|德鲁伊||梦境|XGE|14"
+			],
+			"fluff": {
+				"_subclassFluff": {
+					"ENG_name": "Circle of Dreams",
+					"name": "梦境结社",
+					"source": "XGE",
+					"shortName": "梦境",
+					"className": "德鲁伊",
+					"classSource": "PHB"
+				}
+			}
+		},
+		{
+			"ENG_name": "Circle of the Shepherd",
+			"name": "牧人结社",
+			"shortName": "牧人",
+			"source": "XGE",
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"page": 23,
+			"edition": "classic",
+			"subclassFeatures": [
+				"牧人结社|德鲁伊||牧人|XGE|2",
+				"全能牧者|德鲁伊||牧人|XGE|6",
+				"精魂守卫|德鲁伊||牧人|XGE|10",
+				"忠诚牧畜|德鲁伊||牧人|XGE|14"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Circle of the Shepherd",
+			"name": "牧人结社",
+			"shortName": "牧人",
+			"source": "XGE",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"_copy": {
+				"ENG_name": "Circle of the Shepherd",
+				"name": "牧人结社",
+				"source": "XGE",
+				"shortName": "牧人",
+				"className": "德鲁伊",
+				"classSource": "PHB",
+				"_preserve": {
+					"page": true,
+					"otherSources": true,
+					"referenceSources": true,
+					"srd": true,
+					"basicRules": true,
+					"reprintedAs": true
+				}
+			},
+			"subclassFeatures": [
+				"牧人结社|德鲁伊|XPHB|牧人|XGE|3",
+				"全能牧者|德鲁伊||牧人|XGE|6",
+				"精魂守卫|德鲁伊||牧人|XGE|10",
+				"忠诚牧畜|德鲁伊||牧人|XGE|14"
+			],
+			"fluff": {
+				"_subclassFluff": {
+					"ENG_name": "Circle of the Shepherd",
+					"name": "牧人结社",
+					"source": "XGE",
+					"shortName": "牧人",
+					"className": "德鲁伊",
+					"classSource": "PHB"
+				}
+			}
+		},
+		{
+			"ENG_name": "Circle of Spores",
+			"name": "孢子结社",
+			"shortName": "孢子",
+			"source": "TCE",
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"page": 36,
+			"otherSources": [
+				{
+					"source": "GGR",
+					"page": 26
+				}
+			],
+			"edition": "classic",
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"颤栗之触#c"
+						]
+					},
+					"prepared": {
+						"3": [
+							"目盲术/耳聋术",
+							"遗体防腐"
+						],
+						"5": [
+							"活化死尸",
+							"气化形体"
+						],
+						"7": [
+							"枯萎术",
+							"困惑术"
+						],
+						"9": [
+							"死云术",
+							"疫病术"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"孢子结社|德鲁伊||孢子|TCE|2",
+				"真菌感染|德鲁伊||孢子|TCE|6",
+				"扩散孢子|德鲁伊||孢子|TCE|10",
+				"真菌之躯|德鲁伊||孢子|TCE|14"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Circle of Spores",
+			"name": "孢子结社",
+			"shortName": "孢子",
+			"source": "TCE",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"_copy": {
+				"ENG_name": "Circle of Spores",
+				"name": "孢子结社",
+				"source": "TCE",
+				"shortName": "孢子",
+				"className": "德鲁伊",
+				"classSource": "PHB",
+				"_preserve": {
+					"page": true,
+					"otherSources": true,
+					"referenceSources": true,
+					"srd": true,
+					"basicRules": true,
+					"reprintedAs": true
+				}
+			},
+			"subclassFeatures": [
+				"孢子结社|德鲁伊|XPHB|孢子|TCE|3",
+				"真菌感染|德鲁伊||孢子|TCE|6",
+				"扩散孢子|德鲁伊||孢子|TCE|10",
+				"真菌之躯|德鲁伊||孢子|TCE|14"
+			],
+			"fluff": {
+				"_subclassFluff": {
+					"ENG_name": "Circle of Spores",
+					"name": "孢子结社",
+					"source": "TCE",
+					"shortName": "孢子",
+					"className": "德鲁伊",
+					"classSource": "PHB"
+				}
+			}
+		},
+		{
+			"ENG_name": "Circle of Stars",
+			"name": "星辰结社",
+			"shortName": "星辰",
+			"source": "TCE",
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"page": 38,
+			"reprintedAs": [
+				"星辰|德鲁伊|XPHB|XPHB"
+			],
+			"edition": "classic",
+			"additionalSpells": [
+				{
+					"known": {
+						"2": [
+							"神导术#c"
+						]
+					},
+					"prepared": {
+						"2": [
+							"光导箭"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"星辰结社|德鲁伊||星辰|TCE|2",
+				"宇宙预兆|德鲁伊||星辰|TCE|6",
+				"闪耀星座|德鲁伊||星辰|TCE|10",
+				"灿若繁星|德鲁伊||星辰|TCE|14"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Circle of Stars",
+			"name": "星辰结社",
+			"shortName": "星辰",
+			"source": "TCE",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"_copy": {
+				"ENG_name": "Circle of Stars",
+				"name": "星辰结社",
+				"source": "TCE",
+				"shortName": "星辰",
+				"className": "德鲁伊",
+				"classSource": "PHB",
+				"_preserve": {
+					"page": true,
+					"otherSources": true,
+					"referenceSources": true,
+					"srd": true,
+					"basicRules": true,
+					"reprintedAs": true
+				}
+			},
+			"subclassFeatures": [
+				"星辰结社|德鲁伊|XPHB|星辰|TCE|3",
+				"宇宙预兆|德鲁伊||星辰|TCE|6",
+				"闪耀星座|德鲁伊||星辰|TCE|10",
+				"灿若繁星|德鲁伊||星辰|TCE|14"
+			],
+			"fluff": {
+				"_subclassFluff": {
+					"ENG_name": "Circle of Stars",
+					"name": "星辰结社",
+					"source": "TCE",
+					"shortName": "星辰",
+					"className": "德鲁伊",
+					"classSource": "PHB"
+				}
+			}
+		},
+		{
+			"ENG_name": "Circle of Wildfire",
+			"name": "野火结社",
+			"shortName": "野火",
+			"source": "TCE",
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"page": 39,
+			"edition": "classic",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"2": [
+							"燃烧之手",
+							"疗伤术"
+						],
+						"3": [
+							"炽焰法球",
+							"灼热射线"
+						],
+						"5": [
+							"植物滋长",
+							"回生术"
+						],
+						"7": [
+							"生命灵光",
+							"火焰护盾"
+						],
+						"9": [
+							"焰击术",
+							"群体疗伤术"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"野火结社|德鲁伊||野火|TCE|2",
+				"强化链接|德鲁伊||野火|TCE|6",
+				"灼烧烈焰|德鲁伊||野火|TCE|10",
+				"炽烈回生|德鲁伊||野火|TCE|14"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Circle of Wildfire",
+			"name": "野火结社",
+			"shortName": "野火",
+			"source": "TCE",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"_copy": {
+				"ENG_name": "Circle of Wildfire",
+				"name": "野火结社",
+				"source": "TCE",
+				"shortName": "野火",
+				"className": "德鲁伊",
+				"classSource": "PHB",
+				"_preserve": {
+					"page": true,
+					"otherSources": true,
+					"referenceSources": true,
+					"srd": true,
+					"basicRules": true,
+					"reprintedAs": true
+				}
+			},
+			"subclassFeatures": [
+				"野火结社|德鲁伊|XPHB|野火|TCE|3",
+				"强化链接|德鲁伊||野火|TCE|6",
+				"灼烧烈焰|德鲁伊||野火|TCE|10",
+				"炽烈回生|德鲁伊||野火|TCE|14"
+			],
+			"fluff": {
+				"_subclassFluff": {
+					"ENG_name": "Circle of Wildfire",
+					"name": "野火结社",
+					"source": "TCE",
+					"shortName": "野火",
+					"className": "德鲁伊",
+					"classSource": "PHB"
+				}
+			}
+		},
+		{
+			"ENG_name": "Circle of the Land",
+			"name": "大地结社",
+			"shortName": "大地",
+			"source": "XPHB",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"page": 84,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"additionalSpells": [
+				{
+					"ENG_name": "Arid Land",
+					"name": "荒漠",
+					"prepared": {
+						"3": [
+							"朦胧术|xphb",
+							"燃烧之手|xphb",
+							"火焰箭|xphb"
+						],
+						"5": [
+							"火球术|xphb"
+						],
+						"7": [
+							"枯萎术|xphb"
+						],
+						"9": [
+							"石墙术|xphb"
+						]
+					}
+				},
+				{
+					"ENG_name": "Polar Land",
+					"name": "极地",
+					"prepared": {
+						"3": [
+							"云雾术|xphb",
+							"定身类人|xphb",
+							"冷冻射线|xphb"
+						],
+						"5": [
+							"雪雨暴|xphb"
+						],
+						"7": [
+							"冰风暴|xphb"
+						],
+						"9": [
+							"寒冰锥|xphb"
+						]
+					}
+				},
+				{
+					"ENG_name": "Temperate Land",
+					"name": "温带",
+					"prepared": {
+						"3": [
+							"迷踪步|xphb",
+							"电爪|xphb",
+							"睡眠术|xphb"
+						],
+						"5": [
+							"闪电束|xphb"
+						],
+						"7": [
+							"行动自如|xphb"
+						],
+						"9": [
+							"树跃术|xphb"
+						]
+					}
+				},
+				{
+					"ENG_name": "Tropical Land",
+					"name": "热带",
+					"prepared": {
+						"3": [
+							"酸液飞溅|xphb",
+							"致病射线|xphb",
+							"蛛网术|xphb"
+						],
+						"5": [
+							"臭云术|xphb"
+						],
+						"7": [
+							"变形术|xphb"
+						],
+						"9": [
+							"疫病虫群|xphb"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"大地结社|德鲁伊|XPHB|大地|XPHB|3",
+				"自然恢复|德鲁伊|XPHB|大地|XPHB|6",
+				"自然之护|德鲁伊|XPHB|大地|XPHB|10",
+				"自然庇护|德鲁伊|XPHB|大地|XPHB|14"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Circle of the Moon",
+			"name": "月亮结社",
+			"shortName": "月亮",
+			"source": "XPHB",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"page": 86,
+			"edition": "one",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"疗伤术|xphb",
+							"月华之光|xphb",
+							"点点星芒|xphb"
+						],
+						"5": [
+							"咒唤兽群|xphb"
+						],
+						"7": [
+							"月光涌泉|xphb"
+						],
+						"9": [
+							"群体疗伤术|xphb"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"月亮结社|德鲁伊|XPHB|月亮|XPHB|3",
+				"进阶结社形态|德鲁伊|XPHB|月亮|XPHB|6",
+				"月光飞步|德鲁伊|XPHB|月亮|XPHB|10",
+				"月辉形态|德鲁伊|XPHB|月亮|XPHB|14"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Circle of the Sea",
+			"name": "海洋结社",
+			"shortName": "海洋",
+			"source": "XPHB",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"page": 87,
+			"edition": "one",
+			"additionalSpells": [
+				{
+					"prepared": {
+						"3": [
+							"云雾术|xphb",
+							"造风术|xphb",
+							"冷冻射线|xphb",
+							"粉碎音波|xphb",
+							"雷鸣波|xphb"
+						],
+						"5": [
+							"闪电束|xphb",
+							"水下呼吸|xphb"
+						],
+						"7": [
+							"操控水体|xphb",
+							"冰风暴|xphb"
+						],
+						"9": [
+							"咒唤元素|xphb",
+							"定身怪物|xphb"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"海洋结社|德鲁伊|XPHB|海洋|XPHB|3",
+				"水生亲和|德鲁伊|XPHB|海洋|XPHB|6",
+				"风暴降生|德鲁伊|XPHB|海洋|XPHB|10",
+				"大洋慨赠|德鲁伊|XPHB|海洋|XPHB|14"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Circle of the Stars",
+			"name": "星辰结社",
+			"shortName": "星辰",
+			"source": "XPHB",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"page": 88,
+			"edition": "one",
+			"additionalSpells": [
+				{
+					"known": {
+						"3": [
+							"神导术|xphb#c"
+						]
+					},
+					"prepared": {
+						"3": [
+							"光导箭|xphb"
+						]
+					}
+				}
+			],
+			"subclassFeatures": [
+				"星辰结社|德鲁伊|XPHB|星辰|XPHB|3",
+				"宇宙预兆|德鲁伊|XPHB|星辰|XPHB|6",
+				"闪耀星座|德鲁伊|XPHB|星辰|XPHB|10",
+				"灿若繁星|德鲁伊|XPHB|星辰|XPHB|14"
+			],
+			"hasFluffImages": true
+		}
+	],
+	"classFeature": [
+		{
+			"ENG_name": "Druidic",
+			"name": "德鲁伊语",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 1,
+			"entries": [
+				"你懂得{@language 德鲁伊语}，这是德鲁伊们的秘密语言。你可以说这种语言并用它留下隐藏信息。你和其他懂这种语言的人能自动发现这类信息。其他人需要通过一次{@dc 15}的感知（{@skill 察觉}）检定才能发现信息的存在，但若无魔法辅助则无法解读。"
+			]
+		},
+		{
+			"ENG_name": "Spellcasting",
+			"name": "施法",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 1,
+			"entries": [
+				"你掌握自然世界的神圣本质，并依你的意志施展法术对其进行重塑。参考 {@book 第十章|PHB|10}的施法规则及{@book 第十一章|PHB|11}的{@filter 德鲁伊法术列表|spells|class=德鲁伊}。",
+				{
+					"ENG_name": "Cantrips",
+					"name": "戏法",
+					"type": "entries",
+					"entries": [
+						"第1级时，你选择两项{@filter 德鲁伊法术列表|spells|level=0|class=德鲁伊}中的戏法作为已知法术。在获得更高的德鲁伊等级后你还可以习得其它的戏法，具体数据参见\"德鲁伊职业表\"中\"已知戏法\"一栏。"
+					]
+				},
+				{
+					"ENG_name": "Preparing and Casting Spells",
+					"name": "法术的准备与施展",
+					"type": "entries",
+					"entries": [
+						"\"德鲁伊职业表\"里记录了你用以施展{@filter 德鲁伊法术|spells|class=德鲁伊}的1环及更高环阶法术位数量。施展某德鲁伊法术时，你必须同时消耗其对应环阶法术位。已消耗的法术位可在完成长休后恢复。",
+						"你可以准备德鲁伊法术列表中所有符合当前施展条件的法术。准备法术时，你所准备法术的总数等于你的感知调整值＋你的德鲁伊职业等级（最少可以准备一个）。",
+						"例如，如果你是一个3级德鲁伊，你有四个1级和两个2环法术位。如果你的感知为16，你的准备法术列表可以包括六个1级或2级的法术，可以任意组合。如果你准备了1环法术{@spell 疗伤术}，你可以使用1级或2环法术位来施放它。施放法术不会将其从你的准备法术列表中移除。",
+						"当你完成一次长休后，你还可以更改你的准备法术列表。准备一份新的德鲁伊法术列表需要花费在祈祷和冥想上的时间：每个法术列表上的法术至少需要1分钟乘以法术等级。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Ability",
+					"name": "施法属性",
+					"type": "entries",
+					"entries": [
+						"你的法术力量源于你对自然的信仰与同调，因此感知是你施展德鲁伊法术的关键属性。每当你的德鲁伊法术需要施法属性时均指向你的感知值。而你德鲁伊法术的豁免DC和攻击检定，则使用你的感知调整值。",
+						{
+							"ENG_name": "Spell",
+							"name": "法术",
+							"type": "abilityDc",
+							"attributes": [
+								"wis"
+							]
+						},
+						{
+							"ENG_name": "Spell",
+							"name": "法术",
+							"type": "abilityAttackMod",
+							"attributes": [
+								"wis"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Ritual Casting",
+					"name": "仪式施法",
+					"type": "entries",
+					"entries": [
+						"如果你所准备德鲁伊法术中的某法术有带仪式标签，则你可以用这些法术进行仪式施法。"
+					]
+				},
+				{
+					"ENG_name": "Spellcasting Focus",
+					"name": "法器",
+					"type": "entries",
+					"entries": [
+						"你可以用{@item 德鲁伊法器|phb}作为你施展德鲁伊法术的法器。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Druid Circle",
+			"name": "德鲁伊结社",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 2,
+			"entries": [
+				"第2级时，你将选择参与一个德鲁伊结社。你可以从德鲁伊结社列表中选择其一。随后，你将在第2、第6、第10、第14级时获得所选结社相应的特性。"
+			]
+		},
+		{
+			"ENG_name": "Wild Companion",
+			"name": "荒野伙伴",
+			"source": "TCE",
+			"page": 35,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 2,
+			"isClassFeatureVariant": true,
+			"consumes": {
+				"ENG_name": "Wild Shape",
+				"name": "荒野形态"
+			},
+			"entries": [
+				"{@i 2级德鲁伊{@variantrule 可选职业特性|tce|可选特性}}",
+				"你获得召唤呈现动物形态的精魂的能力，以一个动作，你能够消耗一次荒野变形使用次数来施放一次无需材料的{@spell 寻获魔宠}法术。",
+				"当你以此方法施放该法术时，魔宠的类型是精类而不是野兽，魔宠会在等同于你德鲁伊等级一半的小时数后消失。"
+			]
+		},
+		{
+			"ENG_name": "Wild Shape",
+			"name": "荒野形态",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 2,
+			"entries": [
+				"第2级起，你可以用动作以魔力变化为曾见识过的野兽形态。该特性可以使用两次，且在完成一次短休或长休后，你将重新获得所有消耗掉的荒野形态次数。",
+				"你的德鲁伊职业等级决定了你可以变化的野兽种类，例如，在2级时，你可以变化成任意没有飞行或游泳速度且挑战等级为1/4或更低的野兽形态。",
+				{
+					"type": "table",
+					"caption": "野兽形态",
+					"colLabels": [
+						"等级",
+						"最高CR",
+						"限制",
+						"范例"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-5",
+						"col-3"
+					],
+					"rows": [
+						[
+							"2环",
+							"{@filter 1/4|bestiary|challenge rating=[&0;&1/4]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
+							"无飞行或游泳速度",
+							"狼"
+						],
+						[
+							"4环",
+							"{@filter 1/2|bestiary|challenge rating=[&0;&1/2]|type=beast|speed type=!fly|miscellaneous=!swarm}",
+							"无飞行速度",
+							"鳄鱼"
+						],
+						[
+							"8th",
+							"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}",
+							"\u2014",
+							"巨鹰"
+						]
+					]
+				},
+				"你可以在数个小时里保持着野兽形态，其持续时间具体数值等于你的德鲁伊职业等级的一半（向下取整）。你可以在持续时间过后恢复原形，或者你也可以再次使用此特性来维持变形。另外，你也可以在你的回合内用一个附赠动作来恢复原形。在你陷入{@condition 昏迷}、生命值为0或者死亡的时候，变形将自动解除。",
+				"你变形时必须遵从以下规则：",
+				{
+					"type": "list",
+					"items": [
+						"你的游戏数据替换为新形态的数值，但你仍保持你的阵营、个性，以及智力值、感知值、魅力值。你保留技能与豁免的熟练项，并且获得新形态的技能和豁免熟练项。如果新形态有你已具有的熟练项且该熟练项的加值高于你的熟练加值，则使用新形态的熟练加值。你不能使用新形态可能拥有的传奇动作或巢穴动作。",
+						"变形后，你使用新形态的生命值和生命骰。变回原形时，你的生命值恢复变形之前的数值。而任何让你的生命值降至0的伤害，都可以使你变回原形并承受该伤害的溢出伤害量。例如，你在动物形态下受到了10点伤害而你只剩1点生命值，则你变回原形并受到9点伤害。只要超过的伤害没有将你原形的生命值降至0，你就不会因此陷入 {@condition 昏迷}。",
+						"你不能施法，并且任何说话或者需要用手的动作，在你处于野兽形态时都将受到限制。变形不会打断你正在{@status 专注}的法术，也不会妨碍你执行作为已施展法术（例如{@spell 召雷术}）一部分的某些动作。",
+						"你保持从职业、种族或其它来源特性的收益，并且可以在新形态身体能力允许下使用这些特性。不过，你无法使用任何原有的特殊感官（例如{@sense 黑暗视觉}），除非你的新形态也具有这种感官。",
+						"变形时，你可以选择将你的装备丢在所处空间，或者将其融入新形态，又或者直接着装在身上。新形态直接着装的装备可以如常起作用，但DM有权基于新形态的体型和身姿作出判断，并最终决定新形态使用该装备是否合理。装备不会改变大小来适应新形态，新形态无法着装某装备时，该装备会掉落你所处空间或融入新形态中。融入新形态的装备失去其效应，且在你变回原形时才能恢复。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 4,
+			"entries": [
+				"当你达到4级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Cantrip Versatility",
+			"name": "替换戏法",
+			"source": "TCE",
+			"page": 35,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 4,
+			"isClassFeatureVariant": true,
+			"entries": [
+				"{@i 4级德鲁伊 {@variantrule 可选职业特性|tce|可选特性}}",
+				"每当你达到此职业的一个等级并获得属性值提升特性时，你可以从此职业的施法特性中学到的一个戏法替换为{@filter 德鲁伊法术列表|spells|level=0|class=德鲁伊}中的另一个戏法。"
+			]
+		},
+		{
+			"ENG_name": "Wild Shape Improvement",
+			"name": "荒野形态增效",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 4,
+			"entries": [
+				"第4级时，你的荒野形态能力会根据野兽形态表上显示的那样得到增强。"
+			]
+		},
+		{
+			"ENG_name": "Druid Circle feature",
+			"name": "德鲁伊结社特性",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 6,
+			"entries": [
+				"你将第6时获得所选结社相应的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 8,
+			"entries": [
+				"当你达到第8级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Wild Shape Improvement",
+			"name": "荒野形态增效",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 8,
+			"entries": [
+				"第8级时，你的荒野形态能力会根据野兽形态表上显示的那样得到增强。"
+			]
+		},
+		{
+			"ENG_name": "Druid Circle feature",
+			"name": "德鲁伊结社特性",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 10,
+			"entries": [
+				"你将在第10时获得所选结社相应的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 12,
+			"entries": [
+				"当你达到第12级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过该特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Druid Circle feature",
+			"name": "德鲁伊结社特性",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 14,
+			"entries": [
+				"你将在第14时获得所选结社相应的特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 16,
+			"entries": [
+				"当你达到16级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Beast Spells",
+			"name": "兽形施法",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 18,
+			"entries": [
+				"第18级起，你在荒野形态下可以施展大部分的德鲁伊法术。在野兽形态时，你可以完成德鲁伊法术的姿势与言语成分，但无法完成其材料成分的使用。"
+			]
+		},
+		{
+			"ENG_name": "Timeless Body",
+			"name": "不朽身",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 18,
+			"entries": [
+				"第18级起，你行使的原初荒野魔力让你的衰老速度减缓。每经过10年的岁月，你的身体就仿佛只过了1年。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 19,
+			"entries": [
+				"当你达到19级时，你可以选择一项属性值提升2点，或选择两项属性各提升1点。不过你不能通过此特性让属性超过20。",
+				"如果你的DM允许使用专长，你也可以选择一个{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Archdruid",
+			"name": "大德鲁伊",
+			"source": "PHB",
+			"page": 64,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"level": 20,
+			"entries": [
+				"第20级时，你可以无限次的使用荒野变形。",
+				"另外，你还可以将德鲁伊法术中的姿势和言语成分，以及无价值和不被法术消耗的材料成分忽略。你在原形态和荒野形态下都可以从此特性获益。"
+			]
+		},
+		{
+			"ENG_name": "Druidic",
+			"name": "德鲁伊语",
+			"source": "XPHB",
+			"page": 80,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 1,
+			"entries": [
+				"你学会了德鲁伊语，一门德鲁伊之间的秘密语言。在学会这门古老语言的同时，你也解锁了和动物交谈的魔法：你始终准备{@spell 动物交谈|XPHB}法术。",
+				"你可以使用德鲁伊语来传递隐藏的信息。你和其他知晓这门语言的对象能够自动辨认出信息。其他人需要通过{@dc 15}的智力（{@skill 调查|XPHB}）检定才能意识到信息的存在，但不借助魔法则无法解读。"
+			]
+		},
+		{
+			"ENG_name": "Magician",
+			"name": "术师",
+			"source": "XPHB",
+			"page": 80,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 1,
+			"entries": [
+				"你学会一个额外的{@filter 德鲁伊法术列表|spells|class=德鲁伊}中的戏法。此外，你和自然的神秘连接让你在智力（{@skill 奥秘|XPHB}或{@skill 自然|XPHB}）检定上获得加值。加值等于你的感知调整值（最小为1）。"
+			]
+		},
+		{
+			"ENG_name": "Primal Order",
+			"name": "原初职能",
+			"source": "XPHB",
+			"page": 80,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 1,
+			"entries": [
+				"你将自己投身于所选择的以下一项神圣的角色之中：",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "options",
+							"count": 1,
+							"entries": [
+								{
+									"type": "refClassFeature",
+									"classFeature": "术师|德鲁伊|XPHB|1"
+								},
+								{
+									"type": "refClassFeature",
+									"classFeature": "卫士|德鲁伊|XPHB|1"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Spellcasting",
+			"name": "施法",
+			"source": "XPHB",
+			"page": 79,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 1,
+			"entries": [
+				"你通过研究自然的神秘伟力学会了如何施展法术。参考{@book 第七章|XPHB|7}中的施法规则。下述信息将详述如何将这些规则应用于德鲁伊法术，德鲁伊法术详见本章后文职业描述中的{@filter 德鲁伊法术列表|spells|class=德鲁伊}。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Cantrips",
+							"name": "戏法",
+							"type": "entries",
+							"entries": [
+								"你习得2个{@filter 德鲁伊法术列表|spells|class=德鲁伊}中的戏法。推荐选择{@spell 德鲁伊伎俩|XPHB}和{@spell 燃火术|XPHB}。",
+								"每当你获得一级德鲁伊等级，你都能将通过此特性已知的其中一个戏法替换为另一个{@filter 德鲁伊法术列表|spells|class=德鲁伊}中你所选择的德鲁伊戏法。",
+								"当你的德鲁伊等级达到4级和10级时，你都能习得另一个{@filter 德鲁伊法术列表|spells|class=德鲁伊}中你所选择的德鲁伊戏法，如德鲁伊特性表中戏法一栏所示。"
+							]
+						},
+						{
+							"ENG_name": "Spell Slots",
+							"name": "法术位",
+							"type": "entries",
+							"entries": [
+								"德鲁伊特性表显示了你可用于施展1环及以上法术的法术位数量。你在完成一次{@variantrule 长休|XPHB}时恢复所有已消耗的法术位。"
+							]
+						},
+						{
+							"ENG_name": "Prepared Spells of Level 1+",
+							"name": "1环及以上的准备法术",
+							"type": "entries",
+							"entries": [
+								"你准备可供你以此特性施展的一环及更高环阶的{@filter 德鲁伊法术列表|spells|class=德鲁伊}。为此，选择4道德鲁伊法术。推荐选择{@spell 化兽为友|XPHB}、{@spell 疗伤术|XPHB}、{@spell 妖火|XPHB}和{@spell 雷鸣波|XPHB}。",
+								"已准备法术数量会随你德鲁伊等级的提升而增加，如德鲁伊特性表中的准备法术一列所示。每当这一列的数字增加时，从{@filter 德鲁伊法术列表|spells|class=德鲁伊}中选择额外法术准备，直至已准备法术的数量与表格中的数字一致。你必须拥有与准备法术的环阶相对应环阶的法术位。例如，如果你是一位3级德鲁伊，则你的准备法术列表能包括6道一环或二环的德鲁伊法术，随意组合。",
+								"如果其他德鲁伊特性给了你永远已准备的法术，这些法术不计入你以此法准备的法术数量，但除此以外对你来说都视为德鲁伊法术。"
+							]
+						},
+						{
+							"ENG_name": "Changing Your Prepared Spells",
+							"name": "改变你的准备法术",
+							"type": "entries",
+							"entries": [
+								"每当你结束一次{@variantrule 长休|XPHB}时，你可以改变你的法术准备列表，将任意数量的法术替换为你具有对应法术位的德鲁伊法术。"
+							]
+						},
+						{
+							"ENG_name": "Spellcasting Ability",
+							"name": "施法属性",
+							"type": "entries",
+							"entries": [
+								"感知是你的德鲁伊法术的施法属性。"
+							]
+						},
+						{
+							"ENG_name": "Spellcasting Focus",
+							"name": "法器",
+							"type": "entries",
+							"entries": [
+								"你可以使用{@item 德鲁伊法器|XPHB}作为你的德鲁伊法术的{@variantrule 法器|XPHB}。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Warden",
+			"name": "卫士",
+			"source": "XPHB",
+			"page": 80,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 1,
+			"entries": [
+				"你受到了战斗的训练，获得{@filter 军用武器|items|type=军用武器}熟练和{@filter 中甲|items|type=中甲}熟练。"
+			]
+		},
+		{
+			"ENG_name": "Wild Companion",
+			"name": "荒野伙伴",
+			"source": "XPHB",
+			"page": 81,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 2,
+			"entries": [
+				"你可以召唤出一个动物外形的自然精魂来帮助自己。以一个{@action 魔法|XPHB}动作，你可以消耗一个法术位或一次荒野变形次数来施展{@spell 寻获魔宠|XPHB}法术，无需任何材料成分。",
+				"当你以这种方式施展这一法术时，获得的魔宠为妖精Fey，并且它会在你完成一次{@variantrule 长休|XPHB}后消失。"
+			]
+		},
+		{
+			"ENG_name": "Wild Shape",
+			"name": "荒野形态",
+			"source": "XPHB",
+			"page": 80,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 2,
+			"entries": [
+				"大自然的魔力使你得以化形为一只野兽。以一个{@variantrule 附赠动作|XPHB}，你变形为一只你已经通过该特性学会的野兽形态（见下文\"已知形态\"）。你能保持该形态长达你德鲁伊等级一半的小时数，或者直到你再次使用荒野形态，陷入{@condition 失能|XPHB}，或死亡。你也可以使用一个{@variantrule 附赠动作|XPHB}提早结束荒野形态。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Number of Uses",
+							"name": "使用次数",
+							"type": "entries",
+							"entries": [
+								"你能够使用两次荒野形态。你在完成{@variantrule 短休|XPHB}后重获一次已消耗的使用次数，当你完成一次{@variantrule 长休|XPHB}后，你重获全部已消耗的使用次数。",
+								"你达到特定的德鲁伊等级时会获得额外的使用次数，如德鲁伊表格中荒野形态一栏所示。"
+							]
+						},
+						{
+							"ENG_name": "Known Forms",
+							"name": "已知形态",
+							"type": "entries",
+							"entries": [
+								"你一开始掌握了该特性的四种形态，从最大{@variantrule 挑战等级|XPHB}1/4且没有{@variantrule 飞行速度|XPHB}的野兽（见附录B的生物数据卡）之中选取。推荐{@creature 老鼠|XMM}、{@creature 乘用马|XMM}、{@creature 蜘蛛|XMM}和{@creature 狼|XMM}四种形态。每当你完成一次{@variantrule 长休|XPHB}时，你可以将一种你掌握的形态换为另一种能够选用的形态。",
+								"当你达到特定的德鲁伊等级后，你可以掌握新的形态，形态的最大{@variantrule 挑战等级|XPHB}也会随之提升，如野兽形态表格所示。此外，在 8 级时，你可以使用具有{@variantrule 飞行速度|XPHB}的形态。",
+								"当选择已知形态时，如果地下城主允许，你可以查阅{@book 怪物图鉴|XMM}或其他来源并从中选择符合条件的野兽。"
+							]
+						},
+						{
+							"type": "table",
+							"caption": "野兽形态",
+							"colLabels": [
+								"德鲁伊等级",
+								"已知形态",
+								"最大挑战等级",
+								"飞行速度"
+							],
+							"colStyles": [
+								"col-3 text-center",
+								"col-3 text-center",
+								"col-3 text-center"
+							],
+							"rows": [
+								[
+									"2",
+									"4",
+									"{@filter 1/4|bestiary|challenge rating=[&0;&1/4]|type=beast|speed type=!fly|miscellaneous=!swarm}",
+									"No"
+								],
+								[
+									"4",
+									"6",
+									"{@filter 1/2|bestiary|challenge rating=[&0;&1/2]|type=beast|speed type=!fly|miscellaneous=!swarm}",
+									"No"
+								],
+								[
+									"8",
+									"8",
+									"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|miscellaneous=!swarm}",
+									"是"
+								]
+							]
+						},
+						{
+							"ENG_name": "Rules While Shape-Shifted",
+							"name": "荒野形态规则",
+							"type": "entries",
+							"entries": [
+								"当处于荒野形态下时，你保持你的人格、记忆和说话的能力，并遵循以下规则：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "Temporary Hit Points",
+											"name": "临时生命值",
+											"type": "item",
+											"entries": [
+												"当你变为荒野形态时，你获得等于你德鲁伊等级的{@variantrule 临时生命值|XPHB}。"
+											]
+										},
+										{
+											"ENG_name": "Game Statistics",
+											"name": "游戏数据",
+											"type": "item",
+											"entries": [
+												"你的游戏数据被野兽的数据卡所替换，但你保留你的生物类型；{@variantrule 生命值|XPHB}；{@variantrule 生命值骰|XPHB}；智力，感知和魅力值；职业特性；语言；专长。你同样保留你的技能和豁免熟练，并且在这些项目中使用你自己的{@variantrule 熟练|XPHB|熟练加值}。如果变形的野兽在资料卡上的技能或豁免检定的调整值高于你的，使用资料卡的调整值。"
+											]
+										},
+										{
+											"ENG_name": "No Spellcasting",
+											"name": "无法施法",
+											"type": "item",
+											"entries": [
+												"你无法施展法术，但变形不会打断你的{@status 专注|XPHB}，也不会打断你已经施展了的法术。"
+											]
+										},
+										{
+											"ENG_name": "Objects",
+											"name": "物件",
+											"type": "item",
+											"entries": [
+												"你持握物件的能力取决于形态下的肢体，而非你自己的。此外，你可以选择将你的装备丢在所处空间，或者将其融入新形态，又或者直接着装在身上。新形态直接着装的装备可以如常起作用，但DM有权基于新形态的体型和身姿作出判断，并最终决定新形态使用该装备是否合理。你的装备不会改变尺寸或形状来搭配新的形态，新形态无法着装某装备时，该装备会掉落到你所处空间或融入新形态中。融入新形态的装备失去其效应。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Druid Subclass",
+			"name": "德鲁伊子职",
+			"source": "XPHB",
+			"page": 81,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 3,
+			"entries": [
+				"你选择获得一项德鲁伊子职。子职是一种特化，在特定的德鲁伊等级给予你对应的独特能力。此后你将获得每一个你所选的子职的能力，只要其所需等级等于或低于你的德鲁伊等级。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "XPHB",
+			"page": 81,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 4,
+			"entries": [
+				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。你还会在你的德鲁伊等级达到第8、第12、第16级时再次获得本特性。"
+			]
+		},
+		{
+			"ENG_name": "Wild Resurgence",
+			"name": "荒野复苏",
+			"source": "XPHB",
+			"page": 81,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 5,
+			"entries": [
+				"每个你的回合内一次，如果你没有荒野变形使用次数，你可以消耗一个法术位（无需动作）让自己获得一次荒野变形次数。",
+				"此外，你可以消耗一次荒野变形使用次数（无需动作）来令自己获得一个1环法术位，在你完成一次{@variantrule 长休|XPHB}以前，你无法再次这样做。"
+			]
+		},
+		{
+			"ENG_name": "Subclass Feature",
+			"name": "子职特性",
+			"source": "XPHB",
+			"page": 81,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 6,
+			"entries": [
+				"你从你的德鲁伊子职中获得了一个特性。"
+			]
+		},
+		{
+			"ENG_name": "Elemental Fury",
+			"name": "元素之怒",
+			"source": "XPHB",
+			"page": 81,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 7,
+			"entries": [
+				"元素之力在你的身体里流淌。你获得以下一个你选择的特性：",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "options",
+							"count": 1,
+							"entries": [
+								{
+									"type": "refClassFeature",
+									"classFeature": "强力施法|德鲁伊|XPHB|7"
+								},
+								{
+									"type": "refClassFeature",
+									"classFeature": "原力蛮击|德鲁伊|XPHB|7"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Potent Spellcasting",
+			"name": "强力施法",
+			"source": "XPHB",
+			"page": 81,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"你将你的感知调整值加在你的以德鲁伊戏法造成的伤害上。"
+			]
+		},
+		{
+			"ENG_name": "Primal Strike",
+			"name": "原力蛮击",
+			"source": "XPHB",
+			"page": 81,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"每个你的回合内一次，当你以一次武器攻击或荒野变形中野兽形态的攻击命中一名生物时，你可以对目标额外造成{@damage 1d8}寒冷、火焰、闪电或雷鸣伤害（由你命中时选择）。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "XPHB",
+			"page": 81,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 8,
+			"entries": [
+				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Subclass Feature",
+			"name": "子职特性",
+			"source": "XPHB",
+			"page": 81,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 10,
+			"entries": [
+				"你从你的德鲁伊子职中获得了一个特性。"
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "XPHB",
+			"page": 81,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 12,
+			"entries": [
+				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Subclass Feature",
+			"name": "子职特性",
+			"source": "XPHB",
+			"page": 81,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 14,
+			"entries": [
+				"你从你的德鲁伊子职中获得了一个特性。"
+			]
+		},
+		{
+			"ENG_name": "Improved Elemental Fury",
+			"name": "元素狂怒",
+			"source": "XPHB",
+			"page": 81,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 15,
+			"entries": [
+				"你选择的元素之怒特性变得愈发强大：",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Potent Spellcasting",
+							"name": "强力施法",
+							"type": "entries",
+							"entries": [
+								"当你施展一个施法距离为 10 尺及以上的德鲁伊戏法时，法术施法距离提升 300 尺。"
+							]
+						},
+						{
+							"ENG_name": "Primal Strike",
+							"name": "原力蛮击",
+							"type": "entries",
+							"entries": [
+								"原力蛮击的额外伤害提升至{@damage 2d8}。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ability Score Improvement",
+			"name": "属性值提升",
+			"source": "XPHB",
+			"page": 81,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 16,
+			"entries": [
+				"你获得{@feat 属性值提升|XPHB}专长或其它你满足条件的{@5etools 专长|feats.html}。"
+			]
+		},
+		{
+			"ENG_name": "Beast Spells",
+			"name": "兽形施法",
+			"source": "XPHB",
+			"page": 81,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 18,
+			"entries": [
+				"你可以在任何荒野变形下施法。当一个法术需要标有价值的材料成分或需要消耗材料成分时，你无法在荒野变形下施展。"
+			]
+		},
+		{
+			"ENG_name": "Epic Boon",
+			"name": "传奇恩惠",
+			"source": "XPHB",
+			"page": 81,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 19,
+			"entries": [
+				"你获得一项{@filter 传奇恩惠专长|feats|category=EB}或其他一项你选择的适用的{@5etools 专长|feats.html}。推荐选择{@feat 次元旅行之恩惠|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Archdruid",
+			"name": "大德鲁伊",
+			"source": "XPHB",
+			"page": 82,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"level": 20,
+			"entries": [
+				"自然的活力在你的身上永不凋零，令你获得以下增益：",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Evergreen Wild Shape",
+							"name": "不凋化形",
+							"type": "entries",
+							"entries": [
+								"当你投掷{@variantrule 先攻|XPHB}时，若你没有荒野变形的使用次数，你获得一次荒野形态使用次数。"
+							]
+						},
+						{
+							"ENG_name": "Nature Magician",
+							"name": "自然术使",
+							"type": "entries",
+							"entries": [
+								"你可以将荒野变形使用次数转化为法术位（无需任何动作）。选择一定数量的你未使用的荒野变形使用次数，将它们转化为一个法术位，每个使用次数可以转为 2 个法术环阶。比如说，如果你转化两个荒野变形使用次数，你就可以创造出一个 4 环法术位。当你如此做后，你必须在完成一次{@variantrule 长休|XPHB}后才能再次使用该特性。"
+							]
+						},
+						{
+							"ENG_name": "Longevity",
+							"name": "青春永驻",
+							"type": "entries",
+							"entries": [
+								"你行使的原力魔法让你的衰老速度减缓。每经过 10 年的岁月，你的身体就仿佛只过了 1 年。"
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"subclassFeature": [
+		{
+			"ENG_name": "Circle of the Land",
+			"name": "大地结社",
+			"source": "PHB",
+			"page": 68,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "大地",
+			"subclassSource": "PHB",
+			"level": 2,
+			"entries": [
+				"创立大地结社的秘术师和智者们守护着远古的知识与各种传统仪式。结社的德鲁伊们聚集在神树之环下或石阵之中，他们用{@language 德鲁伊语}低声交流，传递着原初的秘密。结社中最睿智的成员地位尊贵，他们如教团的首席祭司一样维护着上古誓约，并为其领导下的众人传道解惑。作为结社的一员，大地结社的仪式与你建立起神秘的连接，使你的魔力受到大地的影响。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "附赠戏法|德鲁伊||大地||2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "自然恢复|德鲁伊||大地||2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "结社法术|德鲁伊||大地||2"
+				}
+			]
+		},
+		{
+			"ENG_name": "Bonus Cantrip",
+			"name": "附赠戏法",
+			"source": "PHB",
+			"page": 68,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "大地",
+			"subclassSource": "PHB",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"在第2级选择该结社时，你学会一个额外的德鲁伊戏法。这个戏法不计入你的已知戏法数量中。"
+			]
+		},
+		{
+			"ENG_name": "Circle Spells",
+			"name": "结社法术",
+			"source": "PHB",
+			"page": 68,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "大地",
+			"subclassSource": "PHB",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"你跟大地之间的神秘链接让你可以施展特别的法术。在第3、第5、第7、第9级时，你根据成为德鲁伊时的所在地获得相应的结社法术。选择一个地形：极地、海岸、荒漠、森林、草原、山地、沼泽，并依此获得相应的法术。",
+				"结社法术一旦获得，将会一直在你的已准备法术列表中，且不计入你的每日准备法术上限。任何结社法术对你而言都是德鲁伊法术，而不论其是否在德鲁伊法术列表之上",
+				{
+					"type": "table",
+					"caption": "极地",
+					"colLabels": [
+						"德鲁伊等级",
+						"结社法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3环",
+							"{@spell 定身类人}, {@spell 荆棘丛生}"
+						],
+						[
+							"5环",
+							"{@spell 雪雨暴}, {@spell 缓慢术}"
+						],
+						[
+							"7th",
+							"{@spell 行动自如}, {@spell 冰风暴}"
+						],
+						[
+							"9th",
+							"{@spell 问道自然}, {@spell 寒冰锥}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "海岸",
+					"colLabels": [
+						"德鲁伊等级",
+						"结社法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3环",
+							"{@spell 镜影术}, {@spell 迷踪步}"
+						],
+						[
+							"5环",
+							"{@spell 水下呼吸}, {@spell 水上行走}"
+						],
+						[
+							"7th",
+							"{@spell 操控水体}, {@spell 行动自如}"
+						],
+						[
+							"9th",
+							"{@spell 咒唤元素}, {@spell 探知术}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "荒漠",
+					"colLabels": [
+						"德鲁伊等级",
+						"结社法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3环",
+							"{@spell 朦胧术}, {@spell 沉默术}"
+						],
+						[
+							"5环",
+							"{@spell 造粮术}, {@spell 防护能量}"
+						],
+						[
+							"7th",
+							"{@spell 枯萎术}, {@spell 幻景}"
+						],
+						[
+							"9th",
+							"{@spell 疫病虫群}, {@spell 石墙术}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "森林",
+					"colLabels": [
+						"德鲁伊等级",
+						"结社法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3环",
+							"{@spell 树肤术}, {@spell 蛛行术}"
+						],
+						[
+							"5环",
+							"{@spell 召雷术}, {@spell 植物滋长}"
+						],
+						[
+							"7th",
+							"{@spell 预言术}, {@spell 行动自如}"
+						],
+						[
+							"9th",
+							"{@spell 问道自然}, {@spell 树跃术}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "草地",
+					"colLabels": [
+						"德鲁伊等级",
+						"结社法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3环",
+							"{@spell 隐形术}, {@spell 行动无踪}"
+						],
+						[
+							"5环",
+							"{@spell 昼明术}, {@spell 加速术}"
+						],
+						[
+							"7th",
+							"{@spell 预言术}, {@spell 行动自如}"
+						],
+						[
+							"9th",
+							"{@spell 托梦术}, {@spell 疫病虫群}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "山地",
+					"colLabels": [
+						"德鲁伊等级",
+						"结社法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3环",
+							"{@spell 蛛行术}, {@spell 荆棘丛生}"
+						],
+						[
+							"5环",
+							"{@spell 闪电束}, {@spell 融身入石}"
+						],
+						[
+							"7th",
+							"{@spell 塑石术}, {@spell 石肤术}"
+						],
+						[
+							"9th",
+							"{@spell 穿墙术}, {@spell 石墙术}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "沼泽",
+					"colLabels": [
+						"德鲁伊等级",
+						"结社法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3环",
+							"{@spell 黑暗术}, {@spell 马友夫强酸箭}"
+						],
+						[
+							"5环",
+							"{@spell 水上行走}, {@spell 臭云术}"
+						],
+						[
+							"7th",
+							"{@spell 行动自如}, {@spell 生物定位术}"
+						],
+						[
+							"9th",
+							"{@spell 疫病虫群}, {@spell 探知术}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "幽暗地域",
+					"colLabels": [
+						"德鲁伊等级",
+						"结社法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3环",
+							"{@spell 蛛行术}, {@spell 蛛网术}"
+						],
+						[
+							"5环",
+							"{@spell 气化形体}, {@spell 臭云术}"
+						],
+						[
+							"7th",
+							"{@spell 高等隐形术}, {@spell 塑石术}"
+						],
+						[
+							"9th",
+							"{@spell 死云术}, {@spell 疫病虫群}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Natural Recovery",
+			"name": "自然恢复",
+			"source": "PHB",
+			"page": 68,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "大地",
+			"subclassSource": "PHB",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"第2级起，你可以通过静坐冥想与自然建立交流，并以此恢复部分魔法能量。完成一次短休后，你可以选择恢复部分已使用的法术位。所恢复法术位环阶的总和等于你德鲁伊职业等级的一半（向上取整），且不能是6环或更高环阶。你在完成一次长休后才能再次使用该特性。",
+				"例如，作为一名4级德鲁伊时，你可恢复环阶总数为二的法术位。你可以选择恢复一枚2环法术位或者两枚1环法术位。"
+			]
+		},
+		{
+			"ENG_name": "Land's Stride",
+			"name": "大地行者",
+			"source": "PHB",
+			"page": 68,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "大地",
+			"subclassSource": "PHB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"第6级起，你穿过非魔法的{@quickref 困难地形||3}时不会消耗额外移动力。你穿过非魔法的植物时不会消耗额外的移动力，且这类植物的荆棘、毛刺或类似的危害物也无法对你造成伤害。",
+				"另外，在抵抗魔法制造或控制的植物造成的移动障碍效应时（例如{@spell 纠缠术}），你进行豁免检定时具有优势。"
+			]
+		},
+		{
+			"ENG_name": "Nature's Ward",
+			"name": "自然之护",
+			"source": "PHB",
+			"page": 68,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "大地",
+			"subclassSource": "PHB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"第10级起，你免疫元素生物或精类生物造成的{@condition 魅惑}或{@condition 恐慌}状态，并且免疫中毒和疾病。"
+			]
+		},
+		{
+			"ENG_name": "Nature's Sanctuary",
+			"name": "自然庇护",
+			"source": "PHB",
+			"page": 68,
+			"srd": true,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "大地",
+			"subclassSource": "PHB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"第14级起，自然界的生物感知到你跟自然的链接而不会主动攻击你。当一个野兽或植物类的生物攻击你时，该生物必须先进行一次对抗你德鲁伊法术DC的感知豁免。豁免失败时，该生物必须选择另一个目标，否则其攻击将判为未命中。豁免成功时，该生物在随后的24小时内免疫此效应。",
+				"该生物会在攻击你之前就意识到你有此效应。"
+			]
+		},
+		{
+			"ENG_name": "Circle of the Moon",
+			"name": "月亮结社",
+			"source": "PHB",
+			"page": 69,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "月亮",
+			"subclassSource": "PHB",
+			"level": 2,
+			"entries": [
+				"月亮结社的德鲁伊都是凶猛的荒野卫士。他们聚集在满月之下分享情报，交换警示。然后常常离群连续几周与另一个类人生物在荒野深处穿行。",
+				"该结社的德鲁伊如月亮般善变，他们会作为野猫徘徊一晚，第二天又成为一只盘旋在树顶老鹰，再以熊的形态赶走领地中的入侵者。其德鲁伊之血充满野性。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "战斗荒野形态|德鲁伊||月亮||2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "结社形态|德鲁伊||月亮||2"
+				}
+			]
+		},
+		{
+			"ENG_name": "Circle Forms",
+			"name": "结社形态",
+			"source": "PHB",
+			"page": 69,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "月亮",
+			"subclassSource": "PHB",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"结社的力量让你可以变成更危险的动物形态。第2级起，你可以用荒野形态特性变身成一个{@filter 挑战等级高达1的野兽|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}（无视表格\"野兽形态\"中的\"最高CR\"列，但限制依然生效）。",
+				"第6级起，你所变身野兽的挑战等级最高等于你的德鲁伊等级除以3（向下取整）。",
+				{
+					"type": "table",
+					"caption": "月亮结社野兽形态",
+					"colLabels": [
+						"等级",
+						"最高CR",
+						"限制"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-2 text-center",
+						"col-8"
+					],
+					"rows": [
+						[
+							"2环",
+							"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly;!swim|miscellaneous=!swarm}",
+							"无飞行或游泳速度"
+						],
+						[
+							"4环",
+							"{@filter 1|bestiary|challenge rating=[&0;&1]|type=beast|speed type=!fly|miscellaneous=!swarm}",
+							"无飞行速度"
+						],
+						[
+							"6th",
+							"{@filter 2|bestiary|challenge rating=[&0;&2]|type=beast|speed type=!fly|miscellaneous=!swarm}",
+							"无飞行速度"
+						],
+						[
+							"8th",
+							"{@filter 2|bestiary|challenge rating=[&0;&2]|type=beast|miscellaneous=!swarm}",
+							"\u2014"
+						],
+						[
+							"9th",
+							"{@filter 3|bestiary|challenge rating=[&0;&3]|type=beast|miscellaneous=!swarm}",
+							"\u2014"
+						],
+						[
+							"12th",
+							"{@filter 4|bestiary|challenge rating=[&0;&4]|type=beast|miscellaneous=!swarm}",
+							"\u2014"
+						],
+						[
+							"15th",
+							"{@filter 5|bestiary|challenge rating=[&0;&5]|type=beast|miscellaneous=!swarm}",
+							"\u2014"
+						],
+						[
+							"18th",
+							"{@filter 6|bestiary|challenge rating=[&0;&6]|type=beast|miscellaneous=!swarm}",
+							"\u2014"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Combat Wild Shape",
+			"name": "战斗荒野形态",
+			"source": "PHB",
+			"page": 69,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "月亮",
+			"subclassSource": "PHB",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"从你选择该结社的第2级起，你可以在自己回合内用一个附赠动作而不是动作来使用荒野形态特性。",
+				"此外，在你荒野形态变形期间，你可以用附赠动作消耗一个法术位来恢复相应法术位每环阶{@dice 1d8}点生命值。"
+			]
+		},
+		{
+			"ENG_name": "Primal Strike",
+			"name": "原力蛮击",
+			"source": "PHB",
+			"page": 69,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "月亮",
+			"subclassSource": "PHB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"第6级起，你以野兽形态攻击时，如果目标对非魔法攻击或伤害具有免疫或抗性，则你的攻击此时视为魔法攻击。"
+			]
+		},
+		{
+			"ENG_name": "Elemental Wild Shape",
+			"name": "元素荒野形态",
+			"source": "PHB",
+			"page": 69,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "月亮",
+			"subclassSource": "PHB",
+			"level": 10,
+			"header": 2,
+			"consumes": {
+				"ENG_name": "Wild Shape",
+				"name": "荒野形态",
+				"amount": 2
+			},
+			"entries": [
+				"第10级起，你可以花费两次荒野形态次数以变成{@creature 气元素}，{@creature 土元素}，{@creature 火元素}或者{@creature 水元素}。"
+			]
+		},
+		{
+			"ENG_name": "Thousand Forms",
+			"name": "千面相",
+			"source": "PHB",
+			"page": 69,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "月亮",
+			"subclassSource": "PHB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"第14级起，你学会了用魔法精确改变自身外形的方法。你可以随意施展法术{@spell 变身术}。"
+			]
+		},
+		{
+			"ENG_name": "Circle of Spores",
+			"name": "孢子结社",
+			"source": "TCE",
+			"page": 36,
+			"otherSources": [
+				{
+					"source": "GGR",
+					"page": 26
+				}
+			],
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "孢子",
+			"subclassSource": "TCE",
+			"level": 2,
+			"entries": [
+				"孢子结社德鲁伊善于发现腐朽之美，他们在霉菌与其他真菌中看到了无生命物质如何转化为丰饶、尽管又有点奇怪的生命。",
+				"这些德鲁伊认为，生死系属大循环周期，从一个循环通往另一个循环，周而复始。死亡并非生命的终结，而是转化为另一种新形式的生命形态。",
+				"这个结社的德鲁伊与不死生物有着复杂的关系，与大多数德鲁伊不同，他们不认为不死生物是错的。但是这些德鲁伊相信自然循环最为健康，它的每一个部分都生机盎然。那些试图用亡灵来代替所有生命、或是企图避免安息的不死生物们都违反了这个循环运行，因而必须被阻止。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "结社法术|德鲁伊||孢子|TCE|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "孢子环绕|德鲁伊||孢子|TCE|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "一体共生|德鲁伊||孢子|TCE|2"
+				}
+			]
+		},
+		{
+			"ENG_name": "Circle Spells",
+			"name": "结社法术",
+			"source": "TCE",
+			"page": 36,
+			"otherSources": [
+				{
+					"source": "GGR",
+					"page": 26
+				}
+			],
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "孢子",
+			"subclassSource": "TCE",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"你与真菌间形成了共生连接，而你踏入生死循环的能力为你带来了特定的法术。在2级时，你习得戏法{@spell 颤栗之触} 。在3级、5级、7级和9级时你获得下表孢子结社法术中对应等级列出的法术。",
+				"一旦你习得这些法术中任意一个，你就会一直准备着它，且不计入你的每日准备法术上限。如果你学会一个不在德鲁伊法术列表中的法术，该法术对你来说视作德鲁伊法术。",
+				{
+					"type": "table",
+					"caption": "孢子结社法术",
+					"colLabels": [
+						"德鲁伊等级",
+						"结社法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"3环",
+							"{@spell 目盲术/耳聋术}, {@spell 遗体防腐}"
+						],
+						[
+							"5环",
+							"{@spell 活化死尸}, {@spell 气化形体}"
+						],
+						[
+							"7th",
+							"{@spell 枯萎术}, {@spell 困惑术}"
+						],
+						[
+							"9th",
+							"{@spell 死云术}, {@spell 疫病术}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Halo of Spores",
+			"name": "孢子环绕",
+			"source": "TCE",
+			"page": 36,
+			"otherSources": [
+				{
+					"source": "GGR",
+					"page": 26
+				}
+			],
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "孢子",
+			"subclassSource": "TCE",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"从2级开始，你被无形的、死灵的孢子环绕着。它们是无害的，除非你把它们释放到附近的生物上。当一个生物进入你周围10尺范围内的一处空间时、或在其中开始其回合时，你可以使用反应来激发孢子环绕特性。迫使对方进行一次对抗你法术豁免DC的体质豁免，豁免失败将受到{@damage 1d4}点暗蚀伤害。这一暗蚀伤害在6级时将提高到{@damage 1d6}，在10级时将提高到{@damage 1d8}，在14级时提高到 {@damage 1d10}。"
+			]
+		},
+		{
+			"ENG_name": "Symbiotic Entity",
+			"name": "一体共生",
+			"source": "TCE",
+			"page": 36,
+			"otherSources": [
+				{
+					"source": "GGR",
+					"page": 26
+				}
+			],
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "孢子",
+			"subclassSource": "TCE",
+			"level": 2,
+			"header": 1,
+			"consumes": {
+				"ENG_name": "Wild Shape",
+				"name": "荒野形态"
+			},
+			"entries": [
+				"在2级时，你获得了向孢子引入魔法的能力。以一个动作，你可以消耗一次荒野形态使用次数唤醒这些孢子，而不变化为野兽形态。你立刻获得等同于你德鲁伊等级4倍的临时生命值，且在此特性激活期间，你获得以下增益：",
+				{
+					"type": "list",
+					"items": [
+						"当你的孢子环绕特性造成伤害时，你可以再骰一枚伤害骰，并将其加入到伤害中。",
+						"你的近战武器攻击对任何被命中目标造成额外{@damage 1d6}点暗蚀伤害。"
+					]
+				},
+				"这些增益将持续10分钟。如果你失去了全部这些临时生命值，或你再次使用了你的荒野形态，这些增益都会提前结束。"
+			]
+		},
+		{
+			"ENG_name": "Fungal Infestation",
+			"name": "真菌感染",
+			"source": "TCE",
+			"page": 36,
+			"otherSources": [
+				{
+					"source": "GGR",
+					"page": 26
+				}
+			],
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "孢子",
+			"subclassSource": "TCE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"在6级时，你的孢子获得了感染并活化遗体的能力。如果一个小型或中型的野兽或类人生物在你周围10尺范围内死亡，你可以用反应将它的尸体活化，令它立刻以1点生命值的状态站起来。该生物使用{@creature 丧尸}的属性（参考{@book 怪物图鉴|MM}）。活化状态持续1小时，之后会崩解并死去。",
+				"在战斗中，僵尸的回合将紧接在你的回合结束后。它遵从你的意志指令行动，但它唯一能执行的动作只有{@action 攻击}动作并进行一次近战攻击。",
+				"你可以使用本特性的次数等同于你的感知调整值次（至少一次），当你完成一次长休后，你重获所有已消耗的次数。"
+			]
+		},
+		{
+			"ENG_name": "Spreading Spores",
+			"name": "扩散孢子",
+			"source": "TCE",
+			"page": 36,
+			"otherSources": [
+				{
+					"source": "GGR",
+					"page": 26
+				}
+			],
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "孢子",
+			"subclassSource": "TCE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"在10级时，你获得在一片区域内散布致命孢子的能力。当你的处于一体共生状态下，你可以用附赠动作将真菌孢子抛向至多30尺远，它们将漂浮在那10 尺立方的空间中1分钟。若你再次使用此特性、使用一个附赠动作取消掉它们，或你的一体共生状态结束，这片孢子都将提前消失。",
+				"每当一个生物移动进入该立方区域或在该处开始它的回合，该生物必须通过一次对抗你法术豁免DC的体质豁免，豁免失败时它将受到你孢子环绕的伤害。不过一个生物每回合只会受到一次这一伤害。",
+				"只要这片孢子存在，你就不能使用你孢子环绕的反应能力。"
+			]
+		},
+		{
+			"ENG_name": "Fungal Body",
+			"name": "真菌之躯",
+			"source": "TCE",
+			"page": 36,
+			"otherSources": [
+				{
+					"source": "GGR",
+					"page": 26
+				}
+			],
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "孢子",
+			"subclassSource": "TCE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"在14级时，你体内的真菌改变了你，你不会陷入{@condition 目盲}、{@condition 耳聋}、{@condition 恐慌}或{@condition 中毒}。且，只要你未处于{@condition 失能}状态，任何对你形成的重击都将被视为一次普通的命中。"
+			]
+		},
+		{
+			"ENG_name": "Circle of Stars",
+			"name": "星辰结社",
+			"source": "TCE",
+			"page": 38,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "TCE",
+			"level": 2,
+			"entries": [
+				"星辰结社使德鲁伊能够借助星光的能量。这些德鲁伊自远古时期便开始记载星象并探索星座中隐藏的秘密。通过揭示并理解群星之奥妙，星辰结社试图借助宇宙能量。",
+				"这个结社中的许多德鲁伊记载着星座与群星对世界的影响。一些团体将这些观察记录在巨石遗址上，作为神秘传说图书馆。这些知识库的形式可能采取巨石阵、金字塔、岩刻与地下神殿乃至任何坚实到甚至足以使此结社神圣知识幸存于大灾变的结构。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "星图|德鲁伊||星辰|TCE|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "星耀形态|德鲁伊||星辰|TCE|2"
+				}
+			]
+		},
+		{
+			"ENG_name": "Star Map",
+			"name": "星图",
+			"source": "TCE",
+			"page": 38,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "TCE",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2级星辰结社特性}",
+				"作为你天文学研究的一部分，你创造了一张星图。它是一个微型物体，可以用作你施展德鲁伊法术时的法器。你通过在星图列表上掷骰或选择一个来确定它的形态。当你持握这件星图时，你获得这些好处：",
+				{
+					"type": "table",
+					"caption": "星图",
+					"colLabels": [
+						"d6",
+						"星图形态"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"布满星座图列的卷轴"
+						],
+						[
+							"2",
+							"钻有细孔的石板"
+						],
+						[
+							"3",
+							"斑点枭熊皮，标有凸痕记号"
+						],
+						[
+							"4",
+							"一套黑檀木封皮的星图集"
+						],
+						[
+							"5",
+							"遇光会投射出星辰轨迹的水晶"
+						],
+						[
+							"6",
+							"描绘星座排列的玻璃圆盘"
+						]
+					]
+				},
+				"当你持握这件星图时，你获得这些好处：",
+				{
+					"type": "list",
+					"items": [
+						"你习得戏法 {@spell 神导术}",
+						"你时刻准备着{@spell 光导箭}这个法术，它对你来说视为一个德鲁伊法术，且不计入你的每日准备法术上限。",
+						"你可以施展数次{@spell 光导箭}无而无需消耗法术位。其次数等同于你的熟练加值次，在你完成一次长休后你会重获全部已消耗使用次数。"
+					]
+				},
+				"如果你丢失了星图，你可以举行一场为时一小时的仪式来使用魔法创造一个替代品。这一仪式可以在一场短休或长休时举行，并会摧毁先前的星图。"
+			]
+		},
+		{
+			"ENG_name": "Starry Form",
+			"name": "星耀形态",
+			"source": "TCE",
+			"page": 38,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "TCE",
+			"level": 2,
+			"header": 1,
+			"consumes": {
+				"ENG_name": "Wild Shape",
+				"name": "荒野形态"
+			},
+			"entries": [
+				"{@i 2级星辰结社特性}",
+				"以一个附赠动作，你可以消耗一次荒野形态特性使用次数以呈现一个星耀形态，而非变化为野兽形态。",
+				"当处于星耀形态时，你保留你的游戏数据，但你的身体变得明亮；你的关节星光熠熠并有如星图一般由亮线连接。这一形态散发出10尺半径的明亮光照以及其外10尺的昏暗光照。这一形态持续10分钟。如果你解除它（无需动作）、{@condition 失能}、死亡、或再次使用此特性，它就会提前结束。",
+				"每当你化身星耀形态时，你选择以下在你身上闪耀的星座旨意；你的选择将为你在形态中提供特定的增益：",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "射手座|德鲁伊||星辰|TCE|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "圣杯座|德鲁伊||星辰|TCE|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "龙|德鲁伊||星辰|TCE|2"
+				}
+			]
+		},
+		{
+			"ENG_name": "Archer",
+			"name": "射手座",
+			"source": "TCE",
+			"page": 38,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "TCE",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"一个射手座的星座显现在你身上。当你激活这个形态时，你可以进行一次远程法术攻击，对你60尺内的一个生物射出一发光箭。命中时，此攻击将造成等同于{@damage 1d8}+你的感知调整值点的光耀伤害。你也可以在它结束前的后续回合中以一个附赠动作再次进行这一攻击。"
+			]
+		},
+		{
+			"ENG_name": "Chalice",
+			"name": "圣杯座",
+			"source": "TCE",
+			"page": 38,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "TCE",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"一个予命圣杯的星座于你身上浮现。当你消耗法术位施展法术时，你或你周围30尺内的另一生物可以恢复等同于 {@dice 1d8}+你的感知调整值 点的生命值。那个法术必须是能为生物恢复生命值的法术。"
+			]
+		},
+		{
+			"ENG_name": "Dragon",
+			"name": "龙",
+			"source": "TCE",
+			"page": 38,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "TCE",
+			"level": 2,
+			"header": 2,
+			"entries": [
+				"一个智慧巨龙的星座于你身上浮现。当你进行一次智力或感知检定，或是进行一次体质豁免来维持法术{@status 专注}时，你可以将{@dice d20} 中9或以下的骰值视为10。"
+			]
+		},
+		{
+			"ENG_name": "Cosmic Omen",
+			"name": "宇宙预兆",
+			"source": "TCE",
+			"page": 38,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "TCE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6级星辰结社特性}",
+				"每当你完成一次长休，你可以参照你的星图来寻找预兆。此时，掷一枚骰子。直到你完成下一次长休为止，你获得一个基于此掷骰结果奇偶性的特殊反应能力。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Weal (even)",
+							"name": "吉兆（偶数）",
+							"type": "item",
+							"entry": "当你周围30尺内的一个可见生物进行一次攻击检定、豁免检定、或属性检定，你可以使用你的反应来骰一个{@dice d6}，并将结果加入到检定结果中。"
+						},
+						{
+							"ENG_name": "Woe (odd)",
+							"name": "凶兆（奇数）",
+							"type": "item",
+							"entry": "当你周围30尺内的一个可见生物进行一次攻击检定、豁免检定、或属性检定，你可以使用你的反应来骰一个{@dice d6}，并将结果从检定结果中减去。"
+						}
+					]
+				},
+				"你可以使用这一反应能力的次数等同于你的熟练加值次，在你完成一次长休后，你会重获全部已消耗的使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Twinkling Constellations",
+			"name": "闪耀星座",
+			"source": "TCE",
+			"page": 38,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "TCE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10级星辰结社特性}",
+				"你的星耀形态星座增强了。射手座和圣杯座中的{@damage 1d8}都变成了{@damage 2d8}，而在巨龙座激活期间，你将获得20尺的飞行速度，并且可以悬浮。",
+				"此外，每个你的回合开始时，若此时你处于在星耀形态下，你可以更改当前身上闪耀的星座。"
+			]
+		},
+		{
+			"ENG_name": "Full of Stars",
+			"name": "灿若繁星",
+			"source": "TCE",
+			"page": 38,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "TCE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14级星辰结社特性}",
+				"当你处于星耀形态时，你的身体部分无实质化，使你获得钝击、穿刺、与挥砍伤害的抗性。"
+			]
+		},
+		{
+			"ENG_name": "Circle of Wildfire",
+			"name": "野火结社",
+			"source": "TCE",
+			"page": 39,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "野火",
+			"subclassSource": "TCE",
+			"level": 2,
+			"entries": [
+				"野火结社的德鲁伊们知晓破坏有时是创造的先驱，就如森林大火促进之后的生长。这些德鲁伊们与具有破坏力与创造力的原初精魂连接在一起，使德鲁伊能够创造出可控的火焰，焚烧某样事物却又给予它者生命。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "结社法术|德鲁伊||野火|TCE|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "召唤野火精魂|德鲁伊||野火|TCE|2"
+				}
+			]
+		},
+		{
+			"ENG_name": "Circle Spells",
+			"name": "结社法术",
+			"source": "TCE",
+			"page": 39,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "野火",
+			"subclassSource": "TCE",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"{@i 2级野火结社特性}",
+				"你与野火灵魄\u2014\u2014一位兼具创生和毁灭的原初存在\u2014\u2014之间的神秘连接业已形成。当你在此职业到达特定等级时，你与灵魄的连接将使你习得一些特定法术，就如野火结社法术列表所示。",
+				"一旦你习得这些法术中任意一个，你就会一直准备着它，且不计入你的每日准备法术上限。如果你学会一个不在德鲁伊法术列表中的法术，该法术对你来说视作德鲁伊法术。",
+				{
+					"type": "table",
+					"caption": "野火结社法术",
+					"colLabels": [
+						"德鲁伊等级",
+						"结社法术"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"2环",
+							"{@spell 燃烧之手}, {@spell 疗伤术}"
+						],
+						[
+							"3环",
+							"{@spell 炽焰法球}, {@spell 灼热射线}"
+						],
+						[
+							"5环",
+							"{@spell 植物滋长}, {@spell 回生术}"
+						],
+						[
+							"7th",
+							"{@spell 生命灵光}, {@spell 火焰护盾}"
+						],
+						[
+							"9th",
+							"{@spell 焰击术}, {@spell 群体疗伤术}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Summon Wildfire Spirit",
+			"name": "召唤野火精魂",
+			"source": "TCE",
+			"page": 39,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "野火",
+			"subclassSource": "TCE",
+			"level": 2,
+			"header": 1,
+			"consumes": {
+				"ENG_name": "Wild Shape",
+				"name": "荒野形态"
+			},
+			"entries": [
+				"{@i 2级野火结社特性}",
+				"你能召唤出与你灵魂连接的原初灵魄。以一个动作，你可以消耗一次荒野形特性态使用次数召唤出你的野火灵魄，而非变化为野兽形态。",
+				"灵魄会出现在由你所选择的、距离你30尺范围内一处未被占据的可见空间内。灵魄出现时，每个灵魄10尺范围内的生物（除你之外）都必须通过一次对抗你法术豁免 DC 的敏捷豁免，豁免失败将受到{@damage 2d6}点火焰伤害。",
+				"野火灵魄对你与你的同伴保持友善并遵从你的命令。在{@creature 野火精魂|TCE}资料表中可以看到这只生物的游戏数据，其中几处采用了你的熟练加值（PB）。由你来决定灵魄的外形。一些灵魄是熊熊燃烧的枝条虬结而成的人形，而另一些则像是被火焰包裹的野兽。",
+				"在战斗中，野火灵魄使用你的先攻，并且在你的回合后立即行动。它能自由移动和执行反应，但除非你以一个附赠动作命令它进行动作，否则它在回合中只能进行{@action 回避}动作。他可以执行下方写出的动作选项，或是其他的动作选项。如果你处于{@condition 失能}状态，野火灵魄可以选择采取任何动作，而不仅仅是{@action 回避}。",
+				"野火灵魄持续存在 1 小时。若其生命值降低至0、或你再次使用此特性召唤此灵魄、或你死亡时，它会提前消失。"
+			]
+		},
+		{
+			"ENG_name": "Enhanced Bond",
+			"name": "强化链接",
+			"source": "TCE",
+			"page": 39,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "野火",
+			"subclassSource": "TCE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"{@i 6级野火结社特性}",
+				"你与野火灵魄的连接增强了你的破坏与恢复法术。在你的野火灵魄存在期间，当你施展一个造成火焰伤害或回复生命值的法术时，骰一枚{@dice d8}，你在该法术的一次伤害掷骰或治疗掷骰中获得等同于骰出数值的加值。",
+				"此外，当你施展一个施法范围非自身的法术时，你可以自由选择该法术以你或你的野火灵魄为发出点。"
+			]
+		},
+		{
+			"ENG_name": "Cauterizing Flames",
+			"name": "灼烧烈焰",
+			"source": "TCE",
+			"page": 39,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "野火",
+			"subclassSource": "TCE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"{@i 10级野火结社特性}",
+				"你获得将死亡转化为可以用于治疗或焚烧的魔法火焰的能力。当一个小型或更大生物在你或你的野火灵魄周围30尺范围内死亡时，无害幽火从其死亡生物空间中涌现并在此处摇曳1分钟。当一个你可见的生物进入该空间时，你可以用反应熄灭那里的幽火并以此对该生物进行治疗或火焰伤害。火焰伤害或治疗量的数值等同于 {@dice 2d10}+你的感知调整值 点。",
+				"你可以使用这一反应能力的次数等同于你的熟练加值次，在你完成一次长休后，你会重获全部已消耗的使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Blazing Revival",
+			"name": "炽烈回生",
+			"source": "TCE",
+			"page": 39,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "野火",
+			"subclassSource": "TCE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"{@i 14级野火结社特性}",
+				"你与野火灵魄的连接可以使你免于死亡。当你生命值降至0且因此陷入{@condition 昏迷}时，若灵魄与你之间的距离不超过120尺，你就可以使灵魄降至 0 生命值，而你会恢复一半生命值，并立刻站起来。",
+				"必须完成一次长休才能再次使用该特性。"
+			]
+		},
+		{
+			"ENG_name": "Circle of Dreams",
+			"name": "梦境结社",
+			"source": "XGE",
+			"page": 22,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "梦境",
+			"subclassSource": "XGE",
+			"level": 2,
+			"entries": [
+				"梦境结社的德鲁伊们通常来自与妖精荒野有着很强联系的地区。他们与善良阵营的妖精组成了联盟共通守卫自然世界。这些德鲁伊追求光明和欢乐，并希望它们充满这个世界。他们的魔法能抚平创伤，为沮丧的人带来欢笑；他们守护的土地永远熠熠发光，丰硕富饶，在那里梦境和现实的边界变得模糊，任何疲惫的人都能找到休憩的场所。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "夏之王庭的芬馥|德鲁伊||梦境|XGE|2"
+				}
+			]
+		},
+		{
+			"ENG_name": "Balm of the Summer Court",
+			"name": "夏之王庭的芬馥",
+			"source": "XGE",
+			"page": 22,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "梦境",
+			"subclassSource": "XGE",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"2级起，你将被灌注来自 夏之王庭Summer Court 的祝福，由此化身缓解旅者乏顿和伤者痛苦的能量之泉。你拥有一个妖精能量池，其中有等同于德鲁伊等级枚{@dice d6}骰。",
+				"以一个附赠动作，你可以选择一名在你周围120尺内的可见生物，消耗至多等同于你德鲁伊等级一半的d6骰。投掷它们并将它们加起来，目标恢复那些骰值之和的生命值。目标同时也将得到每一枚骰子1点的临时生命值。",
+				"当你完成一次长休后，你重获所有已消耗的骰子。"
+			]
+		},
+		{
+			"ENG_name": "Hearth of Moonlight and Shadow",
+			"name": "月光阴影的炉心",
+			"source": "XGE",
+			"page": 22,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "梦境",
+			"subclassSource": "XGE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"6级起，无论你在何处设立营灶，那都是你的家园。在进行一次短休或长休时，你可以祈求 暮之王庭Gloaming Court 的阴影力量来保护你的营地不受外来者侵扰。在休息开始时，你接触空间中的一点，以那一点为中心，一个隐形的、半径30尺的球体如魔法般地出现。{@quickref 掩护||3||全身掩护}会阻断这个球体。",
+				"在这一领域内，你和你的盟友进行的敏捷（{@skill 隐匿}）检定与感知（{@skill 察觉}）检定具有+5加值，并且由任何明火放射的光亮（营火、火把、以及类似之物）从领域外来看是不可见的。",
+				"这些效果持续到休息完成时，或你离开这个领域时。"
+			]
+		},
+		{
+			"ENG_name": "Hidden Paths",
+			"name": "隐匿通途",
+			"source": "XGE",
+			"page": 22,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "梦境",
+			"subclassSource": "XGE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"10级起，你可以使用那些被隐藏起来的魔法通途，像部分精类生物一样在眨眼间穿越空间。在你的回合中，你可以以一个附赠动作传送到60尺内一处未被占据的可见空间内。或者，你也可以用你的动作来接触一个自愿生物将它传送至30尺内一处未被占据的你可见的空间。",
+				"你可以使用本特性的次数等同于你的感知调整值次（至少一次），当你完成一次长休后，你重获所有已消耗的次数。"
+			]
+		},
+		{
+			"ENG_name": "Walker in Dreams",
+			"name": "梦境行者",
+			"source": "XGE",
+			"page": 22,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "梦境",
+			"subclassSource": "XGE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"14级起，妖精荒野的魔力让你能物理性或精神性地穿越梦境世界。",
+				"当你完成一次短休时，你可以施展以下法术之一，无需消耗法术位也无需材料成分：{@spell 托梦术}（以你作为信使）、{@spell 探知术}、或 {@spell 传送法阵}。",
+				"以此法创造的{@spell 传送法阵}是特别的。它不能开启传送门将你传送到通往永久性{@spell 传送法阵}，取而代之，它将打开一条通往你在现处位面上完成最后一次长休的所在地的传送门。如果你没有在现处位面上进行过长休，这个法术会失败，但特性将视为没有使用过。",
+				"必须完成一次长休才能再次使用该特性。"
+			]
+		},
+		{
+			"ENG_name": "Circle of the Shepherd",
+			"name": "牧人结社",
+			"source": "XGE",
+			"page": 23,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "牧人",
+			"subclassSource": "XGE",
+			"level": 2,
+			"entries": [
+				"牧人结社的德鲁伊通晓如何与自然的精魂进行沟通，尤其是野兽之魂与妖精，他们也常常呼唤这些精魂援助自己。这些德鲁伊认为所有的活物都在自然界中发挥作用，因此他们致力于对动物的保护。游牧者们，会在已知范围内尽他们所能地聆听野兽的控诉。他们监视威胁到自然的怪物，斥退进行不必要杀戮的猎人，预防文明侵犯动物栖息地和迁徙所需路径。许多游牧之环的德鲁伊乐意远离城镇，为将时间花费于管理荒野生物而感到充实。",
+				"牧人结社的成员通常会因为以下理由进行冒险：对抗那些威胁到他们管理的势力，或者是寻找有助于自己护卫职责的知识和力量。无论这些德鲁伊走到哪里，荒野的精魂都会与他们同行。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "林地之语|德鲁伊||牧人|XGE|2"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "精魂图腾|德鲁伊||牧人|XGE|2"
+				}
+			]
+		},
+		{
+			"ENG_name": "Speech of the Woods",
+			"name": "林地之语",
+			"source": "XGE",
+			"page": 23,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "牧人",
+			"subclassSource": "XGE",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"2级时，你获得了和野兽以及许多精类进行交流的能力。",
+				"你习得说、读、写{@language 木族语}的能力。此外，野兽能理解你的语言，而你也能理解它们的声音和动作。大多数野兽缺乏足够的智力去表述或理解复杂的概念，但友善的野兽可以复述它在最近听到或看到的事物。此能力并不会让你和野兽形成特别的友谊，尽管你可以将此技能与讨好它们的礼物结合使用，就像是你能对其他非玩家角色做的那样。"
+			]
+		},
+		{
+			"ENG_name": "Spirit Totem",
+			"name": "精魂图腾",
+			"source": "XGE",
+			"page": 23,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "牧人",
+			"subclassSource": "XGE",
+			"level": 2,
+			"header": 1,
+			"entries": [
+				"2级起，你获得了招现出自然精魂并借助它们影响你身边的世界的能力。以一个附赠动作，你可以在你周围60尺范围内你可见的一点处魔法般地召唤一个虚体的精魂。此精魂将围绕该点，创造出一道半径30尺的光环。尽管精魂有着和对应生物相仿的幽魂般外表，但精魂不被视为生物，也不算作物体。",
+				"以一个附赠动作，你可以移动精魂至多60尺，到你能看到的另一点处。",
+				"精魂将持续存在1分钟。如果你陷入{@condition 失能}，它将提前消失。一旦你使用了此特性，直到你完成一次短休或长休为止你都不能再次使用它。",
+				"精魂光环的效果取决于你召唤出的精魂的类别，如下面的选项所示。",
+				{
+					"ENG_name": "Bear Spirit",
+					"name": "熊精魂",
+					"type": "entries",
+					"entries": [
+						"熊精魂授予你和你的伙伴它的力量和坚韧。在精魂出现时，每个处于此光环中、由你选择的生物，获得等同于 5+你的德鲁伊等级 点的临时生命值。此外，只要身处于光环之内，你和你的盟友进行的力量检定和力量豁免将具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Hawk Spirit",
+					"name": "鹰精魂",
+					"type": "entries",
+					"entries": [
+						"鹰精魂是技艺精湛的猎手，用它敏锐的视力标记你的敌人。当一个生物对一个处于此精魂光环内的目标发动一次攻击检定时，你可以使用你的反应让这次攻击检定获得优势。此外，只要身处于光环之内，你和你的盟友进行的感知（{@skill 察觉}）检定将具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Unicorn Spirit",
+					"name": "独角兽精魂",
+					"type": "entries",
+					"entries": [
+						"独角兽精魂为周围提供保护。你和你的盟友在为侦测在精魂光环内的生物所进行的任何属性检定都将优势。此外，若你以一个法术位施展了一个为任意生物恢复生命值的法术（不论是否处于光环内），每个处于光环内的、由你选择的生物也会同时恢复等同于 你德鲁伊等级 点的生命值。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mighty Summoner",
+			"name": "全能牧者",
+			"source": "XGE",
+			"page": 23,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "牧人",
+			"subclassSource": "XGE",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"6级起，你召唤出来的野兽和精类比以往更为强大。任何你法术召唤或创造出的野兽或精类将获得以下增益：",
+				{
+					"type": "list",
+					"items": [
+						"该生物出现时具有比正常情况下更多的生命值：它每有一颗生命骰就会获得2点额外的生命值。",
+						"在克服对于非魔法攻击和伤害的免疫和抗性时，来自该生物天生武器的伤害被视为是魔法的。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Guardian Spirit",
+			"name": "精魂守卫",
+			"source": "XGE",
+			"page": 23,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "牧人",
+			"subclassSource": "XGE",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"10级起，你的 精魂图腾Spirit Totem 会守护那些你用你的魔法呼唤出的野兽和精类。当你用法术召唤或创造的野兽或精类在你的 精魂图腾Spirit Totem 光环内结束其回合时，该生物恢复等同于你德鲁伊等级一半的生命值。"
+			]
+		},
+		{
+			"ENG_name": "Faithful Summons",
+			"name": "忠诚牧畜",
+			"source": "XGE",
+			"page": 23,
+			"className": "德鲁伊",
+			"classSource": "PHB",
+			"subclassShortName": "牧人",
+			"subclassSource": "XGE",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"从14级开始，你通联的自然精魂会在你最为无助的时候保护你。当你的生命值降为0、或非自愿地陷入{@condition 失能}时，你可以立即获得一次以9环法术位施展的 {@spell 咒唤兽群}法术的好处。这次法术将召唤出四只由你选择的、挑战等级至高为2的野兽。被召唤的野兽出现在你周围20尺内。如果你没有或不能为其下达命令，它们将尽可能的保护你免受伤害并攻击你的敌人。此法术持续1小时，无需{@status 专注}。你也可以主动解消它来提前结束它（无需动作）。",
+				"必须完成一次长休才能再次使用该特性。"
+			]
+		},
+		{
+			"ENG_name": "Circle of the Land",
+			"name": "大地结社",
+			"source": "PHB",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "大地",
+			"subclassSource": "PHB",
+			"level": 3,
+			"_copy": {
+				"ENG_name": "Circle of the Land",
+				"name": "大地结社",
+				"source": "PHB",
+				"className": "德鲁伊",
+				"classSource": "PHB",
+				"subclassShortName": "大地",
+				"subclassSource": "PHB",
+				"level": 2,
+				"_preserve": {
+					"page": true,
+					"srd": true
+				}
+			}
+		},
+		{
+			"ENG_name": "Circle of the Moon",
+			"name": "月亮结社",
+			"source": "PHB",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "月亮",
+			"subclassSource": "PHB",
+			"level": 3,
+			"_copy": {
+				"ENG_name": "Circle of the Moon",
+				"name": "月亮结社",
+				"source": "PHB",
+				"className": "德鲁伊",
+				"classSource": "PHB",
+				"subclassShortName": "月亮",
+				"subclassSource": "PHB",
+				"level": 2,
+				"_preserve": {
+					"page": true
+				}
+			}
+		},
+		{
+			"ENG_name": "Circle of Spores",
+			"name": "孢子结社",
+			"source": "TCE",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "孢子",
+			"subclassSource": "TCE",
+			"level": 3,
+			"_copy": {
+				"ENG_name": "Circle of Spores",
+				"name": "孢子结社",
+				"source": "TCE",
+				"className": "德鲁伊",
+				"classSource": "PHB",
+				"subclassShortName": "孢子",
+				"subclassSource": "TCE",
+				"level": 2,
+				"_preserve": {
+					"page": true
+				}
+			}
+		},
+		{
+			"ENG_name": "Circle of Stars",
+			"name": "星辰结社",
+			"source": "TCE",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "TCE",
+			"level": 3,
+			"_copy": {
+				"ENG_name": "Circle of Stars",
+				"name": "星辰结社",
+				"source": "TCE",
+				"className": "德鲁伊",
+				"classSource": "PHB",
+				"subclassShortName": "星辰",
+				"subclassSource": "TCE",
+				"level": 2,
+				"_preserve": {
+					"page": true
+				}
+			}
+		},
+		{
+			"ENG_name": "Circle of Wildfire",
+			"name": "野火结社",
+			"source": "TCE",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "野火",
+			"subclassSource": "TCE",
+			"level": 3,
+			"_copy": {
+				"ENG_name": "Circle of Wildfire",
+				"name": "野火结社",
+				"source": "TCE",
+				"className": "德鲁伊",
+				"classSource": "PHB",
+				"subclassShortName": "野火",
+				"subclassSource": "TCE",
+				"level": 2,
+				"_preserve": {
+					"page": true
+				}
+			}
+		},
+		{
+			"ENG_name": "Circle of Dreams",
+			"name": "梦境结社",
+			"source": "XGE",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "梦境",
+			"subclassSource": "XGE",
+			"level": 3,
+			"_copy": {
+				"ENG_name": "Circle of Dreams",
+				"name": "梦境结社",
+				"source": "XGE",
+				"className": "德鲁伊",
+				"classSource": "PHB",
+				"subclassShortName": "梦境",
+				"subclassSource": "XGE",
+				"level": 2,
+				"_preserve": {
+					"page": true
+				}
+			}
+		},
+		{
+			"ENG_name": "Circle of the Shepherd",
+			"name": "牧人结社",
+			"source": "XGE",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "牧人",
+			"subclassSource": "XGE",
+			"level": 3,
+			"_copy": {
+				"ENG_name": "Circle of the Shepherd",
+				"name": "牧人结社",
+				"source": "XGE",
+				"className": "德鲁伊",
+				"classSource": "PHB",
+				"subclassShortName": "牧人",
+				"subclassSource": "XGE",
+				"level": 2,
+				"_preserve": {
+					"page": true
+				}
+			}
+		},
+		{
+			"ENG_name": "Circle of the Land",
+			"name": "大地结社",
+			"source": "XPHB",
+			"page": 84,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "大地",
+			"subclassSource": "XPHB",
+			"level": 3,
+			"entries": [
+				"{@i 自然世界，颂之以系}",
+				"大地结社由守护着远古知识与仪式的秘术师和智者们构成。这些德鲁伊们聚集在树木的圣环下或石阵之中，他们用德鲁伊语低声交流，传递着原初的秘密。结社中最睿智的成员如教团的首席祭司地位般尊贵。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "大地结社法术|德鲁伊|XPHB|大地|XPHB|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "大地之援|德鲁伊|XPHB|大地|XPHB|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Circle of the Land Spells",
+			"name": "大地结社法术",
+			"source": "XPHB",
+			"page": 84,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "大地",
+			"subclassSource": "XPHB",
+			"level": 3,
+			"entries": [
+				"当你结束一次{@variantrule 长休|XPHB}，选择一种地形：荒漠、极地，温带或热带。参照以下对应类型的表格，你自动将表中对应你德鲁伊等级及更低等级的法术加入准备。",
+				{
+					"type": "table",
+					"caption": "荒漠",
+					"colLabels": [
+						"德鲁伊等级",
+						"结社法术"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"3环",
+							"{@spell 朦胧术|XPHB}, {@spell 燃烧之手|XPHB}, {@spell 火焰箭|XPHB}"
+						],
+						[
+							"5环",
+							"{@spell 火球术|XPHB}"
+						],
+						[
+							"7th",
+							"{@spell 枯萎术|XPHB}"
+						],
+						[
+							"9th",
+							"{@spell 石墙术|XPHB}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "极地",
+					"colLabels": [
+						"德鲁伊等级",
+						"结社法术"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"3环",
+							"{@spell 云雾术|XPHB}, {@spell 定身类人|XPHB}, {@spell 冷冻射线|XPHB}"
+						],
+						[
+							"5环",
+							"{@spell 雪雨暴|XPHB}"
+						],
+						[
+							"7th",
+							"{@spell 冰风暴|XPHB}"
+						],
+						[
+							"9th",
+							"{@spell 寒冰锥|XPHB}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "温带",
+					"colLabels": [
+						"德鲁伊等级",
+						"结社法术"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"3环",
+							"{@spell 迷踪步|XPHB}, {@spell 电爪|XPHB}, {@spell 睡眠术|XPHB}"
+						],
+						[
+							"5环",
+							"{@spell 闪电束|XPHB}"
+						],
+						[
+							"7th",
+							"{@spell 行动自如|XPHB}"
+						],
+						[
+							"9th",
+							"{@spell 树跃术|XPHB}"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "热带",
+					"colLabels": [
+						"德鲁伊等级",
+						"结社法术"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"3环",
+							"{@spell 酸液飞溅|XPHB}, {@spell 致病射线|XPHB}, {@spell 蛛网术|XPHB}"
+						],
+						[
+							"5环",
+							"{@spell 臭云术|XPHB}"
+						],
+						[
+							"7th",
+							"{@spell 变形术|XPHB}"
+						],
+						[
+							"9th",
+							"{@spell 疫病虫群|XPHB}"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Land's Aid",
+			"name": "大地之援",
+			"source": "XPHB",
+			"page": 85,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "大地",
+			"subclassSource": "XPHB",
+			"level": 3,
+			"entries": [
+				"以一个{@action 魔法|XPHB}动作，你可以消耗一次荒野变形使用次数并且选择距你 60 尺内的一点。给予活力的繁花和吸取生命的荆刺在以那一点为源点的 10 尺半径{@variantrule 球状 [效应区域]|XPHB|球状}区域同时生出。在该{@variantrule 球状 [效应区域]|XPHB|球状}区域内每个你所选择的生物必须进行一次对抗你法术豁免DC的体质豁免，豁免失败时生物受到{@damage 2d6}暗蚀伤害，豁免成功时受到半数伤害。此外，区域内你所选择的一名生物恢复{@dice 2d6}{@variantrule 生命值|XPHB}。",
+				"当你到达特定的德鲁伊等级时，伤害和治疗量会提升{@dice 1d6}：10 级（{@dice 3d6}）和 14 级（{@dice 4d6}）。"
+			]
+		},
+		{
+			"ENG_name": "Natural Recovery",
+			"name": "自然恢复",
+			"source": "XPHB",
+			"page": 85,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "大地",
+			"subclassSource": "XPHB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你可以施展一个你以结社法术特性准备的一环及以上法术，而无须消耗法术位，并且你必须在完成一次{@variantrule 长休|XPHB}后才能再次这么做。",
+				"此外，当你结束一次{@variantrule 短休|XPHB}时，你可以选择恢复消耗的法术位。法术环阶的总和等于你德鲁伊职业等级的一半（向上取整），且不能是六环或更高环阶的法术位。比如说，作为一位 6 级德鲁伊，你可以恢复环阶总和最多为 3 的法术位。你可以恢复一个三环法术位，或者一个二环和一个一环法术位，或者三个一环法术位。一旦你以此特性恢复过法术位，直到完成一次{@variantrule 长休|XPHB}为止，你无法再次这么做。"
+			]
+		},
+		{
+			"ENG_name": "Nature's Ward",
+			"name": "自然之护",
+			"source": "XPHB",
+			"page": 85,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "大地",
+			"subclassSource": "XPHB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你对{@condition 中毒|XPHB}状态免疫，并且根据自然之护表格所示，你对在结社法术特性中与你当前大地选择相关的伤害类型具有{@variantrule 抗性|XPHB}。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "table",
+							"caption": "自然之护",
+							"colLabels": [
+								"地形",
+								"抗性"
+							],
+							"colStyles": [
+								"col-6",
+								"col-6"
+							],
+							"rows": [
+								[
+									"荒漠",
+									"火焰"
+								],
+								[
+									"极地",
+									"寒冷"
+								],
+								[
+									"温带",
+									"闪电"
+								],
+								[
+									"热带",
+									"毒素"
+								]
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Nature's Sanctuary",
+			"name": "自然庇护",
+			"source": "XPHB",
+			"page": 86,
+			"srd52": true,
+			"basicRules2024": true,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "大地",
+			"subclassSource": "XPHB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"以一个{@action 魔法|XPHB}动作，你可以消耗一次荒野形态的使用次数，并让灵体树木和藤蔓出现在你自身120尺范围内地面上的一个15尺{@variantrule 立方 [效应区域]|XPHB|立方}效应区域内。它们在那里持续存在1分钟，或者直到你陷入{@condition 失能|XPHB}状态或死亡。你和你的盟友在该区域内拥有{@variantrule 掩护|XPHB|半身掩护}，并且你的盟友在该区域内获得你自然之护的当前{@variantrule 抗性|XPHB}。",
+				"以一个{@variantrule 附赠动作|XPHB}，你可以将{@variantrule 立方 [效应区域]|XPHB|立方}区域在你的120尺内移动最多60尺距离。"
+			]
+		},
+		{
+			"ENG_name": "Circle Forms",
+			"name": "结社形态",
+			"source": "XPHB",
+			"page": 86,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "月亮",
+			"subclassSource": "XPHB",
+			"level": 3,
+			"entries": [
+				"你学会了如何在使用荒野变形的同时引导月之魔力，增益自身的力量，你获得以下增益：",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Challenge Rating",
+							"name": "挑战等级",
+							"type": "entries",
+							"entries": [
+								"你的荒野变形形态的最大{@variantrule 挑战等级|XPHB}现在等于你德鲁伊等级的三分之一（向下取整）。"
+							]
+						},
+						{
+							"ENG_name": "Armor Class",
+							"name": "护甲等级",
+							"type": "entries",
+							"entries": [
+								"只要你仍处于荒野变形形态，如果 13 + 你的感知调整值加起来高于野兽的护甲等级，你的护甲等级等于你 13 + 你的感知调整值。"
+							]
+						},
+						{
+							"ENG_name": "Temporary Hit Points",
+							"name": "临时生命值",
+							"type": "entries",
+							"entries": [
+								"当你化为荒野变形形态时，你获得等于德鲁伊等级的三倍数量的{@variantrule 临时生命值|XPHB}。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Circle of the Moon",
+			"name": "月亮结社",
+			"source": "XPHB",
+			"page": 86,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "月亮",
+			"subclassSource": "XPHB",
+			"level": 3,
+			"entries": [
+				"{@i 荒野卫士，身化兽躯}",
+				"月亮结社的德鲁伊凭借月亮的魔法让自己改变形态。他们的结社成员们在月下相聚，分享见闻，举行仪式。",
+				"该结社的德鲁伊如月亮般善变，他们会化身大猫整夜徘徊，第二天又成为一只盘旋在树顶的老鹰，随后从林下灌丛猛冲而出，以熊的形态赶走领地中的入侵者。荒野存在于这些德鲁伊的血液之中。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "月亮结社法术|德鲁伊|XPHB|月亮|XPHB|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "结社形态|德鲁伊|XPHB|月亮|XPHB|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Circle of the Moon Spells",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"entries": [
+				"当你达到月亮结社表格中特定的德鲁伊等级时，你自动将表中对应的法术加入准备。",
+				"此外，你可以在荒野形态下施展这些法术。",
+				{
+					"caption": "月亮结社法术",
+					"colLabels": [
+						"德鲁伊等级",
+						"准备法术"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"3",
+							"{@spell 疗伤术|XPHB}，{@spell 月华之光|XPHB}，{@spell 点点星芒|XPHB}"
+						],
+						[
+							"5",
+							"{@spell 咒唤兽群|XPHB}"
+						],
+						[
+							"7",
+							"{@spell 月光涌泉|XPHB}"
+						],
+						[
+							"9",
+							"{@spell 群体疗伤术|XPHB}"
+						]
+					],
+					"type": "table"
+				}
+			],
+			"level": 3,
+			"name": "月亮结社法术",
+			"page": 86,
+			"source": "XPHB",
+			"subclassShortName": "月亮",
+			"subclassSource": "XPHB",
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Improved Circle Forms",
+			"name": "进阶结社形态",
+			"source": "XPHB",
+			"page": 87,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "月亮",
+			"subclassSource": "XPHB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"处于荒野形态时，你获得以下增益。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Lunar Radiance",
+							"name": "月耀辉光",
+							"type": "entries",
+							"entries": [
+								"你在荒野变形形态下的每次攻击可以造成普通的伤害或光耀伤害。由你在每次攻击命中时选择。"
+							]
+						},
+						{
+							"ENG_name": "Increased Toughness",
+							"name": "强化韧性",
+							"type": "entries",
+							"entries": [
+								"你将你的感知调整值加到你的体质豁免结果当中。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Moonlight Step",
+			"name": "月光飞步",
+			"source": "XPHB",
+			"page": 87,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "月亮",
+			"subclassSource": "XPHB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"能以魔法转移自身，在一道月光中重新出现。以一个{@variantrule 附赠动作|XPHB}，你传送最多 30 尺到一处你能看见的未被占据的空间，并且你在这个回合结束前进行的下一次攻击具有{@variantrule 优势|XPHB}。",
+				"你可以使用该特性的次数等于你的感知调整值（最少 1 次），并且你在结束一次{@variantrule 长休|XPHB}后重获全部已消耗的使用次数。你也能消耗一个二环或更高的法术位来恢复一次使用次数（无需任何动作）。"
+			]
+		},
+		{
+			"ENG_name": "Lunar Form",
+			"name": "月辉形态",
+			"source": "XPHB",
+			"page": 87,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "月亮",
+			"subclassSource": "XPHB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"月之力量充盈着你的身体，让你获得以下增益：",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Improved Lunar Radiance",
+							"name": "月耀炽光",
+							"type": "entries",
+							"entries": [
+								"一回合一次，你可以对一次荒野形态下的攻击命中的目标额外造成{@damage 2d10}光耀伤害。"
+							]
+						},
+						{
+							"ENG_name": "Shared Moonlight",
+							"name": "月辉同行",
+							"type": "entries",
+							"entries": [
+								"当你使用月光飞步时，你还能传送另一个自愿的生物。该生物必须在你的 10 尺内，并且你将它传送到你出现点的 10 尺内的一个你能看见的未被占据空间中。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Circle of the Sea",
+			"name": "海洋结社",
+			"source": "XPHB",
+			"page": 87,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "海洋",
+			"subclassSource": "XPHB",
+			"level": 3,
+			"entries": [
+				"{@i 海潮风暴，一体同心}",
+				"海洋结社的德鲁伊们驱使着世界上海洋和风暴中狂野的自然之力。其中一些德鲁伊将自己视作自然怒火的化身，对那些掠夺自然世界的人们施以报复。而另一些德鲁伊则顺应潮汐的涨落，跟随洋流和波浪的激荡，聆听狂风的低语和怒号，从中寻求和自然的灵性统一。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "海洋结社法术|德鲁伊|XPHB|海洋|XPHB|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "瀚海之怒|德鲁伊|XPHB|海洋|XPHB|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Circle of the Sea Spells",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"entries": [
+				"当你到达海洋结社法术表中特定的德鲁伊等级时，你就始终准备着表中对应的法术。",
+				{
+					"caption": "海洋结社法术",
+					"colLabels": [
+						"德鲁伊等级",
+						"准备法术"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-11"
+					],
+					"rows": [
+						[
+							"3",
+							"{@spell 云雾术|XPHB}，{@spell 造风术|XPHB}，{@spell 冷冻射线|XPHB}，{@spell 粉碎音波|XPHB}，{@spell 雷鸣波|XPHB}"
+						],
+						[
+							"5",
+							"{@spell 闪电束|XPHB}，{@spell 水下呼吸|XPHB}"
+						],
+						[
+							"7",
+							"{@spell 操控水体|XPHB}，{@spell 冰风暴|XPHB}"
+						],
+						[
+							"9",
+							"{@spell 咒唤元素|XPHB}，{@spell 定身怪物|XPHB}"
+						]
+					],
+					"type": "table"
+				}
+			],
+			"level": 3,
+			"name": "海洋结社法术",
+			"page": 87,
+			"source": "XPHB",
+			"subclassShortName": "海洋",
+			"subclassSource": "XPHB",
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Wrath of the Sea",
+			"name": "瀚海之怒",
+			"source": "XPHB",
+			"page": 87,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "海洋",
+			"subclassSource": "XPHB",
+			"level": 3,
+			"entries": [
+				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一次你的荒野变形次数来在自己周围显现出海浪形态的 5 尺{@variantrule 光环 [效应区域]|XPHB|光环}。光环会持续存在 10 分钟。当你解除它（无需任何动作）、再度显现光环或陷入{@condition 失能|XPHB}时，它会提前结束。",
+				"当你显现出{@variantrule 光环 [效应区域]|XPHB|光环}时，以及在之后的回合中以一个{@variantrule 附赠动作|XPHB}，你可以选择另一个在你{@variantrule 光环 [效应区域]|XPHB|光环}范围内你可见的生物。该生物必须成功通过一次对抗你的法术豁免DC的体质豁免，否则受到寒冷伤害，如果该生物是大型或更小体型，它会被从你身边推离至多 15 尺距离。投掷等于你感知调整值数量（最少 1 颗）的d6骰来决定伤害。"
+			]
+		},
+		{
+			"ENG_name": "Aquatic Affinity",
+			"name": "水生亲和",
+			"source": "XPHB",
+			"page": 87,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "海洋",
+			"subclassSource": "XPHB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"你的瀚海之怒创造的{@variantrule 光环 [效应区域]|XPHB|光环}范围提升至 10 尺。",
+				"此外，你获得等于你{@variantrule 速度|XPHB}的{@variantrule 游泳速度|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Stormborn",
+			"name": "风暴降生",
+			"source": "XPHB",
+			"page": 87,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "海洋",
+			"subclassSource": "XPHB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你的瀚海之怒特性在激活时获得两项额外增益：",
+				{
+					"ENG_name": "Flight",
+					"name": "飞行",
+					"type": "entries",
+					"entries": [
+						"你获得等于你的{@variantrule 速度|XPHB}的{@variantrule 飞行速度|XPHB}。"
+					]
+				},
+				{
+					"ENG_name": "Resistance",
+					"name": "抗性",
+					"type": "entries",
+					"entries": [
+						"你获得对寒冷、闪电和雷鸣伤害的{@variantrule 抗性|XPHB}。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Oceanic Gift",
+			"name": "大洋慨赠",
+			"source": "XPHB",
+			"page": 88,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "海洋",
+			"subclassSource": "XPHB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"当你使用瀚海之怒时，你可以让 60 尺内一个自愿生物而非你自己身上显现出{@variantrule 光环 [效应区域]|XPHB|光环}。该生物获得{@variantrule 光环 [效应区域]|XPHB|光环}的所有增益，并在特性中使用你的法术豁免DC和感知调整值。",
+				"此外，如果你消耗两次而非一次荒野变形使用次数，你可以同时在你自己和另一个生物身上显现出{@variantrule 光环 [效应区域]|XPHB|光环}。"
+			]
+		},
+		{
+			"ENG_name": "Circle of the Stars",
+			"name": "星辰结社",
+			"source": "XPHB",
+			"page": 88,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "XPHB",
+			"level": 3,
+			"entries": [
+				"{@i 群星隐秘，求索驭力}",
+				"在无法追忆的过去，星辰结社的德鲁伊们便开始记录天穹中的图案，探索星座之间隐藏的秘密。通过理解这些秘密，这个结社的德鲁伊探索着如何驾驭宇宙的伟力。",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "星图|德鲁伊|XPHB|星辰|XPHB|3"
+				},
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "星耀形态|德鲁伊|XPHB|星辰|XPHB|3"
+				}
+			]
+		},
+		{
+			"ENG_name": "Star Map",
+			"name": "星图",
+			"source": "XPHB",
+			"page": 88,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "XPHB",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"作为你天文学研究的一部分，你创造了一张星图。它是一个微型物体，可以用作你施展德鲁伊法术时的{@variantrule 法器|XPHB}。你通过在星图列表上掷骰或选择一个来确定它的形态。",
+				"当你持握这件星图时，你视作总是准备着{@spell 神导术|XPHB}和{@spell 光导箭|XPHB}这两个法术，并且你可以施展{@spell 光导箭|XPHB}而无需消耗法术位。其次数等同于你的感知调整值（最少 1 次），当你完成一次{@variantrule 长休|XPHB}时，你重获全部已消耗的使用次数。",
+				"如果你丢失了星图，你可以举行一场为时一小时的仪式来使用魔法创造一个替代品。这一仪式可以在一场{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}时举行，并会摧毁先前的星图。",
+				{
+					"type": "table",
+					"caption": "星图",
+					"colLabels": [
+						"{@dice 1d6}",
+						"星图形态"
+					],
+					"colStyles": [
+						"col-2 text-center",
+						"col-10"
+					],
+					"rows": [
+						[
+							"1",
+							"一张布满星座图列的卷轴"
+						],
+						[
+							"2",
+							"钻有细孔的石板"
+						],
+						[
+							"3",
+							"一张枭熊皮，上面标有星星的符号"
+						],
+						[
+							"4",
+							"一套黑檀木封皮的星图集"
+						],
+						[
+							"5",
+							"一块遇光会投射出星辰轨迹的水晶"
+						],
+						[
+							"6",
+							"一面描绘星座排列的玻璃圆盘"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Starry Form",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"consumes": {
+				"ENG_name": "Wild Shape",
+				"name": "荒野形态"
+			},
+			"entries": [
+				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一次荒野变形特性使用次数以呈现一个星耀形态，而非变化为野兽形态。",
+				"处于星耀形态期间，你保留你的游戏数据，但你的身体变得明亮；你的关节星光熠熠并有如星图一般由亮线连接。这一形态散发出 10 尺半径的{@variantrule 明亮光照|XPHB}以及其外 10 尺的{@variantrule 微光光照|XPHB}。这一形态持续 10 分钟。如果你解除它（无需动作）、{@condition 失能|XPHB}、死亡、或再次使用此特性，它就会提前结束。",
+				"每当你化身星耀形态时，你选择以下在星座之一在你身上亮起；你的选择将为你在形态中提供特定的增益：",
+				{
+					"subclassFeature": "射手座|德鲁伊|XPHB|星辰|XPHB|3",
+					"type": "refSubclassFeature"
+				},
+				{
+					"subclassFeature": "圣杯座|德鲁伊|XPHB|星辰|XPHB|3",
+					"type": "refSubclassFeature"
+				},
+				{
+					"subclassFeature": "巨龙座|德鲁伊|XPHB|星辰|XPHB|3",
+					"type": "refSubclassFeature"
+				}
+			],
+			"header": 1,
+			"level": 3,
+			"name": "星耀形态",
+			"page": 88,
+			"source": "XPHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "XPHB",
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Archer",
+			"name": "射手座",
+			"source": "XPHB",
+			"page": 88,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "XPHB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"一个弓箭射手的星座于你身上浮现。当你激活这个形态时你可以进行一次远程法术攻击，对你 60 尺内的一个生物射出一发光箭，在形态持续期间的后续回合中你也能够以一个{@variantrule 附赠动作|XPHB}发射光箭。命中时，此攻击将造成等同于 {@damage 1d8} + 你的感知调整值点的光耀伤害。"
+			]
+		},
+		{
+			"ENG_name": "Chalice",
+			"name": "圣杯座",
+			"source": "XPHB",
+			"page": 88,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "XPHB",
+			"level": 3,
+			"header": 2,
+			"entries": [
+				"一个予命圣杯的星座于你身上浮现。当你消耗法术位施展一个为生物恢复{@variantrule 生命值|XPHB}的法术时，你或你周围 30 尺内的另一生物可以恢复等同于 {@dice 1d8} + 你的感知调整值点的{@variantrule 生命值|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Dragon",
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"entries": [
+				"一个智慧巨龙的星座于你身上浮现。当你进行一次智力或感知检定，或是进行一次体质豁免来维持法术{@status 专注|XPHB}时，你可以将{@dice d20}中 9 或以下的骰值视为 10。"
+			],
+			"header": 2,
+			"level": 3,
+			"name": "巨龙座",
+			"page": 88,
+			"source": "XPHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "XPHB",
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Cosmic Omen",
+			"name": "宇宙预兆",
+			"source": "XPHB",
+			"page": 89,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "XPHB",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"每当你完成一次{@variantrule 长休|XPHB}时，你可以参照你的星图来寻找预兆。此时，掷一枚骰子。直到你完成下一次{@variantrule 长休|XPHB}为止，你获得一个基于此掷骰结果奇偶性的特殊{@variantrule 反应|XPHB}能力。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Weal (even)",
+							"name": "吉兆（偶数）",
+							"type": "item",
+							"entries": [
+								"当你周围 30 尺内的一个可见生物将要进行一次{@variantrule D20 检定|XPHB}时，你可以使用你的{@variantrule 反应|XPHB}来投一个{@dice 1d6}，并将结果加入到检定结果中。"
+							]
+						},
+						{
+							"ENG_name": "Woe (odd)",
+							"name": "凶兆（奇数）",
+							"type": "item",
+							"entries": [
+								"当你周围 30 尺内的一个可见生物将要进行一次{@variantrule D20 检定|XPHB}时，你可以使用你的{@variantrule 反应|XPHB}来投一个{@dice 1d6}，并将结果从检定结果中减去。"
+							]
+						}
+					]
+				},
+				"你可以使用这一{@variantrule 反应|XPHB}能力的次数等同于你的感知调整值（最少 1 次），在你完成一次{@variantrule 长休|XPHB}后，你会重获所有已消耗的使用次数。"
+			]
+		},
+		{
+			"ENG_name": "Twinkling Constellations",
+			"name": "闪耀星座",
+			"source": "XPHB",
+			"page": 89,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "XPHB",
+			"level": 10,
+			"header": 2,
+			"entries": [
+				"你的星耀形态星座增强了。射手座和圣杯座中的{@damage 1d8}都变成了{@damage 2d8}，而在巨龙座激活期间，你将获得 20 尺的{@variantrule 飞行速度|XPHB}，并且可以悬浮。",
+				"此外，每个你的回合开始时，若此时你处于在星耀形态下，你可以更改当前身上闪耀的星座。"
+			]
+		},
+		{
+			"ENG_name": "Full of Stars",
+			"name": "灿若繁星",
+			"source": "XPHB",
+			"page": 89,
+			"className": "德鲁伊",
+			"classSource": "XPHB",
+			"subclassShortName": "星辰",
+			"subclassSource": "XPHB",
+			"level": 14,
+			"header": 2,
+			"entries": [
+				"处于星耀形态期间，你的身体部分无实质化，使你获得钝击、穿刺与挥砍伤害的{@variantrule 抗性|XPHB}。"
+			]
+		}
+	]
+}

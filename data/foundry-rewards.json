@@ -1,0 +1,24 @@
+{
+	"reward": [
+		{
+			"ENG_name": "Boon of Fortitude",
+			"name": "超凡强韧之恩惠",
+			"source": "DMG",
+			"effects": [
+				{
+					"ENG_name": "HP Increase",
+					"name": "生命值增加",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.hp.bonuses.overall",
+							"mode": "ADD",
+							"value": "+ 40"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		}
+	]
+}

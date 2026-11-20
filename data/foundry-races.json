@@ -1,0 +1,4966 @@
+{
+	"_meta": {
+		"internalCopies": [
+			"raceFeature"
+		]
+	},
+	"race": [
+		{
+			"ENG_name": "Dragonborn (Black)",
+			"name": "龙裔 (黑)",
+			"source": "XPHB",
+			"advancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "breath",
+						"type": "dice",
+						"scale": {
+							"0": {
+								"number": 1,
+								"faces": 10
+							},
+							"5": {
+								"number": 2,
+								"faces": 10
+							},
+							"11": {
+								"number": 3,
+								"faces": 10
+							},
+							"17": {
+								"number": 4,
+								"faces": 10
+							}
+						}
+					},
+					"title": "吐息"
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Dragonborn (Blue)",
+			"name": "龙裔 (蓝)",
+			"source": "XPHB",
+			"advancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "breath",
+						"type": "dice",
+						"scale": {
+							"0": {
+								"number": 1,
+								"faces": 10
+							},
+							"5": {
+								"number": 2,
+								"faces": 10
+							},
+							"11": {
+								"number": 3,
+								"faces": 10
+							},
+							"17": {
+								"number": 4,
+								"faces": 10
+							}
+						}
+					},
+					"title": "吐息"
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Dragonborn (Brass)",
+			"name": "龙裔 (黄铜)",
+			"source": "XPHB",
+			"advancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "breath",
+						"type": "dice",
+						"scale": {
+							"0": {
+								"number": 1,
+								"faces": 10
+							},
+							"5": {
+								"number": 2,
+								"faces": 10
+							},
+							"11": {
+								"number": 3,
+								"faces": 10
+							},
+							"17": {
+								"number": 4,
+								"faces": 10
+							}
+						}
+					},
+					"title": "吐息"
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Dragonborn (Bronze)",
+			"name": "龙裔 (青铜)",
+			"source": "XPHB",
+			"advancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "breath",
+						"type": "dice",
+						"scale": {
+							"0": {
+								"number": 1,
+								"faces": 10
+							},
+							"5": {
+								"number": 2,
+								"faces": 10
+							},
+							"11": {
+								"number": 3,
+								"faces": 10
+							},
+							"17": {
+								"number": 4,
+								"faces": 10
+							}
+						}
+					},
+					"title": "吐息"
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Dragonborn (Copper)",
+			"name": "龙裔 (赤铜)",
+			"source": "XPHB",
+			"advancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "breath",
+						"type": "dice",
+						"scale": {
+							"0": {
+								"number": 1,
+								"faces": 10
+							},
+							"5": {
+								"number": 2,
+								"faces": 10
+							},
+							"11": {
+								"number": 3,
+								"faces": 10
+							},
+							"17": {
+								"number": 4,
+								"faces": 10
+							}
+						}
+					},
+					"title": "吐息"
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Dragonborn (Gold)",
+			"name": "龙裔 (金)",
+			"source": "XPHB",
+			"advancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "breath",
+						"type": "dice",
+						"scale": {
+							"0": {
+								"number": 1,
+								"faces": 10
+							},
+							"5": {
+								"number": 2,
+								"faces": 10
+							},
+							"11": {
+								"number": 3,
+								"faces": 10
+							},
+							"17": {
+								"number": 4,
+								"faces": 10
+							}
+						}
+					},
+					"title": "吐息"
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Dragonborn (Green)",
+			"name": "龙裔 (绿)",
+			"source": "XPHB",
+			"advancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "breath",
+						"type": "dice",
+						"scale": {
+							"0": {
+								"number": 1,
+								"faces": 10
+							},
+							"5": {
+								"number": 2,
+								"faces": 10
+							},
+							"11": {
+								"number": 3,
+								"faces": 10
+							},
+							"17": {
+								"number": 4,
+								"faces": 10
+							}
+						}
+					},
+					"title": "吐息"
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Dragonborn (Red)",
+			"name": "龙裔 (红)",
+			"source": "XPHB",
+			"advancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "breath",
+						"type": "dice",
+						"scale": {
+							"0": {
+								"number": 1,
+								"faces": 10
+							},
+							"5": {
+								"number": 2,
+								"faces": 10
+							},
+							"11": {
+								"number": 3,
+								"faces": 10
+							},
+							"17": {
+								"number": 4,
+								"faces": 10
+							}
+						}
+					},
+					"title": "吐息"
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Dragonborn (Silver)",
+			"name": "龙裔 (银)",
+			"source": "XPHB",
+			"advancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "breath",
+						"type": "dice",
+						"scale": {
+							"0": {
+								"number": 1,
+								"faces": 10
+							},
+							"5": {
+								"number": 2,
+								"faces": 10
+							},
+							"11": {
+								"number": 3,
+								"faces": 10
+							},
+							"17": {
+								"number": 4,
+								"faces": 10
+							}
+						}
+					},
+					"title": "吐息"
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Dragonborn (White)",
+			"name": "龙裔 (白)",
+			"source": "XPHB",
+			"advancement": [
+				{
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "breath",
+						"type": "dice",
+						"scale": {
+							"0": {
+								"number": 1,
+								"faces": 10
+							},
+							"5": {
+								"number": 2,
+								"faces": 10
+							},
+							"11": {
+								"number": 3,
+								"faces": 10
+							},
+							"17": {
+								"number": 4,
+								"faces": 10
+							}
+						}
+					},
+					"title": "吐息"
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Human (Keldon)",
+			"name": "人类 (凯尔顿)",
+			"source": "PSD",
+			"entryData": {
+				"savingThrowProficiencies": [
+					{
+						"str": true
+					}
+				]
+			},
+			"migrationVersion": 3
+		}
+	],
+	"raceFeature": [
+		{
+			"ENG_name": "Adrenaline Rush",
+			"name": "激昂冲锋",
+			"source": "XPHB",
+			"raceName": "兽人",
+			"raceSource": "XPHB",
+			"system": {
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "sr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Adrenaline Rush: Dash",
+					"name": "肾上腺素爆发：疾冲",
+					"type": "heal",
+					"activation": {
+						"type": "bonus"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"healing": {
+						"types": [
+							"temphp"
+						],
+						"scaling": {
+							"number": 1
+						},
+						"bonus": "@prof"
+					}
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Animal Enhancement",
+			"name": "动物强化",
+			"source": "GGR",
+			"raceName": "析米克混生体",
+			"raceSource": "GGR",
+			"effects": [
+				{
+					"ENG_name": "Carapace",
+					"name": "甲壳",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": "ADD",
+							"value": "+ 1"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Armored Casing",
+			"name": "装甲外壳",
+			"source": "AAG",
+			"raceName": "自动侏儒",
+			"raceSource": "AAG",
+			"effects": [
+				{
+					"ENG_name": "Armored Casing",
+					"name": "装甲外壳",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						},
+						{
+							"key": "system.attributes.ac.formula",
+							"mode": "OVERRIDE",
+							"value": "13 + @abilities.dex.mod"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (龙血裔; 黑)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (龙血裔; 蓝)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (龙血裔; 黄铜)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (龙血裔; 青铜)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (龙血裔; 赤铜 )",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (龙血裔; 金)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (龙血裔; 绿)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (龙血裔; 红)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (龙血裔; 银)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (龙血裔; 白)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (峡谷裔; 黑)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (峡谷裔; 蓝)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (峡谷裔; 黄铜)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (峡谷裔; 青铜)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (峡谷裔; 赤铜)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (峡谷裔;  金)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (峡谷裔;  绿)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (峡谷裔;  红)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (峡谷裔;  银)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "EGW",
+			"raceName": "龙裔 (峡谷裔;  白)",
+			"raceSource": "EGW",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "FTD",
+			"raceName": "龙裔 (色彩；黑)",
+			"raceSource": "FTD",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous",
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(floor((@details.level+1)/6)+1)d10"
+								},
+								"types": [
+									"强酸"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "FTD",
+			"raceName": "龙裔 (色彩；蓝)",
+			"raceSource": "FTD",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous",
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(floor((@details.level+1)/6)+1)d10"
+								},
+								"types": [
+									"闪电"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "FTD",
+			"raceName": "龙裔 (色彩；绿)",
+			"raceSource": "FTD",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous",
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(floor((@details.level+1)/6)+1)d10"
+								},
+								"types": [
+									"毒素"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "FTD",
+			"raceName": "龙裔 (色彩；红)",
+			"raceSource": "FTD",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous",
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(floor((@details.level+1)/6)+1)d10"
+								},
+								"types": [
+									"火焰"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "FTD",
+			"raceName": "龙裔 (色彩；白)",
+			"raceSource": "FTD",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous",
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(floor((@details.level+1)/6)+1)d10"
+								},
+								"types": [
+									"寒冷"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "FTD",
+			"raceName": "龙裔 (金属；黄铜)",
+			"raceSource": "FTD",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous",
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(floor((@details.level+1)/6)+1)d10"
+								},
+								"types": [
+									"火焰"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "FTD",
+			"raceName": "龙裔 (金属；青铜)",
+			"raceSource": "FTD",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous",
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(floor((@details.level+1)/6)+1)d10"
+								},
+								"types": [
+									"闪电"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "FTD",
+			"raceName": "龙裔 (金属；赤铜)",
+			"raceSource": "FTD",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous",
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(floor((@details.level+1)/6)+1)d10"
+								},
+								"types": [
+									"强酸"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "FTD",
+			"raceName": "龙裔 (金属；金)",
+			"raceSource": "FTD",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous",
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(floor((@details.level+1)/6)+1)d10"
+								},
+								"types": [
+									"火焰"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "FTD",
+			"raceName": "龙裔 (金属；银)",
+			"raceSource": "FTD",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous",
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(floor((@details.level+1)/6)+1)d10"
+								},
+								"types": [
+									"寒冷"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "FTD",
+			"raceName": "龙裔 (宝石；紫晶)",
+			"raceSource": "FTD",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous",
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(floor((@details.level+1)/6)+1)d10"
+								},
+								"types": [
+									"力场"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "FTD",
+			"raceName": "龙裔 (宝石；水晶)",
+			"raceSource": "FTD",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous",
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(floor((@details.level+1)/6)+1)d10"
+								},
+								"types": [
+									"光耀"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "FTD",
+			"raceName": "龙裔 (宝石；翡翠)",
+			"raceSource": "FTD",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous",
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(floor((@details.level+1)/6)+1)d10"
+								},
+								"types": [
+									"心灵"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "FTD",
+			"raceName": "龙裔 (宝石；蓝宝石)",
+			"raceSource": "FTD",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous",
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(floor((@details.level+1)/6)+1)d10"
+								},
+								"types": [
+									"雷鸣"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "FTD",
+			"raceName": "龙裔 (宝石；黄玉)",
+			"raceSource": "FTD",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous",
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					},
+					"damage": {
+						"onSave": "half",
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(floor((@details.level+1)/6)+1)d10"
+								},
+								"types": [
+									"暗蚀"
+								]
+							}
+						]
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "PHB",
+			"raceName": "龙裔 (黑)",
+			"raceSource": "PHB",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "PHB",
+			"raceName": "龙裔 (蓝)",
+			"raceSource": "PHB",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "PHB",
+			"raceName": "龙裔 (黄铜)",
+			"raceSource": "PHB",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "PHB",
+			"raceName": "龙裔 (青铜)",
+			"raceSource": "PHB",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "PHB",
+			"raceName": "龙裔 (赤铜)",
+			"raceSource": "PHB",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "30",
+							"units": "ft",
+							"type": "line"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "PHB",
+			"raceName": "龙裔 (金)",
+			"raceSource": "PHB",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "PHB",
+			"raceName": "龙裔 (绿)",
+			"raceSource": "PHB",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "PHB",
+			"raceName": "龙裔 (红)",
+			"raceSource": "PHB",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "PHB",
+			"raceName": "龙裔 (银)",
+			"raceSource": "PHB",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "PHB",
+			"raceName": "龙裔 (白)",
+			"raceSource": "PHB",
+			"system": {
+				"range.units": "self",
+				"duration.units": "instantaneous"
+			},
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					},
+					"target": {
+						"template": {
+							"size": "15",
+							"units": "ft",
+							"type": "cone"
+						}
+					}
+				},
+				{
+					"type": "save",
+					"save": {
+						"ability": [
+							"con"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "XPHB",
+			"raceName": "龙裔 (黑)",
+			"raceSource": "XPHB",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Breath Weapon (Cone)",
+					"name": "吐息武器（锥形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "cone",
+							"size": "15"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-black.breath"
+								},
+								"types": [
+									"强酸"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				},
+				{
+					"ENG_name": "Breath Weapon (Line)",
+					"name": "吐息武器（线形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "line",
+							"size": "30",
+							"width": "5"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-black.breath"
+								},
+								"types": [
+									"强酸"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "XPHB",
+			"raceName": "龙裔 (蓝)",
+			"raceSource": "XPHB",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Breath Weapon (Cone)",
+					"name": "吐息武器（锥形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "cone",
+							"size": "15"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-blue.breath"
+								},
+								"types": [
+									"闪电"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				},
+				{
+					"ENG_name": "Breath Weapon (Line)",
+					"name": "吐息武器（线形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "line",
+							"size": "30",
+							"width": "5"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-blue.breath"
+								},
+								"types": [
+									"闪电"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "XPHB",
+			"raceName": "龙裔 (黄铜)",
+			"raceSource": "XPHB",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Breath Weapon (Cone)",
+					"name": "吐息武器（锥形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "cone",
+							"size": "15"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-brass.breath"
+								},
+								"types": [
+									"火焰"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				},
+				{
+					"ENG_name": "Breath Weapon (Line)",
+					"name": "吐息武器（线形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "line",
+							"size": "30",
+							"width": "5"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-brass.breath"
+								},
+								"types": [
+									"火焰"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "XPHB",
+			"raceName": "龙裔 (青铜)",
+			"raceSource": "XPHB",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Breath Weapon (Cone)",
+					"name": "吐息武器（锥形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "cone",
+							"size": "15"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-bronze.breath"
+								},
+								"types": [
+									"闪电"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				},
+				{
+					"ENG_name": "Breath Weapon (Line)",
+					"name": "吐息武器（线形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "line",
+							"size": "30",
+							"width": "5"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-bronze.breath"
+								},
+								"types": [
+									"闪电"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "XPHB",
+			"raceName": "龙裔 (赤铜)",
+			"raceSource": "XPHB",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Breath Weapon (Cone)",
+					"name": "吐息武器（锥形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "cone",
+							"size": "15"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-copper.breath"
+								},
+								"types": [
+									"强酸"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				},
+				{
+					"ENG_name": "Breath Weapon (Line)",
+					"name": "吐息武器（线形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "line",
+							"size": "30",
+							"width": "5"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-copper.breath"
+								},
+								"types": [
+									"强酸"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "XPHB",
+			"raceName": "龙裔 (金)",
+			"raceSource": "XPHB",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Breath Weapon (Cone)",
+					"name": "吐息武器（锥形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "cone",
+							"size": "15"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-gold.breath"
+								},
+								"types": [
+									"火焰"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				},
+				{
+					"ENG_name": "Breath Weapon (Line)",
+					"name": "吐息武器（线形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "line",
+							"size": "30",
+							"width": "5"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-gold.breath"
+								},
+								"types": [
+									"火焰"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "XPHB",
+			"raceName": "龙裔 (绿)",
+			"raceSource": "XPHB",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Breath Weapon (Cone)",
+					"name": "吐息武器（锥形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "cone",
+							"size": "15"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-green.breath"
+								},
+								"types": [
+									"毒素"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				},
+				{
+					"ENG_name": "Breath Weapon (Line)",
+					"name": "吐息武器（线形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "line",
+							"size": "30",
+							"width": "5"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-green.breath"
+								},
+								"types": [
+									"毒素"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "XPHB",
+			"raceName": "龙裔 (红)",
+			"raceSource": "XPHB",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Breath Weapon (Cone)",
+					"name": "吐息武器（锥形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "cone",
+							"size": "15"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-red.breath"
+								},
+								"types": [
+									"火焰"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				},
+				{
+					"ENG_name": "Breath Weapon (Line)",
+					"name": "吐息武器（线形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "line",
+							"size": "30",
+							"width": "5"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-red.breath"
+								},
+								"types": [
+									"火焰"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "XPHB",
+			"raceName": "龙裔 (银)",
+			"raceSource": "XPHB",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Breath Weapon (Cone)",
+					"name": "吐息武器（锥形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "cone",
+							"size": "15"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-silver.breath"
+								},
+								"types": [
+									"寒冷"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				},
+				{
+					"ENG_name": "Breath Weapon (Line)",
+					"name": "吐息武器（线形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "line",
+							"size": "30",
+							"width": "5"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-silver.breath"
+								},
+								"types": [
+									"寒冷"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Breath Weapon",
+			"name": "吐息武器",
+			"source": "XPHB",
+			"raceName": "龙裔 (白)",
+			"raceSource": "XPHB",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Breath Weapon (Cone)",
+					"name": "吐息武器（锥形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "cone",
+							"size": "15"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-white.breath"
+								},
+								"types": [
+									"寒冷"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				},
+				{
+					"ENG_name": "Breath Weapon (Line)",
+					"name": "吐息武器（线形）",
+					"type": "save",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "line",
+							"size": "30",
+							"width": "5"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@scale.dragonborn-white.breath"
+								},
+								"types": [
+									"寒冷"
+								]
+							}
+						],
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"dex"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					}
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Celestial Revelation",
+			"name": "天界启示",
+			"source": "XPHB",
+			"raceName": "阿斯莫",
+			"raceSource": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Heavenly Wings",
+					"name": "天堂飞翼",
+					"type": "utility",
+					"img": "systems/dnd5e/icons/svg/trait-damage-immunities.svg",
+					"activation": {
+						"type": "bonus"
+					},
+					"duration": {
+						"units": "分钟",
+						"value": "1"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "celestialRevelat"
+						}
+					]
+				},
+				{
+					"ENG_name": "Inner Radiance",
+					"name": "内耀辉光",
+					"type": "damage",
+					"activation": {
+						"type": "bonus"
+					},
+					"duration": {
+						"units": "分钟",
+						"value": "1"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "radius",
+							"size": "10"
+						},
+						"affects": {
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@prof"
+								},
+								"types": [
+									"光耀"
+								]
+							}
+						]
+					},
+					"effects": [
+						{
+							"foundryId": "celestialRevela1"
+						}
+					]
+				},
+				{
+					"ENG_name": "Necrotic Shroud",
+					"name": "死灵环绕",
+					"type": "save",
+					"activation": {
+						"type": "bonus"
+					},
+					"duration": {
+						"units": "分钟",
+						"value": "1"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"units": "ft",
+							"type": "radius",
+							"size": "10"
+						},
+						"affects": {
+							"type": "enemy"
+						}
+					},
+					"damage": {
+						"onSave": "half"
+					},
+					"save": {
+						"ability": [
+							"cha"
+						],
+						"dc": {
+							"calculation": "cha"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "celestialRevela2"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Heavenly Wings",
+					"name": "天堂飞翼",
+					"foundryId": "celestialRevelat",
+					"duration": {
+						"seconds": 60
+					},
+					"changes": [
+						{
+							"key": "system.attributes.movement.fly",
+							"mode": "UPGRADE",
+							"value": 1
+						}
+					]
+				},
+				{
+					"ENG_name": "Searing Radiance",
+					"name": "炽热光耀",
+					"foundryId": "celestialRevela1",
+					"duration": {
+						"seconds": 60
+					}
+				},
+				{
+					"ENG_name": "Necrotic Shroud",
+					"name": "死灵环绕",
+					"foundryId": "celestialRevela2",
+					"duration": {
+						"seconds": 60
+					},
+					"statuses": [
+						"frightened"
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Draconic Flight",
+			"name": "龙族飞翼",
+			"source": "XPHB",
+			"raceName": "龙裔",
+			"raceSource": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Draconic Flight",
+					"name": "龙族飞翼",
+					"type": "utility",
+					"activation": {
+						"type": "bonus"
+					},
+					"duration": {
+						"units": "分钟",
+						"value": "10"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "draconicFlight"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "draconicFlight",
+					"duration": {
+						"seconds": 600
+					}
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Dwarven Toughness",
+			"name": "矮人刚毅",
+			"source": "PHB",
+			"raceName": "矮人 (丘陵)",
+			"raceSource": "PHB",
+			"effects": [
+				{
+					"ENG_name": "HP Increase",
+					"name": "生命值增加",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.hp.bonuses.level",
+							"mode": "ADD",
+							"value": "+ 1"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Dwarven Toughness",
+			"name": "矮人刚毅",
+			"source": "XPHB",
+			"raceName": "矮人",
+			"raceSource": "XPHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.hp.bonuses.level",
+							"mode": "ADD",
+							"value": 1
+						}
+					]
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Eerie Token",
+			"name": "神秘信物",
+			"source": "RHW",
+			"raceName": "巫咒之子",
+			"raceSource": "RHW",
+			"activities": [
+				{
+					"ENG_name": "Distant Message",
+					"name": "远程传信",
+					"type": "utility",
+					"img": "systems/dnd5e/icons/svg/trait-languages.svg",
+					"activation": {
+						"type": "action"
+					},
+					"target": {
+						"affects": {
+							"type": "creature",
+							"count": "1",
+							"special": "持有魔法信物"
+						}
+					},
+					"range": {
+						"units": "mi",
+						"value": "10"
+					},
+					"visibility": {
+						"requireMagic": true
+					}
+				},
+				{
+					"ENG_name": "Remote Viewing",
+					"name": "遥远视野",
+					"type": "utility",
+					"activation": {
+						"type": "action"
+					},
+					"duration": {
+						"units": "分钟",
+						"value": "1"
+					},
+					"target": {
+						"affects": {
+							"type": "object",
+							"count": "1",
+							"special": "魔法信物"
+						}
+					},
+					"range": {
+						"units": "ft",
+						"value": "10"
+					},
+					"visibility": {
+						"requireMagic": true
+					},
+					"effects": [
+						{
+							"foundryId": "eerieToken"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Token Created",
+					"name": "信物已创建",
+					"type": "enchantment",
+					"foundryId": "eerieToken",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "name",
+							"value": "{} (Created)",
+							"mode": "OVERRIDE"
+						},
+						{
+							"key": "activities[enchant].name",
+							"value": "Destroy Token",
+							"mode": "OVERRIDE"
+						},
+						{
+							"key": "activities[enchant].activation.type",
+							"value": "longRest",
+							"mode": "OVERRIDE"
+						},
+						{
+							"key": "activities[enchant].consumption.targets",
+							"value": null,
+							"mode": "OVERRIDE"
+						}
+					]
+				},
+				{
+					"ENG_name": "Remote Viewing (Incapacitated)",
+					"name": "遥远视野（失能）",
+					"foundryId": "eerieToken",
+					"disabled": true,
+					"transfer": true,
+					"duration": {
+						"value": 60,
+						"units": "秒",
+						"expiry": "回合开始"
+					},
+					"statuses": [
+						"incapacitated"
+					],
+					"showIcon": 2
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Escaped Death",
+			"name": "死里逃生",
+			"source": "RHW",
+			"raceName": "重生者",
+			"raceSource": "RHW",
+			"effects": [
+				{
+					"transfer": true,
+					"duration": {
+						"units": "秒"
+					},
+					"changes": [
+						{
+							"key": "system.attributes.death.roll.mode",
+							"value": 1,
+							"mode": "ADD"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Gnomish Cunning",
+			"name": "侏儒狡黠",
+			"source": "XPHB",
+			"raceName": "侏儒",
+			"raceSource": "XPHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.abilities.int.save.roll.mode",
+							"mode": "ADD",
+							"value": 1
+						},
+						{
+							"key": "system.abilities.wis.save.roll.mode",
+							"mode": "ADD",
+							"value": 1
+						},
+						{
+							"key": "system.abilities.cha.save.roll.mode",
+							"mode": "ADD",
+							"value": 1
+						}
+					],
+					"description": "你在智力、感知和魅力的豁免检定上具有优势。"
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Grit",
+			"name": "坚毅",
+			"source": "PSZ",
+			"raceName": "地精 (赞迪卡; 葛塔部落)",
+			"raceSource": "PSZ",
+			"effects": [
+				{
+					"ENG_name": "Natural Armor",
+					"name": "天生护甲",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						},
+						{
+							"key": "system.attributes.ac.formula",
+							"mode": "OVERRIDE",
+							"value": "11 + @abilities.dex.mod"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Grit",
+			"name": "坚毅",
+			"source": "PSZ",
+			"raceName": "地精 (赞迪卡; 熔足部落)",
+			"raceSource": "PSZ",
+			"_copy": {
+				"ENG_name": "Grit",
+				"name": "坚毅",
+				"source": "PSZ",
+				"raceName": "地精 (赞迪卡; 葛塔部落)",
+				"raceSource": "PSZ"
+			},
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Grit",
+			"name": "坚毅",
+			"source": "PSZ",
+			"raceName": "地精 (赞迪卡; 图图部落)",
+			"raceSource": "PSZ",
+			"_copy": {
+				"ENG_name": "Grit",
+				"name": "坚毅",
+				"source": "PSZ",
+				"raceName": "地精 (赞迪卡; 葛塔部落)",
+				"raceSource": "PSZ"
+			},
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Hare-Trigger",
+			"name": "野兔敏锐",
+			"source": "MPMM",
+			"raceName": "兔人",
+			"raceSource": "MPMM",
+			"effects": [
+				{
+					"ENG_name": "Bonus Initiative",
+					"name": "额外先攻",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.init.total",
+							"mode": "ADD",
+							"value": "+ @attributes.prof"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Healing Hands",
+			"name": "治愈之手",
+			"source": "MPMM",
+			"raceName": "阿斯莫",
+			"raceSource": "MPMM",
+			"activities": [
+				{
+					"type": "damage",
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "(@attributes.prof)d4"
+								},
+								"types": [
+									"治疗"
+								]
+							}
+						]
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Healing Hands",
+			"name": "治愈之手",
+			"source": "VGM",
+			"raceName": "阿斯莫",
+			"raceSource": "VGM",
+			"activities": [
+				{
+					"type": "damage",
+					"damage": {
+						"parts": [
+							{
+								"custom": {
+									"enabled": true,
+									"formula": "@details.level"
+								},
+								"types": [
+									"治疗"
+								]
+							}
+						]
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Healing Hands",
+			"name": "治愈之手",
+			"source": "XPHB",
+			"raceName": "阿斯莫",
+			"raceSource": "XPHB",
+			"activities": [
+				{
+					"type": "heal",
+					"activation": {
+						"type": "action"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					},
+					"range": {
+						"units": "接触"
+					},
+					"healing": {
+						"types": [
+							"治疗"
+						],
+						"custom": {
+							"enabled": true,
+							"formula": "(@prof)d4"
+						},
+						"scaling": {
+							"number": 1
+						}
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Hooves",
+			"name": "蹄击",
+			"source": "GGR",
+			"raceName": "人马",
+			"raceSource": "GGR",
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Howl",
+			"name": "尖啸",
+			"source": "RHW",
+			"raceName": "人狼裔",
+			"raceSource": "RHW",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"type": "save",
+					"activation": {
+						"type": "bonus"
+					},
+					"duration": {
+						"units": "轮",
+						"value": "1"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"template": {
+							"stationary": true,
+							"units": "ft",
+							"type": "radius",
+							"size": "15"
+						},
+						"affects": {
+							"choice": true,
+							"type": "creature"
+						}
+					},
+					"damage": {
+						"onSave": "none"
+					},
+					"save": {
+						"ability": [
+							"wis"
+						],
+						"dc": {
+							"calculation": "con"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "howl"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"ENG_name": "Attack and Save Disadvantage",
+					"name": "攻击与豁免劣势",
+					"foundryId": "howl",
+					"duration": {
+						"value": 1,
+						"units": "回合",
+						"expiry": "回合开始"
+					},
+					"changes": [
+						{
+							"key": "system.abilities.str.save.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.dex.save.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.con.save.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.int.save.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.wis.save.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						},
+						{
+							"key": "system.abilities.cha.save.roll.mode",
+							"value": -1,
+							"mode": "ADD"
+						}
+					],
+					"descriptionEntries": [
+						"",
+						"尖啸",
+						"",
+						"{@i 攻击掷骰的劣势未被自动化。}"
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Integrated Protection",
+			"name": "集成防护",
+			"source": "ERLW",
+			"raceName": "战俑",
+			"raceSource": "ERLW",
+			"effects": [
+				{
+					"ENG_name": "Natural Armor",
+					"name": "天生护甲",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": "ADD",
+							"value": "+ 1"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Knowledge from a Past Life",
+			"name": "往昔学识",
+			"source": "RHW",
+			"raceName": "重生者",
+			"raceSource": "RHW",
+			"system": {
+				"uses.max": "@prof"
+			},
+			"activities": [
+				{
+					"ENG_name": "Past Aids Present",
+					"name": "往昔助益今朝",
+					"type": "utility",
+					"activation": {
+						"type": "special",
+						"condition": "你在一次属性检定中失败"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"roll": {
+						"ENG_name": "D20 Bonus",
+						"name": "D20加值",
+						"formula": "1d6"
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Large Form",
+			"name": "大型形态",
+			"source": "XPHB",
+			"raceName": "歌利亚",
+			"raceSource": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Enlarge",
+					"name": "变巨",
+					"type": "utility",
+					"activation": {
+						"type": "bonus"
+					},
+					"duration": {
+						"units": "分钟",
+						"value": "10"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "largeForm"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "largeForm",
+					"duration": {
+						"seconds": 600
+					},
+					"changes": [
+						{
+							"key": "system.attributes.movement.walk",
+							"mode": "ADD",
+							"value": 10
+						},
+						{
+							"key": "system.abilities.str.check.roll.mode",
+							"mode": "ADD",
+							"value": 1
+						}
+					],
+					"description": "在持续时间内，你在力量检定上具有优势，并且你的速度增加10尺。一旦你使用了这个特质，直到你完成一次长休前都不能再次使用它。"
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Luck",
+			"name": "幸运",
+			"source": "XPHB",
+			"raceName": "半身人",
+			"raceSource": "XPHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.dnd5e.halflingLucky",
+							"mode": "OVERRIDE",
+							"value": true
+						}
+					]
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Natural Armor",
+			"name": "天生护甲",
+			"source": "DMG",
+			"raceName": "蜥蜴人",
+			"raceSource": "DMG",
+			"effects": [
+				{
+					"ENG_name": "Natural Armor",
+					"name": "天生护甲",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": "ADD",
+							"value": "+ 3"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Natural Armor",
+			"name": "天生护甲",
+			"source": "DMG",
+			"raceName": "穴蜥人语",
+			"raceSource": "DMG",
+			"effects": [
+				{
+					"ENG_name": "Natural Armor",
+					"name": "天生护甲",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": "ADD",
+							"value": "+ 1"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Natural Armor",
+			"name": "天生护甲",
+			"source": "GGR",
+			"raceName": "象族",
+			"raceSource": "GGR",
+			"effects": [
+				{
+					"ENG_name": "Natural Armor",
+					"name": "天生护甲",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						},
+						{
+							"key": "system.attributes.ac.formula",
+							"mode": "OVERRIDE",
+							"value": "12 + @abilities.con.mod"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Natural Armor",
+			"name": "天生护甲",
+			"source": "LR",
+			"raceName": "洛卡鱼人",
+			"raceSource": "LR",
+			"effects": [
+				{
+					"ENG_name": "Natural Armor",
+					"name": "天生护甲",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						},
+						{
+							"key": "system.attributes.ac.formula",
+							"mode": "OVERRIDE",
+							"value": "12 + @abilities.dex.mod"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Natural Armor",
+			"name": "天生护甲",
+			"source": "TTP",
+			"raceName": "龟人",
+			"raceSource": "TTP",
+			"effects": [
+				{
+					"ENG_name": "Natural Armor",
+					"name": "天生护甲",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						},
+						{
+							"key": "system.attributes.ac.formula",
+							"mode": "OVERRIDE",
+							"value": "17"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Natural Armor",
+			"name": "天生护甲",
+			"source": "VGM",
+			"raceName": "蜥蜴人",
+			"raceSource": "VGM",
+			"effects": [
+				{
+					"ENG_name": "Natural Armor",
+					"name": "天生护甲",
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						},
+						{
+							"key": "system.attributes.ac.formula",
+							"mode": "OVERRIDE",
+							"value": "13 + @abilities.dex.mod"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Powerful Build",
+			"name": "强力构筑",
+			"source": "XPHB",
+			"raceName": "歌利亚",
+			"raceSource": "XPHB",
+			"effects": [
+				{
+					"transfer": true,
+					"changes": [
+						{
+							"key": "flags.dnd5e.powerfulBuild",
+							"mode": "OVERRIDE",
+							"value": true
+						}
+					]
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Radiant Soul",
+			"name": "光耀之魂",
+			"source": "VGM",
+			"raceName": "阿斯莫 (守护)",
+			"raceSource": "VGM",
+			"activities": [
+				{
+					"type": "utility",
+					"activation": {
+						"type": "action",
+						"value": 1
+					}
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Relentless Endurance",
+			"name": "坚韧不屈",
+			"source": "XPHB",
+			"raceName": "兽人",
+			"raceSource": "XPHB",
+			"activities": [
+				{
+					"ENG_name": "Relentlessly Endure",
+					"name": "不屈不挠的忍耐",
+					"type": "heal",
+					"activation": {
+						"type": "",
+						"condition": "当你生命值降至0点但未被直接击杀时"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"healing": {
+						"types": [
+							"治疗"
+						],
+						"scaling": {
+							"number": 1
+						},
+						"bonus": "1"
+					}
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Shell Defense",
+			"name": "龟壳防御",
+			"source": "TTP",
+			"raceName": "龟人",
+			"raceSource": "TTP",
+			"effects": [
+				{
+					"ENG_name": "Natural Armor",
+					"name": "天生护甲",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": "ADD",
+							"value": "+ 4"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Shifting Feature",
+			"name": "化形特性",
+			"source": "ERLW",
+			"raceName": "化兽者 (兽皮)",
+			"raceSource": "ERLW",
+			"effects": [
+				{
+					"ENG_name": "Natural Armor",
+					"name": "天生护甲",
+					"disabled": true,
+					"transfer": true,
+					"changes": [
+						{
+							"key": "system.attributes.ac.bonus",
+							"mode": "ADD",
+							"value": "+ 1"
+						}
+					]
+				}
+			],
+			"migrationVersion": 3
+		},
+		{
+			"ENG_name": "Stonecunning",
+			"name": "石中精妙",
+			"source": "XPHB",
+			"raceName": "矮人",
+			"raceSource": "XPHB",
+			"system": {
+				"uses.max": "@prof",
+				"uses.recovery": [
+					{
+						"period": "lr",
+						"type": "recoverAll"
+					}
+				]
+			},
+			"activities": [
+				{
+					"ENG_name": "Stonecunning",
+					"name": "石中精妙",
+					"type": "utility",
+					"activation": {
+						"type": "bonus"
+					},
+					"duration": {
+						"units": "分钟",
+						"value": "10"
+					},
+					"consumption": {
+						"targets": [
+							{
+								"type": "itemUses",
+								"value": "1"
+							}
+						]
+					},
+					"target": {
+						"affects": {
+							"type": "self"
+						}
+					},
+					"effects": [
+						{
+							"foundryId": "stonecunning"
+						}
+					]
+				}
+			],
+			"effects": [
+				{
+					"foundryId": "stonecunning",
+					"duration": {
+						"seconds": 600
+					},
+					"changes": [
+						{
+							"key": "system.attributes.senses.tremorsense",
+							"mode": "ADD",
+							"value": 60
+						}
+					]
+				}
+			],
+			"ignoreSrdActivities": true,
+			"ignoreSrdEffects": true,
+			"migrationVersion": 3
+		}
+	]
+}

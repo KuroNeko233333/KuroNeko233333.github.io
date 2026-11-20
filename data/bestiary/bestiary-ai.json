@@ -1,0 +1,3520 @@
+{
+	"monster": [
+		{
+			"ENG_name": "Ancient Deep Crow",
+			"name": "古深地鸦",
+			"type": "monstrosity",
+			"source": "AI",
+			"page": 211,
+			"referenceSources": [
+				"OoW"
+			],
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 187,
+				"formula": "15d12 + 90"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 80
+			},
+			"str": 23,
+			"dex": 16,
+			"con": 23,
+			"int": 10,
+			"wis": 15,
+			"cha": 19,
+			"save": {
+				"con": "+11",
+				"wis": "+7"
+			},
+			"skill": {
+				"perception": "+7",
+				"stealth": "+13"
+			},
+			"senses": [
+				"盲视 60 尺",
+				"黑暗视觉 120 尺"
+			],
+			"passive": 17,
+			"resist": [
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"languages": [
+				"深地鸦语"
+			],
+			"cr": "15",
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"古深地鸦在对抗法术及其他魔法效应时进行的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Shadow Stealth",
+					"name": "幽影隐匿",
+					"entries": [
+						"处于微光光照或黑暗术时，古深地鸦可以以附赠动作执行{@action 躲藏}动作。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"古深地鸦进行三次攻击：一次使用其颚咬，两次使用其爪击。"
+					]
+				},
+				{
+					"ENG_name": "Mandibles",
+					"name": "颚齿",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及10尺，单一目标。{@h}17（{@damage 2d10 + 6}）穿刺伤害，且目标被{@condition 受擒}（逃脱{@dc 19}）。直到擒抱结束，目标陷入{@condition 束缚}，且古深地鸦无法再对另单一目标使用其颚咬。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，射程5尺，单一目标。{@h}13（{@damage 2d6 + 6}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Shadow Caw",
+					"name": "幽影鸦啼",
+					"entries": [
+						"古深地鸦发出刺耳的鸦鸣。每个60尺内能听到的生物必须进行{@dc 17}的体质豁免。失败的情况下，该生物受到10（{@damage 3d6}）心灵伤害。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Detect",
+					"name": "侦查",
+					"entries": [
+						"深地鸦进行一次感知（{@skill 察觉}）检定。"
+					]
+				},
+				{
+					"ENG_name": "Shadow Caw (Costs 2 Actions)",
+					"name": "幽影鸦啼(消耗2动作)",
+					"entries": [
+						"古深地鸦使用幽影鸦啼。"
+					]
+				},
+				{
+					"ENG_name": "Wing Attack (Costs 2 Actions)",
+					"name": "振翅攻击（花费2个动作）",
+					"entries": [
+						"古深乌鸦拍打其翅膀。深乌鸦10英尺范围内的每个生物必须成功通过一个{@dc 19}的敏捷豁免检定，否则将受到13（{@damage 2d6 + 6}）的钝击伤害并被击{@condition 倒地}。古深乌鸦随后可以飞至其飞行速度的一半距离。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Ancient Deep Crow",
+				"name": "古深地鸦",
+				"source": "AI"
+			},
+			"traitTags": [
+				"魔法抗性"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"受擒",
+				"倒地",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Auspicia Dran",
+			"name": "奥斯佩莎·德兰",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"半精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AI",
+			"page": 208,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 链甲衫|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 15,
+			"wis": 12,
+			"cha": 10,
+			"skill": {
+				"athletics": "+5",
+				"perception": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"通用语",
+				"精灵语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting (Psionics)",
+					"name": "天生施法（灵能）",
+					"type": "spellcasting",
+					"headerEntries": [
+						"奥斯佩莎的先天施法关键属性是智力。她天生可以施放以下法术，不需要任何成分："
+					],
+					"will": [
+						"{@spell 侦测思想}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 卜筮术}"
+						]
+					},
+					"ability": "int"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"奥斯佩莎发动两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Longsword",
+					"name": "长剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}7 ({@damage 1d8 + 3}) 点挥砍伤害，如果用双手使用，则为8 ({@damage 1d10 + 3}) 点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Light Crossbow",
+					"name": "轻弩",
+					"entries": [
+						"{@atk rw} 命中{@hit 4}，射程 80/320尺，单一目标。{@h}6（{@damage 1d8 + 2}）的穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"轻弩|phb",
+				"长剑|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"savingThrowForcedSpell": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Brahma Lutier",
+			"name": "芭玛·路提尔",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AI",
+			"page": 205,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 33,
+				"formula": "6d8 + 6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 15,
+			"con": 12,
+			"int": 11,
+			"wis": 13,
+			"cha": 16,
+			"skill": {
+				"perception": "+3",
+				"performance": "+5",
+				"persuasion": "+5"
+			},
+			"passive": 13,
+			"languages": [
+				"通用语",
+				"精灵语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"芭玛是四级施法者。她的施法关键属性是魅力（法术豁免{@dc 13}，{@hit 5}法术攻击命中）。她准备了以下吟游诗人法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 法师之手}",
+								"{@spell 传讯术}",
+								"{@spell 恶言相加}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 魅惑类人}",
+								"{@spell 英雄气概}",
+								"{@spell 迷幻手稿}",
+								"{@spell 睡眠术}",
+								"{@spell 隐形仆役}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 匕首之云}",
+								"{@spell 隐形术}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Fey Ancestry",
+					"name": "妖精血统",
+					"entries": [
+						"芭玛在对抗{@condition 魅惑}的豁免检定中有优势，并且魔法不能使她陷入睡眠。"
+					]
+				},
+				{
+					"ENG_name": "Taunt (2/Day)",
+					"name": "嘲讽 (2/日)",
+					"entries": [
+						"芭玛可以使用附赠动作来瞄准一个她可以看到且在她30尺范围内的生物。如果目标能听到芭玛的声音，则必须成功通过{@dc 13}的魅力豁免否则在技能检定、攻击投掷和豁免投掷方面处于劣势，直到芭玛的下一回合开始。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "War Lute",
+					"name": "战争鲁特琴",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}5 ({@damage 1d6 + 2}) 点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Song of Domination (3/Day)",
+					"name": "支配之歌 (3/日)",
+					"entries": [
+						"芭玛的目标是一个能看见或听到她的生物，它必须成功通过{@dc 13}的感知豁免否则被她{@condition 魅惑}1分钟。目标可以在每个回合结束时再次进行豁免，成功则结束对自身的影响。如果被芭玛{@condition 魅惑}是目标公开或秘密渴望的东西，那么这些豁免就有劣势。在魅惑效果结束后的1小时内，目标在与芭玛的对抗中进行的智力、感知或魅力检定中处于劣势。"
+					]
+				}
+			],
+			"traitTags": [
+				"妖精血统"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"S",
+				"Y"
+			],
+			"spellcastingTags": [
+				"CB"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"魅惑"
+			],
+			"conditionInflictSpell": [
+				"魅惑",
+				"隐形",
+				"昏迷"
+			],
+			"savingThrowForced": [
+				"魅力",
+				"感知"
+			],
+			"savingThrowForcedSpell": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Chaos Quadrapod",
+			"name": "混沌四足怪",
+			"type": "aberration",
+			"source": "AI",
+			"page": 209,
+			"referenceSources": [
+				"OoW"
+			],
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "7d10 + 14"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 15,
+			"int": 6,
+			"wis": 10,
+			"cha": 4,
+			"skill": {
+				"acrobatics": "+5",
+				"perception": "+4"
+			},
+			"senses": [
+				"盲视120尺（此范围外则视为目盲）"
+			],
+			"passive": 14,
+			"cr": "4",
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"混沌四足怪在对抗法术及其他魔法效应时进行的豁免检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"混沌四足怪进行最多两次触须攻击。"
+					]
+				},
+				{
+					"ENG_name": "Tentacle",
+					"name": "触须",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及15尺，单一目标。{@h}11（{@damage 2d6 + 4}）钝击伤害。若目标为一个生物，则其被{@condition 受擒}（逃脱{@dc 14}）。直到擒抱结束，目标陷入{@condition 束缚}。混沌四足怪无法同时擒抱两个以上的生物。"
+					]
+				},
+				{
+					"ENG_name": "Chaos Cloud (Recharges after a Short or Long Rest)",
+					"name": "混沌云雾（短休或长休后重新充能）",
+					"entries": [
+						"混沌四足怪喷出一团翻滚的以太光芒，在距离其60尺内一点爆发。以点为源点，半径20尺内生物必须成功通过{@dc 14}的魅力豁免，否则直到其下个回合结束陷入{@condition 震慑}。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击",
+				"触须"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"受擒",
+				"束缚",
+				"震慑"
+			],
+			"savingThrowForced": [
+				"魅力"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Clockwork Dragon",
+			"name": "发条龙",
+			"type": "construct",
+			"source": "AI",
+			"page": 209,
+			"referenceSources": [
+				"OoW"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "4d8 + 4"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 13,
+			"skill": {
+				"acrobatics": "+2",
+				"perception": "+4"
+			},
+			"senses": [
+				"盲视 60 尺",
+				"黑暗视觉 60 尺"
+			],
+			"passive": 14,
+			"immune": [
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒"
+			],
+			"languages": [
+				"通用语",
+				"龙语"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "False Appearance",
+					"name": "无定形",
+					"entries": [
+						"当发条龙静止不动时，它看起来和金属雕塑无异。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}7 ({@damage 1d10 + 2}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Fire Breath {@recharge 5}",
+					"name": "火焰吐息 {@recharge 5}",
+					"entries": [
+						"发条龙喷出火焰并覆盖15尺锥形区域。范围内的每个生物必须进行一次{@dc 11}的敏捷豁免，豁免失败者受到14（{@damage 4d6}）火焰伤害，豁免成功则伤害减半。"
+					]
+				}
+			],
+			"traitTags": [
+				"无定形"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"吐息武器"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Deep Crow",
+			"name": "深地鸦",
+			"type": "monstrosity",
+			"source": "AI",
+			"page": 210,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 133,
+				"formula": "14d10 + 56"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 80
+			},
+			"str": 20,
+			"dex": 16,
+			"con": 18,
+			"int": 8,
+			"wis": 15,
+			"cha": 14,
+			"save": {
+				"con": "+8",
+				"wis": "+6"
+			},
+			"skill": {
+				"perception": "+6",
+				"stealth": "+11"
+			},
+			"senses": [
+				"盲视 30 尺",
+				"黑暗视觉 120 尺"
+			],
+			"passive": 16,
+			"languages": [
+				"深地鸦语"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"深地鸦在对抗法术及其他魔法效应时进行的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Shadow Stealth",
+					"name": "幽影隐匿",
+					"entries": [
+						"处于微光光照或黑暗时，深地鸦可以以一个附赠动作进行{@action 躲藏}动作。"
+					]
+				},
+				{
+					"ENG_name": "Sunlight Sensitivity",
+					"name": "日照敏感",
+					"entries": [
+						"在阳光下，深地鸦的攻击检定以及依赖视力的感知（{@skill 察觉}）检定具有劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"深地鸦进行三次攻击：一次使用其颚咬，两次使用其爪击。"
+					]
+				},
+				{
+					"ENG_name": "Mandibles",
+					"name": "颚齿",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及10尺，单一目标。{@h}16（{@damage 2d10 + 5}）穿刺伤害，且目标被{@condition 受擒}（逃脱{@dc 17}）。直到擒抱结束，目标陷入{@condition 束缚}，且深地鸦无法再对另单一目标使用其颚咬。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及 5 尺，单一目标。{@h}12（{@damage 2d6 + 5}）点挥砍伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性",
+				"日照敏感"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"受擒",
+				"束缚"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Donaar Blit'zen",
+			"name": "多纳尔·布里岑",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"龙裔"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AI",
+			"page": 201,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 板甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d8 + 14"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 8,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 16,
+			"save": {
+				"wis": "+2",
+				"cha": "+5"
+			},
+			"skill": {
+				"history": "+2",
+				"insight": "+2",
+				"intimidation": "+5",
+				"persuasion": "+5"
+			},
+			"passive": 10,
+			"resist": [
+				"强酸"
+			],
+			"languages": [
+				"通用语",
+				"龙语",
+				"兽人语"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"多纳尔是一名5级施法者。他的施法关键属性是魅力（法术豁免{@dc 13}，法术攻击{@hit 5}命中）。他准备了以下圣武士法术："
+					],
+					"spells": {
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 命令术}",
+								"{@spell 强令对决}",
+								"{@spell 疗伤术}",
+								"{@spell 激愤斩}"
+							]
+						},
+						"2": {
+							"slots": 2,
+							"spells": [
+								"{@spell 援助术}",
+								"{@spell 印记斩}",
+								"{@spell 次等复原术}",
+								"{@spell 守护之链}",
+								"{@spell 诚实之域}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Champion Challenge (Recharges after a Short or Long Rest)",
+					"name": "冠军挑战（短休或长休后重新充能）",
+					"entries": [
+						"作为一个附赠动作，多纳尔让他选择的每个在他30尺范围内可以看到他的生物进行{@dc 13}感知豁免。在失败时，一个生物不能主动移动超过30尺远离多纳尔。如果多纳尔{@condition 失能}或死亡，或者如果生物被移动到离他30尺以上的地方，这种生物身上的效果就会结束。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"多纳尔用他的巨剑或鞭子发动两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Greatsword",
+					"name": "巨剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）挥砍伤害。每当多纳尔在伤害骰上掷出1或2时，他可以重掷该骰子，并必须使用新的掷骰结果。"
+					]
+				},
+				{
+					"ENG_name": "Whip",
+					"name": "鞭击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及10尺，单一目标。{@h}5（{@damage 1d4 + 3}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Acid Vomit",
+					"name": "酸液呕吐",
+					"entries": [
+						"多纳尔在30尺宽的5尺长的线上吐出强酸。该范围中的每个生物都必须进行{@dc 12}敏捷豁免投掷，失败会受到7（{@damage 2d6}）强酸伤害，成功时受到一半的伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"巨剑|phb",
+				"鞭子|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"O"
+			],
+			"damageTags": [
+				"A",
+				"S"
+			],
+			"damageTagsSpell": [
+				"R",
+				"Y"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RCH"
+			],
+			"conditionInflictSpell": [
+				"恐慌",
+				"倒地"
+			],
+			"savingThrowForced": [
+				"敏捷",
+				"感知"
+			],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Flabbergast",
+			"name": "法柏贾斯特",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AI",
+			"page": 200,
+			"referenceSources": [
+				"OoW"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 40,
+				"formula": "9d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 10,
+			"int": 17,
+			"wis": 13,
+			"cha": 13,
+			"save": {
+				"int": "+5",
+				"wis": "+3"
+			},
+			"skill": {
+				"arcana": "+5",
+				"persuasion": "+3",
+				"history": "+5",
+				"perception": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"通用语",
+				"龙语",
+				"精灵语",
+				"侏儒语"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"法柏贾斯特是一名9级施法者。他的施法关键属性是智力（法术豁免{@dc 13}，{@hit 5}法术攻击命中）。他准备了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 火焰箭}",
+								"{@spell 光亮术}",
+								"{@spell 法师之手}",
+								"{@spell 魔法伎俩}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 侦测魔法}",
+								"{@spell 法师护甲}",
+								"{@spell 扭曲价值|AI}*"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 巧舌如簧|AI}*",
+								"{@spell 暗示术}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 快速交友|AI}*",
+								"{@spell 闪电束}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 高等隐形术}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell 寒冰锥}"
+							]
+						}
+					},
+					"footerEntries": [
+						"*第三章引入的新法术"
+					],
+					"ability": "int"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及 5 尺或射程 20/60 尺，单一目标。{@h}4（{@damage 1d4 + 2}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"E",
+				"G"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"L"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Jim Darkmagic",
+			"name": "吉姆·达克马奇",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AI",
+			"page": 197,
+			"referenceSources": [
+				"OoW"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 40,
+				"formula": "9d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 10,
+			"int": 18,
+			"wis": 12,
+			"cha": 14,
+			"save": {
+				"int": "+7",
+				"wis": "+4"
+			},
+			"skill": {
+				"acrobatics": "+5",
+				"animal handling": "+4",
+				"arcana": "+7",
+				"history": "+7",
+				"performance": "+5"
+			},
+			"passive": 11,
+			"languages": [
+				"通用语"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"吉姆是一名9级施法者。他的施法关键属性是智力（法术豁免{@dc 15}，{@hit 7}用法术攻击命中）。他准备了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 火焰箭}",
+								"{@spell 交友术}",
+								"{@spell 法师之手}",
+								"{@spell 次级幻象}",
+								"{@spell 魔法伎俩}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 易容术}",
+								"{@spell 吉姆的魔法飞弹|AI}*",
+								"{@spell 法师护甲}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 隐形术}",
+								"{@spell 吉姆的发光硬币|AI}*"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 鼓动贪欲|AI}*",
+								"{@spell 火球术}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 咒唤微元素群}",
+								"{@spell 变形术}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell 假象术}"
+							]
+						}
+					},
+					"footerEntries": [
+						"*第三章引入的新法术"
+					],
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Special Equipment",
+					"name": "特殊装备",
+					"entries": [
+						"吉姆持有一根{@item 惊异魔杖}。"
+					]
+				},
+				{
+					"ENG_name": "Benign Transportation (Recharges after Jim Casts a Conjuration Spell of 1st Level or Higher)",
+					"name": "王车易位（在吉姆施放1环或更高环召唤法术后重新充能）",
+					"entries": [
+						"以一个附赠动作，吉姆传送到30尺一个他可以看到的空间。该空间必须未被占用或被愿意的小型或中型生物占用。如果是后者，吉姆和愿意的生物都瞬移，交换位置。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 5}，触及5尺或射程20/60尺，单一目标。{@h}4 ({@damage 1d4 + 2}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Minor Conjuration",
+					"name": "次级咒术",
+					"entries": [
+						"吉姆变出一个无生命的物体，该物体每边长度不超过3尺，不超过10磅，在他的手中或地面上他可以看到10尺以内的未占据空间。这个物体显然是由魔法构成的，且散发出5尺微光光照。如果其受到任何伤害，被召唤出1小时后或吉姆再次使用此能力时，它会消失。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"F",
+				"O"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "K'thriss Drow'b",
+			"name": "克里斯·卓尔布",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "精灵",
+						"prefix": "卓尔",
+						"prefixHidden": true
+					}
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AI",
+			"page": 202,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item 镶钉皮甲|phb|镶钉皮甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 44,
+				"formula": "8d8 + 8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 12,
+			"int": 14,
+			"wis": 11,
+			"cha": 18,
+			"save": {
+				"str": "+0",
+				"dex": "+3",
+				"con": "+2",
+				"int": "+3",
+				"wis": "+3",
+				"cha": "+7"
+			},
+			"skill": {
+				"arcana": "+4",
+				"insight": "+2",
+				"investigation": "+4",
+				"perception": "+2",
+				"religion": "+4"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 12,
+			"languages": [
+				"天界语",
+				"通用语",
+				"精灵语",
+				"地底通用语；可以阅读所有文字"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"克里斯的先天施法关键属性是魅力（法术豁免{@dc 14}）。他天生可以施放以下法术，不需要材料成分："
+					],
+					"will": [
+						"{@spell 舞光术}",
+						"{@spell 易容术}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 黑暗术}",
+							"{@spell 妖火}"
+						]
+					},
+					"ability": "cha"
+				},
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"克里斯是一名5级施法者。他的施法关键属性是魅力（法术豁免{@dc 14}，法术攻击{@hit 6}命中）。当他完成短休或长休时，他会恢复消耗的法术位，并且知道以下魔契师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 颤栗之触}",
+								"{@spell 魔能爆}",
+								"{@spell 修复术}",
+								"{@spell 魔法伎俩}",
+								"{@spell 荆棘之鞭}",
+								"{@spell 恶言相加}"
+							]
+						},
+						"3": {
+							"lower": 1,
+							"slots": 2,
+							"spells": [
+								"{@spell 不谐低语}",
+								"{@spell 飞行术}",
+								"{@spell 脆弱诅咒}",
+								"{@spell 迷踪步}",
+								"{@spell 短讯术}",
+								"{@spell 粉碎音波}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Special Equipment",
+					"name": "特殊装备",
+					"entries": [
+						"克里斯穿着 {@item 星辰法袍}（数据已被算入他的具体数值）。法袍允许他施放以下法术：6/白昼：{@spell 魔法飞弹}（7枚飞弹）"
+					]
+				},
+				{
+					"ENG_name": "Awakened Mind",
+					"name": "唤醒心灵",
+					"entries": [
+						"克里斯可以心灵感应到他能看到的30尺范围内的任何生物，只要这个生物能理解至少一种语言。"
+					]
+				},
+				{
+					"ENG_name": "Fey Ancestry",
+					"name": "妖精血统",
+					"entries": [
+						"克里斯在对抗{@condition 魅惑}的豁免检定中具有优势，并且魔法无法使他陷入睡眠。日照敏感。在阳光下，克里斯在攻击检定以及依赖视觉的感知（{@skill 察觉}）检定中具有劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"克里斯·卓尔布用他的镰刀发动两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Sickle",
+					"name": "镰刀",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}4（{@damage 1d4 + 2}）点挥砍伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"镰刀|phb"
+			],
+			"traitTags": [
+				"妖精血统"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"CE",
+				"E",
+				"U",
+				"XX"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"N",
+				"O",
+				"P",
+				"T",
+				"Y"
+			],
+			"spellcastingTags": [
+				"CL",
+				"I"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Keg Robot",
+			"name": "酒桶机器人",
+			"type": "construct",
+			"source": "AI",
+			"page": 212,
+			"referenceSources": [
+				"OoW"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 39,
+				"formula": "6d8 + 12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 15,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"skill": {
+				"perception": "+1"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 11,
+			"resist": [
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒"
+			],
+			"languages": [
+				"理解通用语，但不会说"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "Customizable Storage",
+					"name": "定制储存",
+					"entries": [
+						"酒桶机器人能够在其空心的桶状身体内容纳最多三种不同的液体，共计12加仑。一个装满的酒桶机器人可以用每加仑液体进行一次液体攻击，在液体必须补充之前。为酒桶机器人装入液体需要每加仑2轮。不同的内容物能让机器人发出与这里所呈现的不同的攻击。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Fist",
+					"name": "拳击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}7（{@damage 1d8 + 3}）点钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Acid Squirt",
+					"name": "酸液射击",
+					"entries": [
+						"{@atk rw} 命中{@hit 5}，范围 20/40 尺，单一目标。{@h}7（{@damage 1d8 + 3}）强酸伤害。"
+					]
+				},
+				{
+					"ENG_name": "Beer Shower",
+					"name": "啤酒浴",
+					"entries": [
+						"酒桶机器人喷出一种极不自然的强力啤酒，形成一个15尺的锥形区域或一条30尺长、5尺宽的线状区域。区域内的每个生物必须成功通过{@dc 13}的体质豁免，否则将被{@condition 中毒}。以此方式{@condition 中毒}时，生物的速度因暴露于强力酿造物而减半。受影响的生物可以在每个回合结束时重复进行豁免检定，成功则结束此效果。",
+						"此外，啤酒浴可以扑灭其区域内任何火焰或明火。"
+					]
+				},
+				{
+					"ENG_name": "Hot Oil Spray {@recharge 5}",
+					"name": "热油喷射 {@recharge 5}",
+					"entries": [
+						"酒桶机器人在15尺锥形范围或30尺长、5尺宽的直线范围喷射热油。区域内的每个生物必须进行一次{@dc 13}敏捷豁免。豁免失败时，生物受到7（{@damage 1d8 + 3}）点火焰伤害并陷入{@condition 倒地}状态。豁免成功时，生物受到一半伤害且不会陷入{@condition 倒地}状态。",
+						"任何受到热油喷射影响的生物在油干之前（1分钟后）受到火焰伤害时额外受到3（{@damage 1d6}）火焰伤害，然后油会烧干。",
+						"如果留在区域中的油被点燃，它会燃烧{@dice 1d4}轮并对任何在一回合内第一次进入该区域或在区域内结束回合的生物造成3（{@damage 1d6}）火焰伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"F"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"中毒",
+				"倒地"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Môrgæn",
+			"name": "莫尔甘",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AI",
+			"page": 199,
+			"referenceSources": [
+				"OoW"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 镶钉皮甲|phb|镶钉皮甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 66,
+				"formula": "12d8 + 12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 12,
+			"int": 12,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"str": "+3",
+				"dex": "+6"
+			},
+			"skill": {
+				"athletics": "+3",
+				"insight": "+4",
+				"nature": "+3",
+				"perception": "+4",
+				"stealth": "+6",
+				"survival": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 14,
+			"languages": [
+				"通用语",
+				"龙语",
+				"矮人语",
+				"巨人语",
+				"地精语"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"莫尔甘的施法关键属性是智力。她天生可以施放以下法术，不需要任何材料成分："
+					],
+					"will": [
+						"{@spell 法师之手}"
+					],
+					"ability": "int"
+				},
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"莫尔甘是一名9级施法者。她的施法关键属性是感知（法术豁免{@dc 12}，{@hit 4}法术攻击命中）。她准备了下列游侠法术："
+					],
+					"spells": {
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 警报术}",
+								"{@spell 化兽为友}",
+								"{@spell 猎人印记}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 行动无踪}",
+								"{@spell 荆棘丛生}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell 咒唤兽群}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Fey Ancestry",
+					"name": "妖精血统",
+					"entries": [
+						"莫尔甘在进行对抗{@condition 魅惑}的豁免时有优势，并且魔法不能使她陷入睡眠。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"莫尔甘用弯刀或长弓进行三次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Scimitars",
+					"name": "弯刀",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}7（{@damage 1d6 + 4}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Longbow",
+					"name": "长弓",
+					"entries": [
+						"{@atk rw} 命中{@hit 6}，射程 150/600 尺，单一目标。{@h}8（{@damage 1d8 + 4}）穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"长弓|phb"
+			],
+			"traitTags": [
+				"妖精血统"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"DR",
+				"GI",
+				"GO"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CR",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"conditionInflictSpell": [
+				"魅惑"
+			],
+			"savingThrowForcedSpell": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Oak Truestrike",
+			"name": "奥克·图斯崔",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AI",
+			"page": 205,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				{
+					"alignment": [
+						"N",
+						"G"
+					]
+				},
+				{
+					"alignment": [
+						"N",
+						"E"
+					]
+				}
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 镶钉皮甲|phb|镶钉皮甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 32,
+				"formula": "5d8 + 10"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 13,
+			"cha": 11,
+			"skill": {
+				"nature": "+4",
+				"perception": "+3",
+				"performance": "+2",
+				"stealth": "+5",
+				"survival": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"通用语"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "Fey Ancestry",
+					"name": "妖精血统",
+					"entries": [
+						"奥克在进行对抗{@condition 魅惑}的豁免时有优势，并且不会因魔法效应陷入睡眠。"
+					]
+				},
+				{
+					"ENG_name": "Keen Hearing and Sight",
+					"name": "敏锐视听觉",
+					"entries": [
+						"奥克在依靠听觉或视觉的感知（{@skill 察觉}）检定方面具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"奥克用他的钩状匕首或手弩进行三次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Hooked Dagger",
+					"name": "钩匕",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及 5 尺，单一目标。{@h}5（{@damage 1d4 + 3}）的穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Hand Crossbow",
+					"name": "手弩",
+					"entries": [
+						"{@atk rw} 命中{@hit 5}，范围 30/120 尺，单一目标。{@h}6（{@damage 1d6 + 3}）穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Return the Favor (3/Day)",
+					"name": "报恩 (3/日)",
+					"entries": [
+						"当奥克受到近战武器攻击的伤害时，他可以进行钩状匕首攻击。"
+					]
+				}
+			],
+			"attachedItems": [
+				"手弩|phb"
+			],
+			"traitTags": [
+				"妖精血统",
+				"敏锐感官"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Omin Dran",
+			"name": "欧敏·德兰",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"半精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AI",
+			"page": 196,
+			"referenceSources": [
+				"OoW"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 板甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d8 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 8,
+			"con": 14,
+			"int": 11,
+			"wis": 18,
+			"cha": 12,
+			"save": {
+				"wis": "+7",
+				"cha": "+4"
+			},
+			"skill": {
+				"deception": "+4",
+				"insight": "+7",
+				"intimidation": "+4",
+				"medicine": "+7",
+				"perception": "+7",
+				"persuasion": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 17,
+			"languages": [
+				"通用语",
+				"矮人语",
+				"精灵语",
+				"地精语"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"欧敏·德兰是一名9级施法者。他的施法关键属性是感知（法术豁免 {@dc 15}，法术攻击 {@hit 7} 命中）。他准备了以下牧师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 神导术}",
+								"{@spell 圣火术}",
+								"{@spell 维生术}",
+								"{@spell 奇术}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 祝福术}",
+								"{@spell 命令术}",
+								"{@spell 神恩}",
+								"{@spell 虔诚护盾}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 强化属性}",
+								"{@spell 定身类人}",
+								"{@spell 魔化武器}",
+								"{@spell 沉默术}",
+								"{@spell 灵体武器}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 希望信标}",
+								"{@spell 十字军披风}",
+								"{@spell 解除魔法}",
+								"{@spell 群体治愈真言}",
+								"{@spell 灵体卫士}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 防死结界}",
+								"{@spell 行动自如}",
+								"{@spell 生物定位术}",
+								"{@spell 石肤术}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell 驱逐善恶}",
+								"{@spell 焰击术}",
+								"{@spell 定身怪物}",
+								"{@spell 高等复原术}",
+								"{@spell 通晓传奇}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Divine Strike",
+					"name": "神圣打击",
+					"entries": [
+						"每回合一次，当他用武器攻击命中一个生物时，欧敏能额外造成 4（{@damage 1d8}）与武器造成的伤害同类型的伤害。"
+					]
+				},
+				{
+					"ENG_name": "Fey Ancestry",
+					"name": "妖精血统",
+					"entries": [
+						"欧敏在对抗{@condition 魅惑}的豁免时有优势，并且魔法不能使他陷入睡眠。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"欧敏·德兰用他的巨锤进行了两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Maul",
+					"name": "巨锤",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5 尺，单一目标。{@h}10 ({@damage 2d6 + 3}) 点钝击伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "War God's Blessing (Recharges after a Short or Long Rest)",
+					"name": "战神赐福（短休或长休后重新充能）",
+					"entries": [
+						"当欧敏30尺内的生物进行攻击时，在知道它是否命中之前，欧敏可以给该生物一个 +10 的加值。"
+					]
+				}
+			],
+			"attachedItems": [
+				"巨锤|phb"
+			],
+			"traitTags": [
+				"妖精血统"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"E",
+				"GO"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"F",
+				"N",
+				"O",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"耳聋",
+				"麻痹",
+				"倒地"
+			],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Pendragon Beestinger",
+			"name": "潘德拉贡·贝辛格",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AI",
+			"page": 206,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d8 + 5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 17,
+			"wis": 10,
+			"cha": 11,
+			"skill": {
+				"arcana": "+5",
+				"investigation": "+5",
+				"performance": "+2"
+			},
+			"passive": 10,
+			"languages": [
+				"通用语",
+				"龙语",
+				"精灵语",
+				"半身人语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"潘德拉贡是4级施法者。他的施法关键属性是智力（法术豁免{@dc 13}，法术攻击{@hit 5}命中）。他准备了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 酸液飞溅}",
+								"{@spell 光亮术}",
+								"{@spell 法师之手}",
+								"{@spell 毒气喷涌}",
+								"{@spell 电爪}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 侦测魔法}",
+								"{@spell 法师护甲}",
+								"{@spell 魔法飞弹}",
+								"{@spell 睡眠术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 目盲术/耳聋术}",
+								"{@spell 匕首之云}",
+								"{@spell 灼热射线}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Echo Spell (1/Day)",
+					"name": "回声法术 (1/日)",
+					"entries": [
+						"潘德拉贡可以施放他在最后一回合施放的法术，施法时间变为1个附赠动作。此附赠施法正常使用法术位。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"短剑|phb"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"E",
+				"H"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"A",
+				"F",
+				"I",
+				"L",
+				"O",
+				"S"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Phoenix Anvil",
+			"name": "费尼克斯·锻砧",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AI",
+			"page": 206,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 链甲|phb}",
+						"{@item 盾牌|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d8 + 5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 10,
+			"con": 12,
+			"int": 13,
+			"wis": 16,
+			"cha": 13,
+			"skill": {
+				"athletics": "+4",
+				"performance": "+3",
+				"persuasion": "+3",
+				"religion": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"通用语",
+				"精灵语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"费尼克斯是4级施法者。他的施法关键属性是感知（法术豁免{@dc 13}，{@hit 5}法术攻击命中）。他准备了以下牧师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 神导术}",
+								"{@spell 光亮术}",
+								"{@spell 修复术}",
+								"{@spell 圣火术}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 灾祸术}",
+								"{@spell 疗伤术}",
+								"{@spell 光导箭}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 定身类人}",
+								"{@spell 灵体武器}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Divine Display (1/Day)",
+					"name": "神圣显现 (1/日)",
+					"entries": [
+						"作为一个附赠动作，费尼克斯使他的盾牌闪耀着神圣的光芒。距离他30尺以内的每个他选择的生物都必须在{@dc 13}感知豁免投掷中取得成功，否则就会{@condition 目盲} 1分钟。生物可以在每个回合结束时再次投掷豁免，成功则结束对自己的影响。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"费尼克斯进行两次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Warhammer",
+					"name": "战锤",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6（{@damage 1d8 + 2}）钝击伤害，且目标必须成功通过{@dc 12}的力量豁免否则被推5尺。"
+					]
+				}
+			],
+			"attachedItems": [
+				"战锤|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"O",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"目盲"
+			],
+			"conditionInflictSpell": [
+				"麻痹"
+			],
+			"savingThrowForced": [
+				"力量",
+				"感知"
+			],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Portentia Dran",
+			"name": "佩登莎·德兰",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"变形生物"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AI",
+			"page": 208,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item 链甲衫|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "6d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 16,
+			"int": 13,
+			"wis": 12,
+			"cha": 14,
+			"skill": {
+				"deception": "+6",
+				"insight": "+3",
+				"perception": "+3"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"conditionImmune": [
+				"魅惑"
+			],
+			"languages": [
+				"通用语",
+				"精灵语"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Sneak Attack (1/Turn)",
+					"name": "偷袭 (1/回合)",
+					"entries": [
+						"波坦西亚使用武器攻击命中目标时，若在攻击检定中具有优势，或者目标在波坦西亚的一个未处于{@condition 失能}状态的盟友5英尺范围内且波坦西亚在攻击检定中没有劣势，则将造成额外的14（{@damage 4d6}）点伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"佩登莎发动三次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}7（{@damage 1d6 + 4}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Change Shape",
+					"name": "变形",
+					"entries": [
+						"佩登莎神奇地变身为挑战等级等于或低于她自己的类人或野兽，或者变回她的真实形态。她佩戴或携带的任何装备都被新形式（她的选择）吸收或承担。在一种新的形式中，佩登莎保留了她的具体数值和说话能力，但她的AC、移动能力、力量、敏捷和特殊感官被新形态所取代，她获得了新形态拥有但她所缺乏的任何属性数据和能力（职业特性、传奇动作和巢穴行动除外）。"
+					]
+				}
+			],
+			"attachedItems": [
+				"短剑|phb"
+			],
+			"traitTags": [
+				"偷袭"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击",
+				"变形生物"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Prophetess Dran",
+			"name": "帕博蒂斯·德兰",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"source": "AI",
+			"page": 208,
+			"referenceSources": [
+				"OoW"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item 胸甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d8 + 5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 12,
+			"int": 13,
+			"wis": 16,
+			"cha": 13,
+			"skill": {
+				"medicine": "+5",
+				"persuasion": "+3",
+				"religion": "+5"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"languages": [
+				"通用语",
+				"精灵语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"帕博蒂斯是一名5级施法者。她的施法关键属性是感知（法术豁免{@dc 13}，{@hit 5}法术攻击命中）。帕博蒂斯准备了以下牧师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 光亮术}",
+								"{@spell 圣火术}",
+								"{@spell 奇术}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 疗伤术}",
+								"{@spell 光导箭}",
+								"{@spell 庇护术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 次等复原术}",
+								"{@spell 灵体武器}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell 解除魔法}",
+								"{@spell 灵体卫士}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Divine Eminence",
+					"name": "神圣启示",
+					"entries": [
+						"作为一个附赠动作，帕博蒂斯可以消耗一个法术位，使她的近战武器攻击在命中时对目标额外造成10（{@damage 3d6}）光耀伤害。这个效益持续到回合结束。如果帕博蒂斯消耗2级或更高的法术位，每比1级高一级，额外伤害就增加{@damage 1d6}。"
+					]
+				},
+				{
+					"ENG_name": "Fey Ancestry",
+					"name": "妖精血统",
+					"entries": [
+						"帕博蒂斯在对抗{@condition 魅惑}的豁免检定中有优势，并且魔法无法使她陷入睡眠。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Maul",
+					"name": "巨锤",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}9（{@damage 2d6 + 2}）钝击伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"巨锤|phb"
+			],
+			"traitTags": [
+				"妖精血统"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"B",
+				"R"
+			],
+			"damageTagsSpell": [
+				"N",
+				"O",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Rosie Beestinger",
+			"name": "罗西·贝辛格",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"半身人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AI",
+			"page": 203,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"无甲防御"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "10d6 + 10"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 12,
+			"int": 12,
+			"wis": 14,
+			"cha": 14,
+			"save": {
+				"str": "+1",
+				"dex": "+5"
+			},
+			"skill": {
+				"acrobatics": "+5",
+				"history": "+3",
+				"intimidation": "+4",
+				"stealth": "+5"
+			},
+			"passive": 12,
+			"languages": [
+				"通用语",
+				"龙语",
+				"精灵语",
+				"半身人语"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"罗西的先天施法关键属性是感知（法术豁免{@dc 12}）。她可以先天施放以下法术，不需要任何材料："
+					],
+					"will": [
+						"{@spell 次级幻象}",
+						"{@spell 圣火术}",
+						"{@spell 奇术}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 命令术}",
+							"{@spell 黑暗术}",
+							"{@spell 黑暗视觉}",
+							"{@spell 行动无踪}",
+							"{@spell 沉默术}"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Brave",
+					"name": "勇气",
+					"entries": [
+						"罗西在对抗{@condition 恐慌}的豁免有优势。"
+					]
+				},
+				{
+					"ENG_name": "Halfling Nimbleness",
+					"name": "半身人灵巧",
+					"entries": [
+						"罗西可以在任何比她体型大的生物所占的空间中移动。"
+					]
+				},
+				{
+					"ENG_name": "Evasion",
+					"name": "反射闪避",
+					"entries": [
+						"如果罗西受到一种效果，要求她进行敏捷豁免投掷，则只受到一半的伤害，如果她豁免成功，她不会受到任何伤害，如果她失败，她只会受到一半的伤害。如果她{@condition 失能}，她不能使用这种特质。"
+					]
+				},
+				{
+					"ENG_name": "Shadow Step",
+					"name": "暗影步",
+					"entries": [
+						"当罗西处于微光光照或黑暗中时，她可以使用附赠动作将自己传送到60尺她可以看到的未占据空间里，该空间也必须处于微光光照或黑暗中。然后，她在回合结束前的第一次近战攻击中具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"罗西发动三次攻击，然后发动两次徒手打击。"
+					]
+				},
+				{
+					"ENG_name": "Staff of the Master (+1 Quarterstaff)",
+					"name": "宗师法杖 (+1 长棍)",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及 5 尺，单一目标。{@h}7（{@damage 1d6 + 4}）钝击伤害，或若用双手则为 8（{@damage 1d8 + 4}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Unarmed Strike",
+					"name": "徒手打击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}6（{@damage 1d6 + 3}）钝击伤害。罗西的徒手打击是魔法攻击。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Deflect Missiles",
+					"name": "拨挡飞弹",
+					"entries": [
+						"作为对远程武器攻击的回应，萝西偏转了这次攻击。她受到的伤害减少了{@damage 1d10 + 9}。如果伤害减少到0，并且飞弹足够小可以单手握住，且她有一只手空闲，她会接住飞弹。"
+					]
+				}
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"E",
+				"H"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"R"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"耳聋",
+				"倒地"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Splugoth the Returned",
+			"name": "复生者斯普鲁格斯",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"类地精"
+				]
+			},
+			"source": "AI",
+			"page": 213,
+			"referenceSources": [
+				"OoW"
+			],
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "6d6 + 6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 12,
+			"int": 14,
+			"wis": 11,
+			"cha": 10,
+			"save": {
+				"int": "+4",
+				"wis": "+2"
+			},
+			"skill": {
+				"stealth": "+6"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"languages": [
+				"通用语",
+				"龙语",
+				"精灵语",
+				"地精语"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "Defensive Advantage",
+					"name": "防御优势",
+					"entries": [
+						"只要Splugoth的两个或更多盟友在他5尺范围内，并且不是{@condition 失能}，对他进行的攻击检定将带有不利条件。"
+					]
+				},
+				{
+					"ENG_name": "Nimble Escape",
+					"name": "迅捷逃逸",
+					"entries": [
+						"复生者斯普鲁格斯可以在他的每个回合中用一个附赠动作执行{@action 撤离}或{@action 躲藏}动作。"
+					]
+				},
+				{
+					"ENG_name": "Touch of Madness",
+					"name": "疯狂之触",
+					"entries": [
+						"斯普鲁格斯在对抗{@condition 魅惑}或{@condition 恐慌}的豁免检定中具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"斯普鲁格斯使用他的匕首进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}4（{@damage 1d4 + 2}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Word From Beyond (1/Day)",
+					"name": "界外呓语 (1/日)",
+					"entries": [
+						"Splugoth 记得并大声重复他在从另一个世界返回这个世界时进入的一个地方的几个词。在他30尺范围内的每个能听到他的生物，必须成功进行一次{@dc 12} 感知豁免检定，否则直到其下个回合结束时将处于{@condition 震慑}状态。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Absorb Attack",
+					"name": "吸收攻击",
+					"entries": [
+						"当一个斯普罗索斯能看到的生物用近战武器攻击他时，武器会卡在残余的复活能量口袋上并被牢牢抓住。这次攻击被抵消，并且该武器不能使用，直到生物成功进行一次{@dc 12}力量（{@skill 运动})检定作为动作将其从斯普罗索斯身上拔出。天然武器可以通过这个特性抵消攻击，但可以在攻击生物的回合结束时自动收回。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"E",
+				"GO"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"震慑"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Viari",
+			"name": "维阿里",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AI",
+			"page": 198,
+			"referenceSources": [
+				"OoW"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item +1 镶钉皮甲||+1 镶钉皮甲}"
+					]
+				},
+				{
+					"ac": 19,
+					"condition": "当持用两把近战武器时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d8 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 20,
+			"con": 14,
+			"int": 10,
+			"wis": 8,
+			"cha": 14,
+			"save": {
+				"dex": "+8",
+				"int": "+3"
+			},
+			"skill": {
+				"acrobatics": "+11",
+				"athletics": "+7",
+				"perception": "+5",
+				"performance": "+5",
+				"persuasion": "+5",
+				"sleight of hand": "+11",
+				"stealth": "+8"
+			},
+			"passive": 15,
+			"languages": [
+				"通用语",
+				"龙语",
+				"盗贼黑话"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Evasion",
+					"name": "反射闪避",
+					"entries": [
+						"如果维阿里受到一个允许他进行敏捷豁免以仅受一半伤害的效应影响，则他在豁免成功时不受任何伤害，豁免失败时仅受一半伤害。如果他处于{@condition 失能}状态，则无法使用此特质。"
+					]
+				},
+				{
+					"ENG_name": "Second-Story Work",
+					"name": "梁上君子",
+					"entries": [
+						"攀登不花费维阿里额外的移动力。此外，当他进行跑步跳跃时，他移动的距离增加了5尺。"
+					]
+				},
+				{
+					"ENG_name": "Sneak Attack (1/Turn)",
+					"name": "偷袭 (1/回合)",
+					"entries": [
+						"当维阿里使用武器攻击击中目标并在攻击检定中具有优势时，或者当目标距离维阿里的盟友5尺以内且他没有{@condition 失能}，并且维阿里在攻击检定中没有劣势时，他会造成额外的14（{@damage 4d6}）伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"维阿里用他的短剑进行两次攻击，用他的刺剑进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "+1 Shortsword",
+					"name": "+1 短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及 5 尺，单一目标。{@h}9（{@damage 1d6 + 6}）穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Rapier",
+					"name": "刺剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}9（{@damage 1d8 + 5}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 8}，触及5尺或范围20/60尺，单一目标。{@h}7（{@damage 1d4 + 5}）穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Uncanny Dodge",
+					"name": "直觉闪避",
+					"entries": [
+						"维阿里将击中他的攻击中受到的伤害减半。他必须能够看到攻击者。"
+					]
+				}
+			],
+			"attachedItems": [
+				"+1 短剑|dmg",
+				"匕首|phb",
+				"刺剑|phb"
+			],
+			"traitTags": [
+				"偷袭"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"TC"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Walnut Dankgrass",
+			"name": "沃勒·邓格瑞斯",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AI",
+			"page": 204,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item 皮甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 14,
+			"int": 10,
+			"wis": 18,
+			"cha": 10,
+			"save": {
+				"int": "+2",
+				"wis": "+6"
+			},
+			"skill": {
+				"athletics": "+1",
+				"insight": "+6",
+				"perception": "+6",
+				"stealth": "+5",
+				"survival": "+6"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 16,
+			"languages": [
+				"通用语",
+				"德鲁伊语",
+				"精灵语",
+				"木族语"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"沃勒是7级施法者。她的施法关键属性是感知（法术豁免{@dc 14}，法术攻击{@hit 6}命中）。她准备了以下德鲁伊法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 德鲁伊伎俩}",
+								"{@spell 燃火术}",
+								"{@spell 荆棘之鞭}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 疗伤术}",
+								"{@spell 纠缠术}",
+								"{@spell 雷鸣波}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 火焰刀}",
+								"{@spell 月华之光}",
+								"{@spell 行动无踪}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 召雷术}",
+								"{@spell 解除魔法}",
+								"{@spell 植物滋长}"
+							]
+						},
+						"4": {
+							"slots": 1,
+							"spells": [
+								"{@spell 枯萎术}",
+								"{@spell 行动自如}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Fey Ancestry",
+					"name": "妖精血统",
+					"entries": [
+						"沃勒在对抗{@condition 魅惑}的豁免检定中具有优势，并且魔法无法使她陷入睡眠。"
+					]
+				},
+				{
+					"ENG_name": "Mask of the Wild",
+					"name": "荒野隐蔽",
+					"entries": [
+						"沃勒·邓格瑞斯可以尝试躲藏，即使她只是被树叶、大雨、落雪、薄雾和其他自然现象轻度遮蔽时。"
+					]
+				},
+				{
+					"ENG_name": "Wild Shape (Recharges after a Short or Long rest)",
+					"name": "荒野形态（短休或长休后充能）",
+					"entries": [
+						"以一个附赠动作，沃勒可以变为恐狼的形态。她可以保持这种状态 3 小时，或者直到她以一个附赠动作恢复到正常形态。如果她陷入{@condition 昏迷}、生命值下降到 0 或死亡，她会自动恢复。",
+						"在变身后，沃勒的属性面板被恐狼的属性面板所取代，但她保留了她的阵营、个性以及智力、感知和魅力属性值。",
+						"她以野兽形态的攻击是魔法攻击。在野兽形态时，沃勒可以使用附赠动作消耗一个法术位，每消耗一环法术位即可恢复{@dice 1d8}生命值。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"沃勒用母氏或她的长弓进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Foremother (+1 Scimitar)",
+					"name": "母氏 (+1 弯刀)",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}7（{@damage 1d6 + 4}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Longbow",
+					"name": "长弓",
+					"entries": [
+						"{@atk rw} 命中{@hit 5}，范围150/600尺，单一目标。{@h}7（{@damage 1d8 + 3}）穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"长弓|phb"
+			],
+			"traitTags": [
+				"妖精血统"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DU",
+				"E",
+				"S"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"F",
+				"L",
+				"N",
+				"P",
+				"R",
+				"T"
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"conditionInflictSpell": [
+				"束缚"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}

@@ -1,0 +1,908 @@
+{
+	"_meta": {
+		"internalCopies": [
+			"monsterFluff"
+		]
+	},
+	"monsterFluff": [
+		{
+			"ENG_name": "Aeorian Absorber",
+			"name": "艾欧瑞安汲能兽",
+			"source": "EGW",
+			"_copy": {
+				"ENG_name": "Aeorian Hunters",
+				"name": "艾欧瑞安猎手",
+				"source": "EGW",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"从远处看起来，汲能兽类似于犬科或猫科的四足动物，当它靠近时，其怪物本质则显而易见。汲能兽以能将魔法能量吸收到身体中而得名，它能够通过尾巴释放出毁灭性的能量，而尾端的眼睛则时刻盯紧猎物。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Aeorian Absorber.webp"
+					},
+					"credit": "David Rene Christensen",
+					"width": 689,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Aeorian Hunters",
+			"name": "艾欧瑞安猎手",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						"在奥法纪期间，飞行之城艾欧尔的魔法师们创造了艾欧瑞安猎手，用于对付天使、恶魔、魔鬼、精类以及诸神本身。当艾欧尔坠毁于埃塞克罗斯时，许多这些魔法突变的怪兽幸存下来，而如今它们在艾欧尔的废墟和群岛上的冰封废土上游荡。",
+						{
+							"ENG_name": "Created by Experimentation",
+							"name": "自实验而生",
+							"type": "entries",
+							"entries": [
+								"艾欧瑞安猎手们是通过对野兽和类人生物\u2014\u2014俘虏与志愿者皆有，进行的奥术实验创造。这些实验导致怪兽们具有色泽鲜艳的血肉和抵抗并毁灭艾欧瑞之敌的力量。理论上讲，艾欧瑞的魔法师们必然拥有某种能控制他们的怪兽士兵的方法，但在埃塞克罗斯的荒原中并没有发现过这样的装置。龙语是这些魔法师们训练和约束艾欧瑞安猎手们的语言，即使猎手们口不能言，它们依然能理解这一语言。",
+								{
+									"ENG_name": "Madness through Immortality",
+									"name": "不朽的疯狂",
+									"type": "entries",
+									"entries": [
+										"艾欧瑞安猎手们不会衰老。因此，它们的创造者灌输给它们的暴力欲望在数个世纪没有战争之后变得贪婪。大多数猎手会径直攻击任何它们看到的生物。",
+										{
+											"ENG_name": "Never Harm Another Hunter",
+											"name": "永不相残",
+											"type": "entries",
+											"entries": [
+												"虽然它们渴求暴力，但艾欧瑞安猎手们从未被看到有攻击彼此的行为。大多数学者相信一定是艾欧尔的法师们将这些行为加诸于它们，考虑到创造每个猎手所需的黄金和魔法成本。一些在埃塞克罗斯的冒险者吹嘘说，他们通过伪装或幻象来模仿猎手的形态，以从艾欧瑞安猎手身边溜走，但这些都很可能只是荒诞不经的故事。"
+											]
+										},
+										{
+											"ENG_name": "Ageless Memories",
+											"name": "永恒记忆",
+											"type": "entries",
+											"entries": [
+												"每一个艾欧瑞安猎手都能完美回忆起自其诞生以来的每一次经历。它们有限的智力和暴力欲望阻止了它们有效的交流，但每一个猎手都在其头脑中拥有丰富的知识\u2014\u2014通常包括珍稀的艾欧瑞安遗物的位置。"
+											]
+										},
+										{
+											"ENG_name": "Perfect Soldiers",
+											"name": "完美士兵",
+											"type": "entries",
+											"entries": [
+												"艾欧瑞安猎手不需要进食或饮水。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Aeorian Nullifier",
+			"name": "艾欧瑞安灭法者",
+			"source": "EGW",
+			"_copy": {
+				"ENG_name": "Aeorian Hunters",
+				"name": "艾欧瑞安猎手",
+				"source": "EGW",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"灭法者是所有魔法使用者的克星，其肉体形态和内在力量都是为了抵抗并消除魔法效应而塑造。在对付其他敌人时，灭法者同样可怕，其躯干上覆盖着长满剃刀般锋利尖牙的怪异大嘴，这些大嘴发出的刺耳咀嚼声可以驱使其他生物趋于疯狂。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Aeorian Nullifier.webp"
+					},
+					"credit": "David Rene Christensen",
+					"width": 603,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Aeorian Reverser",
+			"name": "艾欧瑞安逆转怪",
+			"source": "EGW",
+			"_copy": {
+				"ENG_name": "Aeorian Hunters",
+				"name": "艾欧瑞安猎手",
+				"source": "EGW",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"逆转怪在近战中是一个可怕的对手，它能依靠尖牙利爪痛击其他生物。但它造成的混乱则要可怕得多，因为其敌人的治疗魔法会被瓦解并转而对抗它们。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Aeorian Reverser.webp"
+					},
+					"credit": "David Rene Christensen",
+					"width": 646,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Allowak Abominable Yeti",
+			"name": "阿洛瓦克巨恶雪怪",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"雪怪的风中嚎叫在偏远山脉中回荡，给居住在那里的零星矿工和牧民心中带来恐惧。这些庞大的生物在高山山峰上不停搜寻进食。它们雪白的皮毛让它们在冰冻的地形中如幽魂般移动。雪怪冰冷的猿类眼睛可以冻结其猎物在原地。"
+					]
+				},
+				{
+					"type": "section",
+					"entries": [
+						"当艾欧瑞坠入福伦时，一块巨大的紫色水晶从坠机现场飞溅而出。岩石刺穿了一个名为阿洛瓦克的巨恶雪怪的身体，但水晶的魔力保存住了雪怪的尸体并吸收了阿洛瓦克的灵魂。当其他雪怪触碰到水晶时，他们的才智增加了，天生的嗜杀欲望也消失了。这是一个由怪兽组成的社会，它们生活在围绕着水晶的小屋中，以猛犸为食。这些和平的雪怪厌恶他们的野蛮血统。",
+						{
+							"ENG_name": "A Secret Place",
+							"name": "机密之地",
+							"type": "entries",
+							"entries": [
+								"阿洛瓦克圣所的雪怪将它们的家园视为机密，因为他们担心外人可能会试图偷走水晶。尽管水晶的效应似乎是永久的，但雪怪们担心，如果将水晶从阿洛瓦克的遗体中取出，他们会失去新生的智慧。如果有外来者靠近村庄，在村庄边界巡逻的雪怪会过来并表现得像它们种族中更为普通和野蛮的成员。阿洛瓦克圣所的雪怪除非被迫，否则不会杀生，但会制造伤口来守卫他们的秘密。",
+								"近年来，雪怪们从死于其营地附近的探险者那里得到了书籍和杂志。这些书籍使雪怪们了解到了埃塞克罗斯以外的世界。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Blood Hunter",
+			"name": "血猎手",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"对于凡人和怪物来说，血猎都是一类传奇人物\u2014\u2014一个据说拥有怪物力量的类人猎手。很久以前，一群凡人进行了黑暗仪式和炼金术实验，以获得最致命怪物的力量，让它们更好地搜寻那些怪物。",
+						"血猎的表面上坚如磐石，但在那冷漠面具下隐藏着翻滚的激情。兽性狂怒和深海意志驱使着血猎的刀刃的每一次攻击。那些惹怒了血猎的类人生物往往是怪物的盟友，或是一场可怕误会的受害者。这样的误会很难天晴，因为血猎是那种先杀第一再问问题的类型。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Blood Hunter.webp"
+					},
+					"credit": "Joma Cueto",
+					"width": 1000,
+					"height": 952
+				}
+			]
+		},
+		{
+			"ENG_name": "Bristled Moorbounder",
+			"name": "刚鬃野跃兽",
+			"source": "EGW",
+			"_copy": {
+				"ENG_name": "Moorbounders",
+				"name": "野跃兽们",
+				"source": "EGW",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"作为一种奇异而致命的野跃兽品种，一排常常的、利刃般的鬃毛覆盖在它光滑的身体上。刚鬃野跃兽以这些利刃为武器，使用它们将靠近的生物撕成碎片。然而，这些鬃毛让刚鬃野跃兽更不适合作为坐骑。"
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Core Spawn",
+			"name": "地核衍体",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						"上古邪物以诡异而灾难性的方式袭击着多元宇宙。有时它们会通过利用在世界深处发现的深不可测能量与黑暗来突破物质位面。这些令人憎恶的外星议程的地表显迹被称为地核衍体，它们在生理形态上各不相同，而又同样可怖。",
+						"它们在荒芜海滩那荒凉的土地上聚集，这使得对地核衍体的研究十分困难，那些试图观察或研究这些梦魇般的实体的人很少能够回来。真的回来了的少数人也通常变成了曾经那个会谈论可怕的地下迷宫，扭曲的隧道以及将密斯凯斯碎片的其他居民拖入其中以达成某种炼狱目的的人所余下的空壳。",
+						{
+							"ENG_name": "Offspring of Calamity",
+							"name": "灾祸之战子嗣",
+							"type": "entries",
+							"entries": [
+								"被称为地核衍体的畸变生物是上古邪物的地下先驱、仆人、步兵和副官们，被叛神及其仆从的灾难性行为在深渊中唤醒。它们经常在地震事件后出现在表层世界上，例如在维南迪尔东部造出无底的密斯卡斯巨坑的那一次。魔契师和邪教徒们有时会聚集在一起，当迹象显现、星辰合位时，将他们的奥术法力集中在天然不稳定地震带范围以加速地核衍体抵达物质位面。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Core Spawn Crawler",
+			"name": "核生伏行者",
+			"source": "EGW",
+			"_copy": {
+				"ENG_name": "Core Spawn",
+				"name": "地核衍体",
+				"source": "EGW",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"作为最小的而又最多的地核衍体，这些无眼的生物依靠它们四只畸形而细长的手臂和灵活的钩状尾巴在地下的黑暗中疾行。核生伏行者很少单独行动，由一群这类敏捷的捕食者组成的团队被称作一脉伏行者群。它们带爪的四肢喀嚓作响，警告着它们的存在，当它们穿行在阴影遍布的星球深处时。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Core Spawn Crawler.webp"
+					},
+					"credit": "Stephen Oakley",
+					"width": 966,
+					"height": 733
+				}
+			]
+		},
+		{
+			"ENG_name": "Core Spawn Emissary",
+			"name": "核生使者",
+			"source": "EGW",
+			"_copy": {
+				"ENG_name": "Core Spawn",
+				"name": "地核衍体",
+				"source": "EGW",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"这些飞行的捕食者作为地核衍体的刺客和哨兵存在。可怕的虫翼颤动声和颚咬的敲击声宣示着密使的抵达。",
+									"核生使者可以从它头部的导管中喷出水晶孢子云。这些孢子如同接触毒药那样运作，在被吸入时可能致命。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Core Spawn Emissary.webp"
+					},
+					"credit": "Stephen Oakley",
+					"width": 714,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Core Spawn Seer",
+			"name": "核生先知",
+			"source": "EGW",
+			"_copy": {
+				"ENG_name": "Core Spawn",
+				"name": "地核衍体",
+				"source": "EGW",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"核生先知是在亵渎仪式或者受诅遭遇中被上古邪物的魔能之力所感染的类人生物奥术师。被异界辐射和疾病蹂躏后，他们的身体遍布着可怕的突出状荧光水晶，这些水晶在他们破烂的长袍下散发着迷幻的光芒。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Core Spawn Seer.webp"
+					},
+					"credit": "Stephen Oakley",
+					"width": 610,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Core Spawn Worm",
+			"name": "核生蠕虫",
+			"source": "EGW",
+			"_copy": {
+				"ENG_name": "Core Spawn",
+				"name": "地核衍体",
+				"source": "EGW",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "entries",
+								"entries": [
+									"这一无脊椎的惊恐之物在它巨大而带牙的喉咬周围长着颤动的尖刺触手。蠕虫破碎而坚硬的岩皮闪烁着暗橙色的光芒，就好像它是由原初熔岩组成的那样，永久处于即将转化为固态岩的状态。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Core Spawn Worm.webp"
+					},
+					"credit": "Stephen Oakley",
+					"width": 1000,
+					"height": 739
+				}
+			]
+		},
+		{
+			"ENG_name": "Frost Giant Zombie",
+			"name": "霜巨人僵尸",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"一个拥有巨大力量和神秘的未知艾欧瑞安物件被发现并带到埃塞克罗斯的死亡领主堡垒，以取悦执政的霜巨人康妮莎·伯格。该物件的不稳定性质爆发出一股腐蚀的奥术能量，用扭曲的亡灵能量蹂躏要塞的居民，把它们转化成了巨大的、注入雾凇的亡灵。这些庞大的蛮兵现在在他们被诅咒的家园周围的受难者景观之中漫游，以恐慌的凶悍猎杀并毁灭所有的活体生物。",
+						"那些被摧毁，被屠杀，被冰冻的准英雄们的遗体被遗弃在那些曾经遭遇过这些不死巨人的战场上。低估这些巨大的恐怖，是许多探险队到埃塞克罗斯的北部地区探险的愚蠢之举，只有流言时常传回，以证明这些严寒的怪物存在。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Frost Giant Zombie.webp"
+					},
+					"credit": "David Sladek",
+					"width": 794,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Frost Worm",
+			"name": "霜虫",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"霜虫在荒洲的刺骨北地的白雪、泥土、坚冰与岩石中掘穴着。这些巨大的怪兽急切地吞噬着任何能被它们大嘴包裹的活体生物。",
+						"霜虫大部分时间都呆在冰冻的地下，在等待猎物从头顶经过时积蓄能量。聪明的旅人可以通过寻找最近结冰的隧道来辨识出霜虫的猎场。当霜虫感觉到上方的振动时，它会从泥土、寒冰和积雪中猛跃而出。那些逃脱它最初攻击的人仍然必须与霜虫那令人难以忘怀的颤音抗争\u2014\u2014那是一种能阻断生物奔逃之路的安眠之音，使他们成为易于捕食的猎物。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Frost Worm.webp"
+					},
+					"credit": "Brian Valeza",
+					"width": 451,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Gearkeeper Construct",
+			"name": "齿轮守护者",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"这些由金属板和弯曲的刀刃组成的旋转的、致命的旋风发条机械，最初是由修补匠和魔法师工程师设计的，目的是在奥法纪充当地下宝库最深处的哨兵和守卫。虽然这些宏伟而致命的古物大部分已经锈迹斑斑、破败不堪，连同它们长期被摧毁和掩埋的社会一起被人们遗忘，但仍有一些古物继续在被遗忘的坟墓和地下城的隧道和通道上巡逻，遵循它们最初的行动和指令来保护其领域内的内容。",
+						"一个齿轮守护者的外形类似于一个滚动的像盾牌一样的板球，可以快速通过走廊来寻找入侵者。当发现一个未被识别的生物时，护盾会展开，露出许多金属腿的缝隙，以便精确移动。带刺的附体在建筑周围嗖嗖作响，威胁着那些离得太近的倒霉的挖洞者，而沉重的钢矛可以从装置的核心部位射出，刺穿不受欢迎的客人。如果不堪重负，这种结构可以喷出一股加热的、锯齿状的金属碎片，以制服成群的入侵者。",
+						"从回收的外壳和挖出的齿轮守护者的碎片逆向工程，许多现代修补者开发了这些哨兵的更新变种。这种设计直到最近才在一些特定的监狱中使用，或者被那些想要保护自己藏品安全的富裕收藏者使用。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Gearkeeper Construct.webp"
+					},
+					"credit": "Stephen Oakley",
+					"width": 1000,
+					"height": 943
+				}
+			]
+		},
+		{
+			"ENG_name": "Gloomstalker",
+			"name": "幽暗潜猎兽",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"幽暗潜猎兽是一种可怕的、带翼的捕食者，类似于由扭曲幽影组成的飞龙，有着发光的眼睛和匕首般的牙齿。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Gloomstalker.webp"
+					},
+					"credit": "Zoltan Boros",
+					"width": 879,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Horizonback Tortoise",
+			"name": "天际巨龟",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"荒凉的荒地和潮湿的沼泽是东维南迪尔古老而巨大的天际巨龟们的故乡。从鼻子到尾巴将近长五十尺，而且有长时间静止不动的习惯，天际巨龟很容易被误认为是远处低矮的丘陵。但是，当这些令人印象深刻的生物起身并开始它们的行进时，这种景象在同等程度上激发了恐惧和敬畏。体型巨大的杂食动物，这些清道夫更喜欢以死亡的植物为食，但同时也会利用它们遇到的任何可食用物质。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Horizonback Tortoise.webp"
+					},
+					"credit": "Kent Davis",
+					"width": 1000,
+					"height": 779
+				}
+			]
+		},
+		{
+			"ENG_name": "Husk Zombie",
+			"name": "空骸丧尸",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"东维南迪尔的废土之上仍保留着许多自灾祸之战时期遗留下来的诅咒与腐化，其中最恶劣的便是对死亡神圣性的亵渎。其中一种诅咒显现为一股可怕的越野迷雾，它吸引阵亡者的尸体复生为空骸丧尸\u2014\u2014具有惊人速度和嗜血欲望的强健身心亡灵。此外，一些行走在这片布满创痕之地上更恶毒的邪魔以活物的生命力量为食，并在它们身后留下这些可怕的亡灵。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Husk Zombie.webp"
+					},
+					"credit": "David Sladek",
+					"width": 770,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Ishel",
+			"name": "伊舍尔",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"伊舍尔\u2014\u2014来自克灵王朝的卓尔大使。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Kobold Underling",
+			"name": "狗头人手下",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"狗头人是怯懦的爬行类人生物，通常出没于地下城。它们用制造陷阱的聪明才智来弥补身体上的无能。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Merrow Shallowpriest",
+			"name": "迈罗人鱼浅海祭司",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"居住在集会海岸水底幽影之下的许多迈罗人鱼学会了利用元素的魔力。这些浅海祭司经常作为向导带领迈罗人鱼狩猎队，他们中的一些人成为了强大的领袖，鼓动他们的氏族对沿海社区和过往船只进行恐怖活动。",
+						"流言说在荒洲下方的岩石中雕刻着地下水道和湖泊，浅海祭司们在那里管辖着巨大的迈罗人鱼的地下社区。这些邪恶的生物被认为正在寻找淹没地表世界的手段，让它们能够随意偷走谁和什么到黑暗的水域下方。",
+						"虽然大多数浅海祭司并不限定自己为特定神祇的服务，但有些祭司被吸引去崇拜那些统治水元素位面区域的实体，希望找到将其统治范围扩展到艾桑椎亚海域的方法。这些迈罗人鱼经常带头在海底建造复杂的神殿和庙宇，为通往其主领域的位面门户准备一个神圣的空间，以便开启和维护。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Merrow Shallowpriest.webp"
+					},
+					"credit": "Andrew Mar",
+					"width": 797,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Moorbounder",
+			"name": "野跃兽",
+			"source": "EGW",
+			"_copy": {
+				"ENG_name": "Moorbounders",
+				"name": "野跃兽们",
+				"source": "EGW"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Moorbounder.webp"
+					},
+					"credit": "Marcela Medeiros",
+					"width": 1000,
+					"height": 743
+				}
+			]
+		},
+		{
+			"ENG_name": "Moorbounders",
+			"name": "野跃兽们",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						"作为漫步在Xhorhas的沼地和泥泞山丘之间的众多掠食者之一，野跃兽被那些在旅途中试图避开它们的生物视为危险的杀手\u2014\u2014而对于那些愿意捕获和训练它们的生物来说则是珍贵的坐骑。尽管驯化野跃兽的过程充满危险，这些生物可以成为受青睐的狩猎伙伴和强大的战兽。",
+						{
+							"ENG_name": "Natural Hunters",
+							"name": "天生猎手",
+							"type": "entries",
+							"entries": [
+								"野跃兽依靠修长的獠牙和伸缩自如的利爪狩猎。与大型的猫科猎手类似，它们肌肉发达的身体为战斗而生，赋予它们不可思议的跳跃能力和奔跑速度，这让它们成为了顶级的掠食者。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mossback Steward",
+			"name": "荒野守卫",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"荒凉的荒地和潮湿的沼泽是东维南迪尔古老而巨大的天际巨龟们的故乡。从鼻子到尾巴将近长五十尺，而且有长时间静止不动的习惯，天际巨龟很容易被误认为是远处低矮的丘陵。但是，当这些令人印象深刻的生物起身并开始它们的行进时，这种景象在同等程度上激发了恐惧和敬畏。体型巨大的杂食动物，这些清道夫更喜欢以死亡的植物为食，但同时也会利用它们遇到的任何可食用物质。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Mossback Steward.webp"
+					},
+					"credit": "Kent Davis",
+					"width": 1000,
+					"height": 779
+				}
+			]
+		},
+		{
+			"ENG_name": "Nergaliid",
+			"name": "邪蟾魔",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"这些凶恶的魔鬼肥胖，有鳞，完全令人反感，它们从社会的黑暗边缘躲开窥探的眼睛，依靠毫无戒心的类人生物的生命力量生存。死在邪蟾魔的进食下的生物留下了一具被称为空骸丧尸的腐烂不死生物尸体（见本章早些时候）。",
+						"邪蟾魔喜欢以沉睡类人生物的生命力量为食，每晚都以同样的猎物为食\u2014\u2014只要受害者保持无知觉。这确保了持久的营养来源，只要继续进食，受害者就会被可怕的梦魇所困扰。当邪蟾魔被发现时，它会试图与发现它的人达成协议。它可能会提供物质财富来换取自由和沉默术。只有当协议似乎不太可能达成时，邪蟾魔才会发动攻击。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Nergaliid.webp"
+					},
+					"credit": "Stephen Oakley",
+					"width": 997,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Ogre Lord Buhfal II",
+			"name": "食人魔领主布法尔二世",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"在乌尔津的勇士首领碎日者奥洛蒙政治缺席期间，村庄骄傲而具有安全感的代理首领是食人魔领主布法尔二世。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Parson Pellinost",
+			"name": "普莱德丝绸",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"指挥官斯特拉瑟·费尔蒙特和堡垒中的德温达利安士兵在帝国审判官帕森·佩利诺斯特的统御下变得麻木不仁且残酷，他使用令人厌恶且施虐狂般的神圣魔法对沼泽中的类人生物进行疯狂实验。凡彻堡垒的警卫们以八小时轮班制进行防御、训练和巡逻工作。很少有警卫尊重佩利诺斯特，但所有人都因害怕严厉的复仇而服从他。",
+						"佩林诺斯特有一个义肢（右手）。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Sahuagin Warlock of Uk'otoa",
+			"name": "鲨华鱼人乌克托阿魔契师",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"沉睡的利维坦乌克托阿利用那些勇敢地闯入卢西迪安海深处的人形生物的恐惧和野心。不计其数的鲨华鱼人社区栖息在集会海岸未知的水域中，其中最有野心的鱼人经常在梦境中听到利维坦的召唤，敦促它们获取他的力量并用它来实现它们充满血腥的梦境。",
+						"响应乌克托阿号召的鲨华鱼人有一个共同的野心：向克洛维斯镇的陆地居民复仇，因为他们敢于在不属于他们的海洋上航行。当这些信徒从它们的利维坦领主那里得到黑暗恩惠时，其他的鲨华鱼人开始聚集到他们身边，被他们的力量展示所吸引，寻找他们自己的权力之路。随着时间的推移，这些魔契师最终变成了空壳，成为只是乌克托阿力量的容器，以及沉睡的利维坦可以随心所欲控制的傀儡。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Sahuagin Warlock of Ukotoa.webp"
+					},
+					"credit": "Eric Belisle",
+					"width": 1000,
+					"height": 909
+				}
+			]
+		},
+		{
+			"ENG_name": "Sea Fury",
+			"name": "海妖婆",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						"大难临头之时，海鬼婆们会集结成强大的鬼婆集会来通过引导强力的魔法来对抗外来的威胁。但当危险消失，这些集会通常会从内部因自相残杀而分崩离析。一个海鬼婆会变得比其他姐妹过于强大，她会一个接一个杀死自己的亲族，并同时吸取她们的魔法力量。",
+						"被她据为己有的力量\u2014\u2014以及纵情杀戮之后的孤独代价驱使之下，陷入疯狂的海鬼婆会化作海妖婆，她会囤积宝藏，散布流言，尽其所能地吸引水手和探险者来到自己的巢穴。她希望籍此消除一段时间的孤独感，然后在新的玩物不再有用的时候将它们摧毁殆尽。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Sea Fury.webp"
+					},
+					"credit": "Andrew Mar",
+					"width": 1609,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Shadowghast",
+			"name": "影妖鬼",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"一只影妖鬼是一名不死的刺客。它从阴影中跳出，拖着卷须般的黑暗，无声无息地逼近猎物，然后用它麻痹的爪子和狂暴的撕咬袭击受害者。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Shadowghast.webp"
+					},
+					"credit": "Eric Belisle",
+					"width": 711,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Sharkbody Abomination",
+			"name": "鲨身憎恶体",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"鲨华鱼人萨满塞拉查利用乌克托阿的魔法向帕棕榈花岛的鲨鱼猎人们复仇。那些未能逃脱的不幸猎人被变成了怪物，拥有粗糙的灰白色皮肤、鲨鱼头部和肌肉发达的类人形体。这些生物保留了它们之前所有的智力和个性，但会响应其鲨华鱼人主人的鲨心感应的控制。",
+						"鲨身憎恶体的真正恐怖之处在于它们可能是角色们在本冒险第一部分中遇到并抛下的人。如果你想在玩家们与这些怪物战斗时刺痛他们的情感，请描述鲨身憎恶体如何类似于角色们未能拯救的某个特定NPC。",
+						"将其转变为憎恶的诅咒只能通过{@spell 移除诅咒}法术或类似魔法来解除。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Skr'a S'orsk",
+			"name": "Skr'a S'orsk",
+			"source": "EGW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Skra Sorsk.webp"
+					},
+					"credit": "Eric Belisle",
+					"width": 663,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Swavain Basilisk",
+			"name": "石化海蛇",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"珍珠潜水员和海底拾荒者有时会讲述关于神秘海洋花园的故事，那里充满了海洋生物和水手的雕像\u2014\u2014这些是致命石化海蛇的水下洞穴。虽然以它们最常出现的斯瓦文群岛命名，但已知这些危险的猎手会漫游内陆水道，甚至有人在地下下水道系统中发现过它们。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Swavain Basilisk.webp"
+					},
+					"credit": "Mark Behm",
+					"width": 1496,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Three Earrings",
+			"name": "Three Earrings",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"这位苍白、有斑点的斑猫人匪徒首领是瑞佛瑞海盗们的低阶成员。她将她的船只带到棕榈花岛村庄，因为她得知当地的鲨华鱼人部落发现了一件不寻常的宝藏。三耳环正确地假设它们将要攻击村庄，她打算在攻击后洗劫废墟。她没有预料到芙罗拉岛会沉没。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Udaak",
+			"name": "猿魔兽",
+			"source": "EGW",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"在Xhorhas常见的巨兽，这些庞大的生物看起来类似于巨化如魔鬼般的牛与猩猩的杂交体。猿魔兽最常见于单独流浪在Eastern Wynandir定居地的边缘。虽然它们经常能觅获食物，但一只饥饿的猿魔兽几乎会攻击任何猎物，它的四对红眼，混杂的齿与獠牙会把恐惧贯入任何生物的心脏。",
+						"活体攻城引擎.最初由无底深渊带到艾桑椎亚来,猿魔兽在神离之后失去了与那个领域的联系并且从此自由得漫游整个世界.近年来,克灵王朝的军事大师们发明了能够控制猿魔兽的奥术项圈,并开始在对抗敦达里安帝国的战争中使用这些恐惧的生物."
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/EGW/Udaak.webp"
+					},
+					"credit": "Kent Davis",
+					"width": 1000,
+					"height": 997
+				}
+			]
+		}
+	]
+}

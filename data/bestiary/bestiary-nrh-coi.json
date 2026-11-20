@@ -1,0 +1,256 @@
+{
+	"_meta": {
+		"otherSources": {
+			"monster": {
+				"NRH-TCMC": "NRH-CoI",
+				"MM": "NRH-CoI"
+			}
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Clown",
+			"name": "小丑",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"任意种族"
+				]
+			},
+			"source": "NRH-CoI",
+			"page": 7,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"蓬松的衬衫"
+					]
+				}
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d8 + 2"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"通用语"
+			],
+			"cr": "1/8",
+			"action": [
+				{
+					"ENG_name": "Colorful Club",
+					"name": "多彩俱乐部",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}3 ({@damage 1d4 + 1}) 点钝击伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Imelda",
+			"name": "伊莎贝尔",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "NRH-CoI",
+			"page": 11,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item 兽皮甲|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 49,
+				"formula": "9d8 + 9"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"athletics": "+6"
+			},
+			"passive": 10,
+			"languages": [
+				"通用语"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "Reckless",
+					"name": "鲁莽",
+					"entries": [
+						"在她的回合开始时，伊梅尔达可以在该回合内对所有近战武器攻击检定获得优势，但直到她下一个回合开始之前，对她的攻击检定也具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Fist",
+					"name": "拳击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及 5 尺，单一目标。{@h}6（{@damage 1d4 + 4}）钝击伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"traitTags": [
+				"鲁莽"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Magnifico",
+			"name": "壮丽",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "NRH-CoI",
+			"page": 9,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 27,
+				"formula": "6d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 10,
+			"int": 12,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"deception": "+5",
+				"insight": "+4",
+				"investigation": "+3",
+				"perception": "+6",
+				"persuasion": "+5",
+				"sleight of hand": "+6",
+				"stealth": "+4"
+			},
+			"passive": 16,
+			"languages": [
+				"通用语"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Cunning Action",
+					"name": "灵巧动作",
+					"entries": [
+						"在壮丽的每个回合中，他可以使用一个附赠动作执行{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Hand Crossbow",
+					"name": "手弩",
+					"entries": [
+						"{@atk rw} 命中{@hit 4}，射程30/120尺，单一目标。{@h}5 ({@damage 1d6 + 2}) 点穿刺伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"手弩|phb",
+				"短剑|phb"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true
+		}
+	]
+}

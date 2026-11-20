@@ -1,0 +1,244 @@
+{
+	"spell": [
+		{
+			"ENG_name": "Borrowed Knowledge",
+			"name": "借鉴才学",
+			"source": "SCC",
+			"page": 37,
+			"level": 2,
+			"school": "D",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "一本价值至少25gp的书",
+					"cost": 2500
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你从往昔的魂灵中获取知识。选择一项你没有熟练的技能。在法术的持续时间里，你拥有所选技能的熟练项。如果你再次释放该法术，该法术会提前结束。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Kinetic Jaunt",
+			"name": "动力短行",
+			"source": "SCC",
+			"page": 37,
+			"level": 2,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你用舞蹈般的步姿魔法地增强你的移动，在持续时间内你获得以下增益：",
+				{
+					"type": "list",
+					"items": [
+						"你的步行速度增加10尺。",
+						"你不会触发借机攻击。",
+						"你能穿过另一个生物的空间，而且对你而言不算是{@quickref 困难地形||3}。如果你在另一个生物的空间里结束回合，你会被推挤到你最后所经过的未被占据空间里，并受到{@damage 1d8}力场伤害。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Silvery Barbs",
+			"name": "银光锐语",
+			"source": "SCC",
+			"page": 38,
+			"level": 1,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "当一个于你60尺内且可见的生物成功进行一次攻击检定，属性检定，或是豁免检定时"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你魔法地让触发生物分心，将其短暂的迟疑转变为另一个生物的鼓励。触发生物必须重新投掷该{@dice d20}并选用较低的结果。",
+				"之后你能选择范围内的一个不同生物（可以是你自己）。选择的生物在接下来的一分钟里的第一次攻击检定，属性检定，或豁免检定中具有优势。一个生物在同一时间里只会拥有一次来自该法术的增益。"
+			],
+			"miscTags": [
+				"ADV",
+				"SGT"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Vortex Warp",
+			"name": "涡旋翘曲",
+			"source": "SCC",
+			"page": 38,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 90
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你魔法地扭曲范围里另一个你可见生物周边的空间。目标需通过一次体质豁免（目标可主动选择失败），否则目标将被传送至范围内一处你可见，由你选择的未被占据的空间。选择的空间必须是地表之上或液体之中，并且能让目标在无需跻身的情况下支撑目标。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"当你使用3环或更高的法术位释放该法术时，法术位每比2环高1环，施法距离增加30尺。"
+					]
+				}
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"SGT",
+				"TP"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Wither and Bloom",
+			"name": "靡叶生华",
+			"source": "SCC",
+			"page": 38,
+			"reprintedAs": [
+				"靡叶生华|AU"
+			],
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "弯折成环形的枯萎藤蔓"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"选择范围里的一点，以该点为中心的 10尺半径球形区域里，你唤起死气与生机。该区域里每个由你选择的生物需进行一次体质豁免，失败时受到{@damage 2d6}暗蚀伤害，成功时伤害减半。区域里的非魔法植物都会枯萎。",
+				"此外，区域里一个你所选的生物能使用并投掷一枚未使用的生命骰。恢复投掷结果加上你的施法属性调整值点生命值。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "At Higher Levels",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"当你使用3环或更高的法术位释放该法术时，法术位每比2环高1环，法术多造成{@scaledamage 2d6|2-9|1d6}伤害，选择生物能投掷的生命骰数也多1个。"
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"HL"
+			],
+			"translator": "不全书"
+		}
+	]
+}

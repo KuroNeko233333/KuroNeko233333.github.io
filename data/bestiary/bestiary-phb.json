@@ -1,0 +1,362 @@
+{
+	"monster": [
+		{
+			"ENG_name": "Animated Object (Huge)",
+			"name": "活化物件(巨型)",
+			"type": "construct",
+			"source": "PHB",
+			"page": 213,
+			"reprintedAs": [
+				"活化物件|XPHB"
+			],
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"special": "80"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 6,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+			],
+			"passive": 6,
+			"trait": [
+				{
+					"ENG_name": "Animated",
+					"name": "活化",
+					"entries": [
+						"如果它没有腿或者类似的构造，则改为 30 尺的飞行速度并且可以悬浮。如果该物件被牢牢固定在某个表面或更大的物件上（例如被铁链拴在墙上），则其速度为 0。",
+						"被活化物件的生命值降至 0 时，即变回普通的物件，且以物件形态承受所有溢出的伤害。",
+						"DM 会认定某些物件（根据其形态）可以造成挥砍或穿刺伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}16 ({@damage 2d12 + 4}) 点钝击伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Animated Object (Large)",
+			"name": "活化物体(大型)",
+			"type": "construct",
+			"source": "PHB",
+			"page": 213,
+			"reprintedAs": [
+				"活化物件|XPHB"
+			],
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"special": "50"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+			],
+			"passive": 6,
+			"trait": [
+				{
+					"ENG_name": "Animated",
+					"name": "活化",
+					"entries": [
+						"如果它没有腿或者类似的构造，则改为 30 尺的飞行速度并且可以悬浮。如果该物件被牢牢固定在某个表面或更大的物件上（例如被铁链拴在墙上），则其速度为 0。",
+						"被活化物件的生命值降至 0 时，即变回普通的物件，且以物件形态承受所有溢出的伤害。",
+						"DM 会认定某些物件（根据其形态）可以造成挥砍或穿刺伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}12 ({@damage 2d10 + 2}) 点钝击伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Animated Object (Medium)",
+			"name": "活化物体(中型)",
+			"type": "construct",
+			"source": "PHB",
+			"page": 213,
+			"reprintedAs": [
+				"活化物件|XPHB"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"special": "40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+			],
+			"passive": 6,
+			"trait": [
+				{
+					"ENG_name": "Animated",
+					"name": "活化",
+					"entries": [
+						"如果它没有腿或者类似的构造，则改为 30 尺的飞行速度并且可以悬浮。如果该物件被牢牢固定在某个表面或更大的物件上（例如被铁链拴在墙上），则其速度为 0。",
+						"被活化物件的生命值降至 0 时，即变回普通的物件，且以物件形态承受所有溢出的伤害。",
+						"DM 会认定某些物件（根据其形态）可以造成挥砍或穿刺伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}7 ({@damage 2d6 + 1}) 点钝击伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Animated Object (Small)",
+			"name": "活化物体(小型)",
+			"type": "construct",
+			"source": "PHB",
+			"page": 213,
+			"reprintedAs": [
+				"活化物件|XPHB"
+			],
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"special": "25"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 6,
+			"dex": 14,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+			],
+			"passive": 6,
+			"trait": [
+				{
+					"ENG_name": "Animated",
+					"name": "活化",
+					"entries": [
+						"如果它没有腿或者类似的构造，则改为 30 尺的飞行速度并且可以悬浮。如果该物件被牢牢固定在某个表面或更大的物件上（例如被铁链拴在墙上），则其速度为 0。",
+						"被活化物件的生命值降至 0 时，即变回普通的物件，且以物件形态承受所有溢出的伤害。",
+						"DM 会认定某些物件（根据其形态）可以造成挥砍或穿刺伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}6 ({@damage 1d8 + 2}) 点钝击伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Animated Object (Tiny)",
+			"name": "活化物体(微型)",
+			"type": "construct",
+			"source": "PHB",
+			"page": 213,
+			"referenceSources": [
+				"WDMM"
+			],
+			"reprintedAs": [
+				"活化物件|XPHB"
+			],
+			"size": [
+				"T"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"special": "20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 4,
+			"dex": 18,
+			"con": 10,
+			"int": 3,
+			"wis": 3,
+			"cha": 1,
+			"senses": [
+				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+			],
+			"passive": 6,
+			"trait": [
+				{
+					"ENG_name": "Animated",
+					"name": "活化",
+					"entries": [
+						"如果它没有腿或者类似的构造，则改为 30 尺的飞行速度并且可以悬浮。如果该物件被牢牢固定在某个表面或更大的物件上（例如被铁链拴在墙上），则其速度为 0。",
+						"被活化物件的生命值降至 0 时，即变回普通的物件，且以物件形态承受所有溢出的伤害。",
+						"DM 会认定某些物件（根据其形态）可以造成挥砍或穿刺伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}6 ({@damage 1d4 + 4}) 点钝击伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		}
+	]
+}

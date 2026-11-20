@@ -1,0 +1,84 @@
+{
+	"monsterFluff": [
+		{
+			"ENG_name": "Homunculus Servant",
+			"name": "人工生命仆从",
+			"source": "TCE",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/TCE/Homunculus Servant.webp"
+					},
+					"width": 1200,
+					"height": 835
+				}
+			]
+		},
+		{
+			"ENG_name": "Mighty Servant of Leuk-o",
+			"name": "琉克欧的非凡机仆",
+			"source": "TCE",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/TCE/Mighty Servant of Leuk-o.webp"
+					},
+					"width": 915,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Reflection",
+			"name": "倒影",
+			"source": "TCE",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/TCE/Reflection.webp"
+					},
+					"width": 1200,
+					"height": 800
+				}
+			]
+		},
+		{
+			"ENG_name": "Shadow Spirit",
+			"name": "暗影灵魄",
+			"source": "TCE",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/TCE/Summon Shadowspawn.webp"
+					},
+					"width": 1200,
+					"height": 807
+				}
+			]
+		},
+		{
+			"ENG_name": "Steel Defender",
+			"name": "钢铁守卫",
+			"source": "TCE",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/TCE/Steel Defender.webp"
+					},
+					"width": 400,
+					"height": 593
+				}
+			]
+		}
+	]
+}
