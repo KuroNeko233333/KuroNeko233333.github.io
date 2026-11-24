@@ -1,0 +1,955 @@
+{
+	"monster": [
+		{
+			"ENG_name": "Big Water Slurpent",
+			"name": "大水蛞",
+			"type": "elemental",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AWM",
+			"page": 29,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"special": "58"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 60
+			},
+			"str": 17,
+			"dex": 16,
+			"con": 13,
+			"int": 11,
+			"wis": 10,
+			"cha": 10,
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Invisible in Water",
+					"name": "隐于水中",
+					"entries": [
+						"大水蛞完全浸入水中时进入处于{@condition 隐形}状态。"
+					]
+				},
+				{
+					"ENG_name": "Water Bound",
+					"name": "水体绑定",
+					"entries": [
+						"大水蛞离开所绑定的水体或该水体干涸时死亡。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Constrict",
+					"name": "绞缠",
+					"entries": [
+						"{@atk mw}：命中{@hit 5}，触及10尺，单一生物。{@h}：13（{@damage 3d6+3}）点钝击伤害。如果目标体型为中型或更小体型，则目标被{@condition 受擒}（挣脱{@dc 13}）并向大水蛞所在方向拉近5尺。直至{@action 擒抱}终止前，目标被{@condition 束缚}，同时大水蛞尝试淹没目标，而大水蛞也不能同时绞缠其他目标。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"受擒",
+				"束缚"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Birdsquirrel",
+			"name": "松鸟",
+			"type": "beast",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AWM",
+			"page": 30,
+			"size": [
+				"T"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"special": "10"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 30,
+				"climb": 20
+			},
+			"str": 6,
+			"dex": 14,
+			"con": 13,
+			"int": 4,
+			"wis": 12,
+			"cha": 6,
+			"cr": "1/4",
+			"trait": [
+				{
+					"ENG_name": "Pack Tactics",
+					"name": "集群战术",
+					"entries": [
+						"若松鸟至少有一个未处于{@condition 失能}的盟友在目标生物5尺内时，它对该生物发动的攻击检定有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"松鸟进行两次攻击：一次啃咬和一次爪击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw}：命中{@hit 4}，触及5尺，单一目标。{@h}：5（{@damage 1d6+2}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} ：命中{@hit 4}，触及5尺，单一目标。{@h}：4（{@damage 1d4+2}）点挥砍伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"集群战术"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Boontu Monkey",
+			"name": "布恩图猴",
+			"type": "beast",
+			"source": "AWM",
+			"page": 30,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"special": "3"
+			},
+			"speed": {
+				"walk": 20,
+				"climb": 20
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 11,
+			"int": 5,
+			"wis": 12,
+			"cha": 6,
+			"cr": "0",
+			"trait": [
+				{
+					"ENG_name": "Pack Tactics",
+					"name": "集群战术",
+					"entries": [
+						"若布恩图猴至少有一个未处于{@condition 失能}的盟友在目标生物5尺内时，它对该生物发动的攻击检定有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw}  命中{@hit 1}，射程5尺，单一目标。{@h}1 ({@damage 1d4 - 1}) 点穿刺伤害。"
+					]
+				}
+			],
+			"familiar": true,
+			"tokenCustom": true,
+			"traitTags": [
+				"集群战术"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Crystal Cave Merfolk",
+			"name": "水晶洞穴人鱼",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人鱼"
+				]
+			},
+			"source": "AWM",
+			"page": 31,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"special": "11"
+			},
+			"speed": {
+				"walk": 10,
+				"swim": 40
+			},
+			"str": 10,
+			"dex": 13,
+			"con": 12,
+			"int": 11,
+			"wis": 11,
+			"cha": 12,
+			"cr": "1/8",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"人鱼可以在空气和水中呼吸。"
+					]
+				},
+				{
+					"ENG_name": "Siren Song",
+					"name": "塞壬之歌",
+					"entries": [
+						"动听的歌声吸引着300尺内的每一个类人生物或巨人。 目标必须在通过一次{@dc 11}的感知豁免，否则就会被{@condition 魅惑}，直到歌声结束。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} ：命中{@hit 2}，触及5尺，单一目标，{@h}：3({@damage 1d6}) 的穿刺伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"traitTags": [
+				"水陆两栖"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"魅惑"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Dankwood Hag",
+			"name": "阴林鬼婆",
+			"type": "fey",
+			"source": "AWM",
+			"page": 31,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"special": "82"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 16,
+			"int": 13,
+			"wis": 14,
+			"cha": 14,
+			"cr": "3",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"鬼婆天生施法的关键属性为魅力（法术豁免{@dc 12}）。它天生可施展以下法术且不需要任何相应的材料成分："
+					],
+					"will": [
+						"{@spell 舞光术}",
+						"{@spell 次级幻象}",
+						"{@spell 恶言相加}"
+					]
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"鬼婆可以在空气和水中呼吸。"
+					]
+				},
+				{
+					"ENG_name": "Mimicry (Green Hag)",
+					"name": "拟声（绿鬼婆）",
+					"entries": [
+						"鬼婆可以模仿动物和类人生物的声音。听到该声音的生物如果成功通过一次{@dc 14}的感知（{@skill 洞悉}）检定，则可以识破鬼婆的模仿。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Illusory Appearance",
+					"name": "幻形",
+					"entries": [
+						"鬼婆让自己和随身携带的物品笼罩在一层魔法幻象中，使它看上去像体型相仿的另一种类人生物。鬼婆可以用一个附赠动作结束该幻象。鬼婆死亡时，幻象也随之消失。这种效应产生的变化无法瞒过任何物理形式的检查。比如，鬼婆可以幻化出光滑的皮肤，但摸上去依然感觉是粗糙的肉。看到幻象的生物必需花费一个动作来观察该幻象，成功通过一次{@dc 20}的智力（{@skill 调查}）检定即可以揭穿鬼婆的伪装。"
+					]
+				},
+				{
+					"ENG_name": "Invisible Passage",
+					"name": "隐形通道",
+					"entries": [
+						"鬼婆以魔法变为{@condition 隐形}，直到它发动攻击，施展法术或终止{@status 专注}。{@condition 隐形}时，它不会留下任何存在的物理线索，因此不会被任何非魔法的手段侦查到。它随身携带的所有装备也一并进入隐形状态。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw}：命中{@hit 6}，触及5尺，单一目标，{@h}：13（{@damage 2d8 + 4}）的挥砍伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"traitTags": [
+				"水陆两栖",
+				"拟声"
+			],
+			"damageTags": [
+				"S"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Dum-Dum Goblin",
+			"name": "蠢蠢地精",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"类地精"
+				]
+			},
+			"source": "AWM",
+			"page": 32,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				7
+			],
+			"hp": {
+				"special": "7"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 10,
+			"int": 10,
+			"wis": 8,
+			"cha": 8,
+			"cr": "1/4",
+			"trait": [
+				{
+					"ENG_name": "Nimble Escape",
+					"name": "迅捷逃逸",
+					"entries": [
+						"地精可在自己的回合，以一个附赠动作来执行{@action 撤离}或{@action 躲藏}动作。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Catch me if you can!",
+					"name": "有本事就来抓我！",
+					"entries": [
+						"蠢蠢地精会选择在战斗前逃跑和躲藏起来！ 必须通过一次{@dc 15}的敏捷检定才能攻击它们。"
+					]
+				},
+				{
+					"ENG_name": "Scimitar",
+					"name": "弯刀",
+					"entries": [
+						"{@atk mw} ：命中{@hit 4}，触及5尺，单一目标。{@h}：5（{@damage 1d6 +2}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Shortbow",
+					"name": "短弓",
+					"entries": [
+						"{@atk rw}：{@hit 4}+4，射程80/320尺，单一目标。{@h}：5（{@damage 1d6 + 2}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"弯刀|phb",
+				"短弓|phb"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Dwarf",
+			"name": "矮人",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"矮人"
+				]
+			},
+			"source": "AWM",
+			"page": 32,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"special": "30"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"resist": [
+				"毒素"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"ENG_name": "Dwarven Resilience",
+					"name": "矮人体魄",
+					"entries": [
+						"矮人抵抗中毒进行的豁免检定具有优势，且它们具有毒素伤害抗性。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Shortbow",
+					"name": "短弓",
+					"entries": [
+						"{@atk mw} ：命中{@hit 3}，触及5尺，单一目标。{@h}：4({@damage 1d6 + 1}) 点挥砍伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"短弓|phb"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RNG"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Great Kroom, Purple Worm",
+			"name": "紫虫，伟大的喀戎姆",
+			"type": "monstrosity",
+			"shortName": "伟大的喀戎姆",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AWM",
+			"page": 33,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"special": "247"
+			},
+			"speed": {
+				"walk": 50,
+				"burrow": 30
+			},
+			"str": 10,
+			"dex": 13,
+			"con": 12,
+			"int": 11,
+			"wis": 11,
+			"cha": 12,
+			"cr": "15",
+			"trait": [
+				{
+					"ENG_name": "Tunneler",
+					"name": "掘道者",
+					"entries": [
+						"紫虫能够以其一半的掘穴速度通过坚硬的岩层，并在其身后留下直径10尺的地道。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"紫虫发动两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} ：命中{@hit 14}，触及10尺，单一目标。{@h}：22（{@damage 3d8}）点穿刺伤害。目标必须成功通过一次{@dc 19}的敏捷豁免，否则被紫虫吞掉！（译者注：该怪物错误数据较多，除力量10（+0）和命中+14外（推断为复制紫虫忘了改），该紫虫的吞噬没有写逃出的办法。）"
+					]
+				},
+				{
+					"ENG_name": "Tail Stinger",
+					"name": "尾刺",
+					"entries": [
+						"{@atk mw}：命中 {@hit 14}，触及10尺，单一生物。{@h}：19 ({@damage 3d6 + 9})点穿刺伤害。且目标必须进行一次{@dc 19} 的体质豁免，豁免失败则受42 ({@damage 12d6}) 点毒素伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"掘道者"
+			],
+			"actionTags": [
+				"多重攻击",
+				"吞咽"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Hangry Otyugh",
+			"name": "饥饿食腐兽",
+			"type": "aberration",
+			"source": "AWM",
+			"page": 33,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"special": "114"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 11,
+			"con": 19,
+			"int": 6,
+			"wis": 13,
+			"cha": 6,
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Limited Telepathy",
+					"name": "有限感应",
+					"entries": [
+						"食腐兽可以将简单的话语或图像转换成目标能够理解的语言，在以魔法传导给120尺内任意一个生物。但并不能从目标处获得回复。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"食腐兽发动三次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} ：命中{@hit 6}，触及5尺，单一目标。{@h}：12（{@damage 2d8 + 3}）的穿刺伤害。目标必须成功通过一次{@dc 15}的体质豁免否则受到 6（{@damage 1d10}）毒素伤害，持续至被治愈时终止。"
+					]
+				},
+				{
+					"ENG_name": "Tentacle",
+					"name": "触须",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及10尺，单一目标。{@h}7（{@damage 1d8 + 3}）钝击伤害。目标必须进行一次{@dc 19}的体质豁免，否则受到42（{@damage 12d6}）毒素伤害。"
+					]
+				},
+				{
+					"ENG_name": "Slam!",
+					"name": "猛击！",
+					"entries": [
+						"目标需通过一次{@dc 14}的体质豁免，否则会陷入{@condition 受擒}状态！"
+					]
+				}
+			],
+			"environment": [
+				"幽暗地域"
+			],
+			"tokenCustom": true,
+			"actionTags": [
+				"多重攻击",
+				"触须"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"受擒"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Hill Giant, Blorbo",
+			"name": "山丘巨人布洛博",
+			"type": "giant",
+			"shortName": "布洛博",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AWM",
+			"page": 34,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"special": "105"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 8,
+			"con": 19,
+			"int": 5,
+			"wis": 9,
+			"cha": 6,
+			"cr": "4",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨人发动两次巨棒攻击。"
+					]
+				},
+				{
+					"ENG_name": "Greatclub",
+					"name": "巨棒",
+					"entries": [
+						"{@atk mw} ：命中{@hit 8}，触及10尺，单一目标。{@h}：18（{@damage 3d8 + 5}）的钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Rock",
+					"name": "掷石",
+					"entries": [
+						"{@atk rw} ：命中{@hit 8}，射程60/240尺，单一目标。{@h}：21（{@damage 3d10 + 5}）的钝击伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"巨棒|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Saleeth the Couatl",
+			"name": "羽蛇萨莱斯",
+			"type": "celestial",
+			"shortName": "萨莱斯",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "AWM",
+			"page": 34,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"special": "97"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 90
+			},
+			"str": 16,
+			"dex": 20,
+			"con": 17,
+			"int": 18,
+			"wis": 20,
+			"cha": 18,
+			"cr": "4",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"羽蛇天生施法属性为魅力（法术豁免{@dc 14}），它天生可施展以下法术且仅需相应的言语成分成分："
+					],
+					"will": [
+						"{@spell 侦测善恶}",
+						"{@spell 侦测魔法}",
+						"{@spell 侦测思想}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell 祝福术}",
+							"{@spell 造粮术}",
+							"{@spell 疗伤术}",
+							"{@spell 次等复原术}",
+							"{@spell 防护毒素}",
+							"{@spell 庇护术}",
+							"{@spell 护盾术}"
+						],
+						"1e": [
+							"{@spell 托梦术}",
+							"{@spell 高等复原术}",
+							"{@spell 探知术}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Magic Weapons",
+					"name": "魔法武器",
+					"entries": [
+						"羽蛇的武器攻击视为魔法攻击。"
+					]
+				},
+				{
+					"ENG_name": "Shielded Mind",
+					"name": "屏蔽心灵",
+					"entries": [
+						"羽蛇免疫{@spell 探知术}，以及任何能感测其情绪、读取其思想或侦测其位置的效应。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} ：命中{@hit 8}，触及5尺，单一生物。{@h}：8（{@damage 1d6 + 5}）的穿刺伤害，目标必须进行一次{@dc 13}的体质豁免，豁免失败则陷入24小时的{@condition 昏迷}。其他生物可以用一个动作来摇醒该目标。"
+					]
+				},
+				{
+					"ENG_name": "Constrict",
+					"name": "绞缠",
+					"entries": [
+						"{@atk mw} ：命中{@hit 6}，触及10尺，单一中型或更小体型生物。{@h}：10（{@damage 2d6 + 3}）的钝击伤害，目标陷入{@condition 受擒}状态（逃脱{@dc 15}）。另外，羽蛇不能同时绞缠另一个目标。"
+					]
+				},
+				{
+					"ENG_name": "Change Shape",
+					"name": "变形",
+					"entries": [
+						"羽蛇可以用魔法变形为{@filter 一个挑战等级等于或低于其自身的类人生物或野兽|bestiary|Challenge Rating=[&0;&4]|type=beast;humanoid}，也可以同样用该动作恢复其真实形态。在死亡时，它也会回复其真实形态。它携带或着装的任何装备都将转变为适应新形态，或是直接吸收为新形态的一部分（依照羽蛇的意愿）。",
+						"在新形态之下，羽蛇将保留其游戏数据和对话能力，但其AC、移动方式、力量、敏捷和其他动作项将被新形态的对应条目取代，即它同时获得新形态具有而它本身不具备的数据与能力（不包括职业特性、传奇动作以及巢穴动作）。如果新形态有啃咬攻击，羽蛇也可以在该形态下使用自己的啃咬。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"traitTags": [
+				"魔法武器"
+			],
+			"actionTags": [
+				"变形生物"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"受擒",
+				"昏迷"
+			],
+			"savingThrowForcedSpell": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		}
+	]
+}

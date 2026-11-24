@@ -1,0 +1,2828 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
+		"otherSources": {
+			"monster": {
+				"MM": "KftGV"
+			}
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Animatronic Allosaurus",
+			"name": "机械动画异龙",
+			"type": "construct",
+			"source": "KftGV",
+			"page": 22,
+			"_copy": {
+				"ENG_name": "Allosaurus",
+				"name": "异特龙",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "异特龙",
+						"with": "机械动画异龙"
+					}
+				}
+			},
+			"immune": [
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"麻痹",
+				"中毒"
+			],
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Arlo Kettletoe (Levels 1-4)",
+			"name": "阿洛·凯特尔托伊（等级1-4）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"半身人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Bandit Captain",
+				"name": "匪帮队长",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "首领",
+						"with": "阿洛·凯特尔托",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Arlo Kettletoe (Levels 5-8)",
+			"name": "阿洛·凯特尔托（5-8级）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"半身人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Knight",
+				"name": "骑士",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "骑士",
+						"with": "阿洛·凯特尔托",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Arlo Kettletoe (Levels 9-11)",
+			"name": "阿洛·凯特尔托伊（等级9-11）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"半身人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Mage",
+				"name": "魔法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔法师",
+						"with": "阿洛·凯特尔托",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Ashen Animated Armor",
+			"name": "灰烬活化盔甲",
+			"type": "elemental",
+			"source": "KftGV",
+			"page": 157,
+			"_copy": {
+				"ENG_name": "Animated Armor",
+				"name": "活化盔甲",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Ashen Creature",
+							"name": "灰烬生物",
+							"entries": [
+								"当装甲生命值降至0时，它化为一堆灰烬，它穿着或携带的任何装备都会掉落到地面。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"immune": [
+				"火焰",
+				"毒素",
+				"心灵"
+			],
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Ashen Flying Sword",
+			"name": "灰烬飞行剑",
+			"type": "elemental",
+			"source": "KftGV",
+			"page": 157,
+			"_copy": {
+				"ENG_name": "Flying Sword",
+				"name": "凌空剑",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Ashen Creature",
+							"name": "灰烬生物",
+							"entries": [
+								"当剑的生命值降至0时，它将化为一堆灰烬，并且它穿戴或携带的所有装备都会掉落到地面上。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"immune": [
+				"火焰",
+				"毒素",
+				"心灵"
+			],
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Ashen Knight",
+			"name": "灰烬骑士",
+			"type": {
+				"type": "elemental",
+				"tags": [
+					"任意种族"
+				]
+			},
+			"source": "KftGV",
+			"page": 158,
+			"_copy": {
+				"ENG_name": "Knight",
+				"name": "骑士",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "骑士",
+						"with": "灰烬骑士"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Ashen Creature",
+							"name": "灰烬生物",
+							"entries": [
+								"当骑士的生命值降至0点时，它将化为一堆灰烬，并且它穿戴或携带的任何装备都会掉落到地面。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"immune": [
+				"火焰"
+			],
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Ashen Shambling Mound",
+			"name": "灰烬蔓生怪",
+			"type": "elemental",
+			"source": "KftGV",
+			"page": 158,
+			"_copy": {
+				"ENG_name": "Shambling Mound",
+				"name": "蔓生怪",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Ashen Creature",
+							"name": "灰烬生物",
+							"entries": [
+								"当蔓生怪的生命值降至0点时，它将化为一堆灰烬，它穿戴或携带的所有装备都会掉落到地面上。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"resist": [
+				"寒冷"
+			],
+			"immune": [
+				"火焰",
+				"闪电"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Ashen Veteran",
+			"name": "灰烬老兵",
+			"type": "elemental",
+			"source": "KftGV",
+			"page": 154,
+			"_copy": {
+				"ENG_name": "Veteran",
+				"name": "老兵",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Ashen Creature",
+							"name": "灰烬生物",
+							"entries": [
+								"当老兵生命值降至0时，它化为一堆灰烬，它穿着或携带的任何装备都会掉落到地面。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"immune": [
+				"火焰"
+			],
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Ashen Warhorse",
+			"name": "灰烬战马",
+			"type": "elemental",
+			"source": "KftGV",
+			"page": 158,
+			"_copy": {
+				"ENG_name": "Warhorse",
+				"name": "战马",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Ashen Creature",
+							"name": "灰烬生物",
+							"entries": [
+								"当马的生命值降至0点时，它会化为一堆灰烬，它所穿戴或携带的任何装备都会掉落到地面上。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"immune": [
+				"火焰"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Charmayne Daymore",
+			"name": "夏梅恩·德墨尔",
+			"type": {
+				"type": "elemental",
+				"tags": [
+					"法师"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 159,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 123,
+				"formula": "19d8 + 38"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 30,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 15,
+			"int": 20,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"int": "+9",
+				"wis": "+6",
+				"cha": "+7"
+			},
+			"skill": {
+				"arcana": "+9",
+				"deception": "+7",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"immune": [
+				"火焰"
+			],
+			"languages": [
+				"通用语",
+				"龙语",
+				"精灵语",
+				"火族语"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"夏梅恩施展以下一个法术，使用智力作为施法关键属性（法术豁免{@dc 17}）："
+					],
+					"will": [
+						"{@spell 舞光术}",
+						"{@spell 法师之手}"
+					],
+					"daily": {
+						"3": [
+							"{@spell 法师护甲}"
+						],
+						"1e": [
+							"{@spell 解除魔法}",
+							"{@spell 隐形术}",
+							"{@spell 变形术}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性 (3/日)",
+					"entries": [
+						"夏梅恩豁免失败时，可以将其改为豁免成功。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"夏梅恩进行三次灰烬爆裂攻击，她可以将其中一次攻击换做使用施法。"
+					]
+				},
+				{
+					"ENG_name": "Ashen Burst",
+					"name": "灰烬爆裂",
+					"entries": [
+						"{@atk ms,rs} 命中{@hit 9}，触及5尺或射程60尺，单一目标。{@h}17（{@damage 5d6}）点火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "Cinder Spite {@recharge 5}",
+					"name": "怨毒火烬 {@recharge 5}",
+					"entries": [
+						"以120尺她可见的一点为源点，夏梅恩创造出一场魔法的火焰爆炸。该点20尺球形范围内每个生物必须进行一次{@dc 17}的敏捷豁免，失败受到35（{@damage 10d6}）火焰伤害，成功则受到一半伤害。一个被这一伤害将生命值降低为0的类人生物会立即死亡并被变形为一个小型的煤渣雕像。"
+					]
+				}
+			],
+			"reactionNote": "夏梅恩每一轮可以使用三个反应，但每回合只能使用一个。",
+			"reaction": [
+				{
+					"ENG_name": "Elemental Rebuke",
+					"name": "元素叱喝",
+					"entries": [
+						"当被一次攻击命中时，夏梅恩说出一句火族语，对攻击者造成10（{@damage 3d6}）点火焰伤害。接着，夏梅恩带着她穿戴和携带的一切装备传送到最多30尺内她能看到的一个未被占据的空间，在原地留下一团无害的灰烬云。"
+					]
+				},
+				{
+					"ENG_name": "Fiery Counterspell",
+					"name": "炽烈反咒",
+					"entries": [
+						"夏梅恩打断一个60尺内她能看见的生物正在施展的法术。如果该法术为四环或更低环阶法术，则其法术失败且不产生任何效应。如果法术为五环或更高环阶，则夏梅恩进行一次智力检定（{@dc 10}+法术的环阶）。检定成功则目标法术失败且不产生任何效应。无论法术环阶如何，如果法术失败，该生物都会受到10（{@damage 3d6}）火焰伤害"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"traitTags": [
+				"传奇抗性"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"E",
+				"IG"
+			],
+			"damageTags": [
+				"F"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"conditionInflictSpell": [
+				"隐形"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"savingThrowForcedSpell": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Clockwork Defender",
+			"name": "发条防御者",
+			"type": "construct",
+			"source": "KftGV",
+			"page": 85,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 42,
+				"formula": "5d8 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 18,
+			"int": 3,
+			"wis": 14,
+			"cha": 1,
+			"skill": {
+				"perception": "+6",
+				"stealth": "+4"
+			},
+			"passive": 16,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒"
+			],
+			"languages": [
+				"能理解其创造者的语言但无法说话"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Unusual Nature",
+					"name": "非凡本质",
+					"entries": [
+						"防御者不需要吃、喝、睡眠、以及呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Electrified Bite",
+					"name": "电气撕咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}7（{@damage 1d8 + 3}）点穿刺伤害加上 7（{@damage 2d6}）点闪电伤害。如果目标是生物，其必须通过一次{@dc 13}的力量豁免检定，否则将{@condition 受擒}（逃脱{@dc 13}）。被防御者擒抱的生物在防御者的每个回合开始时将再次受到这一伤害。防御者每次只能让一个生物以这种方式被{@condition 受擒}，且{@condition 受擒}期间防御者不能使用它的电气撕咬攻击。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Light Beam",
+					"name": "光束",
+					"entries": [
+						"防御者从它的眼睛里发出60尺锥状区域的明亮光照，或是关闭这一光照。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"traitTags": [
+				"非凡本质"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"L",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"受擒"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Clockwork Observer",
+			"name": "发条观察者",
+			"type": "construct",
+			"source": "KftGV",
+			"page": 85,
+			"size": [
+				"T"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 7,
+				"formula": "2d4 + 2"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 30,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 16,
+			"con": 13,
+			"int": 3,
+			"wis": 15,
+			"cha": 1,
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 16,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒"
+			],
+			"languages": [
+				"能理解其创造者的语言但无法说话"
+			],
+			"cr": "0",
+			"trait": [
+				{
+					"ENG_name": "Flyby",
+					"name": "飞掠",
+					"entries": [
+						"观察者飞出敌人的触及范围时不会引起借机攻击。"
+					]
+				},
+				{
+					"ENG_name": "Telepathic Bond",
+					"name": "心灵联结",
+					"entries": [
+						"只要观察者与其创造者之间的距离不超过1里，他就可以魔法性的将它所看到的东西传达给它的创造者，且两者之间可以以心灵感应的方式进行交流。"
+					]
+				},
+				{
+					"ENG_name": "Unusual Nature",
+					"name": "非凡本质",
+					"entries": [
+						"观察者不需要吃、喝、睡眠、以及呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Shriek",
+					"name": "尖叫",
+					"entries": [
+						"观察者发出机械性的尖叫声，直到其下一回合开始或生命值降至0位置。这声尖叫声可以在300尺范围内听到。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"traitTags": [
+				"飞掠",
+				"非凡本质"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Conservatory Student",
+			"name": "音乐学院学生",
+			"source": "KftGV",
+			"page": 110,
+			"_copy": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "removeArr",
+						"names": "刺剑"
+					}
+				}
+			},
+			"ac": [
+				11
+			],
+			"skill": {
+				"performance": "+7"
+			},
+			"reaction": null,
+			"tokenCustom": true,
+			"actionTags": [],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Crimson Helmed Horror",
+			"name": "赤红恐怖铠甲",
+			"source": "KftGV",
+			"page": 152,
+			"_copy": {
+				"ENG_name": "Helmed Horror",
+				"name": "恐怖铠甲",
+				"source": "MM",
+				"_mod": {
+					"trait": [
+						{
+							"mode": "replaceArr",
+							"replace": "法术免疫",
+							"items": {
+								"ENG_name": "Spell Immunity",
+								"name": "法术免疫",
+								"entries": [
+									"恐怖铠甲对{@spell 燃烧之手}、{@spell 火球术}和{@spell 灼热射线}免疫。"
+								]
+							}
+						}
+					],
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "长剑",
+							"items": {
+								"ENG_name": "Flaming Longsword",
+								"name": "火焰长剑",
+								"entries": [
+									"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}8（{@damage 1d8 + 4}）火焰伤害，或者如果用双手使用则造成9（{@damage 1d10 + 4}）火焰伤害。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"bonus": [
+				{
+					"ENG_name": "Conjure Sword",
+					"name": "召唤剑",
+					"entries": [
+						"作为战斗中首个回合的附赠动作，恐怖铠甲召唤出一把长剑大小的火焰之刃，这把剑出现在它的空闲手中。当恐怖铠甲的生命值降至0点时，这把剑会在一阵烟雾中消失。"
+					]
+				}
+			],
+			"tokenCredit": "David Calabrese",
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Dr. Cassee Dannell",
+			"name": "卡西·丹内尔博士",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 12,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"int": 10,
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Eldritch Horror Hatchling",
+			"name": "异界恐怖幼体",
+			"source": "KftGV",
+			"page": 24,
+			"_copy": {
+				"ENG_name": "Ankheg",
+				"name": "掘地虫",
+				"source": "MM",
+				"_mod": {
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "啃咬",
+							"items": {
+								"ENG_name": "Bite",
+								"name": "啃咬",
+								"entries": [
+									"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）挥砍伤害加上3（{@damage 1d6}）毒素伤害。如果目标是一个大型或更小的生物，它将{@condition 受擒}（逃脱{@dc 13}）。直到这个缠绕结束，这个邪术恐怖幼崽只能咬击{@condition 受擒}的生物，并且在进行攻击骰以这样做时具有优势。"
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "酸液喷射{@recharge}",
+							"items": {
+								"ENG_name": "Acid Spray {@recharge}",
+								"name": "酸液喷射{@recharge}",
+								"entries": [
+									"如果幼年邪术怪物没有生物{@condition 受擒}，它会在一条长30尺、宽5尺的线上吐出酸液。那条线上的每个生物都必须进行一次敏捷豁免投骰，难度为{@dc 13}。如果豁免失败，生物将受到10（{@damage 3d6}）强酸伤害，如果豁免成功，则受到一半的伤害。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Eliphas Adulare",
+			"name": "伊莱法斯·阿杜拉雷",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 188,
+			"_copy": {
+				"ENG_name": "Werebear",
+				"name": "熊人",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "变形熊人",
+							"with": "伊莱法斯",
+							"flags": "i"
+						}
+					]
+				}
+			},
+			"int": 18,
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting (Humanoid or Hybrid Form Only)",
+					"name": "施法（仅类人与半人形态）",
+					"type": "spellcasting",
+					"headerEntries": [
+						"埃利法斯施放以下任意一个法术，使用智力作为施法能力（豁免{@dc 15}）："
+					],
+					"will": [
+						"{@spell 光亮术}",
+						"{@spell 次级幻象}",
+						"{@spell 魔法伎俩}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell 侦测魔法}",
+							"{@spell 云雾术}"
+						],
+						"1e": [
+							"{@spell 魅影之力}",
+							"{@spell 粉碎音波}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"tokenCustom": true,
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"智力"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Enna Galakiir (Levels 1-4)",
+			"name": "恩娜·加拉基尔（等级1-4）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Bandit",
+				"name": "匪徒",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "匪徒",
+						"with": "恩娜·加拉基尔",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Enna Galakiir (Levels 5-8)",
+			"name": "恩娜·加拉基尔（等级5-8）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Spy",
+				"name": "间谍",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "间谍",
+						"with": "恩娜·加拉基尔",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Enna Galakiir (Levels 9-11)",
+			"name": "恩娜·加拉基尔（等级9-11）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Assassin",
+				"name": "刺客",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "刺客",
+						"with": "恩娜·加拉基尔",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Fragment of Krokulmar",
+			"name": "克罗库玛肢节",
+			"type": "aberration",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 53,
+			"size": [
+				"T"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 10,
+				"formula": "3d4 + 3"
+			},
+			"speed": {
+				"walk": 0
+			},
+			"str": 4,
+			"dex": 16,
+			"con": 12,
+			"int": 16,
+			"wis": 16,
+			"cha": 16,
+			"skill": {
+				"arcana": "+7",
+				"history": "+7",
+				"persuasion": "+7",
+				"stealth": "+7"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"immune": [
+				"心灵"
+			],
+			"languages": [
+				"深潜语",
+				"心灵感应 60 尺"
+			],
+			"cr": "0",
+			"action": [
+				{
+					"ENG_name": "Psionic Revitalization",
+					"name": "灵能振奋",
+					"entries": [
+						"肢节接触一名正处于肢节空间中的生命值为0的生物，目标恢复10点生命值，且距离恢复生物10尺内的所有生物受到3（{@damage 1d6}）点心灵伤害。"
+					]
+				},
+				{
+					"ENG_name": "Squirming Dodge",
+					"name": "蠕动回避",
+					"entries": [
+						"直到肢节的下一回合开始时，所有对肢节发动的攻击检定具有劣势，且肢节所做的豁免具有优势。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"DS",
+				"TP"
+			],
+			"damageTags": [
+				"Y"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Frody Dartwild",
+			"name": "弗罗迪·达特维尔德",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 105,
+			"_copy": {
+				"ENG_name": "Zombie",
+				"name": "丧尸",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "丧尸",
+						"with": "弗罗迪",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"int": 10,
+			"languages": [
+				"通用语"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Gregir Fendelsohn (Levels 1-4)",
+			"name": "格雷吉尔·芬德尔森（等级1-4）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Bandit",
+				"name": "匪徒",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "匪徒",
+						"with": "格雷吉尔·芬德尔森",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Gregir Fendelsohn (Levels 5-8)",
+			"name": "格雷吉尔·芬德尔森（等级5-8）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Thug",
+				"name": "暴徒",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "暴徒",
+						"with": "格雷吉尔·芬德尔森",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Gregir Fendelsohn (Levels 9-11)",
+			"name": "格雷吉尔·芬德尔森（等级9-11）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Veteran",
+				"name": "老兵",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "老兵",
+						"with": "格雷吉尔·芬德尔森",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Headless Body",
+			"name": "无头尸体",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 51,
+			"_copy": {
+				"ENG_name": "Knight",
+				"name": "骑士",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "骑士",
+						"with": "无头尸体"
+					}
+				}
+			},
+			"senses": [
+				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Ignatius Inkblot",
+			"name": "伊格纳提斯·墨迹",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 169,
+			"_copy": {
+				"ENG_name": "Mind Flayer",
+				"name": "夺心魔",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "夺心魔",
+						"with": "伊格纳提斯·墨迹",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Jalynvyr Nir'Thinn",
+			"name": "贾琳维·尼尔瑟恩",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 155,
+			"_copy": {
+				"ENG_name": "Smoke Mephit",
+				"name": "烟魔蝠",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔蝠",
+						"with": "贾琳维·尼尔瑟恩",
+						"flags": "i"
+					}
+				}
+			},
+			"languages": [
+				"通用语",
+				"精灵语"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Jarazoun",
+			"name": "贾拉尊",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 200,
+			"_copy": {
+				"ENG_name": "Efreeti",
+				"name": "火巨灵",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "伊夫里特",
+						"with": "贾拉尊",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Joster Mareet",
+			"name": "乔斯特·马里特",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 107,
+			"_copy": {
+				"ENG_name": "Incubus",
+				"name": "梦魔",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "邪魔宗主",
+						"with": "乔斯特·马里特",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Juvenile Eldritch Horror",
+			"name": "幼体古老恐怖生物",
+			"source": "KftGV",
+			"page": 24,
+			"_copy": {
+				"ENG_name": "Behir",
+				"name": "青足龙蛇",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "青足龙蛇",
+						"with": "奥术恐怖"
+					}
+				}
+			},
+			"int": 18,
+			"languages": null,
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"这个诡异恐怖生物施展以下法术之一，无需任何材料成分，并使用智力作为施法能力（豁免{@dc 14}）："
+					],
+					"daily": {
+						"1": [
+							"{@spell 投影术}"
+						],
+						"2e": [
+							"{@spell 目盲术/耳聋术}",
+							"{@spell 朦胧术}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"tokenCustom": true,
+			"savingThrowForcedSpell": [
+				"体质"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Kavoda",
+			"name": "卡沃达",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 78,
+			"_copy": {
+				"ENG_name": "Deep Gnome (Svirfneblin)",
+				"name": "地底侏儒（斯涅布力）",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "侏儒",
+						"with": "卡沃达",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"ENG_name": "Special Equipment",
+							"name": "特殊装备",
+							"entries": [
+								"卡沃达携带着一张{@item 法术卷轴(2环)||法术卷轴}的{@spell 魔化武器}和一瓶{@item 山丘巨人之力药水||巨人之力药水（丘陵）}。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item 长袍|phb}"
+					]
+				}
+			],
+			"languages": [
+				"通用语",
+				"侏儒语",
+				"土族语",
+				"地底通用语"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "King Jhaeros",
+			"name": "国王贾埃罗斯",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 158,
+			"_copy": {
+				"ENG_name": "Clay Golem",
+				"name": "粘土魔像",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔像",
+						"with": "贾罗斯",
+						"flags": "i"
+					},
+					"trait": [
+						{
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Ashen Creature",
+								"name": "灰烬生物",
+								"entries": [
+									"当 Jhaeros 的生命值降至 0 点时，他将在一团无害的灰烬云中爆炸，没有留下任何其他东西。"
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "强酸吸收",
+							"items": {
+								"ENG_name": "Fire Absorption",
+								"name": "火焰吸收",
+								"entries": [
+									"每当杰罗斯遭受火焰伤害时，他不会受到伤害，而是恢复等于所受火焰伤害数值的生命值。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"immune": [
+				"毒素",
+				"心灵",
+				{
+					"immune": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "非精金武器且非魔法攻击的",
+					"cond": true
+				}
+			],
+			"languages": [
+				"懂得通用语",
+				"龙语",
+				"精灵语",
+				"能听懂火族语，但不能说话"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Markos Delphi",
+			"name": "马寇斯·特尔裴",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类",
+					"魔契师"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 53,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 44,
+				"formula": "8d8 + 8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 15,
+			"con": 12,
+			"int": 17,
+			"wis": 13,
+			"cha": 16,
+			"save": {
+				"wis": "+3",
+				"cha": "+5"
+			},
+			"skill": {
+				"arcana": "+7",
+				"history": "+7",
+				"perception": "+3"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"immune": [
+				"心灵"
+			],
+			"languages": [
+				"天界语",
+				"通用语",
+				"深潜语"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"马寇斯施展以下法术之一，无需任何材料成分，其施法属性为魅力（法术豁免{@dc 13}）："
+					],
+					"daily": {
+						"1e": [
+							"{@spell 哈达之臂}",
+							"{@spell 魅惑类人}",
+							"{@spell 法师护甲}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"马寇斯进行两次仪式之刃攻击，或两次灵能法球攻击，或每种各一次。"
+					]
+				},
+				{
+					"ENG_name": "Ceremonial Blade",
+					"name": "仪式之刃",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害加上3（{@damage 1d6}）点毒素伤害。如果目标是一名生物，则其必须通过一次{@dc 13}的体质豁免，否则陷入{@condition 中毒}1分钟。该生物可在其每回合结束时重复该豁免，成功则结束自身的该效应。"
+					]
+				},
+				{
+					"ENG_name": "Psychic Orb",
+					"name": "灵能法球",
+					"entries": [
+						"{@atk rs} 命中{@hit 5}，射程60尺，单一生物。{@h}10（{@damage 2d6 + 3}）点心灵伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Swap Space",
+					"name": "空间互换",
+					"entries": [
+						"马寇斯选择他周围30尺内的一名可见的中型或小型生物。目标必须成功通过一次{@dc 13}的体质豁免，否则将和其穿着和携带的所有装备一起与马寇斯交换位置。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"CE",
+				"DS"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"N"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"中毒"
+			],
+			"conditionInflictSpell": [
+				"魅惑"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"savingThrowForcedSpell": [
+				"力量",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Meera Raheer",
+			"name": "米拉·拉希尔",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 7,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Naevys Tharesso",
+			"name": "纳维斯·萨雷斯",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 150,
+			"_copy": {
+				"ENG_name": "Knight",
+				"name": "骑士",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "骑士",
+						"with": "纳维斯·萨雷斯",
+						"flags": "i"
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "巨剑",
+						"items": {
+							"ENG_name": "Flame Tongue Longsword",
+							"name": "焰舌长剑",
+							"entries": [
+								"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6点（{@damage 1d8 + 2}）挥砍伤害，或者如果用双手使用则造成7点（{@damage 1d10 + 2}）挥砍伤害。骑士可以使用附赠动作说出这把魔法剑的口令，使剑刃上爆发出火焰。这些火焰在40尺半径内发出明亮的光，并在额外的40尺内发出微光。当剑在燃烧时，它对任何击中的敌人额外造成2d6火焰伤害。火焰持续直到她使用附赠动作再次说出口令，或者她放下或收起剑为止。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Nixylanna Vidorant",
+			"name": "尼克丝拉娜·维朵兰特",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 130,
+			"_copy": {
+				"ENG_name": "Assassin",
+				"name": "刺客",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "刺客",
+						"with": "尼克丝拉娜·维朵兰特",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Prisoner 13",
+			"name": "十三号囚犯",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"矮人",
+					"武僧"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 68,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"山峰纹身"
+					]
+				}
+			],
+			"hp": {
+				"average": 102,
+				"formula": "12d8 + 48"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 17,
+			"con": 18,
+			"int": 16,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"con": "+7",
+				"wis": "+5"
+			},
+			"skill": {
+				"athletics": "+5",
+				"deception": "+9",
+				"insight": "+5",
+				"perception": "+5",
+				"stealth": "+6"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 15,
+			"resist": [
+				"毒素"
+			],
+			"immune": [
+				"心灵"
+			],
+			"conditionImmune": [
+				"魅惑"
+			],
+			"languages": [
+				"通用语",
+				"矮人语",
+				"精灵语",
+				"盗贼黑话",
+				"地底通用语"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Antimagic Susceptibility",
+					"name": "魔力依赖",
+					"entries": [
+						"在反魔法场中，十三号囚犯无法使用她的刺青和特殊反应。她同时受到以下调整：AC变成13，失去心灵伤害免疫和免疫魅惑。她的纹身打击变成近战伤害且命中时造成7（{@damage 1d8 + 3})钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Mindlink Tattoos",
+					"name": "心灵链接纹身",
+					"entries": [
+						"十三号囚犯可以和大陆上一些特工进行心灵交流。只要十三号囚犯和这些特工处于统一位面，她就可以通过心灵感应和他们交流。"
+					]
+				},
+				{
+					"ENG_name": "Mountain Tattoo",
+					"name": "山峰纹身",
+					"entries": [
+						"十三号囚犯的AC会加上她的体质调整值。"
+					]
+				},
+				{
+					"ENG_name": "Shroud Tattoo",
+					"name": "护罩纹身",
+					"entries": [
+						"十三号囚犯不能被预言法术或者任何特征阅读思想。她也不会被魔法侦测到。她不会被心灵感应除非她愿意。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"十三号囚犯进行两次纹身打击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Tattooed Strike",
+					"name": "纹身打击",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 6}，触及5尺或射程60尺，单一目标。{@h}12 ({@damage 2d8 + 3}) 点力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Firestorm Tattoo {@recharge 5}",
+					"name": "火风暴纹身 {@recharge 5}",
+					"entries": [
+						"十三号囚犯魔法地从她背上的纹身中释放火焰，充斥以她为原点的20尺半径球形。任何在此空间的生物都需要通过{@dc 15}敏捷豁免，失败则受到13（{@damage 3d8}）火焰伤害并且被冲击{@condition 倒地}。豁免成功则受到半伤且不会{@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "River Tattoo",
+					"name": "河流纹身",
+					"entries": [
+						"十三号囚犯魔法地结束任何导致她被{@condition 受擒}或者{@condition 束缚}地效果。如果她被非魔法方式束缚，她立刻滑出去"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Readiness",
+					"name": "可预见性",
+					"entries": [
+						"当一个十三号囚犯看见一个生物在她60尺内结束回合。十三号囚犯对该生物进行一次纹身打击或者使用河流纹身。她可以立刻再移动等同于她移速的距离且不会受到借机攻击"
+					]
+				}
+			],
+			"traitTags": [
+				"魔力依赖"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"E",
+				"TC",
+				"U"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Rilago",
+			"name": "里拉戈",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 147,
+			"_copy": {
+				"ENG_name": "Ghost",
+				"name": "幽魂",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "幽魂",
+						"with": "里拉戈",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Sabrina Kilgore (Levels 1-4)",
+			"name": "萨布丽娜·基尔戈尔（1-4级）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Bandit",
+				"name": "匪徒",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "匪徒",
+						"with": "萨布丽娜·基尔戈尔",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Sabrina Kilgore (Levels 5-8)",
+			"name": "萨布丽娜·基尔戈尔（等级5-8）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Thug",
+				"name": "暴徒",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "暴徒",
+						"with": "萨布丽娜·基尔戈尔",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Sabrina Kilgore (Levels 9-11)",
+			"name": "萨布丽娜·基尔戈（等级9-11）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Veteran",
+				"name": "老兵",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "老兵",
+						"with": "萨布丽娜·基尔戈尔",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Sythian Skalderang",
+			"name": "西提安·斯考德兰",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"吟游诗人",
+					"提夫林"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 117,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"格拉兹特赋礼"
+					]
+				}
+			],
+			"hp": {
+				"average": 99,
+				"formula": "18d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 13,
+			"int": 14,
+			"wis": 11,
+			"cha": 16,
+			"save": {
+				"dex": "+5",
+				"wis": "+3"
+			},
+			"skill": {
+				"arcana": "+5",
+				"deception": "+6",
+				"performance": "+6"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"resist": [
+				"火焰"
+			],
+			"languages": [
+				"深渊语",
+				"通用语"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"西提安施放以下法术之一，魅力是他的施法属性（法术豁免{@dc 14}）:"
+					],
+					"will": [
+						"{@spell 法师之手}",
+						"{@spell 魔法伎俩}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 魅惑类人}",
+							"{@spell 妖火}",
+							"{@spell 隐形仆役}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Fear of Frogs and Toads",
+					"name": "害怕青蛙与蟾蜍",
+					"entries": [
+						"当西提安20尺以内存在他能看见的青蛙或蟾蜍（任何大小）时，他陷入{@condition 恐慌}。"
+					]
+				},
+				{
+					"ENG_name": "Graz'zt's Gift",
+					"name": "格拉兹特赋礼",
+					"entries": [
+						"西提安的护甲等级加上他的魅力调整值。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"西提安进行两次浸毒短剑或毒镖攻击并使用阿茲格拉特的低语。"
+					]
+				},
+				{
+					"ENG_name": "Poisoned Shortsword",
+					"name": "浸毒短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害加上5（{@damage 1d10}）点毒素伤害。"
+					]
+				},
+				{
+					"ENG_name": "Poisoned Dart",
+					"name": "毒镖",
+					"entries": [
+						"{@atk rw} 命中{@hit 5}，射程20/60 尺，单一目标。{@h}4（{@damage 1d4 + 2}）点穿刺伤害加上5（{@damage 1d10}）点毒素伤害。"
+					]
+				},
+				{
+					"ENG_name": "Whispers of Azzagrat",
+					"name": "阿茲格拉特的低语",
+					"entries": [
+						"以西提安为源点的15尺立方区域内的每个生物必须进行一次{@dc 14}的感知豁免，豁免失败则受到18点（{@damage 4d8}）心灵伤害并陷入{@condition 失能}直到生物的下个回合结束。成功则承受一半伤害且不会{@condition 失能}。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Fiendish Rebuke (3/Day)",
+					"name": "邪魔叱喝（3/日）",
+					"entries": [
+						"当距离西提安5尺内的一个生物攻击命中他后，西提安强迫该生物进行一次{@dc 14}的体质豁免，豁免失败则受到14点（{@damage 4d6}）火焰伤害，成功则承受一半伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AB",
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"I",
+				"P",
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"失能"
+			],
+			"conditionInflictSpell": [
+				"魅惑"
+			],
+			"savingThrowForced": [
+				"体质",
+				"感知"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "The Stranger",
+			"name": "陌生人",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 173,
+			"_copy": {
+				"ENG_name": "Archmage",
+				"name": "大法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "大法师",
+						"with": "陌生人",
+						"flags": "i"
+					}
+				}
+			},
+			"trait": [
+				{
+					"ENG_name": "Special Equipment",
+					"name": "特殊装备",
+					"entries": [
+						"这个陌生人佩戴着一枚隐形的{@item 心灵护盾戒指}，这枚戒指能抵御魔法读取他们思想的企图。陌生人还佩戴着{@item 次元镣铐}，但他渴望摆脱它们。奥米德的钉头锤钥匙一触，镣铐就会脱落，释放了陌生人。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"大法师抵抗法术和其它魔法效应时进行的豁免检定具有优势。"
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Tiefling Acrobat",
+			"name": "提夫林杂技演员",
+			"source": "KftGV",
+			"page": 37,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"skill": {
+				"acrobatics": "+4",
+				"performance": "+4"
+			},
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Tixie Tockworth",
+			"name": "蒂克西·托克沃斯",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"侏儒"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 85,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲",
+						"{@item 盾牌|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d6 + 40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 18,
+			"int": 17,
+			"wis": 9,
+			"cha": 10,
+			"save": {
+				"int": "+6",
+				"wis": "+2"
+			},
+			"skill": {
+				"arcana": "+9",
+				"perception": "+2"
+			},
+			"senses": [
+				"真实视觉 60 尺"
+			],
+			"passive": 12,
+			"languages": [
+				"通用语",
+				"侏儒语",
+				"土族语",
+				"地底通用语"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"托克沃斯施展以下法术之一，无需材料成分且以智力为其施法属性（法术豁免{@dc 14}）："
+					],
+					"will": [
+						"{@spell 回避侦测}(仅自身)"
+					],
+					"daily": {
+						"2": [
+							"{@spell 任意门}"
+						],
+						"1e": [
+							"{@spell 目盲术/耳聋术}",
+							"{@spell 朦胧术}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Force Field",
+					"name": "防御力场",
+					"entries": [
+						"托克沃斯在自己周围生成一个魔法的防御力场。这个力场具有15点生命值，并在每个托克沃斯的回合开始时恢复全部生命值，如果托克沃斯的生命值降至0，力场也会失去自己的作用。托克沃斯受到的任何伤害都会先从力场的生命值中减去，每次力场恢复生命值时，托克沃斯的以下状态将全部结束：{@condition 受擒}、{@condition 束缚}、{@condition 震慑}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"托克沃斯发动三次短剑攻击或闪电放射攻击。"
+					]
+				},
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}6（{@damage 1d6 + 3}）点穿刺伤害加上10（{@damage 3d6}）点力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Lightning Discharge",
+					"name": "闪电放射",
+					"entries": [
+						"{@atk rs} 命中{@hit 6}，射程60尺，单一生物。{@h}16（{@damage 3d10}）闪电伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Scalding Steam {@recharge 5}",
+					"name": "灼热蒸汽 {@recharge 5}",
+					"entries": [
+						"托克沃斯喷射出滚烫的蒸汽覆盖15尺锥状区域。区域内的每个生物都必须通过一次{@dc 15}的敏捷豁免，豁免失败将受到10（{@damage 3d6}）点火焰伤害，豁免成功则只受半数伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"短剑|phb"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"G",
+				"T",
+				"U"
+			],
+			"damageTags": [
+				"F",
+				"L",
+				"O",
+				"P"
+			],
+			"damageTagsSpell": [
+				"O"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"目盲",
+				"耳聋"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"savingThrowForcedSpell": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Tixie's Shield Guardian",
+			"name": "提克西的盾卫",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 80,
+			"_copy": {
+				"ENG_name": "Shield Guardian",
+				"name": "构装盾卫",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "removeArr",
+						"names": "法术存储"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Torgja Stonecrusher (Levels 1-4)",
+			"name": "托格贾·石碎者（等级1-4）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"矮人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Bandit",
+				"name": "匪徒",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "匪徒",
+						"with": "托格雅·石碎",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Torgja Stonecrusher (Levels 5-8)",
+			"name": "托格雅·石破者（等级5-8）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"矮人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Thug",
+				"name": "暴徒",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "暴徒",
+						"with": "托格雅·石碎",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Torgja Stonecrusher (Levels 9-11)",
+			"name": "托格雅·石碎者（等级9-11）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"矮人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Veteran",
+				"name": "老兵",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "老兵",
+						"with": "托格雅·石碎",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Tosh Starling (Levels 1-4)",
+			"name": "托什·斯塔林（等级1-4）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"兽人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Scout",
+				"name": "斥候",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "斥候",
+						"with": "托什·星雀",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Tosh Starling (Levels 5-8)",
+			"name": "托什·斯塔林（等级5-8）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"兽人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Spy",
+				"name": "间谍",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "间谍",
+						"with": "托什·星雀",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Tosh Starling (Levels 9-11)",
+			"name": "托什·斯塔林（9-11级）",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"兽人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Veteran",
+				"name": "老兵",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "老兵",
+						"with": "托什·星雀",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Zala Morphus",
+			"name": "Zala Morphus",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 47,
+			"_copy": {
+				"ENG_name": "Nothic",
+				"name": "诺斯怪",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "诺斯尼克",
+						"with": "Zala Morphus",
+						"flags": "i"
+					}
+				}
+			},
+			"languages": [
+				"通用语",
+				"深潜语",
+				"精灵语"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Zorhanna Adulare",
+			"name": "Zorhanna Adulare",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 184,
+			"_copy": {
+				"ENG_name": "Archmage",
+				"name": "大法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "大法师",
+						"with": "Zorhanna Adulare",
+						"flags": "i"
+					}
+				}
+			},
+			"languages": [
+				"气族语",
+				"通用语",
+				"龙语",
+				"精灵语",
+				"木族语"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Zorhanna's Simulacrum",
+			"name": "Zorhanna的仿真体",
+			"type": "construct",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "KftGV",
+			"page": 184,
+			"_copy": {
+				"ENG_name": "Archmage",
+				"name": "大法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "大法师",
+						"with": "拟像术"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Simulacrum",
+							"name": "拟像术",
+							"entries": [
+								"模拟像无法恢复消耗的法术位，也不能使用孤钻项链的属性。（孤钻目前与被囚禁在内部的遥远国度实体同步。）如果模拟像的生命值降至0点，它将变成雪并融化消失，孤钻项链会传送到Zorhanna的金库塔中的保险箱里。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"languages": [
+				"通用语",
+				"深渊语（当它生气或沮丧时）",
+				"龙语",
+				"精灵语",
+				"侏儒语",
+				"木族语"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		}
+	]
+}

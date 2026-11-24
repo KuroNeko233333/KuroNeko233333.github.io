@@ -1,0 +1,9535 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
+		"internalCopies": [
+			"monster"
+		],
+		"otherSources": {
+			"monster": {
+				"MM": "DSotDQ"
+			}
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Amelia Ghallen",
+			"name": "阿米莉亚·格哈兰",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 180,
+			"_copy": {
+				"ENG_name": "Veteran",
+				"name": "老兵",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "老兵",
+						"with": "阿米莉亚",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Andir Valmakos",
+			"name": "安迪尔·瓦尔马科斯",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				],
+				"sidekickType": "施法者",
+				"sidekickTags": [
+					"魔法师"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 210,
+			"level": 1,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item 皮甲|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d8 + 2"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 12,
+			"int": 14,
+			"wis": 11,
+			"cha": 10,
+			"save": {
+				"wis": "+2"
+			},
+			"skill": {
+				"arcana": "+4",
+				"history": "+4",
+				"investigation": "+4",
+				"religion": "+4"
+			},
+			"passive": 10,
+			"languages": [
+				"通用语",
+				"龙语"
+			],
+			"pbNote": "+2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"安迪尔的施法属性是智力（法术豁免{@dc 12}，法术攻击命中{@hit 4}）。他准备有以下的法师法术："
+					],
+					"will": [
+						"{@spell 光亮术}",
+						"{@spell 冷冻射线}"
+					],
+					"spells": {
+						"1": {
+							"slots": 2,
+							"spells": [
+								"{@spell 雷鸣波}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Bonus Proficiencies",
+					"name": "附赠熟练",
+					"entries": [
+						"安迪尔拥有简易武器以及轻甲的熟练项。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Arcane Burst",
+					"name": "奥能爆发",
+					"entries": [
+						"{@atk ms,rs} 命中{@hit 4}，触及 5 尺或射程 120 尺，单一目标。{@h}7（{@damage 1d10 + 2}）力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Quarterstaff",
+					"name": "长棍",
+					"entries": [
+						"{@atk mw} {@hit 2} 命中，触及5尺，单一目标。{@h}3（{@damage 1d6}）钝击伤害，或用双手时4（{@damage 1d8}）钝击伤害。"
+					]
+				}
+			],
+			"variant": [
+				{
+					"ENG_name": "Andir beyond 1st Level",
+					"name": "安迪尔（高于1级）",
+					"type": "inset",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"等级",
+								"生命值",
+								"新特性"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-2",
+								"col-8"
+							],
+							"rows": [
+								[
+									"2环",
+									"16 （掷{@dice 3d8 + 3}加3）",
+									"施法。安迪尔学会另一个一环法术：{@spell 大步奔行}。"
+								],
+								[
+									"3环",
+									"22（{@dice 4d8 + 4}）",
+									"施法。安迪尔获得一个一环法术位。他还学会另一个一环法术：{@spell 谭森浮碟术}。"
+								],
+								[
+									"4环",
+									"27 ({@dice 5d8 + 5})",
+									"属性值提升。安迪尔的智力值提高2，调整值提高1，因此以下数值提高1：他的法术豁免DC、法术攻击命中加值以及技能条目中的加值。施法。安迪尔学会另一个戏法：{@spell 法师之手}。"
+								],
+								[
+									"5环",
+									"33 ({@dice 6d8 + 6})",
+									"熟练加值。安迪尔的熟练加值提高1，因此以下数值提高1：他的法术豁免DC、长棍和法术攻击的命中加值，以及豁免检定和技能条目中的加值。施法。安迪尔获得一个一环法术位和两个2环法术位。他还学会了一个2环法术：{@spell 敲击术}。"
+								],
+								[
+									"6th",
+									"38 （{@dice 7d8 + 7}）",
+									"强力戏法。安迪尔施展的戏法所造成的伤害会加上其智力调整值。"
+								],
+								[
+									"7th",
+									"44 （{@dice 8d8 + 8}）",
+									"施法。安迪尔获得一个2环法术位。他还学会另一个2环法术：{@spell 隐形术}。"
+								],
+								[
+									"8th",
+									"49 ({@dice 9d8 + 9})",
+									"属性值提升。安迪尔的智力值提高2，调整值提高1，因此以下数值提高1：他的法术豁免DC、法术攻击命中加值以及在他技能条目中的加值。"
+								],
+								[
+									"9th",
+									"55 ({@dice 10d8 + 10})",
+									"熟练加值。安迪尔的熟练加值提高1，因此以下数值提高1：他的法术豁免DC、长棍和法术攻击的命中加值，以及豁免检定和技能条目中的加值。施法。安迪尔获得两个3环法术位。他还学会一个3环法术：{@spell 加速术}。"
+								],
+								[
+									"10th",
+									"60 ({@dice 11d8 + 11})",
+									"施法。安迪尔学会另一个戏法：{@spell 次级幻象}。"
+								],
+								[
+									"11th",
+									"66（{@dice 12d8 + 12}）",
+									"施法。安迪尔获得一个三环法术位。他还学会另一个三环法术：{@spell 短讯术}。"
+								]
+							]
+						}
+					]
+				}
+			],
+			"attachedItems": [
+				"长棍|phb"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"damageTagsSpell": [
+				"C",
+				"T"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"ENG_name": "Andir Valmakos (10th Level)",
+					"name": "安迪尔·瓦尔马科斯（10级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Potent Cantrips",
+								"name": "强力戏法",
+								"entries": [
+									"安迪尔对他施展的任何戏法所造成的伤害会加上其智力调整值。"
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "长棍",
+							"items": {
+								"ENG_name": "Quarterstaff",
+								"name": "长棍",
+								"entries": [
+									"{@atk mw} {@hit 4} 命中，触及5尺，单一目标。{@h}3（{@damage 1d6}）钝击伤害，或用双手时4（{@damage 1d8}）钝击伤害。"
+								]
+							}
+						}
+					},
+					"level": 10,
+					"hp": {
+						"average": 60,
+						"formula": "11d8 + 11"
+					},
+					"int": 18,
+					"save": {
+						"wis": "+4"
+					},
+					"skill": {
+						"arcana": "+8",
+						"history": "+8",
+						"investigation": "+8",
+						"religion": "+8"
+					},
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"安迪尔的施法属性是智力（法术豁免{@dc 16}，法术攻击{@hit 8}命中）。他准备有以下的法师法术："
+							],
+							"will": [
+								"{@spell 光亮术}",
+								"{@spell 冷冻射线}",
+								"{@spell 法师之手}",
+								"{@spell 次级幻象}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell 雷鸣波}",
+										"{@spell 大步奔行}",
+										"{@spell 谭森浮碟术}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell 敲击术}",
+										"{@spell 隐形术}"
+									]
+								},
+								"3": {
+									"slots": 2,
+									"spells": [
+										"{@spell 加速术}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Andir Valmakos (11th Level)",
+					"name": "安迪尔·瓦尔马科斯（11级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Potent Cantrips",
+								"name": "强力戏法",
+								"entries": [
+									"安迪尔对他施展的任何戏法所造成的伤害会加上其智力调整值。"
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "长棍",
+							"items": {
+								"ENG_name": "Quarterstaff",
+								"name": "长棍",
+								"entries": [
+									"{@atk mw} {@hit 4} 命中，触及5尺，单一目标。{@h}3（{@damage 1d6}）钝击伤害，或用双手时4（{@damage 1d8}）钝击伤害。"
+								]
+							}
+						}
+					},
+					"level": 11,
+					"hp": {
+						"average": 66,
+						"formula": "12d8 + 12"
+					},
+					"int": 18,
+					"save": {
+						"wis": "+4"
+					},
+					"skill": {
+						"arcana": "+8",
+						"history": "+8",
+						"investigation": "+8",
+						"religion": "+8"
+					},
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"安迪尔的施法属性是智力（法术豁免{@dc 16}，法术攻击{@hit 8}命中）。他准备有以下的法师法术："
+							],
+							"will": [
+								"{@spell 光亮术}",
+								"{@spell 冷冻射线}",
+								"{@spell 法师之手}",
+								"{@spell 次级幻象}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell 雷鸣波}",
+										"{@spell 大步奔行}",
+										"{@spell 谭森浮碟术}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell 敲击术}",
+										"{@spell 隐形术}"
+									]
+								},
+								"3": {
+									"slots": 3,
+									"spells": [
+										"{@spell 加速术}",
+										"{@spell 短讯术}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Andir Valmakos (2nd Level)",
+					"name": "安迪尔·瓦尔马科斯（2环）",
+					"source": "DSotDQ",
+					"level": 2,
+					"hp": {
+						"average": 16,
+						"formula": "3d8 + 3"
+					},
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"安迪尔的施法属性是智力（法术豁免{@dc 12}，法术攻击命中{@hit 4}）。他准备有以下的法师法术："
+							],
+							"will": [
+								"{@spell 光亮术}",
+								"{@spell 冷冻射线}"
+							],
+							"spells": {
+								"1": {
+									"slots": 2,
+									"spells": [
+										"{@spell 雷鸣波}",
+										"{@spell 大步奔行}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Andir Valmakos (3rd Level)",
+					"name": "安迪尔·瓦尔马科斯（3环）",
+					"source": "DSotDQ",
+					"level": 3,
+					"hp": {
+						"average": 22,
+						"formula": "4d8 + 4"
+					},
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"安迪尔的施法属性是智力（法术豁免{@dc 12}，法术攻击命中{@hit 4}）。他准备有以下的法师法术："
+							],
+							"will": [
+								"{@spell 光亮术}",
+								"{@spell 冷冻射线}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell 雷鸣波}",
+										"{@spell 大步奔行}",
+										"{@spell 谭森浮碟术}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Andir Valmakos (4th Level)",
+					"name": "安迪尔·瓦尔马科斯（4级）",
+					"source": "DSotDQ",
+					"level": 4,
+					"hp": {
+						"average": 27,
+						"formula": "5d8 + 5"
+					},
+					"int": 16,
+					"skill": {
+						"arcana": "+5",
+						"history": "+5",
+						"investigation": "+5",
+						"religion": "+5"
+					},
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"安迪尔的施法属性是智力（法术豁免{@dc 13}，法术攻击命中{@hit 5}）。他准备有以下的法师法术："
+							],
+							"will": [
+								"{@spell 光亮术}",
+								"{@spell 冷冻射线}",
+								"{@spell 法师之手}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell 雷鸣波}",
+										"{@spell 大步奔行}",
+										"{@spell 谭森浮碟术}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Andir Valmakos (5th Level)",
+					"name": "安迪尔·瓦尔马科斯 (5级)",
+					"source": "DSotDQ",
+					"_mod": {
+						"action": {
+							"mode": "replaceArr",
+							"replace": "长棍",
+							"items": {
+								"ENG_name": "Quarterstaff",
+								"name": "长棍",
+								"entries": [
+									"{@atk mw} {@hit 3} 命中，触及5尺，单一目标。{@h}3（{@damage 1d6}）钝击伤害，或使用双手攻击时4（{@damage 1d8}）钝击伤害。"
+								]
+							}
+						}
+					},
+					"level": 5,
+					"hp": {
+						"average": 33,
+						"formula": "6d8 + 6"
+					},
+					"int": 16,
+					"save": {
+						"wis": "+3"
+					},
+					"skill": {
+						"arcana": "+6",
+						"history": "+6",
+						"investigation": "+6",
+						"religion": "+6"
+					},
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"安迪尔的施法属性是智力（法术豁免{@dc 14}，法术攻击{@hit 6}命中）。他准备有以下的法师法术："
+							],
+							"will": [
+								"{@spell 光亮术}",
+								"{@spell 冷冻射线}",
+								"{@spell 法师之手}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell 雷鸣波}",
+										"{@spell 大步奔行}",
+										"{@spell 谭森浮碟术}"
+									]
+								},
+								"2": {
+									"slots": 2,
+									"spells": [
+										"{@spell 敲击术}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Andir Valmakos (6th Level)",
+					"name": "安迪尔·瓦尔马科斯（6级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Potent Cantrips",
+								"name": "强力戏法",
+								"entries": [
+									"安迪尔对他施展的任何戏法所造成的伤害会加上其智力调整值。"
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "长棍",
+							"items": {
+								"ENG_name": "Quarterstaff",
+								"name": "长棍",
+								"entries": [
+									"{@atk mw} {@hit 3} 命中，触及5尺，单一目标。{@h}3（{@damage 1d6}）钝击伤害，或使用双手攻击时4（{@damage 1d8}）钝击伤害。"
+								]
+							}
+						}
+					},
+					"level": 6,
+					"hp": {
+						"average": 38,
+						"formula": "7d8 + 7"
+					},
+					"int": 16,
+					"save": {
+						"wis": "+3"
+					},
+					"skill": {
+						"arcana": "+6",
+						"history": "+6",
+						"investigation": "+6",
+						"religion": "+6"
+					},
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"安迪尔的施法属性是智力（法术豁免{@dc 14}，法术攻击{@hit 6}命中）。他准备有以下的法师法术："
+							],
+							"will": [
+								"{@spell 光亮术}",
+								"{@spell 冷冻射线}",
+								"{@spell 法师之手}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell 雷鸣波}",
+										"{@spell 大步奔行}",
+										"{@spell 谭森浮碟术}"
+									]
+								},
+								"2": {
+									"slots": 2,
+									"spells": [
+										"{@spell 敲击术}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Andir Valmakos (7th Level)",
+					"name": "安迪尔·瓦尔马科斯（7级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Potent Cantrips",
+								"name": "强力戏法",
+								"entries": [
+									"安迪尔对他施展的任何戏法所造成的伤害会加上其智力调整值。"
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "长棍",
+							"items": {
+								"ENG_name": "Quarterstaff",
+								"name": "长棍",
+								"entries": [
+									"{@atk mw} {@hit 3} 命中，触及5尺，单一目标。{@h}3（{@damage 1d6}）钝击伤害，或使用双手攻击时4（{@damage 1d8}）钝击伤害。"
+								]
+							}
+						}
+					},
+					"level": 7,
+					"hp": {
+						"average": 44,
+						"formula": "8d8 + 8"
+					},
+					"int": 16,
+					"save": {
+						"wis": "+3"
+					},
+					"skill": {
+						"arcana": "+6",
+						"history": "+6",
+						"investigation": "+6",
+						"religion": "+6"
+					},
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"安迪尔的施法属性是智力（法术豁免{@dc 14}，法术攻击{@hit 6}命中）。他准备有以下的法师法术："
+							],
+							"will": [
+								"{@spell 光亮术}",
+								"{@spell 冷冻射线}",
+								"{@spell 法师之手}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell 雷鸣波}",
+										"{@spell 大步奔行}",
+										"{@spell 谭森浮碟术}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell 敲击术}",
+										"{@spell 隐形术}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Andir Valmakos (8th Level)",
+					"name": "安迪尔·瓦尔马科斯（8级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Potent Cantrips",
+								"name": "强力戏法",
+								"entries": [
+									"安迪尔对他施展的任何戏法所造成的伤害会加上其智力调整值。"
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "长棍",
+							"items": {
+								"ENG_name": "Quarterstaff",
+								"name": "长棍",
+								"entries": [
+									"{@atk mw} {@hit 3} 命中，触及5尺，单一目标。{@h}3（{@damage 1d6}）钝击伤害，或使用双手攻击时4（{@damage 1d8}）钝击伤害。"
+								]
+							}
+						}
+					},
+					"level": 8,
+					"hp": {
+						"average": 49,
+						"formula": "9d8 + 9"
+					},
+					"int": 18,
+					"save": {
+						"wis": "+3"
+					},
+					"skill": {
+						"arcana": "+7",
+						"history": "+7",
+						"investigation": "+7",
+						"religion": "+7"
+					},
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"安迪尔的施法属性是智力（法术豁免{@dc 15}，法术攻击{@hit 7}命中）。他准备有以下的法师法术："
+							],
+							"will": [
+								"{@spell 光亮术}",
+								"{@spell 冷冻射线}",
+								"{@spell 法师之手}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell 雷鸣波}",
+										"{@spell 大步奔行}",
+										"{@spell 谭森浮碟术}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell 敲击术}",
+										"{@spell 隐形术}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Andir Valmakos (9th Level)",
+					"name": "安迪尔·瓦尔马科斯（9级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Potent Cantrips",
+								"name": "强力戏法",
+								"entries": [
+									"安迪尔对他施展的任何戏法所造成的伤害会加上其智力调整值。"
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "长棍",
+							"items": {
+								"ENG_name": "Quarterstaff",
+								"name": "长棍",
+								"entries": [
+									"{@atk mw} {@hit 4} 命中，触及5尺，单一目标。{@h}3（{@damage 1d6}）钝击伤害，或用双手时4（{@damage 1d8}）钝击伤害。"
+								]
+							}
+						}
+					},
+					"level": 9,
+					"hp": {
+						"average": 55,
+						"formula": "10d8 + 10"
+					},
+					"int": 18,
+					"save": {
+						"wis": "+4"
+					},
+					"skill": {
+						"arcana": "+8",
+						"history": "+8",
+						"investigation": "+8",
+						"religion": "+8"
+					},
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"安迪尔的施法属性是智力（法术豁免{@dc 16}，法术攻击{@hit 8}命中）。他准备有以下的法师法术："
+							],
+							"will": [
+								"{@spell 光亮术}",
+								"{@spell 冷冻射线}",
+								"{@spell 法师之手}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell 雷鸣波}",
+										"{@spell 大步奔行}",
+										"{@spell 谭森浮碟术}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell 敲击术}",
+										"{@spell 隐形术}"
+									]
+								},
+								"3": {
+									"slots": 2,
+									"spells": [
+										"{@spell 加速术}"
+									]
+								}
+							},
+							"ability": "int"
+						}
+					],
+					"variant": null
+				}
+			]
+		},
+		{
+			"ENG_name": "Anhkolox",
+			"name": "安克洛死兽",
+			"type": "undead",
+			"source": "DSotDQ",
+			"page": 192,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 157,
+				"formula": "15d12 + 60"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 22,
+			"dex": 11,
+			"con": 18,
+			"int": 4,
+			"wis": 14,
+			"cha": 2,
+			"save": {
+				"wis": "+6"
+			},
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 16,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"中毒"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"ENG_name": "Unusual Nature",
+					"name": "非凡本质",
+					"entries": [
+						"安克洛死兽不需要空气、食物、饮水或睡眠。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"安克洛死兽发动两次爪抓攻击和一次捕杀撕裂攻击。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} {@hit 10} 命中，触及5尺，单一目标。{@h}17（{@damage 2d10 + 6}）穿刺伤害。若目标为一个大型或更小的生物，则其必须成功通过一次{@dc 18}的力量豁免检定，否则被向安克洛死兽所选择的任意水平方向推离20尺。"
+					]
+				},
+				{
+					"ENG_name": "Entrapping Rend",
+					"name": "捕杀撕裂",
+					"entries": [
+						"{@atk mw} {@hit 10} 命中，触及5尺，单一目标。{@h}23（{@damage 5d6 + 6}）穿刺伤害，且若目标为一个大型或更小的生物，则其必须成功通过一次{@dc 18}力量豁免否则被安克洛死兽的肋骨牢笼捕获并{@condition 受擒}（逃脱{@dc 18}）。直到此擒抱结束，目标陷入{@condition 束缚}，而安克洛死兽不能对其他目标使用捕杀撕裂。"
+					]
+				}
+			],
+			"traitTags": [
+				"非凡本质"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"受擒",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Aurak Draconian",
+			"name": "奥瑞克龙人",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"术士"
+				]
+			},
+			"source": "DSotDQ",
+			"page": 196,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 67,
+				"formula": "9d8 + 27"
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 13,
+			"dex": 14,
+			"con": 16,
+			"int": 16,
+			"wis": 11,
+			"cha": 17,
+			"save": {
+				"int": "+6",
+				"wis": "+3",
+				"cha": "+6"
+			},
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"真实视觉 60 尺"
+			],
+			"passive": 13,
+			"conditionImmune": [
+				"魅惑"
+			],
+			"languages": [
+				"通用语",
+				"龙语"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"龙人施展以下一个法术，它无视材料成分并使用魅力作为其施法属性（法术豁免{@dc 14}）："
+					],
+					"will": [
+						"{@spell 隐形术}",
+						"{@spell 法师之手}"
+					],
+					"daily": {
+						"1": [
+							"{@spell 支配类人}"
+						],
+						"2e": [
+							"{@spell 任意门}",
+							"{@spell 易容术}",
+							"{@spell 短讯术}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Aura of Command",
+					"name": "命令灵光",
+					"entries": [
+						"该龙人向以自身为中心半径20尺的球状区域辐射出指挥的威仪。任何在该灵光区域内能看到或听到该奥瑞克龙人的龙人不会被{@condition 魅惑}，并在抵抗或结束自身{@condition 恐慌}状态的豁免检定上具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Death Throes",
+					"name": "焚身爆",
+					"entries": [
+						"当龙人的生命值降低为0时，它魔法精粹爆发成球状的闪电，跳到30尺内最近的一个生物身上，然后跳向第一个目标15尺内的另外两个生物。每个生物都必须进行{@dc 14}的敏捷豁免。失败的情况下，生物受到9（{@damage 2d8}）闪电伤害并直到其下个回合结束陷入{@condition 震慑}。成功的情况下，生物受到一半伤害并不会被{@condition 震慑}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"龙人进行三次撕裂或能量射线攻击。"
+					]
+				},
+				{
+					"ENG_name": "Rend",
+					"name": "撕裂",
+					"entries": [
+						"{@atk mw} {@hit 5} 命中，触及5尺，单一目标。{@h}8（{@damage 1d12 + 2}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Energy Ray",
+					"name": "能量射线",
+					"entries": [
+						"{@atk rs} 命中{@hit 6}，范围60尺，单一目标。{@h}8（{@damage 1d10 + 3}）力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Noxious Breath {@recharge 5}",
+					"name": "毒气吐息{@recharge 5}",
+					"entries": [
+						"龙人呼出15尺锥状的毒气。每个区域内的生物必须进行{@dc 14}的体质豁免。失败的情况下，生物受到21（{@damage 6d6}）毒素伤害并获得一级{@condition 力竭}。成功的情况下，生物受到一半伤害，并不会获得{@condition 力竭}，并且在24小时内，该生物免疫所有龙人的毒气吐息。"
+					]
+				}
+			],
+			"traitTags": [
+				"自爆"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"吐息武器",
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"I",
+				"L",
+				"O",
+				"S"
+			],
+			"damageTagsSpell": [
+				"O"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"力竭",
+				"震慑"
+			],
+			"conditionInflictSpell": [
+				"魅惑",
+				"隐形"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"savingThrowForcedSpell": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Ayik Ur",
+			"name": "阿伊克·约尔",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				],
+				"sidekickType": "战士",
+				"sidekickTags": [
+					"攻击手"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 211,
+			"level": 1,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 镶钉皮甲|PHB|镶钉皮甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d8 + 2"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 12,
+			"int": 11,
+			"wis": 13,
+			"cha": 11,
+			"save": {
+				"dex": "+5"
+			},
+			"skill": {
+				"athletics": "+2",
+				"nature": "+2",
+				"perception": "+5",
+				"stealth": "+5",
+				"survival": "+3"
+			},
+			"passive": 15,
+			"languages": [
+				"通用语"
+			],
+			"pbNote": "+2",
+			"trait": [
+				{
+					"ENG_name": "Attacker",
+					"name": "攻击手",
+					"entries": [
+						"阿伊克的所有攻击检定获得+2加值（包含在下方）。"
+					]
+				},
+				{
+					"ENG_name": "Bonus Proficiencies",
+					"name": "附赠熟练",
+					"entries": [
+						"阿伊克拥有简易武器、军用武器、盾牌以及所有护甲的熟练项。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}6 ({@damage 1d6 + 3}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Longbow",
+					"name": "长弓",
+					"entries": [
+						"{@atk rw} {@hit 7} 命中，射程150/600尺，单一目标。{@h}7（{@damage 1d8 + 3}）穿刺伤害。"
+					]
+				}
+			],
+			"variant": [
+				{
+					"ENG_name": "Ayik beyond 1st Level",
+					"name": "阿伊克（高于1级）",
+					"type": "inset",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"等级",
+								"生命值",
+								"新特性"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-2",
+								"col-8"
+							],
+							"rows": [
+								[
+									"2环",
+									"16 （掷{@dice 3d8 + 3}加3）",
+									"回气。阿伊克可以在自己回合内用一个附赠动作恢复生命值，其总值为{@dice 1d10}+他的等级。一旦他使用了该特性，他必须完成一次短休或长休才能再次使用该特性。"
+								],
+								[
+									"3环",
+									"22（{@dice 4d8 + 4}）",
+									"精通重击。阿伊克的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+								],
+								[
+									"4环",
+									"27 ({@dice 5d8 + 5})",
+									"属性值提升。阿伊克的敏捷值提高2，使其调整值提高1，因此以下数值提高1：他的护甲等级、他的敏捷豁免检定加值、他的{@skill 特技}和{@skill 隐匿}加值，以及他的武器攻击的命中和伤害加值。"
+								],
+								[
+									"5环",
+									"33 ({@dice 6d8 + 6})",
+									"熟练加值。阿伊克的熟练加值提高1，因此以下数值提高1：豁免检定和技能条目中的加值（{@skill 察觉}提高2），以及他的武器攻击的命中加值。他的被动{@skill 察觉}属性值提高2。"
+								],
+								[
+									"6th",
+									"38 （{@dice 7d8 + 7}）",
+									"额外攻击。阿伊克在自己回合内执行{@action 攻击}动作时可以发动两次攻击而非一次。"
+								],
+								[
+									"7th",
+									"44 （{@dice 8d8 + 8}）",
+									"备战。阿伊克在先攻掷骰中拥有优势。"
+								],
+								[
+									"8th",
+									"49 ({@dice 9d8 + 9})",
+									"属性值提升。阿伊克的敏捷值提高2，使其调整值提高1，因此以下数值提高1：他的护甲等级、他的敏捷豁免检定加值、他的{@skill 特技}和{@skill 隐匿}加值，以及他的武器攻击的命中和伤害加值。"
+								],
+								[
+									"9th",
+									"55 ({@dice 10d8 + 10})",
+									"熟练加值。阿伊克的熟练加值提高1，因此以下数值提高1：豁免检定和技能条目中的加值（{@skill 察觉}提高2），以及他的武器攻击的命中加值。他的被动{@skill 察觉}属性值提高2。"
+								],
+								[
+									"10th",
+									"60 ({@dice 11d8 + 11})",
+									"精通防御。阿伊克的护甲等级提高1。"
+								],
+								[
+									"11th",
+									"66（{@dice 12d8 + 12}）",
+									"不屈。阿伊克可以重掷一次失败的豁免检定，但他必须采用新的掷骰结果。一旦他使用了该特性，他必须完成一次长休才能再次使用该特性。"
+								]
+							]
+						}
+					]
+				}
+			],
+			"attachedItems": [
+				"长弓|phb",
+				"短剑|phb"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"ENG_name": "Ayik Ur (10th Level)",
+					"name": "阿伊克·约尔（10级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"阿伊克可以在自己回合内用一个附赠动作恢复生命值，其总值等于{@dice 1d10} + 他的等级。一旦他使用了该特性，他必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"阿伊克的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								},
+								{
+									"ENG_name": "Extra Attack",
+									"name": "额外攻击",
+									"entries": [
+										"阿伊克在自己回合内执行{@action 攻击}动作时可以发动两次攻击而非一次。"
+									]
+								},
+								{
+									"ENG_name": "Battle Readiness",
+									"name": "备战",
+									"entries": [
+										"阿伊克在先攻掷骰中拥有优势。"
+									]
+								},
+								{
+									"ENG_name": "Improved Defense",
+									"name": "精通防御",
+									"entries": [
+										"阿伊克的护甲等级提高1。"
+									]
+								}
+							]
+						}
+					},
+					"level": 10,
+					"ac": [
+						{
+							"ac": 18,
+							"from": [
+								"{@item 镶钉皮甲|PHB|镶钉皮甲}",
+								"精通防御"
+							]
+						}
+					],
+					"hp": {
+						"average": 60,
+						"formula": "11d8 + 11"
+					},
+					"dex": 20,
+					"save": {
+						"dex": "+9"
+					},
+					"skill": {
+						"athletics": "+4",
+						"nature": "+4",
+						"perception": "+9",
+						"stealth": "+9",
+						"survival": "+5"
+					},
+					"passive": 19,
+					"pbNote": "+4",
+					"action": [
+						{
+							"ENG_name": "Shortsword",
+							"name": "短剑",
+							"entries": [
+								"{@atk mw} {@hit 11} 命中，触及5尺，单一目标。{@h}8（{@damage 1d6 + 5}）穿刺伤害。"
+							]
+						},
+						{
+							"ENG_name": "Longbow",
+							"name": "长弓",
+							"entries": [
+								"{@atk rw} {@hit 11} 命中，射程150/600尺，单一目标。{@h}9（{@damage 1d8 + 5}）穿刺伤害。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Ayik Ur (11th Level)",
+					"name": "阿伊克（11级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"阿伊克可以在自己回合内用一个附赠动作恢复生命值，其总值等于{@dice 1d10} + 他的等级。一旦他使用了该特性，他必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"阿伊克的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								},
+								{
+									"ENG_name": "Extra Attack",
+									"name": "额外攻击",
+									"entries": [
+										"阿伊克在自己回合内执行{@action 攻击}动作时可以发动两次攻击而非一次。"
+									]
+								},
+								{
+									"ENG_name": "Battle Readiness",
+									"name": "备战",
+									"entries": [
+										"阿伊克在先攻掷骰中拥有优势。"
+									]
+								},
+								{
+									"ENG_name": "Improved Defense",
+									"name": "精通防御",
+									"entries": [
+										"阿伊克的护甲等级提高1。"
+									]
+								},
+								{
+									"ENG_name": "Indomitable",
+									"name": "不屈",
+									"entries": [
+										"阿伊克可以重掷一次失败的豁免检定，但他必须采用新的掷骰结果。一旦他使用了该特性，他必须完成一次长休才能再次使用。"
+									]
+								}
+							]
+						}
+					},
+					"level": 11,
+					"ac": [
+						{
+							"ac": 18,
+							"from": [
+								"{@item 镶钉皮甲|PHB|镶钉皮甲}",
+								"精通防御"
+							]
+						}
+					],
+					"hp": {
+						"average": 66,
+						"formula": "12d8 + 12"
+					},
+					"dex": 20,
+					"save": {
+						"dex": "+9"
+					},
+					"skill": {
+						"athletics": "+4",
+						"nature": "+4",
+						"perception": "+9",
+						"stealth": "+9",
+						"survival": "+5"
+					},
+					"passive": 19,
+					"pbNote": "+4",
+					"action": [
+						{
+							"ENG_name": "Shortsword",
+							"name": "短剑",
+							"entries": [
+								"{@atk mw} {@hit 11} 命中，触及5尺，单一目标。{@h}8（{@damage 1d6 + 5}）穿刺伤害。"
+							]
+						},
+						{
+							"ENG_name": "Longbow",
+							"name": "长弓",
+							"entries": [
+								"{@atk rw} {@hit 11} 命中，射程150/600尺，单一目标。{@h}9（{@damage 1d8 + 5}）穿刺伤害。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Ayik Ur (2nd Level)",
+					"name": "阿伊克·约尔（2环）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Second Wind",
+								"name": "回气",
+								"entries": [
+									"阿伊克可以在自己回合内用一个附赠动作恢复生命值，其总值等于{@dice 1d10} + 他的等级。一旦他使用了该特性，他必须完成一次短休或长休才能再次使用。"
+								]
+							}
+						}
+					},
+					"level": 2,
+					"hp": {
+						"average": 16,
+						"formula": "3d8 + 3"
+					},
+					"variant": null
+				},
+				{
+					"ENG_name": "Ayik Ur (3rd Level)",
+					"name": "阿伊克（3环）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"阿伊克可以在自己回合内用一个附赠动作恢复生命值，其总值等于{@dice 1d10} + 他的等级。一旦他使用了该特性，他必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"阿伊克的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								}
+							]
+						}
+					},
+					"level": 3,
+					"hp": {
+						"average": 22,
+						"formula": "4d8 + 4"
+					},
+					"variant": null
+				},
+				{
+					"ENG_name": "Ayik Ur (4th Level)",
+					"name": "阿伊克（4环）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"阿伊克可以在自己回合内用一个附赠动作恢复生命值，其总值等于{@dice 1d10} + 他的等级。一旦他使用了该特性，他必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"阿伊克的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								}
+							]
+						}
+					},
+					"level": 4,
+					"ac": [
+						{
+							"ac": 16,
+							"from": [
+								"{@item 镶钉皮甲|PHB|镶钉皮甲}"
+							]
+						}
+					],
+					"hp": {
+						"average": 27,
+						"formula": "5d8 + 5"
+					},
+					"dex": 18,
+					"save": {
+						"dex": "+6"
+					},
+					"skill": {
+						"athletics": "+2",
+						"nature": "+2",
+						"perception": "+5",
+						"stealth": "+6",
+						"survival": "+3"
+					},
+					"action": [
+						{
+							"ENG_name": "Shortsword",
+							"name": "短剑",
+							"entries": [
+								"{@atk mw} {@hit 8} 命中，触及5尺，单一目标。{@h}7（{@damage 1d6 + 4}）穿刺伤害。"
+							]
+						},
+						{
+							"ENG_name": "Longbow",
+							"name": "长弓",
+							"entries": [
+								"{@atk rw} {@hit 8}命中，射程150/600尺，单一目标。{@h}8（{@damage 1d8 + 4}）穿刺伤害。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Ayik Ur (5th Level)",
+					"name": "阿伊克（5级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"阿伊克可以在自己回合内用一个附赠动作恢复生命值，其总值等于{@dice 1d10} + 他的等级。一旦他使用了该特性，他必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"阿伊克的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								}
+							]
+						}
+					},
+					"level": 5,
+					"ac": [
+						{
+							"ac": 16,
+							"from": [
+								"{@item 镶钉皮甲|PHB|镶钉皮甲}"
+							]
+						}
+					],
+					"hp": {
+						"average": 33,
+						"formula": "6d8 + 6"
+					},
+					"dex": 18,
+					"save": {
+						"dex": "+7"
+					},
+					"skill": {
+						"athletics": "+3",
+						"nature": "+3",
+						"perception": "+7",
+						"stealth": "+7",
+						"survival": "+4"
+					},
+					"passive": 17,
+					"pbNote": "+3",
+					"action": [
+						{
+							"ENG_name": "Shortsword",
+							"name": "短剑",
+							"entries": [
+								"{@atk mw} {@hit 9} 命中，触及5尺，单一目标。{@h}7（{@damage 1d6 + 4}）穿刺伤害。"
+							]
+						},
+						{
+							"ENG_name": "Longbow",
+							"name": "长弓",
+							"entries": [
+								"{@atk rw} {@hit 9} 命中，射程 150/600 尺，单一目标。{@h}8（{@damage 1d8 + 4}）穿刺伤害。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Ayik Ur (6th Level)",
+					"name": "阿伊克·约尔（6环）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"阿伊克可以在自己回合内用一个附赠动作恢复生命值，其总值等于{@dice 1d10} + 他的等级。一旦他使用了该特性，他必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"阿伊克的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								},
+								{
+									"ENG_name": "Extra Attack",
+									"name": "额外攻击",
+									"entries": [
+										"阿伊克在自己回合内执行{@action 攻击}动作时可以发动两次攻击而非一次。"
+									]
+								}
+							]
+						}
+					},
+					"level": 6,
+					"ac": [
+						{
+							"ac": 16,
+							"from": [
+								"{@item 镶钉皮甲|PHB|镶钉皮甲}"
+							]
+						}
+					],
+					"hp": {
+						"average": 38,
+						"formula": "7d8 + 7"
+					},
+					"dex": 18,
+					"save": {
+						"dex": "+7"
+					},
+					"skill": {
+						"athletics": "+3",
+						"nature": "+3",
+						"perception": "+7",
+						"stealth": "+7",
+						"survival": "+4"
+					},
+					"passive": 17,
+					"pbNote": "+3",
+					"action": [
+						{
+							"ENG_name": "Shortsword",
+							"name": "短剑",
+							"entries": [
+								"{@atk mw} {@hit 9} 命中，触及5尺，单一目标。{@h}7（{@damage 1d6 + 4}）穿刺伤害。"
+							]
+						},
+						{
+							"ENG_name": "Longbow",
+							"name": "长弓",
+							"entries": [
+								"{@atk rw} {@hit 9} 命中，射程 150/600 尺，单一目标。{@h}8（{@damage 1d8 + 4}）穿刺伤害。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Ayik Ur (7th Level)",
+					"name": "阿伊克（7级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"阿伊克可以在自己回合内用一个附赠动作恢复生命值，其总值等于{@dice 1d10} + 他的等级。一旦他使用了该特性，他必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"阿伊克的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								},
+								{
+									"ENG_name": "Extra Attack",
+									"name": "额外攻击",
+									"entries": [
+										"阿伊克在自己回合内执行{@action 攻击}动作时可以发动两次攻击而非一次。"
+									]
+								},
+								{
+									"ENG_name": "Battle Readiness",
+									"name": "备战",
+									"entries": [
+										"阿伊克在先攻掷骰中拥有优势。"
+									]
+								}
+							]
+						}
+					},
+					"level": 7,
+					"ac": [
+						{
+							"ac": 16,
+							"from": [
+								"{@item 镶钉皮甲|PHB|镶钉皮甲}"
+							]
+						}
+					],
+					"hp": {
+						"average": 44,
+						"formula": "8d8 + 8"
+					},
+					"dex": 18,
+					"save": {
+						"dex": "+7"
+					},
+					"skill": {
+						"athletics": "+3",
+						"nature": "+3",
+						"perception": "+7",
+						"stealth": "+7",
+						"survival": "+4"
+					},
+					"passive": 17,
+					"pbNote": "+3",
+					"action": [
+						{
+							"ENG_name": "Shortsword",
+							"name": "短剑",
+							"entries": [
+								"{@atk mw} {@hit 9} 命中，触及5尺，单一目标。{@h}7（{@damage 1d6 + 4}）穿刺伤害。"
+							]
+						},
+						{
+							"ENG_name": "Longbow",
+							"name": "长弓",
+							"entries": [
+								"{@atk rw} {@hit 9} 命中，射程 150/600 尺，单一目标。{@h}8（{@damage 1d8 + 4}）穿刺伤害。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Ayik Ur (8th Level)",
+					"name": "阿伊克（8级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"阿伊克可以在自己回合内用一个附赠动作恢复生命值，其总值等于{@dice 1d10} + 他的等级。一旦他使用了该特性，他必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"阿伊克的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								},
+								{
+									"ENG_name": "Extra Attack",
+									"name": "额外攻击",
+									"entries": [
+										"阿伊克在自己回合内执行{@action 攻击}动作时可以发动两次攻击而非一次。"
+									]
+								},
+								{
+									"ENG_name": "Battle Readiness",
+									"name": "备战",
+									"entries": [
+										"阿伊克在先攻掷骰中拥有优势。"
+									]
+								}
+							]
+						}
+					},
+					"level": 8,
+					"ac": [
+						{
+							"ac": 17,
+							"from": [
+								"{@item 镶钉皮甲|PHB|镶钉皮甲}"
+							]
+						}
+					],
+					"hp": {
+						"average": 49,
+						"formula": "9d8 + 9"
+					},
+					"dex": 20,
+					"save": {
+						"dex": "+8"
+					},
+					"skill": {
+						"athletics": "+3",
+						"nature": "+3",
+						"perception": "+7",
+						"stealth": "+8",
+						"survival": "+4"
+					},
+					"passive": 17,
+					"pbNote": "+3",
+					"action": [
+						{
+							"ENG_name": "Shortsword",
+							"name": "短剑",
+							"entries": [
+								"{@atk mw} {@hit 10} 命中，触及5尺，单一目标。{@h}8（{@damage 1d6 + 5}）穿刺伤害。"
+							]
+						},
+						{
+							"ENG_name": "Longbow",
+							"name": "长弓",
+							"entries": [
+								"{@atk rw} {@hit 10} 命中，射程 150/600 尺，单一目标。{@h}9（{@damage 1d8 + 5}）穿刺伤害。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Ayik Ur (9th Level)",
+					"name": "阿伊克·约尔（9级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"阿伊克可以在自己回合内用一个附赠动作恢复生命值，其总值等于{@dice 1d10} + 他的等级。一旦他使用了该特性，他必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"阿伊克的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								},
+								{
+									"ENG_name": "Extra Attack",
+									"name": "额外攻击",
+									"entries": [
+										"阿伊克在自己回合内执行{@action 攻击}动作时可以发动两次攻击而非一次。"
+									]
+								},
+								{
+									"ENG_name": "Battle Readiness",
+									"name": "备战",
+									"entries": [
+										"阿伊克在先攻掷骰中拥有优势。"
+									]
+								}
+							]
+						}
+					},
+					"level": 9,
+					"ac": [
+						{
+							"ac": 17,
+							"from": [
+								"{@item 镶钉皮甲|PHB|镶钉皮甲}"
+							]
+						}
+					],
+					"hp": {
+						"average": 55,
+						"formula": "10d8 + 10"
+					},
+					"dex": 20,
+					"save": {
+						"dex": "+9"
+					},
+					"skill": {
+						"athletics": "+4",
+						"nature": "+4",
+						"perception": "+9",
+						"stealth": "+9",
+						"survival": "+5"
+					},
+					"passive": 19,
+					"pbNote": "+4",
+					"action": [
+						{
+							"ENG_name": "Shortsword",
+							"name": "短剑",
+							"entries": [
+								"{@atk mw} {@hit 11} 命中，触及5尺，单一目标。{@h}8（{@damage 1d6 + 5}）穿刺伤害。"
+							]
+						},
+						{
+							"ENG_name": "Longbow",
+							"name": "长弓",
+							"entries": [
+								"{@atk rw} {@hit 11} 命中，射程150/600尺，单一目标。{@h}9（{@damage 1d8 + 5}）穿刺伤害。"
+							]
+						}
+					],
+					"variant": null
+				}
+			]
+		},
+		{
+			"ENG_name": "Baaz Draconian",
+			"name": "巴兹龙人",
+			"type": "monstrosity",
+			"source": "DSotDQ",
+			"page": 197,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "4d8 + 4"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 11,
+			"con": 13,
+			"int": 8,
+			"wis": 8,
+			"cha": 10,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 9,
+			"languages": [
+				"通用语",
+				"龙语"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Controlled Fall",
+					"name": "可控坠落",
+					"entries": [
+						"当龙人坠落且并未处于{@condition 失能}状态时，它在计算坠落伤害时从中减去最多100尺高度。"
+					]
+				},
+				{
+					"ENG_name": "Death Throes",
+					"name": "焚身爆",
+					"entries": [
+						"当龙人的生命值降低为0时，它的身体变为石头并释放出石化气体。每个龙人周围5尺内的生物都必须成功通过{@dc 11}的体质豁免否则被{@condition 束缚}并开始变为石头。被{@condition 束缚}的生物必须在其下个回合结束时重复豁免。成功的情况下，该效应结束；否则该生物被{@condition 石化}1分钟。1分钟后，龙人的尸体碎作一滩尘埃。"
+					]
+				},
+				{
+					"ENG_name": "Draconic Devotion",
+					"name": "龙类忠诚",
+					"entries": [
+						"若龙人可以看见一个非敌对的龙类，则他在攻击检定上有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"龙人进行两次短剑攻击。"
+					]
+				},
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}4（{@damage 1d6 + 1}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"短剑|phb"
+			],
+			"traitTags": [
+				"自爆"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"石化",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Bakaris the Younger",
+			"name": "小巴卡里斯",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 57,
+			"_copy": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "贵族",
+						"with": "Bakaris",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Bakaris Uth Estide",
+			"name": "巴卡里斯·乌斯·埃斯泰德",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 54,
+			"_copy": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "贵族",
+						"with": "Bakaris",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Becklin Uth Viharin",
+			"name": "贝克林·钨斯·维海因",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 55,
+			"_copy": {
+				"ENG_name": "Knight",
+				"name": "骑士",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "骑士",
+						"with": "贝克琳",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Belephaion",
+			"name": "贝勒菲安",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 157,
+			"_copy": {
+				"ENG_name": "Young Blue Dragon",
+				"name": "青年蓝龙",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "龙",
+						"with": "贝勒菲安",
+						"flags": "i"
+					},
+					"action": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Alter Shape",
+							"name": "变化形体",
+							"entries": [
+								"贝勒菲安神奇地变身为一只{@creature 鹰}或一个{@creature 祭司}，同时保留他的阵营、伤害免疫、生命值、生命骰和智力、感知和魅力属性值。如果他生命值被减少到0或使用一个附赠动作来结束它，这个变形就会结束。"
+							]
+						}
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Bozak Draconian",
+			"name": "波扎克龙人",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"术士"
+				]
+			},
+			"source": "DSotDQ",
+			"page": 198,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 40,
+				"formula": "9d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 11,
+			"int": 11,
+			"wis": 10,
+			"cha": 14,
+			"save": {
+				"int": "+2",
+				"wis": "+2",
+				"cha": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"languages": [
+				"通用语",
+				"龙语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"龙人施展以下一个法术，无需任何材料成分并使用魅力作为其施法属性（法术豁免{@dc 12}）："
+					],
+					"daily": {
+						"1e": [
+							"{@spell 变巨/缩小术}",
+							"{@spell 隐形术}",
+							"{@spell 臭云术}",
+							"{@spell 蛛网术}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Death Throes",
+					"name": "焚身爆",
+					"entries": [
+						"当该龙人生命值降低为0时，它的鳞片和血肉立即枯萎，随后骨头爆炸。每个在其10尺内的生物必须成功通过{@dc 10}的敏捷豁免检定否则受到9（{@damage 2d8}）力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Glide",
+					"name": "滑翔",
+					"entries": [
+						"当龙人坠落且并未处于{@condition 失能}状态时，它在计算坠落伤害时从中减去最多100尺高度，并且每坠落1尺，它能够最多水平移动2尺距离。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"龙人进行两次三叉戟近战攻击或两次闪电放射攻击。"
+					]
+				},
+				{
+					"ENG_name": "Trident",
+					"name": "三叉戟",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及5尺或射程20/60尺，单一目标。{@h}5 ({@damage 1d6 + 2}) 点穿刺伤害，或者如果用双手进行近战攻击则为6 ({@damage 1d8 + 2}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Lightning Discharge",
+					"name": "闪电放射",
+					"entries": [
+						"{@atk rs} {@hit 4} 命中，射程60尺，单一目标。{@h}10（{@damage 3d6}）闪电伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"三叉戟|phb"
+			],
+			"traitTags": [
+				"自爆"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"L",
+				"O",
+				"P"
+			],
+			"damageTagsSpell": [
+				"F"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflictSpell": [
+				"隐形",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Captain Hask",
+			"name": "军士队长哈斯克",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 148,
+			"_copy": {
+				"ENG_name": "Aurak Draconian",
+				"name": "奥瑞克龙人",
+				"source": "DSotDQ",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "龙裔",
+						"with": "Hask",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Caradoc",
+			"name": "卡拉多克",
+			"type": "undead",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 193,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 110,
+				"formula": "20d8 + 20"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 40,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"str": 1,
+			"dex": 18,
+			"con": 12,
+			"int": 15,
+			"wis": 13,
+			"cha": 19,
+			"save": {
+				"int": "+5",
+				"wis": "+4"
+			},
+			"skill": {
+				"deception": "+7",
+				"insight": "+4",
+				"perception": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 14,
+			"resist": [
+				"强酸",
+				"火焰",
+				"闪电",
+				"雷鸣",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"寒冷",
+				"暗蚀",
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚"
+			],
+			"languages": [
+				"通用语",
+				"索兰尼亚语"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"ENG_name": "Bound Haunting",
+					"name": "受缚亡魂",
+					"entries": [
+						"卡拉多克的精魄被束缚在达加堡。当他开始回合时，若其在堡垒的墙壁外且没有用他的附身动作附在生物身上，则他必须成功进行一次{@dc 15}的魅力豁免检定否则将消失并在堡内一处未占据空间里出现。"
+					]
+				},
+				{
+					"ENG_name": "Incorporeal Movement",
+					"name": "虚体移动",
+					"entries": [
+						"卡拉多克可以如同穿过困难地形一样穿过其他生物和物件。如果他在自己的回合结束时仍处在物件内部则受到5（{@damage 1d10}）点力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Rejuvenation",
+					"name": "复生",
+					"entries": [
+						"若卡拉多克死亡，则他将在达加堡中于{@dice 2d6}天内重塑。"
+					]
+				},
+				{
+					"ENG_name": "Unusual Nature",
+					"name": "非凡本质",
+					"entries": [
+						"卡拉多克不需要空气、食物、饮水或睡眠。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"卡拉多克发动两次枯萎触击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Withering Touch",
+					"name": "枯萎触击",
+					"entries": [
+						"{@atk mw} {@hit 7} 命中，触及5尺，单一目标。{@h}15（{@damage 2d10 + 4}）暗蚀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Possession {@recharge 5}",
+					"name": "附身 {@recharge 5}",
+					"entries": [
+						"卡拉多克身边5尺内他可以看见的一名类人生物必须进行一次{@dc 15}的魅力豁免，豁免失败则被卡拉多克附身；附身完成后卡拉多克消失，目标陷入{@condition 失能}且失去对身体的控制。卡拉多克接管目标身体的控制权，但不剥夺目标的意识。卡拉多克此时只能被驱散亡灵类效应指定为目标，其他任何攻击、法术或效应都无法将其指定为目标。此时卡拉多克保留自己的阵营、智力、感知、魅力属性和他的离间低语附赠动作，以及对{@condition 魅惑}和{@condition 恐慌}的免疫。他的其他资料则与被附身生物相同，但不能获得该目标的知识、职业特性和熟练项。",
+						"附身持续到该身体的生命值降至0点、卡拉多克以一个附赠动作终止它，或者他被转变或被如{@spell 驱逐善恶}法术的效应驱赶出来。当附身终止时，卡拉多克重新出现在该身体周边5尺内一处未被占据的空间位置。目标在豁免检定成功或附身终止后的24小时里对卡拉多克的附身免疫。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Divisive Whispers",
+					"name": "离间低语",
+					"entries": [
+						"卡拉多克对60尺内的一个生物魔法性地低语。目标必须成功通过一次{@dc 15}的感知豁免，否则必须立即用自己的反应对卡拉多克指定的一个其他生物发动一次近战攻击（而若目标触及范围内没有其他生物，则目标的反应被浪费）。"
+					]
+				}
+			],
+			"traitTags": [
+				"虚体移动",
+				"复生",
+				"非凡本质"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"失能"
+			],
+			"savingThrowForced": [
+				"魅力",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Clystran",
+			"name": "克莱斯特兰",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 126,
+			"_copy": {
+				"ENG_name": "Scout",
+				"name": "斥候",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "斥候",
+						"with": "克莱斯特兰",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Cudgel Ironsmile",
+			"name": "卡卓尔·铁笑",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 58,
+			"_copy": {
+				"ENG_name": "Veteran",
+				"name": "老兵",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Hill Dwarf",
+						"name": "丘陵矮人",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "老兵",
+						"with": "坎德人",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Dalamar",
+			"name": "达拉玛",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 111,
+			"_copy": {
+				"ENG_name": "Mage",
+				"name": "魔法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔法师",
+						"with": "达拉玛",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Darrett Highwater",
+			"name": "达雷特·高水",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 59,
+			"_copy": {
+				"ENG_name": "Knight",
+				"name": "骑士",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "骑士",
+						"with": "达雷特",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Demelin",
+			"name": "德梅林",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 139,
+			"_copy": {
+				"ENG_name": "Archmage",
+				"name": "大法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "大法师",
+						"with": "德梅林",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Dracophage Subject",
+			"name": "噬龙实验体",
+			"source": "DSotDQ",
+			"page": 118,
+			"_copy": {
+				"ENG_name": "Kapak Draconian",
+				"name": "卡帕克龙人",
+				"source": "DSotDQ",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "龙人",
+						"with": "实验体"
+					}
+				}
+			},
+			"action": [
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} {@hit 5} 命中，触及5尺，单一目标。{@h}5（{@damage 1d4 + 3}）穿刺伤害加7（{@damage 2d6}）毒素伤害。若目标为类人生物，则其必须成功通过{@dc 12}的体质豁免检定否则感染疾病\u2014\u2014一个微小的史拉蟾蛋。",
+						"一个类人生物宿主一次只能携带一个史拉蟾蛋。在三个月内，蛋会移动到胸腔，孕育并形成一只史拉蟾蝌蚪。在蝌蚪出生前的24小时内，宿主会感到不适；其速度减半；并且在攻击检定、属性检定和豁免检定上具有劣势。出生时，蝌蚪会在1轮内咬穿重要器官并从宿主的胸腔钻出，在此过程中杀死宿主。",
+						"如果在该蝌蚪出现前疾病被治愈，蝌蚪就会瓦解。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"damageTags": [
+				"A",
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"DIS",
+				"MW"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Dragon Army Dragonnel",
+			"name": "龙军亚龙",
+			"type": "dragon",
+			"source": "DSotDQ",
+			"page": 201,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 胸甲具装|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 58,
+				"formula": "9d10 + 9"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 16,
+			"dex": 15,
+			"con": 12,
+			"int": 8,
+			"wis": 13,
+			"cha": 10,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"盲视 30 尺",
+				"黑暗视觉 120 尺"
+			],
+			"passive": 13,
+			"resist": [
+				"火焰"
+			],
+			"languages": [
+				"能理解通用语和龙语，但不能说话"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Flyby",
+					"name": "飞掠",
+					"entries": [
+						"四足亚龙飞出仇敌的触及范围时不会触发借机攻击。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"四足亚龙发动两次撕裂攻击。"
+					]
+				},
+				{
+					"ENG_name": "Rend",
+					"name": "撕裂",
+					"entries": [
+						"{@atk mw} {@hit 5} 命中，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）挥砍伤害外加3（{@damage 1d6}）火焰伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"飞掠"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DR"
+			],
+			"damageTags": [
+				"F",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Dragon Army Officer",
+			"name": "龙军军官",
+			"type": "humanoid",
+			"source": "DSotDQ",
+			"page": 200,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item 板条甲|PHB|板条甲}",
+						"{@item 盾牌|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d8 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 15,
+			"int": 12,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"dex": "+4",
+				"wis": "+4"
+			},
+			"skill": {
+				"athletics": "+5",
+				"perception": "+4"
+			},
+			"passive": 14,
+			"languages": [
+				"通用语",
+				"龙语"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Draconic Devotion",
+					"name": "龙类忠诚",
+					"entries": [
+						"若该军官能看到一个非敌对的龙类，则他在攻击检定上有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"军官发动两次凶残锐矛攻击并使用突击命令（若可用）。"
+					]
+				},
+				{
+					"ENG_name": "Vicious Lance",
+					"name": "凶残长枪",
+					"entries": [
+						"{@atk mw} {@hit 5} 命中，触及10尺，单一目标。{@h}8（{@damage 1d10 + 3}）穿刺伤害外加2（{@damage 1d4}）火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "Heavy Crossbow",
+					"name": "重弩",
+					"entries": [
+						"{@atk rw} {@hit 4} 命中，射程 100/400 尺，单一目标。{@h}7（{@damage 1d10 + 2}）穿刺伤害外加 5（{@damage 1d10}）火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "Assault Orders {@recharge 5}",
+					"name": "突击指令 {@recharge 5}",
+					"entries": [
+						"军官喊出命令并指定至多两名60尺内的其他生物。若目标拥有龙族血脉奉献特质并可以听到军官的声音，则目标就可以用它的反应进行一次近战攻击。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"重弩|phb",
+				"骑枪|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RCH",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Dragon Army Soldier",
+			"name": "龙军士兵",
+			"type": "humanoid",
+			"source": "DSotDQ",
+			"page": 200,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item 鳞甲|PHB}",
+						"{@item 盾牌|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "4d8 + 4"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"skill": {
+				"athletics": "+4",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"通用语",
+				"龙语"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Draconic Devotion",
+					"name": "龙类忠诚",
+					"entries": [
+						"若该士兵能看到一个非敌对的龙类，则他在攻击检定上有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"士兵发动两次长剑或标枪攻击。"
+					]
+				},
+				{
+					"ENG_name": "Longsword",
+					"name": "长剑",
+					"entries": [
+						"{@atk mw} {@hit 4}命中，触及5尺，单一目标。{@h}6（{@damage 1d8 + 2}）挥砍伤害，或用双手时7（{@damage 1d10 + 2}）挥砍伤害，外加2（{@damage 1d4}）火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "Javelin",
+					"name": "标枪",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} 命中，触及5尺或射程30/120尺，单一目标。{@h}5（{@damage 1d6 + 2}）穿刺伤害外加2（{@damage 1d4}）火焰伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"标枪|phb",
+				"长剑|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"F",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Durstan Rial",
+			"name": "杜斯坦·里亚尔",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 97,
+			"_copy": {
+				"ENG_name": "Knight",
+				"name": "骑士",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "骑士",
+						"with": "Durstan",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Duskwalker",
+			"name": "暮行者",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 150,
+			"_copy": {
+				"ENG_name": "Treant",
+				"name": "树人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "树人",
+						"with": "暮行者",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Fewmaster Gholcag",
+			"name": "少师戈尔卡格",
+			"type": "giant",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 74,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item 鳞甲|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 59,
+				"formula": "7d10 + 21"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 19,
+			"dex": 8,
+			"con": 16,
+			"int": 5,
+			"wis": 7,
+			"cha": 7,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 8,
+			"languages": [
+				"通用语",
+				"巨人语"
+			],
+			"cr": "2",
+			"action": [
+				{
+					"ENG_name": "Greatclub",
+					"name": "巨棒",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}13（{@damage 2d8 + 4}）点钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Javelin",
+					"name": "标枪",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 6}，触及5尺或射程30/120尺，单一目标。{@h}11 ({@damage 2d6 + 4}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"巨棒|phb",
+				"标枪|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Greater Death Dragon",
+			"name": "高等亡骸龙",
+			"type": "undead",
+			"source": "DSotDQ",
+			"page": 195,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 230,
+				"formula": "20d12 + 100"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 80
+			},
+			"str": 23,
+			"dex": 10,
+			"con": 20,
+			"int": 11,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"dex": "+5",
+				"wis": "+7"
+			},
+			"skill": {
+				"perception": "+7",
+				"stealth": "+5"
+			},
+			"senses": [
+				"盲视 60 尺",
+				"黑暗视觉 120 尺"
+			],
+			"passive": 17,
+			"resist": [
+				"穿刺"
+			],
+			"immune": [
+				"暗蚀",
+				"毒素"
+			],
+			"conditionImmune": [
+				"力竭",
+				"中毒"
+			],
+			"languages": [
+				"通用语",
+				"龙语"
+			],
+			"cr": "14",
+			"trait": [
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性 (3/日)",
+					"entries": [
+						"龙豁免失败时，可以将其改为豁免成功。"
+					]
+				},
+				{
+					"ENG_name": "Unusual Nature",
+					"name": "非凡本质",
+					"entries": [
+						"该龙不需要空气、食物、饮水或睡眠。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"该龙进行一次啃咬和两次爪击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} {@hit 11} 命中，触及10尺，单一目标。{@h}17（{@damage 2d10 + 6}）穿刺伤害外加4（{@damage 1d8}）暗蚀伤害。若目标是一个大型或更小的生物，则他被{@condition 受擒}（逃脱{@dc 19}）。直到此擒抱结束，目标被{@condition 束缚}，并且龙不能啃咬其他目标。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} {@hit 11} 命中，触及5尺，单一目标。{@h}10（{@damage 1d8 + 6}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Cataclysmic Breath {@recharge 5}",
+					"name": "灾变吐息 {@recharge 5}",
+					"entries": [
+						"该龙呼出一道60尺锥形的幽魂般的紫色火炎之潮。区域内的每个生物必须进行一次{@dc 18}的敏捷豁免，豁免失败受到45（{@damage 10d8}）暗蚀伤害，豁免成功则伤害减半。一个被该吐息降至0生命值的生物会死亡。此外，任何被该吐息伤害杀死的中型或更小的类人生物，以及在锥状区域内的此类生物的尸体都将变为受该龙控制的丧尸（见怪物图鉴）。丧尸在该龙的先攻行动但在该龙的回合结束后立即行动。除非有其他命令，否则丧尸会尝试杀死它们遇到的任何非亡灵生物。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"该龙进行一次爪击。"
+					]
+				},
+				{
+					"ENG_name": "Cataclysmic Rush (Costs 2 Actions)",
+					"name": "灾变疾驰（消耗2个动作）",
+					"entries": [
+						"该龙移动至多等于其飞行速度一半的距离且不会触发借机攻击，携带着其擒抱的任何生物。在此移动期间，若其进入了一个中型或更小的生物的空间，该生物受到4（{@damage 1d8}）暗蚀伤害。一个生物在一个回合内只能受到一次该伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"传奇抗性",
+				"非凡本质"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"吐息武器",
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"受擒",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Hrigg Roundrook",
+			"name": "赫里格·昂德鲁克",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"矮人"
+				],
+				"sidekickType": "施法者",
+				"sidekickTags": [
+					"医疗师"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 211,
+			"level": 1,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 半身板甲|PHB|半身板甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d8 + 2"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 14,
+			"cha": 11,
+			"save": {
+				"wis": "+4"
+			},
+			"skill": {
+				"athletics": "+4",
+				"history": "+2",
+				"medicine": "+4",
+				"perception": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 14,
+			"resist": [
+				"毒素"
+			],
+			"languages": [
+				"通用语",
+				"矮人语"
+			],
+			"pbNote": "+2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"赫里格的施法属性是感知（法术豁免{@dc 12}，法术攻击命中{@hit 4}）。他准备有以下的牧师法术："
+					],
+					"will": [
+						"{@spell 神导术}",
+						"{@spell 圣火术}"
+					],
+					"spells": {
+						"1": {
+							"slots": 2,
+							"spells": [
+								"{@spell 疗伤术}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Bonus Proficiencies",
+					"name": "附赠熟练",
+					"entries": [
+						"赫里格拥有简易武器、军用武器以及轻甲和中甲的熟练项。"
+					]
+				},
+				{
+					"ENG_name": "Dwarven Resilience",
+					"name": "矮人体魄",
+					"entries": [
+						"赫里格在进行避免或结束自身{@condition 中毒}状态的豁免检定时具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Maul",
+					"name": "巨锤",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}9（{@damage 2d6 + 2}）钝击伤害。"
+					]
+				}
+			],
+			"variant": [
+				{
+					"ENG_name": "Hrigg beyond 1st Level",
+					"name": "赫里格（高于1级）",
+					"type": "inset",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"等级",
+								"生命值",
+								"新特性"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-2",
+								"col-8"
+							],
+							"rows": [
+								[
+									"2环",
+									"16 （掷{@dice 3d8 + 3}加3）",
+									"施法。赫里格学会另一个一环法术：{@spell 祝福术}。"
+								],
+								[
+									"3环",
+									"22（{@dice 4d8 + 4}）",
+									"施法。赫里格获得一个一环法术位。他还学会另一个一环法术：{@spell 侦测善恶}。"
+								],
+								[
+									"4环",
+									"27 ({@dice 5d8 + 5})",
+									"属性值提升。赫里格的感知值提高2，使其调整值提高1，因此以下数值提高1：他的法术豁免DC和法术攻击命中加值、他的感知豁免检定加值、他的{@skill 医药}和{@skill 察觉}加值，以及他的被动{@skill 察觉}属性值。施法。赫里格学会另一个戏法：{@spell 维生术}。"
+								],
+								[
+									"5环",
+									"33 ({@dice 6d8 + 6})",
+									"熟练加值。赫里格的熟练加值提高1，因此以下数值提高1：他的法术豁免DC和法术攻击命中加值、豁免检定和技能条目中的加值，以及武器攻击命中加值。施法。赫里格获得一个一环法术位和两个2环法术位。他还学会一个2环法术：{@spell 灵体武器}。"
+								],
+								[
+									"6th",
+									"38 （{@dice 7d8 + 7}）",
+									"强力戏法。赫里格施展的戏法所造成的伤害会加上其感知调整值。"
+								],
+								[
+									"7th",
+									"44 （{@dice 8d8 + 8}）",
+									"施法。赫里格获得一个二环法术位。他还学会另一个二环法术：{@spell 次等复原术}。"
+								],
+								[
+									"8th",
+									"49 ({@dice 9d8 + 9})",
+									"属性值提升。赫里格的感知值提高2，使其调整值提高1，因此以下数值提高1：他的法术豁免DC和法术攻击命中加值、他的感知豁免检定加值、他的{@skill 医药}和{@skill 察觉}加值，以及他的被动{@skill 察觉}属性值。"
+								],
+								[
+									"9th",
+									"55 ({@dice 10d8 + 10})",
+									"熟练加值。赫里格的熟练加值提高1，因此以下数值提高1：他的法术豁免DC和法术攻击命中加值、豁免检定和技能条目中的加值，以及他的武器攻击命中加值。施法。赫里格获得两个3环法术位。他还学会一个3环法术：{@spell 希望信标}。"
+								],
+								[
+									"10th",
+									"60 ({@dice 11d8 + 11})",
+									"施法。赫里格学会另一个戏法：{@spell 奇术}。"
+								],
+								[
+									"11th",
+									"66（{@dice 12d8 + 12}）",
+									"施法。赫里格获得一个三环法术位。他还学会另一个三环法术：{@spell 灵体卫士}。"
+								]
+							]
+						}
+					]
+				}
+			],
+			"attachedItems": [
+				"巨锤|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"ENG_name": "Hrigg Roundrook (10th Level)",
+					"name": "赫里格·昂德鲁克（10级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Potent Cantrips",
+								"name": "强力戏法",
+								"entries": [
+									"赫里格对其施展的任何戏法所造成的伤害会加上其感知调整值。"
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "巨锤",
+							"items": {
+								"ENG_name": "Maul",
+								"name": "巨锤",
+								"entries": [
+									"{@atk mw} {@hit 6} 命中，触及5尺，单一目标。{@h}9（{@damage 2d6 + 2}）钝击伤害。"
+								]
+							}
+						}
+					},
+					"level": 10,
+					"hp": {
+						"average": 60,
+						"formula": "11d8 + 11"
+					},
+					"wis": 17,
+					"save": {
+						"wis": "+8"
+					},
+					"skill": {
+						"athletics": "+6",
+						"history": "+4",
+						"medicine": "+8",
+						"perception": "+8"
+					},
+					"passive": 16,
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"赫里格的施法属性是感知（法术豁免{@dc 16}，法术攻击命中{@hit 8}）。他准备有以下的牧师法术："
+							],
+							"will": [
+								"{@spell 神导术}",
+								"{@spell 圣火术}",
+								"{@spell 维生术}",
+								"{@spell 奇术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell 疗伤术}",
+										"{@spell 祝福术}",
+										"{@spell 侦测善恶}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell 灵体武器}",
+										"{@spell 次等复原术}"
+									]
+								},
+								"3": {
+									"slots": 2,
+									"spells": [
+										"{@spell 希望信标}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Hrigg Roundrook (11th Level)",
+					"name": "赫里格·昂德鲁克（11级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Potent Cantrips",
+								"name": "强力戏法",
+								"entries": [
+									"赫里格对其施展的任何戏法所造成的伤害会加上其感知调整值。"
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "巨锤",
+							"items": {
+								"ENG_name": "Maul",
+								"name": "巨锤",
+								"entries": [
+									"{@atk mw} {@hit 6} 命中，触及5尺，单一目标。{@h}9（{@damage 2d6 + 2}）钝击伤害。"
+								]
+							}
+						}
+					},
+					"level": 11,
+					"hp": {
+						"average": 66,
+						"formula": "12d8 + 12"
+					},
+					"wis": 17,
+					"save": {
+						"wis": "+8"
+					},
+					"skill": {
+						"athletics": "+6",
+						"history": "+4",
+						"medicine": "+8",
+						"perception": "+8"
+					},
+					"passive": 16,
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"赫里格的施法属性是感知（法术豁免{@dc 16}，法术攻击命中{@hit 8}）。他准备有以下的牧师法术："
+							],
+							"will": [
+								"{@spell 神导术}",
+								"{@spell 圣火术}",
+								"{@spell 维生术}",
+								"{@spell 奇术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell 疗伤术}",
+										"{@spell 祝福术}",
+										"{@spell 侦测善恶}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell 灵体武器}",
+										"{@spell 次等复原术}"
+									]
+								},
+								"3": {
+									"slots": 3,
+									"spells": [
+										"{@spell 希望信标}",
+										"{@spell 灵体卫士}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Hrigg Roundrook (2nd Level)",
+					"name": "赫里格·昂德鲁克（2级）",
+					"source": "DSotDQ",
+					"level": 2,
+					"hp": {
+						"average": 16,
+						"formula": "3d8 + 3"
+					},
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"赫里格的施法属性是感知（法术豁免{@dc 12}，法术攻击命中{@hit 4}）。他准备有以下的牧师法术："
+							],
+							"will": [
+								"{@spell 神导术}",
+								"{@spell 圣火术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 2,
+									"spells": [
+										"{@spell 疗伤术}",
+										"{@spell 祝福术}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Hrigg Roundrook (3rd Level)",
+					"name": "赫里格·昂德鲁克（3级）",
+					"source": "DSotDQ",
+					"level": 3,
+					"hp": {
+						"average": 22,
+						"formula": "4d8 + 4"
+					},
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"赫里格的施法属性是感知（法术豁免{@dc 12}，法术攻击命中{@hit 4}）。他准备有以下的牧师法术："
+							],
+							"will": [
+								"{@spell 神导术}",
+								"{@spell 圣火术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell 疗伤术}",
+										"{@spell 祝福术}",
+										"{@spell 侦测善恶}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Hrigg Roundrook (4th Level)",
+					"name": "赫里格·昂德鲁克（4级）",
+					"source": "DSotDQ",
+					"level": 4,
+					"hp": {
+						"average": 27,
+						"formula": "5d8 + 5"
+					},
+					"wis": 15,
+					"save": {
+						"wis": "+5"
+					},
+					"skill": {
+						"athletics": "+4",
+						"history": "+2",
+						"medicine": "+5",
+						"perception": "+5"
+					},
+					"passive": 15,
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"赫里格的施法属性是感知（法术豁免{@dc 13}，法术攻击命中{@hit 5}）。他准备有以下的牧师法术："
+							],
+							"will": [
+								"{@spell 神导术}",
+								"{@spell 圣火术}",
+								"{@spell 维生术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell 疗伤术}",
+										"{@spell 祝福术}",
+										"{@spell 侦测善恶}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Hrigg Roundrook (5th Level)",
+					"name": "赫里格·昂德鲁克（5级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"action": {
+							"mode": "replaceArr",
+							"replace": "巨锤",
+							"items": {
+								"ENG_name": "Maul",
+								"name": "巨锤",
+								"entries": [
+									"{@atk mw} {@hit 5} 命中，触及5尺，单一目标。{@h}9（{@damage 2d6 + 2}）钝击伤害。"
+								]
+							}
+						}
+					},
+					"level": 5,
+					"hp": {
+						"average": 33,
+						"formula": "6d8 + 6"
+					},
+					"wis": 15,
+					"save": {
+						"wis": "+6"
+					},
+					"skill": {
+						"athletics": "+5",
+						"history": "+3",
+						"medicine": "+6",
+						"perception": "+6"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"赫里格的施法属性是感知（法术豁免{@dc 14}，法术攻击命中{@hit 6}）。他准备有以下的牧师法术："
+							],
+							"will": [
+								"{@spell 神导术}",
+								"{@spell 圣火术}",
+								"{@spell 维生术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell 疗伤术}",
+										"{@spell 祝福术}",
+										"{@spell 侦测善恶}"
+									]
+								},
+								"2": {
+									"slots": 2,
+									"spells": [
+										"{@spell 灵体武器}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Hrigg Roundrook (6th Level)",
+					"name": "赫里格·昂德鲁克（6级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Potent Cantrips",
+								"name": "强力戏法",
+								"entries": [
+									"赫里格对其施展的任何戏法所造成的伤害会加上其感知调整值。"
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "巨锤",
+							"items": {
+								"ENG_name": "Maul",
+								"name": "巨锤",
+								"entries": [
+									"{@atk mw} {@hit 5} 命中，触及5尺，单一目标。{@h}9（{@damage 2d6 + 2}）钝击伤害。"
+								]
+							}
+						}
+					},
+					"level": 6,
+					"hp": {
+						"average": 38,
+						"formula": "7d8 + 7"
+					},
+					"wis": 15,
+					"save": {
+						"wis": "+6"
+					},
+					"skill": {
+						"athletics": "+5",
+						"history": "+3",
+						"medicine": "+6",
+						"perception": "+6"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"赫里格的施法属性是感知（法术豁免{@dc 14}，法术攻击命中{@hit 6}）。他准备有以下的牧师法术："
+							],
+							"will": [
+								"{@spell 神导术}",
+								"{@spell 圣火术}",
+								"{@spell 维生术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell 疗伤术}",
+										"{@spell 祝福术}",
+										"{@spell 侦测善恶}"
+									]
+								},
+								"2": {
+									"slots": 2,
+									"spells": [
+										"{@spell 灵体武器}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Hrigg Roundrook (7th Level)",
+					"name": "赫里格·昂德鲁克（7级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Potent Cantrips",
+								"name": "强力戏法",
+								"entries": [
+									"赫里格对其施展的任何戏法所造成的伤害会加上其感知调整值。"
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "巨锤",
+							"items": {
+								"ENG_name": "Maul",
+								"name": "巨锤",
+								"entries": [
+									"{@atk mw} {@hit 5} 命中，触及5尺，单一目标。{@h}9（{@damage 2d6 + 2}）钝击伤害。"
+								]
+							}
+						}
+					},
+					"level": 7,
+					"hp": {
+						"average": 44,
+						"formula": "8d8 + 8"
+					},
+					"wis": 15,
+					"save": {
+						"wis": "+6"
+					},
+					"skill": {
+						"athletics": "+5",
+						"history": "+3",
+						"medicine": "+6",
+						"perception": "+6"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"赫里格的施法属性是感知（法术豁免{@dc 14}，法术攻击命中{@hit 6}）。他准备有以下的牧师法术："
+							],
+							"will": [
+								"{@spell 神导术}",
+								"{@spell 圣火术}",
+								"{@spell 维生术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell 疗伤术}",
+										"{@spell 祝福术}",
+										"{@spell 侦测善恶}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell 灵体武器}",
+										"{@spell 次等复原术}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Hrigg Roundrook (8th Level)",
+					"name": "赫里格·昂德鲁克（8级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Potent Cantrips",
+								"name": "强力戏法",
+								"entries": [
+									"赫里格对其施展的任何戏法所造成的伤害会加上其感知调整值。"
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "巨锤",
+							"items": {
+								"ENG_name": "Maul",
+								"name": "巨锤",
+								"entries": [
+									"{@atk mw} {@hit 5} 命中，触及5尺，单一目标。{@h}9（{@damage 2d6 + 2}）钝击伤害。"
+								]
+							}
+						}
+					},
+					"level": 8,
+					"hp": {
+						"average": 49,
+						"formula": "9d8 + 9"
+					},
+					"wis": 17,
+					"save": {
+						"wis": "+7"
+					},
+					"skill": {
+						"athletics": "+5",
+						"history": "+3",
+						"medicine": "+7",
+						"perception": "+7"
+					},
+					"passive": 16,
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"赫里格的施法属性是感知（法术豁免{@dc 15}，法术攻击命中{@hit 7}）。他准备有以下的牧师法术："
+							],
+							"will": [
+								"{@spell 神导术}",
+								"{@spell 圣火术}",
+								"{@spell 维生术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell 疗伤术}",
+										"{@spell 祝福术}",
+										"{@spell 侦测善恶}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell 灵体武器}",
+										"{@spell 次等复原术}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Hrigg Roundrook (9th Level)",
+					"name": "赫里格·昂德鲁克（9级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Potent Cantrips",
+								"name": "强力戏法",
+								"entries": [
+									"赫里格对其施展的任何戏法所造成的伤害会加上其感知调整值。"
+								]
+							}
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "巨锤",
+							"items": {
+								"ENG_name": "Maul",
+								"name": "巨锤",
+								"entries": [
+									"{@atk mw} {@hit 6} 命中，触及5尺，单一目标。{@h}9（{@damage 2d6 + 2}）钝击伤害。"
+								]
+							}
+						}
+					},
+					"level": 9,
+					"hp": {
+						"average": 55,
+						"formula": "10d8 + 10"
+					},
+					"wis": 17,
+					"save": {
+						"wis": "+8"
+					},
+					"skill": {
+						"athletics": "+6",
+						"history": "+4",
+						"medicine": "+8",
+						"perception": "+8"
+					},
+					"passive": 16,
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"赫里格的施法属性是感知（法术豁免{@dc 16}，法术攻击命中{@hit 8}）。他准备有以下的牧师法术："
+							],
+							"will": [
+								"{@spell 神导术}",
+								"{@spell 圣火术}",
+								"{@spell 维生术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell 疗伤术}",
+										"{@spell 祝福术}",
+										"{@spell 侦测善恶}"
+									]
+								},
+								"2": {
+									"slots": 3,
+									"spells": [
+										"{@spell 灵体武器}",
+										"{@spell 次等复原术}"
+									]
+								},
+								"3": {
+									"slots": 2,
+									"spells": [
+										"{@spell 希望信标}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				}
+			]
+		},
+		{
+			"ENG_name": "Hulking Shadow",
+			"name": "魁梧幽影",
+			"type": "undead",
+			"source": "DSotDQ",
+			"page": 174,
+			"_copy": {
+				"ENG_name": "Clay Golem",
+				"name": "粘土魔像",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔像",
+						"with": "幽影"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Ignia",
+			"name": "伊格尼亚",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 184,
+			"_copy": {
+				"ENG_name": "Young Red Dragon",
+				"name": "青年红龙",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "龙",
+						"with": "伊格尼亚",
+						"flags": "i"
+					}
+				}
+			},
+			"size": [
+				"H"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Incomplete Dragon Skeleton",
+			"name": "残缺龙类骷髅",
+			"source": "DSotDQ",
+			"page": 138,
+			"_copy": {
+				"ENG_name": "Bone Naga (Spirit)",
+				"name": "骸骨纳迦(精魂)",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "纳迦",
+						"with": "骷髅"
+					}
+				}
+			},
+			"spellcasting": null,
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Iriad",
+			"name": "艾芮亚德",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				],
+				"sidekickType": "专家"
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 212,
+			"level": 1,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item 皮甲|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d8 + 2"
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 12,
+			"int": 11,
+			"wis": 13,
+			"cha": 11,
+			"save": {
+				"dex": "+4"
+			},
+			"skill": {
+				"acrobatics": "+5",
+				"athletics": "+2",
+				"investigation": "+2",
+				"nature": "+2",
+				"perception": "+5",
+				"stealth": "+5",
+				"survival": "+3"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"languages": [
+				"通用语",
+				"精灵语"
+			],
+			"pbNote": "+2",
+			"trait": [
+				{
+					"ENG_name": "Bonus Proficiencies",
+					"name": "附赠熟练",
+					"entries": [
+						"艾芮亚德拥有简易武器、轻甲、{@item 制图工具|PHB}以及{@item 木雕工具|PHB}的熟练项。"
+					]
+				},
+				{
+					"ENG_name": "Fey Ancestry",
+					"name": "妖精血统",
+					"entries": [
+						"艾芮亚德在进行对抗或结束作用于她自身的{@condition 魅惑}状态的豁免检定时具有优势，并且魔法无法使她陷入睡眠。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Poison Dagger",
+					"name": "剧毒匕首",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} 命中，触及5尺或射程20/60尺，单一目标。{@h}5（{@damage 1d4 + 3}）穿刺伤害外加3（{@damage 1d6}）毒素伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Helpful",
+					"name": "乐于助人",
+					"entries": [
+						"艾芮亚德进行{@action 协助}动作。"
+					]
+				}
+			],
+			"variant": [
+				{
+					"ENG_name": "Iriad beyond 1st Level",
+					"name": "艾芮亚德高于1级",
+					"type": "inset",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"等级",
+								"生命值",
+								"新特性"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-2",
+								"col-8"
+							],
+							"rows": [
+								[
+									"2环",
+									"16 （掷{@dice 3d8 + 3}加3）",
+									"灵巧动作。在战斗中，艾芮亚德可以在她自己的回合用附赠动作执行{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。"
+								],
+								[
+									"3环",
+									"22（{@dice 4d8 + 4}）",
+									"专精。艾芮亚德在进行使用{@skill 隐匿}或{@skill 求生}的任何属性检定时，其熟练加值翻倍。"
+								],
+								[
+									"4环",
+									"27 ({@dice 5d8 + 5})",
+									"属性值提升。艾芮亚德的敏捷值提高2，使其调整值提高1，因此以下数值提高1：她的护甲等级、她的敏捷豁免检定加值、她的{@skill 隐匿}加值，以及她的武器攻击的命中和伤害加值。"
+								],
+								[
+									"5环",
+									"33 ({@dice 6d8 + 6})",
+									"熟练加值。艾芮亚德的熟练加值提高1，因此在其数据卡中做出以下调整：在豁免检定和技能条目中的加值提高1（{@skill 察觉}、{@skill 隐匿}和{@skill 求生}则提高2）；她的被动{@skill 察觉}属性值提高2；她的武器攻击命中加值提高1。"
+								],
+								[
+									"6th",
+									"38 （{@dice 7d8 + 7}）",
+									"协同攻击。当艾芮亚德用好帮手特性协助一位盟友攻击一个生物时，目标可以距她最多30尺远，并且她可以在本回合结束前下次命中该生物时额外造成{@dice 2d6}伤害。该额外伤害类型与造成它的攻击伤害类型相同。"
+								],
+								[
+									"7th",
+									"44 （{@dice 8d8 + 8}）",
+									"反射闪避。当艾芮亚德需要通过敏捷豁免来使伤害减半时，若她豁免成功将不再受到伤害，豁免失败则只受一半伤害。艾芮亚德陷入{@condition 失能}状态时无法使用该特性。"
+								],
+								[
+									"8th",
+									"49 ({@dice 9d8 + 9})",
+									"属性值提升。艾芮亚德的力量和感知属性值均提高1，其调整值也提高1，因此以下数值提高1：她的{@skill 运动}、{@skill 察觉}和{@skill 求生}加值以及她的被动{@skill 察觉}。"
+								],
+								[
+									"9th",
+									"55 ({@dice 10d8 + 10})",
+									"熟练加值。艾芮亚德的熟练加值提高1，因此在其数据卡中做出以下调整：在豁免检定和技能条目中的加值提高1（{@skill 察觉}、{@skill 隐匿}和{@skill 求生}则提高2）；她的被动{@skill 察觉}属性值提高2；她的武器攻击命中加值提高1。"
+								],
+								[
+									"10th",
+									"60 ({@dice 11d8 + 11})",
+									"属性值提升。艾芮亚德的敏捷值提高2，使其调整值提高1，因此以下数值提高1：她的护甲等级、她的敏捷豁免检定加值、她的{@skill 隐匿}加值，以及她的武器攻击的命中和伤害加值。"
+								],
+								[
+									"11th",
+									"66（{@dice 12d8 + 12}）",
+									"鼓舞协助。当艾芮亚德采取{@action 协助}动作时，受到协助的生物同时获得一枚{@dice 1d6}加值加在{@dice d20}掷骰上。如果该掷骰是攻击检定，该生物可以放弃在攻击检定上加上加值，之后，如果该攻击命中，该生物可以将加值加到对一个目标的攻击所造成的伤害掷骰上。"
+								]
+							]
+						}
+					]
+				}
+			],
+			"traitTags": [
+				"妖精血统"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"ENG_name": "Iriad (10th Level)",
+					"name": "艾芮亚德（10级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Expertise",
+									"name": "专精",
+									"entries": [
+										"艾芮亚德的熟练加值在她进行使用{@skill 隐匿}或{@skill 求生}的任何属性检定时翻倍。"
+									]
+								},
+								{
+									"ENG_name": "Coordinated Strike",
+									"name": "协同攻击",
+									"entries": [
+										"当艾芮亚德用好帮手特性协助一位盟友攻击一个生物时，攻击目标可以距艾芮亚德最多30尺远，她可以在本回合结束前下次命中该生物时额外造成{@damage 2d6}伤害。该额外伤害类型与造成它的攻击伤害类型相同。"
+									]
+								},
+								{
+									"ENG_name": "Evasion",
+									"name": "反射闪避",
+									"entries": [
+										"当艾芮亚德受到一个允许她进行敏捷豁免检定来使伤害减半的效果时，若她豁免成功将不再受到伤害，豁免失败则只受到一半伤害。艾芮亚德在{@condition 失能}状态下无法从该特性中获益。"
+									]
+								}
+							]
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Cunning Action",
+								"name": "灵巧动作",
+								"entries": [
+									"在战斗中艾芮亚德的回合，她可以用附赠动作执行{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。"
+								]
+							}
+						}
+					},
+					"level": 10,
+					"ac": [
+						{
+							"ac": 16,
+							"from": [
+								"{@item 皮甲|PHB}"
+							]
+						}
+					],
+					"hp": {
+						"average": 60,
+						"formula": "11d8 + 11"
+					},
+					"str": 12,
+					"dex": 20,
+					"wis": 14,
+					"save": {
+						"dex": "+8"
+					},
+					"skill": {
+						"acrobatics": "+7",
+						"athletics": "+5",
+						"investigation": "+4",
+						"nature": "+4",
+						"perception": "+10",
+						"stealth": "+13",
+						"survival": "+10"
+					},
+					"passive": 18,
+					"pbNote": "+4",
+					"action": [
+						{
+							"ENG_name": "Poison Dagger",
+							"name": "剧毒匕首",
+							"entries": [
+								"{@atk mw,rw} {@hit 9} 命中，触及5尺或范围20/60尺，单一目标。{@h}7（{@damage 1d4 + 5}）穿刺伤害外加3（{@damage 1d6}）毒素伤害。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Iriad (11th Level)",
+					"name": "艾芮亚德（11级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Expertise",
+									"name": "专精",
+									"entries": [
+										"艾芮亚德的熟练加值在她进行使用{@skill 隐匿}或{@skill 求生}的任何属性检定时翻倍。"
+									]
+								},
+								{
+									"ENG_name": "Coordinated Strike",
+									"name": "协同攻击",
+									"entries": [
+										"当艾芮亚德用好帮手特性协助一位盟友攻击一个生物时，攻击目标可以距艾芮亚德最多30尺远，她可以在本回合结束前下次命中该生物时额外造成{@damage 2d6}伤害。该额外伤害类型与造成它的攻击伤害类型相同。"
+									]
+								},
+								{
+									"ENG_name": "Evasion",
+									"name": "反射闪避",
+									"entries": [
+										"当艾芮亚德受到一个允许她进行敏捷豁免检定来使伤害减半的效果时，若她豁免成功将不再受到伤害，豁免失败则只受到一半伤害。艾芮亚德在{@condition 失能}状态下无法从该特性中获益。"
+									]
+								},
+								{
+									"ENG_name": "Inspiring Help",
+									"name": "鼓舞协助",
+									"entries": [
+										"当艾芮亚德采取{@action 协助}动作时，受到协助的生物同时获得一枚{@dice 1d6}加值加到{@dice d20}掷骰上。如果该掷骰是攻击检定，该生物可以放弃在攻击检定上加上加值，之后，如果该攻击命中，受到协助的生物可以将加值加到对一个目标的攻击所造成的伤害掷骰上。"
+									]
+								}
+							]
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Cunning Action",
+								"name": "灵巧动作",
+								"entries": [
+									"在战斗中艾芮亚德的回合，她可以用附赠动作执行{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。"
+								]
+							}
+						}
+					},
+					"level": 11,
+					"ac": [
+						{
+							"ac": 16,
+							"from": [
+								"{@item 皮甲|PHB}"
+							]
+						}
+					],
+					"hp": {
+						"average": 66,
+						"formula": "12d8 + 12"
+					},
+					"str": 12,
+					"dex": 20,
+					"wis": 14,
+					"save": {
+						"dex": "+8"
+					},
+					"skill": {
+						"acrobatics": "+7",
+						"athletics": "+5",
+						"investigation": "+4",
+						"nature": "+4",
+						"perception": "+10",
+						"stealth": "+13",
+						"survival": "+10"
+					},
+					"passive": 18,
+					"pbNote": "+4",
+					"action": [
+						{
+							"ENG_name": "Poison Dagger",
+							"name": "剧毒匕首",
+							"entries": [
+								"{@atk mw,rw} {@hit 9} 命中，触及5尺或范围20/60尺，单一目标。{@h}7（{@damage 1d4 + 5}）穿刺伤害外加3（{@damage 1d6}）毒素伤害。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Iriad (2nd Level)",
+					"name": "艾芮亚德（2环）",
+					"source": "DSotDQ",
+					"_mod": {
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Cunning Action",
+								"name": "灵巧动作",
+								"entries": [
+									"在战斗中艾芮亚德的回合，她可以用附赠动作执行{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。"
+								]
+							}
+						}
+					},
+					"level": 2,
+					"hp": {
+						"average": 16,
+						"formula": "3d8 + 3"
+					},
+					"variant": null
+				},
+				{
+					"ENG_name": "Iriad (3rd Level)",
+					"name": "艾芮亚德（3环）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Expertise",
+								"name": "专精",
+								"entries": [
+									"艾芮亚德的熟练加值在她进行使用{@skill 隐匿}或{@skill 求生}的任何属性检定时翻倍。"
+								]
+							}
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Cunning Action",
+								"name": "灵巧动作",
+								"entries": [
+									"在战斗中艾芮亚德的回合，她可以用附赠动作执行{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。"
+								]
+							}
+						}
+					},
+					"level": 3,
+					"hp": {
+						"average": 22,
+						"formula": "4d8 + 4"
+					},
+					"skill": {
+						"acrobatics": "+5",
+						"athletics": "+2",
+						"investigation": "+2",
+						"nature": "+2",
+						"perception": "+5",
+						"stealth": "+7",
+						"survival": "+5"
+					},
+					"variant": null
+				},
+				{
+					"ENG_name": "Iriad (4th Level)",
+					"name": "艾芮亚德（4环）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Expertise",
+								"name": "专精",
+								"entries": [
+									"艾芮亚德的熟练加值在她进行使用{@skill 隐匿}或{@skill 求生}的任何属性检定时翻倍。"
+								]
+							}
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Cunning Action",
+								"name": "灵巧动作",
+								"entries": [
+									"在战斗中艾芮亚德的回合，她可以用附赠动作执行{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。"
+								]
+							}
+						}
+					},
+					"level": 4,
+					"ac": [
+						{
+							"ac": 15,
+							"from": [
+								"{@item 皮甲|PHB}"
+							]
+						}
+					],
+					"hp": {
+						"average": 27,
+						"formula": "5d8 + 5"
+					},
+					"dex": 18,
+					"save": {
+						"dex": "+5"
+					},
+					"skill": {
+						"acrobatics": "+5",
+						"athletics": "+2",
+						"investigation": "+2",
+						"nature": "+2",
+						"perception": "+5",
+						"stealth": "+8",
+						"survival": "+5"
+					},
+					"action": [
+						{
+							"ENG_name": "Poison Dagger",
+							"name": "剧毒匕首",
+							"entries": [
+								"{@atk mw,rw} {@hit 6}命中，触及5尺或射程20/60尺，单一目标。{@h}6（{@damage 1d4 + 4}）穿刺伤害外加3（{@damage 1d6}）毒素伤害。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Iriad (5th Level)",
+					"name": "艾芮亚德（5级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Expertise",
+								"name": "专精",
+								"entries": [
+									"艾芮亚德的熟练加值在她进行使用{@skill 隐匿}或{@skill 求生}的任何属性检定时翻倍。"
+								]
+							}
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Cunning Action",
+								"name": "灵巧动作",
+								"entries": [
+									"在战斗中艾芮亚德的回合，她可以用附赠动作执行{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。"
+								]
+							}
+						}
+					},
+					"level": 5,
+					"ac": [
+						{
+							"ac": 15,
+							"from": [
+								"{@item 皮甲|PHB}"
+							]
+						}
+					],
+					"hp": {
+						"average": 33,
+						"formula": "6d8 + 6"
+					},
+					"dex": 18,
+					"save": {
+						"dex": "+6"
+					},
+					"skill": {
+						"acrobatics": "+6",
+						"athletics": "+3",
+						"investigation": "+3",
+						"nature": "+3",
+						"perception": "+7",
+						"stealth": "+10",
+						"survival": "+7"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"action": [
+						{
+							"ENG_name": "Poison Dagger",
+							"name": "剧毒匕首",
+							"entries": [
+								"{@atk mw,rw} {@hit 7}命中，触及5尺或射程20/60尺，单一目标。{@h}6（{@damage 1d4 + 4}）穿刺伤害外加3（{@damage 1d6}）毒素伤害。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Iriad (6th Level)",
+					"name": "艾芮亚德（6环）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Expertise",
+									"name": "专精",
+									"entries": [
+										"艾芮亚德的熟练加值在她进行使用{@skill 隐匿}或{@skill 求生}的任何属性检定时翻倍。"
+									]
+								},
+								{
+									"ENG_name": "Coordinated Strike",
+									"name": "协同攻击",
+									"entries": [
+										"当艾芮亚德用好帮手特性协助一位盟友攻击一个生物时，攻击目标可以距艾芮亚德最多30尺远，她可以在本回合结束前下次命中该生物时额外造成{@damage 2d6}伤害。该额外伤害类型与造成它的攻击伤害类型相同。"
+									]
+								}
+							]
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Cunning Action",
+								"name": "灵巧动作",
+								"entries": [
+									"在战斗中艾芮亚德的回合，她可以用附赠动作执行{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。"
+								]
+							}
+						}
+					},
+					"level": 6,
+					"ac": [
+						{
+							"ac": 15,
+							"from": [
+								"{@item 皮甲|PHB}"
+							]
+						}
+					],
+					"hp": {
+						"average": 38,
+						"formula": "7d8 + 7"
+					},
+					"dex": 18,
+					"save": {
+						"dex": "+6"
+					},
+					"skill": {
+						"acrobatics": "+6",
+						"athletics": "+3",
+						"investigation": "+3",
+						"nature": "+3",
+						"perception": "+7",
+						"stealth": "+10",
+						"survival": "+7"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"action": [
+						{
+							"ENG_name": "Poison Dagger",
+							"name": "剧毒匕首",
+							"entries": [
+								"{@atk mw,rw} {@hit 7}命中，触及5尺或射程20/60尺，单一目标。{@h}6（{@damage 1d4 + 4}）穿刺伤害外加3（{@damage 1d6}）毒素伤害。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Iriad (7th Level)",
+					"name": "艾芮亚德（7级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Expertise",
+									"name": "专精",
+									"entries": [
+										"艾芮亚德的熟练加值在她进行使用{@skill 隐匿}或{@skill 求生}的任何属性检定时翻倍。"
+									]
+								},
+								{
+									"ENG_name": "Coordinated Strike",
+									"name": "协同攻击",
+									"entries": [
+										"当艾芮亚德用好帮手特性协助一位盟友攻击一个生物时，攻击目标可以距艾芮亚德最多30尺远，她可以在本回合结束前下次命中该生物时额外造成{@damage 2d6}伤害。该额外伤害类型与造成它的攻击伤害类型相同。"
+									]
+								},
+								{
+									"ENG_name": "Evasion",
+									"name": "反射闪避",
+									"entries": [
+										"当艾芮亚德受到一个允许她进行敏捷豁免检定来使伤害减半的效果时，若她豁免成功将不再受到伤害，豁免失败则只受到一半伤害。艾芮亚德在{@condition 失能}状态下无法从该特性中获益。"
+									]
+								}
+							]
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Cunning Action",
+								"name": "灵巧动作",
+								"entries": [
+									"在战斗中艾芮亚德的回合，她可以用附赠动作执行{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。"
+								]
+							}
+						}
+					},
+					"level": 7,
+					"ac": [
+						{
+							"ac": 15,
+							"from": [
+								"{@item 皮甲|PHB}"
+							]
+						}
+					],
+					"hp": {
+						"average": 44,
+						"formula": "8d8 + 8"
+					},
+					"dex": 18,
+					"save": {
+						"dex": "+6"
+					},
+					"skill": {
+						"acrobatics": "+6",
+						"athletics": "+3",
+						"investigation": "+3",
+						"nature": "+3",
+						"perception": "+7",
+						"stealth": "+10",
+						"survival": "+7"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"action": [
+						{
+							"ENG_name": "Poison Dagger",
+							"name": "剧毒匕首",
+							"entries": [
+								"{@atk mw,rw} {@hit 7}命中，触及5尺或射程20/60尺，单一目标。{@h}6（{@damage 1d4 + 4}）穿刺伤害外加3（{@damage 1d6}）毒素伤害。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Iriad (8th Level)",
+					"name": "艾芮亚德（8级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Expertise",
+									"name": "专精",
+									"entries": [
+										"艾芮亚德的熟练加值在她进行使用{@skill 隐匿}或{@skill 求生}的任何属性检定时翻倍。"
+									]
+								},
+								{
+									"ENG_name": "Coordinated Strike",
+									"name": "协同攻击",
+									"entries": [
+										"当艾芮亚德用好帮手特性协助一位盟友攻击一个生物时，攻击目标可以距艾芮亚德最多30尺远，她可以在本回合结束前下次命中该生物时额外造成{@damage 2d6}伤害。该额外伤害类型与造成它的攻击伤害类型相同。"
+									]
+								},
+								{
+									"ENG_name": "Evasion",
+									"name": "反射闪避",
+									"entries": [
+										"当艾芮亚德受到一个允许她进行敏捷豁免检定来使伤害减半的效果时，若她豁免成功将不再受到伤害，豁免失败则只受到一半伤害。艾芮亚德在{@condition 失能}状态下无法从该特性中获益。"
+									]
+								}
+							]
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Cunning Action",
+								"name": "灵巧动作",
+								"entries": [
+									"在战斗中艾芮亚德的回合，她可以用附赠动作执行{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。"
+								]
+							}
+						}
+					},
+					"level": 8,
+					"ac": [
+						{
+							"ac": 15,
+							"from": [
+								"{@item 皮甲|PHB}"
+							]
+						}
+					],
+					"hp": {
+						"average": 49,
+						"formula": "9d8 + 9"
+					},
+					"str": 12,
+					"dex": 18,
+					"wis": 14,
+					"save": {
+						"dex": "+6"
+					},
+					"skill": {
+						"acrobatics": "+6",
+						"athletics": "+4",
+						"investigation": "+3",
+						"nature": "+3",
+						"perception": "+8",
+						"stealth": "+10",
+						"survival": "+8"
+					},
+					"passive": 16,
+					"pbNote": "+3",
+					"action": [
+						{
+							"ENG_name": "Poison Dagger",
+							"name": "剧毒匕首",
+							"entries": [
+								"{@atk mw,rw} {@hit 7}命中，触及5尺或射程20/60尺，单一目标。{@h}6（{@damage 1d4 + 4}）穿刺伤害外加3（{@damage 1d6}）毒素伤害。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Iriad (9th Level)",
+					"name": "艾芮亚德（9级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Expertise",
+									"name": "专精",
+									"entries": [
+										"艾芮亚德的熟练加值在她进行使用{@skill 隐匿}或{@skill 求生}的任何属性检定时翻倍。"
+									]
+								},
+								{
+									"ENG_name": "Coordinated Strike",
+									"name": "协同攻击",
+									"entries": [
+										"当艾芮亚德用好帮手特性协助一位盟友攻击一个生物时，攻击目标可以距艾芮亚德最多30尺远，她可以在本回合结束前下次命中该生物时额外造成{@damage 2d6}伤害。该额外伤害类型与造成它的攻击伤害类型相同。"
+									]
+								},
+								{
+									"ENG_name": "Evasion",
+									"name": "反射闪避",
+									"entries": [
+										"当艾芮亚德受到一个允许她进行敏捷豁免检定来使伤害减半的效果时，若她豁免成功将不再受到伤害，豁免失败则只受到一半伤害。艾芮亚德在{@condition 失能}状态下无法从该特性中获益。"
+									]
+								}
+							]
+						},
+						"bonus": {
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Cunning Action",
+								"name": "灵巧动作",
+								"entries": [
+									"在战斗中艾芮亚德的回合，她可以用附赠动作执行{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。"
+								]
+							}
+						}
+					},
+					"level": 9,
+					"ac": [
+						{
+							"ac": 15,
+							"from": [
+								"{@item 皮甲|PHB}"
+							]
+						}
+					],
+					"hp": {
+						"average": 55,
+						"formula": "10d8 + 10"
+					},
+					"str": 12,
+					"dex": 18,
+					"wis": 14,
+					"save": {
+						"dex": "+7"
+					},
+					"skill": {
+						"acrobatics": "+7",
+						"athletics": "+5",
+						"investigation": "+4",
+						"nature": "+4",
+						"perception": "+10",
+						"stealth": "+12",
+						"survival": "+10"
+					},
+					"passive": 18,
+					"pbNote": "+4",
+					"action": [
+						{
+							"ENG_name": "Poison Dagger",
+							"name": "剧毒匕首",
+							"entries": [
+								"{@atk mw,rw} {@hit 8} 命中，触及5尺或射程20/60尺，单一目标。{@h}6（{@damage 1d4 + 4}）穿刺伤害外加3（{@damage 1d6}）毒素伤害。"
+							]
+						}
+					],
+					"variant": null
+				}
+			]
+		},
+		{
+			"ENG_name": "Ishvern",
+			"name": "伊什维尔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 114,
+			"_copy": {
+				"ENG_name": "Sea Elf Scout",
+				"name": "海精灵斥候",
+				"source": "DSotDQ",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "斥候",
+						"with": "伊什维尔",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Istarian Drone",
+			"name": "伊斯塔自动机械",
+			"type": "construct",
+			"source": "DSotDQ",
+			"page": 202,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 127,
+				"formula": "15d8 + 60"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 18,
+			"int": 4,
+			"wis": 10,
+			"cha": 4,
+			"senses": [
+				"盲视60尺（范围外视为目盲）"
+			],
+			"passive": 10,
+			"immune": [
+				"闪电",
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"中毒"
+			],
+			"languages": [
+				"理解其创造者说的语言但不会说"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"ENG_name": "Spider Climb",
+					"name": "蛛行术",
+					"entries": [
+						"自动机械可以攀爬在难以攀爬的表面上，包括倒过来在天花板上行走，且不需要进行属性检定。"
+					]
+				},
+				{
+					"ENG_name": "Unusual Nature",
+					"name": "非凡本质",
+					"entries": [
+						"该自动机械不需要空气、食物、饮水或睡眠。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"自动机械进行两次爪击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} {@hit 8}命中，触及5尺，单一目标。{@h}9（{@damage 1d8 + 5}）穿刺伤害外加4（{@damage 1d8}）闪电伤害。若目标是一个中型或更小的生物，则它被{@condition 受擒}受擒（逃脱{@dc 15}）。自动机械有两只爪子，每只能且只能擒抱一个目标。"
+					]
+				},
+				{
+					"ENG_name": "Crystalline Spit {@recharge 5}",
+					"name": "晶化喷射 {@recharge 5}",
+					"entries": [
+						"自动机械喷出噼啪作响的凝胶覆盖一处5尺宽，20尺长的线性区域。每个位于该区域内的生物都必须进行一次{@dc 15}的敏捷豁免检定。豁免失败者受到14（{@damage 4d6}）闪电伤害并被凝胶{@condition 束缚}，该凝胶会硬化为结晶。该生物被{@condition 束缚}直到结晶被摧毁。结晶的AC为15，拥有15点生命值，免疫毒素和心灵伤害，并对雷鸣伤害具有易伤。豁免成功伤害减半并不会被{@condition 束缚}。"
+					]
+				}
+			],
+			"traitTags": [
+				"蛛行术",
+				"非凡本质"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"L",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"受擒",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Jeyev Veldrews",
+			"name": "杰耶夫·维尔德鲁斯",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 75,
+			"_copy": {
+				"ENG_name": "Bandit Captain",
+				"name": "匪帮队长",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "首领",
+						"with": "Jeyev",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Kalaman Soldier",
+			"name": "卡拉曼士兵",
+			"type": "humanoid",
+			"source": "DSotDQ",
+			"page": 202,
+			"size": [
+				"S",
+				"M"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 链甲|PHB}",
+						"{@item 盾牌|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 16,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"athletics": "+3",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"通用语"
+			],
+			"cr": "1/2",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"士兵进行两次长剑攻击。"
+					]
+				},
+				{
+					"ENG_name": "Longsword",
+					"name": "长剑",
+					"entries": [
+						"{@atk mw} {@hit 3} 命中，触及 5 尺，单一目标。{@h}6（{@damage 1d8 + 2}）挥砍伤害，或使用双手攻击时 7（{@damage 1d10 + 2}）挥砍伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Hold the Line",
+					"name": "坚守战线",
+					"entries": [
+						"若士兵5尺内的一个盟友必须进行一次豁免检定，士兵可以鼓励友军，令其在该豁免上具有优势。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"长剑|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Kansaldi Fire-Eyes",
+			"name": "坎萨尔迪·火眼",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"牧师",
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 203,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 板甲|PHB|板甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 172,
+				"formula": "23d8 + 69"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 11,
+			"con": 17,
+			"int": 16,
+			"wis": 19,
+			"cha": 16,
+			"save": {
+				"wis": "+8",
+				"cha": "+7"
+			},
+			"skill": {
+				"insight": "+12",
+				"perception": "+8",
+				"religion": "+7"
+			},
+			"senses": [
+				"真实视觉 120 尺"
+			],
+			"passive": 18,
+			"immune": [
+				"火焰"
+			],
+			"languages": [
+				"深渊语",
+				"通用语",
+				"龙语"
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"坎萨尔迪施展以下法术中的一道，不需要任何材质成分并用感知作为施法属性（法术豁免{@dc 16}）："
+					],
+					"will": [
+						"{@spell 光亮术}",
+						"{@spell 维生术}",
+						"{@spell 奇术}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 剑刃护壁}",
+							"{@spell 解除魔法}",
+							"{@spell 焰击术}",
+							"{@spell 次等复原术}",
+							"{@spell 回生术}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Special Equipment",
+					"name": "特殊装备",
+					"entries": [
+						"坎萨尔迪的左眼眼窝中嵌着一块发光的红宝石。宝石的功能如同她的眼睛一般，并令她获得真实视觉（已包含在上文数据中）。坎萨尔迪活着时宝石无法被移除。如果她死亡，一个生物可以用一个动作移除宝石。宝石在此之后的效用等同于一枚{@item 真视宝石}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"坎萨尔迪发动两次长矛攻击并使用炎爆。"
+					]
+				},
+				{
+					"ENG_name": "Pike",
+					"name": "长矛",
+					"entries": [
+						"{@atk mw} {@hit 8} 命中，触及10尺，单一目标。{@h}9（{@damage 1d10 + 4}）穿刺伤害加16（{@damage 3d10}）光耀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Flame Burst",
+					"name": "炎爆",
+					"entries": [
+						"坎萨尔迪向一个她60尺内可见的生物掷出魔法性的火焰。目标必须进行一次{@dc 16}的敏捷豁免检定。豁免失败时，目标受到11（{@damage 2d10}）火焰伤害并被点燃；直到一个生物用一个动作将火焰扑灭，目标都将在其每回合开始时受到5（{@damage 1d10}）火焰伤害。豁免成功时，目标受到一半伤害且不会被点燃。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Dragon Queen's Favor",
+					"name": "龙后恩宠",
+					"entries": [
+						"坎萨尔迪或一个她60尺内可见的生物魔法性地回复17（{@dice 2d12 + 4}）生命值。"
+					]
+				}
+			],
+			"attachedItems": [
+				"长矛|phb"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"F",
+				"P",
+				"R"
+			],
+			"damageTagsSpell": [
+				"F",
+				"R",
+				"S"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Kapak Draconian",
+			"name": "卡帕克龙人",
+			"type": "monstrosity",
+			"source": "DSotDQ",
+			"page": 198,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 39,
+				"formula": "6d8 + 12"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 11,
+			"dex": 17,
+			"con": 14,
+			"int": 12,
+			"wis": 13,
+			"cha": 11,
+			"save": {
+				"dex": "+5"
+			},
+			"skill": {
+				"deception": "+4",
+				"perception": "+3",
+				"stealth": "+7"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"中毒"
+			],
+			"languages": [
+				"通用语",
+				"龙语"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Death Throes",
+					"name": "焚身爆",
+					"entries": [
+						"当该龙人的生命值降低为0时，他会溶解成酸液，飞溅到周围的生物身上。每个龙人周围5尺内的生物都必须成功通过{@dc 12}的敏捷豁免检定否则被酸液所覆盖1分钟。被酸液覆盖的生物在其每回合开始时受到7（{@damage 2d6}）点强酸伤害。一个生物能够以其动作刮掉或洗掉自己或另一个生物身上的酸液。"
+					]
+				},
+				{
+					"ENG_name": "Glide",
+					"name": "滑翔",
+					"entries": [
+						"当龙人坠落且并未处于{@condition 失能}状态时，它在计算坠落伤害时从中减去最多100尺高度，并且每坠落1尺，它能够最多水平移动2尺距离。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"龙人进行两次匕首攻击。如果两次攻击命中同一个生物，目标必须成功通过{@dc 12}的体质豁免否则直到目标的下个回合结束陷入{@condition 中毒}。以这种方式{@condition 中毒}时，目标同样也会陷入{@condition 麻痹}。"
+					]
+				},
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 5}，触及5尺或范围20/60尺，单一目标。{@h}5（{@damage 1d4 + 3}）穿刺伤害外加7（{@damage 2d6}）毒素伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"traitTags": [
+				"自爆"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"A",
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"麻痹",
+				"中毒"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Karavarix",
+			"name": "卡拉瓦里克斯",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 183,
+			"_copy": {
+				"ENG_name": "Greater Death Dragon",
+				"name": "高等亡骸龙",
+				"source": "DSotDQ",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "龙",
+						"with": "卡拉瓦里克斯",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Kender Skirmisher",
+			"name": "坎德人游击兵",
+			"type": "humanoid",
+			"source": "DSotDQ",
+			"page": 204,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item 皮甲|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 14,
+				"formula": "4d6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 10,
+			"int": 12,
+			"wis": 8,
+			"cha": 14,
+			"skill": {
+				"perception": "+3",
+				"sleight of hand": "+7",
+				"stealth": "+5"
+			},
+			"passive": 13,
+			"conditionImmune": [
+				"恐慌"
+			],
+			"languages": [
+				"通用语",
+				"坎德人语"
+			],
+			"cr": "1/4",
+			"action": [
+				{
+					"ENG_name": "Hoopak",
+					"name": "胡帕克杖",
+					"entries": [
+						"{@atk mw,rw} {@hit 5}命中，触及5尺或射程40/160尺，单一目标。{@h}6（{@damage 1d6 + 3}）穿刺伤害，或在坎德人使用胡帕克杖的投石索进行远程攻击时5（{@damage 1d4 + 3}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Taunt",
+					"name": "嘲讽",
+					"entries": [
+						"坎德人对一个60尺内的可见生物发出一连串辱骂。如果目标可以听到坎德人的声音，则必须成功通过一次{@dc 12}的感知豁免检定，否则直到其下一回合结束前在攻击检定上都具有劣势。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Elusive",
+					"name": "飘忽不定",
+					"entries": [
+						"坎德人执行{@action 撤离}或{@action 躲藏}动作。"
+					]
+				}
+			],
+			"attachedItems": [
+				"胡帕克杖|DSotDQ"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Leedara",
+			"name": "里达拉",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 58,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 45,
+				"formula": "10d8"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": 40
+			},
+			"str": 7,
+			"dex": 13,
+			"con": 10,
+			"int": 10,
+			"wis": 12,
+			"cha": 17,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 11,
+			"resist": [
+				"强酸",
+				"火焰",
+				"闪电",
+				"雷鸣",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"寒冷",
+				"暗蚀",
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚"
+			],
+			"languages": [
+				"任何她生前知晓的语言"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"ENG_name": "Ethereal Sight",
+					"name": "以太视界",
+					"entries": [
+						"里达拉在物质位面时可以看到以太位面内60尺的范围，反之亦然。"
+					]
+				},
+				{
+					"ENG_name": "Incorporeal Movement",
+					"name": "虚体移动",
+					"entries": [
+						"里达拉可以如同穿过困难地形一样穿过其他生物和物件。如果她在自己的回合结束时仍处在物件内部则受到5（{@damage 1d10}）点力场伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Withering Touch",
+					"name": "枯萎触击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}17 ({@damage 4d6 + 3}) 点暗蚀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Etherealness",
+					"name": "以太化",
+					"entries": [
+						"里达拉从物质位面进入以太位面，或反之。她在边界以太时在物质位面上可见，反之亦然，但她无法影响另一侧位面上的任何事物也无法被其影响。"
+					]
+				},
+				{
+					"ENG_name": "Horrifying Visage",
+					"name": "恐惧面容",
+					"entries": [
+						"每个在里达拉60尺内能看见她的非不死生物必须成功通过一次{@dc 13}的感知豁免检定否则陷入{@condition 恐慌}状态1分钟。如果豁免检定失败且差值达到5或更多，目标还会衰老{@dice 1d4 × 10}年。{@condition 恐慌}的目标可以在其每回合结束时重复进行豁免检定，成功则自身的{@condition 恐慌}状态结束。如果目标的豁免检定成功或该效果对其结束，目标在接下来的24小时里对里达拉的恐惧面容免疫。衰老效应可以通过{@spell 高等复原术}法术逆转，但仅限于其发生后的24小时内。"
+					]
+				},
+				{
+					"ENG_name": "Possession {@recharge}",
+					"name": "附身{@recharge}",
+					"entries": [
+						"幽魂身边5尺内它可以看见的一名类人生物必须进行一次{@dc 13}的魅力豁免否则被里达拉附身；里达拉随后消失，目标陷入{@condition 失能}状态且失去对身体的控制。里达拉现在控制身体但不剥夺目标的意识。里达拉不能被任何攻击、法术或其他效应指定为目标，除了驱散亡灵类效应，并且她保留自己的阵营、智力、感知、魅力和对{@condition 魅惑}和{@condition 恐慌}的免疫。她的其他资料则使用被附身目标的数据，但不能获得该目标的知识、职业特性或熟练项。",
+						"附身持续到该身体的生命值降至0点，里达拉以一个附赠动作终止它，或里达拉被转变或被如{@spell 驱逐善恶}法术的效应驱赶出来。当附身终止时，里达拉重新出现在该身体周边5尺内一处未被占据的空间位置。目标在豁免检定成功或附身终止后的24小时里对里达拉的附身免疫。"
+					]
+				},
+				{
+					"ENG_name": "Change Shape",
+					"name": "变形",
+					"entries": [
+						"里达拉魔法性地呈现出她生前的样貌，并且她的生物类型变为类人生物，同时保留她的其他游戏数据。此变形在里达拉的生命值降至0或使用一个动作结束时终止。"
+					]
+				}
+			],
+			"traitTags": [
+				"以太视界",
+				"虚体移动"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"变形生物"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"恐慌",
+				"失能"
+			],
+			"savingThrowForced": [
+				"魅力",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Lesser Death Dragon",
+			"name": "次等亡骸龙",
+			"type": "undead",
+			"source": "DSotDQ",
+			"page": 195,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 199,
+				"formula": "21d10 + 84"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 80
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 18,
+			"int": 5,
+			"wis": 10,
+			"cha": 5,
+			"save": {
+				"dex": "+4",
+				"wis": "+4"
+			},
+			"skill": {
+				"perception": "+4",
+				"stealth": "+4"
+			},
+			"senses": [
+				"盲视 30 尺",
+				"黑暗视觉 60 尺"
+			],
+			"passive": 14,
+			"resist": [
+				"穿刺"
+			],
+			"immune": [
+				"暗蚀",
+				"毒素"
+			],
+			"conditionImmune": [
+				"力竭",
+				"中毒"
+			],
+			"languages": [
+				"能理解通用语和龙语，但不能说话"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"ENG_name": "Unusual Nature",
+					"name": "非凡本质",
+					"entries": [
+						"该龙不需要空气、食物、饮水或睡眠。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"该龙进行一次啃咬和两次爪击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及10尺，单一目标。{@h}14（{@damage 2d8 + 5}）穿刺伤害加4（{@damage 1d8}）暗蚀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} {@hit 9} 命中，触及5尺，单一目标。{@h}8（{@damage 1d6 + 5}）挥砍伤害。若目标是一个中型或更小的生物，则他被{@condition 受擒}（逃脱{@dc 15}）。该生物在被擒抱期间陷入{@condition 束缚}。次等亡骸龙有两个爪子，每一只可以擒抱一个目标。"
+					]
+				},
+				{
+					"ENG_name": "Cataclysmic Breath {@recharge 5}",
+					"name": "灾变吐息 {@recharge 5}",
+					"entries": [
+						"龙呼出一道30尺锥形的幽魂般的紫色火焰波涛。区域内的每个生物必须进行一次{@dc 16}的敏捷豁免检定，豁免失败受到36（{@damage 8d8}）暗蚀伤害，豁免成功则受到一半伤害。一个生物如果被该吐息降至0生命值则会死亡。此外，任何被该吐息伤害杀死的中型或更小的类人生物，以及在锥形区域内的此类生物的尸体都将变为受龙控制的丧尸（见怪物图鉴）。丧尸在龙的先攻上行动，但在龙的回合结束后立即行动。除非有其他命令，否则丧尸会尝试杀死它遇到的任何非亡灵生物。"
+					]
+				}
+			],
+			"traitTags": [
+				"非凡本质"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"actionTags": [
+				"吐息武器",
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DR"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"受擒",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Levna Drakehorn",
+			"name": "蕾芙娜·德雷克弘",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				],
+				"sidekickType": "战士",
+				"sidekickTags": [
+					"防御者"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 213,
+			"level": 1,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 板甲|PHB|板甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 13,
+				"formula": "2d8 + 4"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 10,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 14,
+			"save": {
+				"con": "+4"
+			},
+			"skill": {
+				"athletics": "+4",
+				"intimidation": "+4",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"通用语"
+			],
+			"pbNote": "+2",
+			"trait": [
+				{
+					"ENG_name": "Bonus Proficiencies",
+					"name": "附赠熟练",
+					"entries": [
+						"蕾芙娜拥有简易武器、军用武器、盾牌以及全部护甲的熟练项。"
+					]
+				},
+				{
+					"ENG_name": "Pack Tactics",
+					"name": "集群战术",
+					"entries": [
+						"蕾芙娜对一个生物进行的攻击检定具有优势，如果她至少有一个盟友在该生物5尺距离内且该盟友未处于{@condition 失能}状态。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Greatsword",
+					"name": "巨剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}9（{@damage 2d6 + 2}）点挥砍伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Protection",
+					"name": "守护",
+					"entries": [
+						"当一个蕾芙娜5尺内她可以看见的生物成为攻击的目标时，如果蕾芙娜能看见攻击手且她持用一把近战武器，那么她可以使这次攻击检定具有劣势。"
+					]
+				}
+			],
+			"variant": [
+				{
+					"ENG_name": "Levna beyond 1st Level",
+					"name": "蕾芙娜（1级以上）",
+					"type": "inset",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"等级",
+								"生命值",
+								"新特性"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-2",
+								"col-8"
+							],
+							"rows": [
+								[
+									"2环",
+									"19 （{@dice 3d8 + 6}）",
+									"回气。蕾芙娜可以在自己回合内用一个附赠动作恢复生命值，其总值为 {@dice 1d10} + 她的等级。一旦她使用了该特性，她必须完成一次短休或长休才能再次使用。"
+								],
+								[
+									"3环",
+									"26 （掷{@dice 4d8 + 8}加8）",
+									"精通重击。蕾芙娜的攻击检定现在掷{@dice d20}时，掷出19或20即可造成重击。"
+								],
+								[
+									"4环",
+									"32（{@dice 5d8 + 10}）",
+									"属性值提升。蕾芙娜的力量值增加2，调整值提高1，因此她的{@skill 运动}加值提高1，并且她的武器攻击的命中和伤害加值提高1。"
+								],
+								[
+									"5环",
+									"39 ({@dice 6d8 + 12})",
+									"熟练加值。蕾芙娜的熟练加值提高1，因此将以下数值提高1：豁免检定和技能条目中的加值、她的被动{@skill 察觉}属性值以及她的武器攻击的命中加值。"
+								],
+								[
+									"6th",
+									"45 （{@dice 7d8 + 14}）",
+									"额外攻击。蕾芙娜在自己回合内执行{@action 攻击}动作时可以发动两次攻击而非一次。"
+								],
+								[
+									"7th",
+									"52（{@dice 8d8 + 16}）",
+									"备战。蕾芙娜在先攻掷骰中拥有优势。"
+								],
+								[
+									"8th",
+									"58（{@dice 9d8 + 18}）",
+									"属性值提升。蕾芙娜的力量值增加2，调整值提高1，因此她的{@skill 运动}加值提高1，并且她的武器攻击的命中和伤害加值提高1。"
+								],
+								[
+									"9th",
+									"65 （{@dice 10d8 + 20}）",
+									"熟练加值。蕾芙娜的熟练加值提高1，因此将以下数值提高1：豁免检定和技能条目中的加值、她的被动{@skill 察觉}属性值以及她的武器攻击的命中加值。"
+								],
+								[
+									"10th",
+									"71 （{@dice 11d8 + 22}）",
+									"精通防御。蕾芙娜的护甲等级提高1。"
+								],
+								[
+									"11th",
+									"78（{@dice 12d8 + 24}）",
+									"不屈。蕾芙娜可以重掷失败的豁免检定，不过她必须采用重掷的结果。一旦她使用了该特性，她必须完成一次长休才能再次使用。"
+								]
+							]
+						}
+					]
+				}
+			],
+			"attachedItems": [
+				"巨剑|phb"
+			],
+			"traitTags": [
+				"集群战术"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"ENG_name": "Levna Drakehorn (10th Level)",
+					"name": "蕾芙娜·德雷克弘（10级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"蕾芙娜可以在自己回合内用一个附赠动作恢复生命值，其总值为{@dice 1d10} + 她的等级。一旦她使用了该特性，她必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"蕾芙娜的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								},
+								{
+									"ENG_name": "Extra Attack",
+									"name": "额外攻击",
+									"entries": [
+										"蕾芙娜在自己回合内执行{@action 攻击}动作时可以发动两次攻击而非一次。"
+									]
+								},
+								{
+									"ENG_name": "Battle Readiness",
+									"name": "备战",
+									"entries": [
+										"蕾芙娜在先攻掷骰中拥有优势。"
+									]
+								},
+								{
+									"ENG_name": "Improved Defense",
+									"name": "精通防御",
+									"entries": [
+										"蕾芙娜的护甲等级提高1。"
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "巨剑",
+							"items": {
+								"ENG_name": "Greatsword",
+								"name": "巨剑",
+								"entries": [
+									"{@atk mw} {@hit 8} 命中，触及5尺，单一目标。{@h}11（{@damage 2d6 + 4}）挥砍伤害。"
+								]
+							}
+						}
+					},
+					"level": 10,
+					"ac": [
+						{
+							"ac": 19,
+							"from": [
+								"{@item 板甲|PHB|板甲}",
+								"精通防御"
+							]
+						}
+					],
+					"hp": {
+						"average": 71,
+						"formula": "11d8 + 22"
+					},
+					"str": 19,
+					"save": {
+						"con": "+6"
+					},
+					"skill": {
+						"athletics": "+8",
+						"intimidation": "+6",
+						"perception": "+4"
+					},
+					"passive": 14,
+					"pbNote": "+4",
+					"variant": null
+				},
+				{
+					"ENG_name": "Levna Drakehorn (11th Level)",
+					"name": "蕾芙娜·德雷克弘（11级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"蕾芙娜可以在自己回合内用一个附赠动作恢复生命值，其总值为{@dice 1d10} + 她的等级。一旦她使用了该特性，她必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"蕾芙娜的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								},
+								{
+									"ENG_name": "Extra Attack",
+									"name": "额外攻击",
+									"entries": [
+										"蕾芙娜在自己回合内执行{@action 攻击}动作时可以发动两次攻击而非一次。"
+									]
+								},
+								{
+									"ENG_name": "Battle Readiness",
+									"name": "备战",
+									"entries": [
+										"蕾芙娜在先攻掷骰中拥有优势。"
+									]
+								},
+								{
+									"ENG_name": "Improved Defense",
+									"name": "精通防御",
+									"entries": [
+										"蕾芙娜的护甲等级提高1。"
+									]
+								},
+								{
+									"ENG_name": "Indomitable",
+									"name": "不屈",
+									"entries": [
+										"蕾芙娜可以重掷失败的豁免检定，不过她必须采用重掷的结果。一旦她使用了该特性，她必须完成一次长休才能再次使用。"
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "巨剑",
+							"items": {
+								"ENG_name": "Greatsword",
+								"name": "巨剑",
+								"entries": [
+									"{@atk mw} {@hit 8} 命中，触及5尺，单一目标。{@h}11（{@damage 2d6 + 4}）挥砍伤害。"
+								]
+							}
+						}
+					},
+					"level": 11,
+					"ac": [
+						{
+							"ac": 19,
+							"from": [
+								"{@item 板甲|PHB|板甲}",
+								"精通防御"
+							]
+						}
+					],
+					"hp": {
+						"average": 78,
+						"formula": "12d8 + 24"
+					},
+					"str": 19,
+					"save": {
+						"con": "+6"
+					},
+					"skill": {
+						"athletics": "+8",
+						"intimidation": "+6",
+						"perception": "+4"
+					},
+					"passive": 14,
+					"pbNote": "+4",
+					"variant": null
+				},
+				{
+					"ENG_name": "Levna Drakehorn (2nd Level)",
+					"name": "蕾芙娜·德雷克弘（2级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"蕾芙娜可以在自己回合内用一个附赠动作恢复生命值，其总值为{@dice 1d10} + 她的等级。一旦她使用了该特性，她必须完成一次短休或长休才能再次使用。"
+									]
+								}
+							]
+						}
+					},
+					"level": 2,
+					"hp": {
+						"average": 19,
+						"formula": "3d8 + 6"
+					},
+					"variant": null
+				},
+				{
+					"ENG_name": "Levna Drakehorn (3rd Level)",
+					"name": "蕾芙娜·德雷克弘（3级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"蕾芙娜可以在自己回合内用一个附赠动作恢复生命值，其总值为{@dice 1d10} + 她的等级。一旦她使用了该特性，她必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"蕾芙娜的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								}
+							]
+						}
+					},
+					"level": 3,
+					"hp": {
+						"average": 26,
+						"formula": "4d8 + 8"
+					},
+					"variant": null
+				},
+				{
+					"ENG_name": "Levna Drakehorn (4th Level)",
+					"name": "蕾芙娜·德雷克弘（4级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"蕾芙娜可以在自己回合内用一个附赠动作恢复生命值，其总值为{@dice 1d10} + 她的等级。一旦她使用了该特性，她必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"蕾芙娜的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "巨剑",
+							"items": {
+								"ENG_name": "Greatsword",
+								"name": "巨剑",
+								"entries": [
+									"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）点挥砍伤害。"
+								]
+							}
+						}
+					},
+					"level": 4,
+					"hp": {
+						"average": 32,
+						"formula": "5d8 + 10"
+					},
+					"str": 17,
+					"skill": {
+						"athletics": "+5",
+						"intimidation": "+4",
+						"perception": "+2"
+					},
+					"variant": null
+				},
+				{
+					"ENG_name": "Levna Drakehorn (5th Level)",
+					"name": "蕾芙娜·德雷克弘（5级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"蕾芙娜可以在自己回合内用一个附赠动作恢复生命值，其总值为{@dice 1d10} + 她的等级。一旦她使用了该特性，她必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"蕾芙娜的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "巨剑",
+							"items": {
+								"ENG_name": "Greatsword",
+								"name": "巨剑",
+								"entries": [
+									"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）挥砍伤害。"
+								]
+							}
+						}
+					},
+					"level": 5,
+					"hp": {
+						"average": 39,
+						"formula": "6d8 + 12"
+					},
+					"str": 17,
+					"save": {
+						"con": "+5"
+					},
+					"skill": {
+						"athletics": "+6",
+						"intimidation": "+5",
+						"perception": "+3"
+					},
+					"passive": 13,
+					"pbNote": "+3",
+					"variant": null
+				},
+				{
+					"ENG_name": "Levna Drakehorn (6th Level)",
+					"name": "蕾芙娜·德雷克弘（6级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"蕾芙娜可以在自己回合内用一个附赠动作恢复生命值，其总值为{@dice 1d10} + 她的等级。一旦她使用了该特性，她必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"蕾芙娜的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								},
+								{
+									"ENG_name": "Extra Attack",
+									"name": "额外攻击",
+									"entries": [
+										"蕾芙娜在自己回合内执行{@action 攻击}动作时可以发动两次攻击而非一次。"
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "巨剑",
+							"items": {
+								"ENG_name": "Greatsword",
+								"name": "巨剑",
+								"entries": [
+									"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）挥砍伤害。"
+								]
+							}
+						}
+					},
+					"level": 6,
+					"hp": {
+						"average": 45,
+						"formula": "7d8 + 14"
+					},
+					"str": 17,
+					"save": {
+						"con": "+5"
+					},
+					"skill": {
+						"athletics": "+6",
+						"intimidation": "+5",
+						"perception": "+3"
+					},
+					"passive": 13,
+					"pbNote": "+3",
+					"variant": null
+				},
+				{
+					"ENG_name": "Levna Drakehorn (7th Level)",
+					"name": "蕾芙娜·德雷克弘（7级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"蕾芙娜可以在自己回合内用一个附赠动作恢复生命值，其总值为{@dice 1d10} + 她的等级。一旦她使用了该特性，她必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"蕾芙娜的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								},
+								{
+									"ENG_name": "Extra Attack",
+									"name": "额外攻击",
+									"entries": [
+										"蕾芙娜在自己回合内执行{@action 攻击}动作时可以发动两次攻击而非一次。"
+									]
+								},
+								{
+									"ENG_name": "Battle Readiness",
+									"name": "备战",
+									"entries": [
+										"蕾芙娜在先攻掷骰中拥有优势。"
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "巨剑",
+							"items": {
+								"ENG_name": "Greatsword",
+								"name": "巨剑",
+								"entries": [
+									"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）挥砍伤害。"
+								]
+							}
+						}
+					},
+					"level": 7,
+					"hp": {
+						"average": 52,
+						"formula": "8d8 + 16"
+					},
+					"str": 17,
+					"save": {
+						"con": "+5"
+					},
+					"skill": {
+						"athletics": "+6",
+						"intimidation": "+5",
+						"perception": "+3"
+					},
+					"passive": 13,
+					"pbNote": "+3",
+					"variant": null
+				},
+				{
+					"ENG_name": "Levna Drakehorn (8th Level)",
+					"name": "蕾芙娜·德雷克弘（8级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"蕾芙娜可以在自己回合内用一个附赠动作恢复生命值，其总值为{@dice 1d10} + 她的等级。一旦她使用了该特性，她必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"蕾芙娜的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								},
+								{
+									"ENG_name": "Extra Attack",
+									"name": "额外攻击",
+									"entries": [
+										"蕾芙娜在自己回合内执行{@action 攻击}动作时可以发动两次攻击而非一次。"
+									]
+								},
+								{
+									"ENG_name": "Battle Readiness",
+									"name": "备战",
+									"entries": [
+										"蕾芙娜在先攻掷骰中拥有优势。"
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "巨剑",
+							"items": {
+								"ENG_name": "Greatsword",
+								"name": "巨剑",
+								"entries": [
+									"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}11 ({@damage 2d6 + 4}) 点挥砍伤害。"
+								]
+							}
+						}
+					},
+					"level": 8,
+					"hp": {
+						"average": 58,
+						"formula": "9d8 + 18"
+					},
+					"str": 19,
+					"save": {
+						"con": "+5"
+					},
+					"skill": {
+						"athletics": "+7",
+						"intimidation": "+5",
+						"perception": "+3"
+					},
+					"passive": 13,
+					"pbNote": "+3",
+					"variant": null
+				},
+				{
+					"ENG_name": "Levna Drakehorn (9th Level)",
+					"name": "蕾芙娜·德雷克弘（9级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Second Wind",
+									"name": "回气",
+									"entries": [
+										"蕾芙娜可以在自己回合内用一个附赠动作恢复生命值，其总值为{@dice 1d10} + 她的等级。一旦她使用了该特性，她必须完成一次短休或长休才能再次使用。"
+									]
+								},
+								{
+									"ENG_name": "Improved Critical",
+									"name": "精通重击",
+									"entries": [
+										"蕾芙娜的攻击检定现在在{@dice d20}掷出19或20时即可造成重击。"
+									]
+								},
+								{
+									"ENG_name": "Extra Attack",
+									"name": "额外攻击",
+									"entries": [
+										"蕾芙娜在自己回合内执行{@action 攻击}动作时可以发动两次攻击而非一次。"
+									]
+								},
+								{
+									"ENG_name": "Battle Readiness",
+									"name": "备战",
+									"entries": [
+										"蕾芙娜在先攻掷骰中拥有优势。"
+									]
+								}
+							]
+						},
+						"action": {
+							"mode": "replaceArr",
+							"replace": "巨剑",
+							"items": {
+								"ENG_name": "Greatsword",
+								"name": "巨剑",
+								"entries": [
+									"{@atk mw} {@hit 8} 命中，触及5尺，单一目标。{@h}11（{@damage 2d6 + 4}）挥砍伤害。"
+								]
+							}
+						}
+					},
+					"level": 9,
+					"hp": {
+						"average": 65,
+						"formula": "10d8 + 20"
+					},
+					"str": 19,
+					"save": {
+						"con": "+6"
+					},
+					"skill": {
+						"athletics": "+8",
+						"intimidation": "+6",
+						"perception": "+4"
+					},
+					"passive": 14,
+					"pbNote": "+4",
+					"variant": null
+				}
+			]
+		},
+		{
+			"ENG_name": "Lohezet",
+			"name": "劳哉特",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类",
+					"法师"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 205,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 137,
+				"formula": "25d8 + 25"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 12,
+			"int": 20,
+			"wis": 14,
+			"cha": 11,
+			"save": {
+				"con": "+5",
+				"wis": "+6"
+			},
+			"skill": {
+				"arcana": "+9",
+				"history": "+9",
+				"medicine": "+6"
+			},
+			"passive": 12,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"中毒"
+			],
+			"languages": [
+				"通用语",
+				"矮人语",
+				"精灵语",
+				"炼狱语"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"劳哉特施展以下法术中的一道，不需要任何材质成分且使用智力作为施法属性（法术豁免{@dc 17}）："
+					],
+					"will": [
+						"{@spell 侦测魔法}",
+						"{@spell 光亮术}",
+						"{@spell 魔法伎俩}"
+					],
+					"daily": {
+						"2e": [
+							"{@spell 任意门}",
+							"{@spell 法师护甲}"
+						],
+						"1e": [
+							"{@spell 秘法眼}",
+							"{@spell 支配类人}",
+							"{@spell 力场墙}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Toxic Mastery",
+					"name": "精通毒性",
+					"entries": [
+						"劳哉特无视生物对毒素伤害的抗性。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"劳哉特发动三次凋灵爆攻击并使用瘴气（若可用）。他也可以将其中一次攻击替换为施法。"
+					]
+				},
+				{
+					"ENG_name": "Withering Blast",
+					"name": "凋零爆",
+					"entries": [
+						"{@atk ms,rs} {@hit 9} 命中，触及5尺或范围60尺，单一目标。{@h}18（{@damage 2d12 + 5}）暗蚀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Miasma {@recharge 4}",
+					"name": "瘴气 {@recharge 4}",
+					"entries": [
+						"劳哉特魔法性地召唤出一团翻腾的紫色雾气，形成一个以他自身120尺内一点为中心的半径20尺球状区域。该球状区域内的区域被{@quickref 视野与光照||2||重度遮蔽}，当一个生物在其回合开始时位于该球状区域内，或在一个回合内第一次进入该球状区域时，它必须进行一次{@dc 17}的体质豁免检定。豁免失败时，该生物受到39（{@damage 6d12}）毒素伤害并陷入{@condition 中毒}状态，直到其下一回合开始。豁免成功时，该生物承受一半伤害且不会陷入{@condition 中毒}状态。该云雾持续1分钟，直到劳哉特提前结束它（无需动作），或直到劳哉特再次使用此动作。强风可以驱散这团云雾。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Noxious Rebuke (3/Day)",
+					"name": "剧毒反噬（3/每日）",
+					"entries": [
+						"当一个劳哉特60尺内的生物对他造成伤害时，劳哉特魔法性地使用一道污秽的紫色毒雾进行反击。该生物必须进行一次{@dc 17}的体质豁免检定，豁免失败受到16（{@damage 2d10 + 5}）毒素伤害，豁免成功则伤害减半。"
+					]
+				}
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"E",
+				"I"
+			],
+			"damageTags": [
+				"I",
+				"N"
+			],
+			"damageTagsSpell": [
+				"O"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"conditionInflict": [
+				"中毒"
+			],
+			"conditionInflictSpell": [
+				"魅惑"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Lord Soth",
+			"name": "索思爵士",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"圣武士"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 206,
+			"referenceSources": [
+				"VEoR"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 板甲|PHB|板甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 228,
+				"formula": "24d8 + 120"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 11,
+			"con": 20,
+			"int": 12,
+			"wis": 16,
+			"cha": 20,
+			"save": {
+				"dex": "+6",
+				"wis": "+9",
+				"cha": "+11"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 13,
+			"immune": [
+				"暗蚀",
+				"毒素"
+			],
+			"conditionImmune": [
+				"力竭",
+				"恐慌",
+				"中毒"
+			],
+			"languages": [
+				"通用语",
+				"炼狱语",
+				"索兰尼亚语"
+			],
+			"cr": "19",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"索思爵士施展以下法术中的一道，不需要任何材料成分并以魅力作为施法关键属性（法术豁免{@dc 19}）："
+					],
+					"will": [
+						"{@spell 命令术}（以3环施展）"
+					],
+					"daily": {
+						"1": [
+							"{@spell 放逐术}（以6环施展）"
+						],
+						"2e": [
+							"{@spell 解除魔法}",
+							"{@spell 定身类人}（以3环施放）"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性 (3/日)",
+					"entries": [
+						"如果索思爵士豁免检定失败，他可以选择改为成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"索思爵士在对抗法术和其他魔法效应的豁免检定中具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Marshal Undead",
+					"name": "不死统帅",
+					"entries": [
+						"除非索思陷入{@condition 失能}，否则他和其周围60英尺内他选择的亡灵生物免疫于驱散亡灵的特性。"
+					]
+				},
+				{
+					"ENG_name": "Unusual Nature",
+					"name": "非凡本质",
+					"entries": [
+						"索思不需要空气、食物、饮水或睡眠。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"索思进行三次遗忘者烙印攻击。"
+					]
+				},
+				{
+					"ENG_name": "Forsaken Brand",
+					"name": "遗忘者烙印",
+					"entries": [
+						"{@atk mw} {@hit 12} 命中，触及5尺，单一目标。{@h}10（{@damage 1d8 + 6}）钝击伤害加18（{@damage 4d8}）暗蚀伤害，且如果目标是生物，在索思的下个回合开始前它无法恢复生命值。"
+					]
+				},
+				{
+					"ENG_name": "Cataclysmic Fire (1/Day)",
+					"name": "大灾变火焰（1/天）",
+					"entries": [
+						"索思爵士投出一个魔法火球，使之于他120尺内一处可以看见的一点爆炸。以该点为中心半径20尺球状范围内的所有生物必须进行一次{@dc 19}的敏捷豁免检定。豁免失败者将受到35（{@damage 10d6}）火焰伤害和35（{@damage 10d6}）暗蚀伤害，豁免成功则伤害减半。",
+						"此外，任何被该伤害杀死的中型或更小的类人生物，以及在球状区域内的此类生物的尸体都将变为骷髅（见《怪物图鉴》）并受索思控制。该骷髅在索思的先攻行动但在他的回合结束后立即行动。除非有任何其他命令，否则骷髅会尝试杀死它遇到的任何非亡灵生物。"
+					]
+				},
+				{
+					"ENG_name": "Word of Death (1/Day)",
+					"name": "死亡真言（1/每日）",
+					"entries": [
+						"索思指定一个他60尺内能看见的生物并魔法性地命令他死亡。目标必须进行一次{@dc 19}的体质豁免检定，失败则受到100暗蚀伤害，成功则伤害减半。如果该伤害将目标生命值降为0，则目标死亡。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Implacable Maneuver",
+					"name": "无情战技",
+					"entries": [
+						"索思移动至多等于自己速度的距离或命令他正在骑乘的坐骑移动至多等于其速度的距离。此动作造成的移动不会触发借机攻击。如果他或他的坐骑在移动中经过了了一个生物的五尺内，他可以迫使该生物进行一次{@dc 20}的力量豁免检定。除非该生物豁免成功，否则被击倒{@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "Strike (Costs 2 Actions)",
+					"name": "打击（花费2个动作）",
+					"entries": [
+						"索思进行一次遗忘者烙印攻击。"
+					]
+				},
+				{
+					"ENG_name": "Cast a Spell (Costs 3 Actions)",
+					"name": "施放法术 (消耗 3动作)",
+					"entries": [
+						"索思爵士使用施法。"
+					]
+				}
+			],
+			"altArt": [
+				{
+					"ENG_name": "Lord Soth",
+					"name": "索思爵士",
+					"source": "VEoR"
+				}
+			],
+			"traitTags": [
+				"传奇抗性",
+				"魔法抗性",
+				"非凡本质"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"N"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"conditionInflictSpell": [
+				"失能",
+				"麻痹",
+				"倒地"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷",
+				"力量"
+			],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Lorry Wanwillow",
+			"name": "洛里·万柳",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"变形生物",
+					"坎德人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 177,
+			"_copy": {
+				"ENG_name": "Vampire",
+				"name": "吸血鬼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "吸血鬼",
+						"with": "洛里",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "replaceArr",
+						"replace": "变形生物",
+						"items": {
+							"ENG_name": "Shapechanger",
+							"name": "变形生物",
+							"entries": [
+								"如果洛里不在阳光或流水中，他可以使用其动作变形为一只微型老鼠或一团中型云雾形态，或变回其真实形态。",
+								"处于蝙蝠形态时，洛里不能说话，其步行速度为5尺，并拥有30尺的飞行速度。除体型和速度外，其数据保持不变。它所穿戴的任何物品都会随之变形，但它携带的任何物品都不会。如果死亡，它会恢复其真实形态。",
+								"处于迷雾形态时，洛里不能执行任何动作、说话或操纵物件。它没有重量，拥有20尺飞行速度，可以悬浮，并且可以进入敌对生物的空间并在那里停留。此外，如果空气能通过一个空间，迷雾也能通过而不需要挤过去，但它不能通过水。它在力量、敏捷和体质豁免检定上具有优势，并且免疫所有非魔法伤害，除了它从阳光中受到的伤害。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Raven Uth Vogler",
+			"name": "渡鸦乌斯 沃格勒",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 53,
+			"_copy": {
+				"ENG_name": "Scout",
+				"name": "斥候",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "斥候",
+						"with": "渡鸦",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Red Ruin",
+			"name": "赤色灾星",
+			"type": "humanoid",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 208,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item 板甲|PHB|板甲}",
+						"{@item 盾牌|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 150,
+				"formula": "20d8 + 60"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 12,
+			"con": 17,
+			"int": 13,
+			"wis": 14,
+			"cha": 15,
+			"save": {
+				"str": "+8",
+				"dex": "+5"
+			},
+			"skill": {
+				"athletics": "+8",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"resist": [
+				"火焰"
+			],
+			"languages": [
+				"通用语",
+				"龙语"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"ENG_name": "Draconic Devotion",
+					"name": "龙类忠诚",
+					"entries": [
+						"若赤色灾星能看到一个非敌对龙类，则她在攻击检定上有优势。"
+					]
+				},
+				{
+					"ENG_name": "Mounted Combat Master",
+					"name": "骑乘战斗大师",
+					"entries": [
+						"当赤色灾星处于骑乘状态且一个生物以她的坐骑为攻击目标时，赤色灾星可以使该攻击改为以她为目标。"
+					]
+				},
+				{
+					"ENG_name": "Mounted Evasion",
+					"name": "骑乘反射闪避",
+					"entries": [
+						"当赤色灾星或她的坐骑为从效果中只承受一半伤害而进行敏捷豁免检定时，他们在豁免成功时不受伤害，豁免失败时只受到一半伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"赤色灾星发动三次余烬骑枪攻击。"
+					]
+				},
+				{
+					"ENG_name": "Ember Lance",
+					"name": "余烬骑枪",
+					"entries": [
+						"{@atk mw} {@hit 8} 命中，触及10尺，单一目标。{@h}10（{@damage 1d12 + 4}）穿刺伤害加7（{@damage 2d6}）火焰伤害。如果目标为中型或更小的生物，则必须成功通过{@dc 16}的力量豁免否则陷入{@condition 倒地}倒地状态。"
+					]
+				},
+				{
+					"ENG_name": "Explosive Hand Crossbow {@recharge 5}",
+					"name": "爆炸手弩{@recharge 5}",
+					"entries": [
+						"赤色灾星用爆裂手弩向120尺内她可见的一点发射一道弩矢。当弩矢抵达该点，或提前命中一个物件，它将在其周围20尺半径球型空间产生爆炸。任何位于该区域内的生物都必须进行一次{@dc 15}的敏捷豁免，豁免失败受到35（{@damage 10d6}）火焰伤害，豁免成功则只受到一半的伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RCH",
+				"RNG"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"敏捷",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Sarlamir",
+			"name": "萨拉米尔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 102,
+			"_copy": {
+				"ENG_name": "Skeletal Knight",
+				"name": "骸骨骑士",
+				"source": "DSotDQ",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "骸骨骑士",
+						"with": "萨拉米尔",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Sea Elf Scout",
+			"name": "海精灵斥候",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"source": "DSotDQ",
+			"page": 114,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item 皮甲|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 16,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 13,
+			"cha": 11,
+			"skill": {
+				"nature": "+4",
+				"perception": "+5",
+				"stealth": "+6",
+				"survival": "+5"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 15,
+			"languages": [
+				"任何一种语言（通常是通用语）"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Keen Hearing and Sight",
+					"name": "敏锐视听觉",
+					"entries": [
+						"斥候依赖听觉或视觉所作的感知（{@skill 察觉}）检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Fey Ancestry",
+					"name": "妖精血统",
+					"entries": [
+						"该斥候对抗被{@condition 魅惑}的豁免检定具有优势，且魔法无法使其陷入睡眠。"
+					]
+				},
+				{
+					"ENG_name": "Child of the Sea",
+					"name": "海洋之子",
+					"entries": [
+						"该斥候可以呼吸空气和水。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"斥候发动两次近战攻击，或两次远程攻击。"
+					]
+				},
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Longbow",
+					"name": "长弓",
+					"entries": [
+						"{@atk rw} 命中{@hit 4}，射程150/600 尺，单一目标。{@h}6 ({@damage 1d8 + 2}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"长弓|phb",
+				"短剑|phb"
+			],
+			"traitTags": [
+				"妖精血统",
+				"敏锐感官"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Sivak Draconian",
+			"name": "西瓦克龙人",
+			"type": "monstrosity",
+			"source": "DSotDQ",
+			"page": 199,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 57,
+				"formula": "6d10 + 24"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 13,
+			"wis": 10,
+			"cha": 10,
+			"save": {
+				"str": "+6",
+				"wis": "+2"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"languages": [
+				"通用语",
+				"龙语"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"ENG_name": "Death Throes",
+					"name": "焚身爆",
+					"entries": [
+						"当龙人被一个大型或更小的生物将生命值降低为0时，龙人崩解为粉尘，这些粉尘形成会杀死他的那个生物的尖啸着的灵体影像。影像持续1分钟。每个位于影像周围10尺内对龙人敌对的生物都必须成功通过{@dc 14}的感知豁免检定否则对灵体影像{@condition 恐慌}1分钟。一个{@condition 恐慌}的生物可以在自己每个回合结束时重复豁免检定，豁免成功结束该效应对自身的影响。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"龙人进行两次锯齿剑攻击和一次尾击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Serrated Sword",
+					"name": "锯齿剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}13（{@damage 2d8 + 4}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Tail",
+					"name": "尾击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及 5 尺，单一目标。{@h}8（{@damage 1d8 + 4}）钝击伤害。如果目标为大型或更小的生物，则必须成功通过{@dc 14}的力量豁免否则被击{@condition 倒地}。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Shape Theft",
+					"name": "窃形",
+					"entries": [
+						"在龙人杀死一个中型或更小的类人生物之后，龙人能够用魔法制造幻象掩盖自己，将自己的外貌和感官伪装为这一生物，但保留龙人的游戏数据（体型除外）。这一变化持续至龙人死亡或以一个附赠动作结束它。"
+					]
+				}
+			],
+			"traitTags": [
+				"自爆"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"恐慌",
+				"倒地"
+			],
+			"savingThrowForced": [
+				"力量",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Skeletal Knight",
+			"name": "骸骨骑士",
+			"type": "undead",
+			"source": "DSotDQ",
+			"page": 208,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 板甲|PHB|板甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 16,
+			"int": 13,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"con": "+6",
+				"wis": "+5"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 12,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"力竭",
+				"中毒"
+			],
+			"languages": [
+				"理解它生前所知的语言，但不会说"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"ENG_name": "Undead Fortitude",
+					"name": "不死坚韧",
+					"entries": [
+						"如果伤害使骸骨骑士的生命值减至0，他必须进行一次DC为5＋所受伤害值的体质豁免检定，除非该伤害是钝击或来自重击。豁免成功则骸骨骑士的生命值降至1。"
+					]
+				},
+				{
+					"ENG_name": "Unusual Nature",
+					"name": "非凡本质",
+					"entries": [
+						"骸骨骑士不需要空气、食物、饮水或睡眠。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"骸骨骑士进行共计三次的衰亡之刃或投掷飞斧攻击，随意组合。"
+					]
+				},
+				{
+					"ENG_name": "Enervating Blade",
+					"name": "衰亡之刃",
+					"entries": [
+						"{@atk mw} {@hit 8} 命中，触及5尺，单一目标。{@h}15（{@damage 3d6 + 5}）暗蚀伤害，若目标为一个生物，则他直到骸骨骑士的下一回合开始之前不能恢复生命值。"
+					]
+				},
+				{
+					"ENG_name": "Throwing Axe",
+					"name": "投掷飞斧",
+					"entries": [
+						"{@atk mw,rw} {@hit 8} 命中，触及5尺或射程20/60尺，单一目标。{@h}14（{@damage 2d8 + 5}）挥砍伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"不死坚韧",
+				"非凡本质"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Tatina Rookledust",
+			"name": "塔蒂娜·鲁克勒达斯特",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 87,
+			"_copy": {
+				"ENG_name": "Acolyte",
+				"name": "侍僧",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Rock Gnome",
+						"name": "岩石侏儒",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "侍僧",
+						"with": "塔蒂娜·鲁克勒达斯特",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Tem Temble",
+			"name": "藤姆·藤宝",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"坎德人"
+				],
+				"sidekickType": "施法者",
+				"sidekickTags": [
+					"医疗师"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 213,
+			"level": 1,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item 皮甲|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d6 + 4"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 14,
+			"con": 14,
+			"int": 10,
+			"wis": 14,
+			"cha": 14,
+			"save": {
+				"wis": "+4"
+			},
+			"skill": {
+				"insight": "+4",
+				"medicine": "+4",
+				"perception": "+4",
+				"sleight of hand": "+4",
+				"stealth": "+4"
+			},
+			"passive": 14,
+			"conditionImmune": [
+				"恐慌"
+			],
+			"languages": [
+				"通用语",
+				"坎德人语"
+			],
+			"pbNote": "+2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"藤姆的施法属性是感知（法术豁免{@dc 12}，法术攻击检定{@hit 4}）。她准备有以下的德鲁伊法术："
+					],
+					"will": [
+						"{@spell 德鲁伊伎俩}",
+						"{@spell 毒气喷涌}"
+					],
+					"spells": {
+						"1": {
+							"slots": 2,
+							"spells": [
+								"{@spell 治愈真言}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Bonus Proficiencies",
+					"name": "附赠熟练",
+					"entries": [
+						"藤姆拥有简易武器和轻甲的熟练项。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Hoopak",
+					"name": "胡帕克杖",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} 命中，触及5尺或范围40/160尺，单一目标。{@h}4（{@damage 1d4 + 2}）穿刺伤害，或如果藤姆用胡帕克杖的投石索进行远程攻击时4（{@damage 1d4 + 2}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Taunt",
+					"name": "嘲讽",
+					"entries": [
+						"藤姆向她周围60尺内的可见生物发出一连串令人愤怒的辱骂。如果目标可以听见藤姆的声音，则必须成功通过一次{@dc 12}的感知豁免检定，否则直到其下一回合结束前都在攻击检定上具有劣势。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Elusive",
+					"name": "飘忽不定",
+					"entries": [
+						"藤姆·藤宝执行{@action 撤离}或{@action 躲藏}动作。"
+					]
+				}
+			],
+			"variant": [
+				{
+					"ENG_name": "Tem beyond 1st Level",
+					"name": "藤姆（1级以上）",
+					"type": "inset",
+					"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"等级",
+								"生命值",
+								"新特性"
+							],
+							"colStyles": [
+								"col-2 text-center",
+								"col-2",
+								"col-8"
+							],
+							"rows": [
+								[
+									"2环",
+									"16 ({@dice 3d6 + 6})",
+									"施法。藤姆学会另一个一环法术：{@spell 妖火}。"
+								],
+								[
+									"3环",
+									"22 ({@dice 4d6 + 8})",
+									"施法。藤姆获得一个一环法术位。她还学会另一个一环法术：{@spell 神莓术}。"
+								],
+								[
+									"4环",
+									"27 ({@dice 5d6 + 10})",
+									"属性值提升。藤姆的感知属性值提高2，使其调整值提高1，因此以下数值提高1：她的法术豁免DC和法术攻击的命中加值；她的感知豁免检定加值；她的{@skill 洞悉}、{@skill 医药}和{@skill 察觉}加值；她的被动{@skill 察觉}属性值；以及她的嘲讽动作的DC。施法。藤姆学会另一个戏法：{@spell 修复术}。"
+								],
+								[
+									"5环",
+									"33（{@dice 6d6 + 12}）",
+									"熟练加值。藤姆的熟练加值提高1，因此以下数值提高1：她的法术豁免DC和法术攻击命中加值、豁免检定和技能条目中的加值、武器攻击命中加值，以及嘲讽动作的DC。"
+								],
+								[
+									"6th",
+									"38 ({@dice 7d6 + 14})",
+									"强力戏法。藤姆施展的戏法所造成的伤害会加上其感知调整值。"
+								],
+								[
+									"7th",
+									"44（{@dice 8d6 + 16}）",
+									"施法。藤姆获得一个2环法术位。她还学会另一个2环法术：{@spell 强化属性}。"
+								],
+								[
+									"8th",
+									"49 （{@dice 9d6 + 18}）",
+									"属性值提升。藤姆的感知属性值提高2，使其调整值提高1，因此以下数值提高1：她的法术豁免DC和法术攻击的命中加值；她的感知豁免检定加值；她的{@skill 洞悉}、{@skill 医药}和{@skill 察觉}加值；她的被动{@skill 察觉}属性值；以及她的嘲讽动作的DC。"
+								],
+								[
+									"9th",
+									"55（{@dice 10d6 + 20}）",
+									"熟练加值。藤姆的熟练加值提高1，因此以下数值提高1：她的法术豁免DC和法术攻击命中加值、豁免检定和技能条目中的加值、武器攻击命中加值以及嘲讽动作的DC。"
+								],
+								[
+									"10th",
+									"60（{@dice 11d6 + 22}）",
+									"施法Spellcasting。藤姆学会另一个戏法：{@spell 抵抗术}。"
+								],
+								[
+									"11th",
+									"66（{@dice 12d6 + 24}）",
+									"施法。藤姆获得一个三环法术位。她还学会另一个三环法术：{@spell 解除魔法}。"
+								]
+							]
+						}
+					]
+				}
+			],
+			"attachedItems": [
+				"胡帕克杖|DSotDQ"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"damageTagsSpell": [
+				"I"
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"savingThrowForcedSpell": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"_versions": [
+				{
+					"ENG_name": "Tem Temble (10th Level)",
+					"name": "藤姆·藤宝（10级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Potent Cantrips",
+									"name": "强力戏法",
+									"entries": [
+										"藤姆施展的戏法所造成的伤害会加上其感知调整值。"
+									]
+								}
+							]
+						}
+					},
+					"level": 10,
+					"hp": {
+						"average": 60,
+						"formula": "11d6 + 22"
+					},
+					"wis": 18,
+					"save": {
+						"wis": "+8"
+					},
+					"skill": {
+						"insight": "+8",
+						"medicine": "+8",
+						"perception": "+8",
+						"sleight of hand": "+6",
+						"stealth": "+6"
+					},
+					"passive": 16,
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"藤姆的施法属性是感知（法术豁免{@dc 16}，法术攻击检定{@hit 8}）。她准备有以下的德鲁伊法术："
+							],
+							"will": [
+								"{@spell 德鲁伊伎俩}",
+								"{@spell 毒气喷涌}",
+								"{@spell 修复术}",
+								"{@spell 抵抗术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell 治愈真言}",
+										"{@spell 妖火}",
+										"{@spell 神莓术}"
+									]
+								},
+								"2": {
+									"slots": 1,
+									"spells": [
+										"{@spell 强化属性}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"action": [
+						{
+							"ENG_name": "Hoopak",
+							"name": "胡帕克杖",
+							"entries": [
+								"{@atk mw,rw} {@hit 6} 命中，触及5尺或范围40/160尺，单一目标。{@h}4（{@damage 1d4 + 2}）穿刺伤害，或如果藤姆用胡帕克杖的投石索进行远程攻击时4（{@damage 1d4 + 2}）钝击伤害。"
+							]
+						},
+						{
+							"ENG_name": "Taunt",
+							"name": "嘲讽",
+							"entries": [
+								"藤姆向她周围60尺内的可见生物发出一连串令人愤怒的辱骂。如果目标可以听见藤姆的声音，则必须成功通过一次{@dc 16}的感知豁免检定，否则直到其下一回合结束前都在攻击检定上具有劣势。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Tem Temble (11th Level)",
+					"name": "藤姆·藤宝（11级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Potent Cantrips",
+									"name": "强力戏法",
+									"entries": [
+										"藤姆施展的戏法所造成的伤害会加上其感知调整值。"
+									]
+								}
+							]
+						}
+					},
+					"level": 11,
+					"hp": {
+						"average": 66,
+						"formula": "12d6 + 24"
+					},
+					"wis": 18,
+					"save": {
+						"wis": "+8"
+					},
+					"skill": {
+						"insight": "+8",
+						"medicine": "+8",
+						"perception": "+8",
+						"sleight of hand": "+6",
+						"stealth": "+6"
+					},
+					"passive": 16,
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"藤姆的施法属性是感知（法术豁免{@dc 16}，法术攻击检定{@hit 8}）。她准备有以下的德鲁伊法术："
+							],
+							"will": [
+								"{@spell 德鲁伊伎俩}",
+								"{@spell 毒气喷涌}",
+								"{@spell 修复术}",
+								"{@spell 抵抗术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell 治愈真言}",
+										"{@spell 妖火}",
+										"{@spell 神莓术}"
+									]
+								},
+								"2": {
+									"slots": 1,
+									"spells": [
+										"{@spell 强化属性}"
+									]
+								},
+								"3": {
+									"slots": 1,
+									"spells": [
+										"{@spell 解除魔法}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"action": [
+						{
+							"ENG_name": "Hoopak",
+							"name": "胡帕克杖",
+							"entries": [
+								"{@atk mw,rw} {@hit 6} 命中，触及5尺或范围40/160尺，单一目标。{@h}4（{@damage 1d4 + 2}）穿刺伤害，或如果藤姆用胡帕克杖的投石索进行远程攻击时4（{@damage 1d4 + 2}）钝击伤害。"
+							]
+						},
+						{
+							"ENG_name": "Taunt",
+							"name": "嘲讽",
+							"entries": [
+								"藤姆向她周围60尺内的可见生物发出一连串令人愤怒的辱骂。如果目标可以听见藤姆的声音，则必须成功通过一次{@dc 16}的感知豁免检定，否则直到其下一回合结束前都在攻击检定上具有劣势。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Tem Temble (2nd Level)",
+					"name": "藤姆·藤宝（2级）",
+					"source": "DSotDQ",
+					"level": 2,
+					"hp": {
+						"average": 16,
+						"formula": "3d6 + 6"
+					},
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"藤姆的施法属性是感知（法术豁免{@dc 12}，法术攻击检定{@hit 4}）。她准备有以下的德鲁伊法术："
+							],
+							"will": [
+								"{@spell 德鲁伊伎俩}",
+								"{@spell 毒气喷涌}"
+							],
+							"spells": {
+								"1": {
+									"slots": 2,
+									"spells": [
+										"{@spell 治愈真言}",
+										"{@spell 妖火}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Tem Temble (3rd Level)",
+					"name": "藤姆·藤宝（3级）",
+					"source": "DSotDQ",
+					"level": 3,
+					"hp": {
+						"average": 22,
+						"formula": "4d6 + 8"
+					},
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"藤姆的施法属性是感知（法术豁免{@dc 12}，法术攻击检定{@hit 4}）。她准备有以下的德鲁伊法术："
+							],
+							"will": [
+								"{@spell 德鲁伊伎俩}",
+								"{@spell 毒气喷涌}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell 治愈真言}",
+										"{@spell 妖火}",
+										"{@spell 神莓术}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Tem Temble (4th Level)",
+					"name": "藤姆·藤宝（4级）",
+					"source": "DSotDQ",
+					"level": 4,
+					"hp": {
+						"average": 27,
+						"formula": "5d6 + 10"
+					},
+					"wis": 16,
+					"save": {
+						"wis": "+5"
+					},
+					"skill": {
+						"insight": "+5",
+						"medicine": "+5",
+						"perception": "+5",
+						"sleight of hand": "+4",
+						"stealth": "+4"
+					},
+					"passive": 15,
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"藤姆的施法属性是感知（法术豁免{@dc 13}，法术攻击检定{@hit 5}）。她准备有以下的德鲁伊法术："
+							],
+							"will": [
+								"{@spell 德鲁伊伎俩}",
+								"{@spell 毒气喷涌}",
+								"{@spell 修复术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell 治愈真言}",
+										"{@spell 妖火}",
+										"{@spell 神莓术}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"action": [
+						{
+							"ENG_name": "Hoopak",
+							"name": "胡帕克杖",
+							"entries": [
+								"{@atk mw,rw} {@hit 4} 命中，触及5尺或范围40/160尺，单一目标。{@h}4（{@damage 1d4 + 2}）穿刺伤害，或如果藤姆用胡帕克杖的投石索进行远程攻击时4（{@damage 1d4 + 2}）钝击伤害。"
+							]
+						},
+						{
+							"ENG_name": "Taunt",
+							"name": "嘲讽",
+							"entries": [
+								"藤姆向她周围60尺内的可见生物发出一连串令人愤怒的辱骂。如果目标可以听见藤姆的声音，则必须成功通过一次{@dc 13}的感知豁免检定，否则直到其下一回合结束前都在攻击检定上具有劣势。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Tem Temble (5th Level)",
+					"name": "藤姆·藤宝（5级）",
+					"source": "DSotDQ",
+					"level": 5,
+					"hp": {
+						"average": 33,
+						"formula": "6d6 + 12"
+					},
+					"wis": 16,
+					"save": {
+						"wis": "+6"
+					},
+					"skill": {
+						"insight": "+6",
+						"medicine": "+6",
+						"perception": "+6",
+						"sleight of hand": "+5",
+						"stealth": "+5"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"藤姆的施法属性是感知（法术豁免{@dc 14}，法术攻击检定{@hit 6}）。她准备有以下的德鲁伊法术："
+							],
+							"will": [
+								"{@spell 德鲁伊伎俩}",
+								"{@spell 毒气喷涌}",
+								"{@spell 修复术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell 治愈真言}",
+										"{@spell 妖火}",
+										"{@spell 神莓术}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"action": [
+						{
+							"ENG_name": "Hoopak",
+							"name": "胡帕克杖",
+							"entries": [
+								"{@atk mw,rw} {@hit 5} 命中，触及5尺或范围40/160尺，单一目标。{@h}4（{@damage 1d4 + 2}）穿刺伤害，或如果藤姆用胡帕克杖的投石索进行远程攻击时4（{@damage 1d4 + 2}）钝击伤害。"
+							]
+						},
+						{
+							"ENG_name": "Taunt",
+							"name": "嘲讽",
+							"entries": [
+								"藤姆向她周围60尺内的可见生物发出一连串令人愤怒的辱骂。如果目标可以听见藤姆的声音，则必须成功通过一次{@dc 14}的感知豁免检定，否则直到其下一回合结束前都在攻击检定上具有劣势。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Tem Temble (6th Level)",
+					"name": "藤姆·藤宝（6级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Potent Cantrips",
+									"name": "强力戏法",
+									"entries": [
+										"藤姆施展的戏法所造成的伤害会加上其感知调整值。"
+									]
+								}
+							]
+						}
+					},
+					"level": 6,
+					"hp": {
+						"average": 38,
+						"formula": "7d6 + 14"
+					},
+					"wis": 16,
+					"save": {
+						"wis": "+6"
+					},
+					"skill": {
+						"insight": "+6",
+						"medicine": "+6",
+						"perception": "+6",
+						"sleight of hand": "+5",
+						"stealth": "+5"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"藤姆的施法属性是感知（法术豁免{@dc 14}，法术攻击检定{@hit 6}）。她准备有以下的德鲁伊法术："
+							],
+							"will": [
+								"{@spell 德鲁伊伎俩}",
+								"{@spell 毒气喷涌}",
+								"{@spell 修复术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell 治愈真言}",
+										"{@spell 妖火}",
+										"{@spell 神莓术}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"action": [
+						{
+							"ENG_name": "Hoopak",
+							"name": "胡帕克杖",
+							"entries": [
+								"{@atk mw,rw} {@hit 5} 命中，触及5尺或范围40/160尺，单一目标。{@h}4（{@damage 1d4 + 2}）穿刺伤害，或如果藤姆用胡帕克杖的投石索进行远程攻击时4（{@damage 1d4 + 2}）钝击伤害。"
+							]
+						},
+						{
+							"ENG_name": "Taunt",
+							"name": "嘲讽",
+							"entries": [
+								"藤姆向她周围60尺内的可见生物发出一连串令人愤怒的辱骂。如果目标可以听见藤姆的声音，则必须成功通过一次{@dc 14}的感知豁免检定，否则直到其下一回合结束前都在攻击检定上具有劣势。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Tem Temble (7th Level)",
+					"name": "藤姆·藤宝（7级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Potent Cantrips",
+									"name": "强力戏法",
+									"entries": [
+										"藤姆施展的戏法所造成的伤害会加上其感知调整值。"
+									]
+								}
+							]
+						}
+					},
+					"level": 7,
+					"hp": {
+						"average": 44,
+						"formula": "8d6 + 16"
+					},
+					"wis": 16,
+					"save": {
+						"wis": "+6"
+					},
+					"skill": {
+						"insight": "+6",
+						"medicine": "+6",
+						"perception": "+6",
+						"sleight of hand": "+5",
+						"stealth": "+5"
+					},
+					"passive": 15,
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"藤姆的施法属性是感知（法术豁免{@dc 14}，法术攻击检定{@hit 6}）。她准备有以下的德鲁伊法术："
+							],
+							"will": [
+								"{@spell 德鲁伊伎俩}",
+								"{@spell 毒气喷涌}",
+								"{@spell 修复术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell 治愈真言}",
+										"{@spell 妖火}",
+										"{@spell 神莓术}"
+									]
+								},
+								"2": {
+									"slots": 1,
+									"spells": [
+										"{@spell 强化属性}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"action": [
+						{
+							"ENG_name": "Hoopak",
+							"name": "胡帕克杖",
+							"entries": [
+								"{@atk mw,rw} {@hit 5} 命中，触及5尺或范围40/160尺，单一目标。{@h}4（{@damage 1d4 + 2}）穿刺伤害，或如果藤姆用胡帕克杖的投石索进行远程攻击时4（{@damage 1d4 + 2}）钝击伤害。"
+							]
+						},
+						{
+							"ENG_name": "Taunt",
+							"name": "嘲讽",
+							"entries": [
+								"藤姆向她周围60尺内的可见生物发出一连串令人愤怒的辱骂。如果目标可以听见藤姆的声音，则必须成功通过一次{@dc 14}的感知豁免检定，否则直到其下一回合结束前都在攻击检定上具有劣势。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Tem Temble (8th Level)",
+					"name": "藤姆·藤宝（8级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Potent Cantrips",
+									"name": "强力戏法",
+									"entries": [
+										"藤姆施展的戏法所造成的伤害会加上其感知调整值。"
+									]
+								}
+							]
+						}
+					},
+					"level": 8,
+					"hp": {
+						"average": 49,
+						"formula": "9d6 + 18"
+					},
+					"wis": 18,
+					"save": {
+						"wis": "+7"
+					},
+					"skill": {
+						"insight": "+7",
+						"medicine": "+7",
+						"perception": "+7",
+						"sleight of hand": "+5",
+						"stealth": "+5"
+					},
+					"passive": 16,
+					"pbNote": "+3",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"藤姆的施法属性是感知（法术豁免{@dc 15}，法术攻击检定{@hit 7}）。她准备有以下的德鲁伊法术："
+							],
+							"will": [
+								"{@spell 德鲁伊伎俩}",
+								"{@spell 毒气喷涌}",
+								"{@spell 修复术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell 治愈真言}",
+										"{@spell 妖火}",
+										"{@spell 神莓术}"
+									]
+								},
+								"2": {
+									"slots": 1,
+									"spells": [
+										"{@spell 强化属性}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"action": [
+						{
+							"ENG_name": "Hoopak",
+							"name": "胡帕克杖",
+							"entries": [
+								"{@atk mw,rw} {@hit 5} 命中，触及5尺或范围40/160尺，单一目标。{@h}4（{@damage 1d4 + 2}）穿刺伤害，或如果藤姆用胡帕克杖的投石索进行远程攻击时4（{@damage 1d4 + 2}）钝击伤害。"
+							]
+						},
+						{
+							"ENG_name": "Taunt",
+							"name": "嘲讽",
+							"entries": [
+								"藤姆向她周围60尺内的可见生物发出一连串令人愤怒的辱骂。如果目标可以听见藤姆的声音，则必须成功通过一次{@dc 15}的感知豁免检定，否则直到其下一回合结束前都在攻击检定上具有劣势。"
+							]
+						}
+					],
+					"variant": null
+				},
+				{
+					"ENG_name": "Tem Temble (9th Level)",
+					"name": "藤姆·藤宝（9级）",
+					"source": "DSotDQ",
+					"_mod": {
+						"trait": {
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Potent Cantrips",
+									"name": "强力戏法",
+									"entries": [
+										"藤姆施展的戏法所造成的伤害会加上其感知调整值。"
+									]
+								}
+							]
+						}
+					},
+					"level": 9,
+					"hp": {
+						"average": 55,
+						"formula": "10d6 + 20"
+					},
+					"wis": 18,
+					"save": {
+						"wis": "+8"
+					},
+					"skill": {
+						"insight": "+8",
+						"medicine": "+8",
+						"perception": "+8",
+						"sleight of hand": "+6",
+						"stealth": "+6"
+					},
+					"passive": 16,
+					"pbNote": "+4",
+					"spellcasting": [
+						{
+							"ENG_name": "Spellcasting",
+							"name": "施法",
+							"headerEntries": [
+								"藤姆的施法属性是感知（法术豁免{@dc 16}，法术攻击检定{@hit 8}）。她准备有以下的德鲁伊法术："
+							],
+							"will": [
+								"{@spell 德鲁伊伎俩}",
+								"{@spell 毒气喷涌}",
+								"{@spell 修复术}"
+							],
+							"spells": {
+								"1": {
+									"slots": 3,
+									"spells": [
+										"{@spell 治愈真言}",
+										"{@spell 妖火}",
+										"{@spell 神莓术}"
+									]
+								},
+								"2": {
+									"slots": 1,
+									"spells": [
+										"{@spell 强化属性}"
+									]
+								}
+							},
+							"ability": "wis"
+						}
+					],
+					"action": [
+						{
+							"ENG_name": "Hoopak",
+							"name": "胡帕克杖",
+							"entries": [
+								"{@atk mw,rw} {@hit 6} 命中，触及5尺或范围40/160尺，单一目标。{@h}4（{@damage 1d4 + 2}）穿刺伤害，或如果藤姆用胡帕克杖的投石索进行远程攻击时4（{@damage 1d4 + 2}）钝击伤害。"
+							]
+						},
+						{
+							"ENG_name": "Taunt",
+							"name": "嘲讽",
+							"entries": [
+								"藤姆向她周围60尺内的可见生物发出一连串令人愤怒的辱骂。如果目标可以听见藤姆的声音，则必须成功通过一次{@dc 16}的感知豁免检定，否则直到其下一回合结束前都在攻击检定上具有劣势。"
+							]
+						}
+					],
+					"variant": null
+				}
+			]
+		},
+		{
+			"ENG_name": "Undead Soldier",
+			"name": "亡灵士兵",
+			"source": "DSotDQ",
+			"page": 96,
+			"_copy": {
+				"ENG_name": "Wight",
+				"name": "尸妖",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "尸妖",
+						"with": "士兵"
+					}
+				}
+			},
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 板甲|phb}"
+					]
+				}
+			],
+			"trait": null,
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Virruza",
+			"name": "维尔鲁扎",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 119,
+			"_copy": {
+				"ENG_name": "Green Slaad",
+				"name": "史拉绿蟾",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "史拉蟾",
+						"with": "维尔鲁扎",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "replaceArr",
+						"replace": "变形生物",
+						"items": {
+							"ENG_name": "Death Throes",
+							"name": "焚身爆",
+							"entries": [
+								"当维尔鲁扎的生命值降低为0时，他会溶解成酸液，飞溅到周围的生物身上。每个维尔鲁扎周围5尺内的生物都必须成功通过{@dc 12}的敏捷豁免否则被酸液所覆盖1分钟。一个生物能够以其动作刮掉或洗掉自己或另一个生物身上的酸液。被酸液覆盖的生物在其每回合开始时受到7（{@damage 2d6}）点强酸伤害。"
+							]
+						}
+					}
+				}
+			},
+			"tokenCustom": true,
+			"traitTags": [
+				"自爆",
+				"魔法抗性",
+				"再生",
+				"变形生物"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Wasteland Dragonnel",
+			"name": "荒原亚龙",
+			"type": "dragon",
+			"source": "DSotDQ",
+			"page": 201,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"G"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d10 + 10"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 12,
+			"int": 8,
+			"wis": 13,
+			"cha": 10,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"盲视 30 尺",
+				"黑暗视觉 120 尺"
+			],
+			"passive": 13,
+			"resist": [
+				"强酸"
+			],
+			"languages": [
+				"能理解通用语和龙语，但不能说话"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Flyby",
+					"name": "飞掠",
+					"entries": [
+						"四足亚龙飞出仇敌的触及范围时不会触发借机攻击。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"四足亚龙发动两次撕裂攻击。"
+					]
+				},
+				{
+					"ENG_name": "Rend",
+					"name": "撕裂",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Acid Spit",
+					"name": "喷酸",
+					"entries": [
+						"{@atk rw} {@hit 5} 命中，射程60尺，单一目标。{@h}20（{@damage 5d6 + 3}）强酸伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"traitTags": [
+				"飞掠"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"DR"
+			],
+			"damageTags": [
+				"A",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Wersten Kern",
+			"name": "魏斯腾·克恩",
+			"type": "undead",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 209,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 板甲|PHB|板甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 178,
+				"formula": "21d8 + 84"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 21,
+			"dex": 10,
+			"con": 18,
+			"int": 13,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"con": "+9",
+				"wis": "+7"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 12,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"力竭",
+				"恐慌",
+				"中毒"
+			],
+			"languages": [
+				"通用语",
+				"炼狱语",
+				"索兰尼亚语"
+			],
+			"cr": "14",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"魏斯腾·克恩施展以下法术中的一道，不需要任何材质成分并使用魅力作为施法属性（法术豁免{@dc 16}）："
+					],
+					"daily": {
+						"1e": [
+							"{@spell 解除魔法}",
+							"{@spell 石墙术}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Undead Fortitude",
+					"name": "不死坚韧",
+					"entries": [
+						"如果伤害使魏斯腾的生命值减至0，她必须进行一次DC为5＋所受伤害值的体质豁免检定，除非该伤害是钝击或来自重击。豁免成功则魏斯腾的生命值降至1。"
+					]
+				},
+				{
+					"ENG_name": "Unusual Nature",
+					"name": "非凡本质",
+					"entries": [
+						"魏斯腾不需要空气、食物、饮水或睡眠。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"魏斯腾·克恩进行三次旌旗长矛攻击并使用震惧连祷（若可用）。"
+					]
+				},
+				{
+					"ENG_name": "Banner Pike",
+					"name": "旌旗",
+					"entries": [
+						"{@atk mw} {@hit 10} 命中，触及 5 尺，单一目标。{@h}10（{@damage 1d10 + 5}）穿刺伤害外加 13（{@damage 3d8}）暗蚀伤害。若目标为类人生物，则必须成功通过一次 {@dc 16} 魅力豁免否则被诅咒。诅咒持续直到被移除诅咒或类似魔法解除。被诅咒时，黑色荆棘玫瑰茎从该生物身上长出，使其属性检定和攻击检定具有劣势，且速度减半。成功通过豁免的生物在 24 小时内免疫此诅咒。"
+					]
+				},
+				{
+					"ENG_name": "Terrifying Litany {@recharge 5}",
+					"name": "恐怖连祷{@recharge 5}",
+					"entries": [
+						"魏斯腾诵念那些被索思及其盟友所杀之灵魂的名字，引导他们死前的惊惧。任何在她周围30尺的非亡灵必须进行一次{@dc 16}的感知豁免。豁免失败者受到22（{@damage 4d10}）心灵伤害并被魏斯腾{@condition 恐慌}一分钟。豁免成功伤害减半且不会被{@condition 恐慌}。被{@condition 恐慌}的生物可以在自己回合结束时重新进行豁免，成功则结束该效应。"
+					]
+				}
+			],
+			"traitTags": [
+				"不死坚韧",
+				"非凡本质"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"CUR",
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"恐慌"
+			],
+			"savingThrowForced": [
+				"魅力",
+				"感知"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Wyhan",
+			"name": "维汉",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "DSotDQ",
+			"page": 79,
+			"_copy": {
+				"ENG_name": "Mage",
+				"name": "魔法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔法师",
+						"with": "维汉",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		}
+	]
+}

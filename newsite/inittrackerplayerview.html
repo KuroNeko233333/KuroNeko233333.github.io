@@ -1,0 +1,6 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>先攻追踪器玩家视图</title><link rel="stylesheet" href="fonts.css"><link rel="stylesheet" href="theme.css"><link rel="stylesheet" href="dmscreen.css"><link rel="stylesheet" href="motion.css">
+<body class="screen-workspace"><main id="player"></main><output id="message" role="status" hidden></output>
+<script type="module">import {startPlayer} from "./screen-player.js";import {setMotion} from "./motion.js";setMotion(localStorage.getItem("ours.motion")!=="0");startPlayer(document.querySelector("#player"));</script></html>
+

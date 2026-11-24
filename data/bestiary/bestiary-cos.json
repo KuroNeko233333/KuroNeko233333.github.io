@@ -1,0 +1,5695 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM",
+				"VRGR"
+			]
+		},
+		"internalCopies": [
+			"monster"
+		],
+		"otherSources": {
+			"monster": {
+				"MM": "CoS",
+				"VRGR": "CoS"
+			}
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Amber Golem",
+			"name": "琥珀魔像",
+			"source": "CoS",
+			"page": 186,
+			"_copy": {
+				"ENG_name": "Stone Golem",
+				"name": "石魔像",
+				"source": "MM"
+			},
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Anastrasya Karelova",
+			"name": "安娜斯塔西娅·卡列洛娃",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 93,
+			"_copy": {
+				"ENG_name": "Vampire Spawn",
+				"name": "初生吸血鬼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "吸血鬼",
+						"with": "安娜斯塔西娅",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Animated Halberd",
+			"name": "活化长戟",
+			"source": "CoS",
+			"page": 59,
+			"_copy": {
+				"ENG_name": "Flying Sword",
+				"name": "凌空剑",
+				"source": "MM"
+			},
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Halberd",
+					"name": "长戟",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}5 ({@damage 1d10 + 1}) 点挥砍伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"长戟|phb"
+			],
+			"miscTags": [
+				"MLW"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Arabelle",
+			"name": "阿拉贝拉",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 38,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM",
+				"_mod": {
+					"action": "remove"
+				}
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"hp": {
+				"average": 2,
+				"formula": "1d8"
+			},
+			"miscTags": [],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Armored Saber-Toothed Tiger",
+			"name": "装甲剑齿虎",
+			"source": "CoS",
+			"page": 115,
+			"_copy": {
+				"ENG_name": "Saber-Toothed Tiger",
+				"name": "剑齿虎",
+				"source": "MM"
+			},
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item 半身板甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 84,
+				"formula": "7d10 + 14"
+			},
+			"cr": "3",
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Arrigal",
+			"name": "阿利格尔",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 121,
+			"_copy": {
+				"ENG_name": "Vistana Assassin",
+				"name": "维斯塔尼刺客",
+				"source": "CoS",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "刺客",
+						"with": "阿利格尔",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Baba Lysaga",
+			"name": "芭芭·莱萨迦",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类",
+					"变形生物"
+				]
+			},
+			"group": [
+				"鬼婆"
+			],
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 228,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 120,
+				"formula": "16d8 + 48"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 16,
+			"int": 20,
+			"wis": 17,
+			"cha": 13,
+			"save": {
+				"wis": "+7"
+			},
+			"skill": {
+				"arcana": "+13",
+				"religion": "+13"
+			},
+			"passive": 13,
+			"languages": [
+				"深渊语",
+				"通用语",
+				"龙语",
+				"矮人语",
+				"巨人语"
+			],
+			"cr": "11",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"芭芭·莱萨迦是一名 16 级的施法者，其施法关键属性是智力（法术豁免 {@dc 17}，法术攻击命中{@hit 9}）。莱萨迦准备了以下的法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 酸液飞溅}",
+								"{@spell 火焰箭}",
+								"{@spell 光亮术}",
+								"{@spell 法师之手}",
+								"{@spell 魔法伎俩}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 侦测魔法}",
+								"{@spell 魔法飞弹}",
+								"{@spell 睡眠术}",
+								"{@spell 巫术箭}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 疯狂冠冕}",
+								"{@spell 变巨/缩小术}",
+								"{@spell 迷踪步}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 解除魔法}",
+								"{@spell 火球术}",
+								"{@spell 闪电束}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 枯萎术}",
+								"{@spell 艾伐黑触手}",
+								"{@spell 变形术}"
+							]
+						},
+						"5": {
+							"slots": 2,
+							"spells": [
+								"{@spell 死云术}",
+								"{@spell 指使术}",
+								"{@spell 探知术}"
+							]
+						},
+						"6": {
+							"slots": 1,
+							"spells": [
+								"{@spell 预置幻影}",
+								"{@spell 真知术}"
+							]
+						},
+						"7": {
+							"slots": 1,
+							"spells": [
+								"{@spell 死亡一指}",
+								"{@spell 海市蜃楼}"
+							]
+						},
+						"8": {
+							"slots": 1,
+							"spells": [
+								"{@spell 律令震慑}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Shapechanger",
+					"name": "变形生物",
+					"entries": [
+						"芭芭·莱萨迦可以使用一个动作变成一片{@creature 昆虫集群}（苍蝇）或者变回她的真实形态。当处于虫群形态时，她具有 5 尺的速度与 30 尺的飞行速度。任何她穿着的东西都会随着她变化，但是她所携带的东西则不行。"
+					]
+				},
+				{
+					"ENG_name": "Blessing of Mother Night",
+					"name": "夜母护佑",
+					"entries": [
+						"芭芭·莱萨迦可以屏蔽任何预言类魔法就如同被{@spell 回避侦测}法术所保护一般。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"芭芭·莱萨迦用她的长棍进行三次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Quarterstaff",
+					"name": "长棍",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}7 ({@damage 1d6 + 4}) 钝击伤害，如果双手持用则为8 ({@damage 1d8 + 4}) 钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Summon Swarms of Insects (Recharges after a Short or Long Rest)",
+					"name": "召唤昆虫集群（短休或长休后充能）",
+					"entries": [
+						"芭芭·莱萨迦召唤{@dice 1d4}片昆虫集群。被召唤的每一个昆虫集群会分别出现在距离芭芭·莱萨迦 60 尺以内范围内一个未被占据的格子内，并且会如同她的盟友般行动。被召唤的昆虫集群会持续存在，直到芭芭·莱萨迦用一个动作解消或昆虫集群本身死亡。"
+					]
+				}
+			],
+			"attachedItems": [
+				"长棍|phb"
+			],
+			"traitTags": [
+				"变形生物"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"D",
+				"DR",
+				"GI"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"F",
+				"I",
+				"L",
+				"N",
+				"O",
+				"Y"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Baba Lysaga's Creeping Hut",
+			"name": "芭芭·莱萨迦的步行小屋",
+			"type": "construct",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 226,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 263,
+				"formula": "17d20 + 85"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 26,
+			"dex": 7,
+			"con": 20,
+			"int": 1,
+			"wis": 3,
+			"cha": 3,
+			"save": {
+				"con": "+9",
+				"wis": "+0",
+				"cha": "+0"
+			},
+			"senses": [
+				"盲视120尺（此范围外则视为目盲）"
+			],
+			"passive": 6,
+			"immune": [
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"倒地"
+			],
+			"cr": "11",
+			"trait": [
+				{
+					"ENG_name": "Constructed Nature",
+					"name": "构装本质",
+					"entries": [
+						"活化物件不需要空气、饮食或睡眠。",
+						"当一个活化物件 HP（生命值）降至 0 点时，活化它的魔法将会失效。同时在其因为生命值归零而失去活化时，该物品会受到严重损坏以至于失去所有价值并无法被再度使用。"
+					]
+				},
+				{
+					"ENG_name": "Antimagic Susceptibility",
+					"name": "魔力依赖",
+					"entries": [
+						"当活化它的那块魔法宝石处在{@spell 反魔法场}中时它{@condition 失能}。当成为一道{@spell 解除魔法}的目标时，小屋必须成功通过一个对抗施法者法术豁免 DC 的体质豁免掷骰，如果失败则陷入{@condition 昏迷}1 分钟。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"小屋对物体或建筑造成双倍伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"小屋使用它的根进行三次攻击。它可以将其中一次这种攻击改为投掷巨石。"
+					]
+				},
+				{
+					"ENG_name": "Root",
+					"name": "根",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及60尺，单一目标。{@h}30 ({@damage 4d10 + 8}) 钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Rock",
+					"name": "掷石",
+					"entries": [
+						"{@atk rw} 命中{@hit 12}，射程 120 尺，单一目标。{@h}21（{@damage 3d8 + 8}）钝击伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔力依赖",
+				"攻城怪物"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Baron Vargas Vallakovich",
+			"name": "瓦格斯·瓦拉科维奇男爵",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 105,
+			"_copy": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "贵族",
+						"with": "瓦格斯",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Barovian Commoner",
+			"name": "巴洛维亚平民",
+			"source": "CoS",
+			"page": 29,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"action": [
+				{
+					"ENG_name": "Pitchfork",
+					"name": "草叉",
+					"entries": [
+						"{@atk mw} 命中{@hit 2}，触及5尺，单一目标。{@h}3（{@damage 1d6}）点穿刺伤害。"
+					]
+				}
+			],
+			"damageTags": [
+				"P"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Barovian Scout",
+			"name": "巴洛维亚侦察兵",
+			"source": "CoS",
+			"page": 29,
+			"_copy": {
+				"ENG_name": "Scout",
+				"name": "斥候",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "replaceArr",
+						"replace": "长弓",
+						"items": {
+							"ENG_name": "Light Crossbows",
+							"name": "轻弩",
+							"entries": [
+								"{@atk rw} 命中{@hit 4}，远程80/320尺，单一目标。{@h}6（{@damage 1d8 + 2}）穿刺伤害。"
+							]
+						}
+					}
+				}
+			},
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Barovian Witch",
+			"name": "巴洛维亚巫师",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "CoS",
+			"page": 229,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 16,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 7,
+			"dex": 11,
+			"con": 13,
+			"int": 14,
+			"wis": 11,
+			"cha": 12,
+			"skill": {
+				"arcana": "+4",
+				"perception": "+2"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 12,
+			"languages": [
+				"通用语"
+			],
+			"cr": "1/2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"女巫是3级施法者。其施法能力为智力（法术豁免难度{@dc 12}，法术攻击命中{@hit 4}）。女巫准备了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 法师之手}",
+								"{@spell 魔法伎俩}",
+								"{@spell 冷冻射线}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 致病射线}",
+								"{@spell 睡眠术}",
+								"{@spell 塔莎狂笑术}"
+							]
+						},
+						"2": {
+							"slots": 2,
+							"spells": [
+								"{@spell 变身术}",
+								"{@spell 隐形术}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Claws (Requires Alter Self)",
+					"name": "爪击（需要变身术）",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}4（{@damage 1d6 + 1}）挥砍伤害。这次攻击视为魔法攻击。"
+					]
+				},
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 2}，触及范围5尺或射程20/60尺，单一目标。{@h}2 ({@damage 1d4}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"I",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Beucephalus",
+			"name": "布西法拉斯",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 93,
+			"_copy": {
+				"ENG_name": "Nightmare",
+				"name": "梦魇",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "梦魇",
+						"with": "布西法拉斯",
+						"flags": "i"
+					}
+				}
+			},
+			"hp": {
+				"average": 104,
+				"formula": "8d10 + 24"
+			},
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Bluto Krogarov",
+			"name": "布鲁托·科洛加洛夫",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 38,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Bray Martikov",
+			"name": "布雷·马可夫",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 98,
+			"_copy": {
+				"ENG_name": "Young Wereraven",
+				"name": "青年鸦人",
+				"source": "CoS",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鸦人",
+						"with": "布雷",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Brom Martikov",
+			"name": "布罗姆·马可夫",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 98,
+			"_copy": {
+				"ENG_name": "Young Wereraven",
+				"name": "青年鸦人",
+				"source": "CoS",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鸦人",
+						"with": "布罗姆",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Broom of Animated Attack",
+			"name": "活化战斗扫帚",
+			"type": "construct",
+			"source": "CoS",
+			"page": 226,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 17,
+				"formula": "5d6"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 50,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"str": 10,
+			"dex": 17,
+			"con": 10,
+			"int": 1,
+			"wis": 5,
+			"cha": 1,
+			"senses": [
+				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+			],
+			"passive": 7,
+			"immune": [
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"ENG_name": "Constructed Nature",
+					"name": "构装本质",
+					"entries": [
+						"活化物件不需要空气、饮食或睡眠。",
+						"当一个活化物件 HP（生命值）降至 0 点时，活化它的魔法将会失效。同时在其因为生命值归零而失去活化时，该物品会受到严重损坏以至于失去所有价值并无法被再度使用。"
+					]
+				},
+				{
+					"ENG_name": "Antimagic Susceptibility",
+					"name": "魔力依赖",
+					"entries": [
+						"当活化战斗扫帚处在{@spell 反魔法场}中时它{@condition 失能}。当成为一道{@spell 解除魔法}的目标时，扫帚必须必须成功通过一个对抗施法者法术豁免 DC 的体质豁免掷骰，如果失败则陷入{@condition 昏迷} 1 分钟。"
+					]
+				},
+				{
+					"ENG_name": "False Appearance",
+					"name": "无定形",
+					"entries": [
+						"当扫帚保持静止并且没有处于飞行中时，它无法被与普通扫帚区分开来。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"扫帚进行两次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Broomstick",
+					"name": "帚柄猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}5（{@damage 1d4 + 3}）钝击伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Animated Attack",
+					"name": "活化战斗",
+					"entries": [
+						"如果活化战斗扫帚处于无意识状态且有一个生物握住了它，扫帚需要做一个敏捷检定，对抗该生物的力量检定。如果扫帚对抗成功，它会挣脱该生物的抓取并对其进行一次在攻击掷骰上具有优势的近战攻击。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔力依赖",
+				"无定形"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Cat Skeleton",
+			"name": "猫骷髅",
+			"source": "CoS",
+			"page": 109,
+			"_copy": {
+				"ENG_name": "Cat",
+				"name": "猫",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Skeleton",
+						"name": "骷髅",
+						"source": "DMG"
+					}
+				],
+				"_mod": {
+					"_": [
+						{
+							"mode": "setProp",
+							"prop": "vulnerable",
+							"value": null
+						},
+						{
+							"mode": "setProp",
+							"prop": "languages",
+							"value": null
+						}
+					]
+				}
+			},
+			"tokenCredit": "BoneTea",
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Clovin Belview",
+			"name": "克洛文·贝尔维",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 147,
+			"_copy": {
+				"ENG_name": "Mongrelfolk",
+				"name": "混种人",
+				"source": "CoS",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "混种人",
+						"with": "克洛文",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "replaceArr",
+						"replace": "额外特性",
+						"items": {
+							"ENG_name": "Two-Headed",
+							"name": "双头",
+							"entries": [
+								"混种人在进行感知（{@skill 察觉}）检定时具有优势，并且在对抗{@condition 目盲}、{@condition 魅惑}、{@condition 耳聋}、{@condition 恐慌}、{@condition 昏迷}或{@condition 震慑}的豁免检定中也具有优势。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Cyrus Belview",
+			"name": "赛勒斯·贝尔维",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 77,
+			"_copy": {
+				"ENG_name": "Mongrelfolk",
+				"name": "混种人",
+				"source": "CoS",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "混种人",
+						"with": "赛勒斯",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "replaceArr",
+						"replace": "额外特性",
+						"items": {
+							"ENG_name": "Keen Hearing and Smell",
+							"name": "敏锐嗅听觉",
+							"entries": [
+								"混种人在依赖听觉或嗅觉的感知（{@skill 察觉}）检定上有优势。"
+							]
+						}
+					}
+				}
+			},
+			"traitTags": [
+				"敏锐感官"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Danika Dorakova",
+			"name": "达妮卡·多拉科娃",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 98,
+			"_copy": {
+				"ENG_name": "Wereraven",
+				"name": "鸦人",
+				"source": "VRGR",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鸦人",
+						"with": "达妮卡",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Davian Martikov",
+			"name": "达尔万·马可夫",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 173,
+			"_copy": {
+				"ENG_name": "Wereraven",
+				"name": "鸦人",
+				"source": "VRGR",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鸦人",
+						"with": "戴维恩",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Distended Corpse",
+			"name": "肿胀的尸体",
+			"source": "CoS",
+			"page": 165,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"conditionImmune": [
+				"魅惑",
+				"恐慌"
+			],
+			"trait": [
+				{
+					"ENG_name": "Snake-Swollen",
+					"name": "毒蛇肿爆",
+					"entries": [
+						"当一具尸体的生命值被削减至 0 时，它会爆开，吐出一个 {@creature 毒蛇群}。这些蛇十分饥饿，并且战斗至死。"
+					]
+				}
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Donavich",
+			"name": "多纳维奇",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 46,
+			"_copy": {
+				"ENG_name": "Acolyte",
+				"name": "侍僧",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "侍僧",
+						"with": "多纳维奇",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Doru",
+			"name": "多鲁",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 47,
+			"_copy": {
+				"ENG_name": "Vampire Spawn",
+				"name": "初生吸血鬼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "吸血鬼",
+						"with": "多鲁",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Emil Toranescu",
+			"name": "埃米尔·托兰涅斯库",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 81,
+			"_copy": {
+				"ENG_name": "Werewolf",
+				"name": "狼人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "狼人",
+						"with": "埃米尔",
+						"flags": "i"
+					}
+				}
+			},
+			"hp": {
+				"average": 72,
+				"formula": "9d8 + 18"
+			},
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Escher",
+			"name": "伊斯切尔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 70,
+			"_copy": {
+				"ENG_name": "Vampire Spawn",
+				"name": "初生吸血鬼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "吸血鬼",
+						"with": "伊斯切尔",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Exethanter",
+			"name": "艾克斯桑特",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 189,
+			"_copy": {
+				"ENG_name": "Lich",
+				"name": "巫妖",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "巫妖",
+						"with": "艾克斯桑特",
+						"flags": "i"
+					}
+				}
+			},
+			"hp": {
+				"average": 99,
+				"formula": "18d8 + 54"
+			},
+			"cr": "10",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"巫妖作为18级施法者，其施法属性为智力（法术豁免{@dc 20}，法术攻击加值{@hit 12}）。巫妖准备了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 法师之手}",
+								"{@spell 魔法伎俩}",
+								"{@spell 冷冻射线}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"damageTagsLegendary": [],
+			"damageTagsSpell": [
+				"C"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Ezmerelda d'Avenir",
+			"name": "艾丝美拉达·德·阿维尼尔",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 231,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item +1 镶钉皮甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 82,
+				"formula": "11d8 + 33"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 19,
+			"con": 16,
+			"int": 16,
+			"wis": 11,
+			"cha": 17,
+			"save": {
+				"wis": "+3"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"arcana": "+6",
+				"deception": "+9",
+				"insight": "+3",
+				"medicine": "+3",
+				"perception": "+6",
+				"performance": "+6",
+				"sleight of hand": "+7",
+				"stealth": "+7",
+				"survival": "+6"
+			},
+			"passive": 16,
+			"languages": [
+				"通用语",
+				"精灵语"
+			],
+			"cr": "8",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"艾丝美拉达是一名 7 级施法者。她的施法关键属性是智力（法术豁免{@dc 14}，法术攻击命中{@hit 6}）。艾丝美拉达准备了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 火焰箭}",
+								"{@spell 光亮术}",
+								"{@spell 法师之手}",
+								"{@spell 魔法伎俩}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 防护善恶}",
+								"{@spell 魔法飞弹}",
+								"{@spell 护盾术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 黑暗视觉}",
+								"{@spell 敲击术}",
+								"{@spell 镜影术}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 鹰眼术}",
+								"{@spell 闪电束}",
+								"{@spell 防护法阵}"
+							]
+						},
+						"4": {
+							"slots": 1,
+							"spells": [
+								"{@spell 高等隐形术}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Special Equipment",
+					"name": "特殊装备",
+					"entries": [
+						"除了她的魔法护甲和武器外，艾丝美拉达还拥有两瓶{@item 高等治疗药水||高等治疗药水}，六小瓶{@item 圣水 (扁瓶)|phb|小圣水瓶}，和三个木桩。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"艾丝美拉达进行三次攻击：两次用她的+1 刺剑，一次用她的+1 手斧或银质短剑。"
+					]
+				},
+				{
+					"ENG_name": "Rapier +1",
+					"name": "+1 刺剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}9（{@damage 1d8 + 5}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Handaxe +1",
+					"name": "+1 手斧",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 6}，触及5尺或射程20/60尺，单一目标。{@h}6（{@damage 1d6 + 3}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Silvered Shortsword",
+					"name": "镀银短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}7（{@damage 1d6 + 4}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Curse (Recharges after a Long Rest)",
+					"name": "诅咒（长休后充能）",
+					"entries": [
+						"艾丝美拉达选择一个她能看到、距离她 30 尺以内的生物，目标必须通过一次{@dc 14}的感知豁免否则被诅咒。被诅咒时，目标获得一种由艾丝美拉达选择的伤害的易伤。诅咒持续直到被一个{@spell 高等复原术}法术、一个{@spell 移除诅咒}法术或类似魔法效果结束。当诅咒结束时，艾丝美拉达受到 {@damage 3d6} 心灵伤害。"
+					]
+				},
+				{
+					"ENG_name": "Evil Eye (Recharges after a Short or Long Rest)",
+					"name": "邪眼（短休或长休后充能）",
+					"entries": [
+						"艾丝美拉达选择一个她能看到、且距离她 10 尺以内的生物，对目标施放以下法术之一（豁免{@dc 14}），这样做不需要姿势和材料成分：化兽为友 animal friendship，魅惑类人 charm person，定身类人 hold person。如果目标成功通过了最初的豁免，艾丝美拉达{@condition 目盲}直到她的下回合结束。一旦一个目标成功通过了一次对这种效果的豁免，它便在 24小时里免疫所有的维斯塔尼人的邪眼的力量。"
+					]
+				}
+			],
+			"attachedItems": [
+				"+1 手斧|dmg",
+				"+1 刺剑|dmg",
+				"镀银短剑|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"F",
+				"L",
+				"O"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"CUR",
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflictSpell": [
+				"隐形"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Gadof Blinsky",
+			"name": "加多夫·布林斯基",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 118,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Gertruda",
+			"name": "歌尔图达",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 68,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Guardian Portrait",
+			"name": "画中守卫",
+			"type": "construct",
+			"source": "CoS",
+			"page": 227,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 5,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d8"
+			},
+			"speed": {
+				"walk": 0
+			},
+			"str": 1,
+			"dex": 1,
+			"con": 10,
+			"int": 14,
+			"wis": 10,
+			"cha": 10,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚"
+			],
+			"languages": [
+				"通用语",
+				"外加最多两种其他语言"
+			],
+			"cr": "1",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"这幅画像的天生施法能力是智力（法术豁免{@dc 12}）。画像能够天生施展以下法术，无需任何材料成分："
+					],
+					"daily": {
+						"3e": [
+							"{@spell 法术反制}",
+							"{@spell 疯狂冠冕}",
+							"{@spell 催眠图纹}",
+							"{@spell 心灵遥控}"
+						]
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Constructed Nature",
+					"name": "构装本质",
+					"entries": [
+						"活化物件不需要空气、饮食或睡眠。",
+						"当一个活化物件 HP（生命值）降至 0 点时，活化它的魔法将会失效。同时在其因为生命值归零而失去活化时，该物品会受到严重损坏以至于失去所有价值并无法被再度使用。"
+					]
+				},
+				{
+					"ENG_name": "Antimagic Susceptibility",
+					"name": "魔力依赖",
+					"entries": [
+						"画像在{@spell 反魔法场}法术的作用范围内处于{@condition 失能}状态。如果成为{@spell 解除魔法}法术的目标，画像必须在施法者的法术豁免DC上成功进行体质豁免检定，否则会进入{@condition 昏迷}状态，持续1分钟。"
+					]
+				},
+				{
+					"ENG_name": "False Appearance",
+					"name": "无定形",
+					"entries": [
+						"当画像中的人物保持静止不动时，这幅画像与普通的画作无异。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔力依赖",
+				"无定形"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"conditionInflictSpell": [
+				"魅惑",
+				"束缚"
+			],
+			"savingThrowForcedSpell": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Helga Ruvak",
+			"name": "海尔嘉·露瓦克",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 64,
+			"_copy": {
+				"ENG_name": "Vampire Spawn",
+				"name": "初生吸血鬼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "吸血鬼",
+						"with": "海尔嘉",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Henrik van der Voort",
+			"name": "亨里克·范·德·沃特",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 116,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Hungry Ghast",
+			"name": "饥饿妖鬼",
+			"source": "CoS",
+			"page": 192,
+			"_copy": {
+				"ENG_name": "Ghast",
+				"name": "妖鬼",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Spider Climb",
+							"name": "蛛行术",
+							"entries": [
+								"妖鬼可以在困难表面攀爬，包括在天花板上倒悬，而无需进行属性检定。"
+							]
+						}
+					}
+				}
+			},
+			"tokenCredit": "Will O'Brien",
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Ireena Kolyana",
+			"name": "伊莉娜·考利安娜",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 44,
+			"_copy": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "贵族",
+						"with": "伊莉娜",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hp": {
+				"average": 14,
+				"formula": "2d8"
+			},
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Ismark Kolyanovich",
+			"name": "伊斯马克·考利安诺维奇",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 43,
+			"_copy": {
+				"ENG_name": "Veteran",
+				"name": "老兵",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "老兵",
+						"with": "伊斯马克",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Izek Strazni",
+			"name": "艾泽克·施特拉兹尼",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 232,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item 镶钉皮甲|phb|镶钉皮甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 16,
+			"int": 10,
+			"wis": 9,
+			"cha": 15,
+			"skill": {
+				"intimidation": "+8",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"通用语"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Brute",
+					"name": "残暴",
+					"entries": [
+						"艾泽克使用一件近战武器攻击命中时，该攻击造成一颗额外武器伤害骰（已包含攻击数据里）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"艾泽克用他的战斧进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Battleaxe",
+					"name": "战斧",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}， 触及5尺，单一目标。{@h}13 ({@damage 2d8 + 4}) 挥砍伤害，或双手使用时15 ({@damage 2d10 + 4}) 伤害。"
+					]
+				},
+				{
+					"ENG_name": "Hurl Flame",
+					"name": "投掷烈焰",
+					"entries": [
+						"{@atk rs} 命中{@hit 5}，射程60尺，单一目标。{@h}10（{@damage 3d6}）火焰伤害。如果目标是一个可燃物，且没有被穿戴或携带，它被点燃。"
+					]
+				}
+			],
+			"attachedItems": [
+				"战斧|phb"
+			],
+			"traitTags": [
+				"残暴"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"F",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Kasimir Velikov",
+			"name": "卡西米尔·维里科夫",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "精灵",
+						"prefix": "黄昏",
+						"prefixHidden": true
+					}
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 233,
+			"_copy": {
+				"ENG_name": "Mage",
+				"name": "魔法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔法师",
+						"with": "卡西米尔",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Fey Ancestry",
+								"name": "妖精血统",
+								"entries": [
+									"卡西米尔在对抗{@condition 魅惑}的豁免检定中具有优势，且魔法无法使他陷入睡眠。"
+								]
+							},
+							{
+								"ENG_name": "Special Equipment",
+								"name": "特殊装备",
+								"entries": [
+									"卡西米尔佩戴着一枚{@item 温暖戒指}，并携带着一本包含所有他已准备的法术以及以下法术的法术书：{@spell 秘法锁}, {@spell 通晓语言}, {@spell 定身类人}, {@spell 鉴定术}, {@spell 物件定位术}, {@spell 回避侦测}, {@spell 变形术}, {@spell 防护善恶}, 以及 {@spell 石墙术}。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"卡西米尔是一个9级的施法者。他的施法关键属性是智力（法术豁免{@dc 14}，法术攻击命中{@hit 6}）。卡西米尔准备了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 火焰箭}",
+								"{@spell 光亮术}",
+								"{@spell 法师之手}",
+								"{@spell 魔法伎俩}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 侦测魔法}",
+								"{@spell 法师护甲}",
+								"{@spell 魔法飞弹}",
+								"{@spell 护盾术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 迷踪步}",
+								"{@spell 暗示术}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 法术反制}",
+								"{@spell 火球术}",
+								"{@spell 飞行术}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 高等隐形术}",
+								"{@spell 冰风暴}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell 寒冰锥}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"traitTags": [
+				"妖精血统"
+			],
+			"senseTags": [
+				"D"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Kiril Stoyanovich",
+			"name": "基里尔·斯托亚诺维奇",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 203,
+			"_copy": {
+				"ENG_name": "Werewolf",
+				"name": "狼人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "狼人",
+						"with": "基里尔",
+						"flags": "i"
+					}
+				}
+			},
+			"hp": {
+				"average": 90,
+				"formula": "9d8 + 18"
+			},
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Knight of the Order",
+			"name": "教团骑士",
+			"source": "CoS",
+			"page": 139,
+			"_copy": {
+				"ENG_name": "Revenant",
+				"name": "还魂鬼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "还魂鬼",
+						"with": "骑士"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "多重攻击",
+							"items": {
+								"ENG_name": "Multiattack",
+								"name": "多重攻击",
+								"entries": [
+									"骑士进行两次长剑攻击或两次拳击攻击。"
+								]
+							}
+						},
+						{
+							"mode": "insertArr",
+							"index": 1,
+							"items": {
+								"ENG_name": "Longsword",
+								"name": "长剑",
+								"entries": [
+									"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}15（{@damage 2d10 + 4}）挥砍伤害。如果目标是骑士发誓要复仇的生物，目标将额外受到14（{@damage 4d6}）挥砍伤害。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"破损的链甲"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Lady Fiona Wachter",
+			"name": "菲奥娜·瓦赫特夫人",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 110,
+			"_copy": {
+				"ENG_name": "Priest",
+				"name": "祭司",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "祭司",
+						"with": "菲奥娜",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				10
+			],
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"菲奥娜是5级施法者。她的施法关键属性是感知（法术豁免{@dc 13}，法术攻击命中{@hit 5}）。菲奥娜准备了以下牧师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 光亮术}",
+								"{@spell 修复术}",
+								"{@spell 奇术}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 命令术}",
+								"{@spell 净化饮食}",
+								"{@spell 庇护术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 卜筮术}",
+								"{@spell 遗体防腐}",
+								"{@spell 定身类人}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell 活化死尸}",
+								"{@spell 造粮术}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"damageTagsSpell": [],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Lady Lydia Petrovna",
+			"name": "莉迪娅·彼得洛夫娜夫人",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 105,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Lief Lipsiege",
+			"name": "利夫·利普西耶吉",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 62,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Ludmilla Vilisevic",
+			"name": "鲁米拉·维里瑟威克",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 93,
+			"_copy": {
+				"ENG_name": "Vampire Spawn",
+				"name": "初生吸血鬼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "吸血鬼",
+						"with": "鲁米拉",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Luvash",
+			"name": "鲁瓦斯",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 121,
+			"_copy": {
+				"ENG_name": "Bandit Captain",
+				"name": "匪帮队长",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Vistana",
+						"name": "维斯塔尼人",
+						"source": "CoS"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "首领",
+						"with": "鲁瓦斯",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Mad Mary",
+			"name": "疯玛丽",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 44,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Madam Eva",
+			"name": "伊娃夫人",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 233,
+			"reprintedAs": [
+				"伊娃夫人|RHW"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 88,
+				"formula": "16d8 + 16"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 8,
+			"dex": 11,
+			"con": 12,
+			"int": 17,
+			"wis": 20,
+			"cha": 18,
+			"save": {
+				"con": "+5"
+			},
+			"skill": {
+				"arcana": "+7",
+				"deception": "+8",
+				"insight": "+13",
+				"intimidation": "+8",
+				"perception": "+9",
+				"religion": "+7"
+			},
+			"passive": 19,
+			"languages": [
+				"深渊语",
+				"通用语",
+				"精灵语",
+				"炼狱语"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"伊娃夫人是一名 16 级施法者。她的施法关键属性是感知（法术豁免{@dc 17}，法术攻击命中{@hit 9}）。伊娃夫人准备了以下牧师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 光亮术}",
+								"{@spell 修复术}",
+								"{@spell 圣火术}",
+								"{@spell 奇术}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 灾祸术}",
+								"{@spell 命令术}",
+								"{@spell 侦测善恶}",
+								"{@spell 防护善恶}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 次等复原术}",
+								"{@spell 防护毒素}",
+								"{@spell 灵体武器}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 造粮术}",
+								"{@spell 死者交谈}",
+								"{@spell 灵体卫士}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 预言术}",
+								"{@spell 行动自如}",
+								"{@spell 信仰守卫}"
+							]
+						},
+						"5": {
+							"slots": 2,
+							"spells": [
+								"{@spell 高等复原术}",
+								"{@spell 死者复活}"
+							]
+						},
+						"6": {
+							"slots": 1,
+							"spells": [
+								"{@spell 寻路术}",
+								"{@spell 重伤术}",
+								"{@spell 真知术}"
+							]
+						},
+						"7": {
+							"slots": 1,
+							"spells": [
+								"{@spell 火焰风暴}",
+								"{@spell 再生术}"
+							]
+						},
+						"8": {
+							"slots": 1,
+							"spells": [
+								"{@spell 地震术}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}2（{@damage 1d4}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Curse (Recharges after a Long Rest)",
+					"name": "诅咒（长休后充能）",
+					"entries": [
+						"伊娃夫人选择一个她能看到、距离她 30 尺以内的生物，目标必须通过一次 {@dc 17} 的感知豁免否则被诅咒。被诅咒时，目标{@condition 目盲}并{@condition 耳聋}。诅咒持续直到被一个{@spell 高等复原术}法术、一个{@spell 移除诅咒}法术或类似魔法效果结束。当诅咒结束，伊娃夫人受到{@damage 5d6} 心灵伤害。"
+					]
+				},
+				{
+					"ENG_name": "Evil Eye (Recharges after a Short or Long Rest)",
+					"name": "邪眼（短休或长休后充能）",
+					"entries": [
+						"伊娃夫人选择一个她能看到，距离她 10 尺以内的生物，对目标施放以下法术之一（法术{@dc 17}），这样做不需要姿势和材料成分：{@spell 化兽为友}，{@spell 魅惑类人}，{@spell 定身类人}。如果目标成功通过了最初的豁免，伊娃夫人{@condition 目盲}直到她的下回合结束。一旦一个目标成功通过了一次对这种效果的豁免，它便在 24 小时里免疫所有的维斯塔尼人的邪眼的力量。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"E",
+				"I"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"N",
+				"O",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"CUR",
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"目盲",
+				"耳聋"
+			],
+			"conditionInflictSpell": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"体质",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Majesto",
+			"name": "玛杰斯托",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 115,
+			"_copy": {
+				"ENG_name": "Imp",
+				"name": "小魔鬼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "小魔鬼",
+						"with": "玛杰斯托",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Marzena Belview",
+			"name": "玛泽娜·贝尔维",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 150,
+			"_copy": {
+				"ENG_name": "Mongrelfolk",
+				"name": "混种人",
+				"source": "CoS",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "混种人",
+						"with": "玛泽娜",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "replaceArr",
+						"replace": "额外特性",
+						"items": {
+							"ENG_name": "Flight",
+							"name": "飞行",
+							"entries": [
+								"混种人拥有革质的翅膀，飞行速度为40尺。"
+							]
+						}
+					}
+				}
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 40
+			},
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Milivoj",
+			"name": "米利沃伊",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 97,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"alignment": [
+				"N"
+			],
+			"str": 15,
+			"action": [
+				{
+					"ENG_name": "Shovel",
+					"name": "铲子",
+					"entries": [
+						"{@atk mw} {@hit 4}，触及5尺，单一目标。{@h}4 ({@damage 1d4 + 2})点钝击伤害。"
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Mishka Belview",
+			"name": "米什卡·贝尔维",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 150,
+			"_copy": {
+				"ENG_name": "Mongrelfolk",
+				"name": "混种人",
+				"source": "CoS",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "混种人",
+						"with": "米什卡",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "replaceArr",
+						"replace": "额外特性",
+						"items": {
+							"ENG_name": "Spider Climb",
+							"name": "蛛行术",
+							"entries": [
+								"混种人能够攀爬困难的表面，包括在天花板上倒挂着，无需进行属性检定。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"traitTags": [
+				"蛛行术"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Mongrelfolk",
+			"name": "混种人",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"混种人"
+				]
+			},
+			"source": "CoS",
+			"page": 234,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 26,
+				"formula": "4d8 + 8"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 12,
+			"dex": 9,
+			"con": 15,
+			"int": 9,
+			"wis": 10,
+			"cha": 6,
+			"skill": {
+				"deception": "+2",
+				"perception": "+2",
+				"stealth": "+3"
+			},
+			"passive": 12,
+			"languages": [
+				"通用语"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"ENG_name": "Extraordinary Feature",
+					"name": "额外特性",
+					"entries": [
+						"混种人拥有以下额外特性之一，通过一次 {@dice d20} 来随机决定或者由 DM 选择：",
+						"1~3：水陆两栖 Amphibious。混种人能够呼吸空气与水。",
+						"4~9：黑暗视觉 Darkvision。混种人拥有 60 尺的黑暗视觉。",
+						"10：飞行 Flight。混种人拥有羽翼并能够以 40 尺的速度飞行。",
+						"11~15：敏锐嗅听觉 Keen Hearing and Smell。当混种人依靠听觉和嗅觉进行感知（{@skill 察觉}）检定时获得优势。",
+						"16~17：蛛行 Spider Climb。混种人不需要属性检定就能够在困难表面攀爬，包括倒着站立在天花板上。",
+						"18~19：立定起跳 Standing Leap。不论有没有助跑，混种人的跳远能够达到 20 尺而他们的跳高可以跳到 10 尺。",
+						"20：双头 Two-Headed。混种人在感知（{@skill 察觉}）检定中获得优势，并且在对抗{@condition 目盲}、{@condition 魅惑}、{@condition 耳聋}、{@condition 恐慌}、{@condition 震慑}或陷入{@condition 昏迷}的豁免骰时获得优势。"
+					]
+				},
+				{
+					"ENG_name": "Mimicry",
+					"name": "拟声",
+					"entries": [
+						"混种人可以模仿任何它曾听过的声音，包括声线。生物成功通过一次{@dc 12}的感知（{@skill 洞悉}）检定后便可认出其模仿的本质。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"混种人进行两次攻击：一次用它的啃咬，一次用它的爪击或匕首。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}3 ({@damage 1d4 + 1}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}3 ({@damage 1d4 + 1})点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 3}，触及5尺或射程20/60尺，单一目标。{@h}3（{@damage 1d4 + 1}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"traitTags": [
+				"拟声"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Morgantha",
+			"name": "摩甘萨",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 48,
+			"_copy": {
+				"ENG_name": "Night Hag",
+				"name": "夜鬼婆",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鬼婆",
+						"with": "摩甘萨",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Nikolai Wachter",
+			"name": "尼古拉·瓦赫特",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 110,
+			"_copy": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "贵族",
+						"with": "尼古拉",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Otto Belview",
+			"name": "奥图·贝尔维",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 147,
+			"_copy": {
+				"ENG_name": "Mongrelfolk",
+				"name": "混种人",
+				"source": "CoS",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "混种人",
+						"with": "奥图",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "replaceArr",
+						"replace": "额外特性",
+						"items": {
+							"ENG_name": "Standing Leap",
+							"name": "立定跳远",
+							"entries": [
+								"混种人的立定跳远可达20尺，立定跳高可达10尺，无论是否助跑。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Parriwimple",
+			"name": "傻帽",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 43,
+			"_copy": {
+				"ENG_name": "Gladiator",
+				"name": "角斗士",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "角斗士",
+						"with": "傻帽",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item 镶钉皮甲|phb|镶钉皮甲}"
+					]
+				}
+			],
+			"int": 6,
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Patrina Velikovna",
+			"name": "帕特里娜·维里科芙纳",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "精灵",
+						"prefix": "黄昏",
+						"prefixHidden": true
+					}
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 89,
+			"_copy": {
+				"ENG_name": "Archmage",
+				"name": "大法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "大法师",
+						"with": "帕特里娜",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Phantom Warrior",
+			"name": "魅影武者",
+			"type": "undead",
+			"source": "CoS",
+			"page": 235,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				16
+			],
+			"hp": {
+				"average": 45,
+				"formula": "6d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 11,
+			"con": 16,
+			"int": 8,
+			"wis": 10,
+			"cha": 15,
+			"skill": {
+				"perception": "+2",
+				"stealth": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 12,
+			"resist": [
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"寒冷",
+				"暗蚀",
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚"
+			],
+			"languages": [
+				"它生前所知的任何语言"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Ethereal Sight",
+					"name": "以太视界",
+					"entries": [
+						"魅影武者可以在物质位面时看见 60 尺范围内的以太位面，反之亦然。"
+					]
+				},
+				{
+					"ENG_name": "Incorporeal Movement",
+					"name": "虚体移动",
+					"entries": [
+						"魅影武者可以将其他生命或者物体视同{@quickref 困难地形||3}一般穿越。当它结束移动时，若仍停留在一个物体内部，则会受到 5（{@damage 1d10}）的力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Spectral Armor and Shield",
+					"name": "幽灵护甲与盾牌",
+					"entries": [
+						"魅影武者的 AC 包含了它的护甲与盾牌。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"魅影武者用它的幽灵长剑攻击两次。"
+					]
+				},
+				{
+					"ENG_name": "Spectral Longsword",
+					"name": "幽灵长剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}7（{@damage 1d8 + 3}）力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Etherealness",
+					"name": "以太化",
+					"entries": [
+						"魅影武者可以从物质位面进入以太位面，反之亦然。当处于以太位面时，它在物质位面是可见的，反之亦然。但它既不能影响到其他位面的任何事物也不会被其所影响。"
+					]
+				}
+			],
+			"traitTags": [
+				"以太视界",
+				"虚体移动"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"damageTags": [
+				"O"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Phantom Warrior (Archer)",
+			"name": "魅影武者（弓箭手）",
+			"source": "CoS",
+			"page": 142,
+			"_copy": {
+				"ENG_name": "Phantom Warrior",
+				"name": "魅影武者",
+				"source": "CoS",
+				"_mod": {
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Spectral Longbow",
+									"name": "灵体长弓",
+									"entries": [
+										"{@atk rw} 命中{@hit 2}，射程 150/600 尺，单一目标。 {@h}4 ({@damage 1d8}) 力场伤害。"
+									]
+								}
+							]
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "多重攻击",
+							"items": {
+								"ENG_name": "Multiattack",
+								"name": "多重攻击",
+								"entries": [
+									"魅影武者使用它的幽灵长剑或灵体长弓发动两次攻击。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Piccolo",
+			"name": "小笛子",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 118,
+			"_copy": {
+				"ENG_name": "Baboon",
+				"name": "狒狒",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "狒狒",
+						"with": "小笛子",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Pidlwick II",
+			"name": "捣蛋皮德尔二世",
+			"type": "construct",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 236,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 10,
+				"formula": "3d6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 11,
+			"int": 8,
+			"wis": 13,
+			"cha": 10,
+			"skill": {
+				"performance": "+2"
+			},
+			"passive": 11,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"麻痹",
+				"石化",
+				"中毒"
+			],
+			"languages": [
+				"能理解通用语，但不会说，也不能读写"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"ENG_name": "Ambusher",
+					"name": "伏击",
+					"entries": [
+						"在战斗的第一回合中，捣蛋皮尔德二世对任何还未行动的生物在攻击骰上获得优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Club",
+					"name": "短棒",
+					"entries": [
+						"{@atk mw} 命中{@hit 2}，触及5尺，单一目标。{@h}2 ({@damage 1d4}) 点钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Dart",
+					"name": "飞镖",
+					"entries": [
+						"{@atk rw} 命中{@hit 4}，射程20/60尺，单一目标。{@h}4 ({@damage 1d4 + 2}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"短棒|phb",
+				"飞镖|phb"
+			],
+			"traitTags": [
+				"伏击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Rahadin",
+			"name": "拉哈丁",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 237,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 镶钉皮甲|phb|镶钉皮甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 135,
+				"formula": "18d8 + 54"
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 14,
+			"dex": 22,
+			"con": 17,
+			"int": 15,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"con": "+7",
+				"wis": "+7"
+			},
+			"skill": {
+				"deception": "+8",
+				"insight": "+7",
+				"intimidation": "+12",
+				"perception": "+11",
+				"stealth": "+14"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 21,
+			"languages": [
+				"通用语",
+				"精灵语"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"拉哈丁的天生施法关键属性是智力。他天生可以施展以下法术，无需任何法术成分："
+					],
+					"daily": {
+						"1": [
+							"{@spell 魔化武器}",
+							"{@spell 回避侦测}"
+						],
+						"3": [
+							"{@spell 迷踪步}",
+							"{@spell 魅影驹}"
+						]
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Deathly Choir",
+					"name": "致命合唱",
+					"entries": [
+						"任何接近拉哈丁 10 尺以内的生物除非被{@spell 心灵屏障}所保护，否则会听见数以千计遭到拉哈丁屠杀的人们的哀嚎。以一个附赠动作，拉哈丁可以迫使所有能够听见哀嚎的生物进行一次 {@dc 16} 的感知豁免检定，任何检定失败的生物承受 16（{@damage 3d10}）点心灵伤害，成功则半伤。"
+					]
+				},
+				{
+					"ENG_name": "Fey Ancestry",
+					"name": "妖精血统",
+					"entries": [
+						"拉哈丁对{@condition 魅惑}效果的豁免取得优势，并且不会因为魔法而陷入睡眠。"
+					]
+				},
+				{
+					"ENG_name": "Mask of the Wild",
+					"name": "荒野隐蔽",
+					"entries": [
+						"拉哈丁可以在只因为树丛、大雨、落雪、雾气或者其他自然现象获得轻度遮蔽时尝试躲藏。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"拉哈丁用他的弯刀攻击三次，或者用他的{@condition 中毒}飞镖攻击两次。"
+					]
+				},
+				{
+					"ENG_name": "Scimitar",
+					"name": "弯刀",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及 5 尺，单一目标。{@h}9（{@damage 1d6 + 6}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Poisoned Dart",
+					"name": "毒镖",
+					"entries": [
+						"{@atk rw} 命中{@hit 10}，射程20/60尺，单一目标。{@h}8（{@damage 1d4 + 6}）点穿刺伤害加上5（{@damage 2d4}）点毒素伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"弯刀|phb"
+			],
+			"traitTags": [
+				"妖精血统"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"S",
+				"Y"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Rictavio",
+			"name": "瑞克塔维欧",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"alias": [
+				"鲁道夫范里希滕"
+			],
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 238,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item 皮甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 77,
+				"formula": "14d8 + 14"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 12,
+			"con": 13,
+			"int": 16,
+			"wis": 18,
+			"cha": 16,
+			"save": {
+				"con": "+4",
+				"wis": "+7"
+			},
+			"skill": {
+				"arcana": "+9",
+				"insight": "+7",
+				"medicine": "+7",
+				"perception": "+7",
+				"religion": "+6",
+				"sleight of hand": "+4"
+			},
+			"passive": 17,
+			"languages": [
+				"深渊语",
+				"通用语",
+				"精灵语",
+				"炼狱语"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"瑞克塔维欧是一名 9 级施法者。他的施法关键属性是感知（法术豁免 {@dc 15}，法术攻击命中{@hit 7}）。瑞克塔维欧准备了以下牧师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 神导术}",
+								"{@spell 光亮术}",
+								"{@spell 修复术}",
+								"{@spell 奇术}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 疗伤术}",
+								"{@spell 侦测善恶}",
+								"{@spell 防护善恶}",
+								"{@spell 庇护术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 卜筮术}",
+								"{@spell 次等复原术}",
+								"{@spell 防护毒素}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 防护法阵}",
+								"{@spell 移除诅咒}",
+								"{@spell 死者交谈}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 防死结界}",
+								"{@spell 行动自如}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell 驱逐善恶}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Special Equipment",
+					"name": "特殊装备",
+					"entries": [
+						"除了他的剑杖，瑞克塔维欧还带有一顶{@item 易容帽}和一枚{@item 心灵护盾戒指}，此外他还携带着一张{@spell 死者复活} {@item 法术卷轴(5环)||法术卷轴}。"
+					]
+				},
+				{
+					"ENG_name": "Undead Slayer",
+					"name": "不死生物屠杀者",
+					"entries": [
+						"当瑞克塔维欧用武器击中一名不死生物，该不死生物受到额外 10（{@damage 3d6}）的该武器种类伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"瑞克塔维欧用他的剑杖进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Sword Cane",
+					"name": "剑杖",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}4 ({@damage 1d6 + 1}) 钝击伤害（木杖）或穿刺伤害（银剑）。"
+					]
+				}
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"E",
+				"I"
+			],
+			"damageTags": [
+				"B"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Rosavalda \"Rose\" Durst",
+			"name": "罗莎瓦尔妲\"玫瑰\"·杜尔斯特",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 217,
+			"_copy": {
+				"ENG_name": "Ghost",
+				"name": "幽魂",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "幽魂",
+						"with": "玫瑰",
+						"flags": "i"
+					},
+					"action": {
+						"mode": "removeArr",
+						"names": "恐惧面容"
+					}
+				}
+			},
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hp": {
+				"average": 35,
+				"formula": "10d6"
+			},
+			"languages": [
+				"通用语"
+			],
+			"cr": "3",
+			"languageTags": [
+				"C"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Sangzor",
+			"name": "桑格佐",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 160,
+			"_copy": {
+				"ENG_name": "Giant Goat",
+				"name": "巨山羊",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "山羊",
+						"with": "桑格佐",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"hp": {
+				"average": 33,
+				"formula": "3d10 + 3"
+			},
+			"int": 6,
+			"resist": [
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"cr": "1",
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Savid",
+			"name": "萨维德",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 133,
+			"_copy": {
+				"ENG_name": "Scout",
+				"name": "斥候",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "斥候",
+						"with": "萨维德",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Sir Godfrey Gwilym",
+			"name": "高德弗里·格威利姆爵士",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 139,
+			"_copy": {
+				"ENG_name": "Knight of the Order",
+				"name": "教团骑士",
+				"source": "CoS",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "还魂鬼",
+						"with": "高德弗里爵士",
+						"flags": "i"
+					}
+				}
+			},
+			"cr": "6",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"高德弗里爵士是一个16级的施法者。他的施法关键属性是感知（法术豁免{@dc 14}，法术攻击命中{@hit 6}）。他准备了以下圣武士法术："
+					],
+					"spells": {
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 命令术}",
+								"{@spell 神恩}",
+								"{@spell 雷鸣斩}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 印记斩}",
+								"{@spell 魔化武器}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 致盲斩}",
+								"{@spell 解除魔法}"
+							]
+						},
+						"4": {
+							"slots": 2,
+							"spells": [
+								"{@spell 惊惧斩}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"damageTagsSpell": [
+				"R",
+				"T",
+				"Y"
+			],
+			"spellcastingTags": [
+				"CP"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"力量",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Snow Maiden",
+			"name": "雪女",
+			"source": "CoS",
+			"page": 159,
+			"_copy": {
+				"ENG_name": "Specter",
+				"name": "恶灵",
+				"source": "MM",
+				"_mod": {
+					"resist": {
+						"mode": "removeArr",
+						"items": "寒冷"
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "吸取生命",
+						"items": {
+							"ENG_name": "Life Drain",
+							"name": "吸取生命",
+							"entries": [
+								"{@atk ms} 命中{@hit 4}，触及5尺，单一生物。{@h}10 ({@damage 3d6}) 寒冷伤害。目标必须进行一次 {@dc 10} 的体质豁免检定，否则其生命值上限将减少等同于所受伤害的数值。此效果持续至该生物完成一次长休。如果此效果将目标的生命值上限减少至0，目标将死亡。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"immune": [
+				"寒冷",
+				"暗蚀",
+				"毒素"
+			],
+			"damageTags": [
+				"C",
+				"O"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Stanimir",
+			"name": "斯塔尼米尔",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 20,
+			"_copy": {
+				"ENG_name": "Mage",
+				"name": "魔法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔法师",
+						"with": "斯塔尼米尔",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"魔法师作为9级施法者，其施法属性为智力（法术豁免{@dc 14}，法术攻击命中{@hit 6}）。魔法师学习了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 交友术}",
+								"{@spell 光亮术}",
+								"{@spell 法师之手}",
+								"{@spell 魔法伎俩}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 魅惑类人}",
+								"{@spell 法师护甲}",
+								"{@spell 护盾术}",
+								"{@spell 睡眠术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 迷踪步}",
+								"{@spell 暗示术}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 降咒}",
+								"{@spell 魅影驹}",
+								"{@spell 吸血鬼之触}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 高等隐形术}",
+								"{@spell 石肤术}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell 支配类人}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"damageTagsSpell": [
+				"N"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Stella Wachter",
+			"name": "斯特拉·瓦赫特",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 113,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM"
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Strahd von Zarovich",
+			"name": "施特拉德·冯·扎洛维奇",
+			"type": {
+				"type": "undead",
+				"tags": [
+					"变形生物"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 240,
+			"reprintedAs": [
+				"施特拉德·冯·扎洛维奇|RHW"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 144,
+				"formula": "17d8 + 68"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 20,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"dex": "+9",
+				"wis": "+7",
+				"cha": "+9"
+			},
+			"skill": {
+				"arcana": "+15",
+				"perception": "+12",
+				"religion": "+10",
+				"stealth": "+14"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 22,
+			"resist": [
+				"暗蚀",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"languages": [
+				"深渊语",
+				"通用语",
+				"龙语",
+				"精灵语",
+				"巨人语",
+				"炼狱语"
+			],
+			"cr": "15",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"施特拉德是一名 9 级施法者。他的施法关键属性是智力（法术豁免 {@dc 18}，法术攻击命中{@hit 10}）。他准备了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 法师之手}",
+								"{@spell 魔法伎俩}",
+								"{@spell 冷冻射线}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 通晓语言}",
+								"{@spell 云雾术}",
+								"{@spell 睡眠术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 侦测思想}",
+								"{@spell 造风术}",
+								"{@spell 镜影术}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 活化死尸}",
+								"{@spell 火球术}",
+								"{@spell 回避侦测}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 枯萎术}",
+								"{@spell 高等隐形术}",
+								"{@spell 变形术}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell 活化物件}",
+								"{@spell 探知术}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Shapechanger",
+					"name": "变形生物",
+					"entries": [
+						"如果施特拉德没有身处流水中或暴露在阳光下，他可以用他的动作变形为一只微型蝙蝠、一头中型的狼或一团中型迷雾，或变回他的真实形态。",
+						"当处于蝙蝠或狼形态下时，施特拉德不能说话。在蝙蝠型态下，他的速度是 5 尺，飞行速度为 30 尺。在狼型态下，他的速度是 40 尺。除了体型和速度，他的数据不变。他的任何随身物品也会随之改变，但不可使用。他死亡时会恢复真实形态。",
+						"在雾形态下，施特拉德吸血鬼不得进行任何动作，说话，或操控物件。他没有重量，有 20 尺飞行速度，可以盘旋，可以进入一个敌对生物的空间并停在那里。此外，只要是空气可以通过的空间，迷雾便也可以不受挤压地如此通过，并且他不能穿过水。他在力量，敏捷与体质豁免检定上有优势，免疫一切非魔法伤害，除了他受到的来自阳光的伤害之外。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性 (3/日)",
+					"entries": [
+						"当施特拉德豁免失败时，他可以选择将其改为豁免成功。"
+					]
+				},
+				{
+					"ENG_name": "Misty Escape",
+					"name": "雾隐遁行",
+					"entries": [
+						"当施特拉德在他的棺材之外生命值被降到 0 以下时，只要没有身处流水中或暴露在阳光下，他便变成一团迷雾（就像在变形生物特性下一样）来取代陷入{@condition 昏迷}。如果他无法变形，他被摧毁。",
+						"当他在迷雾形态下是 0 点生命值时，他不能恢复到他的吸血鬼形态。他必须在 2 小时内到达他的棺材或被摧毁。一旦位于自己的棺材内，他便恢复到他的吸血鬼形态。直到他恢复至少 1 点生命值，他都处于{@condition 麻痹}状态。带着 0 点生命值在他的棺材里 1 小时以后，他恢复 1 点生命值。"
+					]
+				},
+				{
+					"ENG_name": "Regeneration",
+					"name": "再生",
+					"entries": [
+						"施特拉德在他的回合开始时恢复20点生命值，前提是他至少有1点生命值且不处于流水或阳光中。如果他受到光耀伤害或来自{@item 圣水 (扁瓶)|PHB|圣水}的伤害，此特质在他的下个回合开始时不会生效。"
+					]
+				},
+				{
+					"ENG_name": "Spider Climb",
+					"name": "蛛行术",
+					"entries": [
+						"无需任何属性检定，吸血鬼便可以攀爬崎岖的表面，包括倒挂在天花板上。"
+					]
+				},
+				{
+					"ENG_name": "Vampire Weaknesses",
+					"name": "吸血鬼弱点",
+					"entries": [
+						"施特拉德有以下缺陷：",
+						{
+							"type": "list",
+							"style": "list-hang-subtrait",
+							"items": [
+								{
+									"ENG_name": "Forbiddance",
+									"name": "禁入",
+									"type": "itemSub",
+									"entry": "未经居住者的邀请，他便无法进入一处住所。"
+								},
+								{
+									"ENG_name": "Harmed by Running Water",
+									"name": "流水之伤",
+									"type": "itemSub",
+									"entry": "如果在流水中结束其回合，施特拉德会受到 20 点强酸伤害。"
+								},
+								{
+									"ENG_name": "Stake to the Heart",
+									"name": "桩刺",
+									"type": "itemSub",
+									"entry": "如果当他在他的棺材里处于{@condition 失能}状态时被木桩穿透心脏，他将{@condition 麻痹}，直到木桩被移除为止。"
+								},
+								{
+									"ENG_name": "Sunlight Hypersensitivity",
+									"name": "日照超敏",
+									"type": "itemSub",
+									"entry": "当处于阳光直射下，施特拉德在其回合开始时受到 20 点光耀伤害，且他的攻击骰和属性检定具有劣势。"
+								}
+							]
+						}
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack (Vampire Form Only)",
+					"name": "多重攻击（仅吸血鬼形态）",
+					"entries": [
+						"施特拉德进行两次攻击，其中一次可以是啃咬攻击。"
+					]
+				},
+				{
+					"ENG_name": "Unarmed Strike (Vampire or Wolf Form Only)",
+					"name": "徒手打击（仅吸血鬼或狼形态）",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及5尺，单一目标。{@h}8 ({@damage 1d8 + 4}) 挥砍伤害，外加14 ({@damage 4d6}) 暗蚀伤害。如果目标是生物，施特拉德可以选择擒抱它（逃脱 {@dc 18}）而不是造成挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及5尺，单一自愿的生物，或被施特拉德{@condition 受擒}的生物，或处于{@condition 失能}或{@condition 束缚}状态的生物。{@h}7（{@damage 1d6 + 4}）点穿刺伤害加上10（{@damage 3d6}）点暗蚀伤害。目标的生命值最大值减少的量等于所受的暗蚀伤害，施特拉德恢复等同于该量的生命值。这种减少持续到目标完成一次长休。如果目标的生命值最大值减少到0，目标死亡。以这种方式被杀死并被埋葬的类人生物在下一个夜晚以施特拉德控制下的{@creature 初生吸血鬼}复活。"
+					]
+				},
+				{
+					"ENG_name": "Charm",
+					"name": "魅惑",
+					"entries": [
+						"施特拉德指定一个 30 尺内可见的类人生物作为目标。假如目标能够看到施特拉德，则必须成功通过 {@dc 17} 的感知豁免检定以对抗此魔力，否则被{@condition 魅惑}。被{@condition 魅惑}的目标会把施特拉德视作需要重视与保护的挚友。目标并未处于施特拉德控制之下，但他会听从施特拉德的请求，以最有利的方式行动，也会让施特拉德咬他。",
+						"每当施特拉德或他的同伴做出任何伤害目标的举动时，目标都可以再次进行豁免检定，成功则中止魅惑效果。否则，该效果将持续 24 小时，或持续至吸血鬼被摧毁、与目标处于不同存在位面，以及吸血鬼通过一个附赠动作将效果解除时。"
+					]
+				},
+				{
+					"ENG_name": "Children of the Night (1/Day)",
+					"name": "夜之子 (1/日)",
+					"entries": [
+						"只要太阳没有升起，施特拉德便可以魔法般地召唤 {@dice 2d4} 只{@creature 蝙蝠群||蝙蝠群}或{@creature 鼠群||老鼠群}。当处在户外时，施特拉德可以改为召唤 {@dice 3d6} 头{@creature 狼||狼}。召唤生物将在 {@dice 1d4} 轮内到来，作为施特拉德的盟友并听从其口头命令。这些动物将停留一小时，直到施特拉德死亡或他通过一个附赠动作将他们遣散。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Move",
+					"name": "移动",
+					"entries": [
+						"施特拉德以自身速度移动，不会引发借机攻击。"
+					]
+				},
+				{
+					"ENG_name": "Unarmed Strike",
+					"name": "徒手打击",
+					"entries": [
+						"施特拉德可以进行一次徒手打击。"
+					]
+				},
+				{
+					"ENG_name": "Bite (Costs 2 Actions)",
+					"name": "啃咬 (消耗2动作)",
+					"entries": [
+						"施特拉德可以进行一次啃咬攻击。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Strahd von Zarovich",
+				"name": "施特拉德·冯·扎洛维奇",
+				"source": "CoS"
+			},
+			"traitTags": [
+				"传奇抗性",
+				"再生",
+				"变形生物",
+				"蛛行术",
+				"日照敏感"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DR",
+				"E",
+				"GI",
+				"I"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"N",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"HPR",
+				"MW"
+			],
+			"conditionInflict": [
+				"魅惑"
+			],
+			"conditionInflictSpell": [
+				"隐形",
+				"昏迷"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"savingThrowForcedLegendary": [
+				"魅力"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"力量",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Strahd Zombie",
+			"name": "施特拉德丧尸",
+			"type": "undead",
+			"source": "CoS",
+			"page": 241,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"average": 30,
+				"formula": "4d8 + 12"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 13,
+			"dex": 6,
+			"con": 16,
+			"int": 3,
+			"wis": 6,
+			"cha": 5,
+			"save": {
+				"wis": "+0"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 8,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"中毒"
+			],
+			"languages": [
+				"理解它生前所知的语言，但不会说"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Loathsome Limbs",
+					"name": "扰人断肢",
+					"entries": [
+						"每当丧尸一次受到最少 5 点钝击或挥砍伤害时，骰一个 {@dice d20} 决定还会发生什么：",
+						"1\u20138: 如果丧尸还有腿，它的一条腿会被切断。",
+						"9-16: 如果丧尸还有手臂，它的一只手臂会被切断。",
+						"17\u201320: 丧尸被斩首。",
+						"若丧尸的 HP 减到 0 点，它的所有部分死亡。在此之前，一个断掉的部分在丧尸的先攻顺位行动，并有它自己的动作和移动。一个断掉的部分有 AC8，任何它受到的伤害都会从丧尸的 HP 中扣除。",
+						"一条断腿无法攻击，有 5 尺的速度。",
+						"一条断臂有 5 尺的速度，可以在它的回合进行一次爪击攻击，在攻击骰上有劣势。每次丧尸失去一条手臂，他便失去一次爪击攻击。",
+						"如果它的头被切断，丧尸失去它的啃咬攻击，它的身体是{@condition 目盲}的，除非它的头能看见它。断头有 0 尺的速度。它可以进行一次啃咬攻击，但只能针对位于它位置内的敌人。",
+						"如果它失去一条腿,丧尸的速度减半。如果它两条腿都失去了，它跌落{@condition 倒地}。如果它有两只手臂，它可以爬行。如果只有一只手臂，他依然可以爬行，但是他的速度减半。如果没有腿和手臂，它的速度为 0，并且无法受益于任何速度加值。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"丧尸进行三次攻击：一次用他的啃咬，两次用它的爪击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}3 ({@damage 1d4 + 1}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}4（{@damage 1d6 + 1}）点挥砍伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Strahd's Animated Armor",
+			"name": "施特拉德的活化盔甲",
+			"type": "construct",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 227,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 21,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 112,
+				"formula": "15d8 + 45"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 13,
+			"con": 16,
+			"int": 9,
+			"wis": 10,
+			"cha": 9,
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"盲视60尺（范围外视为目盲）"
+			],
+			"passive": 13,
+			"resist": [
+				"寒冷",
+				"火焰"
+			],
+			"immune": [
+				"闪电",
+				"毒素"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒"
+			],
+			"languages": [
+				"理解通用语，但不会说"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"ENG_name": "Constructed Nature",
+					"name": "构装本质",
+					"entries": [
+						"活化物件不需要空气、饮食或睡眠。",
+						"当一个活化物件 HP（生命值）降至 0 点时，活化它的魔法将会失效。同时在其因为生命值归零而失去活化时，该物品会受到严重损坏以至于失去所有价值并无法被再度使用。"
+					]
+				},
+				{
+					"ENG_name": "Antimagic Susceptibility",
+					"name": "魔力依赖",
+					"entries": [
+						"该盔甲陷入{@condition 失能}时，如果在{@spell 反魔法场}的效应范围内，且被指定为{@spell 解除魔法}的目标，则其必须进行一次对抗该法术豁免DC的体质豁免，豁免失败则陷入1分钟的{@condition 昏迷}状态。"
+					]
+				},
+				{
+					"ENG_name": "False Appearance",
+					"name": "无定形",
+					"entries": [
+						"活化盔甲静止不动时，与普通护甲一模一样。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"盔甲进行两次近战攻击或使用两次电击矢。"
+					]
+				},
+				{
+					"ENG_name": "Greatsword",
+					"name": "巨剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）挥砍伤害加上3（{@damage 1d6}）闪电伤害。"
+					]
+				},
+				{
+					"ENG_name": "Shocking Bolt",
+					"name": "电击矢",
+					"entries": [
+						"{@atk rs} 命中{@hit 4} （目标着装金属护甲时具优势），射程 60 尺，单一目标。{@h}10（{@damage 3d6}）闪电伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"巨剑|phb"
+			],
+			"traitTags": [
+				"魔力依赖",
+				"无定形"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"CS"
+			],
+			"damageTags": [
+				"L",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Szoldar Szoldarovich",
+			"name": "佐尔达·佐尔达洛维奇",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 100,
+			"_copy": {
+				"ENG_name": "Scout",
+				"name": "斥候",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "斥候",
+						"with": "佐尔达",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "The Abbot",
+			"name": "修道院长",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 151,
+			"_copy": {
+				"ENG_name": "Deva",
+				"name": "天神使徒",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "天神使徒",
+						"with": "修道院长",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "The Mad Mage of Mount Baratok",
+			"name": "巴拉图克山的疯法师",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 39,
+			"_copy": {
+				"ENG_name": "Archmage",
+				"name": "大法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "大法师",
+						"with": "疯法师",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"N"
+			],
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"这位疯法师是一个18级的施法者。他的施法关键属性是智力（法术豁免{@dc 17}，法术攻击命中{@hit 9}）。他可以随意施放{@spell 易容术}和{@spell 隐形术}，并且准备了以下法师法术："
+					],
+					"will": [
+						"{@spell 易容术}",
+						"{@spell 隐形术}"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 火焰箭}",
+								"{@spell 光亮术}",
+								"{@spell 法师之手}",
+								"{@spell 魔法伎俩}",
+								"{@spell 电爪}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 侦测魔法}",
+								"{@spell 法师护甲}",
+								"{@spell 魔法飞弹}",
+								"{@spell 护盾术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 镜影术}",
+								"{@spell 迷踪步}",
+								"{@spell 蛛网术}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 法术反制}",
+								"{@spell 飞行术}",
+								"{@spell 闪电束}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 魔邓肯忠犬}",
+								"{@spell 变形术}",
+								"{@spell 石肤术}"
+							]
+						},
+						"5": {
+							"slots": 3,
+							"spells": [
+								"{@spell 毕格比之手}",
+								"{@spell 寒冰锥}",
+								"{@spell 探知术}"
+							]
+						},
+						"6": {
+							"slots": 1,
+							"spells": [
+								"{@spell 真知术}"
+							]
+						},
+						"7": {
+							"slots": 1,
+							"spells": [
+								"{@spell 魔邓肯豪宅术}"
+							]
+						},
+						"8": {
+							"slots": 1,
+							"spells": [
+								"{@spell 心灵屏障}"
+							]
+						},
+						"9": {
+							"slots": 1,
+							"spells": [
+								"{@spell 时间停止}"
+							]
+						}
+					},
+					"ability": "int",
+					"hidden": [
+						"will"
+					]
+				}
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"L",
+				"O",
+				"P"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Thornboldt \"Thorn\" Durst",
+			"name": "索恩博尔特\"荆棘\"·杜尔斯特",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 217,
+			"_copy": {
+				"ENG_name": "Ghost",
+				"name": "幽魂",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "幽魂",
+						"with": "荆棘",
+						"flags": "i"
+					},
+					"action": {
+						"mode": "removeArr",
+						"names": "恐惧面容"
+					}
+				}
+			},
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hp": {
+				"average": 35,
+				"formula": "10d6"
+			},
+			"languages": [
+				"通用语"
+			],
+			"cr": "3",
+			"languageTags": [
+				"C"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Tree Blight",
+			"name": "枯树怪",
+			"type": "plant",
+			"source": "CoS",
+			"page": 230,
+			"referenceSources": [
+				"WBtW"
+			],
+			"reprintedAs": [
+				"枯树怪|XMM"
+			],
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 92,
+				"formula": "8d12 + 40"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 23,
+			"dex": 10,
+			"con": 20,
+			"int": 6,
+			"wis": 10,
+			"cha": 3,
+			"senses": [
+				"盲视60尺（范围外视为目盲）"
+			],
+			"passive": 10,
+			"conditionImmune": [
+				"目盲",
+				"耳聋"
+			],
+			"languages": [
+				"理解通用语和德鲁伊语，但不说话"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"ENG_name": "False Appearance",
+					"name": "无定形",
+					"entries": [
+						"当枯萎怪保持不动，它无法被与一株枯木区分开来。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"枯萎怪对物体和建筑造成双倍伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"枯萎怪进行一次枯枝撞击和一次根系缠绕。"
+					]
+				},
+				{
+					"ENG_name": "Branch",
+					"name": "枯枝撞击",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及15尺，单一目标。{@h}16（{@damage 3d6 + 6}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Grasping Root",
+					"name": "根系缠绕",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及15尺，单一未被该枯萎怪{@condition 受擒}的生物。{@h}目标{@condition 受擒}（挣脱{@dc 15}）。直到擒抱结束，目标在其回合开始时受承受9（{@damage 1d6 + 6}）点钝击伤害。根须有15AC，当一次性受到6点及以上挥砍伤害时，它会被斩断。斩断根须不会伤害到枯萎怪本身，只能够使擒抱结束。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及5尺，单一被枯萎怪{@condition 受擒}的生物。{@h}19（{@damage 3d8 + 6}）点穿刺伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"无定形",
+				"攻城怪物"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DU"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"受擒"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Urwin Martikov",
+			"name": "厄文·马可夫",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 98,
+			"_copy": {
+				"ENG_name": "Wereraven",
+				"name": "鸦人",
+				"source": "VRGR",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鸦人",
+						"with": "厄文",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Vasilka",
+			"name": "瓦熙尔卡",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 151,
+			"_copy": {
+				"ENG_name": "Flesh Golem",
+				"name": "血肉魔像",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔像",
+						"with": "瓦熙尔卡",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Victor Vallakovich",
+			"name": "维克托·瓦拉科维奇",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 105,
+			"_copy": {
+				"ENG_name": "Mage",
+				"name": "魔法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔法师",
+						"with": "维克托",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Vilnius",
+			"name": "维尔纽斯",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 185,
+			"_copy": {
+				"ENG_name": "Mage",
+				"name": "魔法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔法师",
+						"with": "维尔纽斯",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Vistana Assassin",
+			"name": "维斯塔尼刺客",
+			"source": "CoS",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Assassin",
+				"name": "刺客",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Vistana",
+						"name": "维斯塔尼人",
+						"source": "CoS"
+					}
+				]
+			},
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Vistana Bandit",
+			"name": "维斯塔尼人匪徒",
+			"source": "CoS",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Bandit",
+				"name": "匪徒",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Vistana",
+						"name": "维斯塔尼人",
+						"source": "CoS"
+					}
+				]
+			},
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Vistana Bandit Captain",
+			"name": "维斯塔尼人匪帮队长",
+			"source": "CoS",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Bandit Captain",
+				"name": "匪帮队长",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Vistana",
+						"name": "维斯塔尼人",
+						"source": "CoS"
+					}
+				]
+			},
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Vistana Commoner",
+			"name": "维斯塔尼人平民",
+			"source": "CoS",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Vistana",
+						"name": "维斯塔尼人",
+						"source": "CoS"
+					}
+				]
+			},
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Vistana Guard",
+			"name": "维斯塔尼人警卫",
+			"source": "CoS",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Guard",
+				"name": "警卫",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Vistana",
+						"name": "维斯塔尼人",
+						"source": "CoS"
+					}
+				]
+			},
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Vistana Spy",
+			"name": "维斯塔尼人间谍",
+			"source": "CoS",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Spy",
+				"name": "间谍",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Vistana",
+						"name": "维斯塔尼人",
+						"source": "CoS"
+					}
+				]
+			},
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Vistana Thug",
+			"name": "维斯塔尼人暴徒",
+			"source": "CoS",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Thug",
+				"name": "暴徒",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Vistana",
+						"name": "维斯塔尼人",
+						"source": "CoS"
+					}
+				]
+			},
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Vladimir Horngaard",
+			"name": "弗拉基米尔·霍恩嘉德",
+			"type": "undead",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 241,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item 半身板甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 192,
+				"formula": "16d8 + 64"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 18,
+			"int": 13,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"str": "+7",
+				"con": "+7",
+				"wis": "+6",
+				"cha": "+7"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"resist": [
+				"暗蚀",
+				"心灵"
+			],
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"中毒",
+				"震慑"
+			],
+			"languages": [
+				"通用语",
+				"龙语"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"ENG_name": "Regeneration",
+					"name": "再生",
+					"entries": [
+						"弗拉基米尔在他的回合开始时恢复10点生命值。如果他受到火焰或光耀伤害，这个特性在下一个回合开始时不会生效。只有当弗拉基米尔在自己的回合开始时生命值为0且没有再生时，他的身体才会被摧毁。"
+					]
+				},
+				{
+					"ENG_name": "Rejuvenation",
+					"name": "复生",
+					"entries": [
+						"当弗拉基米尔的身体被摧毁时，他的灵魂仍会徘徊。24小时后，灵魂会占据并活化同一存在位面上的另一具尸体，并恢复其所有生命值。在灵魂脱离身体时，可以使用{@spell 祈愿术}法术迫使灵魂去转世轮回。"
+					]
+				},
+				{
+					"ENG_name": "Special Equipment",
+					"name": "特殊装备",
+					"entries": [
+						"弗拉基米尔使用一把有着雕刻成银龙翅膀的护手、剑柄头造型像在牙齿之间叼着一颗黑色蛋白石的银龙头的{@item +2 巨剑}。"
+					]
+				},
+				{
+					"ENG_name": "Turn Immunity",
+					"name": "免疫驱散",
+					"entries": [
+						"弗拉基米尔对转化不死生物的效果免疫。"
+					]
+				},
+				{
+					"ENG_name": "Vengeful Tracker",
+					"name": "复仇追踪者",
+					"entries": [
+						"即使施特拉德和弗拉基米尔存在于不同的存在位面上，弗拉基米尔也能知道与施特拉德的距离和方向。如果施特拉德被摧毁，弗拉基米尔会知道。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"弗拉基米尔进行两次拳击攻击或使用他的+2巨剑进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Fist",
+					"name": "拳击",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}11（{@damage 2d6 + 4}）点钝击伤害。如果目标是施特拉德（弗拉基米尔誓死复仇之人），额外受到14（{@damage 4d6}）点钝击伤害。若目标为大型或更小体型的生物，弗拉基米尔可以选择不对其造成伤害，而是擒抱目标（逃脱{@dc 14}）。"
+					]
+				},
+				{
+					"ENG_name": "Greatsword +2",
+					"name": "+2 巨剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及5尺，单一目标。{@h}20（{@damage 4d6 + 6}）挥砍伤害。对抗施特拉德时，弗拉基米尔用这把武器额外造成14（{@damage 4d6}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Vengeful Glare",
+					"name": "复仇怒视",
+					"entries": [
+						"弗拉基米尔可以对30尺范围内的施特拉德施放，前提是他能看到施特拉德。施特拉德必须进行一次{@dc 15}感知豁免检定。若豁免失败，施特拉德将陷入{@condition 麻痹}状态，直到弗拉基米尔对其造成伤害，或直到弗拉基米尔的下一回合结束。当麻痹状态结束时，施特拉德将{@condition 恐慌}弗拉基米尔1分钟。施特拉德可以在自己每个回合结束时重复进行豁免检定，若他能看到弗拉基米尔，则检定具有劣势。若豁免成功，则{@condition 恐慌}状态将解除。"
+					]
+				}
+			],
+			"attachedItems": [
+				"+2 巨剑|dmg"
+			],
+			"traitTags": [
+				"再生",
+				"复生",
+				"免疫驱散"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Volenta Popofsky",
+			"name": "瓦伦塔·波波夫斯基",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 93,
+			"_copy": {
+				"ENG_name": "Vampire Spawn",
+				"name": "初生吸血鬼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "吸血鬼",
+						"with": "瓦伦塔",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Walking Corpse",
+			"name": "行尸",
+			"source": "CoS",
+			"page": 165,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Violent Death",
+								"name": "暴力死亡",
+								"entries": [
+									"当一具尸体的生命值被削减至 0 时，它会爆开，吐出一个 {@creature 毒蛇群}。这些蛇十分饥饿，并且战斗至死。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"speed": {
+				"walk": 20
+			},
+			"conditionImmune": [
+				"魅惑",
+				"恐慌"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Yevgeni Krushkin",
+			"name": "叶甫根尼·克鲁什金",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 100,
+			"_copy": {
+				"ENG_name": "Scout",
+				"name": "斥候",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "斥候",
+						"with": "叶甫根尼",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Young Wereraven",
+			"name": "青年鸦人",
+			"source": "CoS",
+			"page": 98,
+			"_copy": {
+				"ENG_name": "Wereraven",
+				"name": "鸦人",
+				"source": "VRGR"
+			},
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hp": {
+				"average": 7,
+				"formula": "2d6"
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Zuleika Toranescu",
+			"name": "朱莱卡·托兰涅斯库",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 204,
+			"_copy": {
+				"ENG_name": "Werewolf",
+				"name": "狼人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "狼人",
+						"with": "朱莱卡",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Zygfrek Belview",
+			"name": "吉格芙里克·贝尔维",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "CoS",
+			"page": 148,
+			"_copy": {
+				"ENG_name": "Mongrelfolk",
+				"name": "混种人",
+				"source": "CoS",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "混种人",
+						"with": "吉格芙里克",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "replaceArr",
+						"replace": "额外特性",
+						"items": {
+							"ENG_name": "Darkvision",
+							"name": "黑暗视觉",
+							"entries": [
+								"混种人拥有60尺范围的黑暗视觉。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"senseTags": [
+				"D"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		}
+	]
+}

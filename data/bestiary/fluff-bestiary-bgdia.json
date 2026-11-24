@@ -1,0 +1,1211 @@
+{
+	"monsterFluff": [
+		{
+			"ENG_name": "Abyssal Chicken",
+			"name": "深渊鸡",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"深渊鸡是肉食性、喜怒无常的、美味的最低阶层的恶魔，原产于深渊。它们会拍打坚韧的翅膀来吓走捕食者或者帮助它们跑得更快，而且它们吃起来像肥美的鸡。",
+								"在你允许的情况下，释放法术{@spell 寻获魔宠}的角色可以选择召唤一只深渊鸡来替代一只乌鸦。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Abyssal Chicken.webp"
+					},
+					"width": 623,
+					"height": 1200
+				}
+			]
+		},
+		{
+			"ENG_name": "Amrik Vanthampur",
+			"name": "阿姆利克·范萨姆普尔",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"博德之门的萨拉玛拉·范萨姆普尔公爵的次子。阿姆利克喜欢在生意前和他的客户喝上几杯，寒暄一下。他已经训练拉瑞娜的员工认识了好几种无恶意的手势，都是让他们送酒过来的意思。如果他想在他的客户的饮料里下毒的话，他会打一个特殊的手势。吧台的后面藏了一个小瓶子里面装有四人份的蒙汗药（请参阅城主指南第8章的毒药一节），在那里的天狗酒保只要看到阿姆利克的手势就会立刻下毒。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Amrik Vanthampur.webp"
+					},
+					"width": 586,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Archduke Zariel of Avernus",
+			"name": "阿弗纳斯的大公扎瑞尔",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"她曾经是一位被赋予监督血战之潮职责的强大天使，却屈服于位面的腐化，自恩典中堕落。阿斯蒙蒂斯钦佩扎瑞尔对战争的热情，并向她提供了阿弗纳斯的统治地位。她接受了他的提议，被阿斯蒙蒂斯变成了一位大魔鬼。",
+								"扎瑞尔的\"崛起\"是以牺牲前任阿弗纳斯统治者，深狱炼魔贝尔为代价的。扎瑞尔和贝尔互相憎恨。为了让贝尔保持忙碌和远离她的视线，扎瑞尔要求他锻造武器、盔甲和可怕的恶魔杀戮机器。",
+								"为了补充她的军团，扎瑞尔需要人类的灵魂来创造劣魔，然后她可以将劣魔们晋升为更高等的魔鬼。只有引诱物质位面的凡人，并与他们达成交易，她才能在来世将他们绑定在自己身上。",
+								{
+									"ENG_name": "Matalotok",
+									"name": "玛塔洛托克",
+									"type": "entries",
+									"entries": [
+										"扎瑞尔最近打败了恶魔领主科斯彻奇，并得到了他的锤子玛塔洛托克，这使扎瑞尔免疫寒冷伤害。如果没有这把锤子，扎瑞尔拥有对寒冷伤害的抗性。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Archduke Zariel of Avernus.webp"
+					},
+					"width": 1000,
+					"height": 857
+				}
+			]
+		},
+		{
+			"ENG_name": "Arkhan the Cruel",
+			"name": "残酷者阿克汉",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"残酷者阿克汉是提亚马特的邪恶龙裔神选。阿克汉相信他可以使用维克纳魔掌来将提亚玛特从她的九狱的监牢中释放出来，但这是在他不会被维克纳魔掌先杀死的前提下。这只手正在慢慢侵蚀阿克汉的肉体，并正在分解他一侧的身体。",
+								"在战斗中，阿克汉利用印记斩将提亚玛特的神力引入他的武器攻击中。如果在战斗中处于劣势，他将利用维克纳魔掌的传送术带着尽可能多的盟友一起返回塔楼。如果他的一个或多个战友阵亡，阿克汉将使用法术{@spell 回生术}和{@spell 死者复活}以使他们尽快复活返回战斗。",
+								"如果阿克汉发现自己被敌手全面压制，他会命令阿比沙发动进攻。阿克汉还可以使用附赠动作召唤出阿索哈，一只栖息在这个巨大龙头骨深处的奇美拉。这个为提亚玛特服务的邪恶怪物视阿克汉为朋友和盟友。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Arkhan the Cruel.webp"
+					},
+					"width": 1000,
+					"height": 964
+				}
+			]
+		},
+		{
+			"ENG_name": "Bel",
+			"name": "贝尔",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"在这个堡垒里，扎瑞尔的副手、前任阿弗纳斯之主监督着用于血战的武器和盔甲的生产。尽管在阿斯蒙蒂斯的指示下扎瑞尔接受了贝尔作为她的顾问，但贝尔和扎瑞尔互相厌恶。并编织各种借口互不相见。",
+								"贝尔表面上维持着扎瑞尔的忠诚形象。然而，贝尔对扎瑞尔统治曾经属于他的九狱之一感到恼火，但只要他认为阿斯蒙蒂斯仍然支持扎瑞尔，他就不会直接挑战她。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Bel.webp"
+					},
+					"width": 813,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Bitter Breath",
+			"name": "苦痛之息",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/057-u4jqy-03-09.webp"
+					},
+					"width": 932,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Black Gauntlet of Bane",
+			"name": "班恩之黑手",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"班恩的忠实追随者们是那些希望以军事力量和威吓来统治的战士，使用威胁和赏赐来保证忠诚的残酷暴君。他们奴役那些软弱到无法抵抗他们的人，用赏赐和权力的承诺来把他们变成忠诚的附庸。",
+								{
+									"ENG_name": "Cruel Tyrants",
+									"name": "残酷暴君",
+									"type": "entries",
+									"entries": [
+										"当班恩的追随者们获得权力时，他们就会采取严厉的措施确保他们的统治无法撼动。他们击败所有的反对者，并回报那些宣誓效忠的人。"
+									]
+								},
+								{
+									"ENG_name": "Warrior Cult",
+									"name": "武者教派",
+									"type": "entries",
+									"entries": [
+										"班恩的教徒们是身着重甲，手握硬头槌、长剑、矛和弩的战士。他们将铠甲右手的铁手套漆成黑色来荣耀他们的主君。班恩的牧师们使用头部塑造成一只握紧的拳头形状的黑色硬头槌。"
+									]
+								},
+								{
+									"ENG_name": "Cult Ranks",
+									"name": "教派等级",
+									"type": "entries",
+									"entries": [
+										"班恩的教徒们按照严格的军事等级运作。最低的阶级是班恩之拳，作为毫不犹豫服从命令的士兵。他们由擅长在战斗中指挥班恩之拳的钢铁执政官领导。而黑手则是指挥执政官的牧师。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Black Gauntlet of Bane.webp"
+					},
+					"width": 1000,
+					"height": 627
+				}
+			]
+		},
+		{
+			"ENG_name": "Bone Whelk",
+			"name": "骸骨螺",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"骸骨螺是一种大型无脊椎动物，会分泌一种黏液将颅骨，遗骸和其他腐殖粘附在自己身上形成一层保护壳。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Bone Whelk.webp"
+					},
+					"width": 1000,
+					"height": 715
+				}
+			]
+		},
+		{
+			"ENG_name": "Chukka",
+			"name": "楚卡",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/053-p0ex0-03-05.webp"
+					},
+					"width": 1000,
+					"height": 604
+				}
+			]
+		},
+		{
+			"ENG_name": "Clonk",
+			"name": "克朗克",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/053-p0ex0-03-05.webp"
+					},
+					"width": 1000,
+					"height": 604
+				}
+			]
+		},
+		{
+			"ENG_name": "Crokek'toeck",
+			"name": "克鲁科克'托伊克",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"克鲁科克'托伊克是耶诺古的恶魔宠物。宛如一只有着鬣狗的牙齿、皮毛、耳朵和笑声的巨大弹涂鱼一般，这只特别的恶魔能在它的食道里装下更小的恶魔，并在耶诺古想要的地方将它们吐出来。由于免疫于冥河粉碎心智的效应影响，克鲁科克'托伊克常常用于运送小型恶魔（有时甚至是耶诺古本人）穿过冥河可怕的水域。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Crokek'toeck.webp"
+					},
+					"width": 1000,
+					"height": 665
+				}
+			]
+		},
+		{
+			"ENG_name": "Death's Head of Bhaal",
+			"name": "巴尔的死神之首",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"巴尔的教徒们效仿他们的神灵，实施可怕的谋杀来传播恐惧和恐怖。只有他们希望，他们能够充满魅力且令人安息，但在战斗中其真正的嗜血的本质就会表现出来。",
+								{
+									"ENG_name": "Bloodletters",
+									"name": "放血者",
+									"type": "entries",
+									"entries": [
+										"巴尔的教徒们都学会召唤他们神灵的力量，让他们的受害者更容易受到他们长刃的伤害。当巴尔的魔力发挥作用时，刺伤会爆发出大量的鲜血。看似浅薄的伤口会深入受害者的身体并造成可怕的流血与痛苦。"
+									]
+								},
+								{
+									"ENG_name": "Killers from the Shadows",
+									"name": "影中杀手",
+									"type": "entries",
+									"entries": [
+										"巴尔的追随者是狡诈的杀手，通过谋杀来引起恐惧，在城市中播下恐怖的种子。他们能呼唤自己神灵的力量，轻松地融身入影，甚至在关键的时刻化作{@condition 隐形}。"
+									]
+								},
+								{
+									"ENG_name": "Cult Ranks",
+									"name": "教派等级",
+									"type": "entries",
+									"entries": [
+										"低等的巴尔教徒被称作夜刃，他们被巴尔赐予了{@sense 黑暗视觉}和优越的隐匿能力。收割者是其上一个等级。他们获得了变为{@condition 隐形}的能力，还能使用巴尔的魔法来避开怀疑。最高的等级是死神之首，带着神灵的骷髅面具来恐吓猎物。在战斗中他们通过轻而易举地避开最致命的攻击来威吓敌人，向他们展示抵抗巴尔的计划是徒劳之举。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Duke Thalamra Vanthampur",
+			"name": "萨拉玛拉·范萨姆普尔公爵",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"尖酸刻薄、精明且好斗，萨拉玛拉·范萨姆普尔公爵是范萨姆普尔家族的女家长。她的童年是在博德之门的下水道和地下室里度过的，在那里修理管道或者并清理这个城市的垃圾。萨拉玛拉从如此下贱的工作提升至城市地下管道与水利部长，到那时，她已经结过三次婚，生了三个儿子。她一生的目标是将自己和她的家族从下水道中提升到上流社会。",
+								"多年从事政治交易、责任推诿和贿赂，在萨拉玛拉被选入四人议会时得到了回报。尽管她在议会中的服务时间最短，但范萨姆普尔公爵无疑是最具政治头脑的议会成员。她在议会会议上很少发言，更愿意通过在她私人办公室和家族庄园的会议来推进她的政治议程。当她选择辩论时，她说话的力量超出了她的年龄似乎应该允许的范围，并且以揭露令人不安的（据说是）隐藏的真相而闻名。",
+								"萨拉玛拉·范萨姆普尔是个狡诈且崇拜魔鬼的披着女人外表的猛兽，纵使年过花甲她也敢毫无畏惧的与地狱犬对视。她那膀大腰圆的身形和健硕的手臂都说明了她的劳工经历。她的童年是在博德之门的下水道和地下室里度过的，在那里修理管道或者并清理这个城市的垃圾。萨拉玛拉从如此下贱的工作提升至城市地下管道与水利部长，而现在，她穿着华丽的衣服以与她博德之门公爵的地位相称。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Duke Thalamra Vanthampur.webp"
+					},
+					"width": 550,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Feonor",
+			"name": "菲奥诺",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/058-gyhxw-03-10.webp"
+					},
+					"width": 445,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Fiendish Flesh Golem",
+			"name": "邪魔血肉魔像",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"一具邪魔肉身魔像是一具由魔鬼、恶魔、尤格罗斯魔和其他邪魔的肉体部位缝合在一起的尤为巨大的肉身魔像。所有这些部分来自不同的生物并被以不同的方式组合在一起。没有两具完全相同的邪魔肉身魔像。夜鬼婆保守着制作这些魔像的秘密，极少向他人透露。",
+								"一些邪魔肉身魔像具有翅膀。然而，用于创造这些魔像的魔法允许它们不借助翅膀也能飞行和在空中悬浮。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Fist of Bane",
+			"name": "班恩之拳",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"班恩的忠实追随者们是那些希望以军事力量和威吓来统治的战士，使用威胁和赏赐来保证忠诚的残酷暴君。他们奴役那些软弱到无法抵抗他们的人，用赏赐和权力的承诺来把他们变成忠诚的附庸。",
+								{
+									"ENG_name": "Cruel Tyrants",
+									"name": "残酷暴君",
+									"type": "entries",
+									"entries": [
+										"当班恩的追随者们获得权力时，他们就会采取严厉的措施确保他们的统治无法撼动。他们击败所有的反对者，并回报那些宣誓效忠的人。"
+									]
+								},
+								{
+									"ENG_name": "Warrior Cult",
+									"name": "武者教派",
+									"type": "entries",
+									"entries": [
+										"班恩的教徒们是身着重甲，手握硬头槌、长剑、矛和弩的战士。他们将铠甲右手的铁手套漆成黑色来荣耀他们的主君。班恩的牧师们使用头部塑造成一只握紧的拳头形状的黑色硬头槌。"
+									]
+								},
+								{
+									"ENG_name": "Cult Ranks",
+									"name": "教派等级",
+									"type": "entries",
+									"entries": [
+										"班恩的教徒们按照严格的军事等级运作。最低的阶级是班恩之拳，作为毫不犹豫服从命令的士兵。他们由擅长在战斗中指挥班恩之拳的钢铁执政官领导。而黑手则是指挥执政官的牧师。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Gideon Lightward",
+			"name": "吉迪恩·莱特沃德",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"吉迪恩·莱特沃德曾经是洛山达的牧师，他自豪地为埃尔托瑞尔和他的神灵服务。扎瑞尔看中了他的热情可以为她所用，因此在埃尔托瑞尔坠落的几个月前，她派出了她手下的魔鬼来腐化他。这些魔鬼冒充成天使，向他应诺如果他能全身心投入到与不断带来威胁的恶魔斗争，他将获得更大的力量。",
+								"吉迪恩从魔鬼的引诱中慢慢地失去了理智和自由意志，使他被扎瑞尔腐化，并在埃尔托瑞尔坠落前的几个月里全力为她服务。他死于这座城市被拉到阿弗纳斯的破坏中，但这名牧师以不死生物的姿态重新站起来。即使成为了亡灵，吉迪恩仍然是他女主人在埃尔托瑞尔最忠实的仆人。他认为自己的事业\u2014\u2014与那些标志着万物终结的混乱恶魔战斗\u2014\u2014是崇高的。但是对于那些拒绝遵循他的命令的人来说，他已失去理智，而且充满了仇恨。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Gideon Lightward.webp"
+					},
+					"width": 548,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Hellwasp",
+			"name": "黄泉蜂",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"黄泉蜂是一种原生于九狱的聪明、恶毒的昆虫。它具有厚重的保护性甲壳，金属质地的狭长翅翼，以及末端如同剑一般的利爪。它是以其钉刺向受害者注入一种类似炽火胶的化合物，这种溶液里同样携带一种麻痹酶，能使猎物丧失行动能力，以便黄泉蜂有足够时间攫取猎物并迅速飞离。",
+								"黄泉蜂茁壮地生长于炽热的气候中，但极端地寒冷会让它们的甲壳破裂，新陈代谢停止。因此，它们会避开九狱中那些严寒的层级（比如斯泰吉亚与卡尼亚）。",
+								{
+									"ENG_name": "Nests",
+									"name": "巢穴",
+									"type": "entries",
+									"entries": [
+										"黄泉蜂会喷射出一种与琥珀类似的金色胆汁，它们会用其来筑起布满蜂房和通道的巨大巢穴。黄泉蜂使用这些巢穴作为公共的庇护所和食物储藏室。一个典型的巢穴足够支持 {@dice 1d10 + 10} 只黄泉蜂的群落，在这个群体中每只黄泉蜂都具有平等的地位和发言权。"
+									]
+								},
+								{
+									"ENG_name": "Hellwasp Telepathy",
+									"name": "黄泉蜂感应",
+									"type": "entries",
+									"entries": [
+										"黄泉蜂通过一种只有同类才能感知的心灵感应方式彼此交流。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Hellwasp.webp"
+					},
+					"width": 709,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Hollyphant",
+			"name": "圣飞象",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"圣飞象是一种来自上层位面的温和而强壮的生物。善良阵营的神和天使用他们作为信使和助手。圣飞象珍视友谊和真心实意。",
+								"一只圣飞象看起来像一只小型的大象，有着闪烁的金毛，翅膀迅速地拍打着，不仅能让它飞向高空，还能让它飞得极快。虽然它宽容体贴，但如果一个圣飞象目睹了一项恶行必将严惩作恶之人。它珍珠般的象牙并不可怕，但它能用象鼻发出号角声，使生物耳聋，或将作恶者吞噬在正能量的闪烁之中。圣飞象也有强大的天生施法，用以痛击邪恶并保护它的朋友。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Hollyphant.webp"
+					},
+					"width": 1000,
+					"height": 905
+				}
+			]
+		},
+		{
+			"ENG_name": "Iron Consul",
+			"name": "钢铁领事",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"班恩的忠实追随者们是那些希望以军事力量和威吓来统治的战士，使用威胁和赏赐来保证忠诚的残酷暴君。他们奴役那些软弱到无法抵抗他们的人，用赏赐和权力的承诺来把他们变成忠诚的附庸。",
+								{
+									"ENG_name": "Cruel Tyrants",
+									"name": "残酷暴君",
+									"type": "entries",
+									"entries": [
+										"当班恩的追随者们获得权力时，他们就会采取严厉的措施确保他们的统治无法撼动。他们击败所有的反对者，并回报那些宣誓效忠的人。"
+									]
+								},
+								{
+									"ENG_name": "Warrior Cult",
+									"name": "武者教派",
+									"type": "entries",
+									"entries": [
+										"班恩的教徒们是身着重甲，手握硬头槌、长剑、矛和弩的战士。他们将铠甲右手的铁手套漆成黑色来荣耀他们的主君。班恩的牧师们使用头部塑造成一只握紧的拳头形状的黑色硬头槌。"
+									]
+								},
+								{
+									"ENG_name": "Cult Ranks",
+									"name": "教派等级",
+									"type": "entries",
+									"entries": [
+										"班恩的教徒们按照严格的军事等级运作。最低的阶级是班恩之拳，作为毫不犹豫服从命令的士兵。他们由擅长在战斗中指挥班恩之拳的钢铁执政官领导。而黑手则是指挥执政官的牧师。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Kostchtchie",
+			"name": "科斯彻奇",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"恶魔领主科斯彻奇看起来像一个矮胖的山丘巨人，有着短粗的罗圈腿和非常巨大的脑袋。",
+								"霜巨人如果抛弃了他们的神转而去崇拜恶魔的话，就可以通过在冰雕的祭坛上留下血腥的祭品来召唤科斯彻奇。如果恶魔领主选择回应巨人的召唤，他就会与巨人并肩战斗和捕猎一段时间，在返回深渊前令霜巨人染上野蛮的疯狂和嗜血。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Kostchtchie.webp"
+					},
+					"width": 1000,
+					"height": 698
+				}
+			]
+		},
+		{
+			"ENG_name": "Krull",
+			"name": "克鲁尔",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Krull.webp"
+					},
+					"width": 805,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Lulu",
+			"name": "露露",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/101-efblf-05-01.webp"
+					},
+					"width": 1000,
+					"height": 642
+				}
+			]
+		},
+		{
+			"ENG_name": "Mad Maggie",
+			"name": "疯喜鹊",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/052-vhatr-03-04.webp"
+					},
+					"width": 956,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Mahadi the Rakshasa",
+			"name": "罗刹马哈迪",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"罗刹马哈迪看起来像个有钱的商业领主。马哈迪虽然是无比强大的存在，但它不想去去冒无必要的风险，尤其是在九狱，这个他会被永久性抹杀的地方。马哈迪是阿斯蒙蒂斯在阿弗纳斯的耳目。作为交易的中介和仲裁者，他参与了各类契约不让他的庇主漏过半点消息。",
+								"作为流浪商城的主人，马哈迪从阿斯蒙蒂斯这里获得了特许令，可以自由地在物质位面和九狱之间穿梭，经营他的业务，搜集信息，商讨契约，以及进行其他必要的运营。",
+								"除了打理流浪商城，马哈迪也是兼营餐厅和水疗业务的专门店，地狱极乐城的老板与店主。这家店建在了半位面内，所以顾客们可以随时随地舒适地来此享受，哪怕是商队正在旅途中也不受影响。因为马哈迪是个在维护店主-客户服务合约上非常认真严肃的罗刹，只要客户付得起他们享受的服务，就不用担心会被在店里面埋伏。每个客户必须在进门前同意这一正式契约。",
+								"马哈迪自诩为一个富有魅力的优雅店主。他会让每一位来到地狱极乐城的客人都觉得自己是所有位面中最重要的人物，满足他们一切要求和欲望。虽然他对所有造访流浪商城的客人都一视同仁，但通过特殊协约到来的客人对他而言是最珍贵的。",
+								"当然，所有离开地狱极乐城的客人都得在走之前全额付清他们的账单。如果有客人因为任何理由不能付钱，他们之前签订的契约会明确的写着，要将他们的灵魂没收。他们必须在此打工还债。所有这样的个体都视为受到了以 9 环法术位施放的指使术的效果，在欠债人还完债前不能自主打破这个效果。马哈迪会根据这些债务人的能力去安排他们的工作。有些会成为地狱极乐城中的契约仆役。要是这些人显露出销售的才能，他们也有可能最终能执掌一间游荡商场内的店铺。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Mahadi the Rakshasa.webp"
+					},
+					"width": 1000,
+					"height": 697
+				}
+			]
+		},
+		{
+			"ENG_name": "Master of Souls",
+			"name": "驭魂者",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"那些追随米尔寇的人是法师或其他精通死灵魔法艺术的探寻者。",
+								{
+									"ENG_name": "Delvers into Lore",
+									"name": "知识的钻研者",
+									"type": "entries",
+									"entries": [
+										"米尔寇的邪教徒学习允许他们强迫死者的灵魂为其服务的仪式，强令他们回答问题和分享失落的学识。他们在古代的废墟中探求奥秘，并试图从教派外的法师手里窃走法术书和其他卷册。"
+									]
+								},
+								{
+									"ENG_name": "Cult Ranks",
+									"name": "教派等级",
+									"type": "entries",
+									"entries": [
+										"米尔寇的追随者持有一根用骷髅头代替原本打击端的链枷。尸从是还没有掌握奥术魔法和在战斗中依靠其链枷的学徒。笞颅者是使用魔法来提升其战斗时力量的施法者。而灵魂宗师是米尔寇秘密的研习者，这让他们得以操纵死者并施展其他墓穴深处的魔法。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mortlock Vanthampur",
+			"name": "摩特洛克·范萨姆普尔",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"摩特洛克被他的母亲萨拉玛拉·范萨姆普尔公爵所容忍，但是他其他的哥哥们，瑟斯维尔和阿姆利克却都很鄙视他，他们觉得他只是一个可恶的蠢货。摩特洛克的半张脸因为小时候的烧伤留下了伤疤，这也使他有着一张可怕的脸。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Mortlock Vanthampur.webp"
+					},
+					"width": 684,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Necromite of Myrkul",
+			"name": "米尔寇之尸从",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"那些追随米尔寇的人是法师或其他精通死灵魔法艺术的探寻者。",
+								{
+									"ENG_name": "Delvers into Lore",
+									"name": "知识的钻研者",
+									"type": "entries",
+									"entries": [
+										"米尔寇的邪教徒学习允许他们强迫死者的灵魂为其服务的仪式，强令他们回答问题和分享失落的学识。他们在古代的废墟中探求奥秘，并试图从教派外的法师手里窃走法术书和其他卷册。"
+									]
+								},
+								{
+									"ENG_name": "Cult Ranks",
+									"name": "教派等级",
+									"type": "entries",
+									"entries": [
+										"米尔寇的追随者持有一根用骷髅头代替原本打击端的链枷。尸从是还没有掌握奥术魔法和在战斗中依靠其链枷的学徒。笞颅者是使用魔法来提升其战斗时力量的施法者。而灵魂宗师是米尔寇秘密的研习者，这让他们得以操纵死者并施展其他墓穴深处的魔法。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Necromite of Myrkul.webp"
+					},
+					"width": 1000,
+					"height": 627
+				}
+			]
+		},
+		{
+			"ENG_name": "Night Blade",
+			"name": "夜刃",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"巴尔的教徒们效仿他们的神灵，实施可怕的谋杀来传播恐惧和恐怖。只有他们希望，他们能够充满魅力且令人安息，但在战斗中其真正的嗜血的本质就会表现出来。",
+								{
+									"ENG_name": "Bloodletters",
+									"name": "放血者",
+									"type": "entries",
+									"entries": [
+										"巴尔的教徒们都学会召唤他们神灵的力量，让他们的受害者更容易受到他们长刃的伤害。当巴尔的魔力发挥作用时，刺伤会爆发出大量的鲜血。看似浅薄的伤口会深入受害者的身体并造成可怕的流血与痛苦。"
+									]
+								},
+								{
+									"ENG_name": "Killers from the Shadows",
+									"name": "影中杀手",
+									"type": "entries",
+									"entries": [
+										"巴尔的追随者是狡诈的杀手，通过谋杀来引起恐惧，在城市中播下恐怖的种子。他们能呼唤自己神灵的力量，轻松地融身入影，甚至在关键的时刻化作{@condition 隐形}。"
+									]
+								},
+								{
+									"ENG_name": "Cult Ranks",
+									"name": "教派等级",
+									"type": "entries",
+									"entries": [
+										"低等的巴尔教徒被称作夜刃，他们被巴尔赐予了{@sense 黑暗视觉}和优越的隐匿能力。收割者是其上一个等级。他们获得了变为{@condition 隐形}的能力，还能使用巴尔的魔法来避开怀疑。最高的等级是死神之首，带着神灵的骷髅面具来恐吓猎物。在战斗中他们通过轻而易举地避开最致命的攻击来威吓敌人，向他们展示抵抗巴尔的计划是徒劳之举。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Nine-Fingers Keene",
+			"name": "九指基恩",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"现任公会领袖，九指基恩，蔑视华丽装束和幻术魔法。她在世人面前的形象就是她的本来面目：一个谦逊的中年女性，身材健美。她那易被遗忘的容貌证明了她作为小偷的最大优势，因为她的受害者即使再见到她，也难以认出她。多年来，基恩的领导为她赢得了深思熟虑的实用主义声誉。必要时，她会报复那些攻击过公会的人\u2014\u2014前提是这样做有利可图。她的方法在必要的时候是恶毒的，她既让人敬畏又让人尊敬。",
+								"基恩越来越无法容忍民间大势转为反对她的势力。一方面，偶尔总有鼓舞民众的人在阻碍犯罪活动，另一方面，有组织的互助会和警醒卫士的崛起正在干扰公会的运作。在一场精心策划的针对宗贵庄园的袭击失败后\u2014\u2014因为一名警醒卫士歪打正着地让庄园守卫警觉了起来\u2014\u2014基恩宣布开始狩猎各行各业的行善者。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Nine-Fingers Keene.webp"
+					},
+					"width": 879,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Princeps Kovik",
+			"name": "元首科维克",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/059-kyqim-03-11.webp"
+					},
+					"width": 751,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Raggadragga",
+			"name": "拉加德拉格",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/055-1ivlr-03-07.webp"
+					},
+					"width": 734,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Reaper of Bhaal",
+			"name": "巴尔的收割者",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"巴尔的教徒们效仿他们的神灵，实施可怕的谋杀来传播恐惧和恐怖。只有他们希望，他们能够充满魅力且令人安息，但在战斗中其真正的嗜血的本质就会表现出来。",
+								{
+									"ENG_name": "Bloodletters",
+									"name": "放血者",
+									"type": "entries",
+									"entries": [
+										"巴尔的教徒们都学会召唤他们神灵的力量，让他们的受害者更容易受到他们长刃的伤害。当巴尔的魔力发挥作用时，刺伤会爆发出大量的鲜血。看似浅薄的伤口会深入受害者的身体并造成可怕的流血与痛苦。"
+									]
+								},
+								{
+									"ENG_name": "Killers from the Shadows",
+									"name": "影中杀手",
+									"type": "entries",
+									"entries": [
+										"巴尔的追随者是狡诈的杀手，通过谋杀来引起恐惧，在城市中播下恐怖的种子。他们能呼唤自己神灵的力量，轻松地融身入影，甚至在关键的时刻化作{@condition 隐形}。"
+									]
+								},
+								{
+									"ENG_name": "Cult Ranks",
+									"name": "教派等级",
+									"type": "entries",
+									"entries": [
+										"低等的巴尔教徒被称作夜刃，他们被巴尔赐予了{@sense 黑暗视觉}和优越的隐匿能力。收割者是其上一个等级。他们获得了变为{@condition 隐形}的能力，还能使用巴尔的魔法来避开怀疑。最高的等级是死神之首，带着神灵的骷髅面具来恐吓猎物。在战斗中他们通过轻而易举地避开最致命的攻击来威吓敌人，向他们展示抵抗巴尔的计划是徒劳之举。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Reaper of Bhaal.webp"
+					},
+					"width": 1000,
+					"height": 627
+				}
+			]
+		},
+		{
+			"ENG_name": "Rilsa Rael",
+			"name": "瑞尔萨·雷尔",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"小卡林珊的公会头目。小卡林珊街区最臭名昭著的地方是卡林珠宝行，它被广泛认为是这座城市最好的珠宝商，也是珠宝销赃的最佳地点，因为它也是当地公会的总部。蕾尔除了在自己的珠宝行里定期举办公共沙龙外，还默默监督着密语花园，这是一个由木质或纸质屏风组成的迷宫，来自城市各处的人可以在这里与公会特工或与其他来访者买卖秘密，通过屏风交谈以确保匿名。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Rilsa Rael.webp"
+					},
+					"width": 634,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Skull Lasher of Myrkul",
+			"name": "米尔寇之笞颅者",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"那些追随米尔寇的人是法师或其他精通死灵魔法艺术的探寻者。",
+								{
+									"ENG_name": "Delvers into Lore",
+									"name": "知识的钻研者",
+									"type": "entries",
+									"entries": [
+										"米尔寇的邪教徒学习允许他们强迫死者的灵魂为其服务的仪式，强令他们回答问题和分享失落的学识。他们在古代的废墟中探求奥秘，并试图从教派外的法师手里窃走法术书和其他卷册。"
+									]
+								},
+								{
+									"ENG_name": "Cult Ranks",
+									"name": "教派等级",
+									"type": "entries",
+									"entries": [
+										"米尔寇的追随者持有一根用骷髅头代替原本打击端的链枷。尸从是还没有掌握奥术魔法和在战斗中依靠其链枷的学徒。笞颅者是使用魔法来提升其战斗时力量的施法者。而灵魂宗师是米尔寇秘密的研习者，这让他们得以操纵死者并施展其他墓穴深处的魔法。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Smiler the Defiler",
+			"name": "污化者笑爷",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"笑爷的笑容令人紧张不安\u2014\u2014他正是因此得名。",
+								"更适合这个雅灵的名字应该是蛊惑师笑爷。 他经常用他那不变的乐观和惊人的莽撞行动来蛊惑他人。笑爷觉得他只要有着积极的态度和一些视死如归的冒险行为，他就无所不能。虽然他承认他的行为会可能害死其他人，但他相信只要他足够努力，整个多元宇宙都会因他的妄想而改变。他是真的非常疯狂。",
+								"笑爷最爱的滑稽把戏之一就是用{@spell 幻景}在阿弗纳斯创造出一小片妖精荒野：在这片美丽的林中空地他可以放松几个小时，进行冥想或是密谋。",
+								"这位来自妖精荒野的雅灵冒险家在他的同伴们抛弃了他之后被困在了阿弗纳斯。过去的几年他都在阿弗纳斯流浪，与邪魔们交易维持生存。笑爷最终还是向一位深狱炼魔出卖了他的灵魂，换取了他的帮助，推翻了一位名叫雅罗斯托的征伐罗斯魔军阀。笑爷接管了征伐罗斯魔的军伍和地狱战争机器。笑爷的团伙随后被称作了笑爷污染者，他们的凶残一度震慑了阿弗纳斯的其他军阀们。",
+								"笑爷的三个对手\u2014\u2014苦涩呼吸，费欧娜和卡夫卡亲王\u2014\u2014合力组建了扫除笑爷污染者的联军。微笑者逃脱了，笑爷逃了出来，骑着一辆魔鬼座驾在阿弗纳斯到处逃窜，寻找愿意帮他同那些组队打击他的军阀进行复仇的冒险者。疯喜鹊是他唯一的同盟，但他拒绝加入她的团伙。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Smiler the Defiler.webp"
+					},
+					"width": 507,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Thavius Kreeg",
+			"name": "塔维斯·克雷格",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/001-ud5xx-00-01.webp"
+					},
+					"width": 1000,
+					"height": 643
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/089-zbxl3-03-20.webp"
+					},
+					"width": 381,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Thurstwell Vanthampur",
+			"name": "瑟斯维尔·范萨姆普尔",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"瑟斯维尔是一个 40 岁左右，面色苍白又沉闷的隐居者。他是一个十足的孤僻者，他用小魔鬼来监视他的兄弟们，阿姆利克和摩特洛克。瑟斯维尔憎恶他们\u2014\u2014阿姆利克是他母亲的最爱，而摩特洛克是一个丑恶笨蛋。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Thurstwell Vanthampur.webp"
+					},
+					"width": 583,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Torogar Steelfist",
+			"name": "托罗加·钢拳",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Torogar Steelfist.webp"
+					},
+					"width": 1000,
+					"height": 947
+				}
+			]
+		},
+		{
+			"ENG_name": "Tressym",
+			"name": "翼猫",
+			"source": "BGDIA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Tressym.webp"
+					},
+					"title": "翼猫\"嘴里流涎\"",
+					"width": 1000,
+					"height": 763
+				}
+			]
+		},
+		{
+			"ENG_name": "Ulder Ravengard",
+			"name": "乌尔德·瑞文嘉德",
+			"source": "BGDIA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"乌尔德·瑞文嘉德是一名无畏的士兵，他从焰拳的队伍中脱颖而出，成为了它的最高统帅。瑞文嘉德利用他的军事地位和影响力为自己在四人委员会中争取到了一个席位。在两名委员会成员死于腐败和丑闻之后，他说服了宗贵议会支持他当选大公爵。",
+								"在升至市政府最高职位后，瑞文嘉德拒绝放弃焰拳的指挥权，这使他成为该城迄今为止最有权势的人物。这个决定并没有让他受到任何人的喜爱，但瑞文嘉德可能对自己的声望漠不关心。他只关心博德之门的稳定和繁荣，不相信任何其他公爵或宗贵议会中的人会把城市的利益置于自己的利益之上。",
+								"瑞文嘉德在主要由理想主义平民和其他已确立公爵的敌人支持的平台上崛起成为大公。尽管他轻松赢得了选举，但瑞文嘉德在执行职责时遇到了困难，发现自己在每一个回合都被公开和隐形的官僚制所束缚。尽管如此，他一直是议会中理性和常识的声音\u2014\u2014即使不是某些人所希望的平等主义。他也被证明在很大程度上抵抗了妄言和腐败，尽管他的许多同僚公爵和议会中的同行仍然经常在政治上胜过他。他仅有的明显乐趣之一仍然是他定期对龙岩部队进行的突袭检查。",
+								"瑞文嘉德最近被骗参加了在埃尔托瑞尔举行的外交峰会，却不知道他在博德之门的政敌策划了这场旨在推翻他政权的邪恶阴谋。他不在的时候，焰拳失去了领袖，委员会失去了舵锚。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/BGDIA/Ulder Ravengard.webp"
+					},
+					"width": 671,
+					"height": 1000
+				}
+			]
+		}
+	]
+}

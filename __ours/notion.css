@@ -1,0 +1,383 @@
+/* 我们的 5etools —— Notion 风格界面（只在外壳里的「新界面」生效：html.nt）。
+ * 颜色、字号、间距取自 Notion 网页版实际页面（notion.site）的计算样式；规则数据本身不做任何改动。
+ * 网站自带的样式都放在 @layer vetools 里，这里不用 layer，所以选择器可以写得很简单。 */
+
+html.nt {
+	--nt-tex: #2c2c2b; --nt-tex2: #7d7a75; --nt-tex3: #a19e99; --nt-tex4: #bcbab6; --nt-texnav: #5f5e59;
+	--nt-bg: #fff; --nt-surface: #fff; --nt-bg2: #f9f8f7; --nt-bg3: #f0efed; --nt-hover: rgba(42, 28, 0, .05); --nt-active: rgba(42, 28, 0, .07);
+	--nt-line: #e6e5e3; --nt-line2: #f0efed; --nt-line3: #d4d3cf; --nt-cell: rgba(42, 28, 0, .07);
+	--nt-ico: #8e8b86; --nt-blue: #2783de; --nt-focus: #2383e2; --nt-blue-bg: #e5f2fc; --nt-blue-bg2: #cee3f7; --nt-blue-tex: #264a72;
+	--nt-sh-sm: 0 2px 4px 0 #0000000a, 0 0 0 1px #2a1c0012;
+	--nt-sh-md: 0 8px 12px 0 #19191907, 0 2px 6px 0 #19191907, 0 0 0 1px #2a1c0012;
+	--nt-sh-lg: 0 20px 24px 0 #1919190d, 0 5px 8px 0 #19191907, 0 0 0 1px #2a1c0012;
+	--nt-sh-scr: 0 24px 48px 0 #1919193d, 0 4px 12px 0 #19191924, 0 0 0 1px #2a1c0012;
+	--nt-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "PingFang SC", "Microsoft YaHei", "Apple Color Emoji", Arial, sans-serif;
+	/* Notion 标签色（背景 / 文字） */
+	--nt-tag-gray: rgba(42, 28, 0, .07); --nt-tag-gray-t: #2c2c2b;
+	--nt-tag-brown: rgba(127, 51, 0, .157); --nt-tag-brown-t: #584437;
+	--nt-tag-blue: #cee3f7; --nt-tag-blue-t: #264a72;
+	--nt-tag-green: rgba(0, 96, 38, .157); --nt-tag-green-t: #2a533c;
+	--nt-tag-purple: rgba(92, 0, 163, .14); --nt-tag-purple-t: #553b69;
+	--nt-tag-pink: #f4d8e4; --nt-tag-pink-t: #68354e;
+	--nt-tag-red: rgba(206, 24, 0, .165); --nt-tag-red-t: #6d3531;
+	--nt-tag-orange: #f3ddcb; --nt-tag-orange-t: #6a4222;
+	--nt-tag-yellow: #f2e3b7; --nt-tag-yellow-t: #655121;
+	/* Notion 文字色：用来区分子职特性、第三方特性等（原站用不同颜色区分，这里保留区分，只换成 Notion 的色值） */
+	--nt-c-green: #448361; --nt-c-blue: #337ea9; --nt-c-purple: #9065b0; --nt-c-pink: #c14c8a; --nt-c-brown: #9f6b53; --nt-c-orange: #d9730d;
+	background: var(--nt-bg); color-scheme: light;
+}
+html.nt body { background: var(--nt-bg) !important; color: var(--nt-tex); font-family: var(--nt-font); font-size: 14px; line-height: 1.5; -webkit-font-smoothing: auto; }
+html.nt .overlay-noise { display: none; }
+html.nt ::selection { background: rgba(35, 131, 226, .28); }
+html.nt * { scrollbar-width: thin; scrollbar-color: #d3d1cb transparent; }
+html.nt ::-webkit-scrollbar { width: 10px; height: 10px; background: transparent; }
+html.nt ::-webkit-scrollbar-thumb { background: #d3d1cb; border-radius: 0; border: 2px solid var(--nt-bg); }
+html.nt ::-webkit-scrollbar-thumb:hover { background: #aeaca6; }
+
+/* ------------------------------------------------------------------ links: Notion 是正文色 + 浅下划线 */
+html.nt a, html.nt a:visited { color: inherit; text-decoration: underline; text-decoration-color: rgba(42, 28, 0, .25); text-underline-offset: 2px; text-decoration-thickness: 1px; }
+html.nt a:hover { color: inherit; text-decoration-color: rgba(42, 28, 0, .6); }
+html.nt .ve-lst__row-inner, html.nt .ve-lst__row-inner:hover { text-decoration: none; }
+
+/* ------------------------------------------------------------------ the site's own header / menu: the shell has the sidebar */
+html.nt.ours-in-shell header.page__header, html.nt.ours-in-shell .page__btn-toggle-nav { display: none !important; }
+html.nt.ours-in-shell #navigation { position: fixed; top: 0; left: 0; width: 0; height: 0; margin: 0; padding: 0; border: 0; z-index: 2000; }
+html.nt.ours-in-shell #navbar { display: block; width: 0; height: 0; margin: 0; padding: 0; }
+html.nt.ours-in-shell #navbar > :not(.omni__wrp-input) { display: none !important; }
+html.nt.ours-in-shell #footer, html.nt.ours-in-shell .page__footer { display: none; }
+
+/* ------------------------------------------------------------------ search: Notion's centred search window (Ctrl+K / 侧栏「搜索」 / F) */
+html.nt.ours-in-shell .omni__wrp-input { position: fixed; left: -9999px; top: 0; width: 1px; opacity: 0; }
+html.nt.nt-search::before { content: ""; position: fixed; inset: 0; z-index: 1999; background: rgba(15, 15, 15, .2); }
+html.nt.nt-search .omni__wrp-input { left: 50%; top: max(9vh, 40px); transform: translateX(-50%); width: min(720px, calc(100vw - 48px)); opacity: 1; z-index: 2001;
+	background: var(--nt-surface); border-radius: 12px; box-shadow: var(--nt-sh-scr); display: flex !important; align-items: center; height: 52px; padding: 0 12px 0 44px; margin: 0; }
+html.nt.nt-search #navigation:has(.omni__wrp-output:not(.ve-hidden)) .omni__wrp-input { border-radius: 12px 12px 0 0; box-shadow: 0 24px 48px 0 #1919193d, 0 0 0 1px #2a1c0012; }
+html.nt.nt-search .omni__wrp-input::before { content: ""; position: absolute; left: 16px; top: 16px; width: 20px; height: 20px; background: var(--nt-ico);
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M8.6 3.2a5.4 5.4 0 1 0 3.2 9.75l3.37 3.37a.75.75 0 1 0 1.06-1.06l-3.37-3.37A5.4 5.4 0 0 0 8.6 3.2Zm-3.9 5.4a3.9 3.9 0 1 1 7.8 0 3.9 3.9 0 0 1-7.8 0Z'/%3E%3C/svg%3E") center / 20px no-repeat;
+	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M8.6 3.2a5.4 5.4 0 1 0 3.2 9.75l3.37 3.37a.75.75 0 1 0 1.06-1.06l-3.37-3.37A5.4 5.4 0 0 0 8.6 3.2Zm-3.9 5.4a3.9 3.9 0 1 1 7.8 0 3.9 3.9 0 0 1-7.8 0Z'/%3E%3C/svg%3E") center / 20px no-repeat; }
+html.nt.nt-search .omni__input { border: 0 !important; box-shadow: none !important; background: transparent !important; height: 52px; font-size: 18px; color: var(--nt-tex); padding: 0; min-width: 0; flex: 1; border-radius: 0 !important; outline: none; font-family: var(--nt-font); }
+html.nt.nt-search .omni__input::placeholder { color: var(--nt-tex3); }
+html.nt.nt-search .omni__submit { display: none; }
+html.nt.nt-search .omni__btn-clear { position: static; color: var(--nt-tex3); margin-left: 8px; cursor: pointer; font-size: 12px; }
+html.nt.ours-in-shell .omni__wrp-output { display: none; }
+html.nt.nt-search .omni__wrp-output:not(.ve-hidden) { display: block !important; position: fixed; z-index: 2001; left: 50%; top: calc(max(9vh, 40px) + 52px); transform: translateX(-50%); width: min(720px, calc(100vw - 48px)); }
+html.nt.nt-search .omni__output { position: static !important; width: 100% !important; max-width: none !important; min-width: 0 !important; max-height: min(60vh, 560px); overflow-y: auto;
+	margin: 0; padding: 6px 0 8px; border: 0; border-top: 1px solid var(--nt-line2); border-radius: 0 0 12px 12px; background: var(--nt-surface); box-shadow: 0 24px 48px 0 #1919193d, 0 4px 12px 0 #19191924, 0 0 0 1px #2a1c0012; font-size: 14px; }
+html.nt.nt-search .omni__output > .ve-flex-h-right { justify-content: flex-start; padding: 2px 12px 8px; margin: 0 !important; border-bottom: 1px solid var(--nt-line2); color: var(--nt-tex2); font-size: 12px; }
+html.nt.nt-search .omni__output > .ve-flex-h-right .ve-italic { font-style: normal; }
+html.nt .omni__row-result { min-height: 36px; padding: 0 12px 0 14px; margin: 0 6px; border-radius: 6px; background: none !important; gap: 12px; }
+html.nt .omni__row-result:hover, html.nt .omni__row-result--selected, html.nt .omni__row-result:focus-within { background: var(--nt-hover) !important; }
+html.nt .omni__lnk-name { text-decoration: none !important; font-weight: 500; color: var(--nt-tex) !important; flex: 1; min-width: 0; line-height: 36px; }
+html.nt .omni__row-result [class*="ve-source__"] { color: var(--nt-tex2) !important; font-size: 12px; }
+html.nt .omni__wrp-page a { color: var(--nt-tex3) !important; text-decoration: none; font-size: 12px; }
+html.nt .omni__output .ve-pagination, html.nt .omni__output .ve-btn-group + .ve-btn { font-size: 12px; }
+
+/* ------------------------------------------------------------------ page canvas */
+html.nt .container { width: auto; max-width: none; }
+html.nt main.container, html.nt .view-col-group, html.nt #wrp-pagecontent { padding-left: 0; padding-right: 0; }
+html.nt main.container { padding: 20px 40px 96px; margin: 0; }
+html.nt hr { border-color: var(--nt-line); border-top-width: 1px; opacity: 1; }
+
+/* ------------------------------------------------------------------ buttons, inputs: Notion's quiet controls */
+html.nt .ve-btn { font-family: var(--nt-font); }
+html.nt .ve-btn-default { background: var(--nt-surface); color: var(--nt-tex); border: 0; box-shadow: inset 0 0 0 1px var(--nt-line); border-radius: 6px; transition: background .1s; }
+html.nt .ve-btn-default:hover, html.nt .ve-btn-default:focus { background: var(--nt-hover); color: var(--nt-tex); box-shadow: inset 0 0 0 1px var(--nt-line); }
+html.nt .ve-btn-default.ve-active, html.nt .ve-btn-default:active { background: var(--nt-active); box-shadow: inset 0 0 0 1px var(--nt-line); color: var(--nt-tex); }
+html.nt .ve-btn-xs { height: 24px; padding: 0 7px; font-size: 13px; line-height: 24px; border-radius: 6px; }
+html.nt .ve-btn-sm { height: 28px; padding: 0 10px; font-size: 14px; line-height: 28px; }
+html.nt .ve-btn-primary { background: var(--nt-blue); color: #fff; border: 0; border-radius: 6px; box-shadow: none; }
+html.nt .ve-btn-primary:hover, html.nt .ve-btn-primary:focus { background: #1f74c9; color: #fff; }
+html.nt .ve-btn-info { background: var(--nt-surface); color: var(--nt-blue); border: 0; box-shadow: inset 0 0 0 1px rgba(35, 131, 226, .35); border-radius: 6px; }
+html.nt .ve-btn-danger { background: var(--nt-surface); color: #d44c47; border: 0; box-shadow: inset 0 0 0 1px rgba(212, 76, 71, .35); border-radius: 6px; }
+html.nt .ve-btn-group > .ve-btn { border-radius: 0; }
+html.nt .ve-btn-group > .ve-btn:first-child { border-radius: 6px 0 0 6px; }
+html.nt .ve-btn-group > .ve-btn:last-child { border-radius: 0 6px 6px 0; }
+html.nt .ve-btn-group > .ve-btn:only-child { border-radius: 6px; }
+html.nt .ve-btn-group > .ve-btn + .ve-btn { margin-left: -1px; }
+html.nt .ve-form-control { font-family: var(--nt-font); color: var(--nt-tex); background: var(--nt-surface); border: 0; box-shadow: inset 0 0 0 1px var(--nt-line); border-radius: 6px; font-size: 14px; }
+html.nt .ve-form-control:focus { box-shadow: inset 0 0 0 1px var(--nt-focus), 0 0 0 2px rgba(35, 131, 226, .25); outline: none; }
+html.nt .ve-form-control::placeholder { color: var(--nt-tex3); }
+html.nt .glyphicon { color: var(--nt-ico); }
+html.nt .ve-btn-primary .glyphicon { color: #fff; }
+
+/* ------------------------------------------------------------------ list panel (every list page): search + header + rows like a Notion table */
+html.nt #listcontainer .ve-night__shadow-big, html.nt .ve-night__shadow-big { box-shadow: none; }
+html.nt #filter-search-group { gap: 6px; margin-bottom: 6px; height: 28px; }
+html.nt #filter-search-group > .ve-btn { height: 28px; border-radius: 6px !important; padding: 0 10px; font-size: 14px; color: var(--nt-tex2); }
+html.nt #filter-search-group > .ve-btn::before { content: ""; display: inline-block; width: 14px; height: 14px; margin: 0 4px -2px 0; background: var(--nt-ico);
+	-webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75Zm2 4A.75.75 0 0 1 4.75 7h6.5a.75.75 0 0 1 0 1.5h-6.5A.75.75 0 0 1 4 7.75Zm2.5 3.25a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z'/%3E%3C/svg%3E") center / 14px no-repeat;
+	mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75Zm2 4A.75.75 0 0 1 4.75 7h6.5a.75.75 0 0 1 0 1.5h-6.5A.75.75 0 0 1 4 7.75Zm2.5 3.25a.75.75 0 0 0 0 1.5h3a.75.75 0 0 0 0-1.5h-3Z'/%3E%3C/svg%3E") center / 14px no-repeat; }
+html.nt #filter-search-group > .ve-btn.ve-btn-primary, html.nt #filter-search-group > .ve-btn[title*="筛选"].ve-active { color: var(--nt-blue); }
+html.nt .ve-lst__search { height: 28px !important; border-radius: 6px !important; background: var(--nt-bg2) !important; box-shadow: inset 0 0 0 1px var(--nt-line) !important; padding-left: 30px !important; font-size: 14px; }
+html.nt .ve-lst__search:focus { background: var(--nt-surface) !important; box-shadow: inset 0 0 0 1px var(--nt-focus), 0 0 0 2px rgba(35, 131, 226, .25) !important; }
+html.nt .ve-lst__wrp-search-glass { left: 9px !important; height: 28px !important; }
+html.nt .ve-lst__wrp-search-glass .glyphicon { top: 0; font-size: 12px; color: var(--nt-ico); }
+html.nt .ve-lst__wrp-search-visible { color: var(--nt-tex3); font-size: 12px; height: 28px !important; }
+/* the sort header: Notion table header (36px, grey 14px) */
+html.nt #filtertools { height: 33px; border-bottom: 1px solid var(--nt-cell); margin: 0; gap: 0; }
+html.nt #filtertools .sort, html.nt #filtertools > .ve-btn { height: 32px; padding-left: 8px !important; background: transparent !important; box-shadow: none !important; border: 0 !important; border-radius: 0 !important; color: var(--nt-tex2);
+	font-size: 14px; font-weight: 400; text-align: left; padding: 0 6px; line-height: 32px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+html.nt #filtertools .sort:hover { background: var(--nt-hover) !important; color: var(--nt-tex2); }
+html.nt #filtertools .ve-lst__caret--active { border-top-color: var(--nt-tex2); border-bottom-color: var(--nt-tex2); }
+/* rows */
+html.nt .list .ve-lst__row { border: 0; }
+html.nt .ve-lst__row-border { border: 0 !important; }
+html.nt .ve-lst__row-inner { min-height: 30px; line-height: 20px; padding: 0 2px 0 8px; color: var(--nt-tex); border-bottom: 1px solid var(--nt-cell) !important; font-size: 14px; }
+html.nt .list--stats > .ve-lst__row > .ve-lst__row-inner { contain-intrinsic-block-size: auto 31px; }
+html.nt .ve-lst__row-inner > span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+html.nt .ve-lst__row-inner > span[data-nt] { display: flex; align-items: center; overflow: hidden; }
+html.nt .ve-lst__row-inner > .ve-bold { font-weight: 500; }
+html.nt .ve-lst__row:hover > .ve-lst__row-inner { background: var(--nt-hover); }
+html.nt .list-multi-selected { box-shadow: none !important; }
+html.nt .list-multi-selected > .ve-lst__row-inner { background: var(--nt-blue-bg) !important; }
+html.nt .ve-lst__row-inner [class*="ve-source__"] { color: var(--nt-tex2) !important; font-size: 12px; text-align: left !important; }
+html.nt .ve-lst__row-inner .ve-text-center { text-align: left !important; }
+html.nt .ve-lst__row-inner .ve-text-right { text-align: left !important; }
+/* the source cell as a Notion tag: 2024 core books blue, 2014 core books grey, everything else default */
+html.nt .ve-lst__row-inner > [class*="ve-source__"] { overflow: visible; }
+html.nt .ve-lst__row-inner > [class*="ve-source__"]::before { content: none; }
+html.nt .ve-lst__row-inner > .ve-source__XPHB, html.nt .ve-lst__row-inner > .ve-source__XDMG, html.nt .ve-lst__row-inner > .ve-source__XMM { color: var(--nt-tag-blue-t) !important; }
+html.nt .nt-tag { display: inline-flex; align-items: center; height: 20px; padding: 0 6px; border-radius: 4px; font-size: 12px; line-height: 20px; white-space: nowrap; background: var(--nt-tag-gray); color: var(--nt-tag-gray-t); font-weight: 400; max-width: 100%; overflow: hidden; text-overflow: ellipsis; }
+html.nt .nt-tag--24 { background: var(--nt-tag-blue); color: var(--nt-tag-blue-t); }
+html.nt .nt-tag--14 { background: var(--nt-tag-gray); color: var(--nt-tag-gray-t); }
+html.nt .nt-tag--ours { background: var(--nt-tag-purple); color: var(--nt-tag-purple-t); }
+html.nt .nt-tag--3p { background: var(--nt-tag-brown); color: var(--nt-tag-brown-t); }
+html.nt .nt-tag--ua { background: var(--nt-tag-green); color: var(--nt-tag-green-t); }
+/* class list: groups of third-party classes as Notion group headers */
+html.nt #list .ve-ours-cls-off + .ve-ours-cls-feat::before, html.nt #list .ve-ours-cls-feat + .ve-ours-cls-rest::before, html.nt #list .ve-ours-cls-off + .ve-ours-cls-rest::before {
+	padding: 14px 6px 4px; font-size: 12px; font-weight: 500; letter-spacing: 0; color: var(--nt-tex2); background: none; border: 0; border-bottom: 1px solid var(--nt-cell); }
+html.nt #list .ve-ours-cls-off + .ve-ours-cls-feat::before { content: "不全书收录的第三方职业"; }
+html.nt #list .ve-ours-cls-rest { opacity: 1; }
+html.nt #list .ve-ours-cls-rest > .ve-lst__row-inner { color: var(--nt-tex2); }
+html.nt #btngroup-manager .ve-btn { height: 24px; line-height: 24px; font-size: 12px; }
+html.nt #btngroup-manager .ve-btn-primary { background: var(--nt-surface); color: var(--nt-tex2); box-shadow: inset 0 0 0 1px var(--nt-line); }
+html.nt #btngroup-manager .ve-btn-primary .glyphicon, html.nt #btngroup-manager .ve-btn-info .glyphicon { color: var(--nt-ico); }
+html.nt #btngroup-manager .ve-btn-info { box-shadow: inset 0 0 0 1px var(--nt-line); }
+
+/* ------------------------------------------------------------------ the entry on the right (spells, feats, races, items...): a Notion page */
+html.nt .ve-stats { background: transparent; font-family: var(--nt-font); font-size: 16px; line-height: 1.5; color: var(--nt-tex); }
+html.nt .ve-shadow-big { box-shadow: none; }
+html.nt .ve-stats td, html.nt .ve-stats th { padding: 0 !important; }
+html.nt .ve-stats > tbody > tr > td, html.nt .ve-stats > tr > td { padding: 1px 0 !important; }
+html.nt .ve-tbl-border, html.nt .ve-stats .ve-tbl-border { display: none; height: 0; padding: 0 !important; border: 0; background: none; }
+html.nt .ve-stats tr:has(> .ve-tbl-border) { display: none; }
+html.nt .ve-stats__th-name { padding: 4px 0 10px !important; }
+html.nt .ve-stats__h-name { font-family: var(--nt-font); font-size: 30px; line-height: 1.3; font-weight: 700; color: var(--nt-tex); font-variant: normal; letter-spacing: 0; }
+html.nt .ve-stats__eh-name { font-family: var(--nt-font); font-size: 14px; color: var(--nt-tex2); font-weight: 400; font-variant: normal; margin-top: 2px !important; }
+html.nt .stats__wrp-h-source { font-size: 14px; }
+html.nt .stats__h-source-abbreviation, html.nt .stats__wrp-h-source a { color: var(--nt-tex2) !important; text-decoration: none; font-variant: normal; font-family: var(--nt-font); }
+html.nt .ve-stats b, html.nt .ve-stats strong { font-weight: 600; }
+html.nt .ve-stats td > b:first-child { font-weight: 400; color: var(--nt-tex2); }
+html.nt .ve-stats td > i:only-child { font-style: normal; color: var(--nt-tex2); }
+html.nt .ve-stats .ve-pt-2 { padding-top: 10px !important; }
+html.nt .ve-stats .ve-pb-2 { padding-bottom: 10px !important; }
+html.nt .ve-stats .ve-tbl-divider, html.nt .ve-stats .ve-divider { border-top: 1px solid var(--nt-line); }
+html.nt .ve-rd__b p, html.nt .ve-rd__b { line-height: 1.5; }
+html.nt .ve-rd__b > p, html.nt .ve-rd__b > .ve-rd__p-list-item { margin: 2px 0 6px; }
+html.nt .ve-rd__h { font-family: var(--nt-font); font-variant: normal; letter-spacing: 0; color: var(--nt-tex); border-bottom: 0; }
+html.nt .ve-rd__h--0 { font-size: 24px; line-height: 1.3; font-weight: 600; margin: 32px 0 6px; padding: 0; border: 0; }
+html.nt .ve-rd__h--1 { font-size: 20px; line-height: 1.3; font-weight: 600; margin: 24px 0 4px; border: 0; }
+html.nt .ve-rd__h--2 { font-size: 16px; line-height: 1.5; font-weight: 600; margin: 16px 0 2px; }
+html.nt .ve-rd__h--3, html.nt .ve-rd__h--4 { font-size: 16px; font-weight: 600; font-style: normal; }
+html.nt .ve-rd__h .entry-title-inner { font-weight: inherit; }
+html.nt .ve-rd__h--0 .entry-title-inner::before, html.nt .ve-rd__h--1 .entry-title-inner::before { color: var(--nt-tex4); }
+html.nt .ve-rd__title-link { color: var(--nt-tex3) !important; font-size: 12px; font-family: var(--nt-font); font-variant: normal; font-weight: 400; text-decoration: none; }
+html.nt .ve-rd__b-inset { background: var(--nt-bg2); border: 0; border-radius: 10px; padding: 12px 16px 12px 16px; margin: 8px 0 12px; box-shadow: none; }
+html.nt .ve-rd__b-inset--readaloud { background: transparent; border-left: 2.4px solid var(--nt-tex); border-radius: 0; padding: 2px 0 2px 14px; font-size: 16px; }
+html.nt .ve-rd__b-inset .ve-rd__h { color: var(--nt-tex); }
+html.nt .ve-rd__b-inset .ve-rd__h--2 { margin-top: 0; }
+html.nt .ve-rd__list { padding-left: 1.6em; margin: 4px 0 8px; }
+html.nt .ve-rd__list > li { margin: 2px 0; }
+html.nt .ve-rd__list > li::marker { color: var(--nt-tex); }
+html.nt .ve-rd__list-name, html.nt .ve-rd__list-hang .ve-rd__list-name { font-weight: 600; }
+html.nt .ve-rd__quote-line { font-size: 19.2px; line-height: 1.5; }
+html.nt .ve-rd__b--quote, html.nt .ve-rd__quote-pull { border-left: 2.4px solid var(--nt-tex); padding-left: 14px; }
+html.nt .ve-rd__quote-by { color: var(--nt-tex2); }
+html.nt .ve-rd__hr { border-color: var(--nt-line); }
+/* tables inside the text: Notion simple table */
+html.nt .ve-rd__table { border-collapse: collapse; margin: 10px 0 14px; font-size: 14px; background: none; }
+html.nt .ve-rd__table caption, html.nt .ve-rd__table-caption { color: var(--nt-tex); font-weight: 600; font-size: 14px; padding: 0 0 6px; text-align: left; caption-side: top; }
+html.nt .ve-rd__table th, html.nt .ve-rd__table td { border: 1px solid var(--nt-line) !important; padding: 6px 8px !important; vertical-align: top; }
+html.nt .ve-rd__table th, html.nt th.ve-rd__th { background: var(--nt-bg2) !important; color: var(--nt-tex) !important; font-weight: 500; font-size: 14px; }
+html.nt .ve-rd__table tr, html.nt .ve-rd__table .stripe-odd, html.nt .ve-rd__table tr:nth-child(odd) { background: none !important; }
+html.nt .stripe-odd:nth-child(odd), html.nt .stripe-even:nth-child(even) { background: none; }
+html.nt .ve-rd__image { border-radius: 4px; }
+html.nt .ve-rd__image-title-inner, html.nt .ve-rd__image-credit { color: var(--nt-tex2); font-size: 14px; font-style: normal; }
+html.nt .ve-rd__prerequisite { color: var(--nt-tex2); font-style: normal; }
+html.nt .ve-roller, html.nt .render-roller { color: var(--nt-tex) !important; background: var(--nt-tag-gray); border-radius: 4px; padding: 0 3px; font-weight: 500; text-decoration: none !important; }
+html.nt .ve-roller:hover, html.nt .render-roller:hover { background: rgba(42, 28, 0, .12); }
+html.nt .ve-copyable:hover { background: none; }
+html.nt .help, html.nt .help-subtle { text-decoration: underline dotted rgba(42, 28, 0, .35); text-underline-offset: 2px; cursor: help; }
+
+/* ------------------------------------------------------------------ hover cards (鼠标悬停弹出的规则卡) and dialogs: Notion popovers */
+html.nt .ve-hwin { border-radius: 10px !important; box-shadow: var(--nt-sh-lg) !important; border: 0 !important; background: var(--nt-surface) !important; overflow: hidden; font-family: var(--nt-font); }
+html.nt .ve-hwin > div:first-child { background: var(--nt-bg2) !important; border: 0 !important; border-bottom: 1px solid var(--nt-line2) !important; color: var(--nt-tex2); }
+html.nt .ve-hwin__top-border-icon { color: var(--nt-ico) !important; }
+html.nt .ve-hwin .ve-stats { font-size: 14px; }
+html.nt .ve-hwin .ve-stats__h-name { font-size: 20px; }
+html.nt .ve-hwin .ve-rd__h--0 { font-size: 18px; margin-top: 12px; }
+html.nt .ve-hwin .ve-rd__h--1 { font-size: 16px; margin-top: 10px; }
+html.nt .ve-ui-modal__overlay { background: rgba(15, 15, 15, .2) !important; }
+html.nt .ve-ui-modal__inner { border-radius: 12px !important; box-shadow: var(--nt-sh-scr) !important; border: 0 !important; background: var(--nt-surface) !important; font-family: var(--nt-font); color: var(--nt-tex); }
+html.nt .ve-ui-modal__header--border { border-bottom: 1px solid var(--nt-line2) !important; }
+html.nt .ve-ui-modal__footer { border-top: 1px solid var(--nt-line2) !important; }
+html.nt .ve-ui-modal__row:hover, html.nt .ve-ui-modal__row--sel { background: var(--nt-hover) !important; }
+/* the filter window: pills as Notion tags (blue = only these, red = exclude) */
+html.nt .ve-fltr__pill { border-radius: 4px !important; border: 0 !important; box-shadow: inset 0 0 0 1px var(--nt-line); background: var(--nt-surface); color: var(--nt-tex); font-size: 13px; padding: 1px 6px; font-family: var(--nt-font); }
+html.nt .ve-fltr__pill[state="yes"] { background: var(--nt-tag-blue) !important; color: var(--nt-tag-blue-t) !important; box-shadow: none; }
+html.nt .ve-fltr__pill[state="no"] { background: var(--nt-tag-red) !important; color: var(--nt-tag-red-t) !important; box-shadow: none; }
+html.nt .ve-fltr__pill--muted { opacity: .55; }
+html.nt .ve-fltr__mini-pill { border-radius: 4px !important; }
+
+/* ================================================================== class page */
+@media screen and (min-width: 992px) {
+	html.nt main.classes { display: grid; grid-template-columns: 248px minmax(0, 1fr); column-gap: 32px; align-items: start; padding-top: 16px; }
+	html.nt main.classes > .nt-row1 { display: contents; }
+	html.nt main.classes > hr { display: none; }
+	/* class list: always at hand on the left while the rules scroll on the right */
+	html.nt main.classes #listcontainer { grid-column: 1; grid-row: 1 / span 3; position: sticky; top: 0; align-self: start; width: auto; max-width: none; flex: none; padding: 16px 0 12px;
+		margin-top: -16px; height: 100vh; box-sizing: border-box; display: flex; flex-direction: column; }
+	html.nt main.classes #listcontainer > .ve-night__shadow-big { flex: 1 1 auto; min-height: 0; display: flex; flex-direction: column; }
+	html.nt main.classes #list.cls__list { flex: 1 1 auto; max-height: none; height: auto; min-height: 0; margin-right: 0; overflow-y: auto; }
+	html.nt main.classes #listcontainer > .ve-my-3 { margin: 10px 0 0 !important; justify-content: flex-start; }
+	html.nt main.classes #classtable { grid-column: 2; grid-row: 1; width: auto; max-width: none; flex: none; padding: 0; min-width: 0; overflow-x: auto; }
+	html.nt main.classes > .row ~ .row { grid-column: 2; grid-row: 2; margin: 0; display: flex; flex-direction: row; align-items: flex-start; }
+	html.nt main.classes > .row ~ .row > .nt-side { flex: 0 0 240px; max-width: 240px; padding: 0; position: sticky; top: 0; align-self: flex-start; max-height: 100vh; overflow-y: auto; scrollbar-width: none; padding-bottom: 24px; }
+	html.nt main.classes > .row ~ .row > .nt-side::-webkit-scrollbar { display: none; }
+	html.nt main.classes > .row ~ .row > .nt-body { flex: 1 1 0; max-width: 820px; min-width: 0; padding: 0 0 0 40px; }
+}
+/* the class table: a Notion database table */
+html.nt .ve-cls-tbl { background: transparent; font-size: 14px; border-collapse: collapse; margin-bottom: 18px !important; font-family: var(--nt-font); }
+html.nt .ve-cls-tbl > tbody > tr > th { color: var(--nt-tex2); font-weight: 400; padding: 0 8px; font-size: 14px; vertical-align: bottom; font-family: var(--nt-font); }
+html.nt .ve-cls-tbl > tbody > tr > td { padding: 0 8px; height: 30px; border-bottom: 1px solid var(--nt-cell); border-right: 1px solid var(--nt-cell); color: var(--nt-tex); white-space: nowrap; }
+html.nt .ve-cls-tbl > tbody > tr > td:last-child { border-right: 0; }
+html.nt .ve-cls-tbl .ve-tbl-border, html.nt .ve-cls-tbl th.ve-border, html.nt .ve-cls-tbl > tbody > tr:first-child > th[colspan] { border: 0; background: none; }
+html.nt .ve-cls-tbl__disp-name { font-family: var(--nt-font) !important; font-variant: normal !important; font-size: 30px !important; line-height: 1.3; font-weight: 700 !important; color: var(--nt-tex) !important; text-align: left; padding: 0 0 14px !important; letter-spacing: 0; }
+html.nt .ve-cls-tbl__stripe-odd:nth-child(odd) { background: none; }
+html.nt .ve-cls-tbl > tbody > tr:has(> td):hover > td { background: rgba(42, 28, 0, .025); }
+html.nt .ve-cls-tbl > tbody > tr:has(> th.ve-cls-tbl__col-level) > th { height: 36px; border-bottom: 1px solid var(--nt-cell); border-right: 1px solid var(--nt-cell); vertical-align: middle; text-align: left; white-space: nowrap; }
+html.nt .ve-cls-tbl > tbody > tr > th:last-child { border-right: 0; }
+html.nt .ve-cls-tbl th[colspan]:not(.ve-cls-tbl__disp-name) { text-align: center; color: var(--nt-tex2); font-size: 12px; padding: 0 8px 4px; border: 0; }
+html.nt .ve-cls-tbl th.ve-cls-tbl__col-group { border-bottom: 1px solid var(--nt-cell) !important; }
+html.nt .ve-cls-tbl__col-level, html.nt .ve-cls-tbl__col-prof-bonus { width: 1%; }
+html.nt .ve-cls-tbl__col-generic-center, html.nt .ve-cls-tbl td.ve-text-center { text-align: center !important; }
+html.nt .ve-cls-tbl a { text-decoration-color: rgba(42, 28, 0, .25); }
+html.nt .ve-cls-tbl .ve-cls-tbl__col-level { color: var(--nt-tex2); }
+/* the class's side panel (生命值、熟练项…): Notion page properties */
+html.nt .cls__stats { background: transparent; font-size: 14px; }
+html.nt #statsprof .cls__stats td { padding: 0 !important; }
+html.nt .cls-side__name { font-family: var(--nt-font) !important; font-variant: normal !important; font-size: 20px; line-height: 1.3; font-weight: 600; color: var(--nt-tex); padding: 0 0 6px !important; letter-spacing: 0; }
+html.nt .cls-side__btn-toggle { color: var(--nt-tex3); font-family: var(--nt-font); font-size: 14px; }
+html.nt .cls-side__section { font-size: 14px; padding: 8px 0 4px; border-top: 1px solid var(--nt-line2); line-height: 1.5; }
+html.nt .cls-side__section-head, html.nt h5.cls-side__section-head { font-family: var(--nt-font); font-variant: normal; font-size: 12px; font-weight: 500; color: var(--nt-tex2); margin: 0 0 6px; letter-spacing: 0; text-transform: none; }
+html.nt #statsprof .cls-side__section > div { margin: 0 0 5px; }
+html.nt #statsprof .cls-side__section strong, html.nt #statsprof .cls-side__section b { font-weight: 400; color: var(--nt-tex2); }
+html.nt #statsprof .cls-side__section i { font-style: normal; color: var(--nt-tex2); }
+/* 子职对比 / 查看原文 */
+html.nt .wrp-btn-readmode { justify-content: flex-start !important; gap: 6px; margin-bottom: 14px !important; }
+html.nt .wrp-btn-readmode .ve-btn { margin: 0 !important; }
+/* the contents list on the left: Notion table of contents */
+html.nt .cls-nav { font-family: var(--nt-font); font-variant: normal; font-weight: 400; padding: 0; margin-top: 18px; top: 0; max-height: none; overflow: visible; }
+html.nt .cls-nav:hover { overflow: visible; padding-right: 0; }
+html.nt .cls-nav__head { color: var(--nt-tex2); font-size: 12px; font-weight: 500; }
+html.nt .cls-nav__head-inner { padding: 0 6px; }
+html.nt .cls-nav__hr { display: none; }
+html.nt .cls-nav__item { font-size: 14px; line-height: 20px; padding: 3px 6px; border-radius: 6px; color: var(--nt-tex2); cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+html.nt .cls-nav__item:hover { background: var(--nt-hover); color: var(--nt-tex); }
+html.nt .cls-nav__item a, html.nt .cls-nav__item > div { color: inherit !important; text-decoration: none !important; }
+html.nt .cls-nav__item--depth-1 { padding-left: 18px; }
+html.nt .cls-nav__item--depth-2 { padding-left: 30px; }
+html.nt [class*="cls-nav__item--feature-subclass"], html.nt [class*="cls-nav__item--feature-variant-subclass"] { color: var(--nt-c-green); }
+html.nt [class*="cls-nav__item--feature-brew"] { color: var(--nt-c-purple); }
+html.nt [class*="cls-nav__item--feature-ua"] { color: var(--nt-c-orange); }
+html.nt [class*="cls-nav__item--feature-subclass-reprint"] { color: var(--nt-c-blue); }
+/* 特性 / 变体 / 简介 + subclasses */
+html.nt .cls-tabs__wrp { align-items: flex-start; gap: 6px 16px; margin-bottom: 12px !important; flex-wrap: wrap; position: relative; padding-right: 36px; box-sizing: border-box; }
+html.nt .cls-tabs__wrp > .ve-flex-wrap { flex: 1 1 100%; padding-top: 8px; border-top: 1px solid var(--nt-line2); }
+html.nt .cls-tabs__wrp > :last-child:not(.ve-flex-wrap):not(.ve-btn-group) { position: absolute; right: 0; top: 0; }
+html.nt .cls-tabs__wrp > .ve-btn-group:first-child { margin: 2px 0 0 !important; display: flex; gap: 2px; }
+html.nt .cls-tabs__wrp > .ve-btn-group:first-child > .ve-btn { background: transparent; box-shadow: none; border-radius: 6px !important; color: var(--nt-tex2); height: 28px; line-height: 28px; padding: 0 8px; font-size: 14px; margin: 0; }
+html.nt .cls-tabs__wrp > .ve-btn-group:first-child > .ve-btn:hover { background: var(--nt-hover); }
+html.nt .cls-tabs__wrp > .ve-btn-group:first-child > .ve-btn.cls__btn-cf--active, html.nt .cls-tabs__wrp > .ve-btn-group:first-child > .ve-btn.ve-active { color: var(--nt-tex); background: var(--nt-active); font-weight: 500; }
+html.nt .cls-tabs__wrp > .ve-flex-wrap { gap: 6px; margin: 2px 0 0 !important; }
+html.nt .cls-tabs__wrp > .ve-flex-wrap > .ve-btn { margin: 0 !important; height: 28px; line-height: 28px; padding: 0 8px; font-size: 14px; border-radius: 6px; background: var(--nt-surface); color: var(--nt-tex); box-shadow: inset 0 0 0 1px var(--nt-line); }
+html.nt .cls-tabs__wrp > .ve-flex-wrap > .ve-btn:hover { background: var(--nt-hover); }
+html.nt .cls-tabs__wrp > .ve-flex-wrap > .ve-btn > .ve-ml-1 { color: var(--nt-tex3); font-size: 12px; margin-left: 4px !important; }
+html.nt .cls__btn-sc--reprinted { color: var(--nt-tex3) !important; }
+html.nt .cls__btn-sc--reprinted > div:first-child { text-decoration: line-through; text-decoration-color: rgba(42, 28, 0, .3); }
+html.nt [class*="cls__btn-sc--active"] { font-weight: 500; box-shadow: none !important; }
+html.nt [class*="cls__btn-sc--active"] > .ve-ml-1 { color: inherit !important; opacity: .7; }
+html.nt .cls__btn-sc--active-fresh, html.nt .cls__btn-sc--active-fresh:hover, html.nt .cls__btn-sc--active-fresh:focus { background: var(--nt-tag-blue) !important; color: var(--nt-tag-blue-t) !important; }
+html.nt .cls__btn-sc--active-reprinted, html.nt .cls__btn-sc--active-reprinted:hover, html.nt .cls__btn-sc--active-reprinted:focus { background: var(--nt-tag-gray) !important; color: var(--nt-tag-gray-t) !important; }
+html.nt .cls__btn-sc--active-spicy, html.nt .cls__btn-sc--active-spicy:hover, html.nt .cls__btn-sc--active-spicy:focus { background: var(--nt-tag-green) !important; color: var(--nt-tag-green-t) !important; }
+html.nt .cls__btn-sc--active-stale, html.nt .cls__btn-sc--active-stale:hover, html.nt .cls__btn-sc--active-stale:focus { background: var(--nt-tag-yellow) !important; color: var(--nt-tag-yellow-t) !important; }
+html.nt .cls__btn-sc--active-brew, html.nt .cls__btn-sc--active-brew:hover, html.nt .cls__btn-sc--active-brew:focus { background: var(--nt-tag-purple) !important; color: var(--nt-tag-purple-t) !important; }
+html.nt .cls__btn-sc--active-rebrewed, html.nt .cls__btn-sc--active-rebrewed:hover, html.nt .cls__btn-sc--active-rebrewed:focus { background: var(--nt-tag-pink) !important; color: var(--nt-tag-pink-t) !important; }
+html.nt .cls-tabs__sc-not-shown, html.nt .cls-tabs__wrp i.ve-clickable { color: var(--nt-tex3); font-style: normal; font-size: 12px; align-self: center; }
+html.nt .ours-edcount { color: var(--nt-blue) !important; }
+html.nt .cls-tabs__wrp > .ve-btn:last-child, html.nt .cls__btn-toggle-sidebar { box-shadow: none; color: var(--nt-ico); }
+/* the class text */
+html.nt #pagecontent.cls__stats { font-size: 16px; }
+html.nt #pagecontent.cls__stats > tbody > tr > td { padding: 0 !important; }
+html.nt .cls-main__cls-fluff .ve-rd__b { color: var(--nt-tex); }
+html.nt .cls__feature-subclass .ve-rd__h--0, html.nt .cls__feature-subclass .ve-rd__h--1, html.nt .cls__feature-subclass .ve-rd__h--2,
+html.nt .cls__feature-variant-subclass .ve-rd__h--0, html.nt .cls__feature-variant-subclass .ve-rd__h--1, html.nt .cls__feature-variant-subclass .ve-rd__h--2 { color: var(--nt-c-green); border: 0; }
+html.nt [class*="cls__feature-brew"] .ve-rd__h--0, html.nt [class*="cls__feature-brew"] .ve-rd__h--1, html.nt [class*="cls__feature-brew"] .ve-rd__h--2,
+html.nt .cls__feature-variant-brew .ve-rd__h--0, html.nt .cls__feature-variant-brew-subclass .ve-rd__h--0 { color: var(--nt-c-purple); border: 0; }
+html.nt [class*="cls__feature-ua"] .ve-rd__h--0, html.nt [class*="cls__feature-ua"] .ve-rd__h--1, html.nt [class*="cls__feature-ua"] .ve-rd__h--2 { color: var(--nt-c-orange); border: 0; }
+html.nt [class*="subclass-reprint"] .ve-rd__h--0, html.nt [class*="subclass-reprint"] .ve-rd__h--1, html.nt [class*="subclass-reprint"] .ve-rd__h--2 { color: var(--nt-c-blue); border: 0; }
+html.nt .cls__feature-variant .ve-rd__h--0, html.nt .cls__feature-variant .ve-rd__h--1 { color: var(--nt-c-brown); }
+html.nt .cls-main__msg-no-content { color: var(--nt-tex2); }
+html.nt .cls__squash_header { font-family: var(--nt-font); font-variant: normal; }
+
+/* the site's "back to top" button */
+html.nt .ve-btn-to-top, html.nt #btn-to-top, html.nt .bk__to-top { border-radius: 50% !important; background: var(--nt-surface) !important; box-shadow: var(--nt-sh-md) !important; border: 0 !important; color: var(--nt-ico) !important; }
+html.nt button.ve-btn-sm:has(> .glyphicon-arrow-up) { width: 32px; height: 32px; padding: 0; border-radius: 50% !important; background: var(--nt-surface); box-shadow: var(--nt-sh-md) !important; }
+html.nt .rollbox-min { background: var(--nt-surface) !important; border: 0 !important; border-radius: 6px 6px 0 0 !important; box-shadow: var(--nt-sh-md) !important; color: var(--nt-ico) !important; }
+html.nt .rollbox { font-family: var(--nt-font); border-radius: 10px 10px 0 0 !important; box-shadow: var(--nt-sh-lg) !important; border: 0 !important; background: var(--nt-surface) !important; }
+/* list cells: left-aligned like Notion (the site's centring class is !important inside its layer, a flex box ignores it) */
+html.nt .ve-lst__row-inner > .ve-text-center:not([data-nt]), html.nt .ve-lst__row-inner > .ve-text-right:not([data-nt]) { display: flex; align-items: center; }
+/* spell schools: the same distinction, in Notion's text colours */
+html.nt .ve-sp__school--a { color: #337ea9; }
+html.nt .ve-sp__school--v { color: #d44c47; }
+html.nt .ve-sp__school--e { color: #c14c8a; }
+html.nt .ve-sp__school--i { color: #9065b0; }
+html.nt .ve-sp__school--d { color: #448361; }
+html.nt .ve-sp__school--n { color: #787774; }
+html.nt .ve-sp__school--t { color: #cb912f; }
+html.nt .ve-sp__school--c { color: #d9730d; }
+html.nt.nt-search .omni__btn-clear { display: none !important; }
+
+/* ================================================================== the hall (index): a Notion page with a gallery */
+html.nt .ours-hall { width: min(960px, calc(100% - 80px)) !important; max-width: none !important; margin: 0 auto 8px !important; padding: 40px 0 0 !important; box-sizing: border-box; }
+html.nt .ours-hall__hero { background: none; color: var(--nt-tex); padding: 0; border-radius: 0; box-shadow: none; border: 0; display: block; overflow: visible; }
+html.nt .ours-hall__glow { display: none; }
+html.nt .ours-hall__kicker { color: var(--nt-tex2); font-size: 14px; letter-spacing: 0; margin-bottom: 4px; }
+html.nt .ours-hall__title { font-family: var(--nt-font); font-size: 40px; line-height: 1.2; font-weight: 700; letter-spacing: 0; color: var(--nt-tex); text-shadow: none; margin: 0 0 8px; }
+html.nt .ours-hall__sub { font-size: 16px; color: var(--nt-tex); opacity: 1; }
+html.nt .ours-hall__books { display: flex; gap: 6px 10px; align-items: baseline; background: none; padding: 10px 0 0; border-radius: 0; color: var(--nt-tex2); font-size: 14px; border-top: 0; }
+html.nt .ours-hall__n { font: 500 14px/1.5 var(--nt-font); color: var(--nt-tex); text-align: left; }
+html.nt .ours-hall__books span { margin-right: 8px; }
+html.nt .ours-hall__tiles { grid-template-columns: repeat(auto-fill, minmax(176px, 1fr)); gap: 12px; margin-top: 24px; }
+html.nt .ours-tile { background: var(--nt-surface) !important; border: 0 !important; border-radius: 10px !important; box-shadow: var(--nt-sh-sm) !important; padding: 12px 14px !important; color: var(--nt-tex) !important;
+	text-decoration: none !important; align-items: flex-start !important; text-align: left !important; gap: 2px !important; transform: none !important; transition: background .1s !important; min-height: 0 !important; }
+html.nt .ours-tile:hover { background: var(--nt-bg2) !important; transform: none !important; }
+html.nt .ours-tile > i { font-size: 18px !important; color: var(--nt-ico) !important; margin: 0 0 8px !important; text-shadow: none !important; }
+html.nt .ours-tile__name { font-size: 14px !important; font-weight: 500 !important; letter-spacing: 0 !important; color: var(--nt-tex) !important; }
+html.nt .ours-tile__stat { font-size: 12px !important; color: var(--nt-tex2) !important; white-space: normal !important; }
+html.nt .ours-tile__stat b { font-weight: 500; color: var(--nt-tex2) !important; }
+/* the site's own home sections below: Notion headings + link buttons, no banner art */
+html.nt .home__stripe { background: none !important; border: 0 !important; box-shadow: none !important; padding: 16px 0 0 !important; }
+html.nt .home__split, html.nt .home__split-space { background: none !important; }
+html.nt .home__stripe-header { color: var(--nt-tex) !important; text-align: left !important; font-family: var(--nt-font) !important; font-size: 20px !important; font-weight: 600 !important; border: 0 !important; margin: 24px 0 8px !important; }
+html.nt .home__stripe-header, html.nt .home__h-player, html.nt .home__h-rule, html.nt .home__h-dm { text-decoration: none !important; }
+html.nt .home__stripe-header * { font-family: var(--nt-font) !important; text-decoration: none !important; border: 0 !important; font-size: 20px !important; font-weight: 600 !important; color: var(--nt-tex) !important; }
+html.nt .home__btn-page { border: 0 !important; border-radius: 10px !important; background: var(--nt-surface) !important; box-shadow: var(--nt-sh-sm) !important; color: var(--nt-tex) !important; font-family: var(--nt-font) !important; font-size: 14px; text-decoration: none !important; justify-content: center; gap: 6px; }
+html.nt .home__btn-page:hover { background: var(--nt-bg2) !important; }
+html.nt .home__btn-page i, html.nt .home__btn-page svg, html.nt .home__btn-page img { color: var(--nt-ico) !important; opacity: .9; }
+html.nt .home__promo-banner { display: none !important; }
+html.nt main.container .w-100 { max-width: 960px; margin: 0 auto; }
+html.nt main.container .w-100 > h3 { font-family: var(--nt-font); font-size: 20px; font-weight: 600; color: var(--nt-tex); margin: 28px 0 6px; }
+html.nt main.container .w-100 > p { font-size: 16px; line-height: 1.5; margin: 2px 0 6px; }
+html.nt .home__stripe > * { width: min(960px, calc(100vw - 80px)) !important; max-width: none !important; margin-left: auto !important; margin-right: auto !important; }
+html.nt .home__btn-page .ve-flex-vh-center, html.nt .home__btn-page > div:first-child { color: var(--nt-ico) !important; }

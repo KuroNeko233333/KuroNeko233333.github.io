@@ -1,0 +1,576 @@
+[
+  {
+    "name": "星界精灵",
+    "source": "AAG",
+    "family": "精灵",
+    "decision": "归入",
+    "reason": "Astral Elf 是从妖精荒野迁往星光位面的精灵，获得星光能力。"
+  },
+  {
+    "name": "地底侏儒",
+    "source": "MPMM",
+    "family": "侏儒",
+    "decision": "归入",
+    "reason": "书中称其为地下侏儒，族名 Svirfneblin 与侏儒原生亚种名相符。"
+  },
+  {
+    "name": "深地侏儒",
+    "source": "OursURC",
+    "family": "侏儒",
+    "decision": "归入",
+    "reason": "书中称其为地下侏儒，族名 Svirfneblin 与侏儒原生亚种名相符。"
+  },
+  {
+    "name": "灰矮人",
+    "source": "MPMM",
+    "family": "矮人",
+    "decision": "归入",
+    "reason": "Duergar 是在幽暗地域发生改变的矮人后代，同名见矮人亚种。"
+  },
+  {
+    "name": "雅灵",
+    "source": "MPMM",
+    "family": "精灵",
+    "decision": "归入",
+    "reason": "Eladrin 的简介明说是妖精荒野的精灵，季节决定其形态。"
+  },
+  {
+    "name": "雅灵",
+    "source": "KCAA",
+    "family": "精灵",
+    "decision": "归入",
+    "reason": "同名 Eladrin 在艾伯伦设定中是被巨人掳走、由此衍生精灵和卓尔的精类先祖；按同名版本归档，寿命和类型另比。"
+  },
+  {
+    "name": "吉斯洋基人",
+    "source": "MPMM",
+    "family": "吉斯人",
+    "decision": "归入",
+    "reason": "MTF 的吉斯人已列这支的英文名为亚种；MPMM 叙述两支从夺心魔统治下解放后分道扬镳。"
+  },
+  {
+    "name": "吉斯泽莱人",
+    "source": "MPMM",
+    "family": "吉斯人",
+    "decision": "归入",
+    "reason": "MTF 的吉斯人已列这支的英文名为亚种；MPMM 叙述两支从夺心魔统治下解放后分道扬镳。"
+  },
+  {
+    "name": "科拉瓦",
+    "source": "EFA",
+    "family": "半精灵",
+    "decision": "归入",
+    "reason": "Khoravar 是科瓦雷人类与精灵混血后裔的自称，站内也有同英文名的半精灵亚种。"
+  },
+  {
+    "name": "洛温幻身灵",
+    "source": "LFL",
+    "family": "幻身灵",
+    "decision": "归入",
+    "reason": "Lorwyn Changeling 能改变形态，书中指出其触须和蓝绿色外观是洛温族人的共同标志。"
+  },
+  {
+    "name": "海精灵",
+    "source": "MPMM",
+    "family": "精灵",
+    "decision": "归入",
+    "reason": "Sea Elf 是探索诸世界海洋的精灵，寿命、海精灵语境与已有海亚种对应。"
+  },
+  {
+    "name": "影灵",
+    "source": "MPMM",
+    "family": "精灵",
+    "decision": "归入",
+    "reason": "Shadar-kai 被渡鸦女王吸引到堕影冥界，简介明说是该位面的精灵。"
+  },
+  {
+    "name": "纯血原体蛇人",
+    "source": "VGM",
+    "family": "蛇人",
+    "decision": "归入",
+    "reason": "Yuan-ti Pureblood 是 Yuan-ti 的纯血支系，保留毒素与蛇类法术特征。"
+  },
+  {
+    "name": "恶鬼",
+    "source": "PS-Kg",
+    "family": "地精",
+    "decision": "归入",
+    "reason": "神河的 Akki 在正文第一段就被称为霜剑山的一支地精。"
+  },
+  {
+    "name": "宝石龙裔",
+    "source": "TalPsi",
+    "family": "龙裔",
+    "decision": "归入",
+    "reason": "Gemstone Dragonborn 与色彩、金属龙裔同族，书中以宝石龙血统与灵能区分。"
+  },
+  {
+    "name": "魔兽人",
+    "source": "TCEE2",
+    "family": "兽人",
+    "decision": "归入",
+    "reason": "Orog 条目开篇明确这是对官方兽人规则的变体。"
+  },
+  {
+    "name": "塔莱莉",
+    "source": "TCEE2",
+    "family": "精灵",
+    "decision": "归入",
+    "reason": "Taleyri 由普通精灵自愿举行神圣蜕变仪式而成。"
+  },
+  {
+    "name": "蓝地精",
+    "source": "Psions Primer",
+    "family": "地精",
+    "decision": "归入",
+    "reason": "Goblin (Blue) 的说明记述了艾伯伦蓝皮地精的历史。"
+  },
+  {
+    "name": "梦痕歌利亚",
+    "source": "Psions Primer",
+    "family": "歌利亚",
+    "decision": "归入",
+    "reason": "Goliath (Dreamscarred) 属歌利亚的梦痕变体，设定追溯到希恩德瑞克的梦灵战争。"
+  },
+  {
+    "name": "灵能战俑",
+    "source": "Psions Primer",
+    "family": "战俑",
+    "decision": "归入",
+    "reason": "Warforged (Psiforged) 属于坎尼斯家族的实验生产批次。"
+  },
+  {
+    "name": "田园矮人",
+    "source": "arkadia",
+    "family": "矮人",
+    "decision": "归入",
+    "reason": "英文题名明确为 Dwarf 的地方分支，正文分别介绍当地族人的生活与工艺。"
+  },
+  {
+    "name": "火山矮人",
+    "source": "arkadia",
+    "family": "矮人",
+    "decision": "归入",
+    "reason": "英文题名明确为 Dwarf 的地方分支，正文分别介绍当地族人的生活与工艺。"
+  },
+  {
+    "name": "尼斯精灵",
+    "source": "arkadia",
+    "family": "精灵",
+    "decision": "归入",
+    "reason": "英文标题以 Elf 标出阿卡迪亚的地区支系，正文介绍各支的土地与传统。"
+  },
+  {
+    "name": "奥瑞亚精灵",
+    "source": "arkadia",
+    "family": "精灵",
+    "decision": "归入",
+    "reason": "英文标题以 Elf 标出阿卡迪亚的地区支系，正文介绍各支的土地与传统。"
+  },
+  {
+    "name": "斯库拉亚精灵",
+    "source": "arkadia",
+    "family": "精灵",
+    "decision": "归入",
+    "reason": "英文标题以 Elf 标出阿卡迪亚的地区支系，正文介绍各支的土地与传统。"
+  },
+  {
+    "name": "阿卡迪亚人类",
+    "source": "arkadia",
+    "family": "人类",
+    "decision": "归入",
+    "reason": "Human (Arkadian) 为阿卡迪亚当地的人类文化与角色特质。"
+  },
+  {
+    "name": "阿卡迪亚兽人",
+    "source": "arkadia",
+    "family": "兽人",
+    "decision": "归入",
+    "reason": "Orc (Arkadian) 为阿卡迪亚当地的兽人。"
+  },
+  {
+    "name": "迪洛矮人",
+    "source": "EmperrorsNewGroove",
+    "family": "矮人",
+    "decision": "归入",
+    "reason": "Derro 的特质明确规定，要求矮人身份的先决条件和效应均承认其身份。"
+  },
+  {
+    "name": "格鲁吉尔人",
+    "source": "GrimHollowPG24",
+    "family": "兽人",
+    "decision": "归入",
+    "reason": "Grudgel 自称兽人的后代，原书明确说两者只隔着时间和文化演变。"
+  },
+  {
+    "name": "鲍格斯米德矮人",
+    "source": "NorthlandsWorldbook",
+    "family": "矮人",
+    "decision": "归入",
+    "reason": "北地矮人一节列出的当地矮人分支，英文题名均使用 Dwarf。"
+  },
+  {
+    "name": "峡湾矮人",
+    "source": "NorthlandsWorldbook",
+    "family": "矮人",
+    "decision": "归入",
+    "reason": "北地矮人一节列出的当地矮人分支，英文题名均使用 Dwarf。"
+  },
+  {
+    "name": "达拉库食尸鬼",
+    "source": "BookOfEbonTides",
+    "family": "食尸鬼",
+    "decision": "归入",
+    "reason": "Darakhul 由食尸鬼热疫转化为不死生物，成为暮光帝国的食尸鬼；其生前血统决定亚种。"
+  },
+  {
+    "name": "幽影地精",
+    "source": "BookOfEbonTides",
+    "family": "地精",
+    "decision": "归入",
+    "reason": "Shadow Goblin 是在幽影位面演化、适应当地的地精。"
+  },
+  {
+    "name": "影蚀人类",
+    "source": "BookOfEbonTides",
+    "family": "人类",
+    "decision": "归入",
+    "reason": "Umbral Human 由人类数代暴露于幽影或经历影妖精仪式而成。"
+  },
+  {
+    "name": "觉醒骷髅",
+    "source": "GiddyRace",
+    "family": "骷髅",
+    "decision": "归入",
+    "reason": "Awakened Skeleton 是觉醒的骷髅，规则写明脆骨、钝击易伤和毒素免疫。"
+  },
+  {
+    "name": "花卉龙裔",
+    "source": "OursFGFD",
+    "family": "龙裔",
+    "decision": "归入",
+    "reason": "简介明确最初的花卉龙裔生于龙裔氏族，其花卉龙血脉表现为植物特征。"
+  },
+  {
+    "name": "达坎哥林达（地精）",
+    "source": "OursEE",
+    "family": "地精",
+    "decision": "归入",
+    "reason": "《探秘艾伯伦》的括注和正文均指明其族属，达坎、边地与雷霆海的文化名称保留在子行。"
+  },
+  {
+    "name": "达坎伽珥达（大地精）",
+    "source": "OursEE",
+    "family": "大地精",
+    "decision": "归入",
+    "reason": "《探秘艾伯伦》的括注和正文均指明其族属，达坎、边地与雷霆海的文化名称保留在子行。"
+  },
+  {
+    "name": "达坎古珥达（熊地精）",
+    "source": "OursEE",
+    "family": "熊地精",
+    "decision": "归入",
+    "reason": "《探秘艾伯伦》的括注和正文均指明其族属，达坎、边地与雷霆海的文化名称保留在子行。"
+  },
+  {
+    "name": "约衮塔珥（半兽人）",
+    "source": "OursEE",
+    "family": "半兽人",
+    "decision": "归入",
+    "reason": "《探秘艾伯伦》的括注和正文均指明其族属，达坎、边地与雷霆海的文化名称保留在子行。"
+  },
+  {
+    "name": "卡拉默陆行者（人鱼）",
+    "source": "OursEE",
+    "family": "人鱼",
+    "decision": "归入",
+    "reason": "《探秘艾伯伦》的括注和正文均指明其族属，达坎、边地与雷霆海的文化名称保留在子行。"
+  },
+  {
+    "name": "艾泽拉斯精灵",
+    "source": "OursWoW",
+    "family": "精灵",
+    "decision": "归入",
+    "reason": "Elf of Azeroth 直接使用《玩家手册》精灵种族特质及血系通则，改用艾泽拉斯血系与声望。"
+  },
+  {
+    "name": "机械侏儒",
+    "source": "OursWoW",
+    "family": "侏儒",
+    "decision": "归入",
+    "reason": "《魔兽世界》侏儒一节将本条列为种族选项，记载麦卡贡侏儒改造身体并与侏儒表亲重聚，另述泰坦制造的古代机械侏儒。"
+  },
+  {
+    "name": "地渊伊马斯卡人（幽暗地域Ⅱ）",
+    "source": "OursUA24",
+    "family": "人类",
+    "decision": "归入",
+    "reason": "简介说明他们是避入地下、借暗耀生存的伊玛斯卡人类帝国遗民。"
+  },
+  {
+    "name": "卓尔精灵",
+    "source": "OursURC",
+    "family": "精灵",
+    "decision": "归入",
+    "reason": "Drow 简介回溯其与地表精灵同胞共居的历史。"
+  },
+  {
+    "name": "始祖矮人",
+    "source": "OursURC",
+    "family": "矮人",
+    "decision": "归入",
+    "reason": "Dvergr 在简介中明称为地下矮人，并记载了始祖矮人的铸造。"
+  },
+  {
+    "name": "德沃格矮人",
+    "source": "OursURC",
+    "family": "矮人",
+    "decision": "归入",
+    "reason": "Dweorg 的简介明称其为地底世界最常见的矮人亚种。"
+  },
+  {
+    "name": "吉特维克矮人",
+    "source": "OursURC",
+    "family": "矮人",
+    "decision": "归入",
+    "reason": "原书记述始祖矮人的铸造与矮人氏族分化，分别描述深入世界核心和隐居修习魔法的这一支。"
+  },
+  {
+    "name": "兹维克矮人",
+    "source": "OursURC",
+    "family": "矮人",
+    "decision": "归入",
+    "reason": "原书记述始祖矮人的铸造与矮人氏族分化，分别描述深入世界核心和隐居修习魔法的这一支。"
+  },
+  {
+    "name": "无形之灵",
+    "source": "OursGHPP",
+    "family": "脱离实体的",
+    "decision": "归入",
+    "reason": "两本书都讲述乌尔穆之门的法师在打开以太界传送门时酿灾，同城同事件的不同译名。"
+  },
+  {
+    "name": "半人马",
+    "source": "OursOotDL",
+    "family": "人马",
+    "decision": "归入",
+    "reason": "Centaur 的马身人躯和蹄在两种译名中一致，赛利亚版本另述当地血统。"
+  },
+  {
+    "name": "塞壬",
+    "source": "OursOotDL",
+    "family": "赛壬",
+    "decision": "归入",
+    "reason": "Siren 的海崖、双翼及歌声与依夏兰赛壬相应，是译名差异。"
+  },
+  {
+    "name": "自动侏儒",
+    "source": "AAG",
+    "family": "自动侏儒",
+    "decision": "单列",
+    "reason": "Autognome 是岩石侏儒制造的机器，创造者与造物分别列族。"
+  },
+  {
+    "name": "半精灵 (本相)",
+    "source": "PHB",
+    "family": "半精灵",
+    "decision": "单列",
+    "reason": "人类与精灵的共同后裔，拥有独立种族条目。"
+  },
+  {
+    "name": "半精灵",
+    "source": "OursWGE",
+    "family": "半精灵",
+    "decision": "单列",
+    "reason": "人类与精灵的共同后裔，拥有独立种族条目。"
+  },
+  {
+    "name": "半兽人 (本相)",
+    "source": "PHB",
+    "family": "半兽人",
+    "decision": "单列",
+    "reason": "人类与兽人的共同后裔，拥有独立种族条目。"
+  },
+  {
+    "name": "半兽人",
+    "source": "OursWGE",
+    "family": "半兽人",
+    "decision": "单列",
+    "reason": "人类与兽人的共同后裔，拥有独立种族条目。"
+  },
+  {
+    "name": "半矮人",
+    "source": "HippocampersCompleteCookbook",
+    "family": "半矮人",
+    "decision": "单列",
+    "reason": "人类与矮人的混血，拥有独立种族条目。"
+  },
+  {
+    "name": "半矮人",
+    "source": "UltimateAdventurer",
+    "family": "半矮人",
+    "decision": "单列",
+    "reason": "人类与矮人的混血，拥有独立种族条目。"
+  },
+  {
+    "name": "熊地精",
+    "source": "ERLW",
+    "family": "熊地精",
+    "decision": "单列",
+    "reason": "Bugbear 是长肢的地精亲族，MPMM 将其称为地精和大地精的表亲，拥有独立种族条目。"
+  },
+  {
+    "name": "熊地精",
+    "source": "MPMM",
+    "family": "熊地精",
+    "decision": "单列",
+    "reason": "Bugbear 是长肢的地精亲族，MPMM 将其称为地精和大地精的表亲，拥有独立种族条目。"
+  },
+  {
+    "name": "熊地精",
+    "source": "VGM",
+    "family": "熊地精",
+    "decision": "单列",
+    "reason": "Bugbear 是长肢的地精亲族，MPMM 将其称为地精和大地精的表亲，拥有独立种族条目。"
+  },
+  {
+    "name": "大地精",
+    "source": "DMG",
+    "family": "大地精",
+    "decision": "单列",
+    "reason": "Hobgoblin 与地精、熊地精是亲族，拥有独立种族条目。"
+  },
+  {
+    "name": "大地精",
+    "source": "ERLW",
+    "family": "大地精",
+    "decision": "单列",
+    "reason": "Hobgoblin 与地精、熊地精是亲族，拥有独立种族条目。"
+  },
+  {
+    "name": "大地精",
+    "source": "MPMM",
+    "family": "大地精",
+    "decision": "单列",
+    "reason": "Hobgoblin 与地精、熊地精是亲族，拥有独立种族条目。"
+  },
+  {
+    "name": "大地精",
+    "source": "VGM",
+    "family": "大地精",
+    "decision": "单列",
+    "reason": "Hobgoblin 与地精、熊地精是亲族，拥有独立种族条目。"
+  },
+  {
+    "name": "胡狼人",
+    "source": "PSA",
+    "family": "胡狼人",
+    "decision": "单列",
+    "reason": "Khenra 是阿芒凯胡狼形貌的双生民族，Worgen 是艾泽拉斯受诅咒的变形者。"
+  },
+  {
+    "name": "鼠民",
+    "source": "TCEE2",
+    "family": "鼠民",
+    "decision": "单列",
+    "reason": "Ratperson 书中专门区分易被误认的鼠形族群，未将其列为神河 Nezumi。"
+  },
+  {
+    "name": "火矮人",
+    "source": "EmperrorsNewGroove",
+    "family": "火矮人",
+    "decision": "单列",
+    "reason": "Azer 由青铜铸造并被同族赋予生命，具有火焰与元素性质。"
+  },
+  {
+    "name": "狡狐族",
+    "source": "HumblewoodCampaignSetting",
+    "family": "狡狐族",
+    "decision": "单列",
+    "reason": "谦卑森林的 Vulpin 与雪地毛皮氏族各有独立出身，神河 Kitsune 和艾泽拉斯 Vulpera 的书中另有起源，狐形不足以建立支系。"
+  },
+  {
+    "name": "雪狐人",
+    "source": "OursOSWHAP",
+    "family": "雪狐人",
+    "decision": "单列",
+    "reason": "谦卑森林的 Vulpin 与雪地毛皮氏族各有独立出身，神河 Kitsune 和艾泽拉斯 Vulpera 的书中另有起源，狐形不足以建立支系。"
+  },
+  {
+    "name": "土灵",
+    "source": "OursWoW",
+    "family": "土灵",
+    "decision": "单列",
+    "reason": "Earthen 是泰坦在意志熔炉中创造的石质族群；魔兽书将未受血肉诅咒的土灵另列为可玩种族。"
+  },
+  {
+    "name": "蛛化卓尔（幽暗地域Ⅱ）",
+    "source": "OursUA24",
+    "family": "蛛化卓尔",
+    "decision": "单列",
+    "reason": "蛛后诅咒使卓尔转化成蜘蛛身躯的生物，独立规则包含蜘蛛形态。"
+  },
+  {
+    "name": "沼生裔",
+    "source": "OursEGtD",
+    "family": "沼生裔",
+    "decision": "单列",
+    "reason": "同为 Bogborn，但本书记为湿地孕生的守护者；《扭曲之月》写的是在祖尔罗格重生的巨魔状族群。"
+  },
+  {
+    "name": "影裔",
+    "source": "OursEGtD",
+    "family": "影裔",
+    "decision": "单列",
+    "reason": "两种 Shade 的来源不同：本条来自影界无形实体，幽影由死者的记忆给灵魂造体。"
+  },
+  {
+    "name": "以太裔",
+    "source": "OursEGtD",
+    "family": "以太裔（Aetherborn）",
+    "decision": "单列",
+    "reason": "用户 2026-11-19 决定单列，不作为其他种族的亚种。原疑点：Aetherborn 与卡拉德许的乙太种英文相同，但起源是帷幕中的雾与阴影，并非以太精炼。暂随同中文名以太裔归档，跨译名关系待定。"
+  },
+  {
+    "name": "鸡地精",
+    "source": "HelianasGuidetoMonsterHunting",
+    "family": "鸡地精",
+    "decision": "单列",
+    "reason": "用户 2026-11-19 决定单列，不作为其他种族的亚种。原疑点：Gobboc 破壳出生且崇拜鸟类，条目未说明与 Goblin 之间的亲缘。"
+  },
+  {
+    "name": "波尬",
+    "source": "LFL",
+    "family": "波尬",
+    "decision": "单列",
+    "reason": "用户 2026-11-19 决定单列，不作为其他种族的亚种。原疑点：Boggart 被称为类地精；类地精包含多个独立种族，本文未明确属于 Goblin。"
+  },
+  {
+    "name": "暮精",
+    "source": "OursDrops",
+    "family": "暮精",
+    "decision": "单列",
+    "reason": "用户 2026-11-19 决定单列，不作为其他种族的亚种。原疑点：正文只明确其为妖精荒野迁出的精类，未确认与精灵、仙灵或暮色族同族。"
+  },
+  {
+    "name": "厄兆者",
+    "source": "OursEE",
+    "family": "厄兆者",
+    "decision": "单列",
+    "reason": "用户 2026-11-19 决定单列，不作为其他种族的亚种。原疑点：与异变魔半血种一样带有出生时的共生体，但新书的宿主与器官永久融合，尚缺明示的对应关系。"
+  },
+  {
+    "name": "斯瓦拉",
+    "source": "WagaduChronicles",
+    "family": "斯瓦拉",
+    "decision": "单列",
+    "reason": "用户 2026-11-19 决定单列，不作为其他种族的亚种。原疑点：本书称其为埃梅雷的后裔，也强调独立自称、传承与三个亚种；共同祖先是否足以合列待定。"
+  },
+  {
+    "name": "舒拉萨卡尔血誓者",
+    "source": "Psions Primer",
+    "family": "舒拉萨卡尔血誓者",
+    "decision": "单列",
+    "reason": "用户 2026-11-19 决定单列，不作为其他种族的亚种。原疑点：正文兼述羽蛇、蛇人和阿斯莫的特征，未确定血誓者属于其中一个可玩家族。"
+  }
+]

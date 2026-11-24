@@ -1,0 +1,218 @@
+{
+	"monster": [
+		{
+			"ENG_name": "Avatar of Death",
+			"name": "死亡化身",
+			"type": "undead",
+			"source": "DMG",
+			"page": 164,
+			"srd": true,
+			"referenceSources": [
+				"BMT",
+				"TCE"
+			],
+			"reprintedAs": [
+				"死亡化身|XDMG"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				20
+			],
+			"hp": {
+				"special": "其召唤者最大生命值的一半"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 60,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 16,
+			"int": 16,
+			"wis": 16,
+			"cha": 16,
+			"senses": [
+				"黑暗视觉 60 尺",
+				"真实视觉 60 尺"
+			],
+			"passive": 13,
+			"immune": [
+				"暗蚀",
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒",
+				"昏迷"
+			],
+			"languages": [
+				"其召唤者所知的所有语言"
+			],
+			"trait": [
+				{
+					"ENG_name": "Incorporeal Movement",
+					"name": "虚体移动",
+					"entries": [
+						"死亡化身可以移动穿过生物和物件，并视为等同于穿过{@quickref 困难地形||3}。如果它在自己回合结束时身处物件内部，则受到5（{@damage 1d10}）点力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Turn Immunity",
+					"name": "免疫驱散",
+					"entries": [
+						"死亡化身免疫驱散不死生物特性。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Reaping Scythe",
+					"name": "收割之镰",
+					"entries": [
+						"死亡化身用幽魂镰刀贯穿5尺内的一名生物，对其造成7（{@damage 1d8 + 3}）点挥砍伤害，外加4（{@damage 1d8}）点暗蚀伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"虚体移动",
+				"免疫驱散"
+			],
+			"senseTags": [
+				"D",
+				"U"
+			],
+			"languageTags": [
+				"XX"
+			],
+			"damageTags": [
+				"N",
+				"O",
+				"S"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Giant Fly",
+			"name": "巨苍蝇",
+			"type": "beast",
+			"source": "DMG",
+			"page": 169,
+			"reprintedAs": [
+				"巨苍蝇|XDMG"
+			],
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 19,
+				"formula": "3d10 + 3"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 14,
+			"dex": 13,
+			"con": 13,
+			"int": 2,
+			"wis": 10,
+			"cha": 3,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"senseTags": [
+				"D"
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Larva",
+			"name": "幼虫魔",
+			"type": "fiend",
+			"source": "DMG",
+			"page": 63,
+			"referenceSources": [
+				"BGDIA",
+				"CoA",
+				"SatO",
+				"ToFW"
+			],
+			"reprintedAs": [
+				"幼虫魔|XMM"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				9
+			],
+			"hp": {
+				"average": 9,
+				"formula": "2d8"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 9,
+			"dex": 9,
+			"con": 10,
+			"int": 6,
+			"wis": 10,
+			"cha": 2,
+			"passive": 10,
+			"languages": [
+				"理解它生前所知的语言，但不会说"
+			],
+			"cr": "0",
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw}  命中{@hit 1}，射程5尺，单一目标。{@h}1 ({@damage 1d4 - 1}) 点穿刺伤害。"
+					]
+				}
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		}
+	]
+}

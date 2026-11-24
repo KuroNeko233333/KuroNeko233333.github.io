@@ -1,0 +1,8943 @@
+{
+	"_meta": {
+		"internalCopies": [
+			"itemType"
+		]
+	},
+	"baseitem": [
+		{
+			"ENG_name": "Alchemist's Supplies",
+			"name": "炼金工具",
+			"type": "AT",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 79
+				}
+			],
+			"referenceSources": [
+				"IMR",
+				"JttRC",
+				"KftGV",
+				"OoW",
+				"PaBTSO",
+				"RtG",
+				"SCC-ARiR",
+				"TftYP-TSC",
+				"ToA",
+				"TTP",
+				"WDMM"
+			],
+			"reprintedAs": [
+				"炼金工具|XPHB"
+			],
+			"rarity": "none",
+			"weight": 8,
+			"value": 5000,
+			"additionalEntries": [
+				"炼金工具可以用来制作有用的化合物，如强酸或炽火胶。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"炼金工具包括两只玻璃烧杯、一个铁架台、一根玻璃搅拌棒、一个小研钵和药杵，以及一袋常用炼金术材料，包括盐、铁粉、纯净水。"
+					]
+				},
+				{
+					"ENG_name": "Arcana",
+					"name": "奥秘",
+					"type": "entries",
+					"entries": [
+						"炼金工具熟练项可以让你在进行鉴定药水或类似物质的{@skill 奥秘}检定中获得更多信息。"
+					]
+				},
+				{
+					"ENG_name": "Investigation",
+					"name": "调查",
+					"type": "entries",
+					"entries": [
+						"当你调查一个区域的线索时，如果该区域曾使用过任何化合物或其他物质，炼金工具熟练项将使你对此具有额外的洞察力。"
+					]
+				},
+				{
+					"ENG_name": "Alchemical Crafting",
+					"name": "道具制作",
+					"type": "entries",
+					"entries": [
+						"你可以使用这套工具熟练制作炼金道具。角色可以花钱收集原材料，每磅材料花费50金币。DM可以允许角色使用指定技能进行检定时具有优势。作为长休的一部分，你可以使用炼金工具制作一份剂量的{@item 强酸 (小瓶)|phb|强酸}、{@item 炽火胶(扁瓶装)|phb|炽火胶}、{@item 抗毒剂 (小瓶)|phb|抗毒剂}、{@item 燃油 (扁瓶)|phb|燃油}、{@item 香水 (小瓶)|phb|香水}或者{@item 肥皂|phb}。从你所携带的原材料总价值中减去所制作物品价值的一半。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "炼金工具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"制造一股浓烟",
+							"10"
+						],
+						[
+							"鉴定一瓶毒药",
+							"10"
+						],
+						[
+							"鉴定一种物质",
+							"15"
+						],
+						[
+							"点火",
+							"15"
+						],
+						[
+							"中和强酸",
+							"20"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Alchemist's Supplies",
+			"name": "炼金工具",
+			"type": "AT|XPHB",
+			"source": "XPHB",
+			"page": 220,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-TFV"
+			],
+			"rarity": "none",
+			"weight": 8,
+			"value": 5000,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"智力"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"辨析一种物质（{@dc 15}），或生起一场火（{@dc 15}）"
+							]
+						},
+						{
+							"ENG_name": "Craft:",
+							"name": "制造：",
+							"type": "item",
+							"entries": [
+								"{@item 强酸|XPHB}, {@item 炽火胶|XPHB}, {@item 材料包|XPHB}, {@item 燃油|XPHB}, {@item 纸张|XPHB}, {@item 香水|XPHB}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Antimatter Rifle",
+			"name": "反物质步枪",
+			"type": "R",
+			"source": "DMG",
+			"page": 268,
+			"referenceSources": [
+				"QftIS"
+			],
+			"reprintedAs": [
+				"反物质步枪|XDMG"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 10,
+			"weaponCategory": "martial",
+			"age": "未来",
+			"property": [
+				"AF|DMG",
+				"RLD",
+				"2H"
+			],
+			"range": "120/360",
+			"reload": 2,
+			"dmg1": "6d8",
+			"dmgType": "N",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "能量电池"
+		},
+		{
+			"ENG_name": "Antimatter Rifle",
+			"name": "反物质步枪",
+			"type": "R|XPHB",
+			"source": "XDMG",
+			"page": 73,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 10,
+			"valueRarity": "极珍稀",
+			"weaponCategory": "martial",
+			"age": "未来",
+			"property": [
+				"AF|XDMG",
+				"RLD|XDMG",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"削弱|XPHB"
+			],
+			"range": "120/360",
+			"reload": 2,
+			"dmg1": "6d8",
+			"dmgType": "N",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "能量电池|xdmg"
+		},
+		{
+			"ENG_name": "Arrow",
+			"name": "箭",
+			"type": "A",
+			"source": "PHB",
+			"page": 150,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"ToA"
+			],
+			"reprintedAs": [
+				"箭|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 0.05,
+			"value": 5,
+			"arrow": true
+		},
+		{
+			"ENG_name": "Arrow",
+			"name": "箭",
+			"type": "A|XPHB",
+			"source": "XPHB",
+			"page": 222,
+			"srd52": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 0.05,
+			"value": 5,
+			"arrow": true,
+			"entries": [
+				"箭是与具有弹药特性的武器一起使用来进行远程攻击的。每次使用该武器攻击时，你都会消耗一件弹药。从箭袋、箭盒或其他容器中取出弹药是攻击动作的一部分（你需要一只空闲的手来装填单手武器）。在战斗结束时，你可以通过花一分钟时间搜索战场来回收你消耗的一半弹药。",
+				"箭矢通常存放在{@item 箭袋|XPHB}中（需单独购买）。"
+			]
+		},
+		{
+			"ENG_name": "Arrows (20)",
+			"name": "箭矢 (20)",
+			"type": "A",
+			"source": "PHB",
+			"page": 150,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CRCotN",
+				"DitLCoT",
+				"IDRotF",
+				"TftYP-TSC"
+			],
+			"reprintedAs": [
+				"箭矢 (20)|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 1,
+			"value": 100,
+			"arrow": true,
+			"packContents": [
+				{
+					"item": "箭|phb",
+					"quantity": 20
+				}
+			]
+		},
+		{
+			"ENG_name": "Arrows (20)",
+			"name": "箭矢 (20)",
+			"type": "A|XPHB",
+			"source": "XPHB",
+			"page": 222,
+			"srd52": true,
+			"referenceSources": [
+				"DrDe-TWoO"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 1,
+			"value": 100,
+			"arrow": true,
+			"entries": [
+				"箭是与具有弹药特性的武器一起使用来进行远程攻击的。每次使用该武器攻击时，你都会消耗一件弹药。从箭袋、箭盒或其他容器中取出弹药是攻击动作的一部分（你需要一只空闲的手来装填单手武器）。在战斗结束时，你可以通过花一分钟时间搜索战场来回收你消耗的一半弹药。",
+				"箭矢通常存放在{@item 箭袋|XPHB}中（需单独购买）。"
+			],
+			"packContents": [
+				{
+					"item": "箭|xphb",
+					"quantity": 20
+				}
+			]
+		},
+		{
+			"ENG_name": "Automatic Pistol",
+			"name": "自动手枪",
+			"type": "R",
+			"source": "DMG",
+			"page": 268,
+			"reprintedAs": [
+				"半自动手枪|XDMG"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 3,
+			"weaponCategory": "martial",
+			"age": "现代",
+			"property": [
+				"AF|DMG",
+				"RLD"
+			],
+			"range": "50/150",
+			"reload": 15,
+			"dmg1": "2d6",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "现代子弹"
+		},
+		{
+			"ENG_name": "Automatic Rifle",
+			"name": "自动步枪",
+			"type": "R",
+			"source": "DMG",
+			"page": 268,
+			"reprintedAs": [
+				"自动步枪|XDMG"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 8,
+			"weaponCategory": "martial",
+			"age": "现代",
+			"property": [
+				"AF|DMG",
+				"BF|DMG",
+				"RLD",
+				"2H"
+			],
+			"range": "80/240",
+			"reload": 30,
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "现代子弹"
+		},
+		{
+			"ENG_name": "Automatic Rifle",
+			"name": "自动步枪",
+			"type": "R|XPHB",
+			"source": "XDMG",
+			"page": 73,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 8,
+			"valueRarity": "珍稀",
+			"weaponCategory": "martial",
+			"age": "现代",
+			"property": [
+				"AF|XDMG",
+				"BF|XDMG",
+				"RLD|XDMG",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"缓速|XPHB"
+			],
+			"range": "80/240",
+			"reload": 30,
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "枪械子弹|xphb"
+		},
+		{
+			"ENG_name": "Bagpipes",
+			"name": "风笛",
+			"type": "INS",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"风笛|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 6,
+			"value": 3000
+		},
+		{
+			"ENG_name": "Bagpipes",
+			"name": "风笛",
+			"type": "INS|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 6,
+			"value": 3000,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"魅力"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"演奏一首已知曲目（{@dc 10}），或即兴创作一首歌曲（{@dc 15}）"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Bandore",
+			"name": "班多里琴",
+			"type": "INS|XPHB",
+			"source": "FRHoF",
+			"page": 132,
+			"rarity": "none",
+			"weight": 3,
+			"value": 6500,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Battleaxe",
+			"name": "战斧",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CoS"
+			],
+			"reprintedAs": [
+				"战斧|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 4,
+			"value": 1000,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"axe": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Battleaxe",
+			"name": "战斧",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 4,
+			"value": 1000,
+			"weaponCategory": "martial",
+			"property": [
+				"V|XPHB"
+			],
+			"mastery": [
+				"失衡|XPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"axe": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Birdpipes",
+			"name": "鸟箫",
+			"type": "INS",
+			"source": "SCAG",
+			"page": 124,
+			"rarity": "none",
+			"entries": [
+				"排箫pan pipes或半羊人排箫satyr pipes，又被称为芦管shalm，这些乐器作为{@deity 黎尔拉|费伦|scag}的神圣之物深受木精灵和野精灵吟游诗人喜爱。"
+			]
+		},
+		{
+			"ENG_name": "Blowgun",
+			"name": "吹箭筒",
+			"type": "R",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"吹箭筒|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 1,
+			"value": 1000,
+			"weaponCategory": "martial",
+			"property": [
+				"A",
+				"LD"
+			],
+			"range": "25/100",
+			"dmg1": "1",
+			"dmgType": "P",
+			"weapon": true,
+			"ammoType": "吹箭|phb"
+		},
+		{
+			"ENG_name": "Blowgun",
+			"name": "吹箭筒",
+			"type": "R|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 1,
+			"value": 1000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"LD|XPHB"
+			],
+			"mastery": [
+				"侵扰|XPHB"
+			],
+			"range": "25/100",
+			"dmg1": "1",
+			"dmgType": "P",
+			"weapon": true,
+			"ammoType": "针|xphb",
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Blowgun Needle",
+			"name": "吹箭",
+			"type": "A",
+			"source": "PHB",
+			"page": 150,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"针|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 0.02,
+			"value": 2,
+			"needleBlowgun": true
+		},
+		{
+			"ENG_name": "Blowgun Needles (50)",
+			"name": "吹箭(50)",
+			"type": "A",
+			"source": "PHB",
+			"page": 150,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"吹矢（50）|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 1,
+			"value": 100,
+			"needleBlowgun": true,
+			"packContents": [
+				{
+					"item": "吹箭|phb",
+					"quantity": 50
+				}
+			]
+		},
+		{
+			"ENG_name": "Bolt",
+			"name": "弩矢",
+			"type": "A|XPHB",
+			"source": "XPHB",
+			"page": 222,
+			"srd52": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 0.075,
+			"value": 5,
+			"bolt": true,
+			"entries": [
+				"弩箭是与具有弹药属性的武器一起使用的，用于进行远程攻击。每次你用武器攻击时，都会消耗一枚弹药。从箭袋、盒子或其他容器中取出弹药是攻击的一部分（你需要一个空闲的手来装填单手武器）。战斗结束后，你可以花一分钟在战场上搜寻，回收你消耗的一半弹药。",
+				"弩矢通常存放在 {@item 弩矢匣|XPHB} 中（需单独购买）。"
+			]
+		},
+		{
+			"ENG_name": "Bolts (20)",
+			"name": "弩矢（20支）",
+			"type": "A|XPHB",
+			"source": "XPHB",
+			"page": 222,
+			"srd52": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 1.5,
+			"value": 100,
+			"bolt": true,
+			"entries": [
+				"弩箭是与具有弹药属性的武器一起使用的，用于进行远程攻击。每次你用武器攻击时，都会消耗一枚弹药。从箭袋、盒子或其他容器中取出弹药是攻击的一部分（你需要一个空闲的手来装填单手武器）。战斗结束后，你可以花一分钟在战场上搜寻，回收你消耗的一半弹药。",
+				"弩矢通常存放在 {@item 弩矢匣|XPHB} 中（需单独购买）。"
+			],
+			"packContents": [
+				{
+					"item": "弩矢|xphb",
+					"quantity": 20
+				}
+			]
+		},
+		{
+			"ENG_name": "Breastplate",
+			"name": "胸甲",
+			"type": "MA",
+			"source": "PHB",
+			"page": 145,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"PaBTSO",
+				"QftIS",
+				"WDMM"
+			],
+			"reprintedAs": [
+				"胸甲|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 20,
+			"value": 40000,
+			"ac": 14,
+			"armor": true,
+			"entries": [
+				"该护甲主要由皮条固定的金属护胸组成。尽管它并没有为四肢提供额外的防护，但其在保证着装者活动自由度的同时，为其生命器官提供了十分有效的保护效果。"
+			]
+		},
+		{
+			"ENG_name": "Breastplate",
+			"name": "胸甲",
+			"type": "MA|XPHB",
+			"source": "XPHB",
+			"page": 219,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-TFV",
+				"HotB"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 20,
+			"value": 40000,
+			"ac": 14,
+			"armor": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Brewer's Supplies",
+			"name": "酿酒工具",
+			"type": "AT",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 79
+				}
+			],
+			"reprintedAs": [
+				"酿酒工具|XPHB"
+			],
+			"rarity": "none",
+			"weight": 9,
+			"value": 2000,
+			"additionalEntries": [
+				"酿造是生产啤酒的艺术。啤酒不仅是一种酒精饮料，而且酿造过程还能净化水。制作啤酒需要几周的发酵时间，但只需几个小时的工作。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"酿酒工具包括一个大型玻璃罐、一定量的啤酒花、一个虹吸管和几英尺长的软管。"
+					]
+				},
+				{
+					"ENG_name": "History",
+					"name": "历史",
+					"type": "entries",
+					"entries": [
+						"拥有酿酒工具熟练项的角色，在进行涉及酒精作为重要元素的事件相关的智力（{@skill 历史}）检定时，可以获得额外的洞察力。"
+					]
+				},
+				{
+					"ENG_name": "Medicine",
+					"name": "医药",
+					"type": "entries",
+					"entries": [
+						"该工具熟练项使你在治疗酒精中毒患者或使用酒精缓解苦痛时获得额外洞悉。"
+					]
+				},
+				{
+					"ENG_name": "Persuasion",
+					"name": "游说",
+					"type": "entries",
+					"entries": [
+						"一杯烈酒能帮助软化最坚硬的心。你使用酿酒工具的熟练项可以协助你向某人劝酒，给他们恰到好处的酒精来缓和情绪。"
+					]
+				},
+				{
+					"ENG_name": "Potable Water",
+					"name": "饮用水",
+					"type": "entries",
+					"entries": [
+						"你的酿酒知识使你能够净化原本不可饮用的水。作为长休的一部分，你可以净化最多6加仑的水，或作为短休的一部分净化1加仑。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "酿酒工具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"侦查饮料中的毒素或杂质",
+							"10"
+						],
+						[
+							"识别酒精",
+							"15"
+						],
+						[
+							"忽略酒精的效应",
+							"20"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Brewer's Supplies",
+			"name": "酿酒工具",
+			"type": "AT|XPHB",
+			"source": "XPHB",
+			"page": 220,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-TDoN",
+				"DrDe-TFV"
+			],
+			"rarity": "none",
+			"weight": 9,
+			"value": 2000,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"智力"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"检测饮品是否下毒（{@dc 15}），或辨识酒精（{@dc 10}）"
+							]
+						},
+						{
+							"ENG_name": "Craft:",
+							"name": "制造：",
+							"type": "item",
+							"entries": [
+								"{@item 抗毒剂|XPHB}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Calligrapher's Supplies",
+			"name": "书法工具",
+			"type": "AT",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 79
+				}
+			],
+			"referenceSources": [
+				"BGDIA",
+				"CM",
+				"IMR",
+				"KftGV",
+				"PaBTSO",
+				"SCC-HfMT",
+				"ToFW"
+			],
+			"reprintedAs": [
+				"书法工具|XPHB"
+			],
+			"rarity": "none",
+			"weight": 5,
+			"value": 1000,
+			"additionalEntries": [
+				"书法将书写视为一种精致而美丽的艺术。书法家创作出赏心悦目的文字，使用的风格难以伪造。他们的工具还赋予其一定能力来检查文字并判断其真伪，因为书法家的训练包括长时间研究书写并尝试复制其风格与设计。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"书法工具包括墨水、十二张羊皮纸和三支羽毛笔。"
+					]
+				},
+				{
+					"ENG_name": "Arcana",
+					"name": "奥秘",
+					"type": "entries",
+					"entries": [
+						"尽管书法对于解读魔法文字的内容帮助不大，但掌握这些工具的熟练项可以协助识别谁书写了具有魔法性质的文字。"
+					]
+				},
+				{
+					"ENG_name": "History",
+					"name": "历史",
+					"type": "entries",
+					"entries": [
+						"该工具熟练项可以增大分析或调查远古文字、卷轴或其他文本（包括刻在岩石上的符文或壁画及其他展示中的信息）时成功检定的增益。"
+					]
+				},
+				{
+					"ENG_name": "Decipher Treasure Map",
+					"name": "解读藏宝图",
+					"type": "entries",
+					"entries": [
+						"该工具熟练项授予你检查地图的专精。你可以进行一次智力检定来确定地图的年龄、地图是否包含任何隐藏信息或类似事实。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "书法工具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-6",
+						"col-6"
+					],
+					"rows": [
+						[
+							"确定非魔法手稿的作者",
+							"10"
+						],
+						[
+							"理解作者的心态",
+							"15"
+						],
+						[
+							"发现伪造文本",
+							"15"
+						],
+						[
+							"伪造签名",
+							"20"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Calligrapher's Supplies",
+			"name": "书法工具",
+			"type": "AT|XPHB",
+			"source": "XPHB",
+			"page": 220,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "none",
+			"weight": 5,
+			"value": 1000,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"敏捷"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"以华丽的字迹撰写文字防止造假（{@dc 15}）"
+							]
+						},
+						{
+							"ENG_name": "Craft:",
+							"name": "制造：",
+							"type": "item",
+							"entries": [
+								"{@item 墨水|XPHB}, {@item 法术卷轴|XDMG}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Carpenter's Tools",
+			"name": "木匠工具",
+			"type": "AT",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 80
+				}
+			],
+			"referenceSources": [
+				"OoW"
+			],
+			"reprintedAs": [
+				"木匠工具|XPHB"
+			],
+			"rarity": "none",
+			"weight": 6,
+			"value": 800,
+			"additionalEntries": [
+				"木匠技能使角色能够建造木制建筑。木匠可以建造房屋、棚屋、木柜或类似物品。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"木匠工具包括一把锯、一把锤子、钉子、一把短柄斧、一把角尺、一把直尺、一把扁斧、一把刨子和一把凿子。"
+					]
+				},
+				{
+					"ENG_name": "History",
+					"name": "历史",
+					"type": "entries",
+					"entries": [
+						"该工具熟练项有助于你识别木质建筑物和其他大型木质物件的用途与起源。"
+					]
+				},
+				{
+					"ENG_name": "Investigation",
+					"name": "调查",
+					"type": "entries",
+					"entries": [
+						"你在检查木质建筑内的区域时会获得额外的洞悉，因为你知晓可以隐藏区域不被发现的建筑技巧。"
+					]
+				},
+				{
+					"ENG_name": "Perception",
+					"name": "察觉",
+					"type": "entries",
+					"entries": [
+						"你可以发现木墙或地板上的不规则之处，这使得寻找陷阱门和秘密通道变得更加容易。"
+					]
+				},
+				{
+					"ENG_name": "Stealth",
+					"name": "隐匿",
+					"type": "entries",
+					"entries": [
+						"你可以快速评估木质地板的薄弱点，从而更容易避开那些踩踏时会吱呀作响的位置。"
+					]
+				},
+				{
+					"ENG_name": "Fortify",
+					"name": "加固",
+					"type": "entries",
+					"entries": [
+						"通过1分钟的工作和原材料，你可以使门或窗户更难被强行打开。将打开它的DC提高5。"
+					]
+				},
+				{
+					"ENG_name": "Temporary Shelter",
+					"name": "临时住所",
+					"type": "entries",
+					"entries": [
+						"作为长休的一部分，你可以搭建一个斜顶棚屋或类似的遮蔽物，以保持你的团队在休息期间保持干燥和阴凉。由于它是用任何可用的木材快速制作的，遮蔽物在组装后会在{@dice 1d3}天内倒塌。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "木匠工具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"建造一个简单的木制结构",
+							"10"
+						],
+						[
+							"设计复杂的木结构",
+							"15"
+						],
+						[
+							"在木墙上找到一个弱点",
+							"15"
+						],
+						[
+							"撬开一扇门",
+							"20"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Carpenter's Tools",
+			"name": "木匠工具",
+			"type": "AT|XPHB",
+			"source": "XPHB",
+			"page": 220,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "none",
+			"weight": 6,
+			"value": 800,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"力量"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"封死或撬开一扇门或一个容器（{@dc 20}）"
+							]
+						},
+						{
+							"ENG_name": "Craft:",
+							"name": "制造：",
+							"type": "item",
+							"entries": [
+								"{@item 短棒|XPHB}, {@item 巨棒|XPHB}, {@item 长棍|XPHB}, {@item 木桶|XPHB}, {@item 箱子|XPHB}, {@item 梯子|XPHB}, {@item 长杆|XPHB}, {@item 便携式攻城锤|XPHB}, {@item 火把|XPHB}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Cartographer's Tools",
+			"name": "制图工具",
+			"type": "AT",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 80
+				}
+			],
+			"referenceSources": [
+				"DoSI",
+				"KftGV",
+				"PaBTSO",
+				"ToA"
+			],
+			"reprintedAs": [
+				"制图工具|XPHB"
+			],
+			"rarity": "none",
+			"weight": 6,
+			"value": 1500,
+			"additionalEntries": [
+				"使用制图工具，你可以创建精确的地图，使你自己和后来者的旅行更加容易。这些地图的范围可以从大型的山脉描绘到展示地牢层级布局的图表。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"制图工具包含一支羽毛笔、墨水、羊皮纸、一对圆规、卡钳和一把直尺。"
+					]
+				},
+				{
+					"ENG_name": "Arcana, History, Religion",
+					"name": "奥秘、历史、宗教",
+					"type": "entries",
+					"entries": [
+						"你可以利用对地图和地点的知识，在使用这些技能时发掘更详细的信息。例如，你可能会发现地图中隐藏的信息，通过鉴定地图制作时间来判断地理特征是否已发生变化，等等。"
+					]
+				},
+				{
+					"ENG_name": "Nature",
+					"name": "自然",
+					"type": "entries",
+					"entries": [
+						"你对自然地理的熟悉程度使你更容易回答与你周围地形相关的问题或解决相关问题。"
+					]
+				},
+				{
+					"ENG_name": "Survival",
+					"name": "求生",
+					"type": "entries",
+					"entries": [
+						"你对地理的了解使你更容易找到通往文明的道路，预测可能找到村庄或城镇的区域，并避免迷失方向。你已经研究了如此多的地图，以至于常见的模式，如贸易路线如何演变以及定居点如何与地理位置相关联，对你来说都是熟悉的。"
+					]
+				},
+				{
+					"ENG_name": "Craft a Map",
+					"name": "绘制地图",
+					"type": "entries",
+					"entries": [
+						"旅行时，你可以边走边绘制地图，同时进行其他活动。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "制图工具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"确定地图的年份和来源",
+							"10"
+						],
+						[
+							"估计地标的方向和距离",
+							"15"
+						],
+						[
+							"辨识地图是否伪造",
+							"15"
+						],
+						[
+							"填补地图上缺失的部分",
+							"20"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Cartographer's Tools",
+			"name": "制图工具",
+			"type": "AT|XPHB",
+			"source": "XPHB",
+			"page": 220,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "none",
+			"weight": 6,
+			"value": 1500,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"感知"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"为一小片区域绘制地图（{@dc 15}）"
+							]
+						},
+						{
+							"ENG_name": "Craft:",
+							"name": "制造：",
+							"type": "item",
+							"entries": [
+								"{@item 地图|XPHB}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Chain Mail",
+			"name": "链甲",
+			"type": "HA",
+			"source": "PHB",
+			"page": 145,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CoS",
+				"CRCotN",
+				"DSotDQ",
+				"GoS",
+				"PaBTSO",
+				"QftIS",
+				"SCC-ARiR",
+				"VEoR"
+			],
+			"reprintedAs": [
+				"链甲|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 55,
+			"value": 7500,
+			"ac": 16,
+			"strength": "13",
+			"armor": true,
+			"stealth": true,
+			"entries": [
+				"该护甲由互相锁接的金属环编成。链甲还包括在甲胄下面穿戴的一层织物衬里，用以阻止擦伤并减缓挥击的冲击。此护甲同时还附有护手。"
+			]
+		},
+		{
+			"ENG_name": "Chain Mail",
+			"name": "链甲",
+			"type": "HA|XPHB",
+			"source": "XPHB",
+			"page": 219,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 55,
+			"value": 7500,
+			"ac": 16,
+			"strength": "13",
+			"armor": true,
+			"stealth": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Chain Shirt",
+			"name": "链甲衫",
+			"type": "MA",
+			"source": "PHB",
+			"page": 144,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CM",
+				"CoS",
+				"TftYP-TSC",
+				"US"
+			],
+			"reprintedAs": [
+				"链甲衫|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 20,
+			"value": 5000,
+			"ac": 13,
+			"armor": true,
+			"entries": [
+				"该护甲由互相锁接的金属环组成，通常着装于布衣或皮衣的夹层之间。这种护甲为着装者的上半身提供了适中的保护，且锁环间相互碰撞的声音也可以被外层衣服减弱。"
+			]
+		},
+		{
+			"ENG_name": "Chain Shirt",
+			"name": "链甲衫",
+			"type": "MA|XPHB",
+			"source": "XPHB",
+			"page": 219,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 20,
+			"value": 5000,
+			"ac": 13,
+			"armor": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Cittern",
+			"name": "西特琴",
+			"type": "INS|XPHB",
+			"source": "FRHoF",
+			"page": 132,
+			"rarity": "none",
+			"weight": 2,
+			"value": 6500,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Club",
+			"name": "短棒",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"GoS",
+				"KftGV",
+				"TftYP-AtG",
+				"WDH"
+			],
+			"reprintedAs": [
+				"短棒|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"value": 10,
+			"weaponCategory": "simple",
+			"property": [
+				"L"
+			],
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"club": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Club",
+			"name": "短棒",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 2,
+			"value": 10,
+			"weaponCategory": "simple",
+			"property": [
+				"L|XPHB"
+			],
+			"mastery": [
+				"缓速|XPHB"
+			],
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"club": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Cobbler's Tools",
+			"name": "鞋匠工具",
+			"type": "AT",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 80
+				}
+			],
+			"reprintedAs": [
+				"鞋匠工具|XPHB"
+			],
+			"rarity": "none",
+			"weight": 5,
+			"value": 500,
+			"additionalEntries": [
+				"虽然鞋匠的技艺对冒险者来说可能显得过于卑微，但一双好靴子能让角色穿越崎岖荒野和致命地下城。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"鞋匠工具包含一把锤子、一把锥子、一把刀刃、一个鞋撑、一把切割器、备用皮革和线。"
+					]
+				},
+				{
+					"ENG_name": "Arcana, History",
+					"name": "奥秘、历史",
+					"type": "entries",
+					"entries": [
+						"你对鞋子的知识可以帮助你识别魔法靴子的魔法属性或此类物品的历史。"
+					]
+				},
+				{
+					"ENG_name": "Investigation",
+					"name": "调查",
+					"type": "entries",
+					"entries": [
+						"鞋履蕴含着惊人的秘密。通过检查鞋子的磨损和积累的泥土，你可以得知某人最近去过哪里。你修理鞋子的经验使你更容易鉴定出伤害可能来自何处。"
+					]
+				},
+				{
+					"ENG_name": "Maintain Shoes",
+					"name": "修鞋",
+					"type": "entries",
+					"entries": [
+						"作为长休的一部分，你可以修补同伴的鞋子。在接下来的24小时内，最多六名你指定的穿着你修过的鞋子的生物可以每天旅行10小时而无需进行豁免检定来避免{@condition 力竭}。"
+					]
+				},
+				{
+					"ENG_name": "Craft Hidden Compartment",
+					"name": "秘密夹层",
+					"type": "entries",
+					"entries": [
+						"经过8小时的工作，你可以在鞋子上添加一个秘密夹层。该夹层可容纳一个最长3英寸、宽深各1英寸的物件。你需使用工具熟练项进行一次智力检定，以确定发现该夹层所需的智力（{@skill 调查}）检定DC。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "鞋匠工具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"确定鞋子的年份和来源",
+							"10"
+						],
+						[
+							"找出鞋后跟的秘密夹层",
+							"15"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Cobbler's Tools",
+			"name": "鞋匠工具",
+			"type": "AT|XPHB",
+			"source": "XPHB",
+			"page": 220,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-TDoN"
+			],
+			"rarity": "none",
+			"weight": 5,
+			"value": 500,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"敏捷"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"改造足具来为穿戴者的下一次敏捷（{@skill 特技|XPHB}）检定提供{@variantrule 优势|XPHB}（{@dc 10}）"
+							]
+						},
+						{
+							"ENG_name": "Craft:",
+							"name": "制造：",
+							"type": "item",
+							"entries": [
+								"{@item 攀爬工具|XPHB}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Cook's Utensils",
+			"name": "厨师工具",
+			"type": "AT",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 80
+				}
+			],
+			"reprintedAs": [
+				"厨师工具|XPHB"
+			],
+			"rarity": "none",
+			"weight": 8,
+			"value": 100,
+			"additionalEntries": [
+				"冒险生活是艰苦的。有厨师同行，你的餐食会比典型的硬饼干和干果要好得多。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"厨师工具包括一个金属锅、刀具、叉子、一把搅拌勺和一只长柄勺。"
+					]
+				},
+				{
+					"ENG_name": "History",
+					"name": "历史",
+					"type": "entries",
+					"entries": [
+						"你对烹饪技术的知识使你能够评估一个文化饮食习惯中涉及的社会模式。"
+					]
+				},
+				{
+					"ENG_name": "Medicine",
+					"name": "医药",
+					"type": "entries",
+					"entries": [
+						"在施用治疗时，你可以将苦涩或酸味的药物转化为令人愉悦的调和剂。"
+					]
+				},
+				{
+					"ENG_name": "Survival",
+					"name": "求生",
+					"type": "entries",
+					"entries": [
+						"在搜寻食物时，你可以利用其他人无法将其转化为有营养餐食的食材来凑合。"
+					]
+				},
+				{
+					"ENG_name": "Prepare Meals",
+					"name": "准备饭菜",
+					"type": "entries",
+					"entries": [
+						"作为短休的一部分，你可以准备一顿美餐，帮助同伴恢复体力。你和最多五个你选择的生物在短休期间每消耗一个生命骰额外恢复1点生命值，前提是你能使用厨师工具和充足的食物。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "厨师工具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"稍微改善伙食",
+							"10"
+						],
+						[
+							"复制一顿餐食",
+							"10"
+						],
+						[
+							"发现食物中的毒素或杂质",
+							"15"
+						],
+						[
+							"制作一顿美食大餐",
+							"15"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Cook's Utensils",
+			"name": "厨师工具",
+			"type": "AT|XPHB",
+			"source": "XPHB",
+			"page": 220,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-TDoN"
+			],
+			"rarity": "none",
+			"weight": 8,
+			"value": 100,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"感知"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"改善食物风味（{@dc 10}），检查食物是否腐坏或有毒（{@dc 15}）"
+							]
+						},
+						{
+							"ENG_name": "Craft:",
+							"name": "制造：",
+							"type": "item",
+							"entries": [
+								"{@item 口粮|XPHB}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Crossbow Bolt",
+			"name": "弩矢",
+			"type": "A",
+			"source": "PHB",
+			"page": 150,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"TTP"
+			],
+			"reprintedAs": [
+				"弩矢|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 0.075,
+			"value": 5,
+			"bolt": true
+		},
+		{
+			"ENG_name": "Crossbow Bolts (20)",
+			"name": "弩矢(20)",
+			"type": "A",
+			"source": "PHB",
+			"page": 150,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CM",
+				"CoS",
+				"CRCotN",
+				"GoS",
+				"IDRotF",
+				"KftGV",
+				"PaBTSO",
+				"SCC-ARiR",
+				"VEoR"
+			],
+			"reprintedAs": [
+				"弩矢（20支）|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 1.5,
+			"value": 100,
+			"bolt": true,
+			"packContents": [
+				{
+					"item": "弩矢|phb",
+					"quantity": 20
+				}
+			]
+		},
+		{
+			"ENG_name": "Crystal",
+			"name": "水晶",
+			"type": "SCF",
+			"group": [
+				"奥术法器"
+			],
+			"source": "PHB",
+			"page": 151,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"水晶|XPHB"
+			],
+			"edition": "classic",
+			"scfType": "arcane",
+			"rarity": "none",
+			"weight": 1,
+			"value": 1000
+		},
+		{
+			"ENG_name": "Crystal",
+			"name": "水晶",
+			"type": "SCF|XPHB",
+			"group": [
+				"奥术法器"
+			],
+			"source": "XPHB",
+			"page": 224,
+			"srd52": true,
+			"edition": "one",
+			"scfType": "arcane",
+			"rarity": "none",
+			"weight": 1,
+			"value": 1000
+		},
+		{
+			"ENG_name": "Dagger",
+			"name": "匕首",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"BGDIA",
+				"CM",
+				"CoS",
+				"DoSI",
+				"DSotDQ",
+				"GoS",
+				"IDRotF",
+				"JttRC",
+				"PaBTSO",
+				"QftIS",
+				"TftYP-TSC",
+				"ToFW",
+				"VEoR"
+			],
+			"reprintedAs": [
+				"匕首|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 1,
+			"value": 200,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"L",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"dagger": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Dagger",
+			"name": "匕首",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-TFV",
+				"DrDe-TWoO"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 1,
+			"value": 200,
+			"weaponCategory": "simple",
+			"property": [
+				"F|XPHB",
+				"L|XPHB",
+				"T|XPHB"
+			],
+			"mastery": [
+				"迅击|XPHB"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"dagger": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Dart",
+			"name": "飞镖",
+			"type": "R",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CM"
+			],
+			"reprintedAs": [
+				"飞镖|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 0.25,
+			"value": 5,
+			"weaponCategory": "simple",
+			"property": [
+				"F",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"weapon": true
+		},
+		{
+			"ENG_name": "Dart",
+			"name": "飞镖",
+			"type": "R|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 0.25,
+			"value": 5,
+			"weaponCategory": "simple",
+			"property": [
+				"F|XPHB",
+				"T|XPHB"
+			],
+			"mastery": [
+				"侵扰|XPHB"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Double-Bladed Scimitar",
+			"name": "双刃弯刀",
+			"type": "M",
+			"source": "ERLW",
+			"page": 21,
+			"rarity": "none",
+			"weight": 6,
+			"value": 10000,
+			"weaponCategory": "martial",
+			"property": [
+				"S",
+				"2H"
+			],
+			"dmg1": "2d4",
+			"dmgType": "S",
+			"sword": true,
+			"weapon": true,
+			"entries": [
+				{
+					"ENG_name": "Special",
+					"name": "特殊",
+					"type": "entries",
+					"entries": [
+						"如果你在你的回合使用双刃弯刀作为{@action 攻击}动作的一部分进行攻击，你可以在之后立即使用一个奖励动作用它进行近战攻击。这次攻击在命中时造成{@damage 1d4}点挥砍伤害，而不是{@damage 2d4}。"
+					]
+				}
+			],
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Drum",
+			"name": "鼓",
+			"type": "INS",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"JttRC",
+				"RtG"
+			],
+			"reprintedAs": [
+				"鼓|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 3,
+			"value": 600
+		},
+		{
+			"ENG_name": "Drum",
+			"name": "鼓",
+			"type": "INS|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"HotB"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 3,
+			"value": 600,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"魅力"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"演奏一首已知曲目（{@dc 10}），或即兴创作一首歌曲（{@dc 15}）"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Dulcimer",
+			"name": "扬琴",
+			"type": "INS",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"ToA"
+			],
+			"reprintedAs": [
+				"扬琴|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 10,
+			"value": 2500
+		},
+		{
+			"ENG_name": "Dulcimer",
+			"name": "扬琴",
+			"type": "INS|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 10,
+			"value": 2500,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"魅力"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"演奏一首已知曲目（{@dc 10}），或即兴创作一首歌曲（{@dc 15}）"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Energy Cell",
+			"name": "能量电池",
+			"type": "AF|DMG",
+			"source": "DMG",
+			"page": 268,
+			"referenceSources": [
+				"IDRotF",
+				"QftIS"
+			],
+			"reprintedAs": [
+				"能量电池|XDMG"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 0.3125,
+			"age": "未来",
+			"cellEnergy": true,
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
+			"ENG_name": "Energy Cell",
+			"name": "能量电池",
+			"type": "AF|XDMG",
+			"source": "XDMG",
+			"page": 72,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 0.5,
+			"age": "未来",
+			"cellEnergy": true,
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
+			"ENG_name": "Firearm Bullet",
+			"name": "枪械子弹",
+			"type": "A|XPHB",
+			"source": "XPHB",
+			"page": 222,
+			"srd52": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 0.2,
+			"value": 30,
+			"bulletFirearm": true,
+			"entries": [
+				"枪械子弹在现代枪械中使用后会被摧毁。"
+			],
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
+			"ENG_name": "Firearm Bullets (10)",
+			"name": "枪械子弹 (10)",
+			"type": "A|XPHB",
+			"source": "XPHB",
+			"page": 222,
+			"srd52": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 2,
+			"value": 300,
+			"bulletFirearm": true,
+			"entries": [
+				"枪械子弹在现代枪械中使用后会被摧毁。"
+			],
+			"packContents": [
+				{
+					"item": "枪械子弹|xphb",
+					"quantity": 10
+				}
+			],
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
+			"ENG_name": "Flail",
+			"name": "链枷",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CoS",
+				"TftYP-AtG"
+			],
+			"reprintedAs": [
+				"链枷|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"value": 1000,
+			"weaponCategory": "martial",
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"weapon": true
+		},
+		{
+			"ENG_name": "Flail",
+			"name": "链枷",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 2,
+			"value": 1000,
+			"weaponCategory": "martial",
+			"mastery": [
+				"削弱|XPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Flute",
+			"name": "长笛",
+			"type": "INS",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"RtG",
+				"ToA"
+			],
+			"reprintedAs": [
+				"长笛|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 1,
+			"value": 200
+		},
+		{
+			"ENG_name": "Flute",
+			"name": "长笛",
+			"type": "INS|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"HotB"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 1,
+			"value": 200,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"魅力"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"演奏一首已知曲目（{@dc 10}），或即兴创作一首歌曲（{@dc 15}）"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Glaive",
+			"name": "长柄刀",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"GoS",
+				"SCC-ARiR"
+			],
+			"reprintedAs": [
+				"长柄刀|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 6,
+			"value": 2000,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"R",
+				"2H"
+			],
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"polearm": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Glaive",
+			"name": "长柄刀",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 6,
+			"value": 2000,
+			"weaponCategory": "martial",
+			"property": [
+				"H|XPHB",
+				"R|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"擦掠|XPHB"
+			],
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"polearm": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Glassblower's Tools",
+			"name": "玻璃匠工具",
+			"type": "AT",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 82
+				}
+			],
+			"referenceSources": [
+				"IMR"
+			],
+			"reprintedAs": [
+				"玻璃匠工具|XPHB"
+			],
+			"rarity": "none",
+			"weight": 5,
+			"value": 3000,
+			"additionalEntries": [
+				"熟练于玻璃匠工具的人不仅拥有塑造玻璃的能力，还具备用于生产玻璃制品的专业方法知识。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"这些工具包括一个吹管、一个小的玻璃工作台、块状物和镊子。你需要一个热源来加工玻璃。"
+					]
+				},
+				{
+					"ENG_name": "Arcana, History",
+					"name": "奥秘、历史",
+					"type": "entries",
+					"entries": [
+						"你对玻璃制造技术的知识在你检查玻璃物件时有所帮助，例如药水瓶或在库藏宝藏中找到的玻璃物品。举例来说，你可以研究玻璃药水瓶如何被其内容物改变，以协助确定药水的效应。（药水可能会留下残留物、使玻璃变形或染色。）"
+					]
+				},
+				{
+					"ENG_name": "Investigation",
+					"name": "调查",
+					"type": "entries",
+					"entries": [
+						"当你研究一个区域时，如果线索包括破碎的玻璃或玻璃制品，你的知识可以帮助你。"
+					]
+				},
+				{
+					"ENG_name": "Identify Weakness",
+					"name": "发现弱点",
+					"type": "entries",
+					"entries": [
+						"通过1分钟的研究，你可以发现玻璃物件的弱点。攻击弱点对该物件造成的任何伤害翻倍。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "玻璃匠工具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"鉴定玻璃来源",
+							"10"
+						],
+						[
+							"确定玻璃物体曾经装过什么",
+							"20"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Glassblower's Tools",
+			"name": "玻璃匠工具",
+			"type": "AT|XPHB",
+			"source": "XPHB",
+			"page": 220,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-TDoN"
+			],
+			"rarity": "none",
+			"weight": 5,
+			"value": 3000,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"智力"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"判断一个玻璃物件在过去24小时内盛过什么内容物（{@dc 15}）"
+							]
+						},
+						{
+							"ENG_name": "Craft:",
+							"name": "制造：",
+							"type": "item",
+							"entries": [
+								"{@item 玻璃瓶|XPHB}, {@item 放大镜|XPHB}, {@item 望远镜|XPHB}, {@item 小瓶|XPHB}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Glaur",
+			"name": "格劳尔号",
+			"type": "INS",
+			"source": "SCAG",
+			"page": 124,
+			"rarity": "none",
+			"entries": [
+				"形状像丰收号角的弯曲短型号。其上设有用于吹奏的活塞。格劳尔的声音像小号，另一种叫格卢恩号gloon的无活塞号其声音则会显得更为悲凄。"
+			]
+		},
+		{
+			"ENG_name": "Greataxe",
+			"name": "巨斧",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"IDRotF",
+				"PaBTSO",
+				"RMBRE",
+				"TftYP-AtG",
+				"WDMM"
+			],
+			"reprintedAs": [
+				"巨斧|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 7,
+			"value": 3000,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "1d12",
+			"dmgType": "S",
+			"axe": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Greataxe",
+			"name": "巨斧",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 7,
+			"value": 3000,
+			"weaponCategory": "martial",
+			"property": [
+				"H|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"横扫|XPHB"
+			],
+			"dmg1": "1d12",
+			"dmgType": "S",
+			"axe": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Greatclub",
+			"name": "巨棒",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"巨棒|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 10,
+			"value": 20,
+			"weaponCategory": "simple",
+			"property": [
+				"2H"
+			],
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"club": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Greatclub",
+			"name": "巨棒",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-BD"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 10,
+			"value": 20,
+			"weaponCategory": "simple",
+			"property": [
+				"2H|XPHB"
+			],
+			"mastery": [
+				"推离|XPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"club": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Greatsword",
+			"name": "巨剑",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"PaBTSO",
+				"TftYP-TSC"
+			],
+			"reprintedAs": [
+				"巨剑|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 6,
+			"value": 5000,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "2d6",
+			"dmgType": "S",
+			"sword": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Greatsword",
+			"name": "巨剑",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 6,
+			"value": 5000,
+			"weaponCategory": "martial",
+			"property": [
+				"H|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"擦掠|XPHB"
+			],
+			"dmg1": "2d6",
+			"dmgType": "S",
+			"sword": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Halberd",
+			"name": "长戟",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"IDRotF",
+				"KftGV",
+				"VEoR"
+			],
+			"reprintedAs": [
+				"长戟|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 6,
+			"value": 2000,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"R",
+				"2H"
+			],
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"polearm": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Halberd",
+			"name": "长戟",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 6,
+			"value": 2000,
+			"weaponCategory": "martial",
+			"property": [
+				"H|XPHB",
+				"R|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"横扫|XPHB"
+			],
+			"dmg1": "1d10",
+			"dmgType": "S",
+			"polearm": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Half Plate Armor",
+			"name": "半身板甲",
+			"type": "MA",
+			"source": "PHB",
+			"page": 145,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"LoX",
+				"ToA"
+			],
+			"reprintedAs": [
+				"半身板甲|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 40,
+			"value": 75000,
+			"ac": 15,
+			"armor": true,
+			"stealth": true,
+			"entries": [
+				"半身板甲主要由覆盖着装者身体大部分的铸模金属板组成。不过，其腿部防护则只有由皮条系住的简单护胫。"
+			]
+		},
+		{
+			"ENG_name": "Half Plate Armor",
+			"name": "半身板甲",
+			"type": "MA|XPHB",
+			"source": "XPHB",
+			"page": 219,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 40,
+			"value": 75000,
+			"ac": 15,
+			"armor": true,
+			"stealth": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Hand Crossbow",
+			"name": "手弩",
+			"type": "R",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CM",
+				"CoS",
+				"VEoR"
+			],
+			"reprintedAs": [
+				"手弩|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 3,
+			"value": 7500,
+			"weaponCategory": "martial",
+			"property": [
+				"A",
+				"L",
+				"LD"
+			],
+			"range": "30/120",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"crossbow": true,
+			"weapon": true,
+			"ammoType": "弩矢|phb"
+		},
+		{
+			"ENG_name": "Hand Crossbow",
+			"name": "手弩",
+			"type": "R|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"HotB"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 3,
+			"value": 7500,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"L|XPHB",
+				"LD|XPHB"
+			],
+			"mastery": [
+				"侵扰|XPHB"
+			],
+			"range": "30/120",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"crossbow": true,
+			"weapon": true,
+			"ammoType": "弩矢|xphb",
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Hand Drum",
+			"name": "手鼓",
+			"type": "INS",
+			"source": "SCAG",
+			"page": 124,
+			"rarity": "none",
+			"entries": [
+				"一种双面的皮鼓，其侧面设有手柄。"
+			]
+		},
+		{
+			"ENG_name": "Handaxe",
+			"name": "手斧",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"TftYP-TFoF"
+			],
+			"reprintedAs": [
+				"手斧|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"value": 500,
+			"weaponCategory": "simple",
+			"property": [
+				"L",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"axe": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Handaxe",
+			"name": "手斧",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 2,
+			"value": 500,
+			"weaponCategory": "simple",
+			"property": [
+				"L|XPHB",
+				"T|XPHB"
+			],
+			"mastery": [
+				"侵扰|XPHB"
+			],
+			"range": "20/60",
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"axe": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Heavy Crossbow",
+			"name": "重弩",
+			"type": "R",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CM",
+				"CoS",
+				"IDRotF",
+				"KftGV",
+				"PaBTSO",
+				"SCC-ARiR",
+				"TTP"
+			],
+			"reprintedAs": [
+				"重弩|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 18,
+			"value": 5000,
+			"weaponCategory": "martial",
+			"property": [
+				"A",
+				"H",
+				"LD",
+				"2H"
+			],
+			"range": "100/400",
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"crossbow": true,
+			"weapon": true,
+			"ammoType": "弩矢|phb"
+		},
+		{
+			"ENG_name": "Heavy Crossbow",
+			"name": "重弩",
+			"type": "R|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 18,
+			"value": 5000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"H|XPHB",
+				"LD|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"推离|XPHB"
+			],
+			"range": "100/400",
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"crossbow": true,
+			"weapon": true,
+			"ammoType": "弩矢|xphb",
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Hide Armor",
+			"name": "兽皮甲",
+			"type": "MA",
+			"source": "PHB",
+			"page": 144,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"WDMM"
+			],
+			"reprintedAs": [
+				"兽皮甲|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 12,
+			"value": 1000,
+			"ac": 12,
+			"armor": true,
+			"entries": [
+				"一种由厚毛皮制作的粗糙护甲。常见使用人群包括：野蛮人部落、邪恶类人生物以及其它缺少资源制作更好护甲的人。"
+			]
+		},
+		{
+			"ENG_name": "Hide Armor",
+			"name": "兽皮甲",
+			"type": "MA|XPHB",
+			"source": "XPHB",
+			"page": 219,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 12,
+			"value": 1000,
+			"ac": 12,
+			"armor": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Hooked Shortspear",
+			"name": "钩矛",
+			"type": "M",
+			"source": "OotA",
+			"page": 224,
+			"rarity": "unknown",
+			"weight": 2,
+			"weaponCategory": "martial",
+			"property": [
+				"L"
+			],
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"weapon": true,
+			"entries": [
+				"使用这种武器命中时，使用者可以作为造成伤害的代替，选择令目标应击倒地。此时目标必须进行一次力量豁免，如果失败则进入{@condition 倒地}状态。难度等级是 8 + 力量调整值 + 熟练加值。"
+			]
+		},
+		{
+			"ENG_name": "Hoopak",
+			"name": "胡帕克杖",
+			"type": "M",
+			"source": "DSotDQ",
+			"page": 188,
+			"rarity": "none",
+			"weight": 2,
+			"value": 10,
+			"weaponCategory": "martial",
+			"property": [
+				"A",
+				"F",
+				"S",
+				"2H"
+			],
+			"range": "40/160",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"weapon": true,
+			"entries": [
+				"胡帕克杖看起来是一根结实的棍子，一端被做成投石索模样，另一端被削成尖头。",
+				{
+					"ENG_name": "Special",
+					"name": "特殊",
+					"type": "entries",
+					"entries": [
+						"当你用这种武器进行近战攻击时，你忽略其弹药属性。你也可以将另一端的投石索作为一种军用远程武器使用。这样做时，你使用其弹药属性，用投石索弹丸作为弹药，并在命中时造成{@damage 1d4}钝击伤害。"
+					]
+				}
+			],
+			"ammoType": "投石索子弹|phb",
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Horn",
+			"name": "号角",
+			"type": "INS",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"TTP"
+			],
+			"reprintedAs": [
+				"号角|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"value": 300
+		},
+		{
+			"ENG_name": "Horn",
+			"name": "号角",
+			"type": "INS|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 2,
+			"value": 300,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"魅力"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"演奏一首已知曲目（{@dc 10}），或即兴创作一首歌曲（{@dc 15}）"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Hunting Rifle",
+			"name": "狩猎步枪",
+			"type": "R",
+			"source": "DMG",
+			"page": 268,
+			"reprintedAs": [
+				"狩猎步枪|XDMG"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 8,
+			"weaponCategory": "martial",
+			"age": "现代",
+			"property": [
+				"AF|DMG",
+				"RLD",
+				"2H"
+			],
+			"range": "80/240",
+			"reload": 5,
+			"dmg1": "2d10",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "现代子弹"
+		},
+		{
+			"ENG_name": "Hunting Rifle",
+			"name": "狩猎步枪",
+			"type": "R|XPHB",
+			"source": "XDMG",
+			"page": 73,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 8,
+			"valueRarity": "珍稀",
+			"weaponCategory": "martial",
+			"age": "现代",
+			"property": [
+				"AF|XDMG",
+				"RLD|XDMG",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"缓速|XPHB"
+			],
+			"range": "80/240",
+			"reload": 5,
+			"dmg1": "2d10",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "枪械子弹|xphb"
+		},
+		{
+			"ENG_name": "Javelin",
+			"name": "标枪",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"DSotDQ",
+				"GoS",
+				"IDRotF",
+				"TftYP-TSC"
+			],
+			"reprintedAs": [
+				"标枪|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"value": 50,
+			"weaponCategory": "simple",
+			"property": [
+				"T"
+			],
+			"range": "30/120",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"spear": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Javelin",
+			"name": "标枪",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 2,
+			"value": 50,
+			"weaponCategory": "simple",
+			"property": [
+				"T|XPHB"
+			],
+			"mastery": [
+				"缓速|XPHB"
+			],
+			"range": "30/120",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"spear": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Jeweler's Tools",
+			"name": "珠宝匠工具",
+			"type": "AT",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 82
+				}
+			],
+			"referenceSources": [
+				"IMR",
+				"PaBTSO",
+				"RtG"
+			],
+			"reprintedAs": [
+				"珠宝匠工具|XPHB"
+			],
+			"rarity": "none",
+			"weight": 2,
+			"value": 2500,
+			"additionalEntries": [
+				"珠宝匠工具的训练包括美化宝石所需的基本技巧。它还能让你在识别宝石方面获得专业知识。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"珠宝匠工具包括一把小锯和锤子、锉刀、钳子和镊子。"
+					]
+				},
+				{
+					"ENG_name": "Arcana",
+					"name": "奥秘",
+					"type": "entries",
+					"entries": [
+						"珠宝匠工具的熟练项赋予你关于宝石公认的神秘用途的知识。当你进行与宝石或镶嵌宝石的物品相关的{@skill 奥秘}检定时，这种洞察力会派上用场。"
+					]
+				},
+				{
+					"ENG_name": "Investigation",
+					"name": "调查",
+					"type": "entries",
+					"entries": [
+						"当你检查珠宝物品时，珠宝匠工具的熟练项可协助你从中找出可能存在的线索。"
+					]
+				},
+				{
+					"ENG_name": "Identify Gems",
+					"name": "鉴定宝石",
+					"type": "entries",
+					"entries": [
+						"你可以一眼就识别出宝石并确定它们的价值。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "珠宝匠工具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"改变宝石的外观",
+							"15"
+						],
+						[
+							"确定宝石的历史",
+							"20"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Jeweler's Tools",
+			"name": "珠宝匠工具",
+			"type": "AT|XPHB",
+			"source": "XPHB",
+			"page": 220,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-TFV"
+			],
+			"rarity": "none",
+			"weight": 2,
+			"value": 2500,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"智力"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"判断珠宝价值（{@dc 15}）"
+							]
+						},
+						{
+							"ENG_name": "Craft:",
+							"name": "制造：",
+							"type": "item",
+							"entries": [
+								"{@item 奥术法器|XPHB}, {@item 圣徽|XPHB}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Lance",
+			"name": "骑枪",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"骑枪|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 6,
+			"value": 1000,
+			"weaponCategory": "martial",
+			"property": [
+				"R",
+				"S"
+			],
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"lance": true,
+			"weapon": true,
+			"entries": [
+				{
+					"ENG_name": "Special",
+					"name": "特殊",
+					"type": "entries",
+					"entries": [
+						"使用一把骑枪攻击5尺范围内目标时具有劣势。另外，当你不在骑乘状态时一根骑枪需要两只手使用。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Lance",
+			"name": "骑枪",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 6,
+			"value": 1000,
+			"weaponCategory": "martial",
+			"property": [
+				"H|XPHB",
+				"R|XPHB",
+				{
+					"uid": "2H|XPHB",
+					"note": "unless mounted"
+				}
+			],
+			"mastery": [
+				"失衡|XPHB"
+			],
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"lance": true,
+			"weapon": true,
+			"entries": [
+				"当你没有骑乘时，长矛需要双手来挥舞。"
+			],
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Laser Pistol",
+			"name": "激光手枪",
+			"type": "R",
+			"source": "DMG",
+			"page": 268,
+			"referenceSources": [
+				"IDRotF",
+				"QftIS"
+			],
+			"reprintedAs": [
+				"激光手枪|XDMG"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"weaponCategory": "martial",
+			"age": "未来",
+			"property": [
+				"AF|DMG",
+				"RLD"
+			],
+			"range": "40/120",
+			"reload": 50,
+			"dmg1": "3d6",
+			"dmgType": "R",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "能量电池"
+		},
+		{
+			"ENG_name": "Laser Pistol",
+			"name": "激光手枪",
+			"type": "R|XPHB",
+			"source": "XDMG",
+			"page": 73,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 2,
+			"valueRarity": "极珍稀",
+			"weaponCategory": "martial",
+			"age": "未来",
+			"property": [
+				"AF|XDMG",
+				"RLD|XDMG"
+			],
+			"mastery": [
+				"侵扰|XPHB"
+			],
+			"range": "40/120",
+			"reload": 50,
+			"dmg1": "3d6",
+			"dmgType": "R",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "能量电池|xdmg"
+		},
+		{
+			"ENG_name": "Laser Rifle",
+			"name": "激光步枪",
+			"type": "R",
+			"source": "DMG",
+			"page": 268,
+			"referenceSources": [
+				"IDRotF",
+				"QftIS"
+			],
+			"reprintedAs": [
+				"激光步枪|XDMG"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 7,
+			"weaponCategory": "martial",
+			"age": "未来",
+			"property": [
+				"AF|DMG",
+				"RLD",
+				"2H"
+			],
+			"range": "100/300",
+			"reload": 30,
+			"dmg1": "3d8",
+			"dmgType": "R",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "能量电池"
+		},
+		{
+			"ENG_name": "Laser Rifle",
+			"name": "激光步枪",
+			"type": "R|XPHB",
+			"source": "XDMG",
+			"page": 73,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 7,
+			"valueRarity": "极珍稀",
+			"weaponCategory": "martial",
+			"age": "未来",
+			"property": [
+				"AF|XDMG",
+				"RLD|XDMG",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"缓速|XPHB"
+			],
+			"range": "100/300",
+			"reload": 30,
+			"dmg1": "3d8",
+			"dmgType": "R",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "能量电池|xdmg"
+		},
+		{
+			"ENG_name": "Leather Armor",
+			"name": "皮甲",
+			"type": "LA",
+			"source": "PHB",
+			"page": 144,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"DSotDQ",
+				"WDMM"
+			],
+			"reprintedAs": [
+				"皮甲|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 10,
+			"value": 1000,
+			"ac": 11,
+			"armor": true,
+			"entries": [
+				"该护甲的护胸和护肩由通过油煮硬化的皮子制成。护甲的其余部分则由更软更灵活的材料制作。"
+			]
+		},
+		{
+			"ENG_name": "Leather Armor",
+			"name": "皮甲",
+			"type": "LA|XPHB",
+			"source": "XPHB",
+			"page": 219,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 10,
+			"value": 1000,
+			"ac": 11,
+			"armor": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Leatherworker's Tools",
+			"name": "皮匠工具",
+			"type": "AT",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 82
+				}
+			],
+			"referenceSources": [
+				"KftGV",
+				"RtG",
+				"ToA"
+			],
+			"reprintedAs": [
+				"皮匠工具|XPHB"
+			],
+			"rarity": "none",
+			"weight": 5,
+			"value": 500,
+			"additionalEntries": [
+				"皮匠工具的知识延伸至关于动物毛皮及其属性的逸闻。同时也包含对皮甲及类似商品的知识。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"皮匠工具包括一把刀刃、一个小型木槌、一个修边器、一个打孔器、线和皮革碎片。"
+					]
+				},
+				{
+					"ENG_name": "Arcana",
+					"name": "奥秘",
+					"type": "entries",
+					"entries": [
+						"你在处理皮革方面的专精使你在检查由皮革制成的魔法物品（如靴子和某些斗篷）时获得额外的洞悉。"
+					]
+				},
+				{
+					"ENG_name": "Investigation",
+					"name": "调查",
+					"type": "entries",
+					"entries": [
+						"当你研究皮革制品或与之相关的线索时，你能凭借对皮革的知识发现他人会忽略的细节，从而获得额外的洞悉。"
+					]
+				},
+				{
+					"ENG_name": "Identify Hides",
+					"name": "皮革鉴定",
+					"type": "entries",
+					"entries": [
+						"当你观察一张皮或皮革制品时，你可以确定皮革的来源以及用于处理它的任何特殊技术。例如，你可以分辨出使用矮人方法制作的皮革和使用半身人方法制作的皮革之间的区别。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "皮匠工具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"改变皮革制品的外观",
+							"10"
+						],
+						[
+							"鉴定一件皮革制品的历史",
+							"20"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Leatherworker's Tools",
+			"name": "皮匠工具",
+			"type": "AT|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "none",
+			"weight": 5,
+			"value": 500,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"敏捷"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"对一个皮制品进行图案设计 ({@dc 10})"
+							]
+						},
+						{
+							"ENG_name": "Craft:",
+							"name": "制造：",
+							"type": "item",
+							"entries": [
+								"{@item 投石索|XPHB}, {@item 鞭子|XPHB}, {@item 兽皮甲|XPHB}, {@item 皮甲|XPHB}, {@item 镶钉皮甲|XPHB}, {@item 背包|XPHB}, {@item 弩矢匣|XPHB}, {@item 地图或卷轴匣|XPHB}, {@item 羊皮纸|XPHB}, {@item 小包|XPHB}, {@item 箭袋|XPHB}, {@item 水袋|XPHB}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Light Crossbow",
+			"name": "轻弩",
+			"type": "R",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CoS",
+				"GoS",
+				"IDRotF",
+				"KftGV",
+				"PaBTSO",
+				"TftYP-AtG",
+				"US"
+			],
+			"reprintedAs": [
+				"轻弩|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 5,
+			"value": 2500,
+			"weaponCategory": "simple",
+			"property": [
+				"A",
+				"LD",
+				"2H"
+			],
+			"range": "80/320",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"crossbow": true,
+			"weapon": true,
+			"ammoType": "弩矢|phb"
+		},
+		{
+			"ENG_name": "Light Crossbow",
+			"name": "轻弩",
+			"type": "R|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-DaS"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 5,
+			"value": 2500,
+			"weaponCategory": "simple",
+			"property": [
+				"A|XPHB",
+				"LD|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"缓速|XPHB"
+			],
+			"range": "80/320",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"crossbow": true,
+			"weapon": true,
+			"ammoType": "弩矢|xphb",
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Light Hammer",
+			"name": "轻锤",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"轻锤|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"value": 200,
+			"weaponCategory": "simple",
+			"property": [
+				"L",
+				"T"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"hammer": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Light Hammer",
+			"name": "轻锤",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 2,
+			"value": 200,
+			"weaponCategory": "simple",
+			"property": [
+				"L|XPHB",
+				"T|XPHB"
+			],
+			"mastery": [
+				"迅击|XPHB"
+			],
+			"range": "20/60",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"hammer": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Light Repeating Crossbow",
+			"name": "轻型连弩",
+			"type": "R",
+			"source": "OotA",
+			"page": 224,
+			"rarity": "unknown",
+			"weight": 5,
+			"weaponCategory": "simple",
+			"property": [
+				"A",
+				"2H"
+			],
+			"range": "40/160",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"crossbow": true,
+			"weapon": true,
+			"entries": [
+				"这把弩配备了一个可以装填多达六支弩箭的弹夹。发射后它会自动重新装填，直到弹夹中的弹药用尽。重新装填弹夹需要一个动作。"
+			],
+			"ammoType": "弩矢|phb"
+		},
+		{
+			"ENG_name": "Longbow",
+			"name": "长弓",
+			"type": "R",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"IDRotF",
+				"LK",
+				"TftYP-TSC",
+				"WDH"
+			],
+			"reprintedAs": [
+				"长弓|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"value": 5000,
+			"weaponCategory": "martial",
+			"property": [
+				"A",
+				"H",
+				"2H"
+			],
+			"range": "150/600",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"bow": true,
+			"weapon": true,
+			"ammoType": "箭|phb"
+		},
+		{
+			"ENG_name": "Longbow",
+			"name": "长弓",
+			"type": "R|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 2,
+			"value": 5000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"H|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"缓速|XPHB"
+			],
+			"range": "150/600",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"bow": true,
+			"weapon": true,
+			"ammoType": "箭|xphb",
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Longhorn",
+			"name": "长号角",
+			"type": "INS",
+			"source": "SCAG",
+			"page": 124,
+			"rarity": "none",
+			"entries": [
+				"一种造工精巧的费伦长笛flute。这种乐器只会出现在有能工巧匠的地区，比如某些大城市或精灵飞地里。"
+			]
+		},
+		{
+			"ENG_name": "Longsword",
+			"name": "长剑",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CM",
+				"CoS",
+				"DSotDQ",
+				"GoS",
+				"IDRotF",
+				"KftGV",
+				"LK",
+				"LoX",
+				"PaBTSO",
+				"QftIS",
+				"RMBRE",
+				"TftYP-TSC",
+				"US",
+				"VEoR",
+				"WDH",
+				"WDMM"
+			],
+			"reprintedAs": [
+				"长剑|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 3,
+			"value": 1500,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"sword": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Longsword",
+			"name": "长剑",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"HotB"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 3,
+			"value": 1500,
+			"weaponCategory": "martial",
+			"property": [
+				"V|XPHB"
+			],
+			"mastery": [
+				"削弱|XPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"dmg2": "1d10",
+			"sword": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Lute",
+			"name": "鲁特琴",
+			"type": "INS",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"DoSI",
+				"JttRC",
+				"LRDT",
+				"RtG",
+				"TftYP-ToH",
+				"ToA",
+				"TTP"
+			],
+			"reprintedAs": [
+				"鲁特琴|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"value": 3500
+		},
+		{
+			"ENG_name": "Lute",
+			"name": "鲁特琴",
+			"type": "INS|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"HotB"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 2,
+			"value": 3500,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"魅力"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"演奏一首已知曲目（{@dc 10}），或即兴创作一首歌曲（{@dc 15}）"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Lyre",
+			"name": "里拉琴",
+			"type": "INS",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"RtG",
+				"ToA",
+				"TTP"
+			],
+			"reprintedAs": [
+				"里拉琴|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"value": 3000
+		},
+		{
+			"ENG_name": "Lyre",
+			"name": "里拉琴",
+			"type": "INS|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 2,
+			"value": 3000,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"魅力"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"演奏一首已知曲目（{@dc 10}），或即兴创作一首歌曲（{@dc 15}）"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mace",
+			"name": "硬头锤",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"QftIS",
+				"VEoR"
+			],
+			"reprintedAs": [
+				"硬头锤|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 4,
+			"value": 500,
+			"weaponCategory": "simple",
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"mace": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Mace",
+			"name": "硬头锤",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 4,
+			"value": 500,
+			"weaponCategory": "simple",
+			"mastery": [
+				"削弱|XPHB"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"mace": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Mason's Tools",
+			"name": "石匠工具",
+			"type": "AT",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 83
+				}
+			],
+			"referenceSources": [
+				"CRCotN",
+				"DSotDQ",
+				"GoS",
+				"IMR",
+				"PaBTSO",
+				"RtG",
+				"SCC-ARiR",
+				"ToA"
+			],
+			"reprintedAs": [
+				"石匠工具|XPHB"
+			],
+			"rarity": "none",
+			"weight": 8,
+			"value": 1000,
+			"additionalEntries": [
+				"石匠工具允许你制作石质结构，包括由砖块制成的墙壁和建筑。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"石匠工具包括一把泥刀、一把锤子、一把凿子、几把刷子和一个角尺。"
+					]
+				},
+				{
+					"ENG_name": "History",
+					"name": "历史",
+					"type": "entries",
+					"entries": [
+						"你的专精有助于识别石质建筑的建造日期和用途，并对可能建造它的人有所洞悉。"
+					]
+				},
+				{
+					"ENG_name": "Investigation",
+					"name": "调查",
+					"type": "entries",
+					"entries": [
+						"你在检查岩石建筑内的区域时会获得额外的洞悉。"
+					]
+				},
+				{
+					"ENG_name": "Perception",
+					"name": "察觉",
+					"type": "entries",
+					"entries": [
+						"你可以发现石墙或地板上的不规则性，这使得发现陷阱门和秘密通道变得更容易。"
+					]
+				},
+				{
+					"ENG_name": "Demolition",
+					"name": "拆迁",
+					"type": "entries",
+					"entries": [
+						"你对石匠工艺的知识使你能够发现砖墙的薄弱点。你用武器攻击对这类建筑造成双倍伤害。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "石匠工具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"在石墙上凿一个小洞",
+							"10"
+						],
+						[
+							"在石墙上找到一个弱点",
+							"15"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Mason's Tools",
+			"name": "石匠工具",
+			"type": "AT|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-TDoN",
+				"DrDe-TFV"
+			],
+			"rarity": "none",
+			"weight": 8,
+			"value": 1000,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"力量"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"在石头上凿出一个符号标志或一个洞（{@dc 10}）"
+							]
+						},
+						{
+							"ENG_name": "Craft:",
+							"name": "制造：",
+							"type": "item",
+							"entries": [
+								"{@item 滑轮组|XPHB}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Maul",
+			"name": "巨锤",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"RMBRE",
+				"SCC-ARiR"
+			],
+			"reprintedAs": [
+				"巨锤|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 10,
+			"value": 1000,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"2H"
+			],
+			"dmg1": "2d6",
+			"dmgType": "B",
+			"hammer": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Maul",
+			"name": "巨锤",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"HotB"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 10,
+			"value": 1000,
+			"weaponCategory": "martial",
+			"property": [
+				"H|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"失衡|XPHB"
+			],
+			"dmg1": "2d6",
+			"dmgType": "B",
+			"hammer": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Modern Bullet",
+			"name": "现代子弹",
+			"type": "AF|DMG",
+			"source": "DMG",
+			"page": 268,
+			"referenceSources": [
+				"WDMM"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 0.1,
+			"age": "现代",
+			"bulletFirearm": true,
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
+			"ENG_name": "Modern Bullets (10)",
+			"name": "现代子弹(10)",
+			"type": "AF|DMG",
+			"source": "DMG",
+			"page": 268,
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 1,
+			"age": "现代",
+			"bulletFirearm": true,
+			"packContents": [
+				{
+					"item": "现代子弹",
+					"quantity": 10
+				}
+			],
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
+			"ENG_name": "Morningstar",
+			"name": "钉头锤",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CoS",
+				"GoS",
+				"PaBTSO"
+			],
+			"reprintedAs": [
+				"钉头锤|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 4,
+			"value": 1500,
+			"weaponCategory": "martial",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"mace": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Morningstar",
+			"name": "钉头锤",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 4,
+			"value": 1500,
+			"weaponCategory": "martial",
+			"mastery": [
+				"削弱|XPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"mace": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Musket",
+			"name": "滑膛枪",
+			"type": "R",
+			"source": "DMG",
+			"page": 268,
+			"referenceSources": [
+				"CoS",
+				"LoX"
+			],
+			"reprintedAs": [
+				"滑膛枪|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 10,
+			"value": 50000,
+			"weaponCategory": "martial",
+			"age": "文艺复兴",
+			"property": [
+				"AF|DMG",
+				"LD",
+				"2H"
+			],
+			"range": "40/120",
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "文艺复兴子弹"
+		},
+		{
+			"ENG_name": "Musket",
+			"name": "滑膛枪",
+			"type": "R|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 10,
+			"value": 50000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"LD|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"缓速|XPHB"
+			],
+			"range": "40/120",
+			"dmg1": "1d12",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "枪械子弹|xphb",
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Needle",
+			"name": "针",
+			"type": "A|XPHB",
+			"source": "XPHB",
+			"page": 222,
+			"srd52": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 0.02,
+			"value": 2,
+			"needleBlowgun": true,
+			"entries": [
+				"吹箭针是与具有弹药属性的武器一起使用的，用于进行远程攻击。每次你用武器攻击时，都会消耗一枚弹药。从箭袋、盒子或其他容器中取出弹药是攻击的一部分（你需要一个空闲的手来装填单手武器）。战斗结束后，你可以花一分钟在战场上搜寻，回收你消耗的一半弹药。",
+				"针通常存放在{@item 小包|XPHB} 中（需单独购买）。"
+			]
+		},
+		{
+			"ENG_name": "Needles (50)",
+			"name": "吹矢（50）",
+			"type": "A|XPHB",
+			"source": "XPHB",
+			"page": 222,
+			"srd52": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 1,
+			"value": 100,
+			"needleBlowgun": true,
+			"entries": [
+				"吹箭针是与具有弹药属性的武器一起使用的，用于进行远程攻击。每次你用武器攻击时，都会消耗一枚弹药。从箭袋、盒子或其他容器中取出弹药是攻击的一部分（你需要一个空闲的手来装填单手武器）。战斗结束后，你可以花一分钟在战场上搜寻，回收你消耗的一半弹药。",
+				"针通常存放在{@item 小包|XPHB} 中（需单独购买）。"
+			],
+			"packContents": [
+				{
+					"item": "针|xphb",
+					"quantity": 50
+				}
+			]
+		},
+		{
+			"ENG_name": "Net",
+			"name": "捕网",
+			"type": "R",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"ToA",
+				"TTP"
+			],
+			"reprintedAs": [
+				{
+					"uid": "捕网|XPHB",
+					"tag": "item"
+				}
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 3,
+			"value": 100,
+			"weaponCategory": "martial",
+			"property": [
+				"S",
+				"T"
+			],
+			"range": "5/15",
+			"net": true,
+			"weapon": true,
+			"entries": [
+				{
+					"ENG_name": "Special",
+					"name": "特殊",
+					"type": "entries",
+					"entries": [
+						"一只被捕网命中的大型或更小体型生物将被{@condition 束缚}，束缚状态持续至该生物解脱。捕网不能影响无形体生物，以及巨型或更大体型的生物。一个生物可以用动作进行一次{@dc 10}的力量检定，以解脱自己或其触及范围内另一生物的束缚状态。对网造成5点挥砍伤害（AC 10）同样可以解脱生物的束缚状态而不伤害及生物本身，并以此摧毁捕网进而终止束缚效应。当用捕网以一个动作、附赠动作或反应进行攻击时，你只能攻击一次，而不论你正常情况下可发动攻击的次数。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Orb",
+			"name": "法球",
+			"type": "SCF",
+			"group": [
+				"奥术法器"
+			],
+			"source": "PHB",
+			"page": 151,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CoS"
+			],
+			"reprintedAs": [
+				"法球|XPHB"
+			],
+			"edition": "classic",
+			"scfType": "arcane",
+			"rarity": "none",
+			"weight": 3,
+			"value": 2000
+		},
+		{
+			"ENG_name": "Orb",
+			"name": "法球",
+			"type": "SCF|XPHB",
+			"group": [
+				"奥术法器"
+			],
+			"source": "XPHB",
+			"page": 224,
+			"srd52": true,
+			"edition": "one",
+			"scfType": "arcane",
+			"rarity": "none",
+			"weight": 3,
+			"value": 2000
+		},
+		{
+			"ENG_name": "Padded Armor",
+			"name": "布甲",
+			"type": "LA",
+			"source": "PHB",
+			"page": 144,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"布甲|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 8,
+			"value": 500,
+			"ac": 11,
+			"armor": true,
+			"stealth": true,
+			"entries": [
+				"布甲由数层布料与棉料的衬里构成。"
+			]
+		},
+		{
+			"ENG_name": "Padded Armor",
+			"name": "布甲",
+			"type": "LA|XPHB",
+			"source": "XPHB",
+			"page": 219,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 8,
+			"value": 500,
+			"ac": 11,
+			"armor": true,
+			"stealth": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Painter's Supplies",
+			"name": "画家工具",
+			"type": "AT",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 83
+				}
+			],
+			"referenceSources": [
+				"SCC-HfMT"
+			],
+			"reprintedAs": [
+				"画家工具|XPHB"
+			],
+			"rarity": "none",
+			"weight": 5,
+			"value": 1000,
+			"additionalEntries": [
+				"画家工具的熟练项代表你绘画和绘图的能力。你还获得了对艺术史的理解，这可以协助你检查艺术品。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"画家工具包括一个画架、画布、颜料、画笔、炭条和一个调色板。"
+					]
+				},
+				{
+					"ENG_name": "Arcana, History, Religion",
+					"name": "奥秘、历史、宗教",
+					"type": "entries",
+					"entries": [
+						"你的专业知识可以帮助你揭示与艺术作品相关的任何类型的传说，例如一幅画的魔法属性或在地下城中发现的奇怪壁画的起源。"
+					]
+				},
+				{
+					"ENG_name": "Investigation, Perception",
+					"name": "调查、察觉",
+					"type": "entries",
+					"entries": [
+						"当你检查一幅画或类似的视觉艺术作品时，你对创作背后的实践知识可以给你提供额外的洞察。"
+					]
+				},
+				{
+					"ENG_name": "Painting and Drawing",
+					"name": "作画",
+					"type": "entries",
+					"entries": [
+						"作为短休或长休的一部分，你可以创作一件简单的艺术作品。尽管你的作品可能缺乏精确度，但你可以捕捉到一个图像或场景，或者快速复制你看到的一件艺术品。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "画家工具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"绘制一幅准确的肖像",
+							"10"
+						],
+						[
+							"创作一幅含有隐藏信息的画作",
+							"20"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Painter's Supplies",
+			"name": "画家工具",
+			"type": "AT|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-TDoN"
+			],
+			"rarity": "none",
+			"weight": 5,
+			"value": 1000,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"感知"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"画出你所见过的某个事物的可辨图像（{@dc 10}）"
+							]
+						},
+						{
+							"ENG_name": "Craft:",
+							"name": "制造：",
+							"type": "item",
+							"entries": [
+								"{@item 德鲁伊法器|XPHB}, {@item 圣徽|XPHB}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Pan Flute",
+			"name": "排箫",
+			"type": "INS",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"排箫|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"value": 1200
+		},
+		{
+			"ENG_name": "Pan Flute",
+			"name": "排箫",
+			"type": "INS|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 2,
+			"value": 1200,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"魅力"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"演奏一首已知曲目（{@dc 10}），或即兴创作一首歌曲（{@dc 15}）"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Pike",
+			"name": "长矛",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"IDRotF",
+				"KftGV"
+			],
+			"reprintedAs": [
+				"长矛|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 18,
+			"value": 500,
+			"weaponCategory": "martial",
+			"property": [
+				"H",
+				"R",
+				"2H"
+			],
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"weapon": true
+		},
+		{
+			"ENG_name": "Pike",
+			"name": "长矛",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 18,
+			"value": 500,
+			"weaponCategory": "martial",
+			"property": [
+				"H|XPHB",
+				"R|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"推离|XPHB"
+			],
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Pistol",
+			"name": "手枪",
+			"type": "R",
+			"source": "DMG",
+			"page": 268,
+			"referenceSources": [
+				"HoL",
+				"LoX"
+			],
+			"reprintedAs": [
+				"手枪|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 3,
+			"value": 25000,
+			"weaponCategory": "martial",
+			"age": "文艺复兴",
+			"property": [
+				"AF|DMG",
+				"LD"
+			],
+			"range": "30/90",
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "文艺复兴子弹"
+		},
+		{
+			"ENG_name": "Pistol",
+			"name": "手枪",
+			"type": "R|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 3,
+			"value": 25000,
+			"weaponCategory": "martial",
+			"property": [
+				"A|XPHB",
+				"LD|XPHB"
+			],
+			"mastery": [
+				"侵扰|XPHB"
+			],
+			"range": "30/90",
+			"dmg1": "1d10",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "枪械子弹|xphb",
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Plate Armor",
+			"name": "板甲",
+			"type": "HA",
+			"source": "PHB",
+			"page": 145,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"BGDIA",
+				"GoS",
+				"PaBTSO",
+				"QftIS",
+				"TftYP-AtG",
+				"US"
+			],
+			"reprintedAs": [
+				"板甲|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 65,
+			"value": 150000,
+			"ac": 18,
+			"strength": "15",
+			"armor": true,
+			"stealth": true,
+			"entries": [
+				"板甲由覆盖全身，且相互连接的模铸金属板组成。一套板甲包括护手、重皮靴、一顶附面甲的头盔以及在护甲底层的厚重的布甲。其锁扣和皮带结构可以将护甲重量分配到身体各处。"
+			]
+		},
+		{
+			"ENG_name": "Plate Armor",
+			"name": "板甲",
+			"type": "HA|XPHB",
+			"source": "XPHB",
+			"page": 219,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 65,
+			"value": 150000,
+			"ac": 18,
+			"strength": "15",
+			"armor": true,
+			"stealth": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Potter's Tools",
+			"name": "陶匠工具",
+			"type": "AT",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 84
+				}
+			],
+			"reprintedAs": [
+				"陶匠工具|XPHB"
+			],
+			"rarity": "none",
+			"weight": 3,
+			"value": 1000,
+			"additionalEntries": [
+				"陶匠工具用于制作各种陶瓷物品，最常见的是罐子和类似容器。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"陶匠工具包括陶针、肋骨刮刀、刮片、刀刃和卡尺。"
+					]
+				},
+				{
+					"ENG_name": "History",
+					"name": "历史",
+					"type": "entries",
+					"entries": [
+						"你的专业知识可以帮助你鉴定陶瓷物品，包括它们的制造时间和可能的产地或文化起源。"
+					]
+				},
+				{
+					"ENG_name": "Investigation, Perception",
+					"name": "调查、察觉",
+					"type": "entries",
+					"entries": [
+						"你在检查陶瓷制品时获得额外洞悉，能通过发现细微的不规则之处来发现他人会忽略的线索。"
+					]
+				},
+				{
+					"ENG_name": "Reconstruction",
+					"name": "再生",
+					"type": "entries",
+					"entries": [
+						"通过检查陶器碎片，你可以确定一个物体的原始完整形态及其可能的用途。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "陶匠工具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"确定容器曾经装过什么",
+							"10"
+						],
+						[
+							"制作一个可用的罐子",
+							"15"
+						],
+						[
+							"在陶瓷物件上找到一个弱点",
+							"20"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Potter's Tools",
+			"name": "陶匠工具",
+			"type": "AT|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-TDoN"
+			],
+			"rarity": "none",
+			"weight": 3,
+			"value": 1000,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"智力"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"判断一个陶瓷物件在过去 24 小时内盛过什么内容物（{@dc 15}）"
+							]
+						},
+						{
+							"ENG_name": "Craft:",
+							"name": "制造：",
+							"type": "item",
+							"entries": [
+								"{@item 壶|XPHB}, {@item 油灯|XPHB}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Quarterstaff",
+			"name": "长棍",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CM",
+				"PaBTSO",
+				"TTP",
+				"WDH"
+			],
+			"reprintedAs": [
+				"长棍|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 4,
+			"value": 20,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"weapon": true
+		},
+		{
+			"ENG_name": "Quarterstaff",
+			"name": "长棍",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 4,
+			"value": 20,
+			"weaponCategory": "simple",
+			"property": [
+				"V|XPHB"
+			],
+			"mastery": [
+				"失衡|XPHB"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Rapier",
+			"name": "刺剑",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CM",
+				"CoS",
+				"DitLCoT",
+				"QftIS",
+				"US"
+			],
+			"reprintedAs": [
+				"刺剑|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"value": 2500,
+			"weaponCategory": "martial",
+			"property": [
+				"F"
+			],
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"rapier": true,
+			"sword": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Rapier",
+			"name": "刺剑",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"HotB"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 2,
+			"value": 2500,
+			"weaponCategory": "martial",
+			"property": [
+				"F|XPHB"
+			],
+			"mastery": [
+				"侵扰|XPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"rapier": true,
+			"sword": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Renaissance Bullet",
+			"name": "文艺复兴子弹",
+			"type": "AF|DMG",
+			"source": "DMG",
+			"page": 268,
+			"reprintedAs": [
+				"枪械子弹|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 0.2,
+			"value": 30,
+			"age": "文艺复兴",
+			"bulletFirearm": true,
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
+			"ENG_name": "Renaissance Bullets (10)",
+			"name": "文艺复兴子弹(10)",
+			"type": "AF|DMG",
+			"source": "DMG",
+			"page": 268,
+			"reprintedAs": [
+				"枪械子弹 (10)|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"value": 300,
+			"age": "文艺复兴",
+			"bulletFirearm": true,
+			"packContents": [
+				{
+					"item": "文艺复兴子弹",
+					"quantity": 10
+				}
+			],
+			"miscTags": [
+				"CNS"
+			]
+		},
+		{
+			"ENG_name": "Revolver",
+			"name": "左轮枪",
+			"type": "R",
+			"source": "DMG",
+			"page": 268,
+			"referenceSources": [
+				"WDMM"
+			],
+			"reprintedAs": [
+				"左轮枪|XDMG"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 3,
+			"weaponCategory": "martial",
+			"age": "现代",
+			"property": [
+				"AF|DMG",
+				"RLD"
+			],
+			"range": "40/120",
+			"reload": 6,
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "现代子弹"
+		},
+		{
+			"ENG_name": "Revolver",
+			"name": "左轮枪",
+			"type": "R|XPHB",
+			"source": "XDMG",
+			"page": 73,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 3,
+			"valueRarity": "珍稀",
+			"weaponCategory": "martial",
+			"age": "现代",
+			"property": [
+				"AF|XDMG",
+				"RLD|XDMG"
+			],
+			"mastery": [
+				"削弱|XPHB"
+			],
+			"range": "40/120",
+			"reload": 6,
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "枪械子弹|xphb"
+		},
+		{
+			"ENG_name": "Ring Mail",
+			"name": "环甲",
+			"type": "HA",
+			"source": "PHB",
+			"page": 145,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"HoL"
+			],
+			"reprintedAs": [
+				"环甲|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 40,
+			"value": 3000,
+			"ac": 14,
+			"armor": true,
+			"stealth": true,
+			"entries": [
+				"该护甲是将重金属环扣缝进内层的特殊皮甲。金属环可以加强护甲对剑斧挥击的抵抗力。环甲比链甲低一级，而通常只被那些无力支付更好护甲的人所使用。"
+			]
+		},
+		{
+			"ENG_name": "Ring Mail",
+			"name": "环甲",
+			"type": "HA|XPHB",
+			"source": "XPHB",
+			"page": 219,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 40,
+			"value": 3000,
+			"ac": 14,
+			"armor": true,
+			"stealth": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Rod",
+			"name": "权杖",
+			"type": "SCF",
+			"group": [
+				"奥术法器"
+			],
+			"source": "PHB",
+			"page": 151,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"权杖|XPHB"
+			],
+			"edition": "classic",
+			"scfType": "arcane",
+			"rarity": "none",
+			"weight": 2,
+			"value": 1000
+		},
+		{
+			"ENG_name": "Rod",
+			"name": "权杖",
+			"type": "SCF|XPHB",
+			"group": [
+				"奥术法器"
+			],
+			"source": "XPHB",
+			"page": 224,
+			"srd52": true,
+			"edition": "one",
+			"scfType": "arcane",
+			"rarity": "none",
+			"weight": 2,
+			"value": 1000
+		},
+		{
+			"ENG_name": "Scale Mail",
+			"name": "鳞甲",
+			"type": "MA",
+			"source": "PHB",
+			"page": 144,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CM",
+				"DSotDQ",
+				"TftYP-TFoF",
+				"TTP"
+			],
+			"reprintedAs": [
+				"鳞甲|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 45,
+			"value": 5000,
+			"ac": 14,
+			"armor": true,
+			"stealth": true,
+			"entries": [
+				"该护甲由一件皮外套和护胫（可能附有护裙）组合而成，其防护部分由相叠的铁片覆盖，结构有如鱼的鳞片。此护甲同时还附有护手。"
+			]
+		},
+		{
+			"ENG_name": "Scale Mail",
+			"name": "鳞甲",
+			"type": "MA|XPHB",
+			"source": "XPHB",
+			"page": 219,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"FFotR"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 45,
+			"value": 5000,
+			"ac": 14,
+			"armor": true,
+			"stealth": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Scimitar",
+			"name": "弯刀",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"KftGV",
+				"RMBRE",
+				"TftYP-TSC"
+			],
+			"reprintedAs": [
+				"弯刀|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 3,
+			"value": 2500,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"L"
+			],
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"sword": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Scimitar",
+			"name": "弯刀",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-DaS"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 3,
+			"value": 2500,
+			"weaponCategory": "martial",
+			"property": [
+				"F|XPHB",
+				"L|XPHB"
+			],
+			"mastery": [
+				"迅击|XPHB"
+			],
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"sword": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Semiautomatic Pistol",
+			"name": "半自动手枪",
+			"type": "R|XPHB",
+			"source": "XDMG",
+			"page": 73,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 3,
+			"valueRarity": "珍稀",
+			"weaponCategory": "martial",
+			"age": "现代",
+			"property": [
+				"AF|XDMG",
+				"RLD|XDMG"
+			],
+			"mastery": [
+				"侵扰|XPHB"
+			],
+			"range": "50/150",
+			"reload": 15,
+			"dmg1": "2d6",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "枪械子弹|xphb"
+		},
+		{
+			"ENG_name": "Shawm",
+			"name": "芦笛",
+			"type": "INS",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"芦笛|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 1,
+			"value": 200
+		},
+		{
+			"ENG_name": "Shawm",
+			"name": "芦笛",
+			"type": "INS",
+			"source": "SCAG",
+			"page": 124,
+			"reprintedAs": [
+				"芦笛|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"entries": [
+				"一种类似双簧管oboe或低音管bassoon的双簧管乐器。这种乐器非常受侏儒欢迎，他们还为其开发了一些用风箱驱动的设计。"
+			]
+		},
+		{
+			"ENG_name": "Shawm",
+			"name": "芦笛",
+			"type": "INS|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 1,
+			"value": 200,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"魅力"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"演奏一首已知曲目（{@dc 10}），或即兴创作一首歌曲（{@dc 15}）"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Shield",
+			"name": "盾牌",
+			"type": "S",
+			"source": "PHB",
+			"page": 144,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"BGDIA",
+				"CRCotN",
+				"GoS",
+				"QftIS",
+				"TftYP-AtG",
+				"TftYP-TSC",
+				"TTP",
+				"US",
+				"VEoR",
+				"WBtW",
+				"WDH"
+			],
+			"reprintedAs": [
+				"盾牌|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 6,
+			"value": 1000,
+			"ac": 2,
+			"entries": [
+				"盾牌由木材或金属制成，单手携带。使用盾牌可以增加2点护甲等级（AC）。你一次只能从一面盾牌中获益。"
+			]
+		},
+		{
+			"ENG_name": "Shield",
+			"name": "盾牌",
+			"type": "S|XPHB",
+			"source": "XPHB",
+			"page": 219,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-TFV",
+				"HotB"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 6,
+			"value": 1000,
+			"ac": 2,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shortbow",
+			"name": "短弓",
+			"type": "R",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CRCotN",
+				"TftYP-TSC"
+			],
+			"reprintedAs": [
+				"短弓|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"value": 2500,
+			"weaponCategory": "simple",
+			"property": [
+				"A",
+				"2H"
+			],
+			"range": "80/320",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"bow": true,
+			"weapon": true,
+			"ammoType": "箭|phb"
+		},
+		{
+			"ENG_name": "Shortbow",
+			"name": "短弓",
+			"type": "R|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-TWoO"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 2,
+			"value": 2500,
+			"weaponCategory": "simple",
+			"property": [
+				"A|XPHB",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"侵扰|XPHB"
+			],
+			"range": "80/320",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"bow": true,
+			"weapon": true,
+			"ammoType": "箭|xphb",
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shortsword",
+			"name": "短剑",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CM",
+				"CoS",
+				"IDRotF",
+				"KftGV",
+				"PaBTSO",
+				"US",
+				"VEoR",
+				"WDMM"
+			],
+			"reprintedAs": [
+				"短剑|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"value": 1000,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"L"
+			],
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"sword": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Shortsword",
+			"name": "短剑",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-SD",
+				"DrDe-TWoO"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 2,
+			"value": 1000,
+			"weaponCategory": "martial",
+			"property": [
+				"F|XPHB",
+				"L|XPHB"
+			],
+			"mastery": [
+				"侵扰|XPHB"
+			],
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"sword": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shotgun",
+			"name": "霰弹枪",
+			"type": "R",
+			"source": "DMG",
+			"page": 268,
+			"reprintedAs": [
+				"霰弹枪|XDMG"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 7,
+			"weaponCategory": "martial",
+			"age": "现代",
+			"property": [
+				"AF|DMG",
+				"RLD",
+				"2H"
+			],
+			"range": "30/90",
+			"reload": 2,
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "现代子弹"
+		},
+		{
+			"ENG_name": "Shotgun",
+			"name": "霰弹枪",
+			"type": "R|XPHB",
+			"source": "XDMG",
+			"page": 73,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 7,
+			"valueRarity": "珍稀",
+			"weaponCategory": "martial",
+			"age": "现代",
+			"property": [
+				"AF|XDMG",
+				"RLD|XDMG",
+				"2H|XPHB"
+			],
+			"mastery": [
+				"推离|XPHB"
+			],
+			"range": "30/90",
+			"reload": 2,
+			"dmg1": "2d8",
+			"dmgType": "P",
+			"firearm": true,
+			"weapon": true,
+			"ammoType": "枪械子弹|xphb"
+		},
+		{
+			"ENG_name": "Sickle",
+			"name": "镰刀",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"镰刀|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"value": 100,
+			"weaponCategory": "simple",
+			"property": [
+				"L"
+			],
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"weapon": true
+		},
+		{
+			"ENG_name": "Sickle",
+			"name": "镰刀",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 2,
+			"value": 100,
+			"weaponCategory": "simple",
+			"property": [
+				"L|XPHB"
+			],
+			"mastery": [
+				"迅击|XPHB"
+			],
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Sling",
+			"name": "投石索",
+			"type": "R",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"投石索|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"value": 10,
+			"weaponCategory": "simple",
+			"property": [
+				"A"
+			],
+			"range": "30/120",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"weapon": true,
+			"ammoType": "投石索子弹|phb"
+		},
+		{
+			"ENG_name": "Sling",
+			"name": "投石索",
+			"type": "R|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"value": 10,
+			"weaponCategory": "simple",
+			"property": [
+				"A|XPHB"
+			],
+			"mastery": [
+				"缓速|XPHB"
+			],
+			"range": "30/120",
+			"dmg1": "1d4",
+			"dmgType": "B",
+			"weapon": true,
+			"ammoType": "投石索子弹|xphb",
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Sling Bullet",
+			"name": "投石索子弹",
+			"type": "A",
+			"source": "PHB",
+			"page": 150,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"DoSI",
+				"IDRotF"
+			],
+			"reprintedAs": [
+				"投石索子弹|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 0.075,
+			"value": 0.2,
+			"bulletSling": true
+		},
+		{
+			"ENG_name": "Sling Bullet",
+			"name": "投石索子弹",
+			"type": "A|XPHB",
+			"source": "XPHB",
+			"page": 222,
+			"srd52": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 0.075,
+			"value": 0.2,
+			"bulletSling": true,
+			"entries": [
+				"投石索子弹是与具有弹药属性的武器一起使用的，用于进行远程攻击。每次你用武器攻击时，都会消耗一枚弹药。从箭袋、盒子或其他容器中取出弹药是攻击的一部分（你需要一个空闲的手来装填单手武器）。战斗结束后，你可以花一分钟在战场上搜寻，回收你消耗的一半弹药。",
+				"投石索子弹通常存放在{@item 小包|XPHB} 中（需单独购买）。"
+			]
+		},
+		{
+			"ENG_name": "Sling Bullets (20)",
+			"name": "投石索子弹(20)",
+			"type": "A",
+			"source": "PHB",
+			"page": 150,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"投石索子弹(20)|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 1.5,
+			"value": 4,
+			"bulletSling": true,
+			"packContents": [
+				{
+					"item": "投石索子弹|phb",
+					"quantity": 20
+				}
+			]
+		},
+		{
+			"ENG_name": "Sling Bullets (20)",
+			"name": "投石索子弹(20)",
+			"type": "A|XPHB",
+			"source": "XPHB",
+			"page": 222,
+			"srd52": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 1.5,
+			"value": 4,
+			"bulletSling": true,
+			"entries": [
+				"投石索子弹是与具有弹药属性的武器一起使用的，用于进行远程攻击。每次你用武器攻击时，都会消耗一枚弹药。从箭袋、盒子或其他容器中取出弹药是攻击的一部分（你需要一个空闲的手来装填单手武器）。战斗结束后，你可以花一分钟在战场上搜寻，回收你消耗的一半弹药。",
+				"投石索子弹通常存放在{@item 小包|XPHB} 中（需单独购买）。"
+			],
+			"packContents": [
+				{
+					"item": "投石索子弹|xphb",
+					"quantity": 20
+				}
+			]
+		},
+		{
+			"ENG_name": "Smith's Tools",
+			"name": "铁匠工具",
+			"type": "AT",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 84
+				}
+			],
+			"referenceSources": [
+				"BGDIA",
+				"CM",
+				"IDRotF",
+				"KftGV",
+				"QftIS",
+				"ToA",
+				"TTP",
+				"WDH"
+			],
+			"reprintedAs": [
+				"铁匠工具|XPHB"
+			],
+			"rarity": "none",
+			"weight": 8,
+			"value": 2000,
+			"additionalEntries": [
+				"铁匠工具允许你加工金属，将其加热以改变形状、修补损伤或将原始锭材加工成有用的物品。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"铁匠工具包括锤子、钳子、木炭、碎布和一块磨刀石。"
+					]
+				},
+				{
+					"ENG_name": "Arcana and History",
+					"name": "奥秘、历史",
+					"type": "entries",
+					"entries": [
+						"你的专精使你在检视金属物件（例如武器）时获得额外洞悉。"
+					]
+				},
+				{
+					"ENG_name": "Investigation",
+					"name": "调查",
+					"type": "entries",
+					"entries": [
+						"当调查涉及护甲、武器或其他金属制品时，你能发现他人可能忽略的线索并进行推断。"
+					]
+				},
+				{
+					"ENG_name": "Repair",
+					"name": "修复",
+					"type": "entries",
+					"entries": [
+						"在拥有工具和足以使金属变软的明火的情况下，你每小时的工作可以为一个受损的金属物件恢复10点生命值。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "铁匠工具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"磨利一把钝刀",
+							"10"
+						],
+						[
+							"修复一套护甲",
+							"15"
+						],
+						[
+							"破坏一个非魔法金属物品",
+							"15"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Smith's Tools",
+			"name": "铁匠工具",
+			"type": "AT|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "none",
+			"weight": 8,
+			"value": 2000,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"力量"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"撬开一扇门或容器（{@dc 20}）"
+							]
+						},
+						{
+							"ENG_name": "Craft:",
+							"name": "制造：",
+							"type": "item",
+							"entries": [
+								"任意近战武器（除了{@item 短棒|XPHB}，{@item 巨棒|XPHB}，{@item 长棍|XPHB}和{@item 鞭子|XPHB}）、中甲（除了{@item 兽皮甲|XPHB|兽皮甲}）、重甲、{@item 滚珠|XPHB}、{@item 吊桶|XPHB}、{@item 铁蒺藜|XPHB}、{@item 链条|XPHB}、{@item 撬棍|XPHB}、{@item 枪械子弹 (10)|XPHB|枪械子弹}、{@item 爪钩|XPHB}、{@item 铁壶|XPHB}、{@item 铁钉(组)|XPHB}、{@item 投石索子弹(20)|XPHB|投石索子弹}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Songhorn",
+			"name": "歌唱号角",
+			"type": "INS",
+			"source": "SCAG",
+			"page": 124,
+			"rarity": "none",
+			"entries": [
+				"一种设计简单的长笛flute型竖笛recorder，通常是用木头雕刻而成。"
+			]
+		},
+		{
+			"ENG_name": "Spear",
+			"name": "矛",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CRCotN",
+				"DSotDQ",
+				"GoS",
+				"LK",
+				"PaBTSO",
+				"QftIS",
+				"SCC-ARiR",
+				"TftYP-AtG",
+				"TftYP-TSC",
+				"US"
+			],
+			"reprintedAs": [
+				"矛|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 3,
+			"value": 100,
+			"weaponCategory": "simple",
+			"property": [
+				"T",
+				"V"
+			],
+			"range": "20/60",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"dmg2": "1d8",
+			"spear": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Spear",
+			"name": "矛",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"HotB"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 3,
+			"value": 100,
+			"weaponCategory": "simple",
+			"property": [
+				"T|XPHB",
+				"V|XPHB"
+			],
+			"mastery": [
+				"削弱|XPHB"
+			],
+			"range": "20/60",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"dmg2": "1d8",
+			"spear": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Spiked Armor",
+			"name": "钉刺甲",
+			"type": "MA",
+			"source": "SCAG",
+			"page": 121,
+			"rarity": "unknown",
+			"weight": 45,
+			"value": 7500,
+			"ac": 14,
+			"armor": true,
+			"stealth": true,
+			"entries": [
+				"钉刺甲是一种罕见的中甲，它们出自矮人之手。它的造型看上去像是覆盖了金属尖刺的皮革外套和护腿。"
+			]
+		},
+		{
+			"ENG_name": "Splint Armor",
+			"name": "板条甲",
+			"type": "HA",
+			"source": "PHB",
+			"page": 145,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"SCC-ARiR",
+				"TftYP-AtG",
+				"TftYP-TSC",
+				"VEoR"
+			],
+			"reprintedAs": [
+				"板条甲|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 60,
+			"value": 20000,
+			"ac": 17,
+			"strength": "15",
+			"armor": true,
+			"stealth": true,
+			"entries": [
+				"该护甲主要由铆接着竖直金属窄条的皮革内里组成，其整体覆盖在布料衣物外，而关节部位则由灵活的链甲部件提供保护。"
+			]
+		},
+		{
+			"ENG_name": "Splint Armor",
+			"name": "板条甲",
+			"type": "HA|XPHB",
+			"source": "XPHB",
+			"page": 219,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"HotB"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 60,
+			"value": 20000,
+			"ac": 17,
+			"strength": "15",
+			"armor": true,
+			"stealth": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Staff",
+			"name": "法杖",
+			"type": "SCF",
+			"group": [
+				"奥术法器"
+			],
+			"source": "PHB",
+			"page": 151,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"法杖|XPHB"
+			],
+			"edition": "classic",
+			"scfType": "arcane",
+			"rarity": "none",
+			"weight": 4,
+			"value": 500,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"staff": true
+		},
+		{
+			"ENG_name": "Staff",
+			"name": "法杖",
+			"type": "SCF|XPHB",
+			"group": [
+				"奥术法器"
+			],
+			"source": "XPHB",
+			"page": 224,
+			"srd52": true,
+			"edition": "one",
+			"scfType": "arcane",
+			"rarity": "none",
+			"weight": 4,
+			"value": 500,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"mastery": [
+				"失衡|XPHB"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8",
+			"staff": true
+		},
+		{
+			"ENG_name": "Studded Leather Armor",
+			"name": "镶钉皮甲",
+			"type": "LA",
+			"source": "PHB",
+			"page": 144,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"BGDIA",
+				"CM",
+				"GoS",
+				"JttRC",
+				"LMoP",
+				"TftYP-TSC",
+				"ToA"
+			],
+			"reprintedAs": [
+				"镶钉皮甲|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 13,
+			"value": 4500,
+			"ac": 12,
+			"armor": true,
+			"entries": [
+				"该护甲由坚固而柔韧的皮革制成，其表面由紧密的铆钉和尖刺进行加固。"
+			]
+		},
+		{
+			"ENG_name": "Studded Leather Armor",
+			"name": "镶钉皮甲",
+			"type": "LA|XPHB",
+			"source": "XPHB",
+			"page": 219,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"HotB"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 13,
+			"value": 4500,
+			"ac": 12,
+			"armor": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Tantan",
+			"name": "镗镗",
+			"type": "INS",
+			"source": "SCAG",
+			"page": 124,
+			"rarity": "none",
+			"entries": [
+				"一种铃鼓，谷地Dalelands南部的半身人和人类非常流行这种乐器。"
+			]
+		},
+		{
+			"ENG_name": "Thelarr",
+			"name": "斯拉尔管",
+			"type": "INS",
+			"alias": [
+				"哨管"
+			],
+			"source": "SCAG",
+			"page": 124,
+			"rarity": "none",
+			"entries": [
+				"也被称为哨管whistlecane，其结构简单容易制作，是一种用簧管切削成的管风乐器。事实上，老练的吟游诗人经常会将这种乐器送给孩子，进而让其父母感到高兴又或是懊恼。"
+			]
+		},
+		{
+			"ENG_name": "Tinker's Tools",
+			"name": "修补工具",
+			"type": "AT",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 84
+				}
+			],
+			"referenceSources": [
+				"BGDIA",
+				"IDRotF",
+				"IMR",
+				"KftGV",
+				"OoW",
+				"PaBTSO",
+				"QftIS",
+				"RtG",
+				"TTP",
+				"VEoR",
+				"WDMM"
+			],
+			"reprintedAs": [
+				"修补工具|XPHB"
+			],
+			"rarity": "none",
+			"weight": 10,
+			"value": 5000,
+			"additionalEntries": [
+				"一套修补工具的设计旨在让你能够修复许多日常物品。虽然你无法用修补工具制造太多东西，但你可以缝补撕裂的衣服、磨利磨损的剑刃，以及修补破烂的链条甲。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"修补工具包括各种手工具、线、针、磨刀石、碎布和皮革，以及一小罐胶水。"
+					]
+				},
+				{
+					"ENG_name": "History",
+					"name": "历史",
+					"type": "entries",
+					"entries": [
+						"你可以确定物件的年份和来源，即使你只有原物件的几个碎片。"
+					]
+				},
+				{
+					"ENG_name": "Investigation",
+					"name": "调查",
+					"type": "entries",
+					"entries": [
+						"当你检查一个受损物件时，你会获得它是如何受损以及受损时间长短的知识。"
+					]
+				},
+				{
+					"ENG_name": "Repair",
+					"name": "修复",
+					"type": "entries",
+					"entries": [
+						"你可以每小时为一个受损物件修复10点生命值。对于任何物件，你需要能够获取修复它所需的原材料。对于金属物件，你需要能够获取足够使金属变软的明火。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "修补工具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"临时修复一个损坏的装置",
+							"10"
+						],
+						[
+							"以一半时间修补一件物品",
+							"15"
+						],
+						[
+							"利用废料制造临时物品",
+							"20"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Tinker's Tools",
+			"name": "修补工具",
+			"type": "AT|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"rarity": "none",
+			"weight": 10,
+			"value": 5000,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"敏捷"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"用废料组装出一个微型物品，这个物品会在一分钟后散架。（{@dc 20}）"
+							]
+						},
+						{
+							"ENG_name": "Craft:",
+							"name": "制造：",
+							"type": "item",
+							"entries": [
+								"{@item 滑膛枪|XPHB}, {@item 手枪|XPHB}, {@item 铃铛|XPHB}, {@item 牛眼提灯|XPHB}, {@item 扁瓶|XPHB}, {@item 附盖提灯|XPHB}, {@item 捕猎陷阱|XPHB}, {@item 锁|XPHB}, {@item 镣铐|XPHB}, {@item 镜子|XPHB}, {@item 铲子|XPHB}, {@item 信号笛|XPHB}, {@item 火绒盒|XPHB}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Tocken",
+			"name": "托肯",
+			"type": "INS",
+			"source": "SCAG",
+			"page": 124,
+			"rarity": "none",
+			"entries": [
+				"一组挂着的椭圆形铃铛，通常是用一对轻木锤（或摊开手掌）来演奏。它们在地底文明中最常见到，而在地底环境中其音调也可以得到天然的共振。"
+			]
+		},
+		{
+			"ENG_name": "Trident",
+			"name": "三叉戟",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"GoS",
+				"TTP"
+			],
+			"reprintedAs": [
+				"三叉戟|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 4,
+			"value": 500,
+			"weaponCategory": "martial",
+			"property": [
+				"T",
+				"V"
+			],
+			"range": "20/60",
+			"dmg1": "1d6",
+			"dmgType": "P",
+			"dmg2": "1d8",
+			"weapon": true
+		},
+		{
+			"ENG_name": "Trident",
+			"name": "三叉戟",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 4,
+			"value": 500,
+			"weaponCategory": "martial",
+			"property": [
+				"T|XPHB",
+				"V|XPHB"
+			],
+			"mastery": [
+				"失衡|XPHB"
+			],
+			"range": "20/60",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"dmg2": "1d10",
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Viol",
+			"name": "提琴",
+			"type": "INS",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"ToA",
+				"TTP"
+			],
+			"reprintedAs": [
+				"提琴|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 1,
+			"value": 3000
+		},
+		{
+			"ENG_name": "Viol",
+			"name": "提琴",
+			"type": "INS|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"HotB"
+			],
+			"edition": "one",
+			"rarity": "none",
+			"weight": 1,
+			"value": 3000,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"魅力"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"演奏一首已知曲目（{@dc 10}），或即兴创作一首歌曲（{@dc 15}）"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Wand",
+			"name": "魔杖",
+			"type": "SCF",
+			"group": [
+				"奥术法器"
+			],
+			"source": "PHB",
+			"page": 151,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CM"
+			],
+			"reprintedAs": [
+				"魔杖|XPHB"
+			],
+			"edition": "classic",
+			"scfType": "arcane",
+			"rarity": "none",
+			"weight": 1,
+			"value": 1000
+		},
+		{
+			"ENG_name": "Wand",
+			"name": "魔杖",
+			"type": "SCF|XPHB",
+			"group": [
+				"奥术法器"
+			],
+			"source": "XPHB",
+			"page": 224,
+			"srd52": true,
+			"edition": "one",
+			"scfType": "arcane",
+			"rarity": "none",
+			"weight": 1,
+			"value": 1000
+		},
+		{
+			"ENG_name": "War Pick",
+			"name": "战镐",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CoS"
+			],
+			"reprintedAs": [
+				"战镐|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"value": 500,
+			"weaponCategory": "martial",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"weapon": true
+		},
+		{
+			"ENG_name": "War Pick",
+			"name": "战镐",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 2,
+			"value": 500,
+			"weaponCategory": "martial",
+			"property": [
+				"V|XPHB"
+			],
+			"mastery": [
+				"削弱|XPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"dmg2": "1d10",
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Wargong",
+			"name": "战锣",
+			"type": "INS",
+			"source": "SCAG",
+			"page": 124,
+			"rarity": "none",
+			"entries": [
+				"一种金属制的锣，通常会用盾牌制作，尤其会用上敌人的盾牌。地精和矮人都会制作和演奏战锣，他们的战歌也会以此回荡在幽暗地域各处的地道中。"
+			]
+		},
+		{
+			"ENG_name": "Warhammer",
+			"name": "战锤",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"referenceSources": [
+				"CoS",
+				"GoS",
+				"TftYP-TFoF",
+				"US"
+			],
+			"reprintedAs": [
+				"战锤|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 2,
+			"value": 1500,
+			"weaponCategory": "martial",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"dmg2": "1d10",
+			"hammer": true,
+			"weapon": true
+		},
+		{
+			"ENG_name": "Warhammer",
+			"name": "战锤",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 5,
+			"value": 1500,
+			"weaponCategory": "martial",
+			"property": [
+				"V|XPHB"
+			],
+			"mastery": [
+				"推离|XPHB"
+			],
+			"dmg1": "1d8",
+			"dmgType": "B",
+			"dmg2": "1d10",
+			"hammer": true,
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Weaver's Tools",
+			"name": "织布工具",
+			"type": "AT",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 85
+				}
+			],
+			"reprintedAs": [
+				"织布工具|XPHB"
+			],
+			"rarity": "none",
+			"weight": 5,
+			"value": 100,
+			"additionalEntries": [
+				"织布工具允许你制作布料并将其裁剪成衣物。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"织布工具包括线、针和碎布。你知道如何操作织布机，但此类装备过于大型不便传送。"
+					]
+				},
+				{
+					"ENG_name": "Arcana, History",
+					"name": "奥秘、历史",
+					"type": "entries",
+					"entries": [
+						"你的专精使你在检查布料物件（包括斗篷和长袍）时获得额外洞悉。"
+					]
+				},
+				{
+					"ENG_name": "Investigation",
+					"name": "调查",
+					"type": "entries",
+					"entries": [
+						"运用你对制作布制物件的知识，在检查挂毯、室内装饰、衣物和其他编织物品时，你能发现他人会忽略的线索并做出推断。"
+					]
+				},
+				{
+					"ENG_name": "Repair",
+					"name": "修复",
+					"type": "entries",
+					"entries": [
+						"作为短休的一部分，你可以修复一件受损的布料物件。"
+					]
+				},
+				{
+					"ENG_name": "Craft Clothing",
+					"name": "制衣",
+					"type": "entries",
+					"entries": [
+						"假设你有足够的布料和线，你可以为生物制作一套服装，作为长休的一部分。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "织布工具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"改造布料",
+							"10"
+						],
+						[
+							"修补一块布料上的破洞",
+							"10"
+						],
+						[
+							"定制一套服装",
+							"15"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Weaver's Tools",
+			"name": "织布工具",
+			"type": "AT|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-TDoN"
+			],
+			"rarity": "none",
+			"weight": 5,
+			"value": 100,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"敏捷"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"修补衣服上的破口（{@dc 10}），或是缝制一个微型图案（{@dc 10}）"
+							]
+						},
+						{
+							"ENG_name": "Craft:",
+							"name": "制造：",
+							"type": "item",
+							"entries": [
+								"{@item 布甲|XPHB}, {@item 篮子|XPHB}, {@item 铺盖|XPHB}, {@item 毯子|XPHB}, {@item 高档服装|XPHB}, {@item 捕网|XPHB}, {@item 法袍|XPHB}, {@item 绳索|XPHB}, {@item 麻袋|XPHB}, {@item 细线|XPHB}, {@item 帐篷|XPHB}, {@item 旅行服装|XPHB}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Whip",
+			"name": "鞭子",
+			"type": "M",
+			"source": "PHB",
+			"page": 149,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"鞭子|XPHB"
+			],
+			"edition": "classic",
+			"rarity": "none",
+			"weight": 3,
+			"value": 200,
+			"weaponCategory": "martial",
+			"property": [
+				"F",
+				"R"
+			],
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"weapon": true
+		},
+		{
+			"ENG_name": "Whip",
+			"name": "鞭子",
+			"type": "M|XPHB",
+			"source": "XPHB",
+			"page": 215,
+			"srd52": true,
+			"basicRules2024": true,
+			"edition": "one",
+			"rarity": "none",
+			"weight": 3,
+			"value": 200,
+			"weaponCategory": "martial",
+			"property": [
+				"F|XPHB",
+				"R|XPHB"
+			],
+			"mastery": [
+				"缓速|XPHB"
+			],
+			"dmg1": "1d4",
+			"dmgType": "S",
+			"weapon": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Woodcarver's Tools",
+			"name": "木雕工具",
+			"type": "AT",
+			"source": "PHB",
+			"page": 154,
+			"srd": true,
+			"basicRules": true,
+			"additionalSources": [
+				{
+					"source": "XGE",
+					"page": 85
+				}
+			],
+			"referenceSources": [
+				"IDRotF",
+				"RtG",
+				"VEoR"
+			],
+			"reprintedAs": [
+				"木雕工具|XPHB"
+			],
+			"rarity": "none",
+			"weight": 5,
+			"value": 100,
+			"additionalEntries": [
+				"木雕工具允许你从木材中制作复杂的物品，例如木制令牌或箭矢。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"木雕工具包含一把刀刃、一把弧口凿和一把小型锯。"
+					]
+				},
+				{
+					"ENG_name": "Arcana, History",
+					"name": "奥秘、历史",
+					"type": "entries",
+					"entries": [
+						"你的专精使你在检查木制物件（如小雕像或箭矢）时获得额外的洞悉。"
+					]
+				},
+				{
+					"ENG_name": "Nature",
+					"name": "自然",
+					"type": "entries",
+					"entries": [
+						"你对木质物件的知识使你在检查树木时获得一些额外的洞悉。"
+					]
+				},
+				{
+					"ENG_name": "Repair",
+					"name": "修复",
+					"type": "entries",
+					"entries": [
+						"作为短休的一部分，你可以修复一件受损的木制物件。"
+					]
+				},
+				{
+					"ENG_name": "Craft Arrows",
+					"name": "制箭",
+					"type": "entries",
+					"entries": [
+						"作为短休的一部分，你可以制造至多五支箭矢。作为长休的一部分，你可以制造至多二十支。你必须手头有足够的木来生产它们。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "木雕工具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"制造一个小型木制雕像",
+							"10"
+						],
+						[
+							"在木头上雕刻复杂的图案",
+							"15"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Woodcarver's Tools",
+			"name": "木雕工具",
+			"type": "AT|XPHB",
+			"source": "XPHB",
+			"page": 221,
+			"srd52": true,
+			"basicRules2024": true,
+			"referenceSources": [
+				"DrDe-TDoN"
+			],
+			"rarity": "none",
+			"weight": 5,
+			"value": 100,
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ability:",
+							"name": "属性：",
+							"type": "item",
+							"entries": [
+								"敏捷"
+							]
+						},
+						{
+							"ENG_name": "Utilize:",
+							"name": "操作：",
+							"type": "item",
+							"entries": [
+								"在木头上雕刻图案（{@dc 10}）"
+							]
+						},
+						{
+							"ENG_name": "Craft:",
+							"name": "制造：",
+							"type": "item",
+							"entries": [
+								"{@item 短棒|XPHB}, {@item 巨棒|XPHB}, {@item 长棍|XPHB}, 远程武器（除{@item 手枪|XPHB}, {@item 滑膛枪|XPHB}, 和{@item 投石索|XPHB}外）, {@item 奥术法器|XPHB}, {@item 箭矢 (20)|XPHB|箭矢}, {@item 弩矢（20支）|XPHB|弩箭}, {@item 德鲁伊法器|XPHB}, {@item 墨水笔|XPHB}, {@item 吹矢（50）|XPHB|针刺}"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Wooden Staff",
+			"name": "木质法杖",
+			"type": "SCF",
+			"group": [
+				"德鲁伊法器"
+			],
+			"source": "PHB",
+			"page": 151,
+			"srd": true,
+			"basicRules": true,
+			"reprintedAs": [
+				"木质法杖|XPHB"
+			],
+			"edition": "classic",
+			"scfType": "druid",
+			"rarity": "none",
+			"weight": 4,
+			"value": 500,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8"
+		},
+		{
+			"ENG_name": "Wooden Staff",
+			"name": "木质法杖",
+			"type": "SCF|XPHB",
+			"group": [
+				"德鲁伊法器"
+			],
+			"source": "XPHB",
+			"page": 225,
+			"srd52": true,
+			"edition": "one",
+			"scfType": "druid",
+			"rarity": "none",
+			"weight": 4,
+			"value": 500,
+			"weaponCategory": "simple",
+			"property": [
+				"V"
+			],
+			"mastery": [
+				"失衡|XPHB"
+			],
+			"dmg1": "1d6",
+			"dmgType": "B",
+			"dmg2": "1d8"
+		},
+		{
+			"ENG_name": "Yarting",
+			"name": "雅廷琴",
+			"type": "INS|XPHB",
+			"source": "FRHoF",
+			"page": 132,
+			"rarity": "none",
+			"weight": 2,
+			"value": 4000,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Yarting",
+			"name": "雅廷琴",
+			"type": "INS",
+			"source": "SCAG",
+			"page": 124,
+			"reprintedAs": [
+				"雅廷琴|FRHoF"
+			],
+			"rarity": "none",
+			"entries": [
+				"一种来自安姆Amn和卡林珊Calimshan的南方乐器，是一种类似吉他guitar的费伦乐器。其在各个大陆中还流传着许多不同的样式。"
+			]
+		},
+		{
+			"ENG_name": "Yklwa",
+			"name": "伊库瓦短矛",
+			"type": "M",
+			"source": "ToA",
+			"page": 32,
+			"rarity": "none",
+			"weight": 3,
+			"value": 100,
+			"weaponCategory": "simple",
+			"property": [
+				"T"
+			],
+			"range": "10/30",
+			"dmg1": "1d8",
+			"dmgType": "P",
+			"weapon": true,
+			"entries": [
+				"伊克瓦（发音为YICK-ul-wah）是一种简单的近战武器，是楚尔坦战士的传统武器。伊克瓦由一根3尺长的木柄和一把长达18英寸的钢制或石制刀片组成。尽管它具有投掷武器的特性，但伊克瓦并不适合投掷。"
+			]
+		},
+		{
+			"ENG_name": "Zulkoon",
+			"name": "咒昆琴",
+			"type": "INS",
+			"source": "SCAG",
+			"page": 124,
+			"rarity": "none",
+			"entries": [
+				"一种复杂的泵型管风琴organ，其原来是塞尔Thay的首席zulkirs用来施展法术的工具。人们通常会用它来演奏一些带着罪恶感的戏剧性声音。"
+			]
+		}
+	],
+	"itemProperty": [
+		{
+			"abbreviation": "2H",
+			"source": "PHB",
+			"page": 147,
+			"reprintedAs": [
+				"2H|XPHB"
+			],
+			"template": "{{prop_name_lower}}",
+			"entries": [
+				{
+					"ENG_name": "Two-Handed",
+					"name": "双手",
+					"type": "entries",
+					"entries": [
+						"用该武器攻击时你需要双手并用。这个特性仅在你用武器攻击时生效，仅仅持有它时不要求双手。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "2H",
+			"source": "XPHB",
+			"page": 214,
+			"basicRules2024": true,
+			"template": "{{prop_name}}",
+			"entries": [
+				{
+					"ENG_name": "Two-Handed",
+					"name": "双手",
+					"type": "entries",
+					"entries": [
+						"用双手武器攻击时，你需要双手并用。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "A",
+			"source": "PHB",
+			"page": 146,
+			"reprintedAs": [
+				"A|XPHB"
+			],
+			"template": "{{prop_name_lower}} ({{item.range}}\\xa0尺)",
+			"entries": [
+				{
+					"ENG_name": "Ammunition",
+					"name": "弹药",
+					"type": "entries",
+					"entries": [
+						"你可以使用具有弹药属性的武器发动一次远程攻击，前提是你必须先拥有与该武器相对应的弹药。每次使用该武器攻击时，你都必须花费一枚弹药。你从箭袋、矢匣或其它容器中取出弹药的行为将作为攻击的一部分（你需要一只空闲的手来为一把单手武器装填弹药）。战斗结束后，你可以花费一分钟搜索战场，以回收一半所消耗的弹药。",
+						"如果以具有弹药属性的武器发动一次近战攻击，则该武器被视为等同于一把临时武器。另外，一根投石索以该方式使用时必须处于已装填状态。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "A",
+			"source": "XPHB",
+			"page": 213,
+			"basicRules2024": true,
+			"template": "{{prop_name}} (射程 {{item.range}}\\xa0尺; {{item.ammoType}})",
+			"entries": [
+				{
+					"ENG_name": "Ammunition",
+					"name": "弹药",
+					"type": "entries",
+					"entries": [
+						"使用具有弹药属性的武器发动远程攻击时，你必须拥有该武器需求的弹药。所需弹药的种类会与武器的射程写在一起。每次使用该武器攻击都会花费一枚弹药，且取出该弹药的行为视为此次攻击的一部分（你需要一只空手来为一把单手武器的弹药上膛或上弦）。在战斗结束后，你可以花费一分钟搜索战场，以回收你在战斗中所消耗的弹药的一半（向下取整），而剩下的那些弹药将会损失。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "AF",
+			"source": "DMG",
+			"page": 267,
+			"reprintedAs": [
+				"AF|XDMG"
+			],
+			"template": "{{prop_name_lower}} ({{item.range}}\\xa0尺)",
+			"entries": [
+				{
+					"ENG_name": "Ammunition",
+					"name": "弹药",
+					"type": "entries",
+					"entries": [
+						"只你可以使用具有弹药属性的武器发动一次远程攻击，前提是你必须先拥有与该武器相对应的弹药。每次使用该武器攻击时，你都必须花费一枚弹药。你从箭袋、矢匣或其它容器中取出弹药的行为将作为攻击的一部分（你需要一只空闲的手来为一把单手武器装填弹药）。火器的弹药会在使用后销毁。",
+						"如果以具有弹药属性的武器发动一次近战攻击，则该武器被视为等同于一把临时武器。另外，一根投石索以该方式使用时必须处于已装填状态。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "AF",
+			"source": "XDMG",
+			"page": 72,
+			"template": "{{prop_name}} ({{item.range}}\\xa0尺; {{item.ammoType}})",
+			"entries": [
+				{
+					"ENG_name": "Ammunition",
+					"name": "弹药",
+					"type": "entries",
+					"entries": [
+						"现代火器使用后，子弹即被销毁。未来式枪械使用的是能量单元，这些能量单元在耗尽时可能通过适当的设备进行再充电，具体由游戏主持人决定。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "BF",
+			"source": "DMG",
+			"page": 267,
+			"reprintedAs": [
+				"BF|XDMG"
+			],
+			"template": "{{prop_name_lower}}",
+			"entries": [
+				{
+					"ENG_name": "Burst Fire",
+					"name": "扫射",
+					"type": "entries",
+					"entries": [
+						"具有爆发火焰属性的武器可以进行单目标攻击，或者它可以在普通射程内喷射出10英尺立方体的区域。区域内的每个生物都必须通过一次{@dc 15}敏捷豁免掷骰，否则将受到武器的普通伤害。此动作消耗十发弹药。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "BF",
+			"source": "XDMG",
+			"page": 72,
+			"template": "{{prop_name}}",
+			"entries": [
+				{
+					"ENG_name": "Burst Fire",
+					"name": "扫射",
+					"type": "entries",
+					"entries": [
+						"以一个动作，你可以消耗一把扫射武器的10发弹药，向该武器常规射程内的一个10尺{@variantrule 立方 [效应区域]|XPHB|立方}效应区域倾泻火力。该区域内的每个生物都必须成功通过一次{@dc 15}的敏捷豁免检定，否则受到伤害。掷一次该武器的伤害骰，所有豁免失败的生物都受到此伤害。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "Evo",
+			"source": "AU",
+			"page": 0,
+			"template": "进化物品",
+			"entries": [
+				{
+					"ENG_name": "Evolving Item",
+					"name": "进化物品",
+					"type": "entries",
+					"entries": [
+						"{@note 此物品为进化物品，更多信息请参阅{@book 进化魔法物品|AU|5|Evolving Magic Items}。}"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "F",
+			"source": "PHB",
+			"page": 147,
+			"reprintedAs": [
+				"F|XPHB"
+			],
+			"template": "{{prop_name_lower}}",
+			"entries": [
+				{
+					"ENG_name": "Finesse",
+					"name": "灵巧",
+					"type": "entries",
+					"entries": [
+						"使用一把灵巧武器发动攻击时，你可以自由选择力量或敏捷调整值，作为攻击检定和伤害掷骰的加值。而且两个掷骰的加值必须为同一个调整值。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "F",
+			"source": "XPHB",
+			"page": 213,
+			"basicRules2024": true,
+			"template": "{{prop_name}}",
+			"entries": [
+				{
+					"ENG_name": "Finesse",
+					"name": "灵巧",
+					"type": "entries",
+					"entries": [
+						"使用一把灵巧武器发动攻击时，你可以自由选择此次攻击检定与伤害掷骰使用力量调整值还是敏捷调整值。但是攻击检定与伤害掷骰必须使用同一个调整值。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "H",
+			"source": "PHB",
+			"page": 147,
+			"reprintedAs": [
+				"H|XPHB"
+			],
+			"template": "{{prop_name_lower}}",
+			"entries": [
+				{
+					"ENG_name": "Heavy",
+					"name": "重型",
+					"type": "entries",
+					"entries": [
+						"小型体型生物在使用重型武器时的攻击检定具有劣势。一把重型武器的重量和尺寸对于一个小型生物而言，有点难以驾驭。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "H",
+			"source": "XPHB",
+			"page": 213,
+			"basicRules2024": true,
+			"template": "{{prop_name}}",
+			"entries": [
+				{
+					"ENG_name": "Heavy",
+					"name": "重型",
+					"type": "entries",
+					"entries": [
+						"如果你的力量属性值低于 13 点，则你用重型近战武器发动的攻击检定具有劣势；如果你的敏捷属性值低于 13 点，则你用重型远程武器发动的攻击检定具有{@variantrule 劣势|XPHB}。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "L",
+			"source": "PHB",
+			"page": 147,
+			"reprintedAs": [
+				"L|XPHB"
+			],
+			"template": "{{prop_name_lower}}",
+			"entries": [
+				{
+					"ENG_name": "Light",
+					"name": "光线",
+					"type": "entries",
+					"entries": [
+						"一把轻型武器尺寸精巧且易于操控，十分适合用来进行双持武器战斗。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "L",
+			"source": "XPHB",
+			"page": 213,
+			"basicRules2024": true,
+			"template": "{{prop_name}}",
+			"entries": [
+				{
+					"ENG_name": "Light",
+					"name": "光线",
+					"type": "entries",
+					"entries": [
+						"当你在自己回合中执行{@action 攻击|XPHB}动作，并用一把轻型武器发动一次攻击后，你可以在同一回合中用{@variantrule 附赠动作|XPHB}发动一次额外的攻击。这次额外的攻击你必须使用另一把轻型武器发动，并且这次攻击的伤害无法加入你的属性调整值（除非该调整值为负数）。例如，若你在你的回合中执行了{@action 攻击|XPHB}动作，一只手手持{@item 短剑|XPHB}，另一只手手持{@item 匕首|XPHB}，而这两把武器均有轻型词条，则你可以使用你的动作和{@variantrule 附赠动作|XPHB}，来用这两把武器各发动一次攻击。但你不能将力量或敏捷调整值加入{@variantrule 附赠动作|XPHB}攻击武器的造成的伤害中（除非该调整值为负数）。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "LD",
+			"source": "PHB",
+			"page": 147,
+			"reprintedAs": [
+				"LD|XPHB"
+			],
+			"template": "{{prop_name_lower}}",
+			"entries": [
+				{
+					"ENG_name": "Loading",
+					"name": "装填",
+					"type": "entries",
+					"entries": [
+						"由于你需要时间对这种武器进行装填，当你用一个动作、一个附赠动作或反应进行射击时，你只能射出一发弹药，且不考虑你正常情况下所能发动的攻击次数。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "LD",
+			"source": "XPHB",
+			"page": 214,
+			"basicRules2024": true,
+			"template": "{{prop_name}}",
+			"entries": [
+				{
+					"ENG_name": "Loading",
+					"name": "装填",
+					"type": "entries",
+					"entries": [
+						"当你使用动作、{@variantrule 附赠动作|XPHB}或{@variantrule 反应|XPHB}来射击装填类武器时，你只能发射一枚弹药，不管你通常可以进行多少次攻击。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "R",
+			"source": "PHB",
+			"page": 147,
+			"reprintedAs": [
+				"R|XPHB"
+			],
+			"template": "{{prop_name_lower}}",
+			"entries": [
+				{
+					"ENG_name": "Reach",
+					"name": "触及",
+					"type": "entries",
+					"entries": [
+						"使用该武器攻击时，它为你的触及范围增加5尺。使用其进行借机攻击时该增值也同样生效。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "R",
+			"source": "XPHB",
+			"page": 214,
+			"basicRules2024": true,
+			"template": "{{prop_name}}",
+			"entries": [
+				{
+					"ENG_name": "Reach",
+					"name": "触及",
+					"type": "entries",
+					"entries": [
+						"使用长兵器攻击时，你的触及范围增加5英尺，同时在确定你用它进行{@action 借机攻击|XPHB|借机攻击}的触及范围时也增加5英尺。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "RLD",
+			"source": "DMG",
+			"page": 267,
+			"reprintedAs": [
+				"RLD|XDMG"
+			],
+			"template": "{{prop_name_lower}} ({{item.reload}} 发)",
+			"entries": [
+				{
+					"ENG_name": "Reload",
+					"name": "弹容",
+					"type": "entries",
+					"entries": [
+						"具有弹容属性的武器只能发动有限数量的攻击。次数用尽后，一名角色必须用一个动作或一个附赠动作来为其进行装弹作业（由该角色自选）。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "RLD",
+			"source": "XDMG",
+			"page": 72,
+			"template": "{{prop_name}} ({{item.reload}} 发)",
+			"entries": [
+				{
+					"ENG_name": "Reload",
+					"name": "弹容",
+					"type": "entries",
+					"entries": [
+						"你可以使用重新装填武器进行有限次数的射击。然后，你必须以一个动作或{@variantrule 附赠动作|XPHB}的方式重新装填武器。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "special",
+			"name": "特殊",
+			"abbreviation": "S",
+			"source": "PHB",
+			"page": 147,
+			"template": "{{prop_name_lower}}"
+		},
+		{
+			"abbreviation": "T",
+			"source": "PHB",
+			"page": 147,
+			"reprintedAs": [
+				"T|XPHB"
+			],
+			"template": "{{prop_name_lower}} ({{item.range}}\\xa0尺)",
+			"entries": [
+				{
+					"ENG_name": "Thrown",
+					"name": "投掷",
+					"type": "entries",
+					"entries": [
+						"具有投掷属性的武器可以用来发动一次投掷的远程攻击。如果该武器是一把近战武器，则你以其进行近战攻击时，加于攻击检定和伤害掷骰中的属性调整值同样适用于以其进行的远程攻击。例如，投掷一把手斧时，你使用力量调整值；而投掷一把匕首时，由于其具有灵巧属性，你可以选择使用力量调整值或敏捷调整值。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "T",
+			"source": "XPHB",
+			"page": 214,
+			"basicRules2024": true,
+			"template": "{{prop_name}} ({{item.range}} 尺)",
+			"entries": [
+				{
+					"ENG_name": "Thrown",
+					"name": "投掷",
+					"type": "entries",
+					"entries": [
+						"如果一把武器具有投掷属性，你可以把它投掷出去来发动一次远程攻击。同时，拔出这把武器可以视作这次攻击的一部分。如果投掷出去的武器是一把近战武器，则你在攻击检定和伤害掷骰中使用与你用其发动近战攻击时相同的属性调整值。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "V",
+			"source": "PHB",
+			"page": 147,
+			"reprintedAs": [
+				"V|XPHB"
+			],
+			"template": "{{prop_name_lower}} ({{item.dmg2}})",
+			"entries": [
+				{
+					"ENG_name": "Versatile",
+					"name": "多用",
+					"type": "entries",
+					"entries": [
+						"该武器可以用单手或双手来使用。该属性后将跟随一个括号，其内的伤害值即为双手持用该武器进行近战攻击时的伤害值。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "V",
+			"source": "XPHB",
+			"page": 214,
+			"basicRules2024": true,
+			"template": "{{prop_name}} ({{item.dmg2}})",
+			"entries": [
+				{
+					"ENG_name": "Versatile",
+					"name": "多用",
+					"type": "entries",
+					"entries": [
+						"多用武器可以单手使用也可以双手使用。该词条后将跟随一个括号，其内的伤害数值即为双手持用该武器进行近战攻击时的伤害。"
+					]
+				}
+			]
+		},
+		{
+			"abbreviation": "Vst",
+			"source": "EGW",
+			"page": 270,
+			"template": "遗物",
+			"entries": [
+				{
+					"ENG_name": "Vestige of Divergence",
+					"name": "诀别遗物",
+					"type": "entries",
+					"page": 200,
+					"entries": [
+						"{@note 此物品是一件诀别遗物，更多消息请参阅{@book 诀别遗物|EGW|7|诀别遗物}。}"
+					]
+				}
+			]
+		}
+	],
+	"itemType": [
+		{
+			"ENG_name": "Treasure",
+			"name": "宝藏",
+			"abbreviation": "$",
+			"source": "DMG",
+			"page": 133
+		},
+		{
+			"ENG_name": "Treasure (Art Object)",
+			"name": "宝藏（艺术品）",
+			"abbreviation": "$A",
+			"source": "DMG",
+			"page": 133,
+			"reprintedAs": [
+				"$A|XDMG"
+			]
+		},
+		{
+			"ENG_name": "Treasure (Art Object)",
+			"name": "宝藏（艺术品）",
+			"abbreviation": "$A",
+			"source": "XDMG",
+			"page": 215,
+			"entries": [
+				{
+					"ENG_name": "Treasure (Art Object)",
+					"name": "宝藏（艺术品）",
+					"type": "entries",
+					"entries": [
+						"纯金铸造的偶像，珠光宝气的项链，古代国王的肖像，镶满金玉的餐盘\u2014\u2014艺术品包含这些所有，乃至更多。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Treasure (Coinage)",
+			"name": "宝藏（货币）",
+			"abbreviation": "$C",
+			"source": "PHB",
+			"page": 143,
+			"reprintedAs": [
+				"$C|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Treasure (Coinage)",
+			"name": "宝藏（货币）",
+			"abbreviation": "$C",
+			"source": "XPHB",
+			"page": 213,
+			"basicRules2024": true,
+			"entries": [
+				{
+					"ENG_name": "Treasure (Coinage)",
+					"name": "宝藏（货币）",
+					"type": "entries",
+					"entries": [
+						"角色们经常能在冒险中收集到钱币。这些钱币可以用在商店、酒馆或其他业务的开销上。钱币的面额会根据它们的制作材料的相对价值而定。而下方的钱币价值表，则列出了各种钱币相较于金币\u2014这个游戏中主要的钱币\u2014的价值。例如，100 铜币价值 1 金币。",
+						"一枚钱币的重量大约有三分之一盎司，50 枚钱币则大约有一磅沉。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Treasure (Gemstone)",
+			"name": "宝藏（宝石）",
+			"abbreviation": "$G",
+			"source": "DMG",
+			"page": 133,
+			"reprintedAs": [
+				"$G|XDMG"
+			]
+		},
+		{
+			"ENG_name": "Treasure (Gemstone)",
+			"name": "宝藏（宝石）",
+			"abbreviation": "$G",
+			"source": "XDMG",
+			"page": 214,
+			"entries": [
+				{
+					"ENG_name": "Treasure (Gemstone)",
+					"name": "宝藏（宝石）",
+					"type": "entries",
+					"entries": [
+						"与同等价值的钱币相比，宝石体积更小，重量更轻，携带更安全。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ammunition",
+			"name": "弹药",
+			"abbreviation": "A",
+			"source": "PHB",
+			"page": 148,
+			"reprintedAs": [
+				"A|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Ammunition",
+			"name": "弹药",
+			"abbreviation": "A",
+			"source": "XPHB",
+			"page": 222,
+			"basicRules2024": true
+		},
+		{
+			"ENG_name": "Ammunition",
+			"name": "弹药",
+			"abbreviation": "AF",
+			"source": "DMG",
+			"page": 267,
+			"reprintedAs": [
+				"AF|XDMG"
+			]
+		},
+		{
+			"ENG_name": "Ammunition",
+			"name": "弹药",
+			"abbreviation": "AF",
+			"source": "XDMG",
+			"page": 72
+		},
+		{
+			"ENG_name": "Vehicle (Air)",
+			"name": "载具(飞行)",
+			"abbreviation": "AIR",
+			"source": "DMG",
+			"page": 119,
+			"reprintedAs": [
+				"风|XPHB"
+			],
+			"_copy": {
+				"abbreviation": "SHP",
+				"source": "DMG"
+			}
+		},
+		{
+			"ENG_name": "Vehicle (Air)",
+			"name": "载具(飞行)",
+			"abbreviation": "AIR",
+			"source": "XPHB",
+			"page": 230,
+			"basicRules2024": true,
+			"_copy": {
+				"abbreviation": "SHP",
+				"source": "XPHB"
+			}
+		},
+		{
+			"ENG_name": "Artisan's Tools",
+			"name": "工匠工具",
+			"abbreviation": "AT",
+			"source": "PHB",
+			"page": 154,
+			"reprintedAs": [
+				"AT|XPHB"
+			],
+			"entries": [
+				{
+					"ENG_name": "Artisan's Tools",
+					"name": "工匠工具",
+					"type": "entries",
+					"entries": [
+						"这种特殊的工具类包括了各种门类匠艺的使用工具。拥有某项工匠工具熟练项的角色，在使用相应工具进行属性检定时，可以将其熟练加值加入检定结果中。各个种类的工匠工具之间互不关联，其熟练项只能对相应工具起效。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Artisan's Tools",
+			"name": "工匠工具",
+			"abbreviation": "AT",
+			"source": "XPHB",
+			"page": 220,
+			"basicRules2024": true,
+			"entries": [
+				{
+					"ENG_name": "Artisan's Tool",
+					"name": "工匠工具",
+					"type": "entries",
+					"entries": [
+						"工匠工具专注于制作物品和从事贸易。每种类型的工匠工具都需要单独的熟练度。",
+						"如果你对某项工具熟练，在使用该工具进行任何属性检定时，加上你的{@variantrule 熟练|XPHB|熟练加值}。如果你在进行该检定时使用的技能也熟练，那么你在该检定上也有{@variantrule 优势|XPHB}。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Explosive",
+			"name": "爆炸物",
+			"abbreviation": "EXP",
+			"source": "DMG",
+			"page": 267,
+			"reprintedAs": [
+				"EXP|XDMG"
+			]
+		},
+		{
+			"ENG_name": "Explosive",
+			"name": "爆炸物",
+			"abbreviation": "EXP",
+			"source": "XDMG",
+			"page": 72
+		},
+		{
+			"ENG_name": "Food and Drink",
+			"name": "食物和饮品",
+			"abbreviation": "FD",
+			"source": "PHB",
+			"page": 158,
+			"reprintedAs": [
+				"FD|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Food and Drink",
+			"name": "食物和饮品",
+			"abbreviation": "FD",
+			"source": "XPHB",
+			"page": 231,
+			"basicRules2024": true
+		},
+		{
+			"ENG_name": "Adventuring Gear",
+			"name": "冒险用品",
+			"abbreviation": "G",
+			"source": "PHB",
+			"page": 148,
+			"reprintedAs": [
+				"G|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Adventuring Gear",
+			"name": "冒险用品",
+			"abbreviation": "G",
+			"source": "XPHB",
+			"page": 222,
+			"basicRules2024": true
+		},
+		{
+			"ENG_name": "Gaming Set",
+			"name": "赌具",
+			"abbreviation": "GS",
+			"source": "PHB",
+			"page": 154,
+			"reprintedAs": [
+				"GS|XPHB"
+			],
+			"entries": [
+				{
+					"ENG_name": "Gaming Set",
+					"name": "赌具",
+					"type": "entries",
+					"entries": [
+						"拥有赌具熟练项的角色，在使用相应赌具进行赌博的属性检定时，可以将其熟练加值加入检定结果中。各个种类的赌具之间互不关联，其熟练项只能对相应的工具起效。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Gaming Set",
+			"name": "赌具",
+			"abbreviation": "GS",
+			"source": "XPHB",
+			"page": 221,
+			"basicRules2024": true,
+			"entries": [
+				{
+					"ENG_name": "Tool (Gaming Set)",
+					"name": "工具（赌具）",
+					"type": "entries",
+					"entries": [
+						"如果你对某项工具熟练，在使用该工具进行任何属性检定时，加上你的{@variantrule 熟练|XPHB|熟练加值}。如果你在进行该检定时使用的技能也熟练，那么你在该检定上也有{@variantrule 优势|XPHB}。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Generic Variant",
+			"name": "通用变体",
+			"abbreviation": "GV",
+			"source": "DMG",
+			"page": 135
+		},
+		{
+			"ENG_name": "Generic Variant",
+			"name": "通用变体",
+			"abbreviation": "GV",
+			"source": "XDMG",
+			"page": 216
+		},
+		{
+			"ENG_name": "Heavy Armor",
+			"name": "重甲",
+			"abbreviation": "HA",
+			"source": "PHB",
+			"page": 145,
+			"reprintedAs": [
+				"HA|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Heavy Armor",
+			"name": "重甲",
+			"abbreviation": "HA",
+			"source": "XPHB",
+			"page": 219,
+			"basicRules2024": true
+		},
+		{
+			"ENG_name": "Instrument",
+			"name": "乐器",
+			"abbreviation": "INS",
+			"source": "PHB",
+			"page": 154,
+			"reprintedAs": [
+				"INS|XPHB"
+			],
+			"entries": [
+				{
+					"ENG_name": "Instrument",
+					"name": "乐器",
+					"type": "entries",
+					"entries": [
+						"拥有乐器熟练项的角色，在使用相应乐器进行演奏的属性检定时，可以将其熟练加值加入检定结果中。各个种类的乐器之间互不关联，其熟练项只对相应的乐器起效。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Instrument",
+			"name": "乐器",
+			"abbreviation": "INS",
+			"source": "XPHB",
+			"page": 221,
+			"basicRules2024": true,
+			"entries": [
+				{
+					"ENG_name": "Tool (Musical Instrument)",
+					"name": "工具（乐器）",
+					"type": "entries",
+					"entries": [
+						"如果你对某项工具熟练，在使用该工具进行任何属性检定时，加上你的{@variantrule 熟练|XPHB|熟练加值}。如果你在进行该检定时使用的技能也熟练，那么你在该检定上也有{@variantrule 优势|XPHB}。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Light Armor",
+			"name": "轻甲",
+			"abbreviation": "LA",
+			"source": "PHB",
+			"page": 144,
+			"reprintedAs": [
+				"LA|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Light Armor",
+			"name": "轻甲",
+			"abbreviation": "LA",
+			"source": "XPHB",
+			"page": 219,
+			"basicRules2024": true
+		},
+		{
+			"ENG_name": "Melee Weapon",
+			"name": "近战武器",
+			"abbreviation": "M",
+			"source": "PHB",
+			"page": 146,
+			"reprintedAs": [
+				"M|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Melee Weapon",
+			"name": "近战武器",
+			"abbreviation": "M",
+			"source": "XPHB",
+			"page": 213,
+			"basicRules2024": true
+		},
+		{
+			"ENG_name": "Medium Armor",
+			"name": "中甲",
+			"abbreviation": "MA",
+			"source": "PHB",
+			"page": 144,
+			"reprintedAs": [
+				"MA|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Medium Armor",
+			"name": "中甲",
+			"abbreviation": "MA",
+			"source": "XPHB",
+			"page": 219,
+			"basicRules2024": true
+		},
+		{
+			"ENG_name": "Mount",
+			"name": "乘骑",
+			"abbreviation": "MNT",
+			"source": "PHB",
+			"page": 155,
+			"reprintedAs": [
+				"MNT|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Mount",
+			"name": "乘骑",
+			"abbreviation": "MNT",
+			"source": "XPHB",
+			"page": 230,
+			"basicRules2024": true
+		},
+		{
+			"ENG_name": "Other",
+			"name": "其他",
+			"abbreviation": "OTH",
+			"source": "PHB",
+			"page": 143
+		},
+		{
+			"ENG_name": "Other",
+			"name": "其他",
+			"abbreviation": "OTH",
+			"source": "XPHB",
+			"page": 213
+		},
+		{
+			"ENG_name": "Potion",
+			"name": "药水",
+			"abbreviation": "P",
+			"source": "PHB",
+			"page": 148,
+			"reprintedAs": [
+				"P|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Potion",
+			"name": "药水",
+			"abbreviation": "P",
+			"source": "XPHB",
+			"page": 222,
+			"basicRules2024": true
+		},
+		{
+			"ENG_name": "Ranged Weapon",
+			"name": "远程武器",
+			"abbreviation": "R",
+			"source": "PHB",
+			"page": 146,
+			"reprintedAs": [
+				"R|XPHB"
+			],
+			"entries": [
+				{
+					"ENG_name": "Range",
+					"name": "射程",
+					"type": "entries",
+					"entries": [
+						"一把能用来发动远程攻击的武器有一个在弹药或投掷属性后以括号标明的射程。射程列出了两个数字，其第一个是以尺数计的武器的常规射程normal range，第二个则指出了武器的最大射程long range。攻击一个超过常规射程的目标时，你的攻击检定具有劣势。而你不能攻击一个处于最大射程之外的目标。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ranged Weapon",
+			"name": "远程武器",
+			"abbreviation": "R",
+			"source": "XPHB",
+			"page": 214,
+			"basicRules2024": true,
+			"entries": [
+				{
+					"ENG_name": "Range",
+					"name": "射程",
+					"type": "entries",
+					"entries": [
+						"远程武器在弹药或投掷属性后的括号内有一个射程。射程列出了两个数字。第一个是武器的正常射程（以英尺为单位），第二个是武器的长射程。当攻击超出正常射程的目标时，你在攻击检定上具有{@variantrule 劣势|XPHB}。你不能攻击超出长射程的目标。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Rod",
+			"name": "权杖",
+			"abbreviation": "RD",
+			"source": "DMG",
+			"page": 139,
+			"reprintedAs": [
+				"RD|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Rod",
+			"name": "权杖",
+			"abbreviation": "RD",
+			"source": "XDMG",
+			"page": 216
+		},
+		{
+			"ENG_name": "Ring",
+			"name": "戒指",
+			"abbreviation": "RG",
+			"source": "DMG",
+			"page": 139,
+			"reprintedAs": [
+				"RG|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Ring",
+			"name": "戒指",
+			"abbreviation": "RG",
+			"source": "XDMG",
+			"page": 216
+		},
+		{
+			"ENG_name": "Shield",
+			"name": "盾牌",
+			"abbreviation": "S",
+			"source": "PHB",
+			"page": 144,
+			"reprintedAs": [
+				"S|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Shield",
+			"name": "盾牌",
+			"abbreviation": "S",
+			"source": "XPHB",
+			"page": 219,
+			"basicRules2024": true
+		},
+		{
+			"ENG_name": "Scroll",
+			"name": "卷轴",
+			"abbreviation": "SC",
+			"source": "DMG",
+			"page": 139,
+			"reprintedAs": [
+				"SC|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Scroll",
+			"name": "卷轴",
+			"abbreviation": "SC",
+			"source": "XPHB",
+			"page": 222,
+			"basicRules2024": true
+		},
+		{
+			"ENG_name": "Spellcasting Focus",
+			"name": "法器",
+			"abbreviation": "SCF",
+			"source": "PHB",
+			"page": 148,
+			"reprintedAs": [
+				"SCF|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Spellcasting Focus",
+			"name": "法器",
+			"abbreviation": "SCF",
+			"source": "XPHB",
+			"page": 222,
+			"basicRules2024": true
+		},
+		{
+			"ENG_name": "Vehicle (Water)",
+			"name": "载具(水上)",
+			"abbreviation": "SHP",
+			"source": "DMG",
+			"page": 119,
+			"reprintedAs": [
+				"SHP|XPHB"
+			],
+			"entries": [
+				{
+					"ENG_name": "Crew",
+					"name": "船员",
+					"type": "entries",
+					"entries": [
+						"一艘船需要一群熟练的雇佣船员才能运作。根据《玩家手册》所述，雇佣一名熟练的船员每天至少需要2gp。一艘船所需的最少熟练雇佣船员数量取决于船只的类型。",
+						"你可以使用《地下城主指南》第4章中的\"忠诚度\"可选规则来追踪个别船员或整个船员团队的忠诚度。如果在航行期间至少一半的船员变得不忠诚，船员会转为敌对并发动叛变。如果船只停靠在港口，不忠诚的船员会永远离开船只。"
+					]
+				},
+				{
+					"ENG_name": "Passengers",
+					"name": "乘客",
+					"type": "entries",
+					"entries": [
+						"这表示船只能够容纳的小型和中等体型乘客的数量。",
+						"一般船上的住宿空间都是一间房间内密布的吊床。如果让一艘船配备个人住宿的话，则其载客量为标称的五分之一。",
+						"尽管各船之间床位的价格并不一定一致，但乘客通常会为一张吊床床位支付每天5 sp的租金，而私人房间的床位则可以收取每天2 gp的租金。"
+					]
+				},
+				{
+					"ENG_name": "Cargo",
+					"name": "货物",
+					"type": "entries",
+					"entries": [
+						"船只能够承载的最大吨位。"
+					]
+				},
+				{
+					"ENG_name": "Damage Threshold",
+					"name": "伤害阈值",
+					"type": "entries",
+					"entries": [
+						"如果一个船只有伤害阈值。它会免疫所有的伤害除非它所受到的那次伤害等于或大于它的伤害阈值，这会使其正常受到那次伤害。没有等于或超过伤害阈值的伤害会被无视且不对它造成伤害。"
+					]
+				},
+				{
+					"ENG_name": "Ship Repair",
+					"name": "修复船只",
+					"type": "entries",
+					"entries": [
+						"受损船只的修理工作可以在船只停靠时进行。修复1点伤害需要1天时间，并且需要花费20gp用于材料和人工。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Vehicle (Water)",
+			"name": "载具(水上)",
+			"abbreviation": "SHP",
+			"source": "XPHB",
+			"page": 230,
+			"basicRules2024": true,
+			"entries": [
+				{
+					"ENG_name": "Speed",
+					"name": "速度",
+					"type": "entries",
+					"entries": [
+						"船只在强逆风中仅能以半速行驶。在风平浪静（无风）的环境中，水运船只无法通过船帆移动，而仅能依靠船桨来行驶。龙骨船和划艇仅适用于湖水与河流。当载具顺流而下时，载具的速度将获得等同于水流流速的提升（通常是时速 3 里）。这些载具也无法通过船桨在过强的水流中逆行，但是可以通过驮兽在陆地上拖行的方式逆流而上。划艇重 100 磅，可被随身携带。"
+					]
+				},
+				{
+					"ENG_name": "Crew",
+					"name": "船员",
+					"type": "entries",
+					"entries": [
+						"一艘比龙骨舟或划艇更大的船需要一队熟练的雇佣船员（见\"{@book 服务|XPHB|6|服务}\"）来运作。所需的最低熟练雇佣船员数量取决于船只的类型。"
+					]
+				},
+				{
+					"ENG_name": "Passengers",
+					"name": "乘客",
+					"type": "entries",
+					"entries": [
+						"这艘船可以使用吊床容纳的小型和中型乘客数量。配备私人住宿的船只可以搭载五分之一数量的乘客。通常，一个乘客每天需要支付5银币用于吊床，但不同船只的价格可能会有所不同。一个小的私人舱位通常每天需要2金币。"
+					]
+				},
+				{
+					"ENG_name": "Damage Threshold",
+					"name": "伤害阈值",
+					"type": "entries",
+					"entries": [
+						"参见《玩家手册》中的{@variantrule 伤害阈值|XPHB|术语汇编}。"
+					]
+				},
+				{
+					"ENG_name": "Ship Repair",
+					"name": "修复船只",
+					"type": "entries",
+					"entries": [
+						"受损船只的修复可以在船只停泊时进行。修复1点{@variantrule 生命值|XPHB|生命值}需要1天时间，并且需要20金币用于材料和劳动力。如果在物资和熟练劳动力充足的地方进行修复，例如城市造船厂，修复时间和成本都会减半。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Vehicle (Space)",
+			"name": "载具(太空)",
+			"abbreviation": "SPC",
+			"source": "AAG",
+			"page": 24
+		},
+		{
+			"ENG_name": "Tool",
+			"name": "工具",
+			"abbreviation": "T",
+			"source": "PHB",
+			"page": 154,
+			"reprintedAs": [
+				"T|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Tool",
+			"name": "工具",
+			"abbreviation": "T",
+			"source": "XPHB",
+			"page": 220,
+			"basicRules2024": true,
+			"entries": [
+				{
+					"ENG_name": "Tool",
+					"name": "工具",
+					"type": "entries",
+					"entries": [
+						"如果你对某项工具熟练，在使用该工具进行任何属性检定时，加上你的{@variantrule 熟练|XPHB|熟练加值}。如果你在进行该检定时使用的技能也熟练，那么你在该检定上也有{@variantrule 优势|XPHB}。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Tack and Harness",
+			"name": "鞍具和挽具",
+			"abbreviation": "TAH",
+			"source": "PHB",
+			"page": 155,
+			"reprintedAs": [
+				"TAH|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Tack and Harness",
+			"name": "鞍具和挽具",
+			"abbreviation": "TAH",
+			"source": "XPHB",
+			"page": 230,
+			"basicRules2024": true
+		},
+		{
+			"ENG_name": "Trade Bar",
+			"name": "贸易金属锭",
+			"abbreviation": "TB",
+			"source": "XDMG",
+			"page": 213,
+			"entries": [
+				{
+					"ENG_name": "Trade Bar",
+					"name": "贸易金属锭",
+					"type": "entries",
+					"entries": [
+						"由于大量硬币难以运输和清点，许多商人更喜欢使用贸易条\u2014由贵金属和合金（通常是银）制成的金属块。这些金属块按重量计价。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Trade Good",
+			"name": "贸易货物",
+			"abbreviation": "TG",
+			"source": "PHB",
+			"page": 146,
+			"reprintedAs": [
+				"TG|XDMG"
+			],
+			"entries": [
+				{
+					"ENG_name": "Trade Good",
+					"name": "贸易货物",
+					"type": "entries",
+					"entries": [
+						"大多数财富并不以金钱的形式存在。它以牲畜、粮食、土地、征税权或资源权（如矿山或森林）来衡量。",
+						"公会、贵族和王室掌控着贸易权。只有被授权的公司才被允许在特定路线上进行贸易、向各个港口派遣商船或买卖特定商品。公会为他们控制的商品或服务定价，并决定谁可以或不可以提供这些商品和服务。商人通常在不使用货币的情况下交换贸易商品。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Trade Good",
+			"name": "贸易货物",
+			"abbreviation": "TG",
+			"source": "XDMG",
+			"page": 213,
+			"entries": [
+				{
+					"ENG_name": "Trade Good",
+					"name": "贸易货物",
+					"type": "entries",
+					"entries": [
+						"商人通常在不使用货币的情况下交换贸易商品。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Vehicle (Land)",
+			"name": "载具 (陆运)",
+			"abbreviation": "VEH",
+			"source": "PHB",
+			"page": 155,
+			"reprintedAs": [
+				"VEH|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Vehicle (Land)",
+			"name": "载具 (陆运)",
+			"abbreviation": "VEH",
+			"source": "XPHB",
+			"page": 230,
+			"basicRules2024": true
+		},
+		{
+			"ENG_name": "Wand",
+			"name": "魔杖",
+			"abbreviation": "WD",
+			"source": "DMG",
+			"page": 139,
+			"reprintedAs": [
+				"WD|XPHB"
+			]
+		},
+		{
+			"ENG_name": "Wand",
+			"name": "魔杖",
+			"abbreviation": "WD",
+			"source": "XDMG",
+			"page": 216
+		}
+	],
+	"itemTypeAdditionalEntries": [
+		{
+			"ENG_name": "Gaming Set",
+			"name": "赌具",
+			"source": "XGE",
+			"appliesTo": "GS|PHB",
+			"entries": [
+				"赌具熟练项指的是精通单独的某种赌博类型，例如三龙牌Three-Dragon Ante或摇色子。",
+				{
+					"ENG_name": "Components",
+					"name": "成分",
+					"type": "entries",
+					"entries": [
+						"一套赌具包含进行对应赌博游戏的全套赌具，例如一副完整的扑克牌或是棋盘与棋子。"
+					]
+				},
+				{
+					"ENG_name": "History",
+					"name": "历史",
+					"type": "entries",
+					"entries": [
+						"你对赌博的掌握包括对它历史的了解，以及与它有关的重要事件或与之相关的历史名人的知识。"
+					]
+				},
+				{
+					"ENG_name": "Insight",
+					"name": "洞悉",
+					"type": "entries",
+					"entries": [
+						"和某人赌上一把是了解他们个性的好方法，可以让你更好地分辨他们的谎言，了解他们的情绪。"
+					]
+				},
+				{
+					"ENG_name": "Sleight of Hand",
+					"name": "巧手",
+					"type": "entries",
+					"entries": [
+						"想出老千的话，巧手是个很有用的技能，比如你可以棋子换位、掌中藏牌、控制骰点。亦或者，对沉浸于赌局的目标进行扒窃也是不错的选择。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "赌具",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"抓住作弊的玩家",
+							"15"
+						],
+						[
+							"洞察对手的性格",
+							"15"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Instrument",
+			"name": "乐器",
+			"source": "XGE",
+			"appliesTo": "INS|PHB",
+			"entries": [
+				"具有某种乐器熟练项，表明你熟悉演奏它的技巧。你也知道一些该乐器的经典曲目。",
+				{
+					"ENG_name": "History",
+					"name": "历史",
+					"type": "entries",
+					"entries": [
+						"你的专长帮助你回忆与乐器有关的知识。"
+					]
+				},
+				{
+					"ENG_name": "Performance",
+					"name": "表演",
+					"type": "entries",
+					"entries": [
+						"当你把乐器融入表演时，你的表演会更有张力。"
+					]
+				},
+				{
+					"ENG_name": "Compose a Tune",
+					"name": "作曲",
+					"type": "entries",
+					"entries": [
+						"作为长休的一部分，你可以为你的乐器谱写一首新曲子和歌词。你可能会借此给一位贵族留下深刻印象，或是在市井中传唱某些故事。"
+					]
+				},
+				{
+					"type": "table",
+					"caption": "乐器",
+					"colLabels": [
+						"用途",
+						"DC"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"辨识一段旋律",
+							"10"
+						],
+						[
+							"即兴创作歌曲",
+							"20"
+						]
+					]
+				}
+			]
+		}
+	],
+	"itemEntry": [
+		{
+			"ENG_name": "Absorbing Tattoo",
+			"name": "吸收刺青",
+			"source": "TCE",
+			"entriesTemplate": [
+				"该魔法刺青用一根特殊的针制作，且其图案特别突出了一种颜色({{item.detail1}})。",
+				{
+					"ENG_name": "Tattoo Attunement",
+					"name": "刺青同调",
+					"type": "entries",
+					"entries": [
+						"同调此物品时，你需要将针持握，并抵在你想要让刺青出现 的那处皮肤上。当同调完成时，针头会化为墨水再变成刺青。",
+						"若你与刺青的同调结束，刺青会消失，针头会再次出现在你的位置中。"
+					]
+				},
+				{
+					"ENG_name": "Damage Resistance",
+					"name": "伤害抗性",
+					"type": "entries",
+					"entries": [
+						"当纹身在你的皮肤上时，你对{{item.resist}}伤害有抗性。"
+					]
+				},
+				{
+					"ENG_name": "Damage Absorption",
+					"name": "伤害吸收",
+					"type": "entries",
+					"entries": [
+						"当你受到{{item.resist}}伤害时，你可以使用你的反应来获得对该次伤害的免疫，并且你恢复等于你本应受到的伤害一半的生命值。一旦使用了这个反应，直到下一个黎明之前它不能被再次使用。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Armor of Resistance",
+			"name": "抗性护甲",
+			"source": "DMG",
+			"entriesTemplate": [
+				"着装这套护甲期间，你获得对{{item.resist}}伤害类型的抗性。"
+			]
+		},
+		{
+			"ENG_name": "Armor of Resistance",
+			"name": "抗性护甲",
+			"source": "XDMG",
+			"entriesTemplate": [
+				"当你穿着这件护甲时，你对{{getFullImmRes item.resist}}伤害具有{@variantrule 抗性|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Chromatic Rose",
+			"name": "色彩玫瑰",
+			"source": "WBtW",
+			"entriesTemplate": [
+				"当一朵玫瑰被持握时，它会呈现出一种像是{{item.detail1}}一样的无害视觉效应。",
+				"当你握住这朵玫瑰的花茎时，你获得{{item.resist}}伤害的抗性。若你从单一来源伤害中受到超过10点{{item.resist}}伤害（在计算抗性后），那么玫瑰会化为灰烬，而你不受到伤害。",
+				"作为一项行动，你可以吹开玫瑰花瓣，产生一个20英尺的锥形区域，区域内充满{{item.resist}}。锥形区域内的每个生物都必须进行一次{@dc 15}体质豁免投掷，失败则受到{@damage 3d10} {{item.resist}}伤害，成功则受到一半伤害。使用此属性会摧毁玫瑰。"
+			]
+		},
+		{
+			"ENG_name": "Dragon Scale Mail",
+			"name": "龙鳞甲",
+			"source": "XDMG",
+			"entriesTemplate": [
+				"龙鳞甲是由一种龙的鳞片制成的。有时，龙会收集它们脱落的鳞片并赠送出去。其他时候，猎人们会小心翼翼地保存死去的龙的皮肤。无论哪种情况，龙鳞甲都备受珍视。",
+				"穿戴此盔甲时，你获得+1的{@variantrule 护甲等级|XPHB}加成，对抗龙的吐息武器的豁免检定时你拥有{@variantrule 优势|XPHB}，并且你对{{getFullImmRes item.resist}}伤害拥有{@variantrule 抗性|XPHB}。",
+				"此外，你可以使用专注感官作为{@action 魔法|XPHB}动作来辨别距离和方向，找到离你30英里以内最近的{{item.detail1}}龙。此动作直到下一次黎明之前不能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Grenade",
+			"name": "手榴弹",
+			"source": "DMG",
+			"entriesTemplate": [
+				"作为一个动作，角色可以将手榴弹扔到最多60尺远的点。使用榴弹发射器，角色可以将手榴弹推进到最多120尺远。"
+			]
+		},
+		{
+			"ENG_name": "Grenade",
+			"name": "手榴弹",
+			"source": "XDMG",
+			"entriesTemplate": [
+				"以一个动作，你可以将一枚榴弹掷到至多60尺远的一点，或使用榴弹发射器将榴弹推进到至多1000尺远的一点。榴弹随即在该点处爆炸，在半径20尺的{@variantrule 球状 [效应区域]|XPHB|球状}内产生特定效果。"
+			]
+		},
+		{
+			"ENG_name": "Ioun Stone",
+			"name": "艾恩石",
+			"source": "XDMG",
+			"entriesTemplate": [
+				"每一颗{@i 艾恩石}的大小都和一枚弹珠相仿。这种石头是以知识与预言之神\u2014\u2014艾恩Ioun之名命名的，祂在某些世界中备受敬仰。{@i 艾恩石}分为很多种，不同种类的艾恩石具有不同的颜色和外观。",
+				"当你执行一个 {@action 魔法|XPHB} 动作，将 {@i 艾恩石} 抛向空中时，这块石头会在你头顶以 {@dice 1d3} 英尺的距离环绕飞行，同时为你提供它的好处。你最多可以有三块 {@i 艾恩石} 同时环绕你的头部。",
+				"每颗环绕你头部的 {@i 艾恩石} 都被视为你穿戴的物品。环绕的石头会避开与其他生物和物体的接触，调整其轨道以避免碰撞，并挫败其他生物攻击或抢夺它的所有尝试。",
+				"作为一个{@action 操作|XPHB}动作，你可以抓取并收起绕着你头部旋转的任何数量的{@i 艾恩石}。如果你对艾奥恩石的{@variantrule 同调|XPHB}在你头部旋转时结束，石头就会像你掉落它一样落下。"
+			]
+		},
+		{
+			"ENG_name": "Potion of Resistance",
+			"name": "抗性药水",
+			"source": "DMG",
+			"entriesTemplate": [
+				"饮用此药水后，1小时内，你将获得对{{item.resist}}伤害类型的抗性。"
+			]
+		},
+		{
+			"ENG_name": "Potion of Resistance",
+			"name": "抗性药水",
+			"source": "XDMG",
+			"entriesTemplate": [
+				"当你喝下这瓶药水时，你获得对{{getFullImmRes item.resist}}伤害的{@variantrule 抗性|XPHB}，持续1小时。"
+			]
+		},
+		{
+			"ENG_name": "Ring of Resistance",
+			"name": "抗性戒指",
+			"source": "DMG",
+			"entriesTemplate": [
+				"佩戴这枚戒指时，你对{{item.resist}}伤害具有抗性。这枚戒指镶嵌有{{item.detail1}}。"
+			]
+		},
+		{
+			"ENG_name": "Ring of Resistance",
+			"name": "抗性戒指",
+			"source": "XDMG",
+			"entriesTemplate": [
+				"当你佩戴这枚戒指时，你对{{getFullImmRes item.resist}}伤害拥有{@variantrule 抗性|XPHB}。这枚戒指镶嵌着{{item.detail1}}。"
+			]
+		},
+		{
+			"ENG_name": "Scroll of Protection",
+			"name": "守护卷轴",
+			"source": "XDMG",
+			"entriesTemplate": [
+				"使用一个 {@action 魔法|XPHB} 动作来阅读卷轴，会在你身边产生一个5英尺的 {@variantrule 光环 [效应区域]|XPHB|光环}。在接下来5分钟内，{{item.detail2}} 不能进入或影响区域内的任何事物。然而，如果你移动到某个位置使得 {{item.detail1}} 会进入该区域，效果就会结束。",
+				"作为{@action 魔法|XPHB}动作，在{@variantrule 光环 [效应区域]|XPHB|光环}5英尺内的生物可以尝试克服它，这迫使该生物进行一次{@dc 15}魅力豁免检定。成功通过检定后，该生物不再受到{@variantrule 光环 [效应区域]|XPHB|光环}的影响。"
+			]
+		}
+	],
+	"itemMastery": [
+		{
+			"ENG_name": "Cleave",
+			"name": "横扫",
+			"source": "XPHB",
+			"page": 214,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"当你用这把武器进行的近战攻击检定命中一个生物时，你可以用该武器对位于该生物 5 尺内，且同样身处你触及范围内的另一生物再进行一次近战攻击检定。命中时，第二个生物也会受到此武器的伤害，但你无法将你的属性调整值加入这次伤害中（除非该调整值为负数）。每个回合中你只能发动一次横扫的额外攻击。"
+			]
+		},
+		{
+			"ENG_name": "Graze",
+			"name": "擦掠",
+			"source": "XPHB",
+			"page": 214,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"当你以这把武器对一个生物发动的攻击检定失手时，你仍可以对目标生物造成一定伤害。其数额等同于此次攻击所使用的属性调整值，其伤害类型与你所使用的武器一致，并且这个伤害只能通过属性调整值的提高而增长。"
+			]
+		},
+		{
+			"ENG_name": "Nick",
+			"name": "迅击",
+			"source": "XPHB",
+			"page": 214,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"当你进行轻型属性的额外攻击时，你可以将其作为{@action 攻击|XPHB}动作的一部分进行，而不是作为{@variantrule 附赠动作|XPHB}。每个回合中你只能进行这一次额外攻击。"
+			]
+		},
+		{
+			"ENG_name": "Push",
+			"name": "推离",
+			"source": "XPHB",
+			"page": 214,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"当你用这把武器命中一个生物时，如果该生物的体型不超过大型，则你可以将这个生物从你身边直线推离至多 10 尺。"
+			]
+		},
+		{
+			"ENG_name": "Sap",
+			"name": "削弱",
+			"source": "XPHB",
+			"page": 214,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"当你用这把武器命中一个生物时，直到你的下一回合开始前，该生物的下一次攻击检定将具有{@variantrule 劣势|XPHB}。"
+			]
+		},
+		{
+			"ENG_name": "Slow",
+			"name": "缓速",
+			"source": "XPHB",
+			"page": 214,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"如果你用这个武器击中一个生物并对其造成伤害，你可以将其{@variantrule 速度|XPHB}减少10英尺，直到你的下一回合开始。如果该生物被具有此属性的武器击中不止一次，{@variantrule 速度|XPHB}的减少不会超过10英尺。"
+			]
+		},
+		{
+			"ENG_name": "Topple",
+			"name": "失衡",
+			"source": "XPHB",
+			"page": 214,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"如果你用此武器击中一个生物，你可以迫使该生物进行一次体质豁免检定（{@dc 8} 加上用于进行攻击掷骰的能力调整值以及你的{@variantrule 熟练|XPHB|熟练加值}）。豁免失败时，该生物获得{@condition 倒地|XPHB}状态。"
+			]
+		},
+		{
+			"ENG_name": "Vex",
+			"name": "侵扰",
+			"source": "XPHB",
+			"page": 214,
+			"srd52": true,
+			"basicRules2024": true,
+			"entries": [
+				"当你用这把武器命中一个生物并对其造成伤害时，直到你的下一回合结束前，你对该生物的下一次攻击检定将具有{@variantrule 优势|XPHB}。"
+			]
+		}
+	]
+}

@@ -1,0 +1,640 @@
+{
+	"_meta": {
+		"internalCopies": [
+			"subclassFluff"
+		]
+	},
+	"classFluff": [
+		{
+			"ENG_name": "Ranger",
+			"name": "游侠",
+			"source": "PHB",
+			"entries": [
+				{
+					"ENG_name": "Ranger",
+					"name": "游侠",
+					"type": "section",
+					"entries": [
+						"林中树影下穿行人影，正追捕一群计划袭击附近村庄的兽人。只见那男人外表粗野，双手各挥舞着一柄短剑，有如钢铁狂风一般将敌人接连斩杀。",
+						"避过一团霜冻气息后，精灵迅速站稳脚跟并拉弓射箭直取白龙。尽管身处巨龙散发的恐惧气息与吐息寒意中，她仍无所畏惧的将箭矢一支接一支地射入龙鳞的缝隙中。",
+						"半精灵高举手臂，发令将盘旋头顶的猎鹰召回身边。他指向那只追踪到的枭熊，并用精灵语指挥猎鹰前去扰敌，以为自己争取时间备好弓箭。",
+						"离开城镇的喧嚣，越过隔绝荒野危险的高墙后，即是茂密的森林和广袤的原野。也正是游侠们进行无尽守望之地。",
+						{
+							"ENG_name": "Deadly Hunters",
+							"name": "致命的猎人",
+							"type": "entries",
+							"entries": [
+								"类人生物侵略者、狂暴的野兽与怪兽、可怕的巨人、致命的龙。作为荒野勇士的游侠们，专注于狩猎这些徘徊在文明世界边缘的危害之物。他们向掠食者们学习如何追踪猎物，并借助荒野中的灌木丛和碎石在阴影中潜行。游侠们通过特殊的战斗训练，使其在针对最具威胁敌人时可以惊醒更有效的应对方案。",
+								"熟悉荒野的游侠们从中获得了利用大自然魔力施展法术的能力。他们的运作方式与德鲁伊类似，只是其法术与其实战能力相配，同样强调速度、隐匿以及狩猎。但每个游侠们的才能，却只能从死守边境的艰难险阻中磨练出来。"
+							]
+						},
+						{
+							"ENG_name": "Independent Adventurers",
+							"name": "孤独的冒险家",
+							"type": "entries",
+							"entries": [
+								"虽说游侠可以出任猎人，领路者或搜寻者等职，但其真正使命依然是抵御从荒野来袭的怪物和类人生物部落，以免文明遭受蹂躏。某些地区的游侠们会集体组建教团，或是与德鲁伊结社联合形成战力。但仍有许多游侠执着于独断独行，他们认为，在巨龙或兽人战团进犯时，保留下一名游侠就足以作为第一道（或是最后一道）坚固的防线。",
+								"游侠们强烈的独立性，以及远离温床热水澡的生活习性，使他们比那些在城里长大的同伴们更能适应冒险生活。当面对其他人对野外艰辛牢骚满腹时，游侠们既觉得好笑又只能心情复杂的表示无奈和同情。不过在面对文明之敌的战斗中，同伴们所体现的价值却也抵得过平时给游侠带来的负担。娇生惯养的城里人可能不知道如何在野外解决饮食问题，但他们还可以在其他方面帮上忙。"
+							]
+						},
+						{
+							"ENG_name": "Creating a Ranger",
+							"name": "创建游侠",
+							"type": "entries",
+							"entries": [
+								"创造一个游侠角色时，可以先考虑什么性质的训练给予了你特殊的能力。你是不是有某位导师单独训练，而你们一同在荒野中闯荡，直至你真正掌握游侠之道？你是完成学业出师，还是你的导师被某种怪物所杀，以致你将这种怪物选为宿敌？或许你是师从于某个德鲁伊结社下属的游侠分队，以荒野传说般神秘的形式接受训练。又或者你是无师自通，作为一个荒野隐居者，为求生存而学会了战斗技能和追踪技巧，并与大自然奇妙的产生了共鸣。",
+								"你对于特定敌人的仇恨源于何处？该怪物杀了你所爱之人，或是破坏了你的家乡？或是你见证太多由这些怪物造成的破坏，并决定挺身制止他们的掠夺？你的冒险生涯是延续你守卫边境的工作，还是发生了某种重大改变？是什么原因令你加入一队冒险队伍中？是因为觉得教导新盟友野外生存之道颇具挑战，还是因为他们将你从孤寂深处拯救出来？",
+								{
+									"ENG_name": "Quick Build",
+									"name": "快速建卡",
+									"type": "entries",
+									"entries": [
+										"你可以按以下建议快速创建一名游侠。首先，将你的最高属性分配给敏捷，次高分配给感知。（一些注重双持武器战斗的游侠其力量该高于敏捷。）其次选择{@background 化外之民}背景。"
+									]
+								}
+							]
+						}
+					],
+					"source": "PHB",
+					"page": 89
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"我一生中的大部分时间都远离文明，守在它的边缘来保护它。不要以为因为我不向你们的国王下跪，就意味着我没有比他所有的骑士加起来还要多地保护他。"
+							],
+							"by": "索维里斯"
+						},
+						"游侠是自由思想的漫游者和探索者，他们在文明领土的边缘巡逻，将荒野之地的居民拒之门外。这是一份无人感激的工作，因为他们的努力很少被理解，几乎从未得到回报。然而，游侠坚持自己的职责，从不怀疑他们的工作使世界变得更安全。",
+						"与文明的关系塑造了每位游侠的个性和历史。有些游侠视自己为法律的执行者和文明边疆的正义使者，不向任何主权权力负责。另一些则是完全避开文明的生存主义者。他们击败怪物以确保自己的安全，同时在世界的危险荒野地区生活和旅行。如果他们的努力同时也造福了他们避开的王国和其他文明领域，那就这样吧。",
+						"如果你正在创建或扮演一个游侠角色，以下部分提供了一些想法，用于丰富角色和提升你的角色扮演体验。",
+						{
+							"type": "quote",
+							"entries": [
+								"我是个怪物。你是要来杀我吗？我看未必。去杀些地精之类的吧。等等，地精不是怪物\u2014\u2014他们也是人。所以或许你该自称\"人类杀手\"。"
+							],
+							"by": "珊娜萨"
+						},
+						{
+							"ENG_name": "View of the World",
+							"name": "世界观",
+							"type": "entries",
+							"entries": [
+								"一个游侠对世界的看法始于（有时也终于）这个角色对文明人和他们所占据的地方的态度。有些游侠对文明有着根深蒂固的蔑视态度，而另一些则对他们誓言要保护的人表示同情\u2014\u2014尽管在战场上，一个游侠和另一个游侠之间的区别是看不出来的。事实上，对于那些见过他们行动并受益于他们的技艺的人来说，游侠为什么要做他们所做的事情几乎无关紧要。话虽如此，没有两个游侠可能会以相同的方式表达他们对任何问题的看法。",
+								"如果你还没有考虑过你角色的世界观的细节，可以考虑通过总结一个简短的陈述（如下面表格中的条目）来更精细地指出这种观点。这种感觉可能会如何影响你的行为方式？",
+								{
+									"type": "table",
+									"caption": "世界观",
+									"colLabels": [
+										"{@dice d6}",
+										"观念"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"城镇和城市是那些无法独自生存的人的最佳去处。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"文明的进步是挫败混乱的最佳方式，但其影响必须受到监控。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"城镇和城市是必要的恶，但一旦荒野被清除了超自然的威胁，我们就不再需要它们了。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"墙是给懦夫的，他们蜷缩在墙后，而其他人则在做让世界变得安全的工作。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"你在一片古老的森林巡逻，这片森林因为多次通往影域的通道而变得黑暗和腐败。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"城市通过将人们与荒野的严酷教训隔离开来，培养了软弱。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Homelands",
+							"name": "家园",
+							"type": "entries",
+							"entries": [
+								"所有的游侠，无论他们是如何开始从事这个职业的，都与自然世界及其各种地形有着强烈的联系。对于一些游侠来说，荒野是他们成长的地方，无论是因为在那里出生还是年轻时就迁移到了那里。对于其他游侠来说，文明原本是他们的家园，但荒野成为了他们的第二故乡。",
+								"思考你的角色背景故事，决定哪种地形最像你的家，无论你是否在那里出生。这种地形对你的性格有何启示？它是否影响了你选择学习的法术？那里的经历是否塑造了你偏爱的敌人类型？",
+								{
+									"type": "table",
+									"caption": "家园",
+									"colLabels": [
+										"{@dice d6}",
+										"故乡"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"您巡逻了一片古老的森林，这片森林因多次通往影域的通道而变得黑暗和腐败。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"作为一群游牧民的一部分，你获得了在沙漠中生存的技能。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"你在幽暗地域的早年生活为你应对其居民的挑战做好了准备。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"你居住在沼泽的边缘，这个地区既受到陆地生物的威胁，也受到水生生物的威胁。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"因为你在山峰中长大，找到穿越山脉的最佳路径对你来说是本能。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"你在遥远的北方流浪，学习如何在被冰雪覆盖的领域中保护自己并繁荣发展。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Sworn Enemy",
+							"name": "死敌",
+							"type": "entries",
+							"entries": [
+								"每位游侠开始时都有一个或两个偏爱的敌人。偏爱的敌人的确定可能与角色早期生活中的特定事件有关，或者完全是一个选择问题。",
+								"是什么促使你的角色选择特定的敌人？是因为传统、好奇心，还是因为你有仇要报？",
+								{
+									"type": "table",
+									"caption": "死敌",
+									"colLabels": [
+										"{@dice d6}",
+										"敌人"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"你的祖先或前任与这些生物战斗过，你也将这样做。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"你对你的敌人没有敌意。你像猎人追踪野生动物一样追踪这些生物。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"你对你的敌人没有敌意。你像猎人追踪野生动物一样追踪这些生物。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"你对你的敌人感到着迷，并收集有关它的传说和历史书籍。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"你收集你击败的敌人的信物，以提醒你每一次杀戮。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"你尊重你选择的敌人，并且你将你的战斗视为各自技能的考验。"
+										]
+									]
+								}
+							]
+						}
+					],
+					"page": 40,
+					"source": "XGE"
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/PHB/Ranger.webp"
+					},
+					"width": 900,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Ranger",
+			"name": "游侠",
+			"source": "XPHB",
+			"entries": [
+				{
+					"ENG_name": "Ranger",
+					"name": "游侠",
+					"type": "section",
+					"source": "XPHB",
+					"page": 118,
+					"entries": [
+						"无论身处人迹罕至的森林，亦或是广袤无垠的平原，游侠们远离着城市的喧嚣，日复一日地守望着荒野。他们如猎食猛兽般追踪猎物，隐匿于灌木乱石之间，悄步于荒野之上。",
+						"凭借自己与自然的深厚联系，游侠们也能自由地驾驭荒野中的原初伟力。他们磨炼着自己的魔法与技艺，只为保护这个世界免受怪物与暴君的肆虐。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"title": "一位被原始魔法灌注的漫游战士",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Ranger.webp"
+					},
+					"credit": "Chris Rallis",
+					"width": 1700,
+					"height": 2259
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/093-04-008.ranger-and-deer.webp"
+					},
+					"credit": "Mike Pape",
+					"width": 540,
+					"height": 1440
+				}
+			]
+		}
+	],
+	"subclassFluff": [
+		{
+			"ENG_name": "Gloom Stalker",
+			"name": "幽域追踪者",
+			"shortName": "幽域追踪者",
+			"source": "XGE",
+			"className": "游侠",
+			"classSource": "PHB",
+			"_copy": {
+				"ENG_name": "Ranger",
+				"name": "游侠",
+				"shortName": "游侠",
+				"source": "XGE",
+				"className": "游侠",
+				"classSource": "PHB"
+			},
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"所以你就这么躲在黑暗里？你应该知道全世界\u2014\u2014除了人类\u2014\u2014都能看穿黑暗的对吧？我们都看得见你！踮脚走路又没法让你{@condition 隐形}。"
+					],
+					"by": "珊娜萨"
+				}
+			]
+		},
+		{
+			"ENG_name": "Horizon Walker",
+			"name": "边界行者",
+			"shortName": "边界行者",
+			"source": "XGE",
+			"className": "游侠",
+			"classSource": "PHB",
+			"_copy": {
+				"ENG_name": "Ranger",
+				"name": "游侠",
+				"shortName": "游侠",
+				"source": "XGE",
+				"className": "游侠",
+				"classSource": "PHB"
+			},
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"你根本不可能走到世界边界，因为它会不断地远离你。Boom！我吓到你了么？我吓到了，肯定吓到了。"
+					],
+					"by": "珊娜萨"
+				}
+			]
+		},
+		{
+			"ENG_name": "Monster Slayer",
+			"name": "怪物杀手",
+			"shortName": "怪物杀手",
+			"source": "XGE",
+			"className": "游侠",
+			"classSource": "PHB",
+			"_copy": {
+				"ENG_name": "Ranger",
+				"name": "游侠",
+				"shortName": "游侠",
+				"source": "XGE",
+				"className": "游侠",
+				"classSource": "PHB"
+			}
+		},
+		{
+			"ENG_name": "Ranger",
+			"name": "游侠",
+			"shortName": "游侠",
+			"source": "XGE",
+			"className": "游侠",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/XGE/Ranger.webp"
+					},
+					"width": 1000,
+					"height": 408
+				}
+			]
+		},
+		{
+			"ENG_name": "Fey Wanderer",
+			"name": "妖精漫游者",
+			"shortName": "妖精漫游者",
+			"source": "TCE",
+			"className": "游侠",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/TCE/Fey Wanderer Ranger.webp"
+					},
+					"width": 800,
+					"height": 1265
+				}
+			]
+		},
+		{
+			"ENG_name": "Swarmkeeper",
+			"name": "集群守卫",
+			"shortName": "集群守卫",
+			"source": "TCE",
+			"className": "游侠",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/TCE/Swarmkeeper Ranger.webp"
+					},
+					"width": 860,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Drakewarden",
+			"name": "龙兽守卫",
+			"shortName": "龙兽守卫",
+			"source": "FTD",
+			"className": "游侠",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/FTD/Drakewarden Ranger.webp"
+					},
+					"width": 850,
+					"height": 1015
+				}
+			]
+		},
+		{
+			"ENG_name": "Beast Master",
+			"name": "驯兽师",
+			"shortName": "驯兽师",
+			"source": "XPHB",
+			"className": "游侠",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"title": "驯兽师子职",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Beast Master Ranger.webp"
+					},
+					"credit": "Alditha Siregar",
+					"width": 850,
+					"height": 1863
+				}
+			]
+		},
+		{
+			"ENG_name": "Fey Wanderer",
+			"name": "妖精漫游者",
+			"shortName": "妖精漫游者",
+			"source": "XPHB",
+			"className": "游侠",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"title": "妖精漫游者子职",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Fey Wanderer Ranger.webp"
+					},
+					"credit": "John Grello",
+					"width": 850,
+					"height": 2199
+				}
+			]
+		},
+		{
+			"ENG_name": "Gloom Stalker",
+			"name": "幽域追踪者",
+			"shortName": "幽域追踪者",
+			"source": "XPHB",
+			"className": "游侠",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"title": "幽域追踪者子职",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Gloom Stalker Ranger.webp"
+					},
+					"credit": "Polar Engine",
+					"width": 850,
+					"height": 2146
+				}
+			]
+		},
+		{
+			"ENG_name": "Hunter",
+			"name": "猎人",
+			"shortName": "猎人",
+			"source": "XPHB",
+			"className": "游侠",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"title": "猎手子职",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Hunter Ranger.webp"
+					},
+					"credit": "Katerina Ladon",
+					"width": 850,
+					"height": 1752
+				}
+			]
+		},
+		{
+			"ENG_name": "Winter Walker",
+			"name": "凛冬行者",
+			"shortName": "凛冬行者",
+			"source": "FRHoF",
+			"className": "游侠",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/FRHoF/Winter Walker Ranger.webp"
+					},
+					"credit": "Alejandro Pacheco",
+					"width": 850,
+					"height": 2222
+				}
+			]
+		},
+		{
+			"ENG_name": "Hollow Warden",
+			"name": "幽邃戍卫",
+			"shortName": "幽邃戍卫",
+			"source": "RHW",
+			"className": "游侠",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/RHW/Hollow Warden Ranger.webp"
+					},
+					"title": "幽邃戍卫游侠",
+					"credit": "Audy Ravindra",
+					"width": 850,
+					"height": 1563
+				}
+			]
+		}
+	]
+}

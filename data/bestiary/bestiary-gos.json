@@ -1,0 +1,6483 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		},
+		"otherSources": {
+			"monster": {
+				"VGM": "GoS",
+				"TftYP": "GoS",
+				"PotA": "GoS",
+				"ToA": "GoS",
+				"MTF": "GoS",
+				"MM": "GoS"
+			}
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Amphisbaena",
+			"name": "双头蛇",
+			"type": "monstrosity",
+			"source": "GoS",
+			"page": 230,
+			"referenceSources": [
+				"MOT",
+				"TftYP-THSoT"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d8 + 2"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 12,
+			"int": 3,
+			"wis": 10,
+			"cha": 3,
+			"skill": {
+				"perception": "+2"
+			},
+			"senses": [
+				"盲视 10 尺"
+			],
+			"passive": 12,
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Two Heads",
+					"name": "双头",
+					"entries": [
+						"双头蛇在感知（{@skill 察觉}）检定上具有优势，并且在对抗被{@condition 目盲}、{@condition 魅惑}、{@condition 耳聋}、{@condition 恐慌}、{@condition 昏迷}以及被击昏{@condition 震慑}的豁免检定上也具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"双头蜥进行两次咬击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及 5 尺，单一目标。{@h}6 ({@damage 1d4 + 4}) 点穿刺伤害，并且目标必须进行一次 {@dc 11} 体质豁免，失败时受到 3 ({@damage 1d6}) 点毒素伤害，成功则伤害减半。"
+					]
+				}
+			],
+			"altArt": [
+				{
+					"ENG_name": "Amphisbaena",
+					"name": "双头蛇",
+					"source": "MOT"
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Barnacle Bess",
+			"name": "藤壶贝丝",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "GoS",
+			"page": 220,
+			"_copy": {
+				"ENG_name": "Giant Crab",
+				"name": "巨蟹",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "蟹",
+						"with": "贝丝",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"int": 10,
+			"languages": [
+				"通用语"
+			],
+			"languageTags": [
+				"C"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Bullywug Croaker",
+			"name": "啵灵蛙鸣唱者",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"啵灵蛙"
+				]
+			},
+			"source": "GoS",
+			"page": 232,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 兽皮甲|phb}",
+						"{@item 盾牌|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 33,
+				"formula": "6d8 + 6"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 40
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 12,
+			"int": 7,
+			"wis": 15,
+			"cha": 10,
+			"save": {
+				"con": "+3"
+			},
+			"skill": {
+				"perception": "+4",
+				"stealth": "+3"
+			},
+			"passive": 14,
+			"languages": [
+				"啵灵蛙语"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"泥鳅可以呼吸空气和水。"
+					]
+				},
+				{
+					"ENG_name": "Speak with Frogs and Toads",
+					"name": "蛙类交流",
+					"entries": [
+						"当使用啵灵蛙语言说话时，蛤蟆鱼能够与青蛙和蟾蜍沟通简单的概念。"
+					]
+				},
+				{
+					"ENG_name": "Standing Leap",
+					"name": "立定跳远",
+					"entries": [
+						"鲶鱼的远跳可达20尺，高跳可达10尺，无论是否有助跑。"
+					]
+				},
+				{
+					"ENG_name": "Swamp Camouflage",
+					"name": "沼泽伪装",
+					"entries": [
+						"蛤蟆鱼在沼泽地形中进行敏捷（{@skill 隐匿})检定时具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Spear",
+					"name": "矛",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及5尺或射程20/60尺，单一目标。{@h}5 ({@damage 1d6 + 2}) 点穿刺伤害，或者如果用双手进行近战攻击则为6 ({@damage 1d8 + 2}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Glaaar-pat (3/Day)",
+					"name": "格拉尔-拍击（每日3次）",
+					"entries": [
+						"\"哀鸣者\"唱起一首沼泽的末日之歌。在\"哀鸣者\"30尺范围内且能听到歌声的每个选定生物必须进行一次 {@dc 12} 感知豁免，失败时受到 9 ({@damage 2d8}) 点心灵伤害，成功则伤害减半。未能通过这次豁免的生物在其下一回合结束前，在体质豁免上具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Rooooo-glog (1/Day)",
+					"name": "罗格罗格（每日一次）",
+					"entries": [
+						"鲶鱼唱出一首对老青蛙魔的颂歌。每个能听到歌声的啵灵蛙，在鲶鱼周围30尺内，将获得10点临时生命值。"
+					]
+				}
+			],
+			"attachedItems": [
+				"矛|phb"
+			],
+			"traitTags": [
+				"水陆两栖",
+				"伪装"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Bullywug Royal",
+			"name": "啵灵蛙王族",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"啵灵蛙"
+				]
+			},
+			"source": "GoS",
+			"page": 232,
+			"referenceSources": [
+				"WBtW"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 兽皮甲|phb}",
+						"{@item 盾牌|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 40
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 14,
+			"save": {
+				"str": "+5",
+				"dex": "+3"
+			},
+			"skill": {
+				"athletics": "+5",
+				"intimidation": "+4",
+				"stealth": "+3"
+			},
+			"passive": 10,
+			"languages": [
+				"啵灵蛙语"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"皇家生物能够呼吸空气和水。"
+					]
+				},
+				{
+					"ENG_name": "Brute",
+					"name": "残暴",
+					"entries": [
+						"近战武器在皇室成员用它命中时额外造成一点伤害骰的伤害（包含在攻击中）。"
+					]
+				},
+				{
+					"ENG_name": "Frog Rider",
+					"name": "蟾蜍骑士",
+					"entries": [
+						"当骑乘蛙类坐骑进行近战攻击时，皇家成员具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Speak with Frogs and Toads",
+					"name": "蛙类交流",
+					"entries": [
+						"\"皇家\"在用啵灵蛙语言说话时，可以向青蛙和蟾蜍传达简单的概念。"
+					]
+				},
+				{
+					"ENG_name": "Standing Leap",
+					"name": "立定跳远",
+					"entries": [
+						"皇家生物的远跳可达20尺，高跳可达10尺，无论是否助跑。"
+					]
+				},
+				{
+					"ENG_name": "Swamp Camouflage",
+					"name": "沼泽伪装",
+					"entries": [
+						"在沼泽地形中隐藏时，皇家生物在敏捷（{@skill 隐匿}）检定上具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"皇家生物进行两次攻击：一次使用它的皇家长矛，一次用咬击。"
+					]
+				},
+				{
+					"ENG_name": "Royal Spear",
+					"name": "皇家长矛",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 5}，触及 10 尺或射程 20/60 尺，单一目标。{@h}10 ({@damage 2d6 + 3}) 穿刺伤害，或者如果双手用于近战攻击，则为 12 ({@damage 2d8 + 3}) 穿刺伤害。如果目标是中型或更小体型的生物，它必须成功通过一次 {@dc 13} 力量豁免，否则将被击倒 {@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}6（{@damage 1d6 + 3}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Croaked Decree (1/Day)",
+					"name": "聒噪法令（每日1次）",
+					"entries": [
+						"皇家生物发出了一声响亮的宣告。在皇家周围60尺范围内，能够听到宣告的每个啵灵蛙在其下一次攻击检定中具有优势。"
+					]
+				}
+			],
+			"traitTags": [
+				"水陆两栖",
+				"残暴",
+				"伪装"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RCH",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Captain Xendros",
+			"name": "船长赞德罗斯",
+			"shortName": "仙德罗斯",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "GoS",
+			"page": 14,
+			"_copy": {
+				"ENG_name": "Priest",
+				"name": "祭司",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Tiefling",
+						"name": "提夫林",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "祭司",
+						"with": "仙德罗斯",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"I",
+				"X"
+			],
+			"damageTagsSpell": [
+				"F",
+				"N",
+				"O",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Drowned Ascetic",
+			"name": "溺亡者修行僧",
+			"type": "undead",
+			"source": "GoS",
+			"page": 233,
+			"referenceSources": [
+				"LR"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d8 + 30"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 16,
+			"int": 3,
+			"wis": 9,
+			"cha": 5,
+			"save": {
+				"dex": "+5"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 9,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"中毒"
+			],
+			"languages": [
+				"理解它生前所知的语言，但不会说"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Bottom Treader",
+					"name": "水底行者",
+					"entries": [
+						"溺水的苦行僧不能游泳，它会沉到任何水域的底部。在水下移动或攻击时不会受到任何惩罚。它对超过100尺深的水下环境免疫。"
+					]
+				},
+				{
+					"ENG_name": "Bound Together",
+					"name": "共有链接",
+					"entries": [
+						"溺水的苦行僧与周围1英里内的所有其他溺水者共享其思维，并且可以无限制地即时与它们交流其思想和观察。"
+					]
+				},
+				{
+					"ENG_name": "Undead Fortitude",
+					"name": "不死坚韧",
+					"entries": [
+						"如果伤害使溺水的苦行僧降至0生命值，除非伤害是光耀伤害或来自重击，否则它必须进行一次体质豁免，难度等级为5加上受到的伤害。如果成功，溺水的苦行僧将生命值降至1点。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"溺水的苦行僧进行三次徒手攻击。"
+					]
+				},
+				{
+					"ENG_name": "Unarmed Strike",
+					"name": "徒手打击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}7 ({@damage 1d8 + 3}) 钝击伤害，目标必须成功进行一次体质豁免检定（{@dc 12}），否则感染{@disease 蓝腐病|GoS}（见笔记中的\"蓝疫\"）。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Dexterous Target",
+					"name": "灵活目标",
+					"entries": [
+						"溺亡的苦行者在面对一次命中它的远程攻击时，其护甲等级（AC）增加3点。为此，溺亡的苦行者必须能看到攻击者。"
+					]
+				}
+			],
+			"traitTags": [
+				"不死坚韧"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Drowned Assassin",
+			"name": "溺亡者刺客",
+			"type": "undead",
+			"source": "GoS",
+			"page": 234,
+			"referenceSources": [
+				"LR"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item 皮甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 67,
+				"formula": "9d8 + 27"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 16,
+			"con": 16,
+			"int": 9,
+			"wis": 9,
+			"cha": 16,
+			"save": {
+				"dex": "+5",
+				"con": "+5"
+			},
+			"skill": {
+				"intimidation": "+5",
+				"stealth": "+5"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 9,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"中毒"
+			],
+			"languages": [
+				"理解它生前所知的语言，但不会说"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"ENG_name": "Bottom Treader",
+					"name": "水底行者",
+					"entries": [
+						"溺水的刺客不能游泳，它会沉到任何水域的底部。在水下移动或攻击时不会受到任何惩罚。它对超过100尺深的水下环境免疫。"
+					]
+				},
+				{
+					"ENG_name": "Bound Together",
+					"name": "共有链接",
+					"entries": [
+						"溺水的刺客与周围1英里内的所有其他溺水者共享其思维，并且可以无限制地即时与它们交流其思想和观察。"
+					]
+				},
+				{
+					"ENG_name": "Undead Fortitude",
+					"name": "不死坚韧",
+					"entries": [
+						"如果伤害使溺水刺客的生命值降至0点，除非伤害是光耀伤害或来自重击，否则它必须进行一次体质豁免检定，难度等级为5加上所受伤害。如果成功，溺水刺客的生命值会降至1点。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"溺亡者刺客可以进行两次手弩攻击或两次匕首攻击。然后它可以执行{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。"
+					]
+				},
+				{
+					"ENG_name": "Hand Crossbow",
+					"name": "手弩",
+					"entries": [
+						"{@atk rw} 命中{@hit 5}，射程30/120尺，单一目标。{@h}6 ({@damage 1d6 + 3}) 点穿刺伤害加上3 ({@damage 1d6}) 毒素伤害，目标必须在一次{@dc 12} 体质豁免检定中成功，否则感染{@disease 蓝腐病|GoS}（见笔记中的\"蓝疫\"）。"
+					]
+				},
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}5 ({@damage 1d4 + 3}) 点穿刺伤害加上9 ({@damage 2d8}) 毒素伤害，目标必须成功进行一次体质豁免检定（{@dc 12}），否则感染{@disease 蓝腐病|GoS}（见笔记中的\"蓝疫\"）。"
+					]
+				},
+				{
+					"ENG_name": "Reveal (1/Day)",
+					"name": "揭示（每日1次）",
+					"entries": [
+						"溺水的刺客摘下面具，露出腐烂的面孔。刺客选择的每个能看见刺客的生物，如果它在刺客30尺范围内，必须成功进行一次{@dc 13}感知豁免检定，否则直到它下一个回合结束时将被{@condition 恐慌}。"
+					]
+				}
+			],
+			"attachedItems": [
+				"匕首|phb",
+				"手弩|phb"
+			],
+			"traitTags": [
+				"不死坚韧"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"conditionInflict": [
+				"恐慌"
+			],
+			"savingThrowForced": [
+				"体质",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Drowned Blade",
+			"name": "溺亡者之刃",
+			"type": "undead",
+			"source": "GoS",
+			"page": 235,
+			"referenceSources": [
+				"LR"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"from": [
+						"{@item 皮甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "6d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 8,
+			"con": 16,
+			"int": 3,
+			"wis": 9,
+			"cha": 5,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 9,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"中毒"
+			],
+			"languages": [
+				"理解它生前所知的语言，但不会说"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "Bottom Treader",
+					"name": "水底行者",
+					"entries": [
+						"溺水之刃不能游泳，它会沉到任何水域的底部。它在水下移动或攻击时不会受到任何惩罚。它对超过100尺深度的水下环境影响免疫。"
+					]
+				},
+				{
+					"ENG_name": "Bound Together",
+					"name": "共有链接",
+					"entries": [
+						"溺水之刃与它周围1英里内的所有其他溺水者共享其思维，并且可以无限制地瞬间将自己的思想和观察传达给他们。"
+					]
+				},
+				{
+					"ENG_name": "Undead Fortitude",
+					"name": "不死坚韧",
+					"entries": [
+						"如果伤害使溺水之刃的生命值降至0点，除非伤害是光耀伤害或来自重击，否则它必须进行一次体质豁免检定，难度等级（DC）为5加上所受伤害。如果成功，溺水之刃的生命值降至1点。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"溺水之刃进行两次生锈长剑攻击。"
+					]
+				},
+				{
+					"ENG_name": "Rusted Longsword",
+					"name": "锈迹斑斑的长剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及范围5尺，单一目标。{@h}7 ({@damage 1d8 + 3}) 挥砍伤害，目标必须在一次{@dc 12} 体质豁免检定中成功，否则感染{@disease 蓝腐病|GoS}（见笔记中的\"蓝疫\"）。"
+					]
+				}
+			],
+			"traitTags": [
+				"不死坚韧"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Drowned Master",
+			"name": "溺亡者领主",
+			"type": "undead",
+			"source": "GoS",
+			"page": 235,
+			"referenceSources": [
+				"LR"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 157,
+				"formula": "21d8 + 63"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 16,
+			"int": 9,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"con": "+7",
+				"wis": "+6"
+			},
+			"skill": {
+				"perception": "+10"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 20,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"中毒"
+			],
+			"languages": [
+				"理解它生前所知的语言，但不会说"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"ENG_name": "Bound Together",
+					"name": "共有链接",
+					"entries": [
+						"溺亡大师能与其1英里范围内的所有其他溺亡者共享其思维，并能无限制地即时与它们交流思想和观察。"
+					]
+				},
+				{
+					"ENG_name": "Cold Aura",
+					"name": "冷冻光环",
+					"entries": [
+						"在溺水大师的每个回合开始时，其5尺范围内的每个生物受到5 ({@damage 1d10}) 点寒冷伤害。任何在5尺范围内接触溺水大师或用近战攻击命中它的生物也会受到5 ({@damage 1d10}) 点寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Undead Fortitude",
+					"name": "不死坚韧",
+					"entries": [
+						"如果伤害使溺水大师的生命值降至0点，除非伤害是光耀伤害或来自重击，否则它必须进行一次体质豁免检定，难度等级为5加上所受伤害。如果成功，溺水大师的生命值会降至1点。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"溺水大师进行两次攻击：一次使用它的巨剑，一次使用它的生命力吸取触手。"
+					]
+				},
+				{
+					"ENG_name": "Greatsword",
+					"name": "巨剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）挥砍伤害加上14（{@damage 4d6}）寒冷伤害，目标必须进行一次{@dc 12}体质豁免检定，否则感染{@disease 蓝腐病|GoS}（见笔记中的\"蓝病\"）。"
+					]
+				},
+				{
+					"ENG_name": "Life-Draining Tentacle",
+					"name": "饮命触角",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及15尺，单一目标。{@h}10 ({@damage 2d6 + 3}) 暗蚀伤害。目标必须成功进行一次体质豁免检定（{@dc 15}），否则其生命值上限将减少等同于受到的伤害。如果这个效果将目标的生命值上限减少至0，则目标死亡。这个减少持续到目标完成一次长休。如果豁免失败，目标还将感染蓝疫（见笔记中的\"蓝疫\"）。"
+					]
+				},
+				{
+					"ENG_name": "Necrotic Ink {@recharge 5}",
+					"name": "死灵墨水 {@recharge 5}",
+					"entries": [
+						"溺亡大师在自己前方释放出一片30尺的锥形恶臭墨汁。每个被墨汁覆盖的生物必须进行一次{@dc 15}体质豁免检定，失败则受到27 ({@damage 6d8}) 暗蚀伤害，成功则伤害减半。未能通过此豁免检定的生物将在其下个回合结束前处于{@condition 目盲}状态，并感染了蓝腐病（见笔记中的\"蓝腐病\"）。"
+					]
+				}
+			],
+			"attachedItems": [
+				"巨剑|phb"
+			],
+			"traitTags": [
+				"不死坚韧"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"C",
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"目盲"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Fish",
+			"name": "鱼",
+			"source": "GoS",
+			"page": 224,
+			"_copy": {
+				"ENG_name": "Quipper",
+				"name": "食人鱼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "食人鱼",
+						"with": "鱼",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "removeArr",
+						"names": "血腥狂怒"
+					}
+				}
+			},
+			"action": null,
+			"damageTags": [],
+			"miscTags": [],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Giant Coral Snake",
+			"name": "巨珊瑚蛇",
+			"type": "beast",
+			"source": "GoS",
+			"page": 236,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 90,
+				"formula": "12d10 + 24"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 14,
+			"int": 2,
+			"wis": 10,
+			"cha": 3,
+			"skill": {
+				"perception": "+2"
+			},
+			"senses": [
+				"盲视 10 尺"
+			],
+			"passive": 12,
+			"cr": "4",
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} {@hit 5} 攻击命中，触及 5 英尺，单一目标。{@h}8 ({@damage 2d4 + 3}) 点穿刺伤害，且目标必须成功通过一次 {@dc 12} 体质豁免否则将 {@condition 震慑} 直到其下一回合结束。若豁免失败，目标开始产生幻觉并受到 {@table 短暂性疯狂|DMG} 效果影响（随机决定或由 DM 决定；详见{@book 城主指南|dmg|8|疯狂} 第 8 章）。该效果持续 10 分钟。"
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"震慑"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Giant Sea Eel",
+			"name": "巨海鳗",
+			"type": "beast",
+			"source": "GoS",
+			"page": 237,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 19,
+				"formula": "3d10 + 3"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 40
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 12,
+			"int": 7,
+			"wis": 10,
+			"cha": 7,
+			"save": {
+				"dex": "+4"
+			},
+			"skill": {
+				"perception": "+2",
+				"stealth": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 12,
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Water Breathing",
+					"name": "水下呼吸",
+					"entries": [
+						"鳗鱼只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}13（{@damage 2d10 + 2}）点穿刺伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"水下呼吸"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Giant White Moray Eel",
+			"name": "巨型白海鳝",
+			"source": "GoS",
+			"page": 216,
+			"_copy": {
+				"ENG_name": "Giant Constrictor Snake",
+				"name": "巨蟒蛇",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "蛇",
+						"with": "鳗",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"ENG_name": "Water Breathing",
+							"name": "水下呼吸",
+							"entries": [
+								"鳗鱼只能在水下呼吸。"
+							]
+						}
+					},
+					"action": {
+						"mode": "removeArr",
+						"names": "绞缠"
+					}
+				}
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 40
+			},
+			"skill": {
+				"perception": "+2",
+				"stealth": "+4"
+			},
+			"traitTags": [
+				"水下呼吸"
+			],
+			"damageTags": [
+				"P"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Harpy Matriarch",
+			"name": "鸟妖女族长",
+			"type": "monstrosity",
+			"source": "GoS",
+			"page": 237,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 88,
+				"formula": "16d8 + 16"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 40
+			},
+			"str": 13,
+			"dex": 16,
+			"con": 12,
+			"int": 9,
+			"wis": 10,
+			"cha": 16,
+			"save": {
+				"dex": "+6",
+				"cha": "+6"
+			},
+			"skill": {
+				"perception": "+3"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"languages": [
+				"通用语"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Luring Maestro",
+					"name": "诱惑大师",
+					"entries": [
+						"在女族长60尺范围内的生物，在对抗女族长的诱引之歌时豁免检定具有劣势。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"女族长在对抗法术和其他魔法效果的豁免检定上具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"女族长进行两次爪击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}13 ({@damage 3d6 + 3}) 挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Fleeting Form",
+					"name": "转瞬化形",
+					"entries": [
+						"女族长可以施法将自己变成一个大致相似大小和形状的类人生物，持续时间最长为1小时。它可以作为一个附赠动作恢复其真实形态。这种幻象无法经受仔细审查。"
+					]
+				},
+				{
+					"ENG_name": "Luring Song",
+					"name": "诱惑之歌",
+					"entries": [
+						"女族长唱出一支魔法旋律。所有在女族长 300 英尺范围内且能听到歌声的类人生物和巨人都必须成功通过一次 {@dc 14} 的感知豁免检定，否则将被 {@condition 魅惑}直到歌声结束。女族长必须在接下来的回合中使用一个附赠动作来继续歌唱。她可以随时停止歌唱。如果女族长被 {@condition 失能}，歌声也将结束。",
+						"当被女族长{@condition 魅惑}时，目标处于{@condition 失能}状态，并且忽略其他哈比的歌唱。如果被{@condition 魅惑}的目标距离女族长超过5尺，目标必须在它的回合上以最直接的路线向女族长移动，试图进入5尺范围内。它不会避免借机攻击，但在移动到危险地形，如熔岩或坑洞之前，以及每当它受到女族长以外来源的伤害时，目标可以重复豁免检定。一个{@condition 魅惑}的目标也可以在其每个回合结束时重复豁免检定。如果豁免检定成功，效果在其身上结束。",
+						"成功豁免的目标在接下来的24小时内对这位女族长的歌声免疫。"
+					]
+				},
+				{
+					"ENG_name": "Visage of Desire (1/Day)",
+					"name": "欲望之相（每日一次）",
+					"entries": [
+						"女族长向其周围30尺内非构装生物或不死生物的心智投射一个幻象，向每个受影响的生物展示它最渴望实现的场景。受影响的生物必须进行一次{@dc 14}感知豁免检定，否则必须放下它所持有的任何物品，并在它的下一个回合结束前变得{@condition 麻痹}。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"魅惑",
+				"失能"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Juvenile Kraken",
+			"name": "幼体克拉肯",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"泰坦"
+				]
+			},
+			"source": "GoS",
+			"page": 238,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 207,
+				"formula": "18d12 + 90"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 50
+			},
+			"str": 24,
+			"dex": 11,
+			"con": 20,
+			"int": 19,
+			"wis": 15,
+			"cha": 17,
+			"save": {
+				"str": "+12",
+				"dex": "+5",
+				"con": "+10",
+				"int": "+9",
+				"wis": "+7"
+			},
+			"senses": [
+				"真实视觉 120 尺"
+			],
+			"passive": 12,
+			"resist": [
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"闪电"
+			],
+			"conditionImmune": [
+				"恐慌",
+				"麻痹"
+			],
+			"languages": [
+				"深渊语",
+				"天界语",
+				"炼狱语",
+				"原初语",
+				"心灵感应 60 尺，但不会说。"
+			],
+			"cr": "14",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"克拉肯可以在空气和水中呼吸。"
+					]
+				},
+				{
+					"ENG_name": "Freedom of Movement",
+					"name": "行动自如",
+					"entries": [
+						"克拉肯无视{@quickref 困难地形||3}和魔法效应造成的降低速度或陷入{@condition 束缚}的效应。它可以花费5尺移动力从任何非魔法的被束缚或{@condition 受擒}状态中解脱。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"克拉肯进行两次触手攻击，每次触手攻击都可以替换为使用投掷技能。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及 5 尺，单一目标。{@h}20 ({@damage 3d8 + 7}) 点穿刺伤害。如果目标是中型或更小的{@condition 受擒}的生物，该生物将被吞噬且擒抱结束。被吞噬时，该生物处于{@condition 目盲}和{@condition 束缚}状态，且对克拉肯外部的攻击和其他效果拥有{@quickref 掩护||3||全身掩护}，并在克拉肯的每回合开始时受到 21 ({@damage 6d6}) 点强酸伤害。同时最多可以吞噬一个中型或两个更小的生物。",
+						"如果克拉肯在单一回合内从其内部的生物受到35点或更多的伤害，则克拉肯必须在该回合结束时成功进行一次{@dc 23}体质豁免检定，否则将吐出所有被吞噬的生物，这些生物会以{@condition 倒地}状态落在克拉肯10尺范围内的空间中。如果克拉肯死亡，被吞噬的生物不再被它{@condition 束缚}，可以使用10尺的移动距离从尸体中逃脱，以{@condition 倒地}状态离开。"
+					]
+				},
+				{
+					"ENG_name": "Tentacle",
+					"name": "触须",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及20尺，单一目标。{@h}17（{@damage 3d6 + 7}）钝击伤害，并且目标{@condition 受擒}（逃脱{@dc 20}）。抓握持续期间，目标{@condition 束缚}。克拉肯怪有十个触手，每个触手都可以抓握单一目标。"
+					]
+				},
+				{
+					"ENG_name": "Fling",
+					"name": "抛掷",
+					"entries": [
+						"一只被克拉肯抓住的中型或更小的物体或处于{@condition 受擒}状态的生物会被抛掷至40英尺内的随机方向并被击倒{@condition 倒地}。如果被抛掷的目标撞击到坚固的表面，目标将受到每抛出10英尺3（{@damage 1d6}）的钝击伤害。如果目标被抛向另一只生物，那只生物必须成功通过一次{@dc 13}敏捷豁免否则受到相同的伤害并被击倒{@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "Lightning Strike",
+					"name": "闪电打击",
+					"entries": [
+						"克拉肯通过魔法创造了一道闪电，可以打击它能看到的90尺内的任何目标。目标必须进行一次敏捷豁免，难度为{@dc 18}，如果失败，则受到22点（{@damage 4d10}）的闪电伤害，如果成功，则只受到一半的伤害。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Tentacle Attack (Costs 2 Actions)",
+					"name": "触手攻击（消耗2个动作）",
+					"entries": [
+						"克拉肯进行一次触手攻击。"
+					]
+				},
+				{
+					"ENG_name": "Fling",
+					"name": "抛掷",
+					"entries": [
+						"克拉肯使用投掷。"
+					]
+				},
+				{
+					"ENG_name": "Ink Cloud (Costs 3 Actions)",
+					"name": "墨汁云 (消耗 3动作)",
+					"entries": [
+						"在水下时，克拉肯会喷出一片半径40尺的墨水云。云雾会绕过转角扩散，该区域对克拉肯以外的生物而言处于{@quickref 视野与光照||2||重度遮蔽}状态。每个在云雾中结束其回合的非克拉肯生物必须成功通过一次{@dc 18}的体质豁免检定，豁免失败则受到11（{@damage 2d10}）毒素伤害，豁免成功则承受一半伤害。一股强水流可以驱散这片云雾，否则云雾将在克拉肯的下一个回合结束时消失。"
+					]
+				}
+			],
+			"traitTags": [
+				"水陆两栖"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"多重攻击",
+				"吞咽",
+				"触须"
+			],
+			"languageTags": [
+				"AB",
+				"CE",
+				"CS",
+				"I",
+				"P",
+				"TP"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"I",
+				"L",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"目盲",
+				"受擒",
+				"倒地",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Koalinth",
+			"name": "海地精",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"类地精"
+				]
+			},
+			"source": "GoS",
+			"page": 239,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item 鳞甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 16,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 20
+			},
+			"str": 13,
+			"dex": 11,
+			"con": 12,
+			"int": 11,
+			"wis": 10,
+			"cha": 11,
+			"save": {
+				"dex": "+2"
+			},
+			"skill": {
+				"athletics": "+3",
+				"perception": "+2"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 12,
+			"languages": [
+				"通用语",
+				"地精语"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"科兰斯族可以呼吸空气和水。"
+					]
+				},
+				{
+					"ENG_name": "Martial Advantage",
+					"name": "成军优势",
+					"entries": [
+						"在每个回合一次，如果考林斯击中的生物位于其未被{@condition 失能}的盟友5英尺范围内，考林斯可以使用武器攻击对该生物造成额外7点（{@damage 2d6}）伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Trident",
+					"name": "三叉戟",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 3}，触及5尺或射程20/60尺，单一目标。{@h}4（{@damage 1d6 + 1}） 点穿刺伤害，或使用双手发动近战攻击时5（{@damage 1d8 + 1}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"三叉戟|phb"
+			],
+			"traitTags": [
+				"水陆两栖"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Koalinth Sergeant",
+			"name": "海地精军士",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"类地精"
+				]
+			},
+			"source": "GoS",
+			"page": 239,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item 鳞甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 33,
+				"formula": "6d8 + 6"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 12,
+			"int": 11,
+			"wis": 10,
+			"cha": 12,
+			"save": {
+				"dex": "+2",
+				"wis": "+2"
+			},
+			"skill": {
+				"athletics": "+4",
+				"perception": "+2"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 12,
+			"languages": [
+				"通用语",
+				"地精语"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"科兰斯族可以呼吸空气和水。"
+					]
+				},
+				{
+					"ENG_name": "Martial Advantage",
+					"name": "成军优势",
+					"entries": [
+						"每回合一次，中士可以用武器攻击对命中的生物造成额外的7（{@damage 2d6}）点伤害，前提是该生物位于中士的一名未处于{@condition 失能}状态的盟友5英尺范围内。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"中士使用其三叉戟进行两次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Trident",
+					"name": "三叉戟",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及5尺或射程20/60尺，单一目标。{@h}5 ({@damage 1d6 + 2}) 点穿刺伤害，或者如果用双手进行近战攻击则为6 ({@damage 1d8 + 2}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Hooked Net",
+					"name": "钩网",
+					"entries": [
+						"{@atk rw} 命中{@hit 4}，射程10/30 尺，单一目标。{@h}4 ({@damage 1d4 + 2}) 点穿刺伤害，目标被{@condition 束缚}。生物可以使用它的行动来进行一次力量检定（{@dc 12}），以自由自己或另一个被钩网困住的生物，成功则结束这个效果。对网造成5点挥砍伤害（AC 12）可以不伤害目标而释放它，并摧毁网。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Spear the Helpless (2/Day)",
+					"name": "刺杀无助者（每日2次）",
+					"entries": [
+						"每当30尺内的生物变为{@condition 束缚}状态时，军士可以以自己的速度向该{@condition 束缚}生物移动。如果军士在移动结束时到达{@condition 束缚}生物的攻击范围内，它可以对其发动一次近战攻击。"
+					]
+				}
+			],
+			"attachedItems": [
+				"三叉戟|phb"
+			],
+			"traitTags": [
+				"水陆两栖"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GO"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"束缚"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Krell Grohlg",
+			"name": "克雷尔·格罗格",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "GoS",
+			"page": 92,
+			"_copy": {
+				"ENG_name": "Druid",
+				"name": "德鲁伊",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Half-Orc",
+						"name": "半兽人",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "德鲁伊",
+						"with": "克雷尔",
+						"flags": "i"
+					},
+					"_": {
+						"mode": "replaceSpells",
+						"spells": {
+							"2": [
+								{
+									"replace": "{@spell 动物信使}",
+									"with": "{@spell 炽焰法球}"
+								}
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"str": 18,
+			"languages": [
+				"通用语",
+				"兽人语"
+			],
+			"action": [
+				{
+					"ENG_name": "Quarterstaff",
+					"name": "长棍",
+					"entries": [
+						"{@atk mw} {@hit 6} 命中 ({@hit 4} 如果使用施法杖)，触及 5 英尺，单一目标。 {@h}7 ({@damage 1d6 + 4}) 钝击伤害，若双手持用则为 8 ({@damage 1d8 + 4}) 钝击伤害，或使用{@spell 橡棍术}时为 6 ({@damage 1d8 + 2}) 钝击伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"长棍|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"O"
+			],
+			"miscTags": [
+				"MLW"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Kysh",
+			"name": "基什",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"梭螺鱼人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "GoS",
+			"page": 240,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d8 + 5"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 12,
+			"int": 10,
+			"wis": 13,
+			"cha": 14,
+			"skill": {
+				"persuasion": "+4",
+				"survival": "+3"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 11,
+			"languages": [
+				"通用语",
+				"原初语"
+			],
+			"cr": "1",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"凯什的施法属性为魅力（法术豁免 {@dc 12}，法术攻击命中 {@hit 4}）。他能施展以下法术，仅需言语成分："
+					],
+					"daily": {
+						"1": [
+							"{@spell 云雾术}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"凯什可以在空气和水中呼吸。"
+					]
+				},
+				{
+					"ENG_name": "Emissary of the Sea",
+					"name": "海之使者",
+					"entries": [
+						"凯什可以与两栖生物和水生呼吸的野兽简单交流。它们能理解他的话语意思，但他无法理解它们的回应。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"Kysh 用他的长矛进行两次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Spear",
+					"name": "矛",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及5尺或20/60尺，单一目标。{@h}5 ({@damage 1d6 + 2}) 点穿刺伤害，或者如果用双手进行近战攻击，则为6 ({@damage 1d8 + 2}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"矛|phb"
+			],
+			"traitTags": [
+				"水陆两栖"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"P"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Living Iron Statue",
+			"name": "活化钢铁像",
+			"type": "construct",
+			"source": "GoS",
+			"page": 241,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 102,
+				"formula": "12d8 + 48"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 18,
+			"int": 6,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"immune": [
+				"闪电",
+				"毒素"
+			],
+			"vulnerable": [
+				"强酸"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒"
+			],
+			"languages": [
+				"能理解其创造者的语言但无法说话"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Immutable Form",
+					"name": "不变形态",
+					"entries": [
+						"这座雕像对任何会改变其形态的法术或效果免疫。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"雕像进行两次攻击：一次使用它的刀刃，一次使用它的锤子。"
+					]
+				},
+				{
+					"ENG_name": "Blade",
+					"name": "刃之魔契",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Hammer",
+					"name": "锤子",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）钝击伤害，并且目标被击成{@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "Whirl {@recharge 5}",
+					"name": "旋风 {@recharge 5}",
+					"entries": [
+						"雕像可以使用它的动作在腰部旋转，选择其10英尺内的生物作为目标。每个目标必须进行一次{@dc 13}敏捷豁免检定，豁免失败则受到19（{@damage 3d10 + 3}）点钝击伤害，豁免成功则受到一半伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"不变形态"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Lizardfolk Commoner",
+			"name": "蜥蜴人平民",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"蜥蜴人"
+				]
+			},
+			"source": "GoS",
+			"page": 241,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 16,
+				"formula": "3d8 + 3"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 15,
+			"dex": 10,
+			"con": 12,
+			"int": 7,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+2",
+				"survival": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"龙语"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"ENG_name": "Hold Breath",
+					"name": "屏息",
+					"entries": [
+						"蜥蜴人可以憋气15分钟。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"屏息"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Lizardfolk Render",
+			"name": "蜥蜴人撕裂者",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"蜥蜴人"
+				]
+			},
+			"source": "GoS",
+			"page": 241,
+			"referenceSources": [
+				"IMR",
+				"SLW"
+			],
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "7d10 + 14"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 14,
+			"int": 7,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"athletics": "+5",
+				"perception": "+3",
+				"survival": "+5"
+			},
+			"passive": 13,
+			"languages": [
+				"龙语"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Blood Frenzy",
+					"name": "血腥狂怒",
+					"entries": [
+						"对于任何生命值没有满的生物，驯兽师在近战攻击骰上具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Hold Breath",
+					"name": "屏息",
+					"entries": [
+						"撕裂者可以屏息15分钟。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"撕裂者进行两次攻击：一次用它的爪子，一次用它的咬击。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及10尺，单一目标。{@h}12（{@damage 2d8 + 3}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}8 ({@damage 1d10 + 3}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Rend the Field {@recharge 5}",
+					"name": "撕裂田野 {@recharge 5}",
+					"entries": [
+						"该生物对其选择的每个距离它10尺以内的生物进行爪击攻击。被此攻击击中的生物必须成功进行一次{@dc 13}力量豁免检定，否则会被打至{@condition 倒地}状态。"
+					]
+				}
+			],
+			"traitTags": [
+				"屏息"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Lizardfolk Scaleshield",
+			"name": "蜥蜴人鳞盾",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"蜥蜴人"
+				]
+			},
+			"source": "GoS",
+			"page": 242,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 鳞甲|phb}",
+						"{@item 盾牌|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 32,
+				"formula": "5d8 + 10"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 15,
+			"dex": 10,
+			"con": 14,
+			"int": 7,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"athletics": "+4",
+				"perception": "+3",
+				"survival": "+5"
+			},
+			"passive": 13,
+			"languages": [
+				"龙语"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Hold Breath",
+					"name": "屏息",
+					"entries": [
+						"鳞盾可以屏息15分钟。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"鳞盾战士进行两次近战攻击，每次使用不同的武器。"
+					]
+				},
+				{
+					"ENG_name": "Morningstar",
+					"name": "钉头锤",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6 ({@damage 1d8 + 2}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Spiked Shield",
+					"name": "刺盾",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Shield Block",
+					"name": "盾牌格挡",
+					"entries": [
+						"如果鳞盾旁边5尺范围内的盟友被攻击命中，鳞盾可以减少该攻击伤害的一半。"
+					]
+				}
+			],
+			"attachedItems": [
+				"钉头锤|phb"
+			],
+			"traitTags": [
+				"屏息"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Lizardfolk Subchief",
+			"name": "蜥蜴人副首领",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"蜥蜴人"
+				]
+			},
+			"source": "GoS",
+			"page": 242,
+			"referenceSources": [
+				"SLW"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 14,
+			"int": 10,
+			"wis": 16,
+			"cha": 12,
+			"save": {
+				"wis": "+5"
+			},
+			"skill": {
+				"athletics": "+4",
+				"perception": "+5",
+				"survival": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"龙语"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"次级首领是一个5级施法者。它的施法能力是感知（法术豁免{@dc 13}，法术攻击命中{@hit 5}）。它准备了以下牧师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 光亮术}",
+								"{@spell 圣火术}",
+								"{@spell 维生术}",
+								"{@spell 奇术}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 命令术}",
+								"{@spell 光导箭}",
+								"{@spell 净化饮食}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 定身类人}",
+								"{@spell 次等复原术}",
+								"{@spell 沉默术}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell 降咒}",
+								"{@spell 解除魔法}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Hold Breath",
+					"name": "屏息",
+					"entries": [
+						"副首领可以屏息15分钟。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Tooth Dagger",
+					"name": "牙匕",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}4（{@damage 1d4 + 2}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Jaws of Semuanya {@recharge 5}",
+					"name": "塞穆亚尼亚之颚 {@recharge 5}",
+					"entries": [
+						"副酋长召唤塞穆安尼的原始魔法，在它60英尺内能看见的目标周围召唤出一个幽灵之口。目标必须进行一次{@dc 13}敏捷豁免，豁免失败则受到22（{@damage 5d8}）点穿刺伤害，豁免成功则受到一半伤害。豁免失败的目标还会被{@condition 恐慌}直到其下个回合结束。"
+					]
+				}
+			],
+			"traitTags": [
+				"屏息"
+			],
+			"languageTags": [
+				"DR"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"N",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"恐慌"
+			],
+			"conditionInflictSpell": [
+				"耳聋",
+				"麻痹",
+				"倒地"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Locathah",
+			"name": "洛卡鱼人",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"洛卡鱼人"
+				]
+			},
+			"source": "GoS",
+			"page": 243,
+			"referenceSources": [
+				"IMR"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "4d8 + 4"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 12,
+			"int": 11,
+			"wis": 10,
+			"cha": 11,
+			"save": {
+				"dex": "+3"
+			},
+			"skill": {
+				"athletics": "+3",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"水族语",
+				"通用语"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Leviathan Will",
+					"name": "利维坦意志",
+					"entries": [
+						"洛卡哈在对抗被{@condition 魅惑}、{@condition 恐慌}、{@condition 麻痹}、{@condition 中毒}、{@condition 震慑}或被催眠的豁免检定中具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Limited Amphibiousness",
+					"name": "有限两栖",
+					"entries": [
+						"洛卡塔族可以呼吸空气和水，但它需要至少每4小时至少一次被浸没在水中，以避免窒息。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"洛卡塔哈用它的矛进行两次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Spear",
+					"name": "矛",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 3}，触及5尺或20/60尺，单一目标。{@h}4 ({@damage 1d6 + 1}) 点穿刺伤害，或者如果用双手使用，则为5 ({@damage 1d8 + 1}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"矛|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Locathah Hunter",
+			"name": "洛卡鱼人猎手",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"洛卡鱼人"
+				]
+			},
+			"source": "GoS",
+			"page": 243,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 33,
+				"formula": "6d8 + 6"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 13,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 14,
+			"cha": 11,
+			"save": {
+				"dex": "+4",
+				"wis": "+4"
+			},
+			"skill": {
+				"athletics": "+3",
+				"perception": "+4"
+			},
+			"passive": 14,
+			"languages": [
+				"水族语",
+				"通用语"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "Leviathan Will",
+					"name": "利维坦意志",
+					"entries": [
+						"这个猎人在对抗控制其行动的法术和效果的豁免检定上有优势。"
+					]
+				},
+				{
+					"ENG_name": "Limited Amphibiousness",
+					"name": "有限两栖",
+					"entries": [
+						"猎人可以在空气和水中呼吸，但它需要至少每4小时潜入水下一次以避免窒息。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"猎人用其涂毒的弩进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Envenomed Crossbow",
+					"name": "毒弩",
+					"entries": [
+						"{@atk rw} 命中{@hit 4}，射程80/320尺，单一目标。{@h}11 ({@damage 2d8 + 2}) 点穿刺伤害，目标必须通过一个{@dc 12}体质豁免检定，否则直到其下个回合结束时将被{@condition 中毒}。"
+					]
+				},
+				{
+					"ENG_name": "Club",
+					"name": "短棒",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}4 ({@damage 1d6 + 1}) 点钝击伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"短棒|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"中毒"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Master Refrum",
+			"name": "大师瑞弗拉姆",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "GoS",
+			"page": 165,
+			"_copy": {
+				"ENG_name": "Priest",
+				"name": "祭司",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "祭司",
+						"with": "雷夫拉姆",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"G"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Maw of Sekolah",
+			"name": "瑟寇拉之喉",
+			"type": "monstrosity",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "GoS",
+			"page": 244,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 114,
+				"formula": "12d12 + 36"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 50
+			},
+			"str": 21,
+			"dex": 12,
+			"con": 17,
+			"int": 2,
+			"wis": 14,
+			"cha": 7,
+			"save": {
+				"str": "+8",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+8",
+				"perception": "+5"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 15,
+			"languages": [
+				"鲨华语",
+				"心灵感应 100 尺"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"ENG_name": "Legendary Resistance (2/Day)",
+					"name": "传奇抗性（2/日）",
+					"entries": [
+						"如果塞科拉之口的豁免检定失败，它可以选择成功。"
+					]
+				},
+				{
+					"ENG_name": "Water Breathing",
+					"name": "水下呼吸",
+					"entries": [
+						"塞科拉之口只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"塞科拉之口进行一次咬击和一次尾巴砸击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及10尺，单一目标。{@h}16（{@damage 2d10 + 5}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Tail Smash",
+					"name": "粉碎尾击.",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及10尺，单一目标。{@h}9（{@damage 1d8 + 5}）点钝击伤害。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Detect",
+					"name": "侦查",
+					"entries": [
+						"塞科拉之口进行一次感知（{@skill 察觉})检定。"
+					]
+				},
+				{
+					"ENG_name": "Speed of Sekolah",
+					"name": "瑟寇拉之迅捷",
+					"entries": [
+						"塞科拉之口移动其速度范围内的距离。"
+					]
+				},
+				{
+					"ENG_name": "Feed (Costs 2 Actions)",
+					"name": "进食（消耗2个动作）",
+					"entries": [
+						"塞科拉的凶猛精神在水中闪烁，撕裂塞科拉之口的敌人。塞科拉之口选择的每个生物，如果在它60尺范围内，必须进行一次 {@dc 16} 敏捷豁免，失败时受到 7 ({@damage 2d6}) 点挥砍伤害，成功则伤害减半。"
+					]
+				}
+			],
+			"traitTags": [
+				"传奇抗性",
+				"水下呼吸"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"OTH",
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Merfolk Salvager",
+			"name": "人鱼打捞者",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人鱼"
+				]
+			},
+			"source": "GoS",
+			"page": 244,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 22,
+				"formula": "4d8 + 4"
+			},
+			"speed": {
+				"walk": 10,
+				"swim": 40
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 10,
+			"cha": 13,
+			"save": {
+				"dex": "+4"
+			},
+			"skill": {
+				"athletics": "+3",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"水族语",
+				"通用语"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"拾荒者可以在空气和水中呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"拾荒者用它的珊瑚刺剑进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Coral Rapier",
+					"name": "珊瑚刺剑",
+					"entries": [
+						"{@atk m} 命中{@hit 4}，触及5尺，单一目标。{@h}6 ({@damage 1d8 + 2}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Inject Toxin (2/Day)",
+					"name": "注射毒素（每日两次）",
+					"entries": [
+						"{@atk m} 命中{@hit 4}，触及5尺，单一目标。{@h}6（{@damage 1d8 + 2}）点穿刺伤害，生物必须进行一次{@dc 12}体质豁免检定，否则在它的下一个回合结束前处于{@condition 麻痹}状态。"
+					]
+				}
+			],
+			"traitTags": [
+				"水陆两栖"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW"
+			],
+			"conditionInflict": [
+				"麻痹"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Merfolk Scout",
+			"name": "人鱼侦察兵",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人鱼"
+				]
+			},
+			"source": "GoS",
+			"page": 216,
+			"_copy": {
+				"ENG_name": "Scout",
+				"name": "斥候",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Merfolk",
+						"name": "人鱼",
+						"source": "DMG"
+					}
+				],
+				"_mod": {
+					"action": {
+						"mode": "removeArr",
+						"names": "长弓"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"traitTags": [
+				"水陆两栖",
+				"敏锐感官"
+			],
+			"languageTags": [
+				"AQ",
+				"C",
+				"X"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Minotaur Living Crystal Statue",
+			"name": "活化牛头人水晶像",
+			"type": "construct",
+			"source": "GoS",
+			"page": 245,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 136,
+				"formula": "16d10 + 48"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 9,
+			"con": 16,
+			"int": 6,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"immune": [
+				"闪电",
+				"毒素"
+			],
+			"vulnerable": [
+				"力场"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒"
+			],
+			"languages": [
+				"能理解其创造者的语言但无法说话"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"ENG_name": "Immutable Form",
+					"name": "不变形态",
+					"entries": [
+						"这座雕像对任何会改变其形态的法术或效果免疫。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"雕像进行两次攻击：一次使用它的巨斧，一次进行冲撞攻击。"
+					]
+				},
+				{
+					"ENG_name": "Greataxe",
+					"name": "巨斧",
+					"entries": [
+						"{@atk mw} {@hit 7}命中，触及5尺，单一目标。{@h}17（{@damage 2d12 + 4}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Gore",
+					"name": "顶撞",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及 5 尺，单一目标。{@h}8 ({@damage 1d8 + 4}) 点穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Flying Shards",
+					"name": "飞屑",
+					"entries": [
+						"作为对生物用近战武器攻击雕像的回应，雕像对攻击者造成11（{@damage 2d10}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"巨斧|phb"
+			],
+			"traitTags": [
+				"不变形态"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Monstrous Peryton",
+			"name": "庞巨鹿鹰兽",
+			"type": "monstrosity",
+			"source": "GoS",
+			"page": 245,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 144,
+				"formula": "17d10 + 51"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 60
+			},
+			"str": 19,
+			"dex": 14,
+			"con": 16,
+			"int": 9,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"str": "+8",
+				"dex": "+6",
+				"wis": "+6"
+			},
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 16,
+			"languages": [
+				"能理解通用语和精灵语，但不能说话"
+			],
+			"cr": "11",
+			"trait": [
+				{
+					"ENG_name": "Flyby",
+					"name": "飞掠",
+					"entries": [
+						"当鹿鹰飞出敌人的攻击范围时，不会引发借机攻击。"
+					]
+				},
+				{
+					"ENG_name": "Keen Sight and Smell",
+					"name": "敏锐视嗅觉",
+					"entries": [
+						"鹿鹰依赖视觉和嗅觉进行的感知（{@skill 察觉}）检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性 (3/日)",
+					"entries": [
+						"如果鹿鹰豁免检定失败，它可以选择成功。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"鹿鹰进行两次攻击：一次用它的角刺，一次用它的爪子。"
+					]
+				},
+				{
+					"ENG_name": "Gore",
+					"name": "顶撞",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及 5 尺，单一目标。{@h}12 ({@damage 2d6 + 5}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Talons",
+					"name": "禽爪",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及范围5尺，单一目标。{@h}16 ({@damage 2d10 + 5}) 挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Warp Shadow",
+					"name": "扭曲阴影",
+					"entries": [
+						"飞行魔像选择它可见的60英尺范围内的最多三个生物。每个生物必须成功通过一次{@dc 14}的感知豁免检定，否则将被诅咒。诅咒期间，每当该生物进行攻击检定、能力检定或豁免检定时，它必须掷一枚{@dice d4}并将结果从检定值中减去。被诅咒的生物可以在每个回合结束时重复此豁免检定，若成功则结束此效果。在此豁免检定中成功的生物将对该飞行魔像的扭曲影子效果免疫24小时。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Detect",
+					"name": "侦查",
+					"entries": [
+						"鹿鹰进行一次感知（{@skill 察觉})检定。"
+					]
+				},
+				{
+					"ENG_name": "Talons Attack",
+					"name": "爪击攻击",
+					"entries": [
+						"鹿鹰用它的爪子进行一次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Dive Attack (Costs 2 Actions)",
+					"name": "俯冲攻击（消耗2个动作）",
+					"entries": [
+						"鹿鹰向它选择的一个目标移动，速度最多为其移动速度。然后它进行一次冲刺攻击，如果命中，额外造成9 ({@damage 2d8}) 点穿刺伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"飞掠",
+				"敏锐感官",
+				"传奇抗性"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"E"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"CUR",
+				"MW"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Mr. Dory",
+			"name": "多利先生",
+			"type": "aberration",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "GoS",
+			"page": 246,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 镶钉皮甲|phb|镶钉皮甲}",
+						"{@item 盾牌|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 170,
+				"formula": "20d8 + 80"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 20,
+			"con": 19,
+			"int": 14,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"con": "+8",
+				"wis": "+6"
+			},
+			"skill": {
+				"athletics": "+5",
+				"perception": "+6",
+				"stealth": "+9"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 16,
+			"immune": [
+				"暗蚀"
+			],
+			"languages": [
+				"深渊语",
+				"通用语",
+				"深潜语",
+				"心灵感应 60 尺"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"多利先生的天赋施法能力是魅力（豁免{@dc 15}，法术攻击命中{@hit 7}）。多利先生能够天赋施放以下法术，无需任何材料组件："
+					],
+					"will": [
+						"{@spell 侦测魔法}",
+						"{@spell 侦测思想}",
+						"{@spell 隐形术}（仅自身）"
+					],
+					"daily": {
+						"2e": [
+							"{@spell 恐惧术}",
+							"{@spell 火球术}",
+							"{@spell 飞行术}"
+						],
+						"1e": [
+							"{@spell 死云术}",
+							"{@spell 以太化}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"多利先生在对抗法术和其他魔法效果的豁免检定上具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Water Dependency",
+					"name": "依赖水源",
+					"entries": [
+						"多利先生每过一个小时如果没有接触到水，就会受到6 ({@damage 1d12}) 点强酸伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"多利先生用他的细剑进行三次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Rapier",
+					"name": "刺剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及5尺，单一目标。{@h}9（{@damage 1d8 + 5}）点穿刺伤害以及7（{@damage 2d6}）暗蚀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Eye of Corruption {@recharge 5}",
+					"name": "腐败之眼 {@recharge 5}",
+					"entries": [
+						"多利先生怒视着他能看到的30尺范围内的一个生物。目标必须进行一次{@dc 15}体质豁免检定。若失败，则受到27 ({@damage 5d10}) 暗蚀伤害和27 ({@damage 5d10}) 毒素伤害，并在接下来的1分钟内对死灵和毒素伤害都产生易伤。若成功，则受到一半的伤害，并且不会获得这些易伤。"
+					]
+				}
+			],
+			"attachedItems": [
+				"刺剑|phb"
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"DS",
+				"TP"
+			],
+			"damageTags": [
+				"A",
+				"I",
+				"N",
+				"P"
+			],
+			"damageTagsSpell": [
+				"F",
+				"I",
+				"O"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Oceanus",
+			"name": "俄申努斯",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"精灵"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "GoS",
+			"page": 246,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item 皮甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 30,
+				"formula": "4d8 + 12"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 15,
+			"dex": 12,
+			"con": 16,
+			"int": 11,
+			"wis": 12,
+			"cha": 10,
+			"save": {
+				"con": "+5"
+			},
+			"skill": {
+				"athletics": "+4",
+				"perception": "+3"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"languages": [
+				"水族语",
+				"精灵语"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"Oceanus 可以呼吸空气和水。"
+					]
+				},
+				{
+					"ENG_name": "Friend of the Sea",
+					"name": "海洋之友",
+					"entries": [
+						"通过手势和声音，欧申纳斯可以与任何具有天生游泳速度的野兽沟通简单的想法。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Trident",
+					"name": "三叉戟",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及5尺或射程20/60尺，单一目标。{@h}5 ({@damage 1d6 + 2}) 点穿刺伤害，或者如果用双手进行近战攻击则为6 ({@damage 1d8 + 2}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Light Crossbow",
+					"name": "轻弩",
+					"entries": [
+						"{@atk rw} 命中{@hit 3} ，射程80/320尺，单一目标。{@h}5 ({@damage 1d8 + 1}) 点穿刺伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"轻弩|phb",
+				"三叉戟|phb"
+			],
+			"traitTags": [
+				"水陆两栖"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AQ",
+				"E"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Othokent",
+			"name": "Othokent",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "GoS",
+			"page": 81,
+			"_copy": {
+				"ENG_name": "Lizard Queen",
+				"name": "蜥蜴女王",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "蜥蜴人",
+						"with": "Othokent",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"languages": [
+				"通用语",
+				"深渊语",
+				"龙语"
+			],
+			"tokenCustom": true,
+			"languageTags": [
+				"AB",
+				"C",
+				"DR"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Pirate Bosun",
+			"name": "海盗水手长",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"任意种族"
+				]
+			},
+			"source": "GoS",
+			"page": 247,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item 镶钉皮甲|phb|镶钉皮甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d8 + 5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 11,
+			"con": 13,
+			"int": 11,
+			"wis": 10,
+			"cha": 13,
+			"skill": {
+				"athletics": "+5",
+				"intimidation": "+3"
+			},
+			"passive": 10,
+			"languages": [
+				"任何一种语言（通常是通用语）"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Cargo Hauler",
+					"name": "船货搬运者",
+					"entries": [
+						"大副在力量检定上具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Sea Legs",
+					"name": "海脚身法",
+					"entries": [
+						"水手长在属性检定和豁免检定中具有优势，以抵抗被击倒{@condition 倒地}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Light Hammer",
+					"name": "轻锤",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 5}，触及范围5尺或射程20/60尺，单一目标。{@h}5 ({@damage 1d4 + 3}) 钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Hook",
+					"name": "钩爪",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}7（{@damage 1d8 + 3}）点穿刺伤害，并且目标{@condition 受擒}（逃脱{@dc 13}）。"
+					]
+				}
+			],
+			"attachedItems": [
+				"轻锤|phb"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"受擒"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Pirate Captain",
+			"name": "海盗船长",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"任意种族"
+				]
+			},
+			"source": "GoS",
+			"page": 247,
+			"reprintedAs": [
+				"海盗船长|XMM"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item 镶钉皮甲|phb|镶钉皮甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d8 + 14"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 11,
+			"wis": 10,
+			"cha": 14,
+			"skill": {
+				"athletics": "+5",
+				"intimidation": "+4"
+			},
+			"passive": 10,
+			"languages": [
+				"任何一种语言（通常是通用语）"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "Flourish",
+					"name": "虚张声势",
+					"entries": [
+						"船长将其魅力调整值加到其长剑攻击的伤害骰上（已包含在攻击中）。"
+					]
+				},
+				{
+					"ENG_name": "Sea Legs",
+					"name": "海脚身法",
+					"entries": [
+						"船长在进行属性检定和豁免检定以抵抗被击倒{@condition 倒地}时具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"船长进行两次攻击：一次使用它的手弩，一次使用它的长剑。"
+					]
+				},
+				{
+					"ENG_name": "Hand Crossbow",
+					"name": "手弩",
+					"entries": [
+						"{@atk rw} 命中{@hit 4}，射程30/120尺，单一目标。{@h}5 ({@damage 1d6 + 2}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Longsword",
+					"name": "长剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}9（{@damage 1d8 + 5}）点挥砍伤害，或者如果用双手使用则为10（{@damage 1d10 + 5}）点挥砍伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Shape Up, Ye Dog (2/Day)",
+					"name": "规矩点，你这狗（每日2次）",
+					"entries": [
+						"每当船长30尺范围内且能听到它声音的友方生物攻击未命中时，船长可以大声发出危险的威胁，允许那个生物重新掷骰攻击。"
+					]
+				}
+			],
+			"attachedItems": [
+				"手弩|phb",
+				"长剑|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Pirate Deck Wizard",
+			"name": "海盗甲板法师",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"任意种族"
+				]
+			},
+			"source": "GoS",
+			"page": 248,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 32,
+				"formula": "5d8 + 10"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 14,
+			"int": 16,
+			"wis": 13,
+			"cha": 11,
+			"skill": {
+				"arcana": "+5",
+				"perception": "+3"
+			},
+			"passive": 13,
+			"languages": [
+				"任何一种语言（通常是通用语）"
+			],
+			"cr": "1",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"甲板法师是一名4环法术施法者。其法术施法能力是智力（法术豁免难度{@dc 13}，法术攻击命中{@hit 5}）。它准备了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 交友术}",
+								"{@spell 法师之手}",
+								"{@spell 魔法伎俩}",
+								"{@spell 冷冻射线}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 易容术}",
+								"{@spell 云雾术}",
+								"{@spell 法师护甲}",
+								"{@spell 巫术箭}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 造风术}",
+								"{@spell 马友夫强酸箭}",
+								"{@spell 迷踪步}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Sea Legs",
+					"name": "海脚身法",
+					"entries": [
+						"甲板法师在进行属性检定和豁免检定以抵抗被击倒{@condition 倒地}时具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Quarterstaff",
+					"name": "长棍",
+					"entries": [
+						"{@atk mw} 命中{@hit 2}，触及5尺，单一目标。{@h}3（{@damage 1d6}）点钝击伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"长棍|phb"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"L"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Pirate First Mate",
+			"name": "海盗大副",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"任意种族"
+				]
+			},
+			"source": "GoS",
+			"page": 248,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 链甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 26,
+				"formula": "4d8 + 8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 10,
+			"cha": 13,
+			"skill": {
+				"athletics": "+4",
+				"intimidation": "+3"
+			},
+			"passive": 10,
+			"languages": [
+				"任何一种语言（通常是通用语）"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Sea Legs",
+					"name": "海脚身法",
+					"entries": [
+						"大副在属性检定和豁免检定中具有优势，以抵抗被击倒{@condition 倒地}。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"大副用其长剑进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Longsword",
+					"name": "长剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6 ({@damage 1d8 + 2})挥砍伤害，或者如果用双手使用，则为7 ({@damage 1d10 + 2})挥砍伤害。如果目标是一个生物，大副可以选择不造成伤害以解除目标的武装。目标必须在一次{@dc 14}力量豁免检定中成功，否则将放下它手中持有的一件物品。"
+					]
+				}
+			],
+			"attachedItems": [
+				"长剑|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"X"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Rip Tide Priest",
+			"name": "裂潮祭司",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "GoS",
+			"page": 248,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item 链甲衫|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 11,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 16,
+			"skill": {
+				"deception": "+5",
+				"religion": "+2",
+				"stealth": "+2"
+			},
+			"passive": 10,
+			"languages": [
+				"水族语",
+				"通用语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"牧师是5级施法者。其施法能力是魅力（法术豁免难度{@dc 13}，法术攻击命中骰{@hit 5}）。它知道以下巫师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 颤栗之触}",
+								"{@spell 法师之手}",
+								"{@spell 次级幻象}",
+								"{@spell 魔法伎俩}",
+								"{@spell 冷冻射线}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 脚底抹油}",
+								"{@spell 魔法飞弹}",
+								"{@spell 护盾术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 朦胧术}",
+								"{@spell 定身类人}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell 雪雨暴}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Quarterstaff",
+					"name": "长棍",
+					"entries": [
+						"{@atk mw} {@hit 4} 命中，触及 5 尺，单一目标。{@h}6（{@damage 1d8 + 2}）钝击伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"长棍|phb"
+			],
+			"languageTags": [
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"C",
+				"N",
+				"O"
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Sahuagin Blademaster",
+			"name": "鲨华大剑师",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"鲨华鱼人"
+				]
+			},
+			"source": "GoS",
+			"page": 249,
+			"referenceSources": [
+				"LR",
+				"SDW"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item 板甲|phb}",
+						"{@item 盾牌|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 97,
+				"formula": "15d8 + 30"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 14,
+			"int": 12,
+			"wis": 11,
+			"cha": 12,
+			"save": {
+				"str": "+6",
+				"con": "+5"
+			},
+			"skill": {
+				"athletics": "+6",
+				"intimidation": "+4"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 10,
+			"languages": [
+				"鲨华语"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"ENG_name": "Blood Frenzy",
+					"name": "血腥狂怒",
+					"entries": [
+						"剑术大师对任何没有全部生命值的生物进行近战攻击骰时具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Limited Amphibiousness",
+					"name": "有限两栖",
+					"entries": [
+						"剑术大师可以呼吸空气和水，但它需要每4小时至少一次被淹没以避免窒息。"
+					]
+				},
+				{
+					"ENG_name": "Shark Telepathy",
+					"name": "鲨心感应",
+					"entries": [
+						"剑术大师可以利用有限的心灵感应魔法命令其周围120尺内的任何鲨鱼。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"剑术大师用其波刃剑进行三次攻击，或者用其咬击进行一次攻击，用其爪子进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Wavecutter Blade",
+					"name": "破浪剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}12（{@damage 2d8 + 3}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}8 ({@damage 1d10 + 3}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} {@hit 6}命中，触及5尺，单一目标。{@h}7（{@damage 1d8 + 3}）挥砍伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Sahuagin Champion",
+			"name": "鲨华勇士",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"鲨华鱼人"
+				]
+			},
+			"source": "GoS",
+			"page": 249,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 71,
+				"formula": "13d8 + 13"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 12,
+			"int": 12,
+			"wis": 13,
+			"cha": 9,
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 15,
+			"languages": [
+				"鲨华语"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Blood Frenzy",
+					"name": "血腥狂怒",
+					"entries": [
+						"冠军在对任何生命值未满的生物进行近战攻击骰时具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Limited Amphibiousness",
+					"name": "有限两栖",
+					"entries": [
+						"冠军可以在空气和水中呼吸，但它需要至少每4小时至少一次潜入水中，以避免窒息。"
+					]
+				},
+				{
+					"ENG_name": "Shark Telepathy",
+					"name": "鲨心感应",
+					"entries": [
+						"冠军可以利用有限的心灵感应魔法命令其120尺范围内的任何鲨鱼。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"冠军用其矛进行三次攻击，或者用其咬击进行一次攻击和用其爪子进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Spear",
+					"name": "矛",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 5}，触及5尺或射程20/60尺，单一目标。{@h}6（{@damage 1d6 + 3}）点穿刺伤害，或者如果用双手进行近战攻击则为7（{@damage 1d8 + 3}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及 5 尺，单一目标。{@h}5（{@damage 1d4 + 3}）的穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}6（{@damage 1d6 + 3}）点挥砍伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"矛|phb"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Sahuagin Coral Smasher",
+			"name": "鲨华珊瑚粉碎者",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"鲨华鱼人"
+				]
+			},
+			"source": "GoS",
+			"page": 249,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 33,
+				"formula": "6d8 + 6"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 12,
+			"int": 12,
+			"wis": 13,
+			"cha": 9,
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 15,
+			"languages": [
+				"鲨华语"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Blood Frenzy",
+					"name": "血腥狂怒",
+					"entries": [
+						"珊瑚粉碎者对任何生命值没有满的生物，在近战攻击骰上具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Limited Amphibiousness",
+					"name": "有限两栖",
+					"entries": [
+						"珊瑚破碎者可以在空气中和水下呼吸，但它每4小时至少需要被淹没一次以避免窒息。"
+					]
+				},
+				{
+					"ENG_name": "Shark Telepathy",
+					"name": "鲨心感应",
+					"entries": [
+						"珊瑚破碎者可以利用有限的心灵感应魔法命令其120尺范围内的任何鲨鱼。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"珊瑚粉碎者对物体和结构造成双倍伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"珊瑚粉碎者用其战锤进行两次攻击，或者用其咬击进行一次攻击和用其爪子进行一次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Warhammer",
+					"name": "战锤",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}7（{@damage 1d8 + 3}）点钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及 5 尺，单一目标。{@h}5（{@damage 1d4 + 3}）的穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}5 ({@damage 1d4 + 3}) 点挥砍伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"战锤|phb"
+			],
+			"traitTags": [
+				"攻城怪物"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Sahuagin Deep Diver",
+			"name": "鲨华深潜者",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"鲨华鱼人"
+				]
+			},
+			"source": "GoS",
+			"page": 250,
+			"referenceSources": [
+				"LR"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 91,
+				"formula": "14d8 + 28"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 15,
+			"int": 12,
+			"wis": 13,
+			"cha": 9,
+			"save": {
+				"con": "+4",
+				"wis": "+3"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+5"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 15,
+			"languages": [
+				"鲨华语"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"ENG_name": "Blood Frenzy",
+					"name": "血腥狂怒",
+					"entries": [
+						"深潜者在对任何生命值未满的生物进行近战攻击骰时具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Brine Lurker",
+					"name": "盐水潜伏者",
+					"entries": [
+						"深潜者在水下时，在敏捷（{@skill 隐匿})检定上具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Limited Amphibiousness",
+					"name": "有限两栖",
+					"entries": [
+						"深海潜水者可以在空气和水中呼吸，但它需要至少每4小时至少一次潜入水中，以避免窒息。"
+					]
+				},
+				{
+					"ENG_name": "Lure",
+					"name": "引诱",
+					"entries": [
+						"深潜者可以随意让其诱饵发光或变暗。当诱饵发光时，深潜者自身为中心，在30尺半径内发出明亮的光线，并在额外的20尺范围内发出微光。"
+					]
+				},
+				{
+					"ENG_name": "Shark Telepathy",
+					"name": "鲨心感应",
+					"entries": [
+						"深潜者可以神奇地命令任何在其120尺范围内的鲨鱼，使用有限的心灵感应。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"深潜者用其长刀进行两次攻击，或者用其咬击进行一次攻击和用其爪子进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Glaive",
+					"name": "长柄刀",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及10尺，单一目标。{@h}13（{@damage 2d10 + 2}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}7 ({@damage 1d10 + 2}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6（{@damage 1d8 + 2}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Light of Sekolah",
+					"name": "瑟寇拉之光",
+					"entries": [
+						"深海潜水者从其诱饵中发出魔法光芒。任何在深海潜水者30尺范围内并能看到光芒的生物必须进行一次{@dc 11} 感知豁免检定，否则直到其下个回合结束时被{@condition 魅惑}。以这种方式被{@condition 魅惑}的生物因为凝视光芒而变得{@condition 失能}。"
+					]
+				}
+			],
+			"attachedItems": [
+				"长柄刀|phb"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"魅惑"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Sahuagin Hatchling Swarm",
+			"name": "鲨华鱼人幼体集群",
+			"type": {
+				"type": "beast",
+				"swarmSize": "T"
+			},
+			"source": "GoS",
+			"page": 250,
+			"referenceSources": [
+				"LR"
+			],
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d10 + 8"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 40
+			},
+			"str": 9,
+			"dex": 18,
+			"con": 12,
+			"int": 3,
+			"wis": 10,
+			"cha": 3,
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 10,
+			"resist": [
+				"钝击",
+				"穿刺",
+				"挥砍"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"受擒",
+				"麻痹",
+				"石化",
+				"倒地",
+				"束缚",
+				"震慑"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Blood Frenzy",
+					"name": "血腥狂怒",
+					"entries": [
+						"集群对生命值没有全满的生物发动近战攻击时，其攻击检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Seething",
+					"name": "雾沸",
+					"entries": [
+						"一旦进入战斗，如果该回合没有进行攻击，蜂群在回合结束时对自己造成10点挥砍伤害。此伤害无视抗性，且不能将蜂群的生命值减少至0。"
+					]
+				},
+				{
+					"ENG_name": "Swarm",
+					"name": "集群",
+					"entries": [
+						"这个群体可以占据另一个生物的空间，反之亦然，并且它可以穿过足够细小生物通过的任何开口。群体不能恢复生命值或获得临时生命值。"
+					]
+				},
+				{
+					"ENG_name": "Water Breathing",
+					"name": "水下呼吸",
+					"entries": [
+						"这个集群只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bites",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及0尺，群体空间内的一只生物。{@h}14 ({@damage 4d6}) 点穿刺伤害，或者如果群体生命值减半或更少，则为7 ({@damage 2d6}) 点穿刺伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"水下呼吸"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Sahuagin High Priestess",
+			"name": "鲨华高阶女祭司",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"鲨华鱼人"
+				]
+			},
+			"source": "GoS",
+			"page": 251,
+			"referenceSources": [
+				"SDW"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 71,
+				"formula": "11d8 + 22"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 14,
+			"int": 12,
+			"wis": 16,
+			"cha": 10,
+			"save": {
+				"wis": "+6"
+			},
+			"skill": {
+				"insight": "+6",
+				"perception": "+6"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 16,
+			"languages": [
+				"鲨华语"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"女高级祭司是一名7环法术施法者。她的法术施放能力是感知（法术豁免{@dc 14}，法术攻击命中{@hit 6}）。她准备的牧师法术如下："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 神导术}",
+								"{@spell 修复术}",
+								"{@spell 抵抗术}",
+								"{@spell 奇术}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 祝福术}",
+								"{@spell 侦测魔法}",
+								"{@spell 光导箭}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 定身类人}",
+								"{@spell 灵体武器} (三叉戟)"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 降咒}",
+								"{@spell 恐惧术}",
+								"{@spell 群体治愈真言}",
+								"{@spell 巧言术}"
+							]
+						},
+						"4": {
+							"slots": 1,
+							"spells": [
+								"{@spell 放逐术}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Blood Frenzy",
+					"name": "血腥狂怒",
+					"entries": [
+						"对于任何没有全部生命值的生物，女祭司在近战攻击骰上有优势。"
+					]
+				},
+				{
+					"ENG_name": "Limited Amphibiousness",
+					"name": "有限两栖",
+					"entries": [
+						"女大祭司可以呼吸空气和水，但她需要每4小时至少被淹没一次以避免窒息。"
+					]
+				},
+				{
+					"ENG_name": "Shark Telepathy",
+					"name": "鲨心感应",
+					"entries": [
+						"女高祭司可以利用有限的心灵感应魔法命令她120尺范围内的任何鲨鱼。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"高阶女祭司用她的锋利法杖进行两次攻击，或者用她的咬击进行一次攻击和用她的爪子进行一次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Toothsome Staff",
+					"name": "多牙法杖",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}11（{@damage 2d8 + 2}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw}命中{@hit 5}，触及5尺，单一目标。{@h}4（{@damage 1d4 + 2}）的穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}4（{@damage 1d4 + 2}）挥砍伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"N",
+				"O",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Sahuagin Wave Shaper",
+			"name": "鲨华塑涛者",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"鲨华鱼人"
+				]
+			},
+			"source": "GoS",
+			"page": 251,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 60,
+				"formula": "11d8 + 11"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 40
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 12,
+			"int": 16,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"int": "+6"
+			},
+			"skill": {
+				"arcana": "+6",
+				"intimidation": "+4",
+				"perception": "+5"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 15,
+			"languages": [
+				"鲨华语"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"波形塑造者的施法能力是智力（法术豁免{@dc 14}，法术攻击命中{@hit 6}）。它能够施放以下法术，仅需口头成分："
+					],
+					"will": [
+						"{@spell 传讯术}"
+					],
+					"daily": {
+						"1": [
+							"{@spell 通晓语言}"
+						]
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Blood Frenzy",
+					"name": "血腥狂怒",
+					"entries": [
+						"波形塑造者在对任何生命值未满的生物进行近战攻击骰时具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Limited Amphibiousness",
+					"name": "有限两栖",
+					"entries": [
+						"波形塑造者可以在空气和水中呼吸，但它需要至少每4小时至少一次潜入水中，以避免窒息。"
+					]
+				},
+				{
+					"ENG_name": "Shark Telepathy",
+					"name": "鲨心感应",
+					"entries": [
+						"波形塑造者可以利用有限的心灵感应魔法命令其120尺范围内的任何鲨鱼。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"波形塑造者进行两次攻击：一次用它的咬击，一次用它的爪击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及范围5尺，单一目标。{@h}10 ({@damage 2d8 + 1}) 点穿刺伤害加上13 ({@damage 3d8}) 寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}10（{@damage 2d8 + 1}）挥砍伤害加上13（{@damage 3d8}）寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Whirlpool (1/Day)",
+					"name": "漩涡（每日1次）",
+					"entries": [
+						"波形塑造者针对至少50尺见方和25尺深的水域，使中心区域形成漩涡。漩涡形成一个涡流，底部宽5尺，顶部宽可达50尺，高25尺，持续1分钟或直到波形塑造者被{@condition 失能}。任何在水中且距离涡流25尺内的生物或物体都会被拉向它10尺。生物可以通过成功进行一个{@dc 14}力量（{@skill 运动}）检定来游离涡流。",
+						"当一个生物在回合中首次进入漩涡或在其回合开始时位于漩涡中，它必须进行一次{@dc 14}力量豁免检定。检定失败，生物受到9（{@damage 2d8}）钝击伤害，并被卷入漩涡直到其结束。检定成功，生物受到一半伤害，并且不会被卷入漩涡。被卷入漩涡的生物可以使用其行动尝试像上文描述的那样游出漩涡，但在此力量（{@skill 运动}）检定上具有劣势。",
+						"每个回合，当物体第一次进入漩涡时，该物体会受到9 ({@damage 2d8}) 钝击伤害。只要它保持在漩涡中，这个伤害就会在每一轮中发生。"
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Sanbalet",
+			"name": "桑巴莱特",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "GoS",
+			"page": 252,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 27,
+				"formula": "6d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 12,
+			"con": 11,
+			"int": 16,
+			"wis": 13,
+			"cha": 14,
+			"skill": {
+				"arcana": "+5"
+			},
+			"passive": 11,
+			"languages": [
+				"通用语"
+			],
+			"cr": "1",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"桑巴莱特是一名3环法术施法者。他的法术施法能力是智力（法术豁免难度{@dc 13}，法术攻击命中{@hit 5}）。他准备了以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 舞光术}",
+								"{@spell 次级幻象}",
+								"{@spell 冷冻射线}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 魅惑类人}",
+								"{@spell 七彩喷射}",
+								"{@spell 魔法飞弹}",
+								"{@spell 无声幻影}"
+							]
+						},
+						"2": {
+							"slots": 2,
+							"spells": [
+								"{@spell 魔嘴术}",
+								"{@spell 灼热射线}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 3}，触及5尺或射程20/60尺，单一目标。{@h}3（{@damage 1d4 + 1}）点穿刺伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"O"
+			],
+			"spellcastingTags": [
+				"CW"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Sauriv",
+			"name": "索里夫",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "GoS",
+			"page": 79,
+			"_copy": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Lizardfolk",
+						"name": "蜥蜴人",
+						"source": "DMG"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "贵族",
+						"with": "索里夫",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"wis": 18,
+			"skill": {
+				"deception": "+7",
+				"insight": "+6",
+				"persuasion": "+7"
+			},
+			"passive": 14,
+			"languages": [
+				"通用语",
+				"龙语"
+			],
+			"traitTags": [
+				"屏息"
+			],
+			"languageTags": [
+				"C",
+				"DR"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shell Shark",
+			"name": "壳中鲨",
+			"type": "monstrosity",
+			"source": "GoS",
+			"page": 252,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"壳甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 32,
+				"formula": "5d8 + 10"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 40
+			},
+			"str": 15,
+			"dex": 12,
+			"con": 14,
+			"int": 3,
+			"wis": 10,
+			"cha": 7,
+			"save": {
+				"str": "+6"
+			},
+			"skill": {
+				"athletics": "+6"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 10,
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "Blood Frenzy",
+					"name": "血腥狂怒",
+					"entries": [
+						"鲨鱼对生命值没有全满的生物发动近战攻击时，其攻击检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"鲨鱼对法术和其他魔法效果的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Water Breathing",
+					"name": "水下呼吸",
+					"entries": [
+						"鲨鱼只能在水下呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"鲨鱼进行两次咬击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}13（{@damage 2d10 + 2}）点穿刺伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"traitTags": [
+				"魔法抗性",
+				"水下呼吸"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Skeletal Alchemist",
+			"name": "骸骨炼金术士",
+			"type": "undead",
+			"source": "GoS",
+			"page": 253,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 32,
+				"formula": "5d8 + 10"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 13,
+			"con": 15,
+			"int": 14,
+			"wis": 10,
+			"cha": 9,
+			"skill": {
+				"arcana": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"immune": [
+				"毒素"
+			],
+			"vulnerable": [
+				"钝击"
+			],
+			"conditionImmune": [
+				"力竭",
+				"中毒"
+			],
+			"languages": [
+				"能理解它生前所知的所有语言，但不能说话"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"骷髅炼金术士对法术和其他魔法效果的豁免检定有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"骷髅炼金术士进行两次投掷酸液攻击。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}4 ({@damage 1d6 + 1})挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Lob Acid",
+					"name": "投掷强酸",
+					"entries": [
+						"{@atk rw} 命中{@hit 3}，射程30/120尺，单一目标。{@h}5 ({@damage 1d8 + 1}) 强酸伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"CS",
+				"LF"
+			],
+			"damageTags": [
+				"A",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Skeletal Juggernaut",
+			"name": "骸骨巨像",
+			"type": "undead",
+			"source": "GoS",
+			"page": 253,
+			"referenceSources": [
+				"IMR"
+			],
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"残破护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 142,
+				"formula": "19d10 + 38"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 15,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 9,
+			"immune": [
+				"毒素"
+			],
+			"vulnerable": [
+				"钝击"
+			],
+			"conditionImmune": [
+				"力竭",
+				"中毒"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Disassemble",
+					"name": "解体",
+					"entries": [
+						"如果巨型机械被减少到0生命值，十二个骷髅从其残骸中升起。"
+					]
+				},
+				{
+					"ENG_name": "Falling Apart",
+					"name": "分崩离析",
+					"entries": [
+						"如果在它的回合开始时，巨型战车没有全部生命值，它将失去10点生命值。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨型战车进行两次爪击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及10尺，单一目标。{@h}12 ({@damage 2d8 + 3})挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Avalanche of Bones {@recharge 5}",
+					"name": "骨之雪崩 {@recharge 5}",
+					"entries": [
+						"这个巨像瓦解成一大团，然后迅速重组。每个距离巨像10英尺内的生物必须进行一次{@dc 14}敏捷豁免，失败则受到18（{@damage 4d8}）点钝击伤害，成功则受到一半伤害。在此豁免中失败的生物还会被击倒{@condition 倒地}。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Skeletal Swarm",
+			"name": "骸骨集群",
+			"type": {
+				"type": "undead",
+				"swarmSize": "M"
+			},
+			"source": "GoS",
+			"page": 254,
+			"referenceSources": [
+				"DC",
+				"IMR"
+			],
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"残破护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 60,
+				"formula": "8d10 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 14,
+			"con": 15,
+			"int": 6,
+			"wis": 8,
+			"cha": 5,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 9,
+			"resist": [
+				"挥砍",
+				"穿刺"
+			],
+			"immune": [
+				"毒素"
+			],
+			"vulnerable": [
+				"钝击"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚",
+				"震慑"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "Deafening Clatter",
+					"name": "致聋噪音",
+					"entries": [
+						"生物在蜂群空间内时会处于{@condition 耳聋}状态。"
+					]
+				},
+				{
+					"ENG_name": "Swarm",
+					"name": "集群",
+					"entries": [
+						"这个群体可以占据另一个生物的空间，反之亦然，并且群体可以通过任何足够一个小型人形生物通过的开口移动。群体不能恢复生命值或获得临时生命值。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Slash",
+					"name": "挥砍",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及0尺，虫群空间内的单一目标。{@h}11（{@damage 2d8 + 2}）挥砍伤害，如果虫群的生命值或更少只有一半，则为6（{@damage 1d8 + 2}）挥砍伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Skum",
+			"name": "鱼魔怪",
+			"type": "aberration",
+			"source": "GoS",
+			"page": 254,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 93,
+				"formula": "11d8 + 44"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 40
+			},
+			"str": 19,
+			"dex": 11,
+			"con": 18,
+			"int": 7,
+			"wis": 12,
+			"cha": 9,
+			"skill": {
+				"perception": "+4"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 14,
+			"resist": [
+				"心灵"
+			],
+			"languages": [
+				"通用语",
+				"深潜语",
+				"心灵感应 60 尺"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Abolethic Vassal",
+					"name": "底栖魔鱼附庸",
+					"entries": [
+						"这个渣滓永久性地被其乌贼怪主人{@condition 魅惑}。"
+					]
+				},
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"斯库姆可以呼吸空气和水。"
+					]
+				},
+				{
+					"ENG_name": "Psychic Conditioning",
+					"name": "心灵调适",
+					"entries": [
+						"斯克姆对{@condition 恐慌}和{@condition 魅惑}状态免疫，除非这些状态是由阿波罗斯创造的效果造成的。"
+					]
+				},
+				{
+					"ENG_name": "Water Dependency",
+					"name": "依赖水源",
+					"entries": [
+						"如果斯库姆每10分钟没有接触到水，它就会受到6 ({@damage 1d12}) 强酸伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"斯库姆进行三次攻击：两次使用其三叉戟，一次使用其心灵破碎之触。"
+					]
+				},
+				{
+					"ENG_name": "Trident",
+					"name": "三叉戟",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}7（{@damage 1d6 + 4}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Mind-Breaking Touch",
+					"name": "粉碎心灵之触",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}18（{@damage 4d8}）心灵伤害，并且目标在skum的下一回合结束前，在感知豁免检定上有劣势。"
+					]
+				}
+			],
+			"attachedItems": [
+				"三叉戟|phb"
+			],
+			"traitTags": [
+				"水陆两栖"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DS",
+				"TP"
+			],
+			"damageTags": [
+				"A",
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Thousand Teeth",
+			"name": "千齿",
+			"type": "monstrosity",
+			"shortName": true,
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "GoS",
+			"page": 256,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 93,
+				"formula": "11d10 + 33"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 50
+			},
+			"str": 19,
+			"dex": 10,
+			"con": 17,
+			"int": 2,
+			"wis": 10,
+			"cha": 7,
+			"save": {
+				"str": "+7",
+				"con": "+6"
+			},
+			"skill": {
+				"athletics": "+7",
+				"stealth": "+3"
+			},
+			"passive": 10,
+			"cr": "6",
+			"trait": [
+				{
+					"ENG_name": "Hold Breath",
+					"name": "屏息",
+					"entries": [
+						"千齿可以屏息30分钟。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (2/Day)",
+					"name": "传奇抗性（2/日）",
+					"entries": [
+						"如果千齿失败了一个豁免检定，它可以选择成功。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"千齿进行两次攻击：一次用它的咬击，一次用它的尾巴。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}15 ({@damage 2d10 + 4}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Tail",
+					"name": "尾击",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及10尺，单一目标。{@h}8 ({@damage 1d8 + 4}) 钝击伤害。如果目标是一个生物，它必须通过一个{@dc 15}力量豁免检定，否则会被击倒{@condition 倒地}。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Detect",
+					"name": "侦查",
+					"entries": [
+						"千齿进行一次感知（{@skill 察觉}）检定。"
+					]
+				},
+				{
+					"ENG_name": "Lunge",
+					"name": "猛冲",
+					"entries": [
+						"千齿以它速度的一半移动。"
+					]
+				},
+				{
+					"ENG_name": "Bite (Costs 2 Actions)",
+					"name": "啃咬 (消耗2动作)",
+					"entries": [
+						"千齿进行一次咬击。"
+					]
+				}
+			],
+			"traitTags": [
+				"屏息",
+				"传奇抗性"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Vampiric Jade Statue",
+			"name": "吸血玉雕",
+			"type": "construct",
+			"source": "GoS",
+			"page": 256,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 114,
+				"formula": "12d10 + 48"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 18,
+			"int": 6,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 10,
+			"immune": [
+				"闪电",
+				"毒素"
+			],
+			"vulnerable": [
+				"力场"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒"
+			],
+			"languages": [
+				"能理解其创造者的语言但无法说话"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"ENG_name": "Immutable Form",
+					"name": "不变形态",
+					"entries": [
+						"这座雕像对任何会改变其形态的法术或效果免疫。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性 (3/日)",
+					"entries": [
+						"如果雕像未能通过豁免检定，它可以选择成功。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"雕像进行三次攻击：一次用其咬击和两次用其爪击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）点穿刺伤害。如果目标是一个生物，那个生物会被雕像诅咒。诅咒持续10分钟。当生物被诅咒时，雕像对它的所有攻击都有优势。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）挥砍伤害。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"雕像进行一次咬击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Blood Reaper",
+					"name": "血腥收割",
+					"entries": [
+						"所有目前被雕像诅咒且在其20尺范围内的生物受到5点暗蚀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Move",
+					"name": "移动",
+					"entries": [
+						"雕像以它的速度移动，不会引起借机攻击。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"traitTags": [
+				"不变形态",
+				"传奇抗性"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"N",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Yalaga Maladwyn",
+			"name": "雅拉加·马拉德温",
+			"type": "undead",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "GoS",
+			"page": 226,
+			"_copy": {
+				"ENG_name": "Drow Priestess of Lolth",
+				"name": "卓尔罗丝女祭司",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "卓尔",
+						"with": "亚拉加",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "removeArr",
+						"names": "妖精血统"
+					},
+					"action": {
+						"mode": "removeArr",
+						"names": "召唤恶魔 (1/日)"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"traitTags": [
+				"日照敏感"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"hasToken": true
+		}
+	]
+}

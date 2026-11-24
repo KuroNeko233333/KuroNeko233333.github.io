@@ -1,0 +1,43 @@
+{
+	"monsterFluff": [
+		{
+			"ENG_name": "Avatar of Death",
+			"name": "死亡化身",
+			"source": "DMG",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"由{@item 万象无常牌}中的\"头骨 Skull\"牌召唤而来。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Giant Fly",
+			"name": "巨苍蝇",
+			"source": "DMG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/DMG/Giant Fly.webp"
+					},
+					"width": 1000,
+					"height": 792
+				}
+			]
+		}
+	]
+}

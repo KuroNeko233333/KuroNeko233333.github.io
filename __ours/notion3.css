@@ -1,0 +1,186 @@
+/* 我们的 5etools —— V3 设计实验：暖色阅读配色。只在 html.nt3 下生效；页面结构沿用 V2（notion.css + notion2.css），这里只改颜色和导航带来的版面宽度。
+ * 色彩来自原版 5etools 与规则书本身：羊皮纸底、标题红 #822000、数据块的金线、规则链接蓝，来源标记用每本书在原站的颜色。
+ * 层级：顶栏（唯一的深色）→ 列表面板（旧纸）→ 阅读区（羊皮纸）→ 表格与弹层（最亮的纸面）。 */
+
+/* 颜色及文字别名统一由 theme.css 定义；这里只保留基础投影和单元格边线。 */
+html.nt3 {
+	--nt-sh-sm: 0 1px 3px var(--bk-shadow-surface-soft), 0 0 0 1px var(--bk-shadow-outline-soft);
+	--nt-sh-md: 0 8px 14px var(--bk-shadow-surface-medium), 0 2px 5px var(--bk-shadow-surface-faint), 0 0 0 1px var(--bk-shadow-outline-soft);
+	--nt-sh-lg: 0 18px 28px var(--bk-shadow-surface-large), 0 4px 8px var(--bk-shadow-surface-soft), 0 0 0 1px var(--bk-shadow-outline-medium);
+	--nt-sh-scr: 0 24px 48px var(--bk-shadow-search-large), 0 4px 12px var(--bk-shadow-search-soft), 0 0 0 1px var(--bk-shadow-search-outline);
+}
+html.nt3 ::selection { background: var(--bk-text-selection-bg); }
+html.nt3 * { scrollbar-color: var(--bk-page-scroll-thumb) transparent; }
+html.nt3 ::-webkit-scrollbar-thumb { background: var(--bk-page-scroll-thumb); }
+html.nt3 ::-webkit-scrollbar-thumb:hover { background: var(--bk-page-scroll-thumb-hover); }
+html.nt3 :focus-visible { outline-color: var(--v3-gold); }
+
+/* ------------------------------------------------------------------ links: 规则链接是蓝色，不带下划线，悬停时出现 */
+html.nt3 a, html.nt3 a:visited { color: var(--v3-link); text-decoration: none; }
+html.nt3 a:hover { color: var(--bk-text-link-hover); text-decoration: underline; text-decoration-color: var(--bk-line-link-hover); text-underline-offset: 2px; }
+html.nt3 #pagecontent a, html.nt3 .ntc-props a { text-decoration: none; }
+html.nt3 #pagecontent a:hover, html.nt3 .ntc-props a:hover { text-decoration: underline; }
+html.nt3 .help, html.nt3 .help-subtle { text-decoration-color: var(--bk-line-help-underline); }
+html.nt3 .ve-roller, html.nt3 .render-roller { color: var(--v3-red) !important; background: var(--bk-btn-selected-wash); transition: background .1s; }
+html.nt3 .ve-roller:hover, html.nt3 .render-roller:hover { background: var(--bk-btn-dice-hover-bg); }
+
+/* ------------------------------------------------------------------ headings: 标题红；条目标题下有一条浅金线，方便扫读 */
+html.nt3 .ve-rd__h { color: var(--v3-red); }
+html.nt3 .ve-stats__h-name { color: var(--v3-red); }
+html.nt3 .ve-rd__h--0 { border-bottom: 1px solid var(--bk-line-heading-soft); padding-bottom: 3px; margin-bottom: 6px; }
+html.nt3 .ve-rd__b-inset .ve-rd__h { color: var(--v3-red); border-bottom: 0; }
+html.nt3 .ve-rd__b-inset { background: var(--v3-panel); box-shadow: inset 3px 0 0 var(--v3-gold); border-radius: 0 8px 8px 0; }
+html.nt3 .ve-rd__b-inset--readaloud { background: transparent; box-shadow: none; border-left-color: var(--v3-gold); }
+html.nt3 .ve-rd__list-name { color: var(--v3-ink); }
+
+/* ------------------------------------------------------------------ source marks: 每本书用它在原站的颜色（--src 由脚本写入）；没有专属颜色的按类别 */
+html.nt3 .nt-tag { font-weight: 500; letter-spacing: .01em; }
+html.nt3 .nt-tag[style*="--src"] { color: color-mix(in srgb, var(--src) 68%, var(--bk-tag-source-dark-mix)); background: color-mix(in srgb, var(--src) 17%, transparent); }
+html.nt3 .omni__row-result [class*="ve-source__"] { font-weight: 500; }
+
+/* ------------------------------------------------------------------ controls */
+html.nt3 .ve-btn-default { box-shadow: inset 0 0 0 1px var(--v3-rule); transition: background .12s, box-shadow .12s; }
+html.nt3 .ve-btn-default:hover, html.nt3 .ve-btn-default:focus { background: var(--bk-btn-default-hover-bg); box-shadow: inset 0 0 0 1px var(--bk-shadow-button-outline); }
+html.nt3 .ve-btn-default.ve-active, html.nt3 .ve-btn-default:active { background: var(--v3-deep); box-shadow: inset 0 0 0 1px var(--bk-shadow-button-outline); }
+html.nt3 .ve-form-control { box-shadow: inset 0 0 0 1px var(--v3-rule); }
+html.nt3 .ve-lst__search { background: var(--v3-card) !important; box-shadow: inset 0 0 0 1px var(--v3-rule) !important; }
+html.nt3 .ve-lst__search:focus { box-shadow: inset 0 0 0 1px var(--v3-link), 0 0 0 2px var(--bk-shadow-search-focus-ring) !important; }
+html.nt3 #filter-search-group > .ve-btn { background: var(--v3-card); }
+html.nt3 .ve-fltr__pill { box-shadow: inset 0 0 0 1px var(--v3-rule); }
+
+/* ------------------------------------------------------------------ lists (every list page) */
+html.nt3 #filtertools .sort { color: var(--v3-ink2); }
+html.nt3 .ve-lst__row-inner { transition: background .08s; }
+html.nt3 .ve-lst__row:hover > .ve-lst__row-inner { background: var(--bk-table-list-hover); }
+html.nt3 .list-multi-selected > .ve-lst__row-inner { background: var(--v3-card) !important; box-shadow: inset 3px 0 0 var(--v3-red); }
+html.nt3 .list-multi-selected > .ve-lst__row-inner > .ve-bold, html.nt3 .list-multi-selected > .ve-lst__row-inner > .nt-name { color: var(--v3-red); }
+
+/* ------------------------------------------------------------------ tables in the text */
+html.nt3 .ve-rd__table th, html.nt3 th.ve-rd__th { background: var(--v3-deep) !important; color: var(--bk-text-table-heading) !important; font-weight: 600; }
+html.nt3 .ve-rd__table th, html.nt3 .ve-rd__table td { border-color: var(--v3-rule) !important; }
+html.nt3 .ve-rd__table tbody tr:nth-child(even) > td { background: var(--bk-table-row-stripe); }
+html.nt3 .ve-rd__table caption, html.nt3 .ve-rd__table-caption { color: var(--v3-red); }
+
+/* ------------------------------------------------------------------ popovers, search window */
+html.nt3 .ve-hwin > div:first-child { background: var(--v3-deep) !important; border-bottom-color: var(--v3-rule) !important; }
+html.nt3.nt-search::before { background: var(--bk-page-modal-overlay); }
+html.nt3 .ve-ui-modal__overlay { background: var(--bk-page-modal-overlay) !important; }
+html.nt3 .omni__row-result:hover, html.nt3 .omni__row-result--selected, html.nt3 .omni__row-result:focus-within { background: var(--bk-btn-navigation-hover) !important; }
+
+/* ================================================================== class page: V2's structure, wider now that the sidebar is gone */
+html.nt3 main.classes.ntc-on { grid-template-columns: 256px minmax(0, 1fr); }
+html.nt3 main.classes.ntc-on > .ntc { padding: 30px 44px 160px; }
+html.nt3 .ntc-head, html.nt3 .ntc-sec { max-width: 1120px; margin-left: auto; margin-right: auto; }
+html.nt3 .ntc-props { max-width: none; }
+html.nt3 .ntc-read { grid-template-columns: minmax(0, 780px) 220px; justify-content: space-between; column-gap: 48px; }
+
+/* the class list: 旧纸色面板，选中项是亮纸 + 红色书签 */
+html.nt3 main.classes.ntc-on #listcontainer { background: var(--v3-panel); border-right: 1px solid var(--v3-rule); padding: 14px 12px 10px; }
+html.nt3 .cls__list .ve-lst__row-inner { transition: background .08s; }
+html.nt3 .cls__list .ve-lst__row:hover > .ve-lst__row-inner { background: var(--bk-btn-navigation-hover); }
+html.nt3 .cls__list .list-multi-selected > .ve-lst__row-inner { background: var(--v3-card) !important; box-shadow: inset 3px 0 0 var(--v3-red), 0 1px 2px var(--bk-shadow-elevation-soft); }
+html.nt3 #listcontainer #filtertools .sort { color: var(--v3-ink2); }
+html.nt3 #list.cls__list .ve-ours-cls-off + .ve-ours-cls-feat::before, html.nt3 #list.cls__list .ve-ours-cls-feat + .ve-ours-cls-rest::before, html.nt3 #list.cls__list .ve-ours-cls-off + .ve-ours-cls-rest::before {
+	color: var(--v3-ink2); border-top: 1px solid var(--v3-rule); margin-top: 8px; padding-top: 10px; }
+html.nt3 #btngroup-manager .ve-btn-primary, html.nt3 #btngroup-manager .ve-btn-info { background: var(--v3-card); box-shadow: inset 0 0 0 1px var(--v3-rule); }
+
+/* page header */
+html.nt3 .ntc-title { color: var(--v3-red); letter-spacing: .01em; }
+html.nt3 .ntc-title__en { color: var(--bk-text-class-english); }
+html.nt3 .ntc-head .ntc-props { border-bottom: 2px solid var(--v3-gold); }
+html.nt3 .ntc-props--more { border-bottom: 0; }
+html.nt3 .ntc-prop__k { color: var(--v3-ink2); }
+html.nt3 .ntc-actions .ve-btn { color: var(--v3-ink2); }
+html.nt3 .ntc-actions .ve-btn:hover { color: var(--v3-red); }
+/* 规则版本：和顶栏的版本开关同一种蓝；2014 用石色 */
+html.nt3 .ntc-prop__v .nt-tag--24:not([style*="--src"]) { background: var(--bk-tag-off24-bg); color: var(--bk-tag-off24-ink); }
+html.nt3 .ntc-prop__v .nt-tag--14:not([style*="--src"]) { background: var(--bk-tag-off14-bg); color: var(--bk-tag-off14-ink); }
+
+/* section headings */
+html.nt3 .ntc-h { color: var(--v3-red); }
+html.nt3 .ntc-count { color: var(--v3-ink2); }
+
+/* growth table: 最亮的纸面，上下金线（原站数据块的做法），隔行浅色，等级列加粗 */
+html.nt3 .ntc-sec--table .ve-cls-tbl { background: var(--v3-card); border-top: 2px solid var(--v3-gold); border-bottom: 2px solid var(--v3-gold); }
+html.nt3 .ve-cls-tbl > tbody > tr:has(> th.ve-cls-tbl__col-level) > th { background: var(--v3-deep); color: var(--bk-text-table-heading); font-weight: 600; border-right: 0; border-bottom: 1px solid var(--bk-line-class-table-heading); }
+html.nt3 .ve-cls-tbl th[colspan]:not(.ve-cls-tbl__disp-name):not(.ve-tbl-border) { background: var(--v3-deep); color: var(--v3-red); font-weight: 600; padding-top: 6px; }
+html.nt3 .ve-cls-tbl th[colspan]:empty { padding: 0 !important; height: 0; }
+html.nt3 .ve-cls-tbl > tbody > tr > td { border-right: 0; border-bottom: 1px solid var(--bk-line-class-table-row); }
+html.nt3 .ve-cls-tbl > tbody > tr:nth-child(even):has(> td) > td { background: var(--bk-table-class-row-stripe); }
+html.nt3 .ve-cls-tbl > tbody > tr > td:first-child { color: var(--v3-red); font-weight: 600; }
+html.nt3 .ve-cls-tbl > tbody > tr:has(> td):hover > td { background: var(--bk-table-class-row-hover); }
+html.nt3 .ve-cls-tbl a:hover { text-decoration-color: var(--bk-line-link-hover); }
+
+/* subclasses: 每组一个颜色点；未选是纸色标签，来源缩写带本组颜色；选中是实色（沿用原站：官方蓝、重印青灰、测试版绿、自制紫） */
+html.nt3 .ntc-scg { color: var(--v3-ink2); align-items: center; }
+html.nt3 .ntc-scg::before { content: ""; width: 8px; height: 8px; border-radius: 2px; background: var(--k, var(--v3-ink2)); flex: none; }
+html.nt3 .ntc-scg[data-g="off24"], html.nt3 .ntc-sec--sub .ve-btn[data-ntg="off24"] { --k: var(--v3-k-off24); }
+html.nt3 .ntc-scg[data-g="off14"], html.nt3 .ntc-sec--sub .ve-btn[data-ntg="off14"] { --k: var(--v3-k-off14); }
+html.nt3 .ntc-scg[data-g="ours"], html.nt3 .ntc-sec--sub .ve-btn[data-ntg="ours"] { --k: var(--v3-k-ours); }
+html.nt3 .ntc-scg[data-g="3p"], html.nt3 .ntc-sec--sub .ve-btn[data-ntg="3p"] { --k: var(--v3-k-3p); }
+html.nt3 .ntc-scg[data-g="ua"], html.nt3 .ntc-sec--sub .ve-btn[data-ntg="ua"] { --k: var(--v3-k-ua); }
+html.nt3 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn { background: var(--bk-btn-subclass-bg) !important; color: var(--v3-ink) !important; transition: background .1s, box-shadow .1s, transform .06s; }
+html.nt3 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn:hover { background: var(--bk-btn-subclass-hover-bg) !important; box-shadow: inset 0 -2px 0 var(--k, transparent) !important; }
+html.nt3 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn:active { transform: translateY(1px); }
+html.nt3 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn > .ve-ml-1 { color: var(--k, var(--v3-ink2)); opacity: .95; }
+html.nt3 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn.cls__btn-sc--reprinted { background: transparent !important; box-shadow: inset 0 0 0 1px var(--v3-rule) !important; color: var(--v3-ink2) !important; }
+html.nt3 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn[class*="cls__btn-sc--active"] { color: var(--bk-text-on-accent) !important; box-shadow: 0 1px 2px var(--bk-shadow-subclass-active) !important; }
+html.nt3 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn[class*="cls__btn-sc--active"] > .ve-ml-1 { color: var(--bk-text-on-accent) !important; opacity: .78; }
+html.nt3 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn.cls__btn-sc--active-fresh { background: var(--bk-class-active) !important; }
+html.nt3 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn.cls__btn-sc--active-reprinted { background: var(--v3-k-off14) !important; }
+html.nt3 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn.cls__btn-sc--active-spicy { background: var(--v3-k-ua) !important; }
+html.nt3 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn.cls__btn-sc--active-stale { background: var(--bk-btn-subclass-stale-bg) !important; }
+html.nt3 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn.cls__btn-sc--active-brew { background: var(--v3-k-ours) !important; }
+html.nt3 .ntc-sec--sub .cls-tabs__wrp > .ve-flex-wrap > .ve-btn.cls__btn-sc--active-rebrewed { background: var(--v3-k-3p) !important; }
+html.nt3 .ours-edcount { color: var(--v3-link) !important; }
+
+/* 特性 / 变体 / 简介 */
+html.nt3 .ntc-views .ve-btn { color: var(--v3-ink2) !important; transition: background .1s, color .1s; }
+html.nt3 .ntc-views .ve-btn:hover { background: var(--bk-btn-navigation-hover) !important; color: var(--v3-ink) !important; }
+html.nt3 .ntc-views .ve-btn.cls__btn-cf--active, html.nt3 .ntc-views .ve-btn.ve-active { background: var(--v3-deep) !important; color: var(--v3-red) !important; font-weight: 600; }
+
+/* reading: 职业特性红；子职特性的颜色和上面选中的子职标签一致，左侧同色细线 */
+html.nt3 #pagecontent .ve-rd__h--0 { color: var(--v3-red); }
+html.nt3 #pagecontent .ve-rd__h--1 { border-bottom: 1px solid var(--bk-line-section-heading); padding-bottom: 3px; margin-bottom: 6px; }
+html.nt3 #pagecontent .ve-rd__title-link { color: var(--bk-text-title-source) !important; }
+html.nt3 #pagecontent [class*="cls__feature-subclass"], html.nt3 #pagecontent [class*="cls__feature-variant-subclass"] { --f: var(--bk-class-feature-fresh-bg); }
+html.nt3 #pagecontent [class*="subclass-reprint"] { --f: var(--bk-class-feature-reprinted-bg); }
+html.nt3 #pagecontent [class*="cls__feature-ua-subclass"], html.nt3 #pagecontent [class*="cls__feature-variant-ua-subclass"] { --f: var(--bk-class-feature-playtest-bg); }
+html.nt3 #pagecontent [class*="cls__feature-brew-subclass"], html.nt3 #pagecontent [class*="cls__feature-variant-brew-subclass"] { --f: var(--bk-class-feature-brew-bg); }
+html.nt3 #pagecontent [class*="cls__feature-"][class*="subclass"] { box-shadow: inset 3px 0 0 color-mix(in srgb, var(--f, var(--v3-link)) 45%, transparent); }
+html.nt3 #pagecontent [class*="cls__feature-"][class*="subclass"] [class*="cls__feature-"][class*="subclass"] { box-shadow: none; }
+html.nt3 #pagecontent [class*="cls__feature-"][class*="subclass"] .ve-rd__h--0, html.nt3 #pagecontent [class*="cls__feature-"][class*="subclass"] .ve-rd__h--1, html.nt3 #pagecontent [class*="cls__feature-"][class*="subclass"] .ve-rd__h--2 {
+	color: var(--f, var(--v3-link)); border-bottom-color: color-mix(in srgb, var(--f, var(--v3-link)) 22%, transparent); }
+html.nt3 #pagecontent [class*="cls__feature-brew"]:not([class*="subclass"]) .ve-rd__h--0, html.nt3 #pagecontent [class*="cls__feature-brew"]:not([class*="subclass"]) .ve-rd__h--1 { color: var(--v3-k-ours); }
+html.nt3 #pagecontent [class*="cls__feature-ua"]:not([class*="subclass"]) .ve-rd__h--0, html.nt3 #pagecontent [class*="cls__feature-ua"]:not([class*="subclass"]) .ve-rd__h--1 { color: var(--v3-k-ua); }
+html.nt3 .cls-main__msg-no-content, html.nt3 #pagecontent .ve-muted { color: var(--v3-ink2); }
+
+/* table of contents */
+html.nt3 .ntc-toc .cls-nav__head { color: var(--v3-ink2); }
+html.nt3 .ntc-toc .cls-nav__item { color: var(--v3-ink2); transition: background .08s, color .08s; }
+html.nt3 .ntc-toc .cls-nav__item:hover { color: var(--v3-red); background: var(--bk-btn-hover-wash); }
+html.nt3 .ntc-toc [class*="cls-nav__item--feature-subclass"], html.nt3 .ntc-toc [class*="cls-nav__item--feature-variant-subclass"] { color: var(--v3-link); }
+html.nt3 .ntc-toc [class*="cls-nav__item--feature-subclass-reprint"] { color: var(--v3-k-off14); }
+html.nt3 .ntc-toc [class*="cls-nav__item--feature-brew"] { color: var(--v3-k-ours); }
+html.nt3 .ntc-toc [class*="cls-nav__item--feature-ua"] { color: var(--v3-k-ua); }
+
+/* ================================================================== the hall */
+html.nt3 .ours-hall__title { color: var(--v3-red); }
+html.nt3 .ours-tile:hover { background: var(--bk-page-tile-hover-bg) !important; box-shadow: var(--nt-sh-md) !important; }
+html.nt3 .ours-tile > i { color: var(--v3-red) !important; opacity: .8; }
+html.nt3 .home__stripe-header, html.nt3 .home__stripe-header * { color: var(--v3-red) !important; }
+html.nt3 main.container .w-100 > h3 { color: var(--v3-red); }
+
+@media (prefers-reduced-motion: reduce) { html.nt3 * { transition: none !important; } }
+@media screen and (max-width: 1400px) {
+	html.nt3 main.classes.ntc-on { grid-template-columns: 240px minmax(0, 1fr); }
+	html.nt3 main.classes.ntc-on > .ntc { padding-left: 36px; padding-right: 32px; }
+	html.nt3 .ntc-read { grid-template-columns: minmax(0, 1fr) 200px; column-gap: 40px; }
+}
+@media screen and (max-width: 1100px) {
+	html.nt3 .ntc-read { grid-template-columns: minmax(0, 1fr); }
+}
+/* rows and buttons that happen to be links keep their own colours */
+html.nt3 a.ve-lst__row-inner:hover, html.nt3 .ve-lst__row-inner a:hover { color: var(--v3-ink); text-decoration: none; }
+html.nt3 a.ve-btn:hover { text-decoration: none; }
+html.nt3 .ve-cls-tbl > tbody > tr > td:first-child, html.nt3 .ve-cls-tbl > tbody > tr > th.ve-cls-tbl__col-level { text-align: center; }

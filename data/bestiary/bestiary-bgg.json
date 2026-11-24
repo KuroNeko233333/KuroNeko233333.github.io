@@ -1,0 +1,10212 @@
+{
+	"monster": [
+		{
+			"ENG_name": "Aerosaur",
+			"name": "翔翼龙",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"恐龙"
+				]
+			},
+			"group": [
+				"恐龙"
+			],
+			"source": "BGG",
+			"page": 128,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 155,
+				"formula": "10d20 + 50"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 120
+			},
+			"str": 26,
+			"dex": 10,
+			"con": 21,
+			"int": 3,
+			"wis": 10,
+			"cha": 5,
+			"skill": {
+				"perception": "+4"
+			},
+			"passive": 14,
+			"cr": "10",
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"翔翼龙在对法术和其他魔法效果的豁免检定上具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"翔翼龙发动一次啃咬攻击和一次禽爪攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及10尺，单一目标。{@h}27（{@damage 3d12 + 8}）穿刺伤害。如果目标为巨型或更小的生物，它将陷入{@condition 受擒}状态（逃脱{@dc 18}）。直到擒抱结束，目标将陷入{@condition 束缚}状态，且翔翼龙无法对另一个目标使用啃咬。"
+					]
+				},
+				{
+					"ENG_name": "Talons",
+					"name": "禽爪",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及10尺，单一目标。{@h}24（{@damage 3d10 + 8}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Wing Gusts {@recharge 5}",
+					"name": "造风{@recharge 5}",
+					"entries": [
+						"翔翼龙鼓动双翼，创造一道雷霆冲击的爆发。翔翼龙10尺内的每个生物都必须进行一次{@dc 20}的力量豁免。豁免失败者，受到38（{@damage 7d10}）雷鸣伤害，被从翔翼龙处水平推开至多30尺，并陷入{@condition 倒地}状态。豁免成功者，只受到一半伤害，并被从翔翼龙处水平推开至多15尺。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"P",
+				"S",
+				"T"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Altisaur",
+			"name": "硕伟龙",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"恐龙"
+				]
+			},
+			"group": [
+				"恐龙"
+			],
+			"source": "BGG",
+			"page": 129,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 198,
+				"formula": "12d20 + 72"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 28,
+			"dex": 6,
+			"con": 23,
+			"int": 3,
+			"wis": 12,
+			"cha": 7,
+			"skill": {
+				"perception": "+11"
+			},
+			"passive": 21,
+			"cr": "13",
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"硕伟龙在对抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"硕伟龙发动一次践踏和一次尾击攻击。硕伟龙不能对同一目标发动这两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Stomp",
+					"name": "践踏",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及10尺，单一目标。{@h}33（{@damage 7d6 + 9}）钝击伤害。若目标为一个巨型或更小的生物，则其必须成功通过一次{@dc 22}的力量豁免否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Tail",
+					"name": "尾击",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及20尺，单一目标。{@h}45（{@damage 8d8 + 9}）钝击伤害，且目标被硕伟龙水平推开至多20尺。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Bag Jelly",
+			"name": "行囊果冻",
+			"type": "ooze",
+			"source": "BGG",
+			"page": 120,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"average": 42,
+				"formula": "5d8 + 20"
+			},
+			"speed": {
+				"walk": 10,
+				"climb": 10
+			},
+			"str": 13,
+			"dex": 6,
+			"con": 19,
+			"int": 2,
+			"wis": 7,
+			"cha": 2,
+			"senses": [
+				"盲视 60 尺（看不到这个范围之外）"
+			],
+			"passive": 8,
+			"resist": [
+				"强酸",
+				"钝击"
+			],
+			"conditionImmune": [
+				"力竭"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Amorphous",
+					"name": "无定形",
+					"entries": [
+						"行囊果冻能够轻松穿过最窄1寸宽的狭窄空间而不用挤进去。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"行囊果冻发起两次伪足攻击。"
+					]
+				},
+				{
+					"ENG_name": "Pseudopod",
+					"name": "伪足",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}8（{@damage 2d6 + 1}）强酸伤害。如果目标为中型或更小的生物，它陷入{@condition 受擒}状态（逃脱{@dc 11}）。逃脱此擒抱的属性检定具有劣势。"
+					]
+				}
+			],
+			"traitTags": [
+				"无定形"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"A"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Barrowghast",
+			"name": "坟丘饿鬼",
+			"type": "undead",
+			"source": "BGG",
+			"page": 121,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 138,
+				"formula": "12d12 + 60"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 8,
+			"con": 20,
+			"int": 5,
+			"wis": 9,
+			"cha": 6,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 9,
+			"resist": [
+				"暗蚀",
+				"毒素"
+			],
+			"conditionImmune": [
+				"力竭",
+				"中毒"
+			],
+			"languages": [
+				"巨人语"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"ENG_name": "Stench",
+					"name": "恶臭",
+					"entries": [
+						"任何在距坟丘饿鬼10尺内开始回合的生物都必须进行一次{@dc 16}的体质豁免。豁免失败者陷入{@condition 中毒}状态一分钟。以此法{@condition 中毒}期间，该生物不能恢复生命值。豁免成功则该生物在接下来的24小时内免疫任何坟丘饿鬼的恶臭。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"坟丘饿鬼发动两次猛击攻击。它可以将其中一次猛击替换为吸取生命攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及10尺，单一目标。{@h}18（{@damage 2d12 + 5}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Life Drain",
+					"name": "吸取生命",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及10尺，单一生物。{@h}9（{@damage 1d8 + 5}）暗蚀伤害，且目标必须成功通过一次{@dc 16}的体质豁免检定，否则其生命值上限将承受等于该伤害数值的减损。减损效应持续至该目标完成一次长休。如果该效应将目标的生命值上限降至0，则目标死亡。",
+						"被该攻击杀死的类人生物将立即化为一只丧尸（见怪物图鉴）复生。丧尸将作为坟丘饿鬼的盟友行动，但不受其控制。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Noxious Wound",
+					"name": "毒性创口",
+					"entries": [
+						"坟丘饿鬼受到穿刺伤害或挥砍伤害后，毒性的脓血立即从伤口中喷出。每个位于坟丘饿鬼5尺内的生物都必须进行一次{@dc 16}的敏捷豁免，豁免失败者受到10（{@damage 3d6}）毒素伤害，豁免成功则伤害减半。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"N"
+			],
+			"miscTags": [
+				"AOE",
+				"HPR",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"中毒"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Cairnwight",
+			"name": "墓石尸妖",
+			"type": "undead",
+			"source": "BGG",
+			"page": 122,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 138,
+				"formula": "12d12 + 60"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 23,
+			"dex": 10,
+			"con": 21,
+			"int": 10,
+			"wis": 12,
+			"cha": 9,
+			"save": {
+				"con": "+9",
+				"wis": "+5"
+			},
+			"skill": {
+				"athletics": "+10",
+				"perception": "+5",
+				"stealth": "+8"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 15,
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"石化"
+			],
+			"languages": [
+				"巨人语"
+			],
+			"cr": "9",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"墓石尸妖发动两次猛击攻击或两次掷石攻击，并使用石化之触（若可用）。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及10尺，单一目标。{@h}22（{@damage 3d10 + 6}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Rock",
+					"name": "掷石",
+					"entries": [
+						"{@atk rw} 命中{@hit 10}，射程60/240尺，单一目标。{@h}19（{@damage 3d8 + 6}）钝击伤害，且目标必须成功通过{@dc 17}的力量豁免否则获得{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Petrifying Touch {@recharge 5}",
+					"name": "石化之触 {@recharge 5}",
+					"entries": [
+						"墓石尸妖触碰一个它10尺内能看见的生物。目标必须成功通过{@dc 17}的体质豁免否则受到26（{@damage 4d12}）力场伤害并陷入{@condition 束缚}状态，因为它开始石化。受影响的目标必须在其下一回合结束时重复豁免检定。豁免成功，效果在目标身上结束。豁免失败，目标陷入{@condition 石化}状态而非{@condition 束缚}状态。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"石化",
+				"倒地",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Ceratops",
+			"name": "犄角龙",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"恐龙"
+				]
+			},
+			"group": [
+				"恐龙"
+			],
+			"source": "BGG",
+			"page": 129,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 139,
+				"formula": "9d20 + 45"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 24,
+			"dex": 8,
+			"con": 21,
+			"int": 4,
+			"wis": 10,
+			"cha": 7,
+			"passive": 10,
+			"cr": "9",
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"犄角龙在对法术和其他魔法效果的豁免检定上具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"犄角龙发动一次顶撞和一次践踏攻击。"
+					]
+				},
+				{
+					"ENG_name": "Gore",
+					"name": "顶撞",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及10尺，单一目标。{@h}29（{@damage 4d10 + 7}）穿刺伤害。如果犄角龙在命中前径直向目标移动了至少20尺，则目标额外受到11（{@damage 2d10}）穿刺伤害；若目标为一个生物，则其必须进行一次{@dc 19}的力量豁免否则被推离犄角龙至多20尺并陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Stomp",
+					"name": "践踏",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及5尺，单一目标。{@h}29（{@damage 4d10 + 7}）钝击伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Cinder Hulk",
+			"name": "燃烬巨怪",
+			"type": "elemental",
+			"source": "BGG",
+			"page": 123,
+			"referenceSources": [
+				"GotSF"
+			],
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 84,
+				"formula": "8d10 + 40"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 12,
+			"con": 20,
+			"int": 9,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"dex": "+4",
+				"con": "+8",
+				"wis": "+5"
+			},
+			"skill": {
+				"perception": "+5"
+			},
+			"passive": 15,
+			"immune": [
+				"火焰",
+				"毒素"
+			],
+			"conditionImmune": [
+				"力竭",
+				"中毒"
+			],
+			"languages": [
+				"巨人语",
+				"火族语"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"ENG_name": "Death Burst",
+					"name": "自爆",
+					"entries": [
+						"当燃烬巨怪死亡时，它会留下一团灰烬和烟雾组成的云雾，充满以它所在空间为中心、半径10尺的球状区域。该区域是{@quickref 视野与光照||2||重度遮蔽}。任何生物若在其回合中首次进入该区域，或在其回合开始时身处该区域，则必须成功通过一次{@dc 16}的体质豁免检定，否则受到10（{@damage 3d6}）点火焰伤害。该云雾持续1分钟，或被强风吹散。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"燃烬巨怪发动两次猛击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}16（{@damage 2d10 + 5}）钝击伤害外加10（{@damage 3d6}）火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "Wave of Cinders {@recharge 5}",
+					"name": "燃烬焚风{@recharge 5}",
+					"entries": [
+						"燃烬巨怪从自己的脸、手臂或胸膛中吹出一道充满燃烧的灰烬的焚风，覆盖30尺锥状区域。任何位于其中的生物都必须进行一次{@dc 16}的敏捷豁免。豁免失败的情况下，生物受到31（{@damage 7d8}）火焰伤害并直到自己下个回合开始陷入{@condition 目盲}状态。成功的情况下，生物只受到一半伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"自爆"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"IG"
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"目盲"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Cloud Giant Destiny Gambler",
+			"name": "云巨人豪赌客",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"吟游诗人"
+				]
+			},
+			"source": "BGG",
+			"page": 124,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 337,
+				"formula": "27d12 + 162"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": {
+					"number": 40,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"str": 27,
+			"dex": 12,
+			"con": 22,
+			"int": 19,
+			"wis": 16,
+			"cha": 22,
+			"save": {
+				"con": "+12",
+				"int": "+10",
+				"wis": "+9",
+				"cha": "+12"
+			},
+			"skill": {
+				"deception": "+18",
+				"insight": "+9",
+				"perception": "+9"
+			},
+			"senses": [
+				"真实视觉30尺（需要云雾符文）"
+			],
+			"passive": 19,
+			"immune": [
+				"雷鸣"
+			],
+			"languages": [
+				"通用语",
+				"巨人语"
+			],
+			"cr": "19",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"巨人施展以下一道法术，无需任何材料成分并使用魅力作为施法属性（法术豁免{@dc 20}）："
+					],
+					"will": [
+						"{@spell 侦测魔法}",
+						"{@spell 云雾术}",
+						"{@spell 光亮术}",
+						"{@spell 次级幻象}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 托梦术}（作为一个动作）",
+							"{@spell 气化形体}",
+							"{@spell 高等幻影}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Cloud Rune",
+					"name": "云雾符文",
+					"entries": [
+						"巨人拥有一个刻印在其随身携带的面具上的云雾符文。当巨人携带或着装这个承载符文的面具时，它拥有30尺范围内的真实视觉并可以使用它的惊霆一拍动作和中和法术反应。",
+						"承载云雾符文的面具具有AC 15；45点生命值；免疫暗蚀、毒素和心灵伤害。该面具会在每个回合结束时恢复所有生命值，但若其生命值被降为0或是巨人死亡，它就会化为灰烬。若符文被毁坏，巨人可以在完成一次短休或长休后在一个它拥有的面具上刻印一道云雾符文。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨人发动三次飞杖攻击。"
+					]
+				},
+				{
+					"ENG_name": "Flying Staff",
+					"name": "飞杖",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 14}，触及10尺或射程30/90尺，单一目标。{@h}18（{@damage 3d6 + 8}）钝击伤害外加16（{@damage 3d10}）雷鸣伤害。{@hom}法杖在进行一次远程攻击后魔法性地回到巨人的手中。"
+					]
+				},
+				{
+					"ENG_name": "Thunderous Clap (Requires Cloud Rune)",
+					"name": "惊霆一拍（需要云雾符文）",
+					"entries": [
+						"巨人魔法性地制造一处雷云，填满以其60尺内其可见的一点为中心，半径30尺的球形区域。雷云会沿拐角扩散。该区域内的每个生物都必须进行一次{@dc 20}的体质豁免，因为雷云释放出雷鸣轰响。豁免失败者受到52（{@damage 8d12}）雷鸣伤害并陷入{@condition 倒地}状态。豁免成功者只受到一半伤害。雷鸣轰响在距离雷云中心300尺内都能听见。",
+						"雷云的区域是{@quickref 视野与光照||2||重度遮蔽}。云雾持续存在，直到巨人的下一个回合开始，或者被强风驱散。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Negate Spell (Requires Cloud Rune)",
+					"name": "中和法术（需要云雾符文）",
+					"entries": [
+						"当巨人看见一个位于其60尺内的生物施展法术时，巨人尝试打断它。若该生物正在使用一道3环或更低的法术位施展法术，该法术失败且不会产生任何效果。若该生物正在施展一道4环或更高环阶的法术，它必须成功通过一次{@dc 18}的智力豁免，否则法术失败且不会产生任何效果。"
+					]
+				}
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"T"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"体质",
+				"智力"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Cloud Giant of Evil Air",
+			"name": "邪气之云巨人",
+			"type": "giant",
+			"source": "BGG",
+			"page": 125,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 200,
+				"formula": "16d12 + 96"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": 40
+			},
+			"str": 27,
+			"dex": 10,
+			"con": 22,
+			"int": 12,
+			"wis": 16,
+			"cha": 19,
+			"save": {
+				"con": "+10",
+				"wis": "+7",
+				"cha": "+8"
+			},
+			"skill": {
+				"insight": "+7",
+				"perception": "+7",
+				"stealth": "+4"
+			},
+			"passive": 17,
+			"languages": [
+				"气族语",
+				"通用语",
+				"巨人语"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"该巨人施放以下法术之一，不需要材料成分并使用魅力作为施法属性（法术豁免{@dc 16}）："
+					],
+					"will": [
+						"{@spell 侦测魔法}",
+						"{@spell 云雾术}",
+						"{@spell 光亮术}"
+					],
+					"daily": {
+						"1": [
+							"{@spell 气化形体}"
+						],
+						"2": [
+							"{@spell 心灵遥控}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Flyby",
+					"name": "飞掠",
+					"entries": [
+						"该巨人飞离敌人的触及范围时不会引发借机攻击。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨人进行两次弯刀攻击和一次风暴回旋镖攻击。"
+					]
+				},
+				{
+					"ENG_name": "Scimitar",
+					"name": "弯刀",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及10尺，单一目标。{@h}18（{@damage 3d6 + 8}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Storm Boomerang",
+					"name": "风暴回旋镖",
+					"entries": [
+						"{@atk rw} 命中{@hit 12}，射程60/240尺，单一目标。{@h}15（{@damage 3d4 + 8}）钝击伤害加7（{@damage 2d6}）雷鸣伤害，且目标必须成功通过{@dc 16}的体质豁免否则获得{@condition 震慑}状态直到其下一回合结束。{@hom}攻击后回旋镖会魔法般地立即返回巨人的手中。"
+					]
+				}
+			],
+			"attachedItems": [
+				"弯刀|phb"
+			],
+			"traitTags": [
+				"飞掠"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AU",
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"S",
+				"T"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"震慑"
+			],
+			"conditionInflictSpell": [
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Cradle of the Cloud Scion",
+			"name": "云雾神嗣的摇篮",
+			"type": "elemental",
+			"source": "BGG",
+			"page": 166,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 624,
+				"formula": "32d20 + 288"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 90,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"str": 29,
+			"dex": 21,
+			"con": 28,
+			"int": 14,
+			"wis": 22,
+			"cha": 19,
+			"save": {
+				"int": "+10",
+				"cha": "+12"
+			},
+			"passive": 16,
+			"resist": [
+				"寒冷",
+				"火焰",
+				"闪电",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"毒素",
+				"雷鸣"
+			],
+			"conditionImmune": [
+				"力竭",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚",
+				"震慑"
+			],
+			"languages": [
+				"巨人语",
+				"原初语"
+			],
+			"cr": "26",
+			"trait": [
+				{
+					"ENG_name": "Awakening of the Scion",
+					"name": "神嗣苏醒",
+					"entries": [
+						"摇篮包含着{@creature 曼诺的神嗣|BGG}。当摇篮的生命值降为0点时，它的身躯就会化为云絮消散。神嗣立即出现在摇篮原先占据的地方，并使用摇篮的先攻。"
+					]
+				},
+				{
+					"ENG_name": "Flyby",
+					"name": "飞掠",
+					"entries": [
+						"摇篮飞出敌人的触及范围时不会引起借机攻击。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (5/Day)",
+					"name": "传奇抗性（5/日）",
+					"entries": [
+						"摇篮豁免失败时，可以将其改为豁免成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"摇篮为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"摇篮对物件和建筑物伤害翻倍。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"摇篮进行合计三次的猛击或疾风标枪攻击，随意组合。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 17}，触及20尺，单一目标。{@h}31（{@damage 4d10 + 9}）钝击伤害外加19（{@damage 3d12}）雷鸣伤害。"
+					]
+				},
+				{
+					"ENG_name": "Wind Javelin",
+					"name": "疾风标枪",
+					"entries": [
+						"{@atk rw} 命中{@hit 17}，射程120尺，单一目标。{@h}27（{@damage 4d8 + 9}）钝击伤害外加10（{@damage 3d6}）雷鸣伤害，然后目标必须成功通过一次{@dc 25}的力量豁免，否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Vortex {@recharge 5}",
+					"name": "涡流{@recharge 5}",
+					"entries": [
+						"摇篮在它可见的90尺范围内一点召唤出一股风之涡旋。此涡旋为一半径30尺，高100尺的柱状，原点为所选那点。除摇篮外，该区域内的每个生物都必须进行一次{@dc 25}的敏捷豁免。豁免失败的情况下，生物受到71（{@damage 11d12}）钝击伤害并在涡旋中处于{@condition 束缚}状态。豁免成功的情况下，生物只受到一半伤害，并被推离到此柱状最近一处未占据的空间。涡旋一直持续到摇篮的下一个回合开始。处于{@condition 束缚}状态的生物在涡旋结束时陷入{@condition 倒地}状态。",
+						"一个陷入{@condition 束缚}状态的生物可以用它的动作尝试逃离涡旋。该生物进行一次{@dc 19}的力量（{@skill 运动}）或敏捷（{@skill 特技}）检定。检定成功者摆脱束缚，并往随机方向移动{@dice 3d6 × 10}尺离开涡旋。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Thunderclap",
+					"name": "惊雷",
+					"entries": [
+						"受到伤害后，摇篮可以立即发出一阵惊雷，影响以自身为中心的一处30尺半径球状区域。该区域内的所有其他生物必须成功进行一次{@dc 25}的体质豁免，否则受到18（{@damage 4d8}）雷鸣伤害，并获得{@condition 耳聋}状态1分钟。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Scion of Memnor",
+				"name": "曼诺的神嗣",
+				"source": "BGG"
+			},
+			"traitTags": [
+				"飞掠",
+				"传奇抗性",
+				"魔法抗性",
+				"攻城怪物"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"P"
+			],
+			"damageTags": [
+				"B",
+				"T"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RCH",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"倒地",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷",
+				"力量"
+			],
+			"savingThrowForcedLegendary": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Cradle of the Fire Scion",
+			"name": "火焰神嗣的摇篮",
+			"type": "elemental",
+			"source": "BGG",
+			"page": 172,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 555,
+				"formula": "30d20 + 240"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 28,
+			"dex": 12,
+			"con": 27,
+			"int": 12,
+			"wis": 20,
+			"cha": 17,
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 15,
+			"resist": [
+				"寒冷",
+				"闪电",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"火焰",
+				"毒素"
+			],
+			"conditionImmune": [
+				"力竭",
+				"石化",
+				"中毒"
+			],
+			"languages": [
+				"巨人语",
+				"原初语"
+			],
+			"cr": "25",
+			"trait": [
+				{
+					"ENG_name": "Awakening of the Scion",
+					"name": "神嗣苏醒",
+					"entries": [
+						"摇篮包含着{@creature 苏尔特的神嗣|BGG}。当摇篮的生命值降为0点时，它的身躯就会硬化并破碎成灰烬。神嗣立即出现在摇篮原先占据的地方，并使用摇篮的先攻。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (5/Day)",
+					"name": "传奇抗性（5/日）",
+					"entries": [
+						"摇篮豁免失败时，可以将其改为豁免成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"摇篮为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"摇篮对物件和建筑物伤害翻倍。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"摇篮进行三次猛击或抛掷岩浆攻击，随意组合。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 17}，触及20尺，单一目标。{@h}31（{@damage 4d10 + 9}）钝击伤害外加14（{@damage 4d6}）火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "Hurl Lava",
+					"name": "抛掷岩浆",
+					"entries": [
+						"{@atk rw} 命中{@hit 17}，射程120尺，单一目标。{@h}27（{@damage 4d8 + 9}）火焰伤害。如果目标是一个生物或一个可燃物件，则其被点燃。直到一个在起火者5尺内的生物用动作扑灭火焰之前，目标会在自己回合开始时受到10（{@damage 3d6}）火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "Erupting Breath {@recharge 5}",
+					"name": "爆发吐息{@recharge 5}",
+					"entries": [
+						"摇篮喷发出90尺锥形的烈焰和火山灰。该区域内的每个生物都必须进行一次{@dc 24}的敏捷豁免。豁免失败的情况下，生物受到55（{@damage 10d10}）火焰伤害并陷入{@condition 中毒}状态1分钟。豁免成功的情况下，生物只受到一半伤害。",
+						"因此陷入{@condition 中毒}的生物可以在其每个回合结束时进行一次{@dc 24}的体质豁免，若成功则结束此效应。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Lava Geyser",
+					"name": "间歇岩浆泉",
+					"entries": [
+						"摇篮可以选择其周围120尺内可视一点，使之喷发出岩浆。位于该点半径20尺，高50尺的柱状区域内的所有生物必须成功通过一次{@dc 21}的敏捷豁免，否则受到14（{@damage 4d6}）火焰伤害。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Scion of Surtur",
+				"name": "苏尔特的神嗣",
+				"source": "BGG"
+			},
+			"traitTags": [
+				"传奇抗性",
+				"魔法抗性",
+				"攻城怪物"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"吐息武器",
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"P"
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"中毒"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Cradle of the Frost Scion",
+			"name": "冰霜神嗣的摇篮",
+			"type": "elemental",
+			"source": "BGG",
+			"page": 174,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 499,
+				"formula": "27d20 + 216"
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 40
+			},
+			"str": 27,
+			"dex": 14,
+			"con": 26,
+			"int": 11,
+			"wis": 19,
+			"cha": 16,
+			"save": {
+				"wis": "+11",
+				"cha": "+10"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 14,
+			"resist": [
+				"火焰",
+				"闪电",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"寒冷",
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒"
+			],
+			"languages": [
+				"巨人语",
+				"原初语"
+			],
+			"cr": "24",
+			"trait": [
+				{
+					"ENG_name": "Awakening of the Scion",
+					"name": "神嗣苏醒",
+					"entries": [
+						"摇篮包含着{@creature 索列姆的神嗣|BGG}。当摇篮的生命值降为0点时，它的身躯就会破碎成冰片。神嗣立即出现在摇篮原先占据的地方，并使用摇篮的先攻。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (5/Day)",
+					"name": "传奇抗性（5/日）",
+					"entries": [
+						"摇篮豁免失败时，可以将其改为豁免成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"摇篮为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"摇篮对物件和建筑物伤害翻倍。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"摇篮进行两次猛击或抛掷冰柱攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 15}，触及20尺，单一目标。{@h}30（{@damage 4d10 + 8}）钝击伤害外加11（{@damage 2d10}）寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Hurl Icicle",
+					"name": "抛掷冰柱",
+					"entries": [
+						"{@atk rw} 命中{@hit 15}，射程120尺，单一目标。{@h}26（{@damage 4d8 + 8}）穿刺伤害外加9（{@damage 2d8}）寒冷伤害，且目标必须成功通过一次{@dc 23}的力量豁免，否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Freezing Breath {@recharge 5}",
+					"name": "冻结吐息{@recharge 5}",
+					"entries": [
+						"摇篮喷发出90尺锥形的冰霜。该区域内的每个生物都必须进行一次{@dc 23}的体质豁免。豁免失败者将受到52（{@damage 8d12}）寒冷伤害，且其速度降低至0，直到其下一个回合的结束。豁免成功者则只受到一半伤害。如果该伤害使一个目标的生命值降低为0，则改为其下降至1生命值，并获得{@condition 石化}状态，成为一座冰雕。",
+						"如果雕塑受到钝击伤害，它就会破碎，杀死被冻在其中的生物。如果雕塑将会受到火焰伤害，它改为不受到伤害并融化，结束石化状态。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Chilling Mist",
+					"name": "刺骨寒雾",
+					"entries": [
+						"摇篮选择自身周围90尺处一点为原点，魔法性地咒唤出一团半径30尺球状范围的寒冷迷雾。寒雾会弥漫进拐角。区域内的每个生物都必须成功通过一次{@dc 19}的体质豁免，否则受到28（{@damage 8d6}）寒冷伤害，且直到其下一个回合的开始前不能使用反应。寒雾会在摇篮回合的结束时消散。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Scion of Thrym",
+				"name": "索列姆的神嗣",
+				"source": "BGG"
+			},
+			"traitTags": [
+				"传奇抗性",
+				"魔法抗性",
+				"攻城怪物"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"吐息武器",
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"P"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"体质",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Cradle of the Hill Scion",
+			"name": "山丘神嗣的摇篮",
+			"type": "elemental",
+			"source": "BGG",
+			"page": 164,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 402,
+				"formula": "23d20 + 161"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 25,
+			"dex": 10,
+			"con": 24,
+			"int": 9,
+			"wis": 16,
+			"cha": 10,
+			"save": {
+				"wis": "+10",
+				"cha": "+7"
+			},
+			"passive": 13,
+			"resist": [
+				"寒冷",
+				"火焰",
+				"闪电",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"力竭",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地"
+			],
+			"languages": [
+				"巨人语",
+				"原初语"
+			],
+			"cr": "22",
+			"trait": [
+				{
+					"ENG_name": "Awakening of the Scion",
+					"name": "神嗣苏醒",
+					"entries": [
+						"摇篮包含着{@creature 格洛兰托的神嗣|BGG}。当摇篮的生命值降为0点时，它的身躯就会化为尘土和苔藓。神嗣立即出现在摇篮原先占据的地方，并使用摇篮的先攻。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (5/Day)",
+					"name": "传奇抗性（5/日）",
+					"entries": [
+						"摇篮豁免失败时，可以将其改为豁免成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"摇篮为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"摇篮对物件和建筑物伤害翻倍。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"摇篮进行合计三次的猛击或飞岩攻击，随意组合，以及一次根系擒缚攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及20尺，单一目标。{@h}33（{@damage 4d12 + 7}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Spit Rock",
+					"name": "飞岩",
+					"entries": [
+						"{@atk rw} 命中{@hit 14}，射程120尺，单一目标。{@h}25（{@damage 4d8 + 7}）钝击伤害，且目标必须成功通过一次{@dc 22}的力量豁免，否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Grasping Root",
+					"name": "根系擒缚",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及30尺，单一未被摇篮{@condition 受擒}的生物。{@h}目标陷入{@condition 受擒}状态（逃脱{@dc 17}）。直到擒抱结束前，目标会在每个自己回合开始时受到29（{@damage 4d10 + 7}）钝击伤害。根系拥有19AC，并且可以被一次造成15或更高挥砍伤害的攻击砍断。砍断根系不会对摇篮造成伤害但会终止擒抱状态。"
+					]
+				},
+				{
+					"ENG_name": "Rolling Hills {@recharge}",
+					"name": "起伏群山 {@recharge}",
+					"entries": [
+						"摇篮魔法性地创造一道泥石流，从其周围120尺内地面的一点向外延伸。此泥石流至多30尺长，至多30尺高，至多30尺宽。泥石流中的每个生物必须进行一次{@dc 22}的力量豁免。豁免失败者，受到58（{@damage 9d12}）钝击伤害，陷入{@condition 倒地}状态，并被掩埋在土下。豁免成功者，只受到一半伤害。",
+						"被掩埋的生物陷入{@condition 束缚}状态，拥有{@quickref 掩护||3||全身掩护}，并且不能呼吸。被如此掩埋的生物，或一个位于其5尺内却未被掩埋的其他生物，可以用一个动作进行一次{@dc 17}力量（{@skill 运动}）检定。如果检定成功，被掩埋的生物不再处于{@condition 倒地}或{@condition 束缚}状态。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Scion of Grolantor",
+				"name": "格洛兰托的神嗣",
+				"source": "BGG"
+			},
+			"traitTags": [
+				"传奇抗性",
+				"魔法抗性",
+				"攻城怪物"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"P"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Cradle of the Stone Scion",
+			"name": "岩石神嗣的摇篮",
+			"type": "elemental",
+			"source": "BGG",
+			"page": 168,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 455,
+				"formula": "26d20 + 182"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 26,
+			"dex": 15,
+			"con": 24,
+			"int": 11,
+			"wis": 18,
+			"cha": 10,
+			"save": {
+				"wis": "+11",
+				"cha": "+7"
+			},
+			"senses": [
+				"震颤感知 120 尺"
+			],
+			"passive": 14,
+			"resist": [
+				"寒冷",
+				"火焰",
+				"闪电",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"强酸",
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地"
+			],
+			"languages": [
+				"巨人语",
+				"原初语"
+			],
+			"cr": "23",
+			"trait": [
+				{
+					"ENG_name": "Awakening of the Scion",
+					"name": "神嗣苏醒",
+					"entries": [
+						"摇篮包含着{@creature 司寇雷乌斯的神嗣|BGG}。当摇篮的生命值降为0点时，它的身躯就会化为尘土。神嗣立即出现在摇篮原先占据的地方，并使用摇篮的先攻。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (5/Day)",
+					"name": "传奇抗性（5/日）",
+					"entries": [
+						"摇篮豁免失败时，可以将其改为豁免成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"摇篮为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"摇篮对物件和建筑物伤害翻倍。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"摇篮进行两次猛击或飞岩攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 15}，触及20尺，单一目标。{@h}30（{@damage 4d10 + 8}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Spit Rock",
+					"name": "飞岩",
+					"entries": [
+						"{@atk rw} 命中{@hit 15}，射程120尺，单一目标。{@h}24（{@damage 3d10 + 8}）钝击伤害，且目标必须成功通过一次{@dc 23}的力量豁免，否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Shattering Roar {@recharge 5}",
+					"name": "粉碎咆哮{@recharge 5}",
+					"entries": [
+						"摇篮发出一声震耳欲聋的痛苦咆哮。摇篮60尺范围内的每个生物必须进行一次{@dc 23}的体质豁免。豁免失败时，生物受到33（{@damage 6d10}）点雷鸣伤害，并且获得{@condition 失能}状态，持续到其下一回合结束。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Crystal Flare",
+					"name": "水晶耀华",
+					"entries": [
+						"摇篮使自己身上的水晶散发出耀眼光芒。每个距离摇篮30尺内的生物都必须成功通过一次{@dc 22}的体质豁免，否则受到21（{@damage 6d6}）光耀伤害并陷入{@condition 目盲}状态，直到摇篮的下个回合结束。"
+					]
+				},
+				{
+					"ENG_name": "Stone Spikes",
+					"name": "岩石尖桩",
+					"entries": [
+						"摇篮令其90尺内一处20尺方形区域的地面生长出水晶尖刺，直到其下个回合的开始。该区域在持续时间内变为困难地形。生物在此地形上每移动5尺，就受到10（{@damage 3d6}）穿刺伤害。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Scion of Skoraeus",
+				"name": "司寇雷乌斯的神嗣",
+				"source": "BGG"
+			},
+			"traitTags": [
+				"传奇抗性",
+				"魔法抗性",
+				"攻城怪物"
+			],
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"P"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"R",
+				"T"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"目盲",
+				"失能",
+				"倒地"
+			],
+			"savingThrowForced": [
+				"体质",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Cradle of the Storm Scion",
+			"name": "风暴神嗣的摇篮",
+			"type": "elemental",
+			"source": "BGG",
+			"page": 170,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"C",
+				"G"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 682,
+				"formula": "35d20 + 315"
+			},
+			"speed": {
+				"walk": 40,
+				"fly": {
+					"number": 60,
+					"condition": "(悬浮)"
+				},
+				"swim": 60,
+				"canHover": true
+			},
+			"str": 30,
+			"dex": 14,
+			"con": 29,
+			"int": 16,
+			"wis": 23,
+			"cha": 18,
+			"passive": 16,
+			"resist": [
+				"寒冷",
+				"火焰",
+				"雷鸣",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"闪电",
+				"毒素"
+			],
+			"conditionImmune": [
+				"力竭",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚",
+				"震慑"
+			],
+			"languages": [
+				"巨人语",
+				"原初语"
+			],
+			"cr": "27",
+			"trait": [
+				{
+					"ENG_name": "Awakening of the Scion",
+					"name": "神嗣苏醒",
+					"entries": [
+						"摇篮包含着{@creature 斯绰茂兹的神嗣|BGG}。当摇篮的生命值降为0点时，它的身躯就会爆裂成光芒。神嗣立即出现在摇篮原先占据的地方，并使用摇篮的先攻。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (5/Day)",
+					"name": "传奇抗性（5/日）",
+					"entries": [
+						"摇篮豁免失败时，可以将其改为豁免成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"摇篮为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"摇篮对物件和建筑物伤害翻倍。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"摇篮进行合计三次的猛击或飞雹攻击，随意组合。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 18}，触及20尺，单一目标。{@h}36（{@damage 4d12 + 10}）钝击伤害外加19（{@damage 3d12}）闪电伤害。"
+					]
+				},
+				{
+					"ENG_name": "Spit Hailstone",
+					"name": "飞雹",
+					"entries": [
+						"{@atk rw} 命中{@hit 18}，射程120尺，单一目标。{@h}32（{@damage 4d10 + 10}）钝击伤害外加14（{@damage 4d6}）寒冷伤害，且目标必须成功通过一次{@dc 26}的力量豁免，否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Lightning Barrage {@recharge 5}",
+					"name": "多重闪电{@recharge 5}",
+					"entries": [
+						"摇篮掷出多个魔法闪电束，轰击其周围500尺内至多两个可见生物。每个目标必须进行一次{@dc 22}的敏捷豁免。豁免失败者受到71（{@damage 11d12}）闪电伤害并且陷入{@condition 震慑}状态，直到其下个回合的结束。豁免成功者只受到一半伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Booming Step",
+					"name": "轰雷步",
+					"entries": [
+						"在受到伤害后，摇篮可以立即伴随着雷鸣分裂，魔法性地传送到至多60尺内一处其可见的未占据空间。每个位于摇篮离开位置10尺内的生物必须进行一次{@dc 22}的体质豁免，豁免失败者受到14（{@damage 4d6}）雷鸣伤害，豁免成功者受到一半伤害。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Scion of Stronmaus",
+				"name": "斯绰茂兹的神嗣",
+				"source": "BGG"
+			},
+			"traitTags": [
+				"传奇抗性",
+				"魔法抗性",
+				"攻城怪物"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"P"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"L",
+				"T"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"倒地",
+				"震慑"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Death Giant Reaper",
+			"name": "死亡巨人收割者",
+			"type": "giant",
+			"source": "BGG",
+			"page": 126,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 板甲|PHB|板甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 172,
+				"formula": "15d12 + 75"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 27,
+			"dex": 14,
+			"con": 20,
+			"int": 18,
+			"wis": 16,
+			"cha": 16,
+			"save": {
+				"con": "+9",
+				"int": "+8",
+				"wis": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"arcana": "+8",
+				"history": "+8",
+				"perception": "+7",
+				"stealth": "+6"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 17,
+			"immune": [
+				"暗蚀"
+			],
+			"conditionImmune": [
+				"恐慌"
+			],
+			"languages": [
+				"巨人语"
+			],
+			"cr": "12",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨人发动两次巨镰或夺魂矢攻击。"
+					]
+				},
+				{
+					"ENG_name": "Scythe",
+					"name": "巨镰",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及15尺，单一目标。{@h}21（{@damage 3d8 + 8}）挥砍伤害外加11（{@damage 2d10}）暗蚀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Soul Bolt",
+					"name": "夺魂矢",
+					"entries": [
+						"{@atk rs} 命中{@hit 8}，射程120尺，单一生物。{@h}26（{@damage 4d10 + 4}）暗蚀伤害。若目标具有{@condition 恐慌}状态，则巨人获得等于造成的伤害的临时生命值。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Frightening Teleport {@recharge 4}",
+					"name": "骇人传送{@recharge 4}",
+					"entries": [
+						"巨人魔法性地带着其携带或着装的装备一同传送40尺至一处其可见的未被占据的空间。任何位于巨人传送前的位置10尺内的生物都必须成功通过一次{@dc 16}的感知豁免否则获得{@condition 恐慌}状态直到该生物的下一回合结束。"
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Death Giant Shrouded One",
+			"name": "死亡巨人缚魂主",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"法师"
+				]
+			},
+			"source": "BGG",
+			"page": 127,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 195,
+				"formula": "17d12 + 85"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 27,
+			"dex": 14,
+			"con": 20,
+			"int": 23,
+			"wis": 16,
+			"cha": 16,
+			"save": {
+				"con": "+10",
+				"int": "+11",
+				"wis": "+8",
+				"cha": "+8"
+			},
+			"skill": {
+				"arcana": "+11",
+				"perception": "+8",
+				"stealth": "+7"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 18,
+			"immune": [
+				"暗蚀"
+			],
+			"conditionImmune": [
+				"恐慌"
+			],
+			"languages": [
+				"通用语",
+				"巨人语"
+			],
+			"cr": "15",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"巨人施展以下一道法术，使用智力作为施法属性："
+					],
+					"will": [
+						"{@spell 侦测魔法}",
+						"{@spell 法师护甲}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell 死者交谈}",
+							"{@spell 谭森浮碟术}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Death Rune",
+					"name": "死亡符文",
+					"entries": [
+						"巨人拥有一个刻印在一个巨人颅骨上的死亡符文。当巨人携带或着装这个颅骨时，它可以使用其掠魂巨镰动作和魂灵缠身附赠动作。",
+						"颅骨具有AC18；35HP；免疫暗蚀，毒素和心灵伤害。该物件会在每个回合结束时恢复所有生命值，但若其生命值被降为0或是巨人死亡，它就会化为灰烬。若符文被毁坏，巨人可以完成一次短休或长休后在另一个颅骨上刻印一道死亡符文。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨人发动三次夺魂爆发攻击。或者，若巨人带着它的死亡符文，则它可以发动三次掠魂巨镰攻击。"
+					]
+				},
+				{
+					"ENG_name": "Soul Burst",
+					"name": "夺魂爆发",
+					"entries": [
+						"{@atk ms,rs} 命中{@hit 11}，触及10尺或射程120尺，单一目标。{@h}28（{@damage 4d10 + 6}）暗蚀伤害。若目标具有{@condition 恐慌}状态，则巨人获得等于造成的伤害的临时生命值。"
+					]
+				},
+				{
+					"ENG_name": "Reaping Scythe (Requires Death Rune)",
+					"name": "收割之镰（需要死亡符文）",
+					"entries": [
+						"{@atk ms} 命中{@hit 11}，触及15尺，单一生物。{@h}38（{@damage 7d10}）暗蚀伤害，且目标在它的下个回合结束前不能恢复生命值。如果该攻击将目标的生命值降至0，则目标死亡。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Frightening Teleport {@recharge 4}",
+					"name": "骇人传送{@recharge 4}",
+					"entries": [
+						"巨人魔法性地带着其携带或着装的装备一同传送40尺至一处其可见的未被占据的空间。任何位于巨人传送前的位置10尺内的生物都必须成功通过一次{@dc 19}的感知豁免否则获得{@condition 恐慌}状态直到该生物的下一回合结束。"
+					]
+				},
+				{
+					"ENG_name": "Shroud of Souls (Requires Death Rune)",
+					"name": "魂灵缠身（需要死亡符文）",
+					"entries": [
+						"巨人令痛苦的亡魂们环绕自身。当巨人被环绕时，任何在巨人5尺内开始回合的生物都必须成功通过一次{@dc 19}的感知豁免，否则在豁免检定上具有劣势直到其下一回合结束。环绕巨人的亡魂们会在一分钟后、巨人死亡、巨人用一个附赠动作解除或巨人的死亡符文被毁坏时消失。"
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"N"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Dust Hulk",
+			"name": "尘屑巨怪",
+			"type": "elemental",
+			"source": "BGG",
+			"page": 131,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 68,
+				"formula": "8d10 + 24"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 30,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"str": 15,
+			"dex": 19,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 8,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 11,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"力竭",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"束缚"
+			],
+			"languages": [
+				"巨人语",
+				"土族语"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Air Form",
+					"name": "空气形态",
+					"entries": [
+						"尘屑巨怪可以进入并停留在一个敌对生物所在的位置。它可以通过一个只有1寸宽的狭缝而无需跻身。"
+					]
+				},
+				{
+					"ENG_name": "Death Burst",
+					"name": "自爆",
+					"entries": [
+						"当尘屑巨怪死亡时，它会爆发一团粉尘，充满以自身为源点的半径10尺球状区域。该区域内的每个生物必须成功通过{@dc 14}的体质豁免否则陷入{@condition 目盲}状态1分钟。被影响的生物可以在每个回合结束时重复豁免，成功则结束身上的效应。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"尘屑巨怪发动三次猛击攻击，它可以把其中一次攻击换成扰目尘屑。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及10尺，单一目标。{@h}13（{@damage 2d8 + 4}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Stinging Dust",
+					"name": "扰目尘屑",
+					"entries": [
+						"一个由尘屑巨怪在其空间内选择的生物必须进行一次{@dc 14}的体质豁免。豁免失败的情况下，该生物受到10（{@damage 3d6}）钝击伤害并陷入{@condition 目盲}状态直到其下个回合结束。豁免成功的情况下，该生物只受到一半伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"自爆"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"T"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"目盲"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Echo of Demogorgon",
+			"name": "狄摩高根之回响",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"恶魔"
+				]
+			},
+			"source": "BGG",
+			"page": 132,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 85,
+				"formula": "10d10 + 30"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 22,
+			"dex": 10,
+			"con": 17,
+			"int": 10,
+			"wis": 12,
+			"cha": 14,
+			"save": {
+				"str": "+9",
+				"cha": "+5"
+			},
+			"skill": {
+				"perception": "+7"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 17,
+			"resist": [
+				"寒冷",
+				"火焰",
+				"闪电"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌"
+			],
+			"languages": [
+				"深渊语",
+				"巨人语",
+				"兽人语"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"该回响在对抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Wakeful",
+					"name": "警醒",
+					"entries": [
+						"当回响的一个头睡着时，它的另一个头醒着。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"回响发动两次触须攻击。"
+					]
+				},
+				{
+					"ENG_name": "Tentacle",
+					"name": "触须",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及10尺，单一目标。{@h}13（{@damage 2d6 + 6}）钝击伤害加9（{@damage 2d8}）暗蚀伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Discordant Screams",
+					"name": "不谐尖叫",
+					"entries": [
+						"回响向60尺范围内他能看见的一个生物发出一阵疯狂的尖叫。目标必须通过{@dc 13}的感知豁免否则承受由回响选择的下列效应之一：",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Confused Reaction",
+									"name": "困惑反应",
+									"type": "item",
+									"entries": [
+										"目标必须用一个反应对在回响可视范围内的另一个由回响指定的生物发动一次近战攻击。"
+									]
+								},
+								{
+									"ENG_name": "Psychic Torment",
+									"name": "精神折磨",
+									"type": "item",
+									"entries": [
+										"目标受到13（{@damage 2d12}）点心灵伤害。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击",
+				"触须"
+			],
+			"languageTags": [
+				"AB",
+				"GI",
+				"O"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Ettin Ceremorph",
+			"name": "双头巨人心变者",
+			"type": "aberration",
+			"source": "BGG",
+			"page": 133,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 104,
+				"formula": "11d10 + 44"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 18,
+			"dex": 14,
+			"con": 18,
+			"int": 18,
+			"wis": 15,
+			"cha": 14,
+			"save": {
+				"int": "+7",
+				"wis": "+5"
+			},
+			"skill": {
+				"perception": "+8"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 18,
+			"resist": [
+				"心灵"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"震慑",
+				"昏迷"
+			],
+			"languages": [
+				"深潜语",
+				"巨人语",
+				"心灵感应 60 尺",
+				"地底通用语"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"双头巨人心变者在对抗法术及其他魔法效应而作的豁免检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"双头巨人心变者发动一次猛击攻击以及一次触手攻击。双头巨人心变者可以用心灵箭束取代任一次攻击，只要仍有使用次数。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及10尺，单一目标。{@h}22（{@damage 4d8 + 4}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Tentacles",
+					"name": "触手",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及10尺，单一生物。{@h}15（{@damage 2d10 + 4}）心灵伤害。如果目标为大型或更小型生物，则其陷入{@condition 受擒}状态（逃脱{@dc 14}）且必须成功通过{@dc 15}的智力豁免否则陷入{@condition 震慑}状态直到此擒抱结束。"
+					]
+				},
+				{
+					"ENG_name": "Extract Brain",
+					"name": "抽取大脑",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，一个被心变者{@condition 受擒}且{@condition 失能}的类人生物。{@h}55（{@damage 10d10}）穿刺伤害。若该伤害将目标的生命值降至0，心变者就会通过抽出并吞噬其大脑来杀死目标。"
+					]
+				},
+				{
+					"ENG_name": "Mind Bolt (3/Day)",
+					"name": "心灵箭束（3/日）",
+					"entries": [
+						"{@atk rs} 命中{@hit 7}，射程120尺，单一生物。{@h}17（{@damage 2d12 + 4}）心灵伤害，且目标必须成功通过{@dc 15}的智力豁免否则获得{@condition 震慑}状态直到其下一回合结束。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击",
+				"触须"
+			],
+			"languageTags": [
+				"DS",
+				"GI",
+				"TP",
+				"U"
+			],
+			"damageTags": [
+				"B",
+				"P",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"震慑"
+			],
+			"savingThrowForced": [
+				"智力"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Fensir Devourer",
+			"name": "山妖吞噬者",
+			"type": "celestial",
+			"source": "BGG",
+			"page": 135,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 138,
+				"formula": "12d12 + 60"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 21,
+			"int": 10,
+			"wis": 14,
+			"cha": 11,
+			"skill": {
+				"perception": "+8",
+				"survival": "+8"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 18,
+			"languages": [
+				"通用语",
+				"巨人语"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"ENG_name": "Death Curse",
+					"name": "死亡诅咒",
+					"entries": [
+						"当山妖吞噬者在回合开始具有0点生命值且无法再生时，它便会对周边的事物降下诅咒。每名距离死亡的山妖吞噬者30英尺以内的生物必须成功通过一次{@dc 13}的魅力豁免否则在接下来的24小时内受到诅咒。",
+						"以此法受到诅咒时，受影响的生物无法从完成短休或长休中获益。在每个小时结束时，该生物必须成功通过一次{@dc 13}的魅力豁免否则受到11（{@damage 2d10}）点心灵伤害。"
+					]
+				},
+				{
+					"ENG_name": "Regeneration",
+					"name": "再生",
+					"entries": [
+						"山妖在其回合开始时，若不处于阳光之下，则其恢复10点生命值。如果山妖受到了任何强酸或火焰伤害，则在山妖的下个回合开始时此特性不起作用。山妖仅在以0点生命值开始其回合且无法使用再生时才会死亡。"
+					]
+				},
+				{
+					"ENG_name": "Sunlight Hypersensitivity",
+					"name": "日照超敏",
+					"entries": [
+						"当山妖在阳光之下开始其回合时，它必须成功通过一次{@dc 15}的体质豁免否则陷入{@condition 石化}状态直到其不再处于阳光之下。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"山妖吞噬者发动两次攻击，使用撕裂、巨石或它们的组合。"
+					]
+				},
+				{
+					"ENG_name": "Rend",
+					"name": "撕裂",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及10尺，单一目标。{@h}21（{@damage 3d10 + 5}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Boulder",
+					"name": "巨石",
+					"entries": [
+						"{@atk rw} 命中{@hit 8}，射程60/240尺，单一目标。{@h}18（{@damage 2d12 + 5}）点钝击伤害。如果目标为大型或更小型生物，则其必须成功通过一次{@dc 16}的力量豁免，否则陷入{@condition 倒地}状态。当山妖吞噬者投掷巨石之后，掷一个{@dice d6}；若骰值为4或更低，则山妖吞噬者没有更多可用来投掷的巨石。"
+					]
+				}
+			],
+			"traitTags": [
+				"再生",
+				"日照敏感"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"CUR",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"savingThrowForced": [
+				"魅力",
+				"体质",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Fensir Skirmisher",
+			"name": "山妖投石兵",
+			"type": "giant",
+			"source": "BGG",
+			"page": 135,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 链甲衫|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 94,
+				"formula": "9d10 + 45"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 15,
+			"con": 20,
+			"int": 14,
+			"wis": 11,
+			"cha": 12,
+			"save": {
+				"int": "+5",
+				"wis": "+3"
+			},
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 16,
+			"languages": [
+				"通用语",
+				"巨人语"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"山妖投石兵施展以下一道法术，使用智力作为施法属性："
+					],
+					"daily": {
+						"1e": [
+							"{@spell 造水术/枯水术}",
+							"{@spell 侦测魔法}",
+							"{@spell 行动无踪}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Regeneration",
+					"name": "再生",
+					"entries": [
+						"山妖在其回合开始时，若不处于阳光之下，则其恢复10点生命值。如果山妖受到了任何强酸或火焰伤害，则在山妖的下个回合开始时此特性不起作用。山妖仅在以0点生命值开始其回合且无法使用再生时才会死亡。"
+					]
+				},
+				{
+					"ENG_name": "Sunlight Hypersensitivity",
+					"name": "日照超敏",
+					"entries": [
+						"当山妖在阳光之下开始其回合时，它必须成功通过一次{@dc 15}的体质豁免否则陷入{@condition 石化}状态直到其不再处于阳光之下。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"山妖发动三次战斧攻击或两次魔石术攻击。"
+					]
+				},
+				{
+					"ENG_name": "Battleaxe",
+					"name": "战斧",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}13（{@damage 2d8 + 4}）挥砍伤害，或双手持用时为15（{@damage 2d10 + 4}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Magic Stone",
+					"name": "魔石术",
+					"entries": [
+						"{@atk rs} 命中{@hit 5}，射程60尺，单一目标。{@h}15（{@damage 2d12 + 2}）钝击伤害。若目标为一个大型或更小的生物，则其必须成功通过一次{@dc 13}的力量豁免否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Mud to Stone {@recharge}",
+					"name": "化泥为石{@recharge}",
+					"entries": [
+						"山妖投掷一团具有魔力的泥浆，它将包裹半径30英尺球状区域内的所有生物，球心必须为距离山妖60尺内其能够看到的一点。每名位于区域内的非山妖生物必须成功通过一次{@dc 13}的敏捷豁免，否则受到13（{@damage 3d8}）点钝击伤害，并因泥浆开始化为石头而陷入{@condition 束缚}状态。受到影响的生物必须于其下一回合结束时重复进行豁免。豁免成功时，该效果在该生物身上结束。豁免失败时，该生物陷入{@condition 石化}状态持续24小时。"
+					]
+				}
+			],
+			"attachedItems": [
+				"战斧|phb"
+			],
+			"traitTags": [
+				"再生",
+				"日照敏感"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"石化"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Firbolg Primeval Warden",
+			"name": "费尔伯格原初卫士",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"德鲁伊"
+				]
+			},
+			"source": "BGG",
+			"page": 136,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 兽皮甲|phb}",
+						"{@item 盾牌|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d8 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 12,
+			"wis": 16,
+			"cha": 11,
+			"save": {
+				"int": "+3",
+				"wis": "+5"
+			},
+			"skill": {
+				"medicine": "+5",
+				"nature": "+3",
+				"perception": "+7"
+			},
+			"passive": 17,
+			"languages": [
+				"通用语",
+				"德鲁伊语",
+				"巨人语"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"费尔伯格原初卫士施展以下一道法术，使用感知作为施法属性（法术豁免{@dc 13}）："
+					],
+					"will": [
+						"{@spell 纠缠术}",
+						"{@spell 动物交谈}",
+						"{@spell 植物交谈}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 问道自然}（以一个动作）",
+							"{@spell 侦测魔法}",
+							"{@spell 易容术}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"费尔伯格人发动两次矛或烈焰长枪攻击。"
+					]
+				},
+				{
+					"ENG_name": "Spear",
+					"name": "矛",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 5}，触及5尺或射程20/60尺，单一目标。{@h}6（{@damage 1d6 + 3}）穿刺伤害外加9（{@damage 2d8}）火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "Fire Lance",
+					"name": "烈焰长枪",
+					"entries": [
+						"{@atk rs} 命中{@hit 5}，射程120尺，单一目标。{@h}14（{@damage 2d10 + 3}）火焰伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Hidden Step (2/Day)",
+					"name": "神隐步（2/日）",
+					"entries": [
+						"费尔伯格人魔法般变为{@condition 隐形}，直到它的下一回合开始，它进行一次攻击检定，或是迫使某人进行一次豁免检定。"
+					]
+				}
+			],
+			"attachedItems": [
+				"矛|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DU",
+				"GI"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"隐形"
+			],
+			"conditionInflictSpell": [
+				"束缚"
+			],
+			"savingThrowForcedSpell": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Firbolg Wanderer",
+			"name": "费尔伯格漫游者",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"牧师"
+				]
+			},
+			"source": "BGG",
+			"page": 137,
+			"referenceSources": [
+				"GotSF"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 胸甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 90,
+				"formula": "12d8 + 36"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 16,
+			"int": 14,
+			"wis": 17,
+			"cha": 16,
+			"save": {
+				"dex": "+5",
+				"cha": "+6"
+			},
+			"skill": {
+				"perception": "+6",
+				"persuasion": "+6",
+				"stealth": "+5"
+			},
+			"passive": 16,
+			"languages": [
+				"通用语",
+				"巨人语"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"费尔伯格漫游者施展以下一道法术，使用感知作为施法属性（法术豁免{@dc 14}）："
+					],
+					"will": [
+						"{@spell 法师之手}",
+						"{@spell 次级幻象}",
+						"{@spell 塔莎狂笑术}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 侦测魔法}",
+							"{@spell 易容术}",
+							"{@spell 解除魔法}",
+							"{@spell 变形术}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"费尔伯格人发动两次攻击，使用长剑、迷惑箭或它们的组合。"
+					]
+				},
+				{
+					"ENG_name": "Longsword",
+					"name": "长剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}7（{@damage 1d8 + 3}）挥砍伤害，或使用双手攻击时8（{@damage 1d10 + 3}）挥砍伤害，外加9（{@damage 2d8}）心灵伤害。"
+					]
+				},
+				{
+					"ENG_name": "Bewitching Bolt",
+					"name": "迷惑箭",
+					"entries": [
+						"{@atk rs} 命中{@hit 6}，射程60尺，单一生物。{@h}10（{@damage 2d6 + 3}）点心灵伤害，且目标必须成功通过{@dc 14}的魅力豁免否则获得{@condition 魅惑}状态直到目标的下个回合开始。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Duplicitous Movement (1/Day)",
+					"name": "分身移动（1/日）",
+					"entries": [
+						"费尔伯格人在其可见的30尺内一处未占据空间中投射出一道自身的幻象分身。随后费尔伯格人可以与幻象互换位置。幻象会在1分钟后，若费尔伯格人陷入{@condition 失能}，或幻象距离费尔伯格人超出120尺时消散。",
+						"此后的每个回合里，费尔伯格人都能以一个附赠动作将幻象移动至多30尺并与之互换位置。"
+					]
+				}
+			],
+			"attachedItems": [
+				"长剑|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"S",
+				"Y"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"魅惑"
+			],
+			"conditionInflictSpell": [
+				"失能",
+				"倒地"
+			],
+			"savingThrowForced": [
+				"魅力"
+			],
+			"savingThrowForcedSpell": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Fire Giant Forgecaller",
+			"name": "火巨人兴炉匠",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"牧师"
+				]
+			},
+			"source": "BGG",
+			"page": 138,
+			"referenceSources": [
+				"GotSF"
+			],
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 板甲|PHB|板甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 312,
+				"formula": "25d12 + 150"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 30,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"str": 25,
+			"dex": 11,
+			"con": 23,
+			"int": 16,
+			"wis": 21,
+			"cha": 18,
+			"save": {
+				"dex": "+6",
+				"int": "+9",
+				"wis": "+11"
+			},
+			"skill": {
+				"athletics": "+13",
+				"perception": "+11"
+			},
+			"passive": 21,
+			"immune": [
+				"火焰"
+			],
+			"languages": [
+				"通用语",
+				"巨人语"
+			],
+			"cr": "18",
+			"trait": [
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
+					"entries": [
+						"巨人豁免失败时，可以将其改为豁免成功。"
+					]
+				},
+				{
+					"ENG_name": "Fire Rune",
+					"name": "火焰符文",
+					"entries": [
+						"巨人拥有一个刻印在其吊坠或其他随身携带物件上的火焰符文。当巨人携带或着装这个承载符文的物件时，它可以使用其熔岩浪潮动作和熔炉护甲附赠动作。",
+						"承载符文的物件具有AC 15；40生命值；免疫暗蚀，毒素和心灵伤害。该物件会在每个回合结束时恢复所有生命值，但若其生命值被降为0或是巨人死亡，它就会化为灰烬。若符文被毁坏，巨人可以完成一次短休或长休后在一个它拥有的物件上刻印一道火焰符文。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨人发动三次锻锤攻击或两次灼热投石攻击。"
+					]
+				},
+				{
+					"ENG_name": "Forge Hammer",
+					"name": "锻锤",
+					"entries": [
+						"{@atk mw} 命中{@hit 13}，触及10尺，单一目标。{@h}24（{@damage 5d6 + 7}）钝击伤害。{@hom}巨人都能令锻锤释放出一道热能并覆盖一处以目标为中心，半径30尺的球形区域。区域内的金属物件会变得通红炽热，直到巨人的下一回合开始。任何与炽热的物体有物理接触的生物在开始回合时都必须进行一次{@dc 19}的体质豁免。豁免失败者将受到10（{@damage 3d6}）火焰伤害，若其不免疫于火焰伤害，则还会因此在攻击检定上具有劣势直至其下一回合开始。每回合这把锻锤只能以此法释放一次热能。"
+					]
+				},
+				{
+					"ENG_name": "Heated Rock",
+					"name": "灼热投石",
+					"entries": [
+						"{@atk rw} 命中{@hit 13}，射程60/240尺，单一目标。{@h}23（{@damage 3d10 + 7}）钝击伤害外加19（{@damage 3d12}）火焰伤害。若目标为一个大型或更小的生物，则其必须成功通过一次{@dc 21}的力量豁免否则会陷入{@condition 倒地}状态。在巨人投石之后，掷一颗{@dice d6}；若骰值在3或更低，则代表巨人不再有更多可供投掷的岩石。"
+					]
+				},
+				{
+					"ENG_name": "Magma Wave (Requires Fire Rune)",
+					"name": "熔岩浪潮（需要火焰符文）",
+					"entries": [
+						"巨人从其火焰符文释放出一道熔岩浪潮，覆盖一处30尺锥状区域。任何位于其中的生物都必须进行一次{@dc 19}的敏捷豁免。豁免失败者受到36（{@damage 8d8}）火焰伤害并获得{@condition 束缚}状态。以一个动作，一个生物可以尝试进行一次{@dc 19}的力量（{@skill 运动}）检定，成功则令自己或触及内的另一个生物从岩石中破出。每个束缚生物的岩石都具有AC17；20生命值；免疫火焰、毒素和心灵伤害。豁免成功则只会受到一半的伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Furnace Armor (Requires Fire Rune)",
+					"name": "熔炉护甲（需要火焰符文）",
+					"entries": [
+						"巨人令烬烟从其护甲中涌出，笼罩以自身为中心半径30尺的球形区域。在护甲涌出烟雾期间，巨人获得{@quickref 掩护||3||半身掩护}。护甲会在一分钟后，巨人死亡，巨人用一个附赠动作将之结束或是巨人的火焰符文被破坏的时候停止涌出烟雾。"
+					]
+				}
+			],
+			"traitTags": [
+				"传奇抗性"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Fire Giant of Evil Fire",
+			"name": "邪焰之火巨人",
+			"type": "giant",
+			"source": "BGG",
+			"page": 139,
+			"referenceSources": [
+				"GotSF",
+				"HFStCM"
+			],
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 板甲|PHB|板甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 150,
+				"formula": "12d12 + 72"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 25,
+			"dex": 9,
+			"con": 23,
+			"int": 10,
+			"wis": 19,
+			"cha": 14,
+			"save": {
+				"con": "+10",
+				"wis": "+8",
+				"cha": "+6"
+			},
+			"skill": {
+				"athletics": "+11",
+				"perception": "+8"
+			},
+			"passive": 18,
+			"immune": [
+				"火焰"
+			],
+			"languages": [
+				"通用语",
+				"巨人语",
+				"火族语"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"ENG_name": "Shrapnel Explosion",
+					"name": "破片爆炸",
+					"entries": [
+						"当巨人的生命值降低至0时，它的盔甲会爆炸，摧毁巨人的身体并化作碎片。在爆炸时位于巨人10尺内的生物必须进行一次{@dc 18}的敏捷豁免，失败会受到21（{@damage 6d6}）穿刺伤害，成功则只受到一半伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨人进行两次灼热权杖攻击或两次伊米希之矢攻击。"
+					]
+				},
+				{
+					"ENG_name": "Searing Scepter",
+					"name": "灼热权杖",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及10尺，单一目标。{@h}17（{@damage 3d6 + 7}）钝击伤害外加9（{@damage 2d8}）火焰伤害，并且目标会被魔法打上烙印。在被烙印期间，目标若处于{@condition 隐形}状态则会显形，无法进入{@condition 隐形}状态，并且会散发出5尺半径的微光光照。烙印会在24小时后消失，也能通过任何能解除诅咒的法术将其从生物或物件上除去。"
+					]
+				},
+				{
+					"ENG_name": "Bolt of Imix",
+					"name": "伊米希之矢",
+					"entries": [
+						"{@atk rs} 命中{@hit 8}，射程120尺，单一目标。{@h}20（{@damage 3d10 + 4}）火焰伤害，且目标必须成功通过{@dc 16}感知豁免检定否则陷入{@condition 恐慌}状态直到目标的下个回合结束。"
+					]
+				}
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"IG"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"CUR",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"恐慌"
+			],
+			"savingThrowForced": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Fire Hellion",
+			"name": "狱火凶徒",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"魔鬼"
+				]
+			},
+			"source": "BGG",
+			"page": 140,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 板甲|PHB|板甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 175,
+				"formula": "14d12 + 84"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 25,
+			"dex": 10,
+			"con": 23,
+			"int": 16,
+			"wis": 14,
+			"cha": 21,
+			"save": {
+				"wis": "+6",
+				"cha": "+9"
+			},
+			"skill": {
+				"arcana": "+7",
+				"athletics": "+11",
+				"perception": "+6"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 16,
+			"immune": [
+				"火焰"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌"
+			],
+			"languages": [
+				"通用语",
+				"巨人语",
+				"炼狱语"
+			],
+			"cr": "11",
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"该凶徒为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Soul Taker",
+					"name": "掠魂者",
+					"entries": [
+						"一个被狱火凶徒降至0生命值的巨人或类人生物会死亡，其灵魂则会在{@dice 1d4}小时后于阿弗纳斯，九层地狱中的一层，作为一个劣魔（见怪物图鉴）复生。如果生物在这之前没有被复活，只有{@spell 祈愿术}法术或杀死那个劣魔并对生物原本的身体使用完全复生术以恢复其原本的生命。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"狱火凶徒进行两次钉头锤攻击。"
+					]
+				},
+				{
+					"ENG_name": "Morningstar",
+					"name": "钉头锤",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及10尺，单一目标。{@h}20（{@damage 3d8 + 7}）穿刺伤害外加11（{@damage 2d10}）火焰伤害。如果目标是生物，则直到凶徒的下个回合开始前，它无法恢复生命值。"
+					]
+				},
+				{
+					"ENG_name": "Infernal Orb",
+					"name": "炼狱火珠",
+					"entries": [
+						"狱火凶徒投出一颗魔法火球，在它可见的120尺内一点爆炸，形成一个半径20尺的球状区域。该球状区域会沿拐角扩散。区域内的每个生物必须进行一次{@dc 17}的敏捷豁免。豁免失败者将受到18（{@damage 4d8}）火焰伤害和18（{@damage 4d8}）暗蚀伤害，豁免成功则只受到一半伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"钉头锤|phb"
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"I"
+			],
+			"damageTags": [
+				"F",
+				"N",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Firegaunt",
+			"name": "枯亡之火",
+			"type": "undead",
+			"source": "BGG",
+			"page": 137,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"损坏的板甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 175,
+				"formula": "14d12 + 84"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 25,
+			"dex": 7,
+			"con": 23,
+			"int": 10,
+			"wis": 14,
+			"cha": 13,
+			"save": {
+				"dex": "+2",
+				"con": "+10",
+				"cha": "+5"
+			},
+			"skill": {
+				"athletics": "+11",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"resist": [
+				"暗蚀"
+			],
+			"immune": [
+				"火焰",
+				"毒素"
+			],
+			"conditionImmune": [
+				"力竭",
+				"石化",
+				"中毒"
+			],
+			"languages": [
+				"巨人语"
+			],
+			"cr": "11",
+			"trait": [
+				{
+					"ENG_name": "Fire Blood",
+					"name": "炽焰之血",
+					"entries": [
+						"当一个生物在5尺内用造成穿刺或挥砍伤害的近战攻击命中枯亡之火时，该生物受到5（{@damage 1d10}）火焰伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"枯亡之火发动两次炽热巨锤攻击。"
+					]
+				},
+				{
+					"ENG_name": "Heated Maul",
+					"name": "炽热巨锤",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及10尺，单一目标。{@h}23（{@damage 3d10 + 7}）钝击伤害。枯亡之火可以令巨锤迸发出一道猩红的炽焰，目标必须成功通过一次{@dc 18}的敏捷豁免否则会受到10（{@damage 3d6}）火焰伤害和10（{@damage 3d6}）暗蚀伤害。每回合巨锤只能以此法迸发火焰一次。"
+					]
+				},
+				{
+					"ENG_name": "Crimson Rays {@recharge 5}",
+					"name": "猩红射线{@recharge 5}",
+					"entries": [
+						"枯亡之火从它的眼睛、嘴巴和伤口中发射出火焰光束，覆盖30尺锥状区域。该区域内的每个生物都必须进行一次{@dc 18}的敏捷豁免，豁免失败者将受到31（{@damage 7d8}）火焰伤害，豁免成功者则只受到一半伤害。无论豁免成功或失败，该生物都会着火。直到燃烧的生物或其他能够触及它的生物用一个动作来灭火，否则燃烧的生物无法恢复生命值并在其每个回合开始时受到5（{@damage 1d10}）火焰伤害。"
+					]
+				}
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"N"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Flesh Colossus",
+			"name": "肉身巨像",
+			"type": "construct",
+			"source": "BGG",
+			"page": 141,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 280,
+				"formula": "16d20 + 112"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 24,
+			"dex": 9,
+			"con": 24,
+			"int": 6,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 10,
+			"immune": [
+				"闪电",
+				"毒素",
+				"心灵",
+				{
+					"immune": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒"
+			],
+			"languages": [
+				"能听懂巨人语但不会说"
+			],
+			"cr": "20",
+			"trait": [
+				{
+					"ENG_name": "Berserk",
+					"name": "狂怒",
+					"entries": [
+						"如果巨像体内的核心被摧毁了，巨像将陷入狂怒。狂怒期间，在它的每个回合中，巨像都将攻击它可以看见的最近的生物。如果没有生物近到可以移动并攻击，巨像将攻击一个物件。一旦巨像陷入狂怒，它将一直保持狂怒状态，直至它被摧毁。"
+					]
+				},
+				{
+					"ENG_name": "Immutable Form",
+					"name": "不变形态",
+					"entries": [
+						"巨像免疫任何改变其形态的法术或效应。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"巨像抵抗法术和其他魔法效应时进行的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"巨像对物件和建筑物造成双倍伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨像发起两次拳击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Fist",
+					"name": "拳击",
+					"entries": [
+						"{@atk mw} 命中{@hit 13}（若巨像正处于狂怒，则具有优势），触及20尺，单一目标。{@h}17（{@damage 3d6 + 7}）点钝击伤害。如果目标是大型或更小体型的生物，它将被向着肉身巨像的方向拉近至多15尺距离，陷入{@condition 受擒}状态（逃脱{@dc 17}），且在擒抱期间陷入{@condition 束缚}状态，直至擒抱结束。巨像可以至多同时{@condition 受擒}两个生物。"
+					]
+				},
+				{
+					"ENG_name": "Elemental Breath {@recharge 5}",
+					"name": "元素吐息{@recharge 5}",
+					"entries": [
+						"巨像呼出一团蕴含元素能量的云雾，覆盖90尺锥状区域。范围内的每个生物都必须进行一次{@dc 21}的敏捷豁免。豁免失败时，生物将受到40（{@damage 9d8}）点伤害，伤害类型由巨像从以下选项中选择：强酸、寒冷、火焰或闪电。豁免成功时，生物只受到一半伤害。",
+						"在巨像释放吐息的同时，处于巨像胸腔内的生物也将因那些汹涌波涛的元素能量而受到40（{@damage 9d8}）点力场伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 13}，触及5尺，一个被巨像{@condition 受擒}的大型或更小生物。{@h}20（{@damage 3d8 + 7}）钝击伤害，且该生物被吞没。被吞没的生物陷入{@condition 束缚}状态，对巨像外的攻击和其他效果具有{@quickref 掩护||3||全身掩护}，并在巨像的每个回合开始时受到10（{@damage 3d6}）力场伤害。",
+						"巨像的胸腔内最多同时容纳两名生物。其胸腔内是它的核心，这是一个AC16、免疫闪电、毒素和心灵伤害的大型物件。核心具有140点生命值，并散发出10尺半径的微光光照。若核心被摧毁，巨像将吐出所有被其吞咽的生物，每个生物都落在巨像周边10尺内的空间，且处于{@condition 倒地}状态，同时巨像将无法再吞咽生物。如果巨像死亡，任何被吞咽的生物将不再处于{@condition 束缚}状态，并可以消耗10尺移动力逃出尸体，以{@condition 倒地}状态现身。"
+					]
+				}
+			],
+			"traitTags": [
+				"不变形态",
+				"魔法抗性",
+				"攻城怪物"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"吐息武器",
+				"多重攻击"
+			],
+			"languageTags": [
+				"CS",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Fomorian Deep Crawler",
+			"name": "废陋巨人深暗伏行者",
+			"type": "giant",
+			"source": "BGG",
+			"page": 142,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 184,
+				"formula": "16d12 + 80"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 23,
+			"dex": 15,
+			"con": 20,
+			"int": 9,
+			"wis": 17,
+			"cha": 6,
+			"skill": {
+				"perception": "+7",
+				"stealth": "+6"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 17,
+			"languages": [
+				"巨人语",
+				"地底通用语"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"ENG_name": "Contortionist",
+					"name": "擅曲之物",
+					"entries": [
+						"废陋巨人可以无需跻身通过地进入一个足够容纳大型生物的空间。"
+					]
+				},
+				{
+					"ENG_name": "Crawling Stance",
+					"name": "伏行体态",
+					"entries": [
+						"当废陋巨人具有{@condition 倒地}状态时，匍匐前进不会额外消耗其移动力。此外，{@condition 倒地}状态不会令对废陋巨人发动的攻击检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Spider Climb",
+					"name": "蛛行",
+					"entries": [
+						"废陋巨人可以攀爬在难以攀爬的表面上，包括倒吊在天花板上，且不需要进行属性检定。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"废陋巨人发动两次猛击攻击，并使用伏行恶咒（若可用）。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及10尺，单一目标。{@h}22（{@damage 3d10 + 6}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Crawling Hex {@recharge 4}",
+					"name": "伏行恶咒{@recharge 4}",
+					"entries": [
+						"废陋巨人指定一个其可见的位于其60尺内的生物。目标必须成功通过一次{@dc 15}的感知豁免否则受到31（{@damage 7d8}）心灵伤害，陷入{@condition 倒地}状态，并被诅咒1小时。以此法被诅咒期间，目标无法起立和解除{@condition 倒地}状态。"
+					]
+				}
+			],
+			"traitTags": [
+				"蛛行术"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"U"
+			],
+			"damageTags": [
+				"B",
+				"Y"
+			],
+			"miscTags": [
+				"CUR",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Fomorian Noble",
+			"name": "废陋巨人贵族",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"法师"
+				]
+			},
+			"source": "BGG",
+			"page": 143,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				14,
+				{
+					"ac": 17,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 253,
+				"formula": "22d12 + 110"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 23,
+			"dex": 18,
+			"con": 20,
+			"int": 19,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"int": "+9",
+				"wis": "+7",
+				"cha": "+8"
+			},
+			"skill": {
+				"arcana": "+14",
+				"perception": "+7",
+				"stealth": "+9"
+			},
+			"passive": 17,
+			"conditionImmune": [
+				"魅惑"
+			],
+			"languages": [
+				"巨人语外加其他三种语言"
+			],
+			"cr": "15",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"废陋巨人施展以下一道法术，使用智力作为施法属性（法术豁免{@dc 17}）："
+					],
+					"will": [
+						"{@spell 法师护甲}（仅自身）",
+						"{@spell 法师之手}",
+						"{@spell 魔法伎俩}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 连锁闪电}",
+							"{@spell 寒冰锥}（6环版本）",
+							"{@spell 火球术}（6环版本）",
+							"{@spell 飞行术}",
+							"{@spell 位面转移}（仅自身）"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"废陋巨人发动三次权杖攻击。"
+					]
+				},
+				{
+					"ENG_name": "Rod",
+					"name": "权杖",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及10尺，单一目标。{@h}16（{@damage 3d6 + 6}）钝击伤害外加11（{@damage 2d10}）力场伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Beguiling Presence",
+					"name": "惑人仪态",
+					"entries": [
+						"废陋巨人指定一个它可见的位于其60尺内的生物。目标必须成功通过一次{@dc 17}的感知豁免否则陷入{@condition 魅惑}状态1分钟。一个受影响的目标可以在每个自己的回合结束时或是受到伤害时重复豁免，豁免成功结束该效应。若目标豁免成功或是其身上的该效应结束，则其在接下来的24小时内免疫所有废陋巨人的惑人仪态。"
+					]
+				}
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"X"
+			],
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"damageTagsSpell": [
+				"C",
+				"F",
+				"L"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"魅惑"
+			],
+			"savingThrowForced": [
+				"感知"
+			],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Fomorian Warlock of the Dark",
+			"name": "废陋巨人暗契师",
+			"type": "giant",
+			"source": "BGG",
+			"page": 144,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 207,
+				"formula": "18d12 + 90"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 23,
+			"dex": 13,
+			"con": 20,
+			"int": 9,
+			"wis": 14,
+			"cha": 18,
+			"save": {
+				"wis": "+6",
+				"cha": "+8"
+			},
+			"skill": {
+				"arcana": "+3",
+				"perception": "+6",
+				"stealth": "+5"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 16,
+			"languages": [
+				"巨人语",
+				"地底通用语"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"废陋巨人施展以下一道法术，使用魅力作为施法属性（法术豁免{@dc 16}）："
+					],
+					"will": [
+						"{@spell 侦测魔法}",
+						"{@spell 浮空术}",
+						"{@spell 法师之手}",
+						"{@spell 魔法伎俩}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 侦测思想}",
+							"{@spell 暗示术}",
+							"{@spell 心灵遥控}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Blood Rune",
+					"name": "鲜血符文",
+					"entries": [
+						"废陋巨人拥有一个刻印在一块丑陋画像或其他随身携带物件上的鲜血符文。当巨人携带或着装这个承载符文的物件时，它可以使用其腐化恶咒动作和猛毒叱喝反应。",
+						"承载鲜血符文的物件具有AC 15；30点生命值；免疫暗蚀、毒素和心灵伤害。该物件会在每个回合结束时恢复所有生命值，但若其生命值被降为0或是废陋巨人死亡，它就会化为灰烬。若符文被毁坏，废陋巨人可以在完成一次短休或长休后在其拥有的一个物件上刻印一道鲜血符文。"
+					]
+				},
+				{
+					"ENG_name": "Devil's Sight",
+					"name": "魔鬼视界",
+					"entries": [
+						"魔法黑暗不会阻碍废陋巨人的黑暗视觉。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
+					"entries": [
+						"废陋巨人豁免失败时，可以将其改为豁免成功。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"废陋巨人发动三次巨棒攻击。若废陋巨人带着它的鲜血符文，则其可以将其中一次攻击替换为使用腐化恶咒。"
+					]
+				},
+				{
+					"ENG_name": "Greatclub",
+					"name": "巨棒",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及15尺，单一目标。{@h}19（{@damage 3d8 + 6}）钝击伤害外加7（{@damage 2d6}）暗蚀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Corrupting Hex (Requires Blood Rune)",
+					"name": "腐化恶咒（需要鲜血符文）",
+					"entries": [
+						"废陋巨人指定一个它可见的位于其60尺之内的生物。目标必须成功通过一次{@dc 16}的魅力豁免否则受到27（{@damage 6d8}）暗蚀伤害并被诅咒24小时。以此法被诅咒期间，目标的速度减半，且若目标尝试施展一道法术，则其必须成功通过一次{@dc 16}的智力检定，否则法术失败且被浪费。"
+					]
+				},
+				{
+					"ENG_name": "Eldritch Burst",
+					"name": "魔能爆裂",
+					"entries": [
+						"魔法能量在距离废陋巨人120尺内的它可见的一点处爆炸，覆盖一处以该点为中心半径20尺的球形区域。每个位于区域内的生物都必须进行一次{@dc 16}的敏捷豁免。豁免失败者受到32（{@damage 5d12}）力场伤害并陷入{@condition 倒地}状态。豁免成功者伤害减半。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Creeping Gloom {@recharge}",
+					"name": "悚怖幽暗{@recharge}",
+					"entries": [
+						"废陋巨人短暂咒唤出一阵缠向敌人的黑暗，覆盖以距离废陋巨人120尺内的它可见的一点为中心半径30尺的球形区域。任何位于区域内的生物都必须成功通过一次{@dc 16}的体质豁免否则受到11（{@damage 2d10}）暗蚀伤害并陷入{@condition 目盲}状态直至其下一回合结束。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Poisoning Rebuke (Requires Blood Rune)",
+					"name": "猛毒叱喝（需要鲜血符文）",
+					"entries": [
+						"当废陋巨人被一个位于其60尺内的它可见的生物伤害时，废陋巨人强迫该生物进行一次{@dc 16}的体质豁免，豁免失败者陷入{@condition 中毒}状态，直到其下一回合结束。"
+					]
+				}
+			],
+			"attachedItems": [
+				"巨棒|phb"
+			],
+			"traitTags": [
+				"魔鬼视界",
+				"传奇抗性"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"U"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"O"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"CUR",
+				"MLW",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"目盲",
+				"中毒",
+				"倒地"
+			],
+			"conditionInflictSpell": [
+				"束缚"
+			],
+			"savingThrowForced": [
+				"魅力",
+				"体质",
+				"敏捷"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Frost Giant Ice Shaper",
+			"name": "霜巨人塑冰士",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"牧师"
+				]
+			},
+			"source": "BGG",
+			"page": 145,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 链甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 310,
+				"formula": "27d12 + 135"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 23,
+			"dex": 10,
+			"con": 21,
+			"int": 11,
+			"wis": 19,
+			"cha": 16,
+			"save": {
+				"str": "+12",
+				"con": "+11",
+				"wis": "+10",
+				"cha": "+9"
+			},
+			"skill": {
+				"athletics": "+12",
+				"perception": "+10"
+			},
+			"passive": 20,
+			"immune": [
+				"寒冷"
+			],
+			"languages": [
+				"通用语",
+				"巨人语"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"ENG_name": "Frost Rune",
+					"name": "寒霜符文",
+					"entries": [
+						"巨人拥有一个刻印在一块冰或其他随身携带物件上的寒霜符文。当巨人携带或着装这个承载符文的物件时，它可以使用其冰塑群狼动作和霜冰铠甲反应。",
+						"承载符文的物件具有AC 16；40生命值；免疫暗蚀，毒素和心灵伤害。该物件会在每个回合结束时恢复所有生命值，但若其生命值被降为0或是巨人死亡，它就会化为灰烬。若符文被毁坏，巨人可以完成一次短休或长休后在另一个它拥有的物件上刻印一道寒霜符文。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
+					"entries": [
+						"巨人豁免失败时，可以将其改为豁免成功。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨人用巨斧、急冻射线或它们的组合发动三次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Greataxe",
+					"name": "巨斧",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及10尺，单一目标。{@h}22（{@damage 3d10 + 6}）挥砍伤害外加9（{@damage 2d8}）寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Freezing Ray",
+					"name": "急冻射线",
+					"entries": [
+						"{@atk rs} 命中{@hit 10}，射程120尺，单一目标。{@h}17（{@damage 3d8 + 4}）寒冷伤害，且目标必须进行一次{@dc 18}的体质豁免。豁免失败时，目标获得{@condition 束缚}状态直到其下一回合结束。豁免成功时，目标的速度减少10尺直到其下一回合结束。"
+					]
+				},
+				{
+					"ENG_name": "Ice Wolves (Requires Frost Rune)",
+					"name": "冰塑群狼（需要寒霜符文）",
+					"entries": [
+						"巨人魔法性召唤{@dice 1d4}只由霜冰构成的狼（使用《怪物图鉴》中{@creature 冬狼}的资料卡来代表它们，但它们是元素生物而非怪兽）。狼会出现在巨人30尺内可见的未被占据的空间。狼与巨人共享先攻，会在巨人的回合结束之后立即进行自己的回合，并服从巨人的命令。当狼在巨人30尺内时，它们会在攻击检定和伤害掷骰上获得+6加值。狼会在1分钟后、巨人死亡或是巨人再度使用这个动作项时消失。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Ice Armor (Requires Frost Rune)",
+					"name": "霜冰铠甲（需要寒霜符文）",
+					"entries": [
+						"当一个巨人可见的生物对其进行一次攻击检定时，巨人能塑造一道环绕周身的冰层，令其AC针对该次攻击获得+6加值。无论这次攻击是命中还是失手，冰层都会破碎，任何位于巨人5尺内的生物都必须成功通过一次{@dc 18}的敏捷豁免否则受到13（{@damage 3d8}）寒冷伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"巨斧|phb"
+			],
+			"traitTags": [
+				"传奇抗性"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"C",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Frost Giant of Evil Water",
+			"name": "邪水之霜巨人",
+			"type": "giant",
+			"source": "BGG",
+			"page": 146,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 鳞甲|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 172,
+				"formula": "15d12 + 75"
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 40
+			},
+			"str": 23,
+			"dex": 16,
+			"con": 21,
+			"int": 9,
+			"wis": 14,
+			"cha": 12,
+			"save": {
+				"dex": "+7",
+				"con": "+9",
+				"wis": "+6"
+			},
+			"skill": {
+				"athletics": "+10",
+				"perception": "+6"
+			},
+			"passive": 16,
+			"immune": [
+				"寒冷"
+			],
+			"languages": [
+				"水族语",
+				"通用语",
+				"巨人语"
+			],
+			"cr": "11",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"巨人可以在空气和水中呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨人进行两次战斧攻击和一次鱼叉攻击。"
+					]
+				},
+				{
+					"ENG_name": "Battleaxe",
+					"name": "战斧",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及10尺，单一目标。{@h}19（{@damage 3d8 + 6}）挥砍伤害，或双手使用是22（{@damage 3d10 + 6}）挥砍伤害，外加7（{@damage 2d6}）寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Harpoon",
+					"name": "鱼叉",
+					"entries": [
+						"{@atk rw} 命中{@hit 7}，射程50/200尺，单一生物。{@h}14（{@damage 2d10 + 3}）穿刺伤害，且目标陷入{@condition 受擒}状态（逃脱{@dc 16}）。当目标以此方式被{@condition 受擒}时，其速度不会减少，但无法远离巨人。如果目标逃脱擒抱或尝试逃脱但失败，则受到5（{@damage 1d10}）挥砍伤害。巨人一次只能用一个鱼叉擒抱一个目标。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Reel In",
+					"name": "收线",
+					"entries": [
+						"巨人将被自己鱼叉{@condition 受擒}的目标朝自己拉近20尺。"
+					]
+				}
+			],
+			"attachedItems": [
+				"战斧|phb"
+			],
+			"traitTags": [
+				"水陆两栖"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AQ",
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"C",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"受擒"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Frostmourn",
+			"name": "哀悼之霜",
+			"type": "undead",
+			"source": "BGG",
+			"page": 147,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 195,
+				"formula": "17d12 + 85"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 23,
+			"dex": 9,
+			"con": 21,
+			"int": 9,
+			"wis": 11,
+			"cha": 18,
+			"save": {
+				"con": "+9",
+				"wis": "+4"
+			},
+			"skill": {
+				"athletics": "+10",
+				"perception": "+4"
+			},
+			"passive": 14,
+			"immune": [
+				"寒冷",
+				"毒素"
+			],
+			"vulnerable": [
+				"火焰"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚"
+			],
+			"languages": [
+				"巨人语"
+			],
+			"cr": "10",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"哀悼之霜发动一次急冻之触攻击和一次霜斧攻击。它可以将其中一次攻击改为使用极地射线攻击。"
+					]
+				},
+				{
+					"ENG_name": "Freezing Touch",
+					"name": "急冻之触",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及5尺，单一生物。{@h}18（{@damage 4d8}）寒冷伤害外加18（{@damage 4d8}）暗蚀伤害。若该伤害会将目标的生命值降为0，则目标的生命值改为降为1，并获得{@condition 石化}状态，化为一座封冻的雕像。",
+						"如果雕塑受到钝击伤害，它就会破碎，杀死被冻在其中的生物。如果雕塑将会受到火焰伤害，它改为不受到伤害并融化，结束石化状态。"
+					]
+				},
+				{
+					"ENG_name": "Icy Axe",
+					"name": "霜斧",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及10尺，单一目标。{@h}19（{@damage 3d8 + 6}）挥砍伤害外加7（{@damage 2d6}）寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Polar Ray",
+					"name": "极地射线",
+					"entries": [
+						"{@atk rs} 命中{@hit 8}，射程120尺，单一目标。{@h}31（{@damage 5d10 + 4}）寒冷伤害，且目标的速度减少10尺，直至其下一回合结束。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Blizzard Escape",
+					"name": "暴雪遁走",
+					"entries": [
+						"当一个哀悼之霜可见的生物以一次攻击命中它时，哀悼之霜立即短暂地崩解为一阵暴风雪，令该次攻击造成的伤害减半。哀悼之霜随后可以魔法性地传送至其30尺内可见的一处未被占据的空间。"
+					]
+				}
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"C",
+				"N",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Fury of Kostchtchie",
+			"name": "科斯彻奇之怒",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"恶魔"
+				]
+			},
+			"source": "BGG",
+			"page": 148,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 216,
+				"formula": "16d12 + 112"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 26,
+			"dex": 10,
+			"con": 25,
+			"int": 10,
+			"wis": 12,
+			"cha": 11,
+			"save": {
+				"con": "+12",
+				"wis": "+6"
+			},
+			"skill": {
+				"athletics": "+13",
+				"perception": "+6"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 16,
+			"resist": [
+				"火焰",
+				"闪电",
+				"毒素"
+			],
+			"immune": [
+				"寒冷"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"中毒"
+			],
+			"languages": [
+				"深渊语",
+				"巨人语"
+			],
+			"cr": "14",
+			"trait": [
+				{
+					"ENG_name": "Chilling Aura",
+					"name": "冻寒灵光",
+					"entries": [
+						"一个在科斯彻奇之怒10尺内开始其回合的生物必须成功通过{@dc 20}的体质豁免否则受到11（{@damage 2d10}）寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"科斯彻奇之怒为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"科斯彻奇之怒发动两次拳击或掷石攻击。"
+					]
+				},
+				{
+					"ENG_name": "Fist",
+					"name": "拳击",
+					"entries": [
+						"{@atk mw} 命中{@hit 13}，触及10尺，单一目标。{@h}17（{@damage 2d8 + 8}）钝击伤害外加10（{@damage 3d6}）寒冷伤害；若目标自科斯彻奇之怒的上个回合结束以来受到过其冻寒灵光的伤害，则附加的寒冷伤害改为17（{@damage 5d6}）点。"
+					]
+				},
+				{
+					"ENG_name": "Rock",
+					"name": "掷石",
+					"entries": [
+						"{@atk rw} 命中{@hit 13}，射程60/240尺，单一目标。{@h}30（{@damage 4d10 + 8}）钝击伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Charge",
+					"name": "冲锋",
+					"entries": [
+						"科斯彻奇之怒向一个它可见的敌人移动等同于自己移动速度的距离。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AB",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"C"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Gargantua",
+			"name": "奆人",
+			"type": "aberration",
+			"source": "BGG",
+			"page": 149,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 388,
+				"formula": "21d20 + 168"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 27,
+			"dex": 10,
+			"con": 26,
+			"int": 9,
+			"wis": 16,
+			"cha": 18,
+			"save": {
+				"dex": "+7",
+				"int": "+6",
+				"wis": "+10"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 13,
+			"resist": [
+				"力场",
+				"心灵"
+			],
+			"conditionImmune": [
+				"恐慌"
+			],
+			"languages": [
+				"巨人语"
+			],
+			"cr": "21",
+			"trait": [
+				{
+					"ENG_name": "Weird Aura",
+					"name": "诡影灵光",
+					"entries": [
+						"在每个奆人的回合开始时，所有奆人周围30尺范围内由奆人所选的生物都必须进行一次{@dc 19}的感知豁免。豁免失败时，目标会将奆人视为自己内心最恐惧形象的化身；它将受到17（{@damage 5d6}）点心灵伤害，并陷入{@condition 恐慌}状态，持续直至目标的下一回合开始前。若豁免成功，目标将在接下来的24小时内免疫于这只奆人的诡影灵光能力。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"奆人发动两次猛击或投石攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 15}，触及20尺，单一目标。{@h}27（{@damage 3d12 + 8}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Rock",
+					"name": "掷石",
+					"entries": [
+						"{@atk rw} 命中{@hit 15}，射程120/480尺，单一目标。{@h}24（{@damage 3d10 + 8}）钝击伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Baleful Hex",
+					"name": "恶毒凶咒",
+					"entries": [
+						"奆人诅咒一个其可见的位于其120尺内的生物。目标必须成功通过一次{@dc 19}的感知豁免否则获得{@condition 失能}状态直到其下个回合结束。"
+					]
+				},
+				{
+					"ENG_name": "Teleport",
+					"name": "传送",
+					"entries": [
+						"奆人带着自己携带或穿着的全部装备一起，传送至120尺范围内一处它可见的、未被占据的空间内。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Flick",
+					"name": "弹指",
+					"entries": [
+						"在奆人受到一个其20尺内能看见的大型或更小生物造成的伤害后，它立即尝试将该生物弹指击飞。目标必须成功通过{@dc 23}的力量豁免，否则目标受到18（{@damage 3d6 + 8}）钝击伤害，被水平推离奆人至多100尺，并获得{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Spell Mimicry (1/Day)",
+					"name": "法术模仿（1/日）",
+					"entries": [
+						"当一个奆人可见的生物施展了一个5环或更低环阶法术后，奆人立刻尝试复制那一法术。那个生物必须成功通过一次{@dc 19}的魅力豁免，否则奆人将立刻以相同的法术环阶施展与之相同的法术（法术攻击{@hit 11}，法术豁免{@dc 19}），无需法术材料成分，且由奆人自行选择法术的目标。"
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"Y"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"恐慌",
+				"失能",
+				"倒地"
+			],
+			"savingThrowForced": [
+				"魅力",
+				"力量",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Giant Child",
+			"name": "巨人儿童",
+			"type": "giant",
+			"source": "BGG",
+			"page": 34,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				10
+			],
+			"hp": {
+				"average": 4,
+				"formula": "1d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 10,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"languages": [
+				"巨人语"
+			],
+			"cr": "0",
+			"action": [
+				{
+					"ENG_name": "Club",
+					"name": "短棒",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}4（{@damage 1d4 + 2}）钝击伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"短棒|phb"
+			],
+			"languageTags": [
+				"GI"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Giant Goose",
+			"name": "巨鹅",
+			"type": "fey",
+			"source": "BGG",
+			"page": 150,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 60,
+				"formula": "8d10 + 16"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"str": 14,
+			"dex": 16,
+			"con": 15,
+			"int": 6,
+			"wis": 14,
+			"cha": 11,
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 16,
+			"languages": [
+				"理解巨人语和木族语但不能说"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"鹅发动一次喙啄攻击和两次振翅攻击。"
+					]
+				},
+				{
+					"ENG_name": "Beak",
+					"name": "喙啄",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及10尺，单一目标。{@h}9（{@damage 2d6 + 2}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Wing",
+					"name": "振翅",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}7（{@damage 1d10 + 2}）钝击伤害，且目标必须成功通过{@dc 12}的力量豁免检定否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Thunderous Honk {@recharge 5}",
+					"name": "雷鸣嘎嘎{@recharge 5}",
+					"entries": [
+						"鹅发出震耳欲聋的嘎嘎叫声。每个在鹅30尺内的其他生物都必须进行一次{@dc 12}的体质豁免。豁免失败时，生物受到16（{@damage 3d10}）点雷鸣伤害且陷入{@condition 耳聋}状态直至鹅的下一回合开始。豁免成功时，生物只受到一半伤害。这叫声在300尺内都能被听见。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"CS",
+				"GI",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"T"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"耳聋",
+				"倒地"
+			],
+			"savingThrowForced": [
+				"体质",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Giant Lynx",
+			"name": "巨猞猁",
+			"type": "fey",
+			"source": "BGG",
+			"page": 151,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 22,
+				"formula": "4d8 + 4"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 13,
+			"int": 12,
+			"wis": 14,
+			"cha": 10,
+			"skill": {
+				"perception": "+6",
+				"stealth": "+6"
+			},
+			"senses": [
+				"真实视觉 60 尺"
+			],
+			"passive": 16,
+			"resist": [
+				"寒冷"
+			],
+			"languages": [
+				"巨人语",
+				"木族语"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Lynx's Sight (1/Day)",
+					"name": "猞猁之眼（1/日）",
+					"entries": [
+						"猞猁能够施放{@spell 鹰眼术}，无需任何法术成分，并使用感知作为其施法关键属性。"
+					]
+				},
+				{
+					"ENG_name": "Woodland Camouflage",
+					"name": "林地伪装",
+					"entries": [
+						"猞猁在灌木或雪地中进行的{@skill 隐匿}检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}8（{@damage 1d8 + 4}）挥砍伤害。如果巨猞猁在攻击前向目标直线移动至少20尺然后命中目标，则目标必须进行一次{@dc 12}的力量豁免，豁免失败者将陷入{@condition 倒地}状态。如果目标处于{@condition 倒地}状态，则该巨猞猁可以用一个附赠动作对目标再发动一次爪击攻击。"
+					]
+				}
+			],
+			"traitTags": [
+				"伪装"
+			],
+			"senseTags": [
+				"U"
+			],
+			"languageTags": [
+				"GI",
+				"S"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Giant Ox",
+			"name": "巨牛",
+			"type": "fey",
+			"source": "BGG",
+			"page": 152,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 105,
+				"formula": "10d12 + 40"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 22,
+			"dex": 10,
+			"con": 19,
+			"int": 4,
+			"wis": 11,
+			"cha": 9,
+			"passive": 10,
+			"languages": [
+				"理解巨人语和木族语但不能说"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Beast of Burden",
+					"name": "役畜",
+					"entries": [
+						"在决定公牛的负重能力时，公牛被视为大一级体型的生物。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Gore",
+					"name": "顶撞",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及10尺，单一目标。{@h}13（{@damage 2d6 + 6}）点穿刺伤害。如果牛在这次攻击命中前立即向目标直线移动了至少20尺，则目标会受到额外7（{@damage 2d6}）点穿刺伤害，且它必须成功通过一次{@dc 16}的力量豁免，否则陷入{@condition 倒地}状态。"
+					]
+				}
+			],
+			"traitTags": [
+				"役畜"
+			],
+			"languageTags": [
+				"CS",
+				"GI",
+				"S"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Giant Ram",
+			"name": "巨羊",
+			"type": "fey",
+			"source": "BGG",
+			"page": 153,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 28,
+				"formula": "3d10 + 12"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 19,
+			"dex": 12,
+			"con": 18,
+			"int": 3,
+			"wis": 14,
+			"cha": 10,
+			"passive": 12,
+			"resist": [
+				"寒冷",
+				"火焰",
+				"闪电"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"绵羊为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Ram",
+					"name": "冲撞",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}9（{@damage 2d4 + 4}）点钝击伤害外加3（{@damage 1d6}）点力场伤害。如果羊在这次攻击命中前立即向目标直线移动了至少20尺，则目标必须成功通过一次{@dc 14}的力量豁免，否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Force Bolt",
+					"name": "力场箭",
+					"entries": [
+						"{@atk rs} 命中{@hit 4}，射程30尺，单一目标。{@h}7（{@damage 2d6}）力场伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Absorbent Fleece {@recharge}",
+					"name": "吸能羊绒{@recharge}",
+					"entries": [
+						"当巨羊成功通过了一个法术的豁免或一次法术的攻击对其打失后，它能立即发动一次力场箭攻击。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Giant Tick",
+			"name": "巨蜱虫",
+			"type": "monstrosity",
+			"source": "BGG",
+			"page": 153,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "7d8 + 21"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 16,
+			"int": 2,
+			"wis": 10,
+			"cha": 2,
+			"passive": 10,
+			"cr": "2",
+			"action": [
+				{
+					"ENG_name": "Proboscis",
+					"name": "叮咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一生物。{@h}10（{@damage 2d6 + 3}）点穿刺伤害，且蜱虫附着在目标上。被蜱虫附着时，这只蜱虫不能再发动叮咬攻击。蜱虫能通过消耗5尺移动力将自身分离。以一个动作，在蜱虫触及范围内的一个生物能试图分离蜱虫，这样做需要通过一次{@dc 13}的力量检定。"
+					]
+				},
+				{
+					"ENG_name": "Blood Drain",
+					"name": "吸取血液",
+					"entries": [
+						"蜱虫对其物理性附着的一个生物造成10（{@damage 2d6 + 3}）点暗蚀伤害，前提是该生物不能是构装或亡灵生物；如果该生物是巨人，则改为造成17（{@damage 4d6 + 3}）点暗蚀伤害。蜱虫会恢复等同于其造成伤害的生命值。"
+					]
+				}
+			],
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Gigant",
+			"name": "巨神虫",
+			"type": "monstrosity",
+			"source": "BGG",
+			"page": 154,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 325,
+				"formula": "21d20 + 105"
+			},
+			"speed": {
+				"walk": 50,
+				"burrow": 50,
+				"fly": 80
+			},
+			"str": 24,
+			"dex": 14,
+			"con": 21,
+			"int": 3,
+			"wis": 14,
+			"cha": 11,
+			"save": {
+				"dex": "+8",
+				"wis": "+8"
+			},
+			"skill": {
+				"perception": "+8"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 18,
+			"cr": "20",
+			"trait": [
+				{
+					"ENG_name": "Spell-Resistant Carapace",
+					"name": "抗法甲壳",
+					"entries": [
+						"巨神虫为抵抗法术而作的豁免检定具有优势，并且其他生物对巨神虫进行的法术攻击检定具有劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨神虫发动一次颚咬攻击和两次利爪攻击。"
+					]
+				},
+				{
+					"ENG_name": "Mandibles",
+					"name": "颚咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 13}，触及10尺，单一生物。{@h}21（{@damage 4d6 + 7}）挥砍伤害，并且目标陷入{@condition 受擒}状态（逃脱{@dc 17}）。直到擒抱结束，目标在每个巨神虫的回合开始时会受到21（{@damage 4d6 + 7}）挥砍伤害。当巨神虫擒抱一个目标时，它无法再对另一个目标进行颚咬。"
+					]
+				},
+				{
+					"ENG_name": "Talons",
+					"name": "利爪",
+					"entries": [
+						"{@atk mw} 命中{@hit 13}，触及20尺，单一目标。{@h}17（{@damage 3d6 + 7}）挥砍伤害，且目标被直线拉向巨神虫10尺。"
+					]
+				},
+				{
+					"ENG_name": "Scale Dust {@recharge 5}",
+					"name": "鳞粉 {@recharge 5}",
+					"entries": [
+						"巨神虫从翅膀中放出一阵魔法粉尘，充满一片30尺立方区域。每个区域内的生物都必须进行一次{@dc 19}的体质豁免，失败则受到45（{@damage 10d8}）毒素伤害，成功仅受到一半伤害。无论成功还是失败，该生物都会陷入{@condition 中毒}状态，持续1个小时。在因此{@condition 中毒}的情况下，生物无法恢复生命值。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Drone",
+					"name": "蜂鸣",
+					"entries": [
+						"巨神虫通过快速振动翅膀制造出一阵可怕的嗡嗡声。每个位于巨神虫10尺内的生物都必须成功通过{@dc 19}的体质豁免，否则受到10（{@damage 3d6}）雷鸣伤害并陷入{@condition 失能}状态直到其下个回合结束。巨神虫随后可以飞行最多等于自身飞行速度一半的距离。"
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"I",
+				"S",
+				"T"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"失能"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Goliath Giant-Kin",
+			"name": "巨人亲族歌利亚",
+			"type": "humanoid",
+			"source": "BGG",
+			"page": 155,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 半身板甲|PHB|半身板甲}",
+						"{@item 盾牌|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 67,
+				"formula": "9d8 + 27"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 12,
+			"skill": {
+				"athletics": "+6",
+				"perception": "+3",
+				"survival": "+3"
+			},
+			"passive": 13,
+			"resist": [
+				"寒冷"
+			],
+			"languages": [
+				"通用语",
+				"巨人语"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"歌利亚进行两次矛攻击。"
+					]
+				},
+				{
+					"ENG_name": "Spear",
+					"name": "矛",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 6}，触及5尺或射程20/60尺，单一目标。{@h}7（{@damage 1d6 + 4}）穿刺伤害，或使用双手进行近战攻击时8（{@damage 1d8 + 4}）穿刺伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Giant's Strikes {@recharge 5}",
+					"name": "巨人打击{@recharge 5}",
+					"entries": [
+						"直到其回合结束，歌利亚的每次近战攻击额外造成7（{@damage 2d6}）伤害，伤害类型取决于歌利亚亲近的巨人群体：寒冷（霜巨人）、火焰（火巨人）、力场（石巨人）、闪电（风暴巨人）、穿刺（山丘巨人）或雷鸣（云巨人）。"
+					]
+				}
+			],
+			"attachedItems": [
+				"矛|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Grinning Cat",
+			"name": "笑面猫",
+			"type": "fey",
+			"source": "BGG",
+			"page": 156,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d10 + 7"
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 14,
+			"dex": 15,
+			"con": 13,
+			"int": 15,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+6"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 14,
+			"languages": [
+				"通用语",
+				"木族语"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"笑面猫为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}7（{@damage 1d10 + 2}）穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}9（{@damage 2d6 + 2}）挥砍伤害。如果笑面猫在攻击前处于{@condition 隐形}，则目标必须成功通过{@dc 12}的力量豁免否则获得{@condition 倒地}状态。如果目标处于{@condition 倒地}状态，则该猫可以用一个附赠动作对目标发动一次啃咬攻击。"
+					]
+				},
+				{
+					"ENG_name": "Fade Away",
+					"name": "消失",
+					"entries": [
+						"笑面猫通过魔法变为{@condition 隐形}1个小时，或直到它进行攻击为止，它的身影会在其回合中逐渐消失。它可以选择让身体的一部分可见，比如它的尾巴、脑袋或露齿笑的嘴巴。猫儿穿戴或携带的任何装备都会和它一同{@condition 隐形}。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Fade Back",
+					"name": "显形",
+					"entries": [
+						"笑面猫变得可见或让身体的一部分变得可见。猫儿穿戴或携带的任何装备都会和它一同显形。"
+					]
+				},
+				{
+					"ENG_name": "Grinning Step",
+					"name": "笑着溜走",
+					"entries": [
+						"笑面猫带着自己穿戴或携带的装备一同传送到60尺内它能看见的一处未占据空间中。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"S"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"隐形",
+				"倒地"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Hill Giant Avalancher",
+			"name": "山丘巨人撼岳王",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"德鲁伊"
+				]
+			},
+			"source": "BGG",
+			"page": 157,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 220,
+				"formula": "21d12 + 84"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 21,
+			"dex": 8,
+			"con": 19,
+			"int": 9,
+			"wis": 18,
+			"cha": 10,
+			"save": {
+				"str": "+9",
+				"con": "+8",
+				"wis": "+8"
+			},
+			"skill": {
+				"nature": "+7",
+				"perception": "+8"
+			},
+			"passive": 18,
+			"languages": [
+				"通用语",
+				"巨人语"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"巨人施展以下一道法术，使用感知作为施法属性（法术豁免{@dc 16}）："
+					],
+					"will": [
+						"{@spell 德鲁伊伎俩}",
+						"{@spell 神导术}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 塑石术}",
+							"{@spell 石墙术}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Hill Rune",
+					"name": "山丘符文",
+					"entries": [
+						"巨人拥有一个刻印在一块岩石或其他随身携带物件上的山丘符文。当巨人携带或着装这个承载符文的物件时，它可以使用其岩崩动作和山岳拒斥反应。",
+						"承载符文的物件具有AC 15；20点生命值；免疫暗蚀，毒素和心灵伤害。该物件会在每个回合结束时恢复所有生命值，但若其生命值被降为0或是巨人死亡，它就会化为灰烬。若符文被毁坏，巨人可以完成一次短休或长休后在另一个它拥有的物件上刻印一道山丘符文。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
+					"entries": [
+						"巨人豁免失败时，可以将其改为豁免成功。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨人发动一次巨棒攻击并使用一次岩石套索。"
+					]
+				},
+				{
+					"ENG_name": "Greatclub",
+					"name": "巨棒",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及10尺，单一目标。{@h}18（{@damage 3d8 + 5}）钝击伤害外加9（{@damage 2d8}）雷鸣伤害。"
+					]
+				},
+				{
+					"ENG_name": "Stone Bolas",
+					"name": "岩石套索",
+					"entries": [
+						"巨人唤出三颗由魔力线条链接的岩石球并将其扔向60尺内其可见的一个生物。目标必须进行一次{@dc 16}的敏捷豁免。豁免失败者陷入{@condition 束缚}状态直至巨人的下一回合开始，此时岩石会在一阵雷鸣能量的爆发中炸裂，对目标及位于目标10尺内的所有生物造成14（{@damage 4d6}）雷鸣伤害。豁免成功则岩石球消散且不会炸裂。"
+					]
+				},
+				{
+					"ENG_name": "Stone Avalanche (Requires Hill Rune)",
+					"name": "岩崩（需要山丘符文）",
+					"entries": [
+						"巨人在其120尺内它可见的地面上一点唤出从天而降的碎石，覆盖以该点为中心20尺半径40尺高的柱形区域。任何位于区域内的生物都必须进行一次{@dc 16}的敏捷豁免。豁免失败者受到28（{@damage 8d6}）钝击伤害并陷入{@condition 倒地}状态。豁免成功则只受到一半伤害且不会陷入倒地状态。",
+						"碎石会将区域内的地表变为困难地形直到巨人的下一回合开始，此时碎石消隐。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Hill Rebuff (Requires Hill Rune)",
+					"name": "山岳拒斥（需要山丘符文）",
+					"entries": [
+						"巨人从它10尺内能看见的一个生物处受到伤害后，该生物必须成功通过一次{@dc 16}的体质豁免否则受到10（{@damage 3d6}）力场伤害并被水平推离巨人10尺。"
+					]
+				}
+			],
+			"attachedItems": [
+				"巨棒|phb"
+			],
+			"traitTags": [
+				"传奇抗性"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"O",
+				"T"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"倒地",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Lightning Hulk",
+			"name": "闪电巨怪",
+			"type": "elemental",
+			"source": "BGG",
+			"page": 158,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 102,
+				"formula": "12d10 + 36"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 90,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"str": 18,
+			"dex": 21,
+			"con": 16,
+			"int": 14,
+			"wis": 14,
+			"cha": 15,
+			"save": {
+				"dex": "+9",
+				"con": "+7",
+				"wis": "+6",
+				"cha": "+6"
+			},
+			"skill": {
+				"perception": "+6"
+			},
+			"passive": 16,
+			"resist": [
+				"寒冷",
+				"雷鸣",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"闪电",
+				"毒素"
+			],
+			"conditionImmune": [
+				"力竭",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚"
+			],
+			"languages": [
+				"气族语",
+				"巨人语"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"ENG_name": "Illumination",
+					"name": "照明",
+					"entries": [
+						"闪电巨怪散发出20尺半径的明亮光照，外加20尺的微光光照。"
+					]
+				},
+				{
+					"ENG_name": "Lightning Form",
+					"name": "闪电形态",
+					"entries": [
+						"闪电巨怪可以进入并停留在一个敌对生物所在的位置。当闪电巨怪在一个回合中第一次进入一个生物的位置，或它在一个生物的位置中开始回合时，该生物受到7（{@damage 2d6}）闪电伤害。巨怪同样可以通过一个只有1寸宽的狭缝而无需跻身。触碰或在5尺内以一次近战攻击命中闪电巨怪的生物会受到7（{@damage 2d6}）闪电伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Arc Lightning",
+					"name": "电弧",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 9}，触及10尺或射程60尺，单一目标。{@h}18（{@damage 4d8}）闪电伤害。如果目标为一个生物，直到其下个回合开始前，他无法使用反应，并闪电会从目标身上跳到目标30尺内闪电巨怪能看见的、由其选择的另一个生物身上。第二个生物必须通过{@dc 18}的敏捷豁免否则受到18（{@damage 4d8}）闪电伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"照明"
+			],
+			"languageTags": [
+				"AU",
+				"GI"
+			],
+			"damageTags": [
+				"L"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Maw of Yeenoghu",
+			"name": "耶诺古之口",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"恶魔"
+				]
+			},
+			"source": "BGG",
+			"page": 159,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 161,
+				"formula": "14d12 + 70"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 23,
+			"dex": 10,
+			"con": 21,
+			"int": 8,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"con": "+9",
+				"cha": "+4"
+			},
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 16,
+			"languages": [
+				"深渊语",
+				"巨人语"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"耶诺古之口为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"耶诺古之口发动两次啃咬或投掷獠牙攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及10尺，单一目标。{@h}19（{@damage 2d12 + 6}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Fang Fling",
+					"name": "投掷獠牙",
+					"entries": [
+						"{@atk rw} 命中{@hit 10}，射程30/90尺，单一目标。{@h}11（{@damage 1d10 + 6}）穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Gorging Charge {@recharge 5}",
+					"name": "狼吞虎咽{@recharge 5}",
+					"entries": [
+						"耶诺古之口移动至多其速度的距离而不会引发借机攻击，并且可以穿过大型或更小生物的空间。每当耶诺古之口在此次移动中首次进入一个生物的空间时，该生物必须成功通过一次{@dc 18}的力量豁免检定否则受到25（{@damage 3d12 + 6}）穿刺伤害并获得{@condition 受擒}状态（逃脱{@dc 16}）；如果生物已通过此方式被{@condition 受擒}，则其陷入{@condition 倒地}状态。直到此擒抱结束，目标具有{@condition 束缚}状态。耶诺古之口一次只能通过此方式{@condition 受擒}一个生物。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Fanged Rebuke",
+					"name": "獠牙反击",
+					"entries": [
+						"当耶诺古之口受到伤害时，它能以反应对周围10尺内一个随机生物发动一次啃咬攻击。如果其周围没有任何生物，则它能够发动两次投掷獠牙攻击。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AB",
+				"GI"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"受擒"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Mist Hulk",
+			"name": "云雾巨怪",
+			"type": "elemental",
+			"source": "BGG",
+			"page": 160,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				15
+			],
+			"hp": {
+				"average": 94,
+				"formula": "9d10 + 45"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 40,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"str": 18,
+			"dex": 21,
+			"con": 20,
+			"int": 11,
+			"wis": 13,
+			"cha": 16,
+			"save": {
+				"con": "+8",
+				"wis": "+4",
+				"cha": "+6"
+			},
+			"skill": {
+				"perception": "+4",
+				"stealth": "+8"
+			},
+			"passive": 14,
+			"resist": [
+				"雷鸣"
+			],
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"力竭",
+				"麻痹",
+				"中毒",
+				"束缚"
+			],
+			"languages": [
+				"气族语",
+				"巨人语"
+			],
+			"cr": "6",
+			"trait": [
+				{
+					"ENG_name": "Air Form",
+					"name": "空气形态",
+					"entries": [
+						"云雾巨怪可以进入并停留在一个敌对生物所在的位置。它可以通过一个只有1寸宽的狭缝而无需跻身。"
+					]
+				},
+				{
+					"ENG_name": "Death Burst",
+					"name": "自爆",
+					"entries": [
+						"云雾巨怪死亡时，它会爆发出一阵水浪。其10尺范围内的每个生物必须进行一次{@dc 16}的敏捷豁免。豁免失败时，该生物受到11（{@damage 2d10}）钝击伤害并获得{@condition 倒地}状态。豁免成功时，该生物仅受到一半伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"云雾巨怪发动两次猛击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及10尺，单一目标。{@h}16（{@damage 2d10 + 5}）寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Hideous Wailing {@recharge 5}",
+					"name": "骇人哭号{@recharge 5}",
+					"entries": [
+						"云雾巨怪发出一阵灌注了魔法哀痛的哭嚎。每个位于其30尺内的生物都必须进行一次{@dc 14}的感知豁免。在云雾巨怪空间内的生物在这次豁免中具有劣势。失败的情况下，生物受到14（{@damage 4d6}）心灵伤害并陷入{@condition 失能}状态1分钟。被影响的生物可以在每个回合结束时重复豁免，成功则结束身上的效应。"
+					]
+				}
+			],
+			"traitTags": [
+				"自爆"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AU",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"失能",
+				"倒地"
+			],
+			"savingThrowForced": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Mud Hulk",
+			"name": "烂泥巨怪",
+			"type": "elemental",
+			"source": "BGG",
+			"page": 161,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 68,
+				"formula": "8d10 + 24"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 16,
+			"dex": 8,
+			"con": 16,
+			"int": 5,
+			"wis": 9,
+			"cha": 6,
+			"passive": 9,
+			"resist": [
+				"强酸"
+			],
+			"conditionImmune": [
+				"力竭",
+				"麻痹"
+			],
+			"languages": [
+				"巨人语",
+				"土族语"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Amorphous",
+					"name": "无定形",
+					"entries": [
+						"烂泥巨怪能够通过一个只有1寸宽的狭窄空间而无需挤进去。"
+					]
+				},
+				{
+					"ENG_name": "Sticky Mud",
+					"name": "粘稠烂泥",
+					"entries": [
+						"烂泥巨怪周围15尺内的地面对其他生物而言是困难地形。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Enveloping Slam",
+					"name": "吞没猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及10尺，单一目标。{@h}9（{@damage 1d12 + 3}）钝击伤害。如果目标为一个大型或更小的生物，它必须成功通过{@dc 13}的力量豁免否则被吸入烂泥巨怪的空间并被巨怪所吞没。当被吞没时，目标无法呼吸，陷入{@condition 束缚}状态，并在每个其回合开始时受到6（{@damage 1d12}）强酸伤害。当烂泥巨怪移动时，被吞没的目标会和它一同移动。烂泥巨怪只能同时吞没一个生物。当生物被吞没时，烂泥巨怪无法使用其无定形特性。",
+						"被吞没的目标可以在每个自己的回合结束时重复豁免。豁免成功的情况下，该生物逃脱出来，进入邻近的未被占据的空间。"
+					]
+				},
+				{
+					"ENG_name": "Mud Splash",
+					"name": "泥浆喷涂",
+					"entries": [
+						"烂泥巨怪扔出一大团泥浆，洒向30尺内一处10尺半径的区域。每个区域内的生物必须进行一次{@dc 13}的敏捷豁免，失败则受到10（{@damage 2d6 + 3}）钝击伤害，成功仅受半伤。被影响的区域会在直到烂泥巨怪的下个回合开始前变为困难地形。"
+					]
+				}
+			],
+			"traitTags": [
+				"无定形"
+			],
+			"languageTags": [
+				"GI",
+				"T"
+			],
+			"damageTags": [
+				"A",
+				"B"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"敏捷",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Regisaur",
+			"name": "帝王龙",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"恐龙"
+				]
+			},
+			"group": [
+				"恐龙"
+			],
+			"source": "BGG",
+			"page": 130,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 181,
+				"formula": "11d20 + 66"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 27,
+			"dex": 8,
+			"con": 23,
+			"int": 4,
+			"wis": 12,
+			"cha": 6,
+			"passive": 11,
+			"cr": "14",
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"帝王龙在对法术和其他魔法效果的豁免检定上具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"帝王龙发动一次啃咬和一次尾击攻击。帝王龙不能对同一个目标进行这两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 13}，触及10尺，单一目标。{@h}47（{@damage 6d12 + 8}）穿刺伤害，且目标陷入{@condition 受擒}状态（逃脱{@dc 18}）。直到擒抱结束前，目标处于{@condition 束缚}状态，且帝王龙无法对另一个目标发动啃咬。"
+					]
+				},
+				{
+					"ENG_name": "Tail",
+					"name": "尾击",
+					"entries": [
+						"{@atk mw} 命中{@hit 13}，触及20尺，单一目标。{@h}26（{@damage 4d8 + 8}）钝击伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Swallow",
+					"name": "吞咽",
+					"entries": [
+						"{@atk mw} 命中{@hit 13}，触及5尺，一个被帝王龙{@condition 受擒}的巨型或更小生物。{@h}帝王龙吞咽目标，擒抱结束。被吞咽的生物陷入{@condition 目盲}和{@condition 束缚}状态，对帝王龙外部的攻击和其他效果具有{@quickref 掩护||3||全身掩护}，并在其每个回合开始时受到7（{@damage 2d6}）强酸伤害。帝王龙最多可以同时吞咽两个生物。",
+						"如果帝王龙在同一回合累计受到25点或更多来自一个被吞下的生物的伤害，则其在该回合结束时必须成功通过一次{@dc 16}的体质豁免否则将吐出该生物，该生物摔下倒地于帝王龙周边5尺范围内并具有{@condition 倒地}状态；该生物不再具有{@condition 目盲}和{@condition 束缚}状态。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Rime Hulk",
+			"name": "寒霜巨怪",
+			"type": "elemental",
+			"source": "BGG",
+			"page": 162,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 85,
+				"formula": "9d10 + 36"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 8,
+			"wis": 9,
+			"cha": 6,
+			"passive": 9,
+			"immune": [
+				"寒冷",
+				"毒素"
+			],
+			"conditionImmune": [
+				"力竭",
+				"中毒"
+			],
+			"languages": [
+				"水族语",
+				"巨人语"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Death Burst",
+					"name": "自爆",
+					"entries": [
+						"寒霜巨怪死亡时，它会炸裂开来，让以自身为源点的半径10尺球状区域充满刺骨的空气和冰霜。任何位于其中的生物必须成功通过一次{@dc 15}的体质豁免，否则受到10（{@damage 3d6}）寒冷伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"寒霜巨怪发动两次猛击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及10尺，单一目标。{@h}9（{@damage 1d10 + 4}）钝击伤害外加9（{@damage 2d8}）寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Trail of Frost {@recharge 5}",
+					"name": "冰霜行进{@recharge 5}",
+					"entries": [
+						"寒霜巨怪移动最多为自身速度的距离，且不会触发借机攻击，并能够穿过任何中型及更小的生物占据的空间。每当寒霜巨怪在此次移动中首次进入另一个生物的空间时，该生物必须进行一次{@dc 15}的体质豁免。豁免失败的情况下，该生物受到22（{@damage 4d10}）寒冷伤害，并且直到下个寒霜巨怪的回合开始，速度降低10尺。豁免成功的情况下，该生物只受到一半伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"自爆"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AQ",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"C"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Runic Colossus",
+			"name": "符文巨像",
+			"type": "construct",
+			"source": "BGG",
+			"page": 163,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 315,
+				"formula": "18d20 + 126"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 25,
+			"dex": 9,
+			"con": 24,
+			"int": 3,
+			"wis": 11,
+			"cha": 1,
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 10,
+			"resist": [
+				"强酸",
+				"寒冷",
+				"火焰",
+				"闪电"
+			],
+			"immune": [
+				"毒素",
+				"心灵",
+				{
+					"immune": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒"
+			],
+			"languages": [
+				"能听懂巨人语但不会说"
+			],
+			"cr": "21",
+			"trait": [
+				{
+					"ENG_name": "Immutable Form",
+					"name": "不变形态",
+					"entries": [
+						"巨像免疫任何改变其形态的法术或效应。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"巨像为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"巨像对物件和建筑物造成双倍伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"符文巨像进行两次猛击攻击，然后使用践踏。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及20尺，单一目标。{@h}26（{@damage 3d12 + 7}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Stomp",
+					"name": "践踏",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及20尺，单一目标。{@h}29（{@damage 4d10 + 7}）钝击伤害。如果目标为巨型或更小的生物，其必须成功通过一次{@dc 22}的敏捷豁免否则陷入{@condition 倒地}状态。直到巨像再次使用践踏或移动之前，该生物陷入{@condition 束缚}状态。{@condition 束缚}的生物或其5尺内一个其他生物可以用其动作进行一次{@dc 22}的力量检定。如果检定成功，受困生物将移动至巨像周围5尺内其选择的一处未占据空间，不再被{@condition 束缚}。"
+					]
+				},
+				{
+					"ENG_name": "Arcane Beam {@recharge 5}",
+					"name": "奥术光线{@recharge 5}",
+					"entries": [
+						"巨像从胸口、双手或头部射出一道150尺长、10尺宽的线状魔法性力能。该区域内的每个生物都必须进行一次{@dc 22}的敏捷豁免，豁免失败者受到58（{@damage 9d12}）力场伤害，豁免成功则伤害减半。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Spell Reflection (2/Day)",
+					"name": "法术反射（2/日）",
+					"entries": [
+						"{@atk rs} 命中{@hit 14}，射程120尺，一个正在施展5环或更低法术的生物。{@h}26（{@damage 4d12}）力场伤害，且目标必须成功通过{@dc 15}的智力豁免否则法术失败且无效。"
+					]
+				}
+			],
+			"traitTags": [
+				"不变形态",
+				"魔法抗性",
+				"攻城怪物"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"CS",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"敏捷",
+				"智力"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Scion of Grolantor",
+			"name": "格洛兰托的神嗣",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"泰坦"
+				]
+			},
+			"source": "BGG",
+			"page": 165,
+			"referenceSources": [
+				"HFStCM"
+			],
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 402,
+				"formula": "23d20 + 161"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 27,
+			"dex": 14,
+			"con": 25,
+			"int": 15,
+			"wis": 21,
+			"cha": 18,
+			"save": {
+				"wis": "+12",
+				"cha": "+11"
+			},
+			"skill": {
+				"perception": "+12"
+			},
+			"passive": 22,
+			"resist": [
+				"寒冷",
+				"火焰",
+				"闪电",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"力竭",
+				"麻痹",
+				"中毒"
+			],
+			"languages": [
+				"巨人语",
+				"原初语"
+			],
+			"cr": "22",
+			"trait": [
+				{
+					"ENG_name": "Legendary Resistance (6/Day)",
+					"name": "传奇抗性（6/日）",
+					"entries": [
+						"神嗣豁免失败时，可以将其改为豁免成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"神嗣为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"神嗣对物件和建筑物伤害翻倍。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"神嗣进行一次巨树棒攻击和两次猛击攻击，或进行三次巨石攻击。"
+					]
+				},
+				{
+					"ENG_name": "Great Tree Club",
+					"name": "巨树棒",
+					"entries": [
+						"{@atk mw} 命中{@hit 15}，触及30尺，单一目标。{@h}30（{@damage 4d10 + 8}）钝击伤害。若目标为一个生物，则其必须成功通过一次{@dc 23}的力量豁免否则被水平推开至多100尺远离神嗣并陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 15}，触及20尺，单一目标。{@h}26（{@damage 4d8 + 8}）力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Boulder",
+					"name": "巨石",
+					"entries": [
+						"{@atk rw} 命中{@hit 15}，射程120/480尺，单一目标。{@h}27（{@damage 3d12 + 8}）钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Inhale {@recharge 5}",
+					"name": "吸气 {@recharge 5}",
+					"entries": [
+						"神嗣通过吸气产生一股空气涡旋，覆盖120尺长，15尺宽的线性区域。每个位于该区域内为巨型或更小的生物必须通过一次{@dc 23}的力量豁免，否则被拉近120尺，直达神嗣并被其吞咽。被吞咽的生物陷入{@condition 束缚}状态，其对于神嗣身体外的攻击或效应视为{@quickref 掩护||3||全身掩护}，并在每次该神嗣的回合开始时受24（{@damage 7d6}）点力场伤害。",
+						"神嗣的胃一次最多能容纳两个生物。如果神嗣在同一回合内总计受到60或以上来自其体内的伤害，则神嗣必须在该回合结束时成功通过一次{@dc 17}的体质豁免否则将吐出所有被其吞咽的生物，每个生物都落在神嗣周边10尺内的空间，且处于{@condition 倒地}状态。如果神嗣死亡，则被吞下的生物将不再受{@condition 束缚}状态，且可以消耗15尺移动力逃出，然后在尸体旁现身并陷入{@condition 倒地}状态。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Earth-Shaking Movement",
+					"name": "撼地神行",
+					"entries": [
+						"神嗣移动至多等同于其速度的距离，随后向以自身为中心、半径60尺的圆形区域内地面发出一道冲击波。该区域内地面上的每个{@status 专注||专注于}生物必须成功通过一次{@dc 23}的体质豁免否则失去{@status 专注}。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Feed",
+					"name": "喂享",
+					"entries": [
+						"在受到伤害后，如果神嗣至少吞咽了一个生物，其可以立即对每个被吞噬生物造成10（{@damage 3d6}）力场伤害，并回复10生命值。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Scion of Grolantor",
+				"name": "格洛兰托的神嗣",
+				"source": "BGG"
+			},
+			"traitTags": [
+				"传奇抗性",
+				"魔法抗性",
+				"攻城怪物"
+			],
+			"actionTags": [
+				"多重攻击",
+				"吞咽"
+			],
+			"languageTags": [
+				"GI",
+				"P"
+			],
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"savingThrowForced": [
+				"体质",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Scion of Memnor",
+			"name": "曼诺的神嗣",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"泰坦"
+				]
+			},
+			"source": "BGG",
+			"page": 167,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 656,
+				"formula": "32d20 + 320"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 80,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"str": 30,
+			"dex": 18,
+			"con": 30,
+			"int": 24,
+			"wis": 22,
+			"cha": 26,
+			"save": {
+				"dex": "+12",
+				"cha": "+16"
+			},
+			"skill": {
+				"arcana": "+15",
+				"perception": "+14"
+			},
+			"senses": [
+				"真实视觉 120 尺"
+			],
+			"passive": 24,
+			"resist": [
+				"寒冷",
+				"火焰",
+				"闪电",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"雷鸣"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"麻痹",
+				"石化"
+			],
+			"languages": [
+				"巨人语",
+				"原初语"
+			],
+			"cr": "26",
+			"trait": [
+				{
+					"ENG_name": "Flyby",
+					"name": "飞掠",
+					"entries": [
+						"神嗣飞出敌人的触及范围时不会引起借机攻击。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (6/Day)",
+					"name": "传奇抗性（6/日）",
+					"entries": [
+						"神嗣豁免失败时，可以将其改为豁免成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"神嗣为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"神嗣对物件和建筑物伤害翻倍。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"神嗣进行一次晨星云锤或疾风标枪攻击，以及两次猛击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Cloud Morningstar",
+					"name": "晨星云锤",
+					"entries": [
+						"{@atk mw} 命中{@hit 18}，触及30尺，单一目标。{@h}32（{@damage 4d10 + 10}）力场伤害加22（{@damage 4d10}）雷鸣伤害。"
+					]
+				},
+				{
+					"ENG_name": "Wind Javelin",
+					"name": "疾风标枪",
+					"entries": [
+						"{@atk rw} 命中{@hit 18}，射程120/480尺，单一目标。{@h}42（{@damage 5d12 + 10}）雷鸣伤害，且目标必须成功通过{@dc 26}的力量豁免否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 18}，触及20尺，单一目标。{@h}28（{@damage 4d8 + 10}）力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Thunderous Vortex {@recharge 5}",
+					"name": "雷鸣涡旋{@recharge 5}",
+					"entries": [
+						"神嗣魔法性地在其视线内120尺处一点创造出一个半径60尺球状区域的风之涡旋。球状区域内的每个生物必须成功通过一次{@dc 24}的力量豁免，否则被径直拉向球体中心，在最靠近中心的未占据空间结束移动。然后一阵响雷在同一位置为中心半径30尺的球状区域内爆发。该区域内的每个生物受到52（{@damage 8d12}）雷鸣伤害，并且必须成功通过一次{@dc 24}的体质豁免，否则陷入{@condition 震慑}状态直到其下一个回合的结束。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Fog of Deception",
+					"name": "欺瞒迷雾",
+					"entries": [
+						"神嗣咒唤出一片魔法云雾，充满以其90尺内可视一点为原点的30尺半径球状区域。该区域内的每个生物必须进行一次{@dc 24}的感知豁免。豁免失败者，生物将陷入{@condition 魅惑}状态直到其下一个回合的结束。当处于{@condition 魅惑}状态时，该生物必须用其动作对神嗣所选除自身以外的一个生物进行近战攻击。如果没有生物在触及范围内，受影响的生物需要对神嗣所选生物进行远程攻击，必要时投掷武器。豁免成功者，生物在接下来的24小时内对神嗣的欺瞒迷雾（{@skill 欺瞒}）免疫。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Scion of Memnor",
+				"name": "曼诺的神嗣",
+				"source": "BGG"
+			},
+			"traitTags": [
+				"飞掠",
+				"传奇抗性",
+				"魔法抗性",
+				"攻城怪物"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"P"
+			],
+			"damageTags": [
+				"O",
+				"T"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RCH",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"倒地",
+				"震慑"
+			],
+			"savingThrowForced": [
+				"力量",
+				"感知"
+			],
+			"savingThrowForcedLegendary": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Scion of Skoraeus",
+			"name": "司寇雷乌斯的神嗣",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"泰坦"
+				]
+			},
+			"source": "BGG",
+			"page": 169,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 444,
+				"formula": "24d20 + 192"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 29,
+			"dex": 20,
+			"con": 26,
+			"int": 19,
+			"wis": 24,
+			"cha": 14,
+			"save": {
+				"dex": "+12",
+				"wis": "+14"
+			},
+			"skill": {
+				"acrobatics": "+12",
+				"perception": "+14"
+			},
+			"senses": [
+				"真实视觉 120 尺"
+			],
+			"passive": 24,
+			"resist": [
+				"寒冷",
+				"火焰",
+				"闪电",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"强酸"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"麻痹",
+				"石化"
+			],
+			"languages": [
+				"巨人语",
+				"原初语"
+			],
+			"cr": "23",
+			"trait": [
+				{
+					"ENG_name": "Legendary Resistance (6/Day)",
+					"name": "传奇抗性（6/日）",
+					"entries": [
+						"神嗣豁免失败时，可以将其改为豁免成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"神嗣为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"神嗣对物件和建筑物伤害翻倍。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"神嗣进行一次水晶手杖攻击和两次猛击攻击，然后如果可用，就使用葬身之握。又或者，神嗣进行两次符文巨石攻击。"
+					]
+				},
+				{
+					"ENG_name": "Crystal Club",
+					"name": "水晶手杖",
+					"entries": [
+						"{@atk mw} 命中{@hit 16}，触及30尺，单一目标。{@h}35（{@damage 4d12 + 9}）钝击伤害。{@hom}神嗣可以使手杖闪耀出强烈的光芒，目标必须成功通过一次{@dc 22}的体质豁免，否则受到18（{@damage 4d8}）光耀伤害并陷入{@condition 目盲}状态，直到神嗣的下个回合开始。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 16}，触及20尺，单一目标。{@h}31（{@damage 4d10 + 9}）力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Runic Boulder",
+					"name": "符文巨石",
+					"entries": [
+						"{@atk rw} 命中{@hit 16}，射程120/480尺，单一目标。{@h}27（{@damage 4d8 + 9}）钝击伤害。{@hom}巨石爆炸。目标和其周围30尺内的所有生物必须进行一次{@dc 22}的敏捷豁免。豁免失败者受到19（{@damage 3d12}）力场伤害，并陷入{@condition 倒地}状态。豁免成功者，则只受到一半伤害。"
+					]
+				},
+				{
+					"ENG_name": "Entombing Grasp {@recharge}",
+					"name": "葬身之握{@recharge}",
+					"entries": [
+						"神嗣将石化魔法环绕于手上，然后触碰一个其周围20尺内可视的一个体型为巨型或以下的生物。目标必须成功通过一次{@dc 24}的敏捷豁免，否则受到28（{@damage 8d6}）力场伤害，并且陷入{@condition 受擒}状态（逃脱{@dc 19}）。在神嗣的下一个回合开始时，如果目标仍被{@condition 受擒}，则其陷入{@condition 石化}状态。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Earth-Shaking Movement",
+					"name": "撼地神行",
+					"entries": [
+						"神嗣移动至多等同于其速度的距离，随后向以自身为圆心、半径60尺的圆形区域内释放一道冲击波。该区域内地面上的每个{@status 专注||专注于}生物必须成功通过一次{@dc 24}的体质豁免否则失去{@status 专注}。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Scion of Skoraeus",
+				"name": "司寇雷乌斯的神嗣",
+				"source": "BGG"
+			},
+			"traitTags": [
+				"传奇抗性",
+				"魔法抗性",
+				"攻城怪物"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"P"
+			],
+			"damageTags": [
+				"B",
+				"O",
+				"R"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"目盲",
+				"受擒",
+				"倒地"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Scion of Stronmaus",
+			"name": "斯绰茂兹的神嗣",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"泰坦"
+				]
+			},
+			"source": "BGG",
+			"page": 171,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"C",
+				"G"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 656,
+				"formula": "32d20 + 320"
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 80,
+					"condition": "(悬浮)"
+				},
+				"swim": 80,
+				"canHover": true
+			},
+			"str": 30,
+			"dex": 20,
+			"con": 30,
+			"int": 26,
+			"wis": 28,
+			"cha": 24,
+			"save": {
+				"dex": "+13",
+				"int": "+16"
+			},
+			"skill": {
+				"arcana": "+16",
+				"history": "+16",
+				"perception": "+17"
+			},
+			"senses": [
+				"真实视觉 120 尺"
+			],
+			"passive": 27,
+			"resist": [
+				"寒冷",
+				"火焰",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"闪电",
+				"雷鸣"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"倒地"
+			],
+			"languages": [
+				"巨人语",
+				"原初语"
+			],
+			"cr": "27",
+			"trait": [
+				{
+					"ENG_name": "Flyby",
+					"name": "飞掠",
+					"entries": [
+						"神嗣飞出敌人的触及范围时不会引起借机攻击。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (6/Day)",
+					"name": "传奇抗性（6/日）",
+					"entries": [
+						"神嗣豁免失败时，可以将其改为豁免成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"神嗣为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"神嗣对物件和建筑物伤害翻倍。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"神嗣使用闪电剑刃或雹石进行一次攻击，以及两次猛击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Lightning Sword",
+					"name": "闪电剑刃",
+					"entries": [
+						"{@atk mw} 命中{@hit 18}，触及30尺，单一目标。{@h}36（{@damage 4d12 + 10}）力场伤害外加22（{@damage 4d10}）闪电伤害。"
+					]
+				},
+				{
+					"ENG_name": "Hailstone",
+					"name": "雹石",
+					"entries": [
+						"{@atk rw} 命中{@hit 18}，射程120/480尺，单一目标。{@h}32（{@damage 4d10 + 10}）钝击伤害外加18（{@damage 4d8}）寒冷伤害，且目标必须成功通过一次{@dc 26}的力量豁免，否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 18}，触及20尺，单一目标。{@h}36（{@damage 4d12 + 10}）力场伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Vengeful Storm {@recharge}",
+					"name": "风暴复仇{@recharge}",
+					"entries": [
+						"神嗣在自身120尺范围内的一点召唤一团半径30尺、高10尺的翻腾风暴云。云雾区域是{@quickref 视野与光照||2||重度遮蔽}。风暴云持续1分钟，直到神嗣死亡，或神嗣再次使用此附赠动作。",
+						"当风暴云显现时，或者未来回合内使用一个附赠动作，神嗣可以让风暴云移动至多30尺，并在风暴云下方一处半径30尺，120尺高的柱状区域造成以下效应之一，神嗣不能在两个回合内连续选择同一个效应："
+					]
+				},
+				{
+					"ENG_name": "Acid Rain",
+					"name": "强酸雨",
+					"entries": [
+						"风暴云降下强酸。柱状区域内的每个生物必须成功通过一次{@dc 25}的体质豁免，否则被强酸覆盖1分钟，直到一个生物以一个动作将强酸从自己或其他生物身上抹去。被酸雨覆盖的生物会在每个自己的回合开始时受到26（{@damage 4d12}）强酸伤害。"
+					]
+				},
+				{
+					"ENG_name": "Freezing Storm",
+					"name": "寒风暴",
+					"entries": [
+						"冰片倾斜而下，同时寒风充盈了这片区域。柱状区域内的每个生物必须成功通过一次{@dc 25}的敏捷豁免，否则受到28（{@damage 8d6}）寒冷伤害，并被塑形的寒冰妨碍1分钟或直到它或另一个于其触及内的生物以一个动作打破周围的寒冰。被寒冰妨碍的生物速度会下降至0。"
+					]
+				},
+				{
+					"ENG_name": "Lightning Bolts",
+					"name": "闪电簇",
+					"entries": [
+						"多束闪电直击而下。柱状区域内的每个生物必须成功通过一次{@dc 25}的敏捷豁免，否则受到18（{@damage 4d8}）闪电伤害，并陷入{@condition 震慑}状态，直到其下个回合的结束。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Scion of Stronmaus",
+				"name": "斯绰茂兹的神嗣",
+				"source": "BGG"
+			},
+			"traitTags": [
+				"飞掠",
+				"传奇抗性",
+				"魔法抗性",
+				"攻城怪物"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"P"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"C",
+				"L",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"倒地",
+				"震慑"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Scion of Surtur",
+			"name": "苏尔特的神嗣",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"泰坦"
+				]
+			},
+			"source": "BGG",
+			"page": 173,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 546,
+				"formula": "28d20 + 252"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 30,
+			"dex": 17,
+			"con": 28,
+			"int": 21,
+			"wis": 24,
+			"cha": 20,
+			"save": {
+				"dex": "+11",
+				"cha": "+13"
+			},
+			"skill": {
+				"athletics": "+18",
+				"perception": "+15"
+			},
+			"senses": [
+				"真实视觉 120 尺"
+			],
+			"passive": 25,
+			"resist": [
+				"寒冷",
+				"闪电",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"火焰"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化"
+			],
+			"languages": [
+				"巨人语",
+				"原初语"
+			],
+			"cr": "25",
+			"trait": [
+				{
+					"ENG_name": "Legendary Resistance (6/Day)",
+					"name": "传奇抗性（6/日）",
+					"entries": [
+						"神嗣豁免失败时，可以将其改为豁免成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"神嗣为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"神嗣对物件和建筑物伤害翻倍。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"神嗣进行一次熔岩刀锋或熔岩球攻击，以及两次猛击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Lava Blade",
+					"name": "熔岩刀锋",
+					"entries": [
+						"{@atk mw} 命中{@hit 18}，触及30尺，单一目标。{@h}32（{@damage 4d10 + 10}）挥砍伤害外加18（{@damage 4d8}）火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "Lava Ball",
+					"name": "熔岩球",
+					"entries": [
+						"{@atk rw} 命中{@hit 18}，射程120/480尺，单一目标。{@h}29（{@damage 3d12 + 10}）钝击伤害外加10（{@damage 3d6}）火焰伤害，然后目标必须成功通过一次{@dc 26}的力量豁免，否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 18}，触及20尺，单一目标。{@h}28（{@damage 4d8 + 10}）力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Lava Wave {@recharge 5}",
+					"name": "岩浆浪潮{@recharge 5}",
+					"entries": [
+						"神嗣从其刀锋、双手或嘴部喷发出一股岩浆浪潮，覆盖90尺锥形区域。区域内的每个生物必须进行一次{@dc 25}的敏捷豁免。豁免失败者受到60（{@damage 11d10}）火焰伤害，并因为嵌入迅速硬化的岩石而陷入{@condition 束缚}状态。一个生物可以用自己的动作进行一次{@dc 25}的力量（{@skill 运动}）检定来使自己或一个其他触及内的生物脱困。岩石有着AC17和40生命值，且其免疫火焰、毒素以及心灵伤害。豁免成功者只受到一半伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Earth-Shaking Movement",
+					"name": "撼地神行",
+					"entries": [
+						"神嗣移动至多等同于其速度的距离，随后向以自身为中心、半径60尺的圆形区域的地面发出一道冲击波。该区域内地面上的每个{@status 专注||专注于}生物必须成功通过一次{@dc 26}的体质豁免否则失去{@status 专注}。"
+					]
+				},
+				{
+					"ENG_name": "Incendiary Smoke",
+					"name": "起燃烽烟",
+					"entries": [
+						"神嗣从自己的皮肤处喷发出烟雾与白热的灰烬，填满自身周围半径30尺的空间，并随之移动。在神嗣的皮肤喷发出烟雾的情况下，任何以神嗣为目标的远程攻击均具有劣势。当生物在其回合内第一次进入烟雾，或在其中开始回合的时候，必须成功通过一次{@dc 25}的体质豁免，否则受到14（{@damage 4d6}）火焰伤害。神嗣的皮肤会在1分钟后，神嗣死亡时，或使用附赠动作来停止的时候停止喷发烟雾。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Scion of Surtur",
+				"name": "苏尔特的神嗣",
+				"source": "BGG"
+			},
+			"traitTags": [
+				"传奇抗性",
+				"魔法抗性",
+				"攻城怪物"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"P"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"O",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"倒地",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Scion of Thrym",
+			"name": "索列姆的神嗣",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"泰坦"
+				]
+			},
+			"source": "BGG",
+			"page": 175,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 499,
+				"formula": "27d20 + 216"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 30,
+			"dex": 16,
+			"con": 27,
+			"int": 17,
+			"wis": 20,
+			"cha": 21,
+			"save": {
+				"wis": "+12",
+				"cha": "+12"
+			},
+			"skill": {
+				"athletics": "+17",
+				"perception": "+12"
+			},
+			"senses": [
+				"真实视觉 120 尺"
+			],
+			"passive": 22,
+			"resist": [
+				"火焰",
+				"闪电",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"寒冷"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化"
+			],
+			"languages": [
+				"巨人语",
+				"原初语"
+			],
+			"cr": "24",
+			"trait": [
+				{
+					"ENG_name": "Legendary Resistance (6/Day)",
+					"name": "传奇抗性（6/日）",
+					"entries": [
+						"神嗣豁免失败时，可以将其改为豁免成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"神嗣为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"神嗣对物件和建筑物伤害翻倍。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"神嗣进行一次寒冰巨斧攻击与两次猛击攻击，或进行两次飞掷冰川攻击。"
+					]
+				},
+				{
+					"ENG_name": "Ice Axe",
+					"name": "寒冰巨斧",
+					"entries": [
+						"{@atk mw} 命中{@hit 17}，触及30尺，单一目标。{@h}36（{@damage 4d12 + 10}）力场伤害外加18（{@damage 4d8}）寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 17}，触及20尺，单一目标。{@h}32（{@damage 4d10 + 10}）力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Glacier Throw",
+					"name": "飞掷冰川",
+					"entries": [
+						"{@atk rw} 命中{@hit 17}，射程120/480尺，单一目标。{@h}36（{@damage 4d12 + 10}）钝击伤害外加14（{@damage 4d6}）寒冷伤害，且目标必须成功通过一次{@dc 25}的力量豁免，否则陷入{@condition 倒地}状态。"
+					]
+				},
+				{
+					"ENG_name": "Glacial Upheaval {@recharge 5}",
+					"name": "隆起冰川 {@recharge 5}",
+					"entries": [
+						"神嗣将手伸向一处距离自己30尺以内的地方，然后在空气中咒唤出一大块魔法性的寒冰。以该点为原点，半径30尺，高100尺的柱状区域中，除了神嗣以外，每个生物都必须进行一次{@dc 25}的敏捷豁免。豁免失败则受到36（{@damage 8d8}）钝击伤害外加19（{@damage 3d12}）寒冷伤害，并被推到柱状区域的顶部，然后坠落。豁免成功则只承受一半伤害，并被推离到柱状区域外最近一处未被占据的空间，不受到其他效果影响。",
+						"在神嗣的下一个回合开始时，神嗣可以选择自己可见的一点的冰块坍塌，该点距离之前伸手触碰的点不能超过60尺。以新点为中心，半径30尺，高100尺的柱状区域中的每个生物必须成功通过一次{@dc 25}的敏捷豁免，否则受到18（{@damage 4d8}）的钝击伤害与18（{@damage 4d8}）的寒冷伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Earth-Shaking Movement",
+					"name": "撼地神行",
+					"entries": [
+						"神嗣移动至多等同于其速度的距离，并向以自身为中心、半径60尺的圆形区域地面发出一道冲击波。该区域内地面上的每个{@status 专注||专注于}生物必须成功通过{@dc 25}的体质豁免否则失去{@status 专注}。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Scion of Thrym",
+				"name": "索列姆的神嗣",
+				"source": "BGG"
+			},
+			"traitTags": [
+				"传奇抗性",
+				"魔法抗性",
+				"攻城怪物"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"P"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Spectral Cloud",
+			"name": "云雾魂体",
+			"type": "undead",
+			"source": "BGG",
+			"page": 176,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 189,
+				"formula": "18d12 + 72"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 40,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"str": 24,
+			"dex": 12,
+			"con": 18,
+			"int": 12,
+			"wis": 17,
+			"cha": 16,
+			"save": {
+				"dex": "+6",
+				"cha": "+8"
+			},
+			"skill": {
+				"perception": "+8"
+			},
+			"passive": 18,
+			"resist": [
+				"寒冷",
+				"暗蚀",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"毒素",
+				"雷鸣"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚"
+			],
+			"languages": [
+				"通用语",
+				"巨人语"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"ENG_name": "Blurred Form",
+					"name": "朦胧形态",
+					"entries": [
+						"对云雾魂体发动的攻击检定具有劣势，除非攻击者位于云雾魂体15尺内或云雾魂体陷入{@condition 失能}。"
+					]
+				},
+				{
+					"ENG_name": "Incorporeal Movement",
+					"name": "虚体移动",
+					"entries": [
+						"云雾魂体可以如同穿过困难地形一样穿过其他生物和物件。如果它在自己的回合结束时仍处在物件内部则受到5（{@damage 1d10}）的力场伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"云雾魂体发动两次灵体之触攻击。"
+					]
+				},
+				{
+					"ENG_name": "Spectral Touch",
+					"name": "灵体之触",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及10尺，单一目标。{@h}20（{@damage 3d8 + 7}）力场伤害外加10（{@damage 3d6}）暗蚀伤害。若目标为一个生物，则其必须成功通过一次{@dc 20}的体质豁免检定，否则其生命值上限将承受等于受到的暗蚀伤害数值的减损。减损效应持续至该目标完成一次长休。如果该效应将目标的生命值上限降至0，则目标死亡。",
+						"被该攻击杀死的类人生物将立即化为一只小型云雾魂体（使用怪物图鉴中{@creature 恶灵}的资料卡）复生。小型云雾魂体将作为其创造者的盟友行动，但不受其控制。"
+					]
+				},
+				{
+					"ENG_name": "Chilling Winds {@recharge 5}",
+					"name": "冻寒之风{@recharge 5}",
+					"entries": [
+						"云雾魂体释放一道猛烈的寒风覆盖一处60尺长，10尺宽的线形区域。任何位于区域内的生物都必须进行一次{@dc 20}的体质豁免。豁免失败者受到38（{@damage 7d10}）寒冷伤害并陷入{@condition 失能}状态一分钟。受影响的生物可以在自己的回合结束时重复该豁免，豁免成功则结束该效应。豁免成功者只受到一半伤害。",
+						"若一个生物为本效应进行的豁免成功或是其身上的本效应结束，则该生物在接下来的24小时内免疫该云雾魂体的冻寒之风。"
+					]
+				}
+			],
+			"traitTags": [
+				"虚体移动"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"C",
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"HPR",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"失能"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Spotted Lion",
+			"name": "斑巨狮",
+			"type": "beast",
+			"source": "BGG",
+			"page": 177,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 66,
+				"formula": "7d12 + 21"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 23,
+			"dex": 14,
+			"con": 17,
+			"int": 5,
+			"wis": 13,
+			"cha": 10,
+			"skill": {
+				"perception": "+5",
+				"stealth": "+6"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 15,
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Pack Tactics",
+					"name": "集群战术",
+					"entries": [
+						"斑巨狮在至少有一个未处于{@condition 失能}的盟友在目标生物5尺内时，它对该生物发动的攻击检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Rend",
+					"name": "撕咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及10尺，单一目标。{@h}15（{@damage 2d8 + 6}）穿刺伤害。如果斑巨狮在攻击命中前向目标直线移动至少20尺，则目标必须成功通过{@dc 16}的力量豁免否则陷入{@condition 倒地}状态。如果目标处于{@condition 倒地}状态，斑巨狮可以用一个附赠动作对其再发动一次撕咬攻击。"
+					]
+				}
+			],
+			"traitTags": [
+				"集群战术"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Stalker of Baphomet",
+			"name": "巴弗灭之猎手",
+			"type": {
+				"type": "fiend",
+				"tags": [
+					"恶魔"
+				]
+			},
+			"source": "BGG",
+			"page": 178,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 200,
+				"formula": "16d12 + 96"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 25,
+			"dex": 17,
+			"con": 22,
+			"int": 13,
+			"wis": 16,
+			"cha": 12,
+			"save": {
+				"dex": "+7",
+				"wis": "+7"
+			},
+			"skill": {
+				"athletics": "+15",
+				"perception": "+7",
+				"stealth": "+11"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 17,
+			"conditionImmune": [
+				"魅惑",
+				"恐慌"
+			],
+			"languages": [
+				"深渊语",
+				"巨人语"
+			],
+			"cr": "12",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"该猎手施展以下一道法术，不需要任何法术成分并使用感知作为施法属性（法术豁免{@dc 15}）："
+					],
+					"daily": {
+						"1e": [
+							"{@spell 融身入石}",
+							"{@spell 塑石术}",
+							"{@spell 石墙术}"
+						]
+					},
+					"ability": "wis",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Labyrinthine Recall",
+					"name": "迷宫追忆",
+					"entries": [
+						"该猎手可以完整地回忆起它曾经走过的任何路途。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"该猎手为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巴弗灭之猎手发动两次长柄刀攻击或两次掷石攻击。"
+					]
+				},
+				{
+					"ENG_name": "Glaive",
+					"name": "长柄刀",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及15尺，单一目标。{@h}18（{@damage 2d10 + 7}）挥砍伤害外加9（{@damage 2d8}）力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Rock",
+					"name": "掷石",
+					"entries": [
+						"{@atk rw} 命中{@hit 11}，射程60/240尺，单一目标。{@h}23（{@damage 3d10 + 7}）点钝击伤害。若目标为一个大型或更小的生物，则其必须成功通过一次{@dc 19}的力量豁免否则陷入{@condition 倒地}状态。在猎手掷石之后，扔一颗{@dice d6}；若骰值在3或更低，则代表猎手不再有更多可供投掷的岩石。"
+					]
+				},
+				{
+					"ENG_name": "Erupting Horns {@recharge 5}",
+					"name": "喷发岩角{@recharge 5}",
+					"entries": [
+						"猎手令其可见的60尺内地面一点泥土翻涌。六根角状岩石在以此点为中心30尺半径、30尺高的圆柱区域内喷发，随后化为尘土。",
+						"该区域内的每个生物都必须进行一次{@dc 15}的敏捷豁免。豁免失败时，一个生物受到33（{@damage 6d10}）穿刺伤害并被向上推至30尺高然后坠落。豁免成功时，一个生物只受到一半伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"长柄刀|phb"
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AB",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"O",
+				"P",
+				"S"
+			],
+			"damageTagsSpell": [
+				"B"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflictSpell": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"敏捷",
+				"力量"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Stone Giant of Evil Earth",
+			"name": "邪土之石巨人",
+			"type": "giant",
+			"source": "BGG",
+			"page": 179,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item 板甲|PHB|板甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 137,
+				"formula": "11d12 + 66"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 23,
+			"dex": 13,
+			"con": 22,
+			"int": 10,
+			"wis": 12,
+			"cha": 9,
+			"save": {
+				"str": "+10",
+				"con": "+10"
+			},
+			"skill": {
+				"athletics": "+14",
+				"perception": "+5"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 15,
+			"languages": [
+				"通用语",
+				"巨人语",
+				"土族语"
+			],
+			"cr": "9",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨人进行两次雷鸣石棒或巨石攻击，攻击方式任意组合。"
+					]
+				},
+				{
+					"ENG_name": "Thundering Stone Club",
+					"name": "雷鸣石棒",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及15尺，单一目标。{@h}16（{@damage 3d6 + 6}）钝击伤害。巨人可以令石棒爆发出雷鸣能量，对目标30尺内除巨人外的每个生物造成10（{@damage 3d6}）雷鸣伤害。石棒每回合只能以这种方式爆发一次。"
+					]
+				},
+				{
+					"ENG_name": "Boulder",
+					"name": "巨石",
+					"entries": [
+						"{@atk rw} 命中{@hit 10}，射程60/240尺，单一目标。{@h}19（{@damage 3d8 + 6}）钝击伤害，并且目标必须成功通过{@dc 18}的力量豁免否则陷入{@condition 倒地}状态。在巨人投石之后，扔一颗{@dice d6}；若骰值在3或更低，则代表巨人不再有更多可供投掷的巨石。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Unyielding",
+					"name": "不可撼动",
+					"entries": [
+						"在避免被移动、陷入{@condition 倒地}状态或二者同时发生的豁免检定失败时，巨人可以将之改为成功。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"T"
+			],
+			"damageTags": [
+				"B",
+				"T"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Stone Giant Rockspeaker",
+			"name": "石巨人岩语者",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"法师"
+				]
+			},
+			"source": "BGG",
+			"page": 180,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 276,
+				"formula": "24d12 + 120"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 23,
+			"dex": 15,
+			"con": 20,
+			"int": 19,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"dex": "+7",
+				"con": "+10",
+				"int": "+9",
+				"wis": "+7"
+			},
+			"skill": {
+				"athletics": "+16",
+				"history": "+9",
+				"perception": "+7"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 17,
+			"languages": [
+				"通用语",
+				"巨人语",
+				"土族语"
+			],
+			"cr": "16",
+			"trait": [
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
+					"entries": [
+						"巨人豁免失败时，可以将其改为豁免成功。"
+					]
+				},
+				{
+					"ENG_name": "Stone Rune",
+					"name": "岩石符文",
+					"entries": [
+						"巨人拥有一个刻印在一块矿石或其他随身携带物件上的岩石符文。当巨人携带或着装这个承载符文的物件时，它可以使用其虹彩射线动作。",
+						"承载符文的物件具有AC 18；30点生命值；免疫暗蚀、毒素和心灵伤害。该物件会在每个回合结束时恢复所有生命值，但若其生命值被降为0或是巨人死亡，它就会化为灰烬。若符文被毁坏，巨人可以在完成一次短休或长休后在一个它拥有的物件上刻印一道岩石符文。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨人发动三次虹彩法杖攻击。"
+					]
+				},
+				{
+					"ENG_name": "Prism Staff",
+					"name": "虹彩法杖",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及10尺，单一目标。{@h}16（{@damage 3d6 + 6}）钝击伤害外加13（{@damage 3d8}）光耀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Exploding Geode",
+					"name": "爆裂晶石",
+					"entries": [
+						"巨人掷出一颗晶石至60尺内一点，令其炸裂为一道炫目的闪光。以该点为中心半径20尺范围内的所有生物必须进行一次{@dc 17}的敏捷豁免。豁免失败者将受到13（{@damage 3d8}）穿刺伤害外加13（{@damage 3d8}）光耀伤害并获得{@condition 目盲}状态直到其下一回合结束。豁免成功则只受到一半伤害。在巨人投掷晶石之后，扔一颗{@dice d6}；若骰值在4或更低，则代表巨人不再有更多可供投掷的晶石。"
+					]
+				},
+				{
+					"ENG_name": "Prismatic Rays (Requires Stone Rune)",
+					"name": "虹光射线（需要岩石符文）",
+					"entries": [
+						"巨人的岩石符文放射出光能射线，覆盖一处60尺锥状区域。任何位于其中的生物都必须进行一次{@dc 17}的敏捷豁免。为每个位于区域内的生物掷一次{@dice d6}以决定其受到何种射线影响："
+					]
+				},
+				{
+					"ENG_name": "1-2: Blazing Red",
+					"name": "1-2：炽炎之红",
+					"entries": [
+						"豁免失败的情况下，该生物受到35（{@damage 10d6}）光耀伤害并直到巨人的下个回合结束陷入{@condition 目盲}状态。成功的情况下，该生物只受到一半伤害。"
+					]
+				},
+				{
+					"ENG_name": "3-4: Dreadful Blue",
+					"name": "3-4：恐惧之蓝",
+					"entries": [
+						"豁免失败时，该生物受到35（{@damage 10d6}）点暗蚀伤害并陷入{@condition 恐慌}状态直到该巨人的下一回合结束。豁免成功时，该生物只受到一半伤害。"
+					]
+				},
+				{
+					"ENG_name": "5-6: Sapping Green",
+					"name": "5-6：削弱之绿",
+					"entries": [
+						"豁免失败时，该生物受到35（{@damage 10d6}）点力场伤害并且获得{@condition 失能}状态直到巨人的下一回合结束。豁免成功时，该生物只受到一半的伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"传奇抗性"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"T"
+			],
+			"damageTags": [
+				"B",
+				"N",
+				"O",
+				"P",
+				"R"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"目盲",
+				"恐慌",
+				"失能"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Storm Crab",
+			"name": "风暴巨蟹",
+			"type": "monstrosity",
+			"source": "BGG",
+			"page": 181,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 155,
+				"formula": "10d20 + 50"
+			},
+			"speed": {
+				"walk": 40,
+				"swim": 60
+			},
+			"str": 23,
+			"dex": 10,
+			"con": 21,
+			"int": 5,
+			"wis": 14,
+			"cha": 9,
+			"save": {
+				"str": "+10",
+				"con": "+9"
+			},
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"盲视 60 尺"
+			],
+			"passive": 16,
+			"resist": [
+				"寒冷",
+				"火焰",
+				"闪电"
+			],
+			"languages": [
+				"能听懂巨人语但不会说"
+			],
+			"cr": "11",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"蟹可以在空气和水中呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨蟹发动两次爪击攻击和一次毒刺攻击。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及15尺，单一目标。{@h}19（{@damage 3d8 + 6}）钝击伤害。若目标为一个巨型或更小的生物，则目标陷入{@condition 受擒}状态（逃脱{@dc 16}）。巨蟹有四只爪子，每只都能擒抱一个目标。"
+					]
+				},
+				{
+					"ENG_name": "Stinger",
+					"name": "毒刺",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及10尺，单一生物。{@h}22（{@damage 3d10 + 6}）穿刺伤害，且目标必须成功通过一次{@dc 17}的体质豁免否则陷入{@condition 中毒}和{@condition 麻痹}状态1分钟。受影响的生物可以在其每个回合结束时重复豁免，豁免成功结束其所承受的{@condition 中毒}和{@condition 麻痹}状态。"
+					]
+				},
+				{
+					"ENG_name": "Water Jet {@recharge 5}",
+					"name": "水箭{@recharge 5}",
+					"entries": [
+						"巨蟹呼出一道水流覆盖一处150尺长10尺宽的线性区域。任何位于区域内的生物都必须进行一次{@dc 17}的敏捷豁免。豁免失败者受到27（{@damage 6d8}）钝击伤害并被巨蟹推开至多30尺并陷入{@condition 倒地}状态。豁免成功则伤害减半。"
+					]
+				}
+			],
+			"traitTags": [
+				"水陆两栖"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"CS",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"麻痹",
+				"中毒",
+				"倒地"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Storm Giant Tempest Caller",
+			"name": "风暴巨人飙霆尊",
+			"type": {
+				"type": "giant",
+				"tags": [
+					"术士"
+				]
+			},
+			"source": "BGG",
+			"page": 182,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 310,
+				"formula": "27d12 + 135"
+			},
+			"speed": {
+				"walk": 50,
+				"fly": {
+					"number": 50,
+					"condition": "(悬浮)"
+				},
+				"swim": 50,
+				"canHover": true
+			},
+			"initiative": {
+				"advantageMode": "ADV"
+			},
+			"str": 29,
+			"dex": 14,
+			"con": 20,
+			"int": 21,
+			"wis": 18,
+			"cha": 25,
+			"save": {
+				"str": "+15",
+				"con": "+11",
+				"wis": "+10",
+				"cha": "+13"
+			},
+			"skill": {
+				"arcana": "+17",
+				"athletics": "+15",
+				"perception": "+10"
+			},
+			"senses": [
+				"真实视觉 120 尺"
+			],
+			"passive": 20,
+			"resist": [
+				"寒冷"
+			],
+			"immune": [
+				"闪电",
+				"雷鸣"
+			],
+			"languages": [
+				"通用语",
+				"巨人语",
+				"原初语"
+			],
+			"cr": "20",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"巨人施展以下一道法术，无需任何材料成分并使用魅力作为施法属性（法术豁免{@dc 21}，法术攻击{@hit 13}）："
+					],
+					"will": [
+						"{@spell 侦测魔法}",
+						"{@spell 侦测思想}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 操控水体}",
+							"{@spell 操控天气}（使用1动作施展）",
+							"{@spell 解除魔法}",
+							"{@spell 位面转移}",
+							"{@spell 短讯术}",
+							"{@spell 时间停止}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Alert",
+					"name": "警觉",
+					"entries": [
+						"巨人不会被突袭，并且在掷先攻时具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"巨人可以在空气和水中呼吸。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
+					"entries": [
+						"巨人豁免失败时，可以将其改为豁免成功。"
+					]
+				},
+				{
+					"ENG_name": "Scrying (Requires Storm Rune)",
+					"name": "探知术（需要风暴符文）",
+					"entries": [
+						"巨人可以用它的水晶球施放{@spell 探知术}法术（豁免{@dc 17}）。"
+					]
+				},
+				{
+					"ENG_name": "Storm Rune",
+					"name": "风暴符文",
+					"entries": [
+						"巨人拥有一个刻印了风暴符文的水晶球。当这个承载着符文的物件嵌在体内时，巨人可以使用其驱雷掣电动作和探知特质。",
+						"承载风暴符文的物件具有AC 17；50点生命值；免疫暗蚀、毒素和心灵伤害。该物件会在每个回合结束时恢复所有生命值，但若其生命值被降为0或是巨人死亡，它就会化为灰烬。若符文被毁坏，巨人可以在完成一次短休或长休后在另一个它拥有的水晶球上刻印一道风暴符文。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨人发动三次雷电刃或者雷电枪攻击。"
+					]
+				},
+				{
+					"ENG_name": "Lightning Blade",
+					"name": "雷电刃",
+					"entries": [
+						"{@atk mw} 命中{@hit 15}，触及10尺，单一目标。{@h}22（{@damage 3d8 + 9}）挥砍伤害外加16（{@damage 3d10}）闪电伤害。"
+					]
+				},
+				{
+					"ENG_name": "Lightning Lance",
+					"name": "雷电枪",
+					"entries": [
+						"{@atk rs} 命中{@hit 13}，射程500尺，单一目标。{@h}39（{@damage 5d12 + 7}）闪电伤害。"
+					]
+				},
+				{
+					"ENG_name": "Tempest Call (Requires Storm Rune)",
+					"name": "驱雷掣电（需要风暴符文）",
+					"entries": [
+						"巨人创造出一个元素涡旋，覆盖以自身为中心60尺半径的球状区域。除该巨人外，每个在此区域内的生物都必须进行一次{@dc 21}的敏捷豁免检定。豁免失败的生物受到43（{@damage 8d8 + 7}）伤害，伤害类型由巨人选择：寒冷，闪电或雷鸣，豁免成功的生物则只受到一半伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"水陆两栖",
+				"传奇抗性"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"P"
+			],
+			"damageTags": [
+				"L",
+				"S"
+			],
+			"damageTagsSpell": [
+				"B"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"力量",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Storm Herald",
+			"name": "风暴先声",
+			"type": "aberration",
+			"source": "BGG",
+			"page": 183,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 287,
+				"formula": "23d12 + 138"
+			},
+			"speed": {
+				"walk": 50,
+				"swim": 100
+			},
+			"str": 27,
+			"dex": 14,
+			"con": 22,
+			"int": 24,
+			"wis": 18,
+			"cha": 18,
+			"save": {
+				"wis": "+10",
+				"cha": "+10"
+			},
+			"skill": {
+				"arcana": "+13",
+				"deception": "+10",
+				"perception": "+10"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 20,
+			"resist": [
+				"寒冷",
+				"心灵"
+			],
+			"immune": [
+				"闪电",
+				"雷鸣"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌"
+			],
+			"languages": [
+				"通用语",
+				"巨人语",
+				"心灵感应 120 尺"
+			],
+			"cr": "17",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting (Psionics)",
+					"name": "施法（灵能）",
+					"type": "spellcasting",
+					"headerEntries": [
+						"先声施展以下一道法术，无需任何法术成分并使用智力作为施法属性（法术豁免{@dc 21}）："
+					],
+					"will": [
+						"{@spell 侦测魔法}",
+						"{@spell 侦测思想}",
+						"{@spell 法师之手}（生成隐形的手）"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 操控水体}",
+							"{@spell 操控天气}（使用1动作施展）",
+							"{@spell 短讯术}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"先声可以在空气和水中呼吸。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"先声为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"先声进行一次爪击攻击、一次触手攻击和一次三叉戟攻击。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及10尺，单一目标。{@h}18（{@damage 3d6 + 8}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Tentacles",
+					"name": "触手",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及10尺，单一目标。{@h}21（{@damage 3d8 + 8}）钝击伤害。如果目标为大型或更小的生物，它将陷入{@condition 受擒}状态（逃脱{@dc 18}）。它还将陷入{@condition 束缚}状态，并在每个其回合开始时受到16（{@damage 3d10}）心灵伤害，直到此擒抱结束。该先声一次只能以这种方式{@condition 受擒}一个生物。"
+					]
+				},
+				{
+					"ENG_name": "Trident",
+					"name": "三叉戟",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及10尺，单一目标。{@h}18（{@damage 3d6 + 8}）穿刺伤害，若用双手则为21（{@damage 3d8 + 8}）穿刺伤害，外加13（{@damage 3d8}）闪电伤害。"
+					]
+				},
+				{
+					"ENG_name": "Psychic Wave {@recharge}",
+					"name": "灵能波动{@recharge}",
+					"entries": [
+						"先声向其90尺内至多三个可见生物释放一股灵能能量。每个目标必须进行一次{@dc 21}的智力豁免。豁免失败者受到23（{@damage 3d10 + 7}）心灵伤害并陷入{@condition 震慑}状态1分钟。豁免成功者只承受一半伤害。受影响生物可以在每个自己的回合结束时重复此豁免检定，成功则结束对自身的影响。",
+						"如果此心灵伤害将一个生物的生命值降至0，它立即死亡，如果拥有头部，则其爆炸。"
+					]
+				}
+			],
+			"attachedItems": [
+				"三叉戟|phb"
+			],
+			"traitTags": [
+				"水陆两栖",
+				"魔法抗性"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击",
+				"触手"
+			],
+			"languageTags": [
+				"C",
+				"GI",
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"P",
+				"S",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"B"
+			],
+			"spellcastingTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"震慑"
+			],
+			"savingThrowForced": [
+				"智力"
+			],
+			"savingThrowForcedSpell": [
+				"力量",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Tempest Spirit",
+			"name": "风暴亡魂",
+			"type": "undead",
+			"source": "BGG",
+			"page": 184,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 195,
+				"formula": "17d12 + 85"
+			},
+			"speed": {
+				"walk": 0,
+				"fly": {
+					"number": 60,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"str": 24,
+			"dex": 14,
+			"con": 20,
+			"int": 16,
+			"wis": 18,
+			"cha": 19,
+			"save": {
+				"con": "+10",
+				"int": "+8",
+				"wis": "+9",
+				"cha": "+9"
+			},
+			"skill": {
+				"arcana": "+8",
+				"perception": "+9"
+			},
+			"passive": 19,
+			"resist": [
+				"寒冷",
+				"暗蚀",
+				"毒素",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"闪电",
+				"雷鸣"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"受擒",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚"
+			],
+			"languages": [
+				"通用语",
+				"巨人语"
+			],
+			"cr": "15",
+			"trait": [
+				{
+					"ENG_name": "Incorporeal Movement",
+					"name": "虚体移动",
+					"entries": [
+						"亡魂可以如同穿过困难地形一样穿过其他生物和物件。如果它在自己的回合结束时仍处在物件内部则受到5（{@damage 1d10}）力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
+					"entries": [
+						"亡魂豁免失败时，可以将其改为豁免成功。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"亡魂发动两次攻击，使用闪电拳击或霜雹。"
+					]
+				},
+				{
+					"ENG_name": "Lightning Fist",
+					"name": "闪电拳击",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及10尺，单一目标。{@h}25（{@damage 4d8 + 7}）闪电伤害。"
+					]
+				},
+				{
+					"ENG_name": "Hailstone",
+					"name": "雹石",
+					"entries": [
+						"{@atk rw} 命中{@hit 12}，射程90/180尺，单一目标。{@h}17（{@damage 3d6 + 7}）钝击伤害外加7（{@damage 2d6}）寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Death Bolt {@recharge 5}",
+					"name": "死亡闪电 {@recharge 5}",
+					"entries": [
+						"亡魂魔法性地掷出一道120尺长10尺宽的闪电束。任何位于该区域内的生物都必须进行一次{@dc 18}的敏捷豁免，豁免失败者受到27（{@damage 6d8}）闪电伤害外加16（{@damage 3d10}）暗蚀伤害，豁免成功则伤害减半。无论豁免失败还是成功，受影响的生物的生命值上限都将承受等于受到的暗蚀伤害数值的减损。减损效应持续至该目标完成一次长休。如果该效应将目标的生命值上限降至0，则目标死亡。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Hailstorm {@recharge 4}",
+					"name": "冰雹{@recharge 4}",
+					"entries": [
+						"亡魂唤出一道冰雹，覆盖以其120尺内可见一点为中心，20尺半径40尺高的圆柱形区域。任何位于其中的生物都必须进行一次{@dc 17}的敏捷豁免。豁免失败的情况下，生物受到10（{@damage 3d6}）钝击伤害外加10（{@damage 3d6}）寒冷伤害并陷入{@condition 倒地}状态。成功的情况下，生物只受到一半伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"虚体移动",
+				"传奇抗性"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"C",
+				"L",
+				"N",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"HPR",
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Titanothere",
+			"name": "雷兽",
+			"type": "beast",
+			"source": "BGG",
+			"page": 185,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 136,
+				"formula": "13d12 + 52"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 25,
+			"dex": 10,
+			"con": 19,
+			"int": 2,
+			"wis": 12,
+			"cha": 6,
+			"passive": 11,
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Beast of Burden",
+					"name": "驼兽",
+					"entries": [
+						"在决定雷兽的载重能力时，雷兽视作体型大一级的生物。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Stomp",
+					"name": "践踏",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及10尺，单一目标。{@h}20（{@damage 3d8 + 7}）钝击伤害。若雷兽在命中前径直向目标移动了至少20尺，则目标额外受到13（{@damage 3d8}）钝击伤害，且若目标为一个生物，则其必须成功通过{@dc 18}的力量豁免否则陷入{@condition 倒地}状态。"
+					]
+				}
+			],
+			"traitTags": [
+				"驼兽"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Troll Amalgam",
+			"name": "巨魔聚合体",
+			"type": "giant",
+			"source": "BGG",
+			"page": 186,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 217,
+				"formula": "14d20 + 70"
+			},
+			"speed": {
+				"walk": 60,
+				"climb": 60
+			},
+			"str": 25,
+			"dex": 14,
+			"con": 21,
+			"int": 9,
+			"wis": 16,
+			"cha": 5,
+			"save": {
+				"con": "+11",
+				"wis": "+9"
+			},
+			"skill": {
+				"perception": "+9"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 19,
+			"resist": [
+				"毒素",
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"中毒"
+			],
+			"languages": [
+				"巨人语",
+				"地底通用语"
+			],
+			"cr": "17",
+			"trait": [
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性（3/日）",
+					"entries": [
+						"如果巨魔聚合体豁免失败，它可以将其替换为成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"该聚合体在进行抵抗法术和其他魔法效应的豁免检定时具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Regeneration",
+					"name": "再生",
+					"entries": [
+						"聚合体在其每回合开始时恢复15点生命值。如果聚合体受到了强酸或火焰伤害，则在其下一回合开始时仅恢复5点生命值。聚合体只有在生命值为0时受到20点以上强酸或火焰伤害时才会死亡。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨魔聚合体发动三次撕裂攻击。"
+					]
+				},
+				{
+					"ENG_name": "Rend",
+					"name": "撕裂",
+					"entries": [
+						"{@atk mw} 命中{@hit 13}，触及15尺，单一目标。{@h}25（{@damage 4d8 + 7}）挥砍伤害。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Fling Limb (3/Day)",
+					"name": "投掷肢体（3/日）",
+					"entries": [
+						"{@atk rw} 命中{@hit 13}，射程60/240尺，单一目标。{@h}11（{@damage 1d8 + 7}）点钝击伤害。如果该肢体命中一名中型或更小型生物，则该生物将陷入{@condition 受擒}状态（挣脱{@dc 17}）。此肢体的数据等同于巨魔聚合体，除了以下内容：它是中型生物，具有45点生命值，速度为30尺，它不具有挑战等级也没有传奇抗性，它的唯一动作为攻击动作，它可以使用此动作以进行擒抱。",
+						"直到擒抱结束前，目标陷入{@condition 束缚}状态并在其每个回合开始时受到25（{@damage 4d8 + 7}）点挥砍伤害。如果该肢体在被投掷之后并未在24小时之内被毁灭，掷一个{@dice d12}；若骰值为12，则该肢体再生为一只巨魔（见《怪物图鉴》），否则肢体便自我枯萎。"
+					]
+				}
+			],
+			"traitTags": [
+				"传奇抗性",
+				"魔法抗性",
+				"再生"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"U"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Troll Mutate",
+			"name": "巨魔异变体",
+			"type": "giant",
+			"source": "BGG",
+			"page": 187,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 95,
+				"formula": "10d10 + 40"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 30,
+					"condition": "(仅展翼形态)"
+				}
+			},
+			"str": 19,
+			"dex": 13,
+			"con": 18,
+			"int": 17,
+			"wis": 9,
+			"cha": 12,
+			"save": {
+				"con": "+7",
+				"int": "+6"
+			},
+			"skill": {
+				"perception": "+5",
+				"stealth": "+4"
+			},
+			"senses": [
+				"盲视 60 尺"
+			],
+			"passive": 15,
+			"languages": [
+				"巨人语",
+				"心灵感应 60 尺"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"ENG_name": "Mutation",
+					"name": "异变",
+					"entries": [
+						"当巨魔异变体被创造之时，它获得随机一个可能的身体异变：1.弹力身体； 2.灵能之镜；3.魔法伤痕；或 4.展翼形态。这一异变决定了此面板可用的特质。"
+					]
+				},
+				{
+					"ENG_name": "Amorphous (Elastic Body Only)",
+					"name": "无定形（仅弹力身体）",
+					"entries": [
+						"巨魔异变体能够轻松穿过最窄1寸宽的狭窄空间而不用挤进去。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance (Spell Scarred Only)",
+					"name": "魔法抗性（仅魔法伤痕）",
+					"entries": [
+						"巨魔异变体在对抗法术及其他魔法效应豁免时具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Psychic Rebuke (Psionic Mirror Only)",
+					"name": "灵能冲击（仅灵能之镜）",
+					"entries": [
+						"如果巨魔异变体受到了任何心灵伤害，距离其20尺内的每个生物同样受到该伤害。"
+					]
+				},
+				{
+					"ENG_name": "Regeneration",
+					"name": "再生",
+					"entries": [
+						"巨魔异变体在其每回合开始时恢复10点生命值，如果巨魔异变体受到了任何强酸或火焰伤害，则其下个回合开始时此特性不起作用。巨魔异变体仅在以0点生命值开始其回合且无法使用再生时才会死亡。如果巨魔异变体在以0点生命值开始其回合且使用了再生时，它随机获得一个其还未拥有的异变能力（至多拥有四个异变）。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"巨魔异变体发动两次撕裂攻击。"
+					]
+				},
+				{
+					"ENG_name": "Rend",
+					"name": "撕裂",
+					"entries": [
+						"{@atk mw} 命中{@hit 7}，触及5尺（如果异变体拥有弹力身体异变能力，则为15尺），单一目标。{@h}15（{@damage 2d10 + 4}）挥砍伤害以及9（{@damage 2d8}）力场伤害。"
+					]
+				},
+				{
+					"ENG_name": "Psychic Burst {@recharge 5}",
+					"name": "灵能爆裂{@recharge 5}",
+					"entries": [
+						"巨魔异变体释放出一道灵能能量波，每个距离其30尺内的生物必须进行一次{@dc 14}的智力豁免，豁免失败时受到28（{@damage 8d6}）点心灵伤害，豁免成功时伤害减半。"
+					]
+				}
+			],
+			"traitTags": [
+				"无定形",
+				"魔法抗性",
+				"再生"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"GI",
+				"TP"
+			],
+			"damageTags": [
+				"O",
+				"S",
+				"Y"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"savingThrowForced": [
+				"智力"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}

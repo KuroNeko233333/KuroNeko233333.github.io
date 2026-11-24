@@ -1,0 +1,1926 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM",
+				"VGM"
+			]
+		},
+		"internalCopies": [
+			"monster"
+		]
+	},
+	"monster": [
+		{
+			"ENG_name": "Aegisaur",
+			"name": "盾甲龙",
+			"source": "PSX",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Ankylosaurus",
+				"name": "甲龙",
+				"source": "MM"
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Aerosaur (Large)",
+			"name": "大型风蜥",
+			"source": "PSX",
+			"page": 29,
+			"_copy": {
+				"ENG_name": "Quetzalcoatlus",
+				"name": "风神翼龙",
+				"source": "VGM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "风神翼龙",
+						"with": "翔翼龙"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Aerosaur (Small)",
+			"name": "小型风蜥",
+			"source": "PSX",
+			"page": 29,
+			"_copy": {
+				"ENG_name": "Pteranodon",
+				"name": "翼龙",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "翼龙",
+						"with": "翔翼龙"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Air Totem Elemental",
+			"name": "空气图腾元素",
+			"source": "PSX",
+			"page": 38,
+			"_copy": {
+				"ENG_name": "Air Elemental",
+				"name": "气元素",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "元素生物",
+						"with": "图腾元素"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Altisaur",
+			"name": "硕伟龙",
+			"source": "PSX",
+			"page": 27,
+			"_copy": {
+				"ENG_name": "Brontosaurus",
+				"name": "雷龙",
+				"source": "VGM"
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Armasaur",
+			"name": "武装龙",
+			"source": "PSX",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Stegosaurus",
+				"name": "剑龙",
+				"source": "VGM"
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Awakened Shrub Totem Elemental",
+			"name": "觉醒灌木图腾元素",
+			"source": "PSX",
+			"page": 38,
+			"_copy": {
+				"ENG_name": "Awakened Shrub",
+				"name": "启蒙灌木",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "灌木",
+						"with": "灌木图腾"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Blight Totem Elemental",
+			"name": "枯萎图腾元素",
+			"source": "PSX",
+			"page": 38,
+			"_copy": {
+				"ENG_name": "Vine Blight",
+				"name": "枯藤怪",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "枯萎术",
+						"with": "枯萎图腾"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Brontodon",
+			"name": "雷龙",
+			"source": "PSX",
+			"page": 27,
+			"_copy": {
+				"ENG_name": "Brontosaurus",
+				"name": "雷龙",
+				"source": "VGM"
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Ceratops",
+			"name": "犄角龙",
+			"source": "PSX",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Triceratops",
+				"name": "三角龙",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "三角龙",
+						"with": "犄角龙"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Chupacabra",
+			"name": "卓帕卡布拉",
+			"type": "monstrosity",
+			"group": [
+				"恐龙"
+			],
+			"source": "PSX",
+			"page": 9,
+			"referenceSources": [
+				"XMtS"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "6d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 14,
+			"con": 16,
+			"int": 6,
+			"wis": 13,
+			"cha": 9,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+4"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 13,
+			"resist": [
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法武器",
+					"cond": true
+				}
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Sunlight Sensitivity",
+					"name": "日照敏感",
+					"entries": [
+						"在日光下，卓帕卡布拉在攻击检定时处于劣势，同样在使用视觉进行的感知（{@skill 察觉}）检定上也处于劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}7 ({@damage 2d4 + 2}) 穿刺伤害。如果目标是生物，则必须成功通过{@dc 13} 的力量豁免检定，否则被击倒{@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "Drain Blood",
+					"name": "吸血",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及 5 尺，一个处于{@condition 倒地}、{@condition 失能}或{@condition 束缚}状态的生物。{@h}5 ({@damage 1d6 + 2}) 暗蚀伤害。目标必须进行一次{@dc 13} 体质豁免检定，否则其生命值上限将减少等同于受到的伤害，而卓帕卡布拉恢复等同于该数量的生命值。这种减少持续到目标完成一次长休。如果这个效果将目标的生命值上限减少到0，目标将死亡。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Pin",
+					"name": "别针",
+					"entries": [
+						"如果距离卓帕卡布拉5尺内的生物站立起来，卓帕卡布拉可以使用其反应来进行咬击攻击。"
+					]
+				}
+			],
+			"traitTags": [
+				"日照敏感"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"miscTags": [
+				"HPR",
+				"MW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"体质",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Coatl",
+			"name": "夸特洛特",
+			"source": "PSX",
+			"page": 35,
+			"_copy": {
+				"ENG_name": "Couatl",
+				"name": "羽蛇",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "羽蛇",
+						"with": "夸特洛特"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Demon",
+			"name": "恶魔",
+			"source": "PSX",
+			"page": 36,
+			"_copy": {
+				"ENG_name": "Vrock",
+				"name": "鹫魔",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鹫魔",
+						"with": "恶魔"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Dryad",
+			"name": "树精",
+			"source": "PSX",
+			"page": 38,
+			"_copy": {
+				"ENG_name": "Dryad",
+				"name": "树精",
+				"source": "MM"
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Earth Totem Elemental",
+			"name": "大地图腾元素",
+			"source": "PSX",
+			"page": 38,
+			"_copy": {
+				"ENG_name": "Earth Elemental",
+				"name": "土元素",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "元素生物",
+						"with": "图腾元素"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Elder Dinosaur",
+			"name": "古老恐龙",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"泰坦"
+				]
+			},
+			"group": [
+				"恐龙"
+			],
+			"source": "PSX",
+			"page": 33,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 25,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 676,
+				"formula": "33d20 + 330"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 30,
+			"dex": 11,
+			"con": 30,
+			"int": 3,
+			"wis": 11,
+			"cha": 11,
+			"save": {
+				"int": "+5",
+				"wis": "+9",
+				"cha": "+9"
+			},
+			"senses": [
+				"盲视 120 尺"
+			],
+			"passive": 10,
+			"immune": [
+				"火焰",
+				"毒素",
+				{
+					"immune": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"麻痹",
+				"中毒"
+			],
+			"cr": "30",
+			"trait": [
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性 (3/日)",
+					"entries": [
+						"如果老年恐龙未能通过豁免检定，它可以选择成功。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"古老恐龙在对抗法术和其他魔法效果的豁免检定中具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Siege Monster",
+					"name": "攻城怪物",
+					"entries": [
+						"老恐龙对物体和结构造成双倍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Uniqueness",
+					"name": "独特性",
+					"entries": [
+						"以下统计数据由所有六种远古恐龙共享：{@creature 古老恐龙（伊塔利，原始风暴）|PSX|伊塔利，原始风暴}、{@creature 古老恐龙（加尔塔，原始饥渴）|PSX|加尔塔，原始饥渴}、{@creature 古老恐龙（内扎哈尔，原始潮汐）|PSX|尼扎哈尔，原始潮汐}、{@creature 古老恐龙（特齐莫克，原始死亡）|PSX|特齐莫克，原始死亡}、{@creature 老恐龙（扎卡玛，原始灾难）|PSX|扎卡马，原始灾难}、{@creature 老恐龙（泽塔尔帕，原始黎明）|PSX|泽塔尔帕，原始黎明}"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Frightful Presence",
+					"name": "骇人威仪",
+					"entries": [
+						"老恐龙选择的每个生物，在它120尺范围内并意识到它存在的生物，必须进行一次{@dc 17} 感知豁免检定，否则将被{@condition 恐慌}1分钟。生物可以在每个回合结束时重新进行豁免检定，如果老恐龙在视线范围内，则具有劣势，成功则结束该效果。如果生物的豁免检定成功或效果对其结束，则生物在接下来的24小时内对老恐龙的骇人威仪免疫。"
+					]
+				},
+				{
+					"ENG_name": "Swallow",
+					"name": "吞咽",
+					"entries": [
+						"老恐龙对它正在摔跤的大型或更小型生物进行一次咬击。如果攻击命中，该生物会受到咬击的伤害，目标被吞下，摔跤结束。被吞下时，生物处于{@condition 目盲}和{@condition 束缚}状态，对外部的攻击和其他效果有{@quickref 掩护||3||全身掩护}，并且在老恐龙的每个回合开始时受到56点（{@damage 16d6}）酸液伤害。如果老恐龙在单一回合内被其内部的生物造成60点或更多伤害，它必须在该回合结束时进行一次{@dc 20}体质豁免检定，否则会吐出所有被吞下的生物，它们会{@condition 倒地}在它周围10英尺内的空间中。如果老恐龙死亡，被吞下的生物不再被它{@condition 束缚}，可以使用20英尺的移动距离从尸体中逃脱，退出{@condition 倒地}状态。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Attack",
+					"name": "攻击",
+					"entries": [
+						"老恐龙进行一次爪击、尾击、翼击或鳍击。"
+					]
+				},
+				{
+					"ENG_name": "Move",
+					"name": "移动",
+					"entries": [
+						"古老恐龙移动其速度的一半。"
+					]
+				},
+				{
+					"ENG_name": "Chomp (Costs 2 Actions)",
+					"name": "咀嚼 (消耗 2动作)",
+					"entries": [
+						"老年恐龙进行一次咬击或使用其吞噬能力。"
+					]
+				}
+			],
+			"traitTags": [
+				"传奇抗性",
+				"魔法抗性",
+				"攻城怪物"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"骇人威仪",
+				"吞咽"
+			],
+			"damageTags": [
+				"A"
+			],
+			"conditionInflict": [
+				"目盲",
+				"恐慌",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Elder Dinosaur (Etali, Primal Storm)",
+			"name": "古老恐龙（伊塔利，原始风暴）",
+			"source": "PSX",
+			"page": 34,
+			"_copy": {
+				"ENG_name": "Elder Dinosaur",
+				"name": "古老恐龙",
+				"source": "PSX",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Lightning Storm",
+							"name": "闪电风暴",
+							"entries": [
+								"老年恐龙总是伴随着一场狂暴的雷暴，类似于{@spell 召雷术}法术的效果。当老年恐龙被激怒或变得暴力时，只要它在户外，100尺高的圆柱形雷暴云团会立即在它上方100尺的空中形成，其半径为60尺。在它的每个回合，作为行动，老年恐龙可以选择一个它能看到的120尺内的一个点。一道闪电从云团中闪向那个点。每个在该点10尺范围内的生物必须进行一次{@dc 20}敏捷豁免检定，失败则受到21（{@damage 6d6}）的闪电伤害，成功则伤害减半。"
+							]
+						}
+					},
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Multiattack",
+									"name": "多重攻击",
+									"entries": [
+										"古老恐龙可以使用其骇人威仪，并从其雷暴中召唤两次闪电打击。然后它进行三次攻击：一次用其咬击，两次用其爪击。"
+									]
+								},
+								{
+									"ENG_name": "Bite",
+									"name": "啃咬",
+									"entries": [
+										"{@atk mw} 命中{@hit 19}，触及 10 尺，单一目标。{@h}36 ({@damage 4d12 + 10}) 点穿刺伤害。如果目标是一个生物，它将{@condition 受擒}（逃脱 {@dc 20}）。直到这种抓住结束，目标将{@condition 束缚}，老恐龙不能咬另单一目标。"
+									]
+								},
+								{
+									"ENG_name": "Claw",
+									"name": "爪击",
+									"entries": [
+										"{@atk mw} 命中{@hit 19}，触及15尺，单一目标。{@h}28点（{@damage 4d8 + 10}）点挥砍伤害。"
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"actionTags": [
+				"骇人威仪",
+				"多重攻击",
+				"吞咽"
+			],
+			"damageTags": [
+				"A",
+				"L",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"目盲",
+				"恐慌",
+				"受擒",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Elder Dinosaur (Ghalta, Primal Hunger)",
+			"name": "古老恐龙（加尔塔，原始饥渴）",
+			"source": "PSX",
+			"page": 34,
+			"_copy": {
+				"ENG_name": "Elder Dinosaur",
+				"name": "古老恐龙",
+				"source": "PSX",
+				"_mod": {
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Multiattack",
+									"name": "多重攻击",
+									"entries": [
+										"老恐龙可以使用它的骇人威仪。然后它进行三次攻击：一次用咬击，一次用踩踏，一次用尾巴。它可以用自己的吞食代替咬击。"
+									]
+								},
+								{
+									"ENG_name": "Bite",
+									"name": "啃咬",
+									"entries": [
+										"{@atk mw} 命中{@hit 19}，射程10英尺，单一目标。{@h}62（{@damage 8d12 + 10}）穿刺伤害。如果目标是一个生物，它{@condition 受擒}（逃脱 {@dc 20}）。在擒抱结束前，目标{@condition 束缚}，并且远古恐龙无法咬另一个目标。"
+									]
+								},
+								{
+									"ENG_name": "Stomp",
+									"name": "践踏",
+									"entries": [
+										"{@atk mw} 命中{@hit 19}，触及5尺，单一目标。{@h}46（{@damage 8d8 + 10}）钝击伤害。"
+									]
+								},
+								{
+									"ENG_name": "Tail",
+									"name": "尾击",
+									"entries": [
+										"{@atk mw} 命中{@hit 19}，触及 20 尺，单一目标。{@h}38 ({@damage 8d6 + 10}) 钝击伤害。如果目标是一个生物，它必须进行一次{@dc 20} 力量豁免检定，否则会被击成{@condition 倒地}状态。"
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"actionTags": [
+				"骇人威仪",
+				"多重攻击",
+				"吞咽"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"目盲",
+				"恐慌",
+				"受擒",
+				"倒地",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质",
+				"力量",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Elder Dinosaur (Nezahal, Primal Tide)",
+			"name": "古老恐龙（内扎哈尔，原始潮汐）",
+			"source": "PSX",
+			"page": 34,
+			"_copy": {
+				"ENG_name": "Elder Dinosaur",
+				"name": "古老恐龙",
+				"source": "PSX",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Hold Breath",
+							"name": "屏息",
+							"entries": [
+								"老年恐龙可以屏息长达4小时。"
+							]
+						}
+					},
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Multiattack",
+									"name": "多重攻击",
+									"entries": [
+										"古老恐龙可以使用其骇人威仪。然后它进行五次攻击：一次用其咬击和四次用其鳍状肢攻击。没有两次鳍状肢攻击可以针对同一个生物。它可以用自己的吞噬攻击代替咬击。"
+									]
+								},
+								{
+									"ENG_name": "Bite",
+									"name": "啃咬",
+									"entries": [
+										"{@atk mw} 命中{@hit 19}，触及 10 尺，单一目标。{@h}36 ({@damage 4d12 + 10}) 点穿刺伤害。如果目标是一个生物，它将{@condition 受擒}（逃脱 {@dc 20}）。直到这种抓住结束，目标将{@condition 束缚}，老恐龙不能咬另单一目标。"
+									]
+								},
+								{
+									"ENG_name": "Flipper",
+									"name": "鳍肢",
+									"entries": [
+										"{@atk mw} 命中{@hit 19}，触及5尺，单一目标。{@h}28（{@damage 4d8 + 10}）钝击伤害。"
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 60
+			},
+			"traitTags": [
+				"屏息",
+				"传奇抗性",
+				"魔法抗性",
+				"攻城怪物"
+			],
+			"actionTags": [
+				"骇人威仪",
+				"多重攻击",
+				"吞咽"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"目盲",
+				"恐慌",
+				"受擒",
+				"束缚"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Elder Dinosaur (Tetzimoc, Primal Death)",
+			"name": "古老恐龙（特齐莫克，原始死亡）",
+			"source": "PSX",
+			"page": 34,
+			"_copy": {
+				"ENG_name": "Elder Dinosaur",
+				"name": "古老恐龙",
+				"source": "PSX",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Spiny Carapace",
+								"name": "棘刺甲壳",
+								"entries": [
+									"老年恐龙被覆盖着带有厚重锋利棘刺的装甲甲壳。任何用近战攻击击中或未击中特兹莫克的生物都会受到7（{@damage 2d6}）点穿刺伤害。"
+								]
+							},
+							{
+								"ENG_name": "Tail Spike Regrowth",
+								"name": "尾刺再生",
+								"entries": [
+									"老恐龙有四十根尾刺。使用过的尾刺在老恐龙完成长休后重新生长。"
+								]
+							}
+						]
+					},
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Multiattack",
+									"name": "多重攻击",
+									"entries": [
+										"古老恐龙可以使用其骇人威仪。然后它进行五次攻击：一次用其咬击，两次用其爪击，一次用其角攻击，以及一次用其尾巴。它可以用自己的尾刺代替任何或全部这些攻击，并且可以用其吞噬攻击代替咬击。"
+									]
+								},
+								{
+									"ENG_name": "Bite",
+									"name": "啃咬",
+									"entries": [
+										"{@atk mw} 命中{@hit 19}，触及 10 尺，单一目标。{@h}36 ({@damage 4d12 + 10}) 点穿刺伤害。如果目标是一个生物，它将{@condition 受擒}（逃脱 {@dc 20}）。直到这种抓住结束，目标将{@condition 束缚}，老恐龙不能咬另单一目标。"
+									]
+								},
+								{
+									"ENG_name": "Claw",
+									"name": "爪击",
+									"entries": [
+										"{@atk mw} 命中{@hit 19}，触及15尺，单一目标。{@h}28点（{@damage 4d8 + 10}）点挥砍伤害。"
+									]
+								},
+								{
+									"ENG_name": "Horns",
+									"name": "角击",
+									"entries": [
+										"{@atk mw} 命中{@hit 19}，触及10尺，单一目标。{@h}32（{@damage 4d10 + 10}）点穿刺伤害。"
+									]
+								},
+								{
+									"ENG_name": "Tail",
+									"name": "尾击",
+									"entries": [
+										"{@atk mw} 命中{@hit 19}，触及 20 尺，单一目标。{@h}24 ({@damage 4d6 + 10}) 点穿刺伤害。如果目标是一个生物，它必须进行一次 {@dc 20} 力量豁免检定，否则会被击成 {@condition 倒地} 状态。"
+									]
+								},
+								{
+									"ENG_name": "Tail Spikes",
+									"name": "尾刺",
+									"entries": [
+										"{@atk rw} 命中{@hit 9}，射程100/300 尺，两个目标。{@h}7（{@damage 2d6}）点穿刺伤害。"
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"actionTags": [
+				"骇人威仪",
+				"多重攻击",
+				"吞咽"
+			],
+			"damageTags": [
+				"A",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			],
+			"conditionInflict": [
+				"目盲",
+				"恐慌",
+				"受擒",
+				"倒地",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质",
+				"力量",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Elder Dinosaur (Zacama, Primal Calamity)",
+			"name": "老恐龙（扎卡玛，原始灾难）",
+			"source": "PSX",
+			"page": 34,
+			"_copy": {
+				"ENG_name": "Elder Dinosaur",
+				"name": "古老恐龙",
+				"source": "PSX",
+				"_mod": {
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Multiattack",
+									"name": "多重攻击",
+									"entries": [
+										"古老恐龙可以使用其骇人威仪。然后它进行五次攻击：三次用其咬击，{@footnote 一次用踩踏，一次用尾巴|这个数值模块没有可用的这些动作。}。它可以用自己的吞噬攻击代替咬击。"
+									]
+								},
+								{
+									"ENG_name": "Bite",
+									"name": "啃咬",
+									"entries": [
+										"{@atk mw} 命中{@hit 19}，触及10尺，单一目标。{@h}36（{@damage 4d12 + 10}）点穿刺伤害。如果目标是一个生物，它将{@condition 受擒}（逃脱{@dc 20}）。直到这次摔跤结束，目标将{@condition 束缚}。如果老年恐龙以这种方式有三个目标{@condition 束缚}，它就不能再次咬击其他目标。"
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"actionTags": [
+				"骇人威仪",
+				"多重攻击",
+				"吞咽"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"目盲",
+				"恐慌",
+				"受擒",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质",
+				"力量",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Elder Dinosaur (Zetalpa, Primal Dawn)",
+			"name": "老恐龙（泽塔尔帕，原始黎明）",
+			"source": "PSX",
+			"page": 34,
+			"_copy": {
+				"ENG_name": "Elder Dinosaur",
+				"name": "古老恐龙",
+				"source": "PSX",
+				"_mod": {
+					"action": [
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Multiattack",
+									"name": "多重攻击",
+									"entries": [
+										"古老恐龙可以使用其骇人威仪。然后它进行五次攻击：一次用其咬击，两次用其爪击，以及两次用其翅膀。它可以用自己的吞噬攻击代替咬击。"
+									]
+								},
+								{
+									"ENG_name": "Bite",
+									"name": "啃咬",
+									"entries": [
+										"{@atk mw} 命中{@hit 19}，触及 10 尺，单一目标。{@h}36 ({@damage 4d12 + 10}) 点穿刺伤害。如果目标是一个生物，它将{@condition 受擒}（逃脱 {@dc 20}）。直到这种抓住结束，目标将{@condition 束缚}，老恐龙不能咬另单一目标。"
+									]
+								},
+								{
+									"ENG_name": "Claw",
+									"name": "爪击",
+									"entries": [
+										"{@atk mw} 命中{@hit 19}，触及15尺，单一目标。{@h}28点（{@damage 4d8 + 10}）点挥砍伤害。"
+									]
+								},
+								{
+									"ENG_name": "Wing",
+									"name": "振翅",
+									"entries": [
+										"{@atk mw} 命中{@hit 19}，触及 20 尺，单一目标。{@h}28 ({@damage 4d8 + 10}) 钝击伤害。"
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 60
+			},
+			"resist": [
+				"光耀"
+			],
+			"actionTags": [
+				"骇人威仪",
+				"多重攻击",
+				"吞咽"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"目盲",
+				"恐慌",
+				"受擒",
+				"束缚"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Ferocidon",
+			"name": "费罗西顿",
+			"source": "PSX",
+			"page": 30,
+			"_copy": {
+				"ENG_name": "Allosaurus",
+				"name": "异特龙",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "异特龙",
+						"with": "费罗西顿"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Fire Guardian",
+			"name": "火焰守卫",
+			"source": "PSX",
+			"page": 38,
+			"_copy": {
+				"ENG_name": "Fire Elemental",
+				"name": "火元素",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "元素生物",
+						"with": "火焰守卫"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Frilled Deathspitter",
+			"name": "皱边死亡喷射者",
+			"type": "beast",
+			"group": [
+				"恐龙"
+			],
+			"source": "PSX",
+			"page": 30,
+			"referenceSources": [
+				"XMtS"
+			],
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 18,
+				"formula": "4d6 + 4"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 13,
+			"int": 4,
+			"wis": 12,
+			"cha": 6,
+			"skill": {
+				"perception": "+3"
+			},
+			"passive": 13,
+			"cr": "1/2",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"死亡吐息者进行三次攻击：一次用咬击，两次用爪击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}6（{@damage 1d6 + 3}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}6（{@damage 1d6 + 3}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Spit Poison",
+					"name": "喷毒",
+					"entries": [
+						"{@atk rw} 命中{@hit 5}，射程 15/30 尺，单一生物。{@h}目标必须进行一次 {@dc 13} 体质豁免检定，失败则受到 18 ({@damage 4d8}) 点毒素伤害，成功则伤害减半。此外，未能通过豁免检定的生物将被 {@condition 目盲}，直到死亡吐息者的下一回合结束。"
+					]
+				}
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"目盲"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Gishath, Sun's Avatar",
+			"name": "吉沙斯，太阳的化身",
+			"type": "beast",
+			"group": [
+				"恐龙"
+			],
+			"isNamedCreature": true,
+			"source": "PSX",
+			"page": 32,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 203,
+				"formula": "14d20 + 56"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 24,
+			"dex": 12,
+			"con": 18,
+			"int": 12,
+			"wis": 16,
+			"cha": 6,
+			"save": {
+				"str": "+11",
+				"con": "+8",
+				"wis": "+7",
+				"cha": "+2"
+			},
+			"skill": {
+				"perception": "+7"
+			},
+			"passive": 17,
+			"cr": "10",
+			"trait": [
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性 (3/日)",
+					"entries": [
+						"如果吉沙斯未能通过豁免检定，它可以选择成功。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"吉沙斯进行两次攻击：一次用咬击，一次用踩踏或尾击。它不能对同一个目标进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及15尺，单一目标。{@h}39（{@damage 5d12 + 7}）点穿刺伤害。如果目标是大型或更小型的生物，它必须通过一次{@dc 19}敏捷豁免检定，否则将{@condition 受擒}（逃脱{@dc 19}）。直到这次摔跤结束，目标将{@condition 束缚}，吉沙斯也不能咬击另单一目标。"
+					]
+				},
+				{
+					"ENG_name": "Swallow",
+					"name": "吞咽",
+					"entries": [
+						"Gishath 对它正在摔跤的大型或更小生物进行一次咬击。如果攻击命中，该生物会受到咬击的伤害并被吞下，摔跤结束。在被吞下时，该生物处于{@condition 目盲}和{@condition 束缚}状态，它对Gishath外部的攻击和其他效果有{@quickref 掩护||3||全身掩护}，并且在Gishath的每个回合开始时受到21点（{@damage 6d6}）酸伤害。",
+						"如果吉沙斯在单一回合内被其内部的生物造成30点或更多伤害，它必须在该回合结束时通过一次{@dc 18}体质豁免检定，否则将吐出所有被吞噬的生物，这些生物将在距离它10尺内的空位上以{@condition 倒地}状态落下。如果吉沙斯死亡，被吞噬的生物不再被它{@condition 束缚}，并且可以使用20尺的移动距离从尸体中逃脱，以{@condition 倒地}状态离开。"
+					]
+				},
+				{
+					"ENG_name": "Stomp",
+					"name": "践踏",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及 10 尺，单一目标。{@h}29 ({@damage 5d8 + 7}) 钝击伤害，目标必须进行一次 {@dc 19} 力量豁免检定，否则会被击成 {@condition 倒地} 状态。"
+					]
+				},
+				{
+					"ENG_name": "Tail",
+					"name": "尾击",
+					"entries": [
+						"{@atk mw} 命中{@hit 11}，触及15尺，单一目标。{@h}25（{@damage 4d8 + 7}）钝击伤害。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Attack",
+					"name": "攻击",
+					"entries": [
+						"吉沙斯进行一次踩踏或尾击。"
+					]
+				},
+				{
+					"ENG_name": "Roar (Costs 2 Actions)",
+					"name": "咆哮（花费2个动作）",
+					"entries": [
+						"每个位于吉萨斯120英尺范围内且能听到其声音的生物必须成功通过一次{@dc 19}感知豁免，否则会陷入{@condition 恐慌}状态1分钟。生物可以在其每回合结束时重复豁免检定，成功则终止此效应。如果某生物的豁免检定成功或效应终止，该生物将在接下来的24小时内免疫吉萨斯的咆哮。"
+					]
+				}
+			],
+			"traitTags": [
+				"传奇抗性"
+			],
+			"actionTags": [
+				"多重攻击",
+				"吞咽"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"目盲",
+				"恐慌",
+				"受擒",
+				"倒地",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷",
+				"力量",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Griffin",
+			"name": "狮鹫兽",
+			"source": "PSX",
+			"page": 39,
+			"_copy": {
+				"ENG_name": "Griffon",
+				"name": "狮鹫",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "狮鹫",
+						"with": "狮鹫兽"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Hadrosaur",
+			"name": "鸭嘴龙",
+			"source": "PSX",
+			"page": 29,
+			"_copy": {
+				"ENG_name": "Hadrosaurus",
+				"name": "鸭嘴龙",
+				"source": "VGM"
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Hammerskull",
+			"name": "锤颅",
+			"group": [
+				"恐龙"
+			],
+			"source": "PSX",
+			"page": 29,
+			"_copy": {
+				"ENG_name": "Giant Goat",
+				"name": "巨山羊",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "山羊",
+						"with": "锤颅"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Harpy",
+			"name": "鸟妖",
+			"source": "PSX",
+			"page": 36,
+			"_copy": {
+				"ENG_name": "Harpy",
+				"name": "鸟妖",
+				"source": "MM",
+				"_mod": {
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "短棒",
+							"items": {
+								"ENG_name": "Bite",
+								"name": "啃咬",
+								"entries": [
+									"{@atk mw} 命中{@hit 3}，距离5英尺，单一目标。{@h}3 ({@damage 1d4 + 1}) 点挥砍伤害。如果目标是生物，它必须成功通过一个{@dc 11} 体质豁免，否则会感染疾病。在疾病被治愈之前，目标无法通过非魔法手段恢复生命值，并且目标的生命值上限每24小时减少3 ({@dice 1d6}) 点。如果由于此疾病，目标的生命值上限降至0，目标死亡。"
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "多重攻击",
+							"items": {
+								"ENG_name": "Multiattack",
+								"name": "多重攻击",
+								"entries": [
+									"鸟妖进行两次攻击：一次用爪子，一次用嘴咬。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"miscTags": [
+				"DIS",
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Horned Frog",
+			"name": "角蛙",
+			"source": "PSX",
+			"page": 39,
+			"_copy": {
+				"ENG_name": "Giant Frog",
+				"name": "巨蛙",
+				"source": "MM"
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Macaw",
+			"name": "金刚鹦鹉",
+			"source": "PSX",
+			"page": 39,
+			"_copy": {
+				"ENG_name": "Raven",
+				"name": "渡鸦",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "渡鸦",
+						"with": "金刚鹦鹉"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Parrot",
+			"name": "鹦鹉",
+			"source": "PSX",
+			"page": 39,
+			"_copy": {
+				"ENG_name": "Raven",
+				"name": "渡鸦",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "渡鸦",
+						"with": "鹦鹉"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Piranha",
+			"name": "食人鱼",
+			"source": "PSX",
+			"page": 40,
+			"_copy": {
+				"ENG_name": "Quipper",
+				"name": "食人鱼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "食人鱼",
+						"with": "食人鱼"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Sailback",
+			"name": "帆背",
+			"group": [
+				"恐龙"
+			],
+			"source": "PSX",
+			"page": 30,
+			"_copy": {
+				"ENG_name": "Giant Crocodile",
+				"name": "巨鳄",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鳄鱼",
+						"with": "帆背"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shambling Mound Totem Elemental",
+			"name": "蔓生怪图腾元素",
+			"source": "PSX",
+			"page": 38,
+			"_copy": {
+				"ENG_name": "Shambling Mound",
+				"name": "蔓生怪",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "蔓生怪",
+						"with": "蔓生怪图腾"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Stone Guardian (Animated Armor)",
+			"name": "石质守卫（活化盔甲）",
+			"source": "PSX",
+			"page": 40,
+			"_copy": {
+				"ENG_name": "Animated Armor",
+				"name": "活化盔甲",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "护甲",
+						"with": "石头卫士"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Stone Guardian (Helmed Horror)",
+			"name": "石质守卫（恐怖铠甲）",
+			"source": "PSX",
+			"page": 40,
+			"_copy": {
+				"ENG_name": "Helmed Horror",
+				"name": "恐怖铠甲",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "恐怖铠甲",
+						"with": "石头卫士"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Stone Guardian (Shield Guardian)",
+			"name": "石质守卫（盾卫者）",
+			"source": "PSX",
+			"page": 40,
+			"_copy": {
+				"ENG_name": "Shield Guardian",
+				"name": "构装盾卫",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "构装盾卫",
+						"with": "石头卫士"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Stone Guardian (Stone Golem)",
+			"name": "石质守卫（石魔像）",
+			"source": "PSX",
+			"page": 40,
+			"_copy": {
+				"ENG_name": "Stone Golem",
+				"name": "石魔像",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔像",
+						"with": "石头卫士"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Sunbird",
+			"name": "太阳鸟",
+			"type": "monstrosity",
+			"source": "PSX",
+			"page": 32,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 279,
+				"formula": "18d20 + 90"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 120
+			},
+			"str": 28,
+			"dex": 10,
+			"con": 20,
+			"int": 13,
+			"wis": 14,
+			"cha": 15,
+			"save": {
+				"dex": "+5",
+				"con": "+10",
+				"wis": "+7",
+				"cha": "+7"
+			},
+			"skill": {
+				"perception": "+7"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 17,
+			"resist": [
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"火焰"
+			],
+			"languages": [
+				"巨猫头鹰语",
+				"懂得通用语，但不会说"
+			],
+			"cr": "13",
+			"trait": [
+				{
+					"ENG_name": "Death Throes",
+					"name": "焚身爆",
+					"entries": [
+						"当阳鸟死亡时，它会发生爆炸，距离它30英尺内的每个生物必须进行一次{@dc 18}敏捷豁免，若豁免失败将受到42（{@damage 12d6}）点火焰伤害，若豁免成功则伤害减半。爆炸会点燃该区域内未被穿戴或携带的可燃物。阳鸟的尸体会化为灰烬，但在阳鸟原来的位置会留下一颗蛋。"
+					]
+				},
+				{
+					"ENG_name": "Fire Aura",
+					"name": "火焰灵光",
+					"entries": [
+						"在每一个太阳鸟的回合开始时，距离其5英尺内的每个生物都会受到11（{@damage 2d10}）点火焰伤害，并且区域内未被携带或穿着的易燃物品会被点燃。如果一个生物在距离太阳鸟5英尺内接触它或用近战攻击击中它，也会受到11（{@damage 2d10}）点火焰伤害。该光环还会在60英尺半径内散发明亮的光线，并在额外的60英尺内散发昏暗的光线。"
+					]
+				},
+				{
+					"ENG_name": "Flyby",
+					"name": "飞掠",
+					"entries": [
+						"当太阳鸟飞出敌人的触及范围时，它不会引发借机攻击。"
+					]
+				},
+				{
+					"ENG_name": "Keen Hearing and Sight",
+					"name": "敏锐视听觉",
+					"entries": [
+						"太阳鸟在依赖听觉或视觉的感知（{@skill 察觉}）检定时具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"太阳鸟进行两次爪击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Talon",
+					"name": "禽爪",
+					"entries": [
+						"{@atk mw} 命中{@hit 14}，触及5尺，单一目标。{@h}16 ({@damage 2d6 + 9}) 劈砍伤害外加14 ({@damage 4d6}) 火焰伤害，并且目标遭{@condition 受擒}（逃脱{@dc 18}）。直到此擒抱结束，目标{@condition 束缚}，且太阳鸟无法用该爪攻击其他目标。每当太阳鸟的回合开始时，{@condition 受擒}的生物受到11 ({@damage 2d10}) 火焰伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"自爆",
+				"飞掠",
+				"敏锐感官"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"CS",
+				"GI",
+				"OTH"
+			],
+			"damageTags": [
+				"F",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"受擒",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Swarm of Piranhas",
+			"name": "食人鱼集群",
+			"source": "PSX",
+			"page": 40,
+			"_copy": {
+				"ENG_name": "Swarm of Quippers",
+				"name": "食人鱼群",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "食人鱼",
+						"with": "食人鱼"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Treant Totem Elemental",
+			"name": "树灵图腾元素",
+			"source": "PSX",
+			"page": 38,
+			"_copy": {
+				"ENG_name": "Treant",
+				"name": "树人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "树人",
+						"with": "树灵图腾"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Trilobite",
+			"name": "三叶虫",
+			"source": "PSX",
+			"page": 40,
+			"_copy": {
+				"ENG_name": "Crab",
+				"name": "蟹",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "蟹",
+						"with": "三叶虫"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Trilobite (Giant)",
+			"name": "巨型三叶虫",
+			"source": "PSX",
+			"page": 40,
+			"_copy": {
+				"ENG_name": "Giant Crab",
+				"name": "巨蟹",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "蟹",
+						"with": "三叶虫"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Tyrant",
+			"name": "暴君",
+			"alias": [
+				"怪兽龙",
+				"恐口",
+				"剑齿",
+				"帝王龙"
+			],
+			"source": "PSX",
+			"page": 31,
+			"_copy": {
+				"ENG_name": "Tyrannosaurus Rex",
+				"name": "霸王龙",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "霸王龙",
+						"with": "暴君"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Water Totem Elemental",
+			"name": "水图腾元素",
+			"source": "PSX",
+			"page": 38,
+			"_copy": {
+				"ENG_name": "Water Elemental",
+				"name": "水元素",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "元素生物",
+						"with": "图腾元素"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true
+		}
+	]
+}

@@ -1,0 +1,4305 @@
+{
+	"vehicle": [
+		{
+			"ENG_name": "Apparatus of Kwalish",
+			"name": "夸力许装置",
+			"source": "DMG",
+			"page": 151,
+			"srd": "蟹形装置",
+			"reprintedAs": [
+				"夸力许装置|XDMG"
+			],
+			"vehicleType": "OBJECT",
+			"size": [
+				"L"
+			],
+			"terrain": [
+				"海洋"
+			],
+			"capCrew": 1,
+			"capPassenger": 1,
+			"ac": 20,
+			"speed": {
+				"walk": 30,
+				"swim": {
+					"number": 30,
+					"condition": "（若腿未伸展则两者均为0尺）"
+				}
+			},
+			"hp": 200,
+			"immune": [
+				"毒素",
+				"心灵"
+			],
+			"entries": [
+				"这件物品最初看起来是一个重达500磅的大型密封铁桶。桶上有一个隐藏的机关，可以通过成功的{@dc 20}智力（{@skill 调查}）检定发现。释放机关会解锁桶一端的舱口，允许两个中型或更小的生物爬入内部。远端排列着十个处于绝对中立位置的杠杆，每个都可以向上或向下移动。当使用特定杠杆时，该装置会变形为类似巨型龙虾的形态。",
+				"要将夸力许装置用作载具，需要一个飞行员。当装置的舱门关闭时，舱室是气密且防水的。舱室内的空气足够供10小时的呼吸，由内部呼吸的生物数量均分。",
+				"夸力许装置可以浮在水面上。它也可以下潜至900尺深的水下。超过这个深度，载具会因压力每分钟受到{@damage 2d6}点钝击伤害。",
+				"隔间内的生物可以使用一个动作将夸力许装置的两个拉杆向上或向下移动。每次使用后，拉杆会回到绝对中立位置。从左到右的每个拉杆功能如夸力许装置拉杆表格所示。",
+				{
+					"type": "table",
+					"caption": "夸力许装置拉杆：",
+					"colLabels": [
+						"拉杆",
+						"Up",
+						"下"
+					],
+					"colStyles": [
+						"col-1 text-center",
+						"col-5-5",
+						"col-5-5"
+					],
+					"rows": [
+						[
+							"1",
+							"腿和尾巴伸展，允许装置行走和游泳。",
+							"腿部和尾巴收回，使装置的速度降至0，并且无法从速度加成中受益。"
+						],
+						[
+							"2",
+							"前窗百叶窗打开。",
+							"前窗百叶窗关闭。"
+						],
+						[
+							"3",
+							"侧窗百叶窗打开（每侧两个）。",
+							"侧窗百叶窗关闭（每侧两个）。"
+						],
+						[
+							"4",
+							"两个爪子从装置的前侧伸出。",
+							"爪子收回。"
+						],
+						[
+							"5",
+							"每个伸出的爪子进行以下近战武器攻击：命中{@hit 8}，触及5尺，单一目标。{@h}7（{@damage 2d6}）点钝击伤害。",
+							"每只伸展的爪子进行以下近战武器攻击：命中{@hit 8}，触及5尺，单一目标。{@h}目标陷入{@condition 受擒}状态（逃脱{@dc 15}）。"
+						],
+						[
+							"6",
+							"装置向前行走或游动。",
+							"装置向后行走或游动。"
+						],
+						[
+							"7",
+							"装置向左转90度。",
+							"装置向右转90度。"
+						],
+						[
+							"8",
+							"眼状装置发出30尺半径的明亮光照和额外30尺的微光光照。",
+							"灯光熄灭。"
+						],
+						[
+							"9",
+							"装置在液体中下沉20尺。",
+							"装置在液体中上升20尺"
+						],
+						[
+							"10",
+							"后舱门解锁并打开。",
+							"后舱门关闭并密封。"
+						]
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Apparatus of Kwalish",
+			"name": "夸力许装置",
+			"source": "XDMG",
+			"page": 229,
+			"srd": "蟹形装置",
+			"vehicleType": "OBJECT",
+			"size": [
+				"L"
+			],
+			"terrain": [
+				"海洋"
+			],
+			"capCrew": 1,
+			"capPassenger": 1,
+			"ac": 20,
+			"speed": {
+				"walk": 30,
+				"swim": {
+					"number": 30,
+					"condition": "（若腿未伸展则两者均为0尺）"
+				}
+			},
+			"hp": 200,
+			"immune": [
+				"毒素",
+				"心灵"
+			],
+			"entries": [
+				"这件物品最初看起来是一个密封的铁制木桶，重达500磅。木桶有一个隐藏的开关，可以通过成功的{@dc 20}智力（{@skill 调查|XPHB}）检定发现。释放开关会解锁木桶一端的舱口，允许两个中型或更小的生物爬入内部。远端排列着十个操纵杆，每个都处于中立位置，可以上下移动。当使用特定操纵杆时，该装置会变形为类似一个巨大龙虾的外观。",
+				"要将夸力许装置用作载具，需要一个飞行员。当装置的舱门关闭时，舱室是气密且防水的。舱室内的空气足够供10小时的呼吸，由内部呼吸的生物数量均分。",
+				"夸力许装置可以浮在水面上。它也可以下潜至900尺深的水下。超过这个深度，载具每分钟会受到来自压力的{@damage 2d6}点钝击伤害。",
+				"隔间内的生物可以采取一个{@action 操作|XPHB}动作来移动夸力许装置的两个拉杆向上或向下。每次使用后，拉杆会回到绝对中立位置。从左到右的每个拉杆功能如夸力许装置拉杆表格所示。",
+				{
+					"type": "table",
+					"caption": "夸力许装置拉杆",
+					"colStyles": [
+						"col-1 text-center",
+						"col-5-5",
+						"col-5-5"
+					],
+					"colLabels": [
+						"拉杆",
+						"Up",
+						"下"
+					],
+					"rows": [
+						[
+							"1",
+							"腿部伸展，使装置能够行走和游泳。",
+							"腿部收缩，将夸力许装置的{@variantrule 速度|XPHB}和{@variantrule 游泳速度|XPHB}降为0，且无法从速度增益中获益。"
+						],
+						[
+							"2",
+							"前窗百叶窗打开。",
+							"前窗百叶窗关闭。"
+						],
+						[
+							"3",
+							"侧窗百叶窗打开（每侧两个）。",
+							"侧窗百叶窗关闭（每侧两个）。"
+						],
+						[
+							"4",
+							"装置前侧伸出两只爪子。",
+							"爪子收回。"
+						],
+						[
+							"5",
+							"每只伸出的爪子可发动以下近战攻击：命中{@hit 8}，触及5尺。{@h}7（{@damage 2d6}）点钝击伤害。",
+							"每只伸出的爪子可发动以下近战攻击：命中{@hit 8}，触及5尺。{@h}目标陷入{@condition 受擒|XPHB}状态（逃脱{@dc 15}）。"
+						],
+						[
+							"6",
+							"夸力许装置在腿部伸展的情况下可以向前行走或游泳。",
+							"夸力许装置在腿部伸展的情况下可以向后行走或游泳。"
+						],
+						[
+							"7",
+							"夸力许装置在腿部伸展的情况下可以逆时针旋转90度。",
+							"夸力许装置在腿部伸展的情况下可以顺时针旋转90度。"
+						],
+						[
+							"8",
+							"眼状装置会发出半径30尺的{@variantrule 明亮光照|XPHB}和额外30尺的{@variantrule 微光光照|XPHB}。",
+							"灯光熄灭。"
+						],
+						[
+							"9",
+							"夸力许装置在液体中会下沉至多20尺。",
+							"夸力许装置在液体中可上升至20尺高。"
+						],
+						[
+							"10",
+							"后舱门解锁并打开。",
+							"后舱门关闭并密封。"
+						]
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Astral Brig",
+			"name": "星界帆船",
+			"source": "MTF",
+			"page": 90,
+			"vehicleType": "SHIP",
+			"size": "G",
+			"dimensions": [
+				"90尺",
+				"30 尺"
+			],
+			"terrain": [
+				"空气"
+			],
+			"capCrew": 5,
+			"capPassenger": 60,
+			"pace": 12,
+			"weapon": [
+				{
+					"ENG_name": "Ballistas",
+					"name": "弩炮",
+					"count": 2,
+					"entries": [
+						"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Astral Skiff",
+			"name": "星界快艇",
+			"source": "MTF",
+			"page": 90,
+			"vehicleType": "SHIP",
+			"size": "H",
+			"dimensions": [
+				"30 尺",
+				"10 尺"
+			],
+			"terrain": [
+				"空气"
+			],
+			"capCrew": 3,
+			"capPassenger": 12,
+			"pace": 15,
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Battle Balloon",
+			"name": "战斗气球",
+			"source": "AI",
+			"page": 218,
+			"vehicleType": "SHIP",
+			"size": "G",
+			"dimensions": [
+				"80尺",
+				"20 尺"
+			],
+			"terrain": [
+				"空气"
+			],
+			"capCrew": 20,
+			"capPassenger": 10,
+			"capCargo": 1,
+			"pace": 9,
+			"str": 18,
+			"dex": 17,
+			"con": 20,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"力竭",
+				"恐慌",
+				"失能",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"震慑",
+				"昏迷"
+			],
+			"hull": {
+				"ac": 15,
+				"hp": 500,
+				"dt": 15
+			},
+			"control": [
+				{
+					"ENG_name": "Helm",
+					"name": "舵板",
+					"ac": 18,
+					"hp": 50,
+					"entries": [
+						"以船只螺旋桨的速度移动，并进行一次90度转弯。如果舵被摧毁，船只无法转向。"
+					]
+				},
+				{
+					"ENG_name": "Balloon",
+					"name": "气球",
+					"ac": 12,
+					"hp": 75,
+					"entries": [
+						"如果其气球被摧毁，战斗气球将无法保持高度。"
+					]
+				}
+			],
+			"movement": [
+				{
+					"ENG_name": "Propeller",
+					"name": "螺旋桨",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "每受到25点伤害，速度减少5尺",
+					"speed": [
+						{
+							"mode": "air",
+							"entries": [
+								"80尺；逆风飞行时50尺；顺风飞行时100尺"
+							]
+						}
+					]
+				}
+			],
+			"weapon": [
+				{
+					"ENG_name": "Green Flame Arbalester",
+					"name": "绿焰劲弩",
+					"ac": 15,
+					"hp": 75,
+					"entries": [
+						"{@atk rw} 命中{@hit 8}，射程200/800尺（无法命中60尺内的目标），单一目标。{@h}16（{@damage 3d10}）点穿刺伤害和22（{@damage 4d10}）点火焰伤害。若攻击未命中，由DM决定劲弩飞矢的落点。落点10尺内的每个生物必须进行一次{@dc 15}的敏捷豁免检定以躲避飞矢的爆炸，豁免失败将受到5（{@damage 1d10}）点穿刺伤害和5（{@damage 1d10}）点火焰伤害。"
+					]
+				},
+				{
+					"ENG_name": "Harpoon Gun",
+					"name": "鱼叉枪",
+					"count": 3,
+					"ac": 15,
+					"hp": 50,
+					"entries": [
+						"{@atk rw} 命中{@hit 8}，射程120/480尺，单一目标。{@h}11（{@damage 2d10}）点穿刺伤害，且目标陷入{@condition 受擒}状态（逃脱{@dc 16}）。擒抱结束前，目标的速度减半，且无法远离战斗气球。战斗气球的每台鱼叉枪可擒抱一个目标。当其通过鱼叉枪攻击使一个或多个目标处于{@condition 受擒}状态时，战斗气球的速度不减半。"
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 1,
+				"2": 10,
+				"3": 20
+			},
+			"action": [
+				"在战斗气球的回合，如果它有二十名或更多船员，可以执行3个动作；如果有十名或更多船员，可以执行2个动作；如果船员少于十名，则只能执行1个动作（从以下选项中选择）。如果没有剩余船员，则无法执行任何动作。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Fire Ballista",
+							"name": "火焰弩炮",
+							"type": "item",
+							"entry": "战斗气球可以发射其鱼叉枪。"
+						},
+						{
+							"ENG_name": "Fire Green Flame Arbalester",
+							"name": "绿焰劲弩开火",
+							"type": "item",
+							"entry": "战斗气球可以发射其绿焰劲弩"
+						},
+						{
+							"ENG_name": "Move",
+							"name": "移动",
+							"type": "item",
+							"entry": "战斗气球可以使用其舵操控螺旋桨移动。如果战斗气球进入一个大型或更小生物的空间，该生物会被自动推至战斗气球空间的边缘。该生物还必须成功通过{@dc 15}的敏捷豁免检定，否则受到5（{@damage 1d10}）点钝击伤害。"
+						},
+						{
+							"ENG_name": "Harpoon Haul",
+							"name": "鱼叉拖拉",
+							"type": "item",
+							"entry": "战斗气球可以将每个被它{@condition 受擒}的目标向战斗气球方向拉动最多30尺。"
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Bombard",
+			"name": "炮舰",
+			"source": "AAG",
+			"page": 26,
+			"vehicleType": "SPELLJAMMER",
+			"dimensions": [
+				"140尺",
+				"30 尺"
+			],
+			"terrain": [
+				"空间",
+				"海洋"
+			],
+			"capCrew": 12,
+			"capCargo": 150,
+			"cost": 5000000,
+			"pace": {
+				"fly": 4
+			},
+			"speed": {
+				"fly": 35
+			},
+			"hull": {
+				"ac": 15,
+				"acFrom": [
+					"木"
+				],
+				"hp": 300,
+				"dt": 20
+			},
+			"weapon": [
+				{
+					"ENG_name": "Ballistae",
+					"name": "弩炮",
+					"crew": 3,
+					"count": 2,
+					"ac": 15,
+					"hp": 50,
+					"costs": [
+						{
+							"cost": 5000,
+							"note": "弩炮"
+						},
+						{
+							"cost": 500,
+							"note": "弩矢"
+						}
+					],
+					"entries": [
+						"装填弩炮需要1个动作，瞄准需要1个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Bolt",
+							"name": "弩矢",
+							"entries": [
+								"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Giant Cannon",
+					"name": "巨炮",
+					"crew": 4,
+					"ac": 19,
+					"hp": 250,
+					"costs": [
+						{
+							"note": "火炮"
+						},
+						{
+							"cost": 100000,
+							"note": "巨炮炮弹"
+						}
+					],
+					"entries": [
+						"装载这门巨炮需要3个动作，发射它需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Cannon Ball",
+							"name": "炮弹",
+							"entries": [
+								"{@atk rw} 命中{@hit 6}，射程 600/2,400 尺，单一目标。{@h}88（{@damage 16d10}）点钝击伤害。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Damselfly Ship",
+			"name": "蜻蛉舰",
+			"source": "AAG",
+			"page": 26,
+			"vehicleType": "SPELLJAMMER",
+			"dimensions": [
+				"100 尺",
+				"20 尺"
+			],
+			"terrain": [
+				"空间"
+			],
+			"capCrew": 9,
+			"capCargo": 5,
+			"cost": 2000000,
+			"pace": {
+				"fly": 8
+			},
+			"speed": {
+				"fly": 70
+			},
+			"hull": {
+				"ac": 19,
+				"acFrom": [
+					"金属"
+				],
+				"hp": 200,
+				"dt": 15
+			},
+			"weapon": [
+				{
+					"ENG_name": "Ballista",
+					"name": "弩炮",
+					"crew": 3,
+					"ac": 15,
+					"hp": 50,
+					"costs": [
+						{
+							"cost": 5000,
+							"note": "弩炮"
+						},
+						{
+							"cost": 500,
+							"note": "弩矢"
+						}
+					],
+					"entries": [
+						"装载弩炮需要1个动作，瞄准需要1个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Bolt",
+							"name": "弩矢",
+							"entries": [
+								"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Mangonel",
+					"name": "投石机",
+					"crew": 4,
+					"ac": 15,
+					"hp": 100,
+					"costs": [
+						{
+							"cost": 10000,
+							"note": "投石机"
+						},
+						{
+							"note": "岩石"
+						}
+					],
+					"entries": [
+						"装载投石机需要2个动作，使用炮塔旋转器（随附甲板图上的区域2）瞄准需要1次行动，发射它也需要1次行动。"
+					],
+					"action": [
+						{
+							"ENG_name": "Mangonel Stone",
+							"name": "弹射投石",
+							"entries": [
+								"{@atk rw} 命中{@hit 5}，射程200/800尺（不能命中它60尺内的目标），单一目标。{@h}27（{@damage 5d10}）钝击伤害。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Demon Grinder",
+			"name": "恶魔粉碎者",
+			"source": "BGDIA",
+			"page": 219,
+			"vehicleType": "INFWAR",
+			"size": "G",
+			"weight": 12000,
+			"terrain": [
+				"大地"
+			],
+			"capCreature": 8,
+			"capCargo": 2000,
+			"speed": 100,
+			"str": 18,
+			"dex": 10,
+			"con": 18,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"hp": {
+				"hp": 200,
+				"dt": 10,
+				"mt": 20
+			},
+			"immune": [
+				"火焰",
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒",
+				"震慑",
+				"昏迷"
+			],
+			"trait": [
+				{
+					"ENG_name": "Crushing Wheels",
+					"name": "粉碎之轮",
+					"entries": [
+						"恶魔粉碎者可以穿过任何大型或更小生物的空间。当它这样做时，该生物必须成功通过{@dc 11}的敏捷豁免检定，否则受到22（{@damage 4d10}）钝击伤害并被击倒{@condition 倒地}。如果该生物已经处于{@condition 倒地}状态，则额外受到22（{@damage 4d10}）钝击伤害。此特性每回合对同一生物只能使用一次。"
+					]
+				},
+				{
+					"ENG_name": "Magic Weapons",
+					"name": "魔法武器",
+					"entries": [
+						"恶魔粉碎者的武器攻击是魔法攻击。"
+					]
+				},
+				{
+					"ENG_name": "Prone Deficiency",
+					"name": "倒地缺陷",
+					"entries": [
+						"如果恶魔粉碎者翻滚并陷入{@condition 倒地}状态，它将无法自行恢复并保持{@condition 失能}状态，直到被翻转回直立位置。"
+					]
+				}
+			],
+			"actionStation": [
+				{
+					"ENG_name": "Helm (Requires 1 Crew and Grants Three-Quarters Cover)",
+					"name": "驾驶室（需要1名成员并提供四分之三掩护）",
+					"entries": [
+						"驾驶并操控恶魔粉碎者。"
+					]
+				},
+				{
+					"ENG_name": "Chomper (Requires 1 Crew and Grants Half Cover)",
+					"name": "粉碎机（需要1名成员并提供半掩护）",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及5尺，单一目标。{@h}25 ({@damage 6d6 + 4}) 点穿刺伤害。如果目标因此伤害降至0生命值，如果目标因此伤害降至0生命值，则会被研磨成碎片，并从恶魔粉碎者两侧的管道喷吐而出。目标持有或携带的任何非魔法物品也会被摧毁。"
+					]
+				},
+				{
+					"ENG_name": "Wrecking Ball (Requires 1 Crew and Grants Half Cover)",
+					"name": "粉碎球（需要1名成员并提供半掩护）",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，触及15尺，单一目标。{@h}40（{@damage 8d8 + 4}）点钝击伤害。若目标是物件或建筑，则伤害翻倍。"
+					]
+				},
+				{
+					"ENG_name": "2 Harpoon Flingers (Each Station Requires 1 Crew and Grants Half Cover)",
+					"name": "2台鱼叉投射机（各需要1名成员并提供半掩护）",
+					"entries": [
+						"{@atk rw} 命中{@hit 5}，射程 120 尺，单一目标。{@h}9 ({@damage 2d8}) 点穿刺伤害。"
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Devil's Ride",
+			"name": "魔鬼座驾",
+			"source": "BGDIA",
+			"page": 218,
+			"vehicleType": "INFWAR",
+			"size": "L",
+			"weight": 500,
+			"terrain": [
+				"大地"
+			],
+			"capCreature": 1,
+			"capCargo": 100,
+			"speed": 120,
+			"str": 14,
+			"dex": 18,
+			"con": 12,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"hp": {
+				"hp": 30,
+				"dt": 5,
+				"mt": 10
+			},
+			"immune": [
+				"火焰",
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒",
+				"震慑",
+				"昏迷"
+			],
+			"trait": [
+				{
+					"ENG_name": "Jump",
+					"name": "跳跃术",
+					"entries": [
+						"如果魔鬼座驾以直线移动了至少30尺，它可以在跳跃过峡谷、沟壑或其他缺口时腾空最多60尺的距离。跳跃中每腾空1尺需消耗1尺的移动距离。"
+					]
+				},
+				{
+					"ENG_name": "Prone Deficiency",
+					"name": "倒地缺陷",
+					"entries": [
+						"如果魔鬼座驾陷入{@condition 倒地}状态，它将无法自行起身并保持{@condition 失能}状态，直到被外力扶正。"
+					]
+				},
+				{
+					"ENG_name": "Stunt",
+					"name": "特技",
+					"entries": [
+						"在它的回合中，魔鬼座驾的驾驶者可以消耗10尺移动力来执行一次自由载具特技，例如翘轮或烧胎。在执行特技前，魔鬼座驾必须沿直线移动至少10尺。如果驾驶者使用机车的敏捷属性通过{@dc 10}的敏捷检定，则特技成功。否则，驾驶者无法执行特技且在其下个回合开始前不能尝试其他特技。如果检定失败且差值达到5或更多，魔鬼座驾及所有骑乘它的生物会立即陷入{@condition 倒地}状态，机车失控并完全停止。"
+					]
+				}
+			],
+			"actionStation": [
+				{
+					"ENG_name": "Helm (Requires 1 Crew and Grants Half Cover)",
+					"name": "驾驶室（需要1名成员并提供半掩护）",
+					"entries": [
+						"驾驶并操控魔鬼座驾。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Juke",
+					"name": "假动作",
+					"type": "entries",
+					"entries": [
+						"如果魔鬼座驾能够移动，驾驶者可以用它的反应使魔鬼座驾在敏捷豁免检定上获得优势。"
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Flying Fish Ship",
+			"name": "飞鱼舰",
+			"source": "AAG",
+			"page": 26,
+			"vehicleType": "SPELLJAMMER",
+			"dimensions": [
+				"120尺",
+				"30 尺"
+			],
+			"terrain": [
+				"空间",
+				"海洋"
+			],
+			"capCrew": 10,
+			"capCargo": 13,
+			"cost": 2000000,
+			"pace": {
+				"fly": "4½"
+			},
+			"speed": {
+				"fly": 40
+			},
+			"hull": {
+				"ac": 15,
+				"acFrom": [
+					"木"
+				],
+				"hp": 250,
+				"dt": 15
+			},
+			"weapon": [
+				{
+					"ENG_name": "Ballista",
+					"name": "弩炮",
+					"crew": 3,
+					"ac": 15,
+					"hp": 50,
+					"costs": [
+						{
+							"cost": 5000,
+							"note": "弩炮"
+						},
+						{
+							"cost": 500,
+							"note": "弩矢"
+						}
+					],
+					"entries": [
+						"装载弩炮需要1个动作，瞄准需要1个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Bolt",
+							"name": "弩矢",
+							"entries": [
+								"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Mangonel",
+					"name": "投石机",
+					"crew": 5,
+					"ac": 15,
+					"hp": 100,
+					"costs": [
+						{
+							"cost": 10000,
+							"note": "投石机"
+						},
+						{
+							"note": "岩石"
+						}
+					],
+					"entries": [
+						"装载投石机需要2个动作，瞄准需要2个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Mangonel Stone",
+							"name": "弹射投石",
+							"entries": [
+								"{@atk rw} 命中{@hit 5}，射程200/800尺（不能命中它60尺内的目标），单一目标。{@h}27（{@damage 5d10}）钝击伤害。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Galley",
+			"name": "桨帆船",
+			"source": "GoS",
+			"page": 187,
+			"vehicleType": "SHIP",
+			"size": "G",
+			"dimensions": [
+				"130尺",
+				"20 尺"
+			],
+			"terrain": [
+				"海洋"
+			],
+			"capCrew": 80,
+			"capPassenger": 40,
+			"capCargo": 150,
+			"pace": 4,
+			"str": 24,
+			"dex": 4,
+			"con": 20,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"力竭",
+				"恐慌",
+				"失能",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"震慑",
+				"昏迷"
+			],
+			"hull": {
+				"ac": 15,
+				"hp": 500,
+				"dt": 20
+			},
+			"control": [
+				{
+					"ENG_name": "Helm",
+					"name": "舵板",
+					"ac": 16,
+					"hp": 50,
+					"entries": [
+						"移动至其一个移动组件的速度，并进行一次90度转向。如果舵被摧毁，桨帆船无法转向。"
+					]
+				}
+			],
+			"movement": [
+				{
+					"ENG_name": "Oars",
+					"name": "桨",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "每受到25点伤害，速度减少5尺",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"30尺（至少需要40名船员）"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Sails",
+					"name": "帆",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "每受到25点伤害，速度减少10尺",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"35尺；逆风航行时15尺；顺风航行时50尺"
+							]
+						}
+					]
+				}
+			],
+			"weapon": [
+				{
+					"ENG_name": "Ballistas",
+					"name": "弩炮",
+					"count": 4,
+					"ac": 15,
+					"hp": 50,
+					"entries": [
+						"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Mangonels",
+					"name": "投石机",
+					"count": 2,
+					"ac": 15,
+					"hp": 100,
+					"entries": [
+						"{@atk rw} 命中{@hit 5}，射程200/800尺（不能命中距离它60尺以内的目标），单一目标。{@h}27（{@damage 5d10}）点钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Naval Ram",
+					"name": "撞角",
+					"ac": 20,
+					"hp": 100,
+					"dt": 10,
+					"entries": [
+						"桨帆船在冲撞生物或物件时，所有与撞击相关的豁免检定具有优势。撞击造成的任何伤害将作用于撞角而非船舶本身。若其他器皿撞击该桨帆船，则这些增益不适用。"
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 3,
+				"2": 20,
+				"3": 40
+			},
+			"action": [
+				"在它的回合中，桨帆船可以选择以下选项中的3个动作。如果船员少于四十名，则只能采取2个动作；如果船员少于二十名，则只能采取1个动作。如果船员少于三名，则无法采取这些动作。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Fire Ballistas",
+							"name": "火焰弩炮",
+							"type": "item",
+							"entry": "桨帆船可以发射它的{@object 弩炮||弩炮}（DMG，第8章）。"
+						},
+						{
+							"ENG_name": "Fire Mangonels",
+							"name": "火焰投石机",
+							"type": "item",
+							"entry": "桨帆船可以发射它的{@object 投石机||投石机}（DMG，第8章）。"
+						},
+						{
+							"ENG_name": "Move",
+							"name": "移动",
+							"type": "item",
+							"entry": "桨帆船可以使用其舵通过桨或帆来移动。作为这一移动的一部分，它可以使用其撞角。"
+						}
+					]
+				}
+			],
+			"tokenCredit": "Castro Lorenzo",
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Hammerhead Ship",
+			"name": "锤头鲨舰",
+			"source": "AAG",
+			"page": 32,
+			"otherSources": [
+				{
+					"source": "SjA"
+				}
+			],
+			"vehicleType": "SPELLJAMMER",
+			"dimensions": [
+				"250尺",
+				"25 尺"
+			],
+			"terrain": [
+				"空间",
+				"海洋"
+			],
+			"capCrew": 15,
+			"capCargo": 30,
+			"cost": 4000000,
+			"pace": {
+				"fly": 4
+			},
+			"speed": {
+				"fly": 35
+			},
+			"hull": {
+				"ac": 15,
+				"acFrom": [
+					"木"
+				],
+				"hp": 400,
+				"dt": 15
+			},
+			"weapon": [
+				{
+					"ENG_name": "Ballista",
+					"name": "弩炮",
+					"ac": 15,
+					"hp": 50,
+					"crew": 3,
+					"costs": [
+						{
+							"cost": 5000,
+							"note": "弩炮"
+						},
+						{
+							"cost": 500,
+							"note": "弩矢"
+						}
+					],
+					"entries": [
+						"装载弩炮需要1个动作，瞄准需要1个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Bolt",
+							"name": "弩矢",
+							"entries": [
+								"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Mangonels",
+					"name": "投石机",
+					"count": 2,
+					"ac": 15,
+					"hp": 100,
+					"crew": 5,
+					"costs": [
+						{
+							"cost": 10000,
+							"note": "投石机"
+						},
+						{
+							"note": "岩石"
+						}
+					],
+					"entries": [
+						"装载投石机需要2个动作，瞄准需要2个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Mangonel Stone",
+							"name": "弹射投石",
+							"entries": [
+								"{@atk rw} 命中{@hit 5}，射程200/800尺（不能命中距离它60尺以内的目标），单一目标。{@h}27（{@damage 5d10}）点钝击伤害。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Blunt Ram",
+					"name": "钝击撞角",
+					"costs": [
+						{
+							"note": "包含在舰船的价格中"
+						}
+					],
+					"entries": [
+						"当舰船撞击另一个物体或超巨型生物时，舰船的法驱者可以进行以下攻击（详见《星界冒险者指南》第二章中的\"碰撞\"条目）。"
+					],
+					"action": [
+						{
+							"ENG_name": "Blunt Ram",
+							"name": "钝击撞角",
+							"entries": [
+								"{@atk mw} 命中{@hit 8}，射程0尺，单一物体或超巨型生物。{@h}88（{@damage 16d10}）点钝击伤害。锤头鲨舰受到一半伤害并完全停止。{@m}此次攻击不造成伤害，目标移动到最近未被占据且不在锤头鲨舰移动路径上的空间，若锤头鲨舰仍有剩余移动力则可继续移动。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Keelboat",
+			"name": "龙骨船",
+			"source": "GoS",
+			"page": 188,
+			"vehicleType": "SHIP",
+			"size": "G",
+			"dimensions": [
+				"60尺",
+				"20 尺"
+			],
+			"terrain": [
+				"海洋"
+			],
+			"capCrew": 3,
+			"capPassenger": 4,
+			"capCargo": 0.5,
+			"pace": 3,
+			"str": 16,
+			"dex": 7,
+			"con": 13,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"力竭",
+				"恐慌",
+				"失能",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"震慑",
+				"昏迷"
+			],
+			"hull": {
+				"ac": 15,
+				"hp": 100,
+				"dt": 10
+			},
+			"control": [
+				{
+					"ENG_name": "Helm",
+					"name": "舵板",
+					"ac": 12,
+					"hp": 50,
+					"entries": [
+						"移动至其一个移动组件的速度，并进行一次90度转向。如果舵被摧毁，龙骨船将无法转向。"
+					]
+				}
+			],
+			"movement": [
+				{
+					"ENG_name": "Oars",
+					"name": "桨",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "每受到25点伤害，速度减少5尺",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"20 尺"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Sails",
+					"name": "帆",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "每受到20点伤害，速度减少5尺",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"25尺；逆风航行时15尺；顺风航行时35尺。"
+							]
+						}
+					]
+				}
+			],
+			"weapon": [
+				{
+					"ENG_name": "Ballista",
+					"name": "弩炮",
+					"ac": 15,
+					"hp": 50,
+					"entries": [
+						"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。",
+						"龙骨船通常只在战备状态时才配备弩炮。"
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 1,
+				"2": 2
+			},
+			"action": [
+				"龙骨船在自己的回合可以执行2个动作，从以下选项中选择。如果只有一名船员则只能执行1个动作。若没有船员则无法执行这些动作。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Fire Ballista",
+							"name": "火焰弩炮",
+							"type": "item",
+							"entry": "龙骨船可以发射其{@object 弩炮}（DMG，第8章）。"
+						},
+						{
+							"ENG_name": "Move",
+							"name": "移动",
+							"type": "item",
+							"entry": "龙骨船可以使用其舵通过桨或帆来移动。"
+						}
+					]
+				}
+			],
+			"tokenCredit": "Harvey W. Johnson",
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Lamprey Ship",
+			"name": "七鳃鳗舰",
+			"source": "AAG",
+			"page": 34,
+			"vehicleType": "SPELLJAMMER",
+			"dimensions": [
+				"115尺",
+				"25 尺"
+			],
+			"terrain": [
+				"空间",
+				"海洋"
+			],
+			"capCrew": 15,
+			"capCargo": 6,
+			"cost": 2000000,
+			"pace": {
+				"fly": 4
+			},
+			"speed": {
+				"fly": 35
+			},
+			"hull": {
+				"ac": 15,
+				"acFrom": [
+					"木"
+				],
+				"hp": 250,
+				"dt": 15
+			},
+			"weapon": [
+				{
+					"ENG_name": "Ballistae",
+					"name": "弩炮",
+					"crew": 3,
+					"count": 4,
+					"ac": 15,
+					"hp": 50,
+					"costs": [
+						{
+							"cost": 5000,
+							"note": "弩炮"
+						},
+						{
+							"cost": 500,
+							"note": "弩矢"
+						}
+					],
+					"entries": [
+						"装填弩炮需要1个动作，瞄准需要1个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Bolt",
+							"name": "弩矢",
+							"entries": [
+								"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Grappling Jaws",
+					"name": "抓握钩爪",
+					"crew": 1,
+					"costs": [
+						{
+							"note": "包含在舰船的价格中"
+						}
+					],
+					"entries": [
+						"进行一次抓握钩爪攻击需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Grappling Jaws",
+							"name": "抓握钩爪",
+							"entries": [
+								"{@atk mw} 命中{@hit 6}，触及10尺，一艘舰船或超巨型生物。{@h}22（{@damage 4d10}）点穿刺伤害，且七鳃鳗舰和目标的速度变为0，直到擒抱结束。作为一个动作，一个生物可以使用抓握钩爪的控制装置来释放目标。否则，当目标或七鳃鳗舰的生命值降至0时效果结束。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Living Ship",
+			"name": "生物舰",
+			"source": "AAG",
+			"page": 36,
+			"vehicleType": "SPELLJAMMER",
+			"dimensions": [
+				"80尺",
+				"20 尺"
+			],
+			"terrain": [
+				"空间",
+				"海洋"
+			],
+			"capCrew": 5,
+			"capCrewNote": "（外加{@creature 树人}）",
+			"capCargo": 10,
+			"cost": 2500000,
+			"pace": {
+				"fly": "4½"
+			},
+			"speed": {
+				"fly": 40
+			},
+			"hull": {
+				"ac": 15,
+				"acFrom": [
+					"木"
+				],
+				"hp": 250,
+				"dt": 15
+			},
+			"weapon": [
+				{
+					"ENG_name": "Ballista",
+					"name": "弩炮",
+					"crew": 3,
+					"ac": 15,
+					"hp": 50,
+					"costs": [
+						{
+							"cost": 5000,
+							"note": "弩炮"
+						},
+						{
+							"cost": 500,
+							"note": "弩矢"
+						}
+					],
+					"entries": [
+						"装载弩炮需要1个动作，瞄准需要1个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Bolt",
+							"name": "弩矢",
+							"entries": [
+								"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Longship",
+			"name": "单帆长船",
+			"source": "GoS",
+			"page": 190,
+			"vehicleType": "SHIP",
+			"size": "G",
+			"dimensions": [
+				"70尺",
+				"20 尺"
+			],
+			"terrain": [
+				"海洋"
+			],
+			"capCrew": 40,
+			"capPassenger": 100,
+			"capCargo": 10,
+			"pace": 5,
+			"str": 20,
+			"dex": 6,
+			"con": 17,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"力竭",
+				"恐慌",
+				"失能",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"震慑",
+				"昏迷"
+			],
+			"hull": {
+				"ac": 15,
+				"hp": 300,
+				"dt": 15
+			},
+			"control": [
+				{
+					"ENG_name": "Helm",
+					"name": "舵板",
+					"ac": 16,
+					"hp": 50,
+					"entries": [
+						"移动至其一个移动组件的速度，并进行一次90度转向。若舵被摧毁，单帆长船无法转向。"
+					]
+				}
+			],
+			"movement": [
+				{
+					"ENG_name": "Oars",
+					"name": "桨",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "每受到25点伤害，速度减少5尺",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"20尺（至少需要20名船员）"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Sails",
+					"name": "帆",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "每受到25点伤害，速度减少10尺",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"45尺；逆风航行时15尺；顺风航行时60尺。"
+							]
+						}
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 1
+			},
+			"action": [
+				"在它的回合中，单帆长船可以采取以下移动动作。如果没有船员则无法采取此动作。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Move",
+							"name": "移动",
+							"type": "item",
+							"entry": "单帆长船可以使用舵来操纵桨或帆移动。"
+						}
+					]
+				}
+			],
+			"tokenCredit": "OlgaRodinaARTS",
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Lyrandar Air Cruiser",
+			"name": "林兰德风巡舰",
+			"source": "EFA",
+			"page": 106,
+			"vehicleType": "ELEMENTAL_AIRSHIP",
+			"terrain": [
+				"空气"
+			],
+			"capCrew": 10,
+			"capPassenger": 40,
+			"capCargo": 2,
+			"cost": 5000000,
+			"pace": {
+				"fly": 10
+			},
+			"speed": {
+				"fly": {
+					"number": 100,
+					"condition": "[悬浮]"
+				},
+				"canHover": true
+			},
+			"hull": {
+				"ac": 16,
+				"hp": 600,
+				"dt": 20
+			},
+			"weapon": [
+				{
+					"ENG_name": "Lightning Turret",
+					"name": "闪电炮塔",
+					"size": [
+						"M"
+					],
+					"count": 6,
+					"ac": 17,
+					"hp": 50,
+					"crew": 1,
+					"entries": [
+						"这座炮塔可以旋转发射闪电冲击，并能容纳最多一个中型生物。",
+						"炮塔内的生物对来自外部的攻击和其他效应具有{@table 掩护|XPHB|四分之三掩护}。在炮塔内时，生物可以采取闪电冲击动作来瞄准并发射炮塔。"
+					],
+					"action": [
+						{
+							"ENG_name": "Lightning Blast (Requires Elemental Core)",
+							"name": "闪电爆发（需要元素核心）",
+							"entries": [
+								"{@atkr rw} {@hit 9} 命中，射程 80/320 尺 {@h}22（{@damage 4d10}）闪电伤害。"
+							]
+						}
+					]
+				}
+			],
+			"station": [
+				{
+					"ENG_name": "Helm",
+					"name": "舵板",
+					"size": [
+						"S"
+					],
+					"ac": 15,
+					"hp": 20,
+					"crew": 1,
+					"entries": [
+						"飞艇的舵板由一个专门的轮子、拉杆和其他控制装置组成。一次只能有一个生物操作这个站。",
+						"飞行员（操作飞艇舵板的船员）必须拥有{@feat 暴风龙纹|EFA}才能与控制器交互。在操作舵板时，船员可以执行该站的驱动和换挡引擎动作。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Tilt and Roll",
+									"name": "倾斜与掷骰",
+									"type": "entries",
+									"entries": [
+										"当执行舵板的驾驶动作时，一名船员可以消耗等于船舶飞行速度一半的移动力来使船舶绕轴翻转，将其倒置或扶正。所有未固定的船舶上的生物和物件都会在船舶以这种方式移动时坠落。成功通过{@dc 15}敏捷豁免检定的生物可以擒拿触及范围内的固定物件来避免坠落。"
+									]
+								}
+							]
+						}
+					],
+					"action": [
+						{
+							"ENG_name": "Drive (Requires Mark of Storm)",
+							"name": "舵板（需要暴风龙纹）",
+							"entries": [
+								"该船舶朝任意方向移动最多等于其飞行速度的距离。"
+							]
+						},
+						{
+							"ENG_name": "Shift Engine (Requires Mark of Storm)",
+							"name": "舵板引擎（需要暴风龙纹）",
+							"entries": [
+								"船舶的元素生物核心被压制或重新启动。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Shield Station",
+					"name": "护盾站",
+					"size": [
+						"L"
+					],
+					"ac": 15,
+					"hp": 25,
+					"crew": 2,
+					"entries": [
+						"该站位于飞艇的尾部控制装置上，并增强船舶的风势防护。它最多可容纳两个中型生物。",
+						"操作此站的船员可以采取校准动作，然后采取激活盾牌动作。船舶一次只能从一个护盾站获得一个AC加值增益。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Mark of Warding",
+									"name": "警戒龙纹",
+									"type": "entries",
+									"entries": [
+										"如果具有{@feat 警戒龙纹|EFA}的生物占据此船员站，该生物可以以一个{@variantrule 附赠动作|XPHB}执行激活盾牌动作。"
+									]
+								}
+							]
+						}
+					],
+					"action": [
+						{
+							"ENG_name": "Calibrate (Requires Elemental Core)",
+							"name": "校准（需要元素核心）",
+							"entries": [
+								"此动作准备船舶的风势防护以成为盾牌，启用激活盾牌动作。"
+							]
+						},
+						{
+							"ENG_name": "Activate Shields (Requires Elemental Core and Calibrate)",
+							"name": "激活盾牌（需要元素核心和校准）",
+							"entries": [
+								"该船舶及其船员站获得+5的AC加值，且所有在船舶甲板上的生物具有{@table 掩护|XPHB|半身掩护}。这些效应持续1分钟，直到该站被摧毁，或直到采取此动作的船员失去专注或离开该站。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Lyrandar Skyskiff",
+			"name": "林兰德天空轻舟",
+			"source": "EFA",
+			"page": 107,
+			"vehicleType": "ELEMENTAL_AIRSHIP",
+			"terrain": [
+				"空气"
+			],
+			"capCrew": 2,
+			"capPassenger": 2,
+			"capCargo": 0.5,
+			"cost": 2000000,
+			"pace": {
+				"fly": 7
+			},
+			"speed": {
+				"fly": {
+					"number": 70,
+					"condition": "[悬浮]"
+				},
+				"canHover": true
+			},
+			"hull": {
+				"ac": 18,
+				"hp": 150,
+				"dt": 5
+			},
+			"weapon": [
+				{
+					"ENG_name": "Tow Cable",
+					"name": "拖曳缆绳",
+					"size": [
+						"S"
+					],
+					"ac": 10,
+					"hp": 40,
+					"crew": 1,
+					"entries": [
+						"这个站由一个紧凑的爪钩、加固的绳索和发射器组成。一次只能有一个生物操作这个站。操作这个站的船员可以采取鱼叉和拖曳动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Harpoon",
+							"name": "鱼叉",
+							"entries": [
+								"{@atkr rw} {@hit 6}，射程 50/100 尺，{@h}5（{@damage 2d4}）穿刺伤害，且目标被鱼叉命中。被鱼叉命中期间，目标和船舶不能移动超过彼此 100 尺，且如果目标是中型或更小的生物，它获得{@condition 受擒|XPHB}状态。操作此站的船员可以释放被鱼叉命中的目标（无需动作）。"
+							]
+						},
+						{
+							"ENG_name": "Reel (Requires Elemental Core)",
+							"name": "拖曳（需要元素生物核心）",
+							"entries": [
+								"一个被此站的鱼叉擒住的目标会沿直线被拉向船舶最多50尺。"
+							]
+						}
+					]
+				}
+			],
+			"station": [
+				{
+					"ENG_name": "Helm",
+					"name": "舵板",
+					"size": [
+						"S"
+					],
+					"ac": 15,
+					"hp": 20,
+					"crew": 1,
+					"entries": [
+						"飞艇的舵板由一个专门的轮子、拉杆和其他控制装置组成。一次只能有一个生物操作这个站。",
+						"飞行员（操作飞艇舵板的船员）必须拥有{@feat 暴风龙纹|EFA}才能与控制器交互。在操作舵板时，船员可以执行该站的驱动和换挡引擎动作。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Tilt and Roll",
+									"name": "倾斜与掷骰",
+									"type": "entries",
+									"entries": [
+										"当执行舵板的驾驶动作时，一名船员可以消耗等于船舶飞行速度一半的移动力来使船舶绕轴翻转，将其倒置或扶正。所有未固定的船舶上的生物和物件都会在船舶以这种方式移动时坠落。成功通过{@dc 15}敏捷豁免检定的生物可以擒拿触及范围内的固定物件来避免坠落。"
+									]
+								}
+							]
+						}
+					],
+					"action": [
+						{
+							"ENG_name": "Drive (Requires Mark of Storm)",
+							"name": "舵板（需要暴风龙纹）",
+							"entries": [
+								"该船舶朝任意方向移动最多等于其飞行速度的距离。"
+							]
+						},
+						{
+							"ENG_name": "Shift Engine (Requires Mark of Storm)",
+							"name": "舵板引擎（需要暴风龙纹）",
+							"entries": [
+								"船舶的元素生物核心被压制或重新启动。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Mechanical Beholder",
+			"name": "机械眼魔",
+			"source": "AI",
+			"page": 219,
+			"vehicleType": "SHIP",
+			"size": "H",
+			"dimensions": [
+				"15 尺",
+				"15 尺"
+			],
+			"terrain": [
+				"大地",
+				"海洋",
+				"空气"
+			],
+			"capCrew": 1,
+			"capPassenger": 5,
+			"capCargo": "船员和乘客的常规装备",
+			"pace": 3,
+			"str": 18,
+			"dex": 12,
+			"con": 18,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"力竭",
+				"恐慌",
+				"失能",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"震慑",
+				"昏迷"
+			],
+			"hull": {
+				"ac": 18,
+				"hp": 200,
+				"dt": 10
+			},
+			"control": [
+				{
+					"ENG_name": "Helm",
+					"name": "舵板",
+					"ac": 16,
+					"hp": 25,
+					"entries": [
+						"移动至船只的魔法推进装置的速度，并可进行一次90度转弯。只有当船体受到100点或更多伤害时，舵才能被攻击。如果舵被摧毁，机械眼魔将无法移动。"
+					]
+				}
+			],
+			"movement": [
+				{
+					"ENG_name": "Magical Propulsion Unit",
+					"name": "魔法推进装置",
+					"ac": 16,
+					"hp": 100,
+					"hpNote": "每受到25点伤害，速度减少5尺",
+					"speed": [
+						{
+							"mode": "magical",
+							"entries": [
+								"掘穴30尺，飞行30尺（悬浮），游泳30尺"
+							]
+						}
+					]
+				}
+			],
+			"weapon": [
+				{
+					"ENG_name": "Eye Ray Tentacles",
+					"name": "眼波射线触手",
+					"count": 6,
+					"ac": 14,
+					"hp": 50,
+					"entries": [
+						"{@atk g} 机械眼魔向最多三个船员可见且在其120尺范围内的目标发射以下魔法眼波射线。",
+						{
+							"type": "list",
+							"style": "list-hang-notitle",
+							"items": [
+								{
+									"ENG_name": "Disintegration Ray",
+									"name": "解离射线",
+									"type": "item",
+									"entry": "如果目标是生物，它必须成功通过{@dc 15}的敏捷豁免检定，否则受到18（{@damage 4d8}）点力场伤害。如果此伤害将生物的生命值降至0，它的身体会化为一堆细小的灰色尘埃。如果目标是大型或更小的非魔法物件或魔法力场造物，它会被直接解离而无需进行豁免检定。如果目标是巨型或更大的物件或魔法力场造物，此射线会解离其10尺立方的部分。"
+								},
+								{
+									"ENG_name": "Enervation Ray",
+									"name": "衰弱射线",
+									"type": "item",
+									"entry": "目标生物必须进行一次{@dc 15}的体质豁免检定，豁免失败将受到18（{@damage 4d8}）点暗蚀伤害，豁免成功则只受到一半伤害。"
+								},
+								{
+									"ENG_name": "Paralyzing Ray",
+									"name": "麻痹射线",
+									"type": "item",
+									"entry": "目标生物必须成功通过{@dc 15}的体质豁免检定否则陷入{@condition 麻痹}状态1分钟。目标可以在其每个回合结束时重复进行豁免检定，成功则自身麻痹状态终止。"
+								}
+							]
+						}
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 1
+			},
+			"action": [
+				"机械眼魔在自己的回合可以执行1个动作。若没有船员则无法执行任何动作。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Eye Rays",
+							"name": "眼波射线",
+							"type": "item",
+							"entry": "机械眼魔可以使用它的眼波射线触手。"
+						},
+						{
+							"ENG_name": "Move",
+							"name": "移动",
+							"type": "item",
+							"entry": "机械眼魔可以使用它的船舵，通过其魔法推进装置移动。"
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Nautiloid",
+			"name": "鹦鹉螺",
+			"source": "AAG",
+			"page": 38,
+			"vehicleType": "SPELLJAMMER",
+			"dimensions": [
+				"180尺",
+				"30 尺"
+			],
+			"terrain": [
+				"空间"
+			],
+			"capCrew": 20,
+			"capCargo": 17,
+			"cost": 5000000,
+			"pace": {
+				"fly": "4½"
+			},
+			"speed": {
+				"fly": 40
+			},
+			"hull": {
+				"ac": 15,
+				"acFrom": [
+					"木"
+				],
+				"hp": 400,
+				"dt": 15
+			},
+			"weapon": [
+				{
+					"ENG_name": "Ballistae",
+					"name": "弩炮",
+					"crew": 3,
+					"count": 4,
+					"ac": 15,
+					"hp": 50,
+					"costs": [
+						{
+							"cost": 5000,
+							"note": "弩炮"
+						},
+						{
+							"cost": 500,
+							"note": "弩矢"
+						}
+					],
+					"entries": [
+						"装填弩炮需要1个动作，瞄准需要1个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Bolt",
+							"name": "弩矢",
+							"entries": [
+								"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Mangonel",
+					"name": "投石机",
+					"crew": 5,
+					"ac": 15,
+					"hp": 100,
+					"costs": [
+						{
+							"cost": 10000,
+							"note": "投石机"
+						},
+						{
+							"note": "岩石"
+						}
+					],
+					"entries": [
+						"装载投石机需要2个动作，瞄准需要2个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Mangonel Stone",
+							"name": "弹射投石",
+							"entries": [
+								"{@atk rw} 命中{@hit 5}，射程200/800尺（不能命中它60尺内的目标），单一目标。{@h}27（{@damage 5d10}）钝击伤害。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Tentacles",
+					"name": "触须",
+					"costs": [
+						{
+							"note": "包含在舰船的价格中"
+						}
+					],
+					"entries": [
+						"作为一个动作，舰船的法驱者可以用舰船的触须发动以下攻击之一。"
+					],
+					"action": [
+						{
+							"ENG_name": "Grappling Tentacles",
+							"name": "抓握触须",
+							"entries": [
+								"{@atk mw} 命中{@hit 8}，触及30尺，一个巨型或超巨型目标。{@h}22（{@damage 4d10}）点钝击伤害，且鹦鹉螺的速度降为0，直到其法驱者用一个动作释放目标。如果目标是生物，则其陷入{@condition 受擒}状态（逃脱{@dc 16}）。如果目标是另一艘船舶，则目标的速度降为0直到鹦鹉螺释放它，或直到目标或鹦鹉螺的生命值降至0。"
+							]
+						},
+						{
+							"ENG_name": "Teleport",
+							"name": "传送",
+							"entries": [
+								"{@atk ms} 命中{@hit 8}，触及30尺，单一生物。{@h}目标必须成功通过{@dc 15}的体质豁免检定，否则将被传送到鹦鹉螺上的一个法驱者可见的未被占据空间。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Nightspider",
+			"name": "夜蛛",
+			"source": "AAG",
+			"page": 40,
+			"vehicleType": "SPELLJAMMER",
+			"dimensions": [
+				"175尺",
+				"50尺"
+			],
+			"terrain": [
+				"空间"
+			],
+			"capCrew": 25,
+			"capCargo": 50,
+			"cost": 5000000,
+			"pace": {
+				"fly": "4½"
+			},
+			"speed": {
+				"fly": 40
+			},
+			"hull": {
+				"ac": 19,
+				"acFrom": [
+					"金属"
+				],
+				"hp": 300,
+				"dt": 15
+			},
+			"weapon": [
+				{
+					"ENG_name": "Ballistae",
+					"name": "弩炮",
+					"crew": 3,
+					"count": 4,
+					"ac": 15,
+					"hp": 50,
+					"costs": [
+						{
+							"cost": 5000,
+							"note": "弩炮"
+						},
+						{
+							"cost": 500,
+							"note": "弩矢"
+						}
+					],
+					"entries": [
+						"装填弩炮需要1个动作，瞄准需要1个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Bolt",
+							"name": "弩矢",
+							"entries": [
+								"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Mangonel",
+					"name": "投石机",
+					"crew": 5,
+					"ac": 15,
+					"hp": 100,
+					"costs": [
+						{
+							"cost": 10000,
+							"note": "投石机"
+						},
+						{
+							"note": "岩石"
+						}
+					],
+					"entries": [
+						"装载投石机需要2个动作，瞄准需要2个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Mangonel Stone",
+							"name": "弹射投石",
+							"entries": [
+								"{@atk rw} 命中{@hit 5}，射程200/800尺（不能命中它60尺内的目标），单一目标。{@h}27（{@damage 5d10}）钝击伤害。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Planar Raider",
+			"name": "位面掠夺者",
+			"source": "MTF",
+			"page": 90,
+			"vehicleType": "SHIP",
+			"size": "H",
+			"dimensions": [
+				"120尺",
+				"40 尺"
+			],
+			"terrain": [
+				"空气"
+			],
+			"capCrew": 10,
+			"capPassenger": 100,
+			"pace": 12,
+			"weapon": [
+				{
+					"ENG_name": "Ballistas",
+					"name": "弩炮",
+					"count": 2,
+					"entries": [
+						"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Catapult",
+					"name": "弹射术",
+					"entries": [
+						"{@atk rw} 命中{@hit 5}，射程200/800尺（不能命中它60尺内的目标），单一目标。{@h}27（{@damage 5d10}）钝击伤害。"
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Rowboat",
+			"name": "划艇",
+			"source": "GoS",
+			"page": 190,
+			"vehicleType": "SHIP",
+			"size": "L",
+			"dimensions": [
+				"10 尺",
+				"5 尺"
+			],
+			"terrain": [
+				"海洋"
+			],
+			"capCrew": 2,
+			"capPassenger": 2,
+			"capCargo": 0.25,
+			"pace": 3,
+			"str": 11,
+			"dex": 8,
+			"con": 11,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"力竭",
+				"恐慌",
+				"失能",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"震慑",
+				"昏迷"
+			],
+			"hull": {
+				"ac": 11,
+				"hp": 50
+			},
+			"movement": [
+				{
+					"ENG_name": "Oars",
+					"name": "桨",
+					"isControl": true,
+					"ac": 12,
+					"hp": 25,
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"15 尺",
+								"移动至多其速度的距离，可进行一次90度转向。若无桨，划艇的速度为0。"
+							]
+						}
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 1
+			},
+			"action": [
+				"在划艇的回合，它可以执行以下移动动作。如果没有船员，它无法执行此动作。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Move",
+							"name": "移动",
+							"type": "item",
+							"entry": "划艇可以使用它的桨移动。"
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Sailing Ship",
+			"name": "帆船",
+			"source": "GoS",
+			"page": 192,
+			"vehicleType": "SHIP",
+			"size": "G",
+			"dimensions": [
+				"100 尺",
+				"20 尺"
+			],
+			"terrain": [
+				"海洋"
+			],
+			"capCrew": 30,
+			"capPassenger": 20,
+			"capCargo": 100,
+			"pace": 5,
+			"str": 20,
+			"dex": 7,
+			"con": 17,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"力竭",
+				"恐慌",
+				"失能",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"震慑",
+				"昏迷"
+			],
+			"hull": {
+				"ac": 15,
+				"hp": 300,
+				"dt": 15
+			},
+			"control": [
+				{
+					"ENG_name": "Helm",
+					"name": "舵板",
+					"ac": 18,
+					"hp": 50,
+					"entries": [
+						"加速至多其帆的速度，进行一次90度的转向。如果舵被摧毁，船舶无法转向。"
+					]
+				}
+			],
+			"movement": [
+				{
+					"ENG_name": "Sails",
+					"name": "帆",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "每受到25点伤害，速度减少5尺",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"45尺；逆风航行时15尺；顺风航行时60尺。"
+							]
+						}
+					]
+				}
+			],
+			"weapon": [
+				{
+					"ENG_name": "Ballista",
+					"name": "弩炮",
+					"ac": 15,
+					"hp": 50,
+					"entries": [
+						"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Mangonel",
+					"name": "投石机",
+					"ac": 15,
+					"hp": 100,
+					"entries": [
+						"{@atk rw} 命中{@hit 5}，射程200/800尺（不能命中距离它60尺以内的目标），单一目标。{@h}27（{@damage 5d10}）点钝击伤害。"
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 3,
+				"2": 10,
+				"3": 20
+			},
+			"action": [
+				"在它的回合，船舶可以从以下选项中选择执行3个动作。如果船员少于二十人则只能执行2个动作，如果船员少于十人则只能执行1个动作。如果船员少于三人则无法执行这些动作。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Fire Ballista",
+							"name": "火焰弩炮",
+							"type": "item",
+							"entry": "该船舶可以发射其{@object 弩炮}（DMG，第8章）。"
+						},
+						{
+							"ENG_name": "Fire Mangonel",
+							"name": "火焰投石机",
+							"type": "item",
+							"entry": "该船舶可以发射其{@object 投石机}（DMG，第8章）。"
+						},
+						{
+							"ENG_name": "Move",
+							"name": "移动",
+							"type": "item",
+							"entry": "船可以使用舵来操控帆进行移动。"
+						}
+					]
+				}
+			],
+			"tokenCredit": "Alan Sanders",
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Scavenger",
+			"name": "拾荒者",
+			"source": "BGDIA",
+			"page": 219,
+			"vehicleType": "INFWAR",
+			"size": "H",
+			"weight": 9000,
+			"terrain": [
+				"大地"
+			],
+			"capCreature": 8,
+			"capCargo": 4000,
+			"speed": 100,
+			"str": 20,
+			"dex": 12,
+			"con": 20,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"hp": {
+				"hp": 150,
+				"dt": 10,
+				"mt": 20
+			},
+			"immune": [
+				"火焰",
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒",
+				"震慑",
+				"昏迷"
+			],
+			"trait": [
+				{
+					"ENG_name": "Crushing Wheels",
+					"name": "粉碎之轮",
+					"entries": [
+						"拾荒者可以穿过任何大型或更小生物的空间。当它这样做时，该生物必须成功通过{@dc 12}的敏捷豁免检定，否则受到16（{@damage 3d10}）点钝击伤害并被击倒{@condition 倒地}。如果该生物已经处于{@condition 倒地}状态，则额外受到16（{@damage 3d10}）点钝击伤害。此特性每回合对特定生物只能使用一次。"
+					]
+				},
+				{
+					"ENG_name": "Magic Weapons",
+					"name": "魔法武器",
+					"entries": [
+						"拾荒者的武器攻击是魔法攻击。"
+					]
+				},
+				{
+					"ENG_name": "Prone Deficiency",
+					"name": "倒地缺陷",
+					"entries": [
+						"如果拾荒者翻滚并陷入{@condition 倒地}状态，它将无法自行恢复并保持{@condition 失能}状态，直到被翻转回直立位置。"
+					]
+				}
+			],
+			"actionStation": [
+				{
+					"ENG_name": "Helm (Requires 1 Crew and Grants Three-Quarters Cover)",
+					"name": "驾驶室（需要1名成员并提供四分之三掩护）",
+					"entries": [
+						"驾驶并操控拾荒者。"
+					]
+				},
+				{
+					"ENG_name": "Grappling Claw (Requires 1 Crew and Grants Half Cover)",
+					"name": "擒抱爪（需要1名成员并提供半掩护）",
+					"entries": [
+						"{@atk mw} 命中{@hit 10}，触及15尺，单一目标。{@h}目标陷入{@condition 受擒}状态（逃脱DC{@dc 12}）。若目标是生物，则保持{@condition 束缚}状态直至擒抱结束。这个爪子同一时间只能擒抱一个目标，且操作者可用一个附赠动作使爪子释放其抓握的物体。"
+					]
+				},
+				{
+					"ENG_name": "2 Harpoon Flingers (Each Station Requires 1 Crew and Grants Half Cover)",
+					"name": "2台鱼叉投射机（各需要1名成员并提供半掩护）",
+					"entries": [
+						"{@atk rw} 命中{@hit 6}，射程120尺，单一目标。{@h}10（{@damage 2d8 + 1}）点穿刺伤害。"
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Scorpion Ship",
+			"name": "蝎舰",
+			"source": "AAG",
+			"page": 42,
+			"vehicleType": "SPELLJAMMER",
+			"dimensions": [
+				"75尺",
+				"25 尺"
+			],
+			"terrain": [
+				"空间",
+				"大地"
+			],
+			"capCrew": 12,
+			"capCargo": 12,
+			"cost": 2500000,
+			"pace": {
+				"walk": "3½",
+				"fly": "3½"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 30
+			},
+			"hull": {
+				"ac": 19,
+				"acFrom": [
+					"金属"
+				],
+				"hp": 250,
+				"dt": 15
+			},
+			"weapon": [
+				{
+					"ENG_name": "Ballista",
+					"name": "弩炮",
+					"crew": 3,
+					"ac": 15,
+					"hp": 50,
+					"costs": [
+						{
+							"cost": 5000,
+							"note": "弩炮"
+						},
+						{
+							"cost": 500,
+							"note": "弩矢"
+						}
+					],
+					"entries": [
+						"装载弩炮需要1个动作，瞄准需要1个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Bolt",
+							"name": "弩矢",
+							"entries": [
+								"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"crew": 1,
+					"count": 2,
+					"costs": [
+						{
+							"note": "包含在舰船的价格中"
+						}
+					],
+					"entries": [
+						"它需要1个动作来进行一次爪击攻击。"
+					],
+					"action": [
+						{
+							"ENG_name": "Claw",
+							"name": "爪击",
+							"entries": [
+								"{@atk mw} 命中{@hit 3}，触及20尺，单一目标。{@h}11（{@damage 2d10}）点钝击伤害。若目标为巨型或更小的生物，则同时陷入{@condition 受擒}状态（逃脱{@dc 13}）。此擒抱状态持续期间，该生物在其每回合开始时受到11（{@damage 2d10}）点钝击伤害。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Mangonel",
+					"name": "投石机",
+					"crew": 5,
+					"ac": 15,
+					"hp": 100,
+					"costs": [
+						{
+							"cost": 10000,
+							"note": "投石机"
+						},
+						{
+							"note": "岩石"
+						}
+					],
+					"entries": [
+						"装载投石机需要2个动作，瞄准需要2个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Mangonel Stone",
+							"name": "弹射投石",
+							"entries": [
+								"{@atk rw} 命中{@hit 5}，射程200/800尺（不能命中它60尺内的目标），单一目标。{@h}27（{@damage 5d10}）钝击伤害。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Shrike Ship",
+			"name": "伯劳鸟舰",
+			"source": "AAG",
+			"page": 44,
+			"vehicleType": "SPELLJAMMER",
+			"dimensions": [
+				"100 尺",
+				"20 尺"
+			],
+			"terrain": [
+				"空间",
+				"海洋"
+			],
+			"capCrew": 11,
+			"capCargo": 20,
+			"cost": 2000000,
+			"pace": {
+				"fly": 8
+			},
+			"speed": {
+				"fly": 70
+			},
+			"hull": {
+				"ac": 15,
+				"acFrom": [
+					"木"
+				],
+				"hp": 250,
+				"dt": 15
+			},
+			"weapon": [
+				{
+					"ENG_name": "Ballistae",
+					"name": "弩炮",
+					"crew": 3,
+					"count": 3,
+					"ac": 15,
+					"hp": 50,
+					"costs": [
+						{
+							"cost": 5000,
+							"note": "弩炮"
+						},
+						{
+							"cost": 500,
+							"note": "弩矢"
+						}
+					],
+					"entries": [
+						"装填弩炮需要1个动作，瞄准需要1个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Bolt",
+							"name": "弩矢",
+							"entries": [
+								"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Piercing Ram",
+					"name": "穿刺撞角",
+					"costs": [
+						{
+							"note": "包含在舰船的价格中"
+						}
+					],
+					"entries": [
+						"当舰船撞击另一个物体或一个超巨型生物时，舰船的法驱者可以进行以下攻击（参见本章前面的\"{@variantrule 碰撞|AAG}\"）。"
+					],
+					"action": [
+						{
+							"ENG_name": "Piercing Ram",
+							"name": "穿刺撞角",
+							"entries": [
+								"{@atk mw} 命中{@hit 8}，射程 0 尺，单一物体或超巨型生物。{@h}88（{@damage 16d10}）点穿刺伤害。伯劳鸟舰受到一半伤害并急停。未命中：攻击不造成伤害，目标移动到最近的不在伯劳鸟舰路径上的未被占据空间，且伯劳鸟舰若仍有剩余移动力则可继续移动。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Space Galleon",
+			"name": "太空帆船",
+			"source": "AAG",
+			"page": 46,
+			"vehicleType": "SPELLJAMMER",
+			"dimensions": [
+				"130尺",
+				"30 尺"
+			],
+			"terrain": [
+				"空间",
+				"海洋"
+			],
+			"capCrew": 20,
+			"capCargo": 20,
+			"cost": 3000000,
+			"pace": {
+				"fly": 4
+			},
+			"speed": {
+				"fly": 35
+			},
+			"hull": {
+				"ac": 15,
+				"acFrom": [
+					"木"
+				],
+				"hp": 400,
+				"dt": 15
+			},
+			"weapon": [
+				{
+					"ENG_name": "Ballistae",
+					"name": "弩炮",
+					"crew": 3,
+					"count": 2,
+					"ac": 15,
+					"hp": 50,
+					"costs": [
+						{
+							"cost": 5000,
+							"note": "弩炮"
+						},
+						{
+							"cost": 500,
+							"note": "弩矢"
+						}
+					],
+					"entries": [
+						"装填弩炮需要1个动作，瞄准需要1个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Bolt",
+							"name": "弩矢",
+							"entries": [
+								"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Mangonel",
+					"name": "投石机",
+					"crew": 5,
+					"ac": 15,
+					"hp": 100,
+					"costs": [
+						{
+							"cost": 10000,
+							"note": "投石机"
+						},
+						{
+							"note": "岩石"
+						}
+					],
+					"entries": [
+						"装载投石机需要2个动作，瞄准需要2个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Mangonel Stone",
+							"name": "弹射投石",
+							"entries": [
+								"{@atk rw} 命中{@hit 5}，射程200/800尺（不能命中它60尺内的目标），单一目标。{@h}27（{@damage 5d10}）钝击伤害。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Squid Ship",
+			"name": "鱿鱼舰",
+			"source": "AAG",
+			"page": 48,
+			"otherSources": [
+				{
+					"source": "SjA"
+				}
+			],
+			"vehicleType": "SPELLJAMMER",
+			"dimensions": [
+				"250尺",
+				"25 尺"
+			],
+			"terrain": [
+				"空间",
+				"海洋"
+			],
+			"capCrew": 13,
+			"capCargo": 20,
+			"cost": 2500000,
+			"pace": {
+				"fly": "3½"
+			},
+			"speed": {
+				"fly": 30
+			},
+			"hull": {
+				"ac": 15,
+				"acFrom": [
+					"木"
+				],
+				"hp": 300,
+				"dt": 15
+			},
+			"weapon": [
+				{
+					"ENG_name": "Ballista",
+					"name": "弩炮",
+					"count": 2,
+					"ac": 15,
+					"hp": 50,
+					"crew": 3,
+					"costs": [
+						{
+							"cost": 5000,
+							"note": "弩炮"
+						},
+						{
+							"cost": 500,
+							"note": "弩矢"
+						}
+					],
+					"entries": [
+						"装载弩炮需要1个动作，瞄准需要1个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Bolt",
+							"name": "弩矢",
+							"entries": [
+								"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Mangonels",
+					"name": "投石机",
+					"ac": 15,
+					"hp": 100,
+					"crew": 5,
+					"costs": [
+						{
+							"cost": 10000,
+							"note": "投石机"
+						},
+						{
+							"note": "岩石"
+						}
+					],
+					"entries": [
+						"装载投石机需要2个动作，瞄准需要2个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Mangonel Stone",
+							"name": "弹射投石",
+							"entries": [
+								"{@atk rw} 命中{@hit 5}，射程200/800尺（不能命中距离它60尺以内的目标），单一目标。{@h}27（{@damage 5d10}）点钝击伤害。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Piercing Ram",
+					"name": "穿刺撞角",
+					"costs": [
+						{
+							"note": "包含在舰船的价格中"
+						}
+					],
+					"entries": [
+						"当舰船撞击另一个物体或超巨型生物时，舰船的法驱者可以进行以下攻击（详见《星界冒险者指南》第二章中的\"碰撞\"条目）。"
+					],
+					"action": [
+						{
+							"ENG_name": "Piercing Ram",
+							"name": "穿刺撞角",
+							"entries": [
+								"{@atk mw} 命中{@hit 8}，射程 0 尺，单一物体或超巨型生物。{@h}88（{@damage 16d10}）点穿刺伤害。鱿鱼舰受到一半伤害并急停。{@m}攻击不造成伤害，目标移动至最近未被占据且不在鱿鱼舰移动路径上的空间，若鱿鱼舰仍有剩余移动力则可继续移动。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Stahlmaster",
+			"name": "钢之王",
+			"type": "vehicle",
+			"source": "DD",
+			"page": 235,
+			"vehicleType": "CREATURE",
+			"size": [
+				"L"
+			],
+			"terrain": [
+				"大地"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 14,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"hp": {
+				"average": 67,
+				"formula": "9d10 + 18"
+			},
+			"immune": [
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒",
+				"昏迷"
+			],
+			"trait": [
+				{
+					"ENG_name": "Pilot",
+					"name": "飞行员",
+					"entries": [
+						"钢之王需要一个中型类人生物来驾驶。当处于钢之王内部时，驾驶员使用该载具的速度和动作选项，不能采取反应或使用附赠动作，驾驶员获得{@quickref 掩护||3||全身掩护}。若钢之王的生命值降至0，驾驶员会被弹射出载具，并在载具5尺范围内一个未被占据的空间以{@condition 倒地}状态落地。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"钢之王进行两次近战攻击，或一次近战攻击和一次远程攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及 5 尺，单一目标。{@h}9 ({@damage 1d10 + 4}) 钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Shoulder-Mounted Crossbow",
+					"name": "肩扛弓弩",
+					"entries": [
+						"{@atk rw} 命中{@hit 2} ，射程 30/120 尺，单一目标。{@h}6 ({@damage 1d12})点穿刺伤害。"
+					]
+				}
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Star Moth",
+			"name": "星蛾",
+			"source": "AAG",
+			"page": 50,
+			"vehicleType": "SPELLJAMMER",
+			"dimensions": [
+				"200尺",
+				"20 尺"
+			],
+			"terrain": [
+				"空间",
+				"海洋"
+			],
+			"capCrew": 13,
+			"capCargo": 30,
+			"cost": 4000000,
+			"pace": {
+				"fly": "5½"
+			},
+			"speed": {
+				"fly": 50
+			},
+			"hull": {
+				"ac": 13,
+				"acFrom": [
+					"陶瓷"
+				],
+				"hp": 400,
+				"dt": 15
+			},
+			"weapon": [
+				{
+					"ENG_name": "Ballistae",
+					"name": "弩炮",
+					"crew": 3,
+					"count": 2,
+					"ac": 15,
+					"hp": 50,
+					"costs": [
+						{
+							"cost": 5000,
+							"note": "弩炮"
+						},
+						{
+							"cost": 500,
+							"note": "弩矢"
+						}
+					],
+					"entries": [
+						"装填弩炮需要1个动作，瞄准需要1个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Bolt",
+							"name": "弩矢",
+							"entries": [
+								"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Mangonel",
+					"name": "投石机",
+					"crew": 5,
+					"ac": 15,
+					"hp": 100,
+					"costs": [
+						{
+							"cost": 10000,
+							"note": "投石机"
+						},
+						{
+							"note": "岩石"
+						}
+					],
+					"entries": [
+						"装载投石机需要2个动作，瞄准需要2个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Mangonel Stone",
+							"name": "弹射投石",
+							"entries": [
+								"{@atk rw} 命中{@hit 5}，射程200/800尺（不能命中它60尺内的目标），单一目标。{@h}27（{@damage 5d10}）钝击伤害。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Strider Airship",
+			"name": "漫游者飞艇",
+			"source": "EFA",
+			"page": 109,
+			"vehicleType": "ELEMENTAL_AIRSHIP",
+			"terrain": [
+				"空气"
+			],
+			"capCrew": 6,
+			"capPassenger": 20,
+			"capCargo": 1,
+			"cost": 4000000,
+			"pace": {
+				"fly": 8
+			},
+			"speed": {
+				"fly": {
+					"number": 80,
+					"condition": "[悬浮]"
+				},
+				"canHover": true
+			},
+			"hull": {
+				"ac": 16,
+				"hp": 350,
+				"dt": 10
+			},
+			"weapon": [
+				{
+					"ENG_name": "Arcane Launcher",
+					"name": "奥术发射器",
+					"size": [
+						"M"
+					],
+					"ac": 17,
+					"hp": 30,
+					"crew": 1,
+					"count": 4,
+					"entries": [
+						"这门微型火炮发射魔法力场能量束。操作奥术发射器的生物可以采取光能爆动作来瞄准并发射火炮。"
+					],
+					"action": [
+						{
+							"ENG_name": "Energy Blast",
+							"name": "光能爆",
+							"entries": [
+								"{@atkr rw} {@hit 7}，射程100/500尺。{@h}14（{@damage 4d6}）力场伤害。"
+							]
+						}
+					]
+				}
+			],
+			"station": [
+				{
+					"ENG_name": "Helm",
+					"name": "舵板",
+					"size": [
+						"S"
+					],
+					"ac": 15,
+					"hp": 20,
+					"crew": 1,
+					"entries": [
+						"飞艇的舵板由一个专门的轮子、拉杆和其他控制装置组成。一次只能有一个生物操作这个站。",
+						"飞行员（操作飞艇舵板的船员）必须拥有{@feat 暴风龙纹|EFA}才能与控制器交互。在操作舵板时，船员可以执行该站的驱动和换挡引擎动作。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"ENG_name": "Tilt and Roll",
+									"name": "倾斜与掷骰",
+									"type": "entries",
+									"entries": [
+										"当执行舵板的驾驶动作时，一名船员可以消耗等于船舶飞行速度一半的移动力来使船舶绕轴翻转，将其倒置或扶正。所有未固定的船舶上的生物和物件都会在船舶以这种方式移动时坠落。成功通过{@dc 15}敏捷豁免检定的生物可以擒拿触及范围内的固定物件来避免坠落。"
+									]
+								}
+							]
+						}
+					],
+					"action": [
+						{
+							"ENG_name": "Drive (Requires Mark of Storm)",
+							"name": "舵板（需要暴风龙纹）",
+							"entries": [
+								"该船舶朝任意方向移动最多等于其飞行速度的距离。"
+							]
+						},
+						{
+							"ENG_name": "Shift Engine (Requires Mark of Storm)",
+							"name": "舵板引擎（需要暴风龙纹）",
+							"entries": [
+								"船舶的元素生物核心被压制或重新启动。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Tasha's Creeping Keelboat",
+			"name": "塔莎的潜行龙骨船",
+			"source": "DitLCoT",
+			"page": 15,
+			"vehicleType": "OBJECT",
+			"size": [
+				"G"
+			],
+			"dimensions": [
+				"30 尺",
+				"10 尺"
+			],
+			"terrain": [
+				"海洋"
+			],
+			"capCargo": 0.5,
+			"speed": {
+				"walk": 20,
+				"swim": {
+					"number": 20,
+					"condition": "（无法在水下旅行）"
+				}
+			},
+			"entries": [
+				"这个魔法载具有四条腿，可以推进它在陆地和水上移动。当你骑乘它时，它会根据你的口头指令移动，并且你选择的生物在船上时其护甲等级获得+1加值。",
+				"该船可以无阻碍地传送最多1000磅的重量。它可以承载最多两倍于此的重量，但如果载重超过正常容量，它将以半速移动。"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Tormentor",
+			"name": "摧残者",
+			"source": "BGDIA",
+			"page": 218,
+			"vehicleType": "INFWAR",
+			"size": "H",
+			"weight": 3000,
+			"terrain": [
+				"大地"
+			],
+			"capCreature": 4,
+			"capCargo": 500,
+			"speed": 100,
+			"str": 16,
+			"dex": 14,
+			"con": 14,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"hp": {
+				"hp": 60,
+				"dt": 10,
+				"mt": 20
+			},
+			"immune": [
+				"火焰",
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒",
+				"震慑",
+				"昏迷"
+			],
+			"trait": [
+				{
+					"ENG_name": "Crushing Wheels",
+					"name": "粉碎之轮",
+					"entries": [
+						"摧残者可以穿过任何中型或更小生物的空间。当它这样做时，该生物必须成功通过{@dc 13}的敏捷豁免检定，否则受到11（{@damage 2d10}）点钝击伤害并被击倒{@condition 倒地}。如果该生物已经处于{@condition 倒地}状态，则额外受到11（{@damage 2d10}）点钝击伤害。此特性每回合对同一生物只能使用一次。"
+					]
+				},
+				{
+					"ENG_name": "Prone Deficiency",
+					"name": "倒地缺陷",
+					"entries": [
+						"如果摧残者翻倒并陷入{@condition 倒地}状态，它将无法自行恢复并保持{@condition 失能}状态，直到被翻转回直立位置。"
+					]
+				},
+				{
+					"ENG_name": "Magic Weapons",
+					"name": "魔法武器",
+					"entries": [
+						"摧残者的武器攻击是魔法攻击。"
+					]
+				},
+				{
+					"ENG_name": "Raking Scythes",
+					"name": "夺命镰刀",
+					"entries": [
+						"当摧残者在一个回合内首次移动到距离一个未处于{@condition 倒地}状态的生物或载具5尺范围内时，它可以用突出的刀刃刮擦该生物或载具，造成13（{@damage 2d10 + 2}）点挥砍伤害。如果生物成功通过{@dc 13}的敏捷豁免检定，则可以避开并不受伤害。如果载具的驾驶者成功通过豁免检定，则载具可以避开并不受伤害。"
+					]
+				}
+			],
+			"actionStation": [
+				{
+					"ENG_name": "Helm (Requires 1 Crew and Grants Three-Quarters Cover)",
+					"name": "驾驶室（需要1名成员并提供四分之三掩护）",
+					"entries": [
+						"驾驶并操控摧残者"
+					]
+				},
+				{
+					"ENG_name": "Harpoon Flinger (Requires 1 Crew and Grants Half Cover)",
+					"name": "鱼叉投射机（需要1名成员并提供半掩护）",
+					"entries": [
+						"{@atk rw} 命中{@hit 7}，射程120尺，单一目标。{@h}11（{@damage 2d8 + 2}）点穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Juke",
+					"name": "假动作",
+					"type": "entries",
+					"entries": [
+						"如果摧残者能够移动，驾驶者可以使用其反应使摧残者在敏捷豁免检定上获得优势。"
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Turtle Ship",
+			"name": "海龟舰",
+			"source": "AAG",
+			"page": 52,
+			"vehicleType": "SPELLJAMMER",
+			"dimensions": [
+				"95 尺",
+				"70尺"
+			],
+			"terrain": [
+				"空间",
+				"海洋"
+			],
+			"capCrew": 16,
+			"capCargo": 30,
+			"cost": 4000000,
+			"pace": {
+				"fly": 3,
+				"swim": 3
+			},
+			"speed": {
+				"fly": 25,
+				"swim": 25
+			},
+			"hull": {
+				"ac": 19,
+				"acFrom": [
+					"金属"
+				],
+				"hp": 300,
+				"dt": 15
+			},
+			"weapon": [
+				{
+					"ENG_name": "Ballistae",
+					"name": "弩炮",
+					"crew": 3,
+					"count": 3,
+					"ac": 15,
+					"hp": 50,
+					"costs": [
+						{
+							"cost": 5000,
+							"note": "弩炮"
+						},
+						{
+							"cost": 500,
+							"note": "弩矢"
+						}
+					],
+					"entries": [
+						"装填弩炮需要1个动作，瞄准需要1个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Bolt",
+							"name": "弩矢",
+							"entries": [
+								"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Mangonel",
+					"name": "投石机",
+					"crew": 5,
+					"ac": 15,
+					"hp": 100,
+					"costs": [
+						{
+							"cost": 10000,
+							"note": "投石机"
+						},
+						{
+							"note": "岩石"
+						}
+					],
+					"entries": [
+						"装载投石机需要2个动作，瞄准需要2个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Mangonel Stone",
+							"name": "弹射投石",
+							"entries": [
+								"{@atk rw} 命中{@hit 5}，射程200/800尺（不能命中它60尺内的目标），单一目标。{@h}27（{@damage 5d10}）钝击伤害。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Tyrant Ship",
+			"name": "暴君舰",
+			"source": "AAG",
+			"page": 54,
+			"vehicleType": "SPELLJAMMER",
+			"dimensions": [
+				"100 尺",
+				"100 尺"
+			],
+			"terrain": [
+				"空间"
+			],
+			"capCrew": 10,
+			"capCrewNote": "({@creature 眼魔||眼魔})",
+			"capCargo": 20,
+			"pace": {
+				"fly": "4½"
+			},
+			"speed": {
+				"fly": 40
+			},
+			"hull": {
+				"ac": 17,
+				"acFrom": [
+					"岩石"
+				],
+				"hp": 300,
+				"dt": 20
+			},
+			"weapon": [
+				{
+					"ENG_name": "Eyestalk Cannons",
+					"name": "眼柄光炮",
+					"crew": 1,
+					"count": 3,
+					"costs": [
+						{
+							"note": "包含在舰船的价格中"
+						}
+					],
+					"entries": [
+						"这件武器看起来像一根眼柄上安装的眼睛。驻扎在暴君舰冥想舱中的眼魔可以通过{@status 专注||专注于}它（如同{@status 专注||专注于}一个法术）来看见这只眼睛所见的景象，并使用一个动作发动以下攻击。"
+					],
+					"action": [
+						{
+							"ENG_name": "Destructive Ray",
+							"name": "破坏性射线",
+							"entries": [
+								"{@atk rs} 命中{@hit 8}，射程 120/480 尺，单一目标。{@h}35 ({@damage 10d6})点力场伤害。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Venatrix",
+			"name": "捕食者",
+			"source": "VEoR",
+			"page": 151,
+			"vehicleType": "INFWAR",
+			"size": "G",
+			"weight": 12000,
+			"terrain": [
+				"大地"
+			],
+			"capCreature": 8,
+			"capCargo": 2000,
+			"ac": 19,
+			"speed": 100,
+			"str": 18,
+			"dex": 18,
+			"con": 10,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"hp": {
+				"hp": 200,
+				"dt": 10
+			},
+			"immune": [
+				"火焰",
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒",
+				"震慑",
+				"昏迷"
+			],
+			"actionStation": [
+				{
+					"ENG_name": "Helm (Requires 1 Crew)",
+					"name": "驾驶室（需要1名成员）",
+					"entries": [
+						"驾驶并操控捕食者。"
+					]
+				},
+				{
+					"ENG_name": "2 Harpoon Guns (Each Station Requires 1 Crew)",
+					"name": "2门鱼叉枪（各需要1名成员）",
+					"entries": [
+						"{@atk rw} 命中{@hit 6}，射程120尺，单一目标。{@h}10（{@damage 2d8 + 1}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Infernal Screamer (Requires 1 Crew)",
+					"name": "地狱尖嚎装置",
+					"entries": [
+						"操作者120尺内能看见的一个目标必须进行一次{@dc 15}的感知豁免检定，豁免失败则受到26（{@damage 4d12}）点心灵伤害，豁免成功则只受到一半伤害。"
+					]
+				}
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Warship",
+			"name": "战舰",
+			"source": "GoS",
+			"page": 194,
+			"vehicleType": "SHIP",
+			"size": "G",
+			"dimensions": [
+				"100 尺",
+				"20 尺"
+			],
+			"terrain": [
+				"海洋"
+			],
+			"capCrew": 40,
+			"capPassenger": 60,
+			"capCargo": 200,
+			"pace": 4,
+			"str": 20,
+			"dex": 4,
+			"con": 20,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"力竭",
+				"恐慌",
+				"失能",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"震慑",
+				"昏迷"
+			],
+			"hull": {
+				"ac": 15,
+				"hp": 500,
+				"dt": 20
+			},
+			"control": [
+				{
+					"ENG_name": "Helm",
+					"name": "舵板",
+					"ac": 18,
+					"hp": 50,
+					"entries": [
+						"加速至其一个移动组件的速度，并进行一次90度转向。如果舵被摧毁，战舰将无法转向。"
+					]
+				}
+			],
+			"movement": [
+				{
+					"ENG_name": "Oars",
+					"name": "桨",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "每受到25点伤害，速度减少5尺",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"20尺（至少需要20名船员）"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Sails",
+					"name": "帆",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "每受到25点伤害，速度减少10尺",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"35尺；逆风航行时15尺；顺风航行时50尺。"
+							]
+						}
+					]
+				}
+			],
+			"weapon": [
+				{
+					"ENG_name": "Ballistas",
+					"name": "弩炮",
+					"count": 2,
+					"ac": 15,
+					"hp": 50,
+					"entries": [
+						"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Mangonels",
+					"name": "投石机",
+					"count": 2,
+					"ac": 15,
+					"hp": 100,
+					"entries": [
+						"{@atk rw} 命中{@hit 5}，射程200/800尺（不能命中距离它60尺以内的目标），单一目标。{@h}27（{@damage 5d10}）点钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Naval Ram",
+					"name": "撞角",
+					"ac": 20,
+					"hp": 100,
+					"dt": 10,
+					"entries": [
+						"该战舰在冲撞生物或物件时，所有与撞击相关的豁免检定具有优势。撞击造成的任何伤害由撞角承受而非船舶本身。果另一艘船撞击这艘战舰，则这些好处不适用。"
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 3,
+				"2": 10,
+				"3": 20
+			},
+			"action": [
+				"在它的回合中，战舰可以采取3个动作，从以下选项中选择。如果船员少于二十人，则只能采取2个动作；如果船员少于十人，则只能采取1个动作。如果船员少于三人，则无法采取这些动作。",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Fire Ballistas",
+							"name": "火焰弩炮",
+							"type": "item",
+							"entry": "该战舰可以发射其{@object 弩炮||弩炮}（DMG，第8章）。"
+						},
+						{
+							"ENG_name": "Fire Mangonels",
+							"name": "火焰投石机",
+							"type": "item",
+							"entry": "该战舰可以发射其{@object 投石机||投石机}（DMG，第8章）。"
+						},
+						{
+							"ENG_name": "Move",
+							"name": "移动",
+							"type": "item",
+							"entry": "战舰可以使用其舵来操纵桨或帆移动。作为此移动的一部分，它可以使用撞角。"
+						}
+					]
+				}
+			],
+			"tokenCredit": "Gordon Frickers",
+			"tokenCustom": true,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Wasp Ship",
+			"name": "黄蜂舰",
+			"source": "AAG",
+			"page": 56,
+			"vehicleType": "SPELLJAMMER",
+			"dimensions": [
+				"80尺",
+				"20 尺"
+			],
+			"terrain": [
+				"空间"
+			],
+			"capCrew": 5,
+			"capCargo": 10,
+			"cost": 2000000,
+			"pace": {
+				"fly": "5½"
+			},
+			"speed": {
+				"fly": 50
+			},
+			"hull": {
+				"ac": 15,
+				"acFrom": [
+					"木"
+				],
+				"hp": 250,
+				"dt": 15
+			},
+			"weapon": [
+				{
+					"ENG_name": "Ballista",
+					"name": "弩炮",
+					"crew": 3,
+					"ac": 15,
+					"hp": 50,
+					"costs": [
+						{
+							"cost": 5000,
+							"note": "弩炮"
+						},
+						{
+							"cost": 500,
+							"note": "弩矢"
+						}
+					],
+					"entries": [
+						"装载弩炮需要1个动作，瞄准需要1个动作，发射需要1个动作。"
+					],
+					"action": [
+						{
+							"ENG_name": "Bolt",
+							"name": "弩矢",
+							"entries": [
+								"{@atk rw} 命中{@hit 6}，射程 120/480 尺，单一目标。{@h}16 ({@damage 3d10}) 点穿刺伤害。"
+							]
+						}
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		}
+	],
+	"vehicleUpgrade": [
+		{
+			"ENG_name": "Acidic Bile Sprayer",
+			"name": "酸液喷枪",
+			"source": "BGDIA",
+			"page": 221,
+			"upgradeType": [
+				"IWM:W"
+			],
+			"entries": [
+				"这件武器连接着恶魔器官，能产生一种接触时溶解血肉的酸性胆汁。",
+				{
+					"ENG_name": "Acidic Bile Sprayer (Requires 1 Crew and Grants Half Cover, {@recharge 5|m})",
+					"name": "酸液喷枪（需要1名成员并提供半掩护，{@recharge 5|m}）",
+					"type": "entries",
+					"entries": [
+						"酸液从喷嘴中喷出，形成一个30尺的锥状区域。锥状区域内的每个生物必须进行一次{@dc 12}的敏捷豁免检定，豁免失败则受到40（{@damage 9d8}）点强酸伤害，豁免成功则伤害减半。若某生物因此伤害生命值降至0，则其被溶解，仅留下其携带或穿戴的物件。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Arcane Artillery",
+			"name": "奥术大炮",
+			"source": "GoS",
+			"page": 197,
+			"upgradeType": [
+				"SHP:W"
+			],
+			"entries": [
+				"使用与制造魔法武器相似的方法，一位熟练的施法者赋予船只武器以毁灭性能量。这个武器在攻击和伤害骰上获得+2加值，并且其攻击被视为魔法攻击"
+			]
+		},
+		{
+			"ENG_name": "Bones of Endless Toil",
+			"name": "无尽的苦役之骸",
+			"source": "GoS",
+			"page": 198,
+			"upgradeType": [
+				"SHP:O"
+			],
+			"entries": [
+				"远古神秘生物的骸骨装饰着这艘船舶。强大的符文在这些遗骸上匍匐蔓延，散发出病态的绿光。当类人生物在船上死亡时，该生物必须进行一次{@dc 12}的感知豁免检定。若成功，则正常死亡。若失败，则立即以{@creature 丧尸}形态复活并服从船长指挥。该僵尸将获得关于船舶的实用知识，使其能够作为船员服役。在任何特定时间内，最多可以有等同于船舶生物容量的生物以这种方式被活化。"
+			]
+		},
+		{
+			"ENG_name": "Canian Armor",
+			"name": "卡尼亚装甲",
+			"source": "BGDIA",
+			"page": 221,
+			"upgradeType": [
+				"IWM:A"
+			],
+			"entries": [
+				"用于制造该载具的炼狱铁矿石采自九层地狱最寒冷的层面\u2014\u2014卡尼亚。装备卡尼亚装甲的炼狱战争机器护甲等级为22+敏捷调整值。当载具静止时，对其进行的攻击检定具有优势。该炼狱战争机器除其他伤害免疫外，还具有寒冷伤害免疫，并且免疫严寒效果。"
+			]
+		},
+		{
+			"ENG_name": "Churning Hull",
+			"name": "风暴船壳",
+			"source": "GoS",
+			"page": 196,
+			"upgradeType": [
+				"SHP:H"
+			],
+			"entries": [
+				"这些刻有符文的铁链内蕴藏着狂暴的风暴。在风暴之神祝福下行动的海盗和掠夺者有时会使用这种升级。",
+				"通过将锁链覆盖在船舶的船壳上，暴风狂怒猛烈地拍打其周围的水域。距离该船210尺内的水域对于除该船以外的所有物体都是{@quickref 困难地形||3}。"
+			]
+		},
+		{
+			"ENG_name": "Clockwork Oars",
+			"name": "发条船桨",
+			"source": "GoS",
+			"page": 197,
+			"upgradeType": [
+				"SHP:M"
+			],
+			"entries": [
+				"通过魔法与发条的结合，这艘船舶的桨只需要一名船员操作，按下激活它们的按钮或拉杆即可。"
+			]
+		},
+		{
+			"ENG_name": "Concussive Rounds",
+			"name": "困惑弹",
+			"source": "GoS",
+			"page": 197,
+			"upgradeType": [
+				"SHP:W"
+			],
+			"entries": [
+				"受到防护魔法强化的这把武器，其攻击会爆发出刺耳的噪音，能够暂时分散并迷惑仇敌船员。如果此武器命中载具的船体，则该载具的速度会降低{@dice 2d10}尺，直到攻击者的下个回合开始。"
+			]
+		},
+		{
+			"ENG_name": "Death Vessel",
+			"name": "死亡之船",
+			"source": "GoS",
+			"page": 196,
+			"upgradeType": [
+				"SHP:H"
+			],
+			"entries": [
+				"此升级部件使用从堕影冥界采集的材料制成，赋予船舶一种恐惧光环。作为动作，船舶能释放一股恐怖能量脉冲。船上或210尺内的每个该船仇敌生物必须进行一次{@dc 14}感知豁免检定。若失败，该生物将对船舶陷入{@condition 恐慌}状态1分钟。若成功，该生物将在24小时内免疫此能力。此能力使用后，需经过{@dice 1d4}小时才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Defiant Sails",
+			"name": "嘲讽风帆",
+			"source": "GoS",
+			"page": 197,
+			"upgradeType": [
+				"SHP:M"
+			],
+			"entries": [
+				"这些帆上覆盖着一层经过防护魔法处理的秘银，闪闪发光。当帆展开时，由于帆的防护结界效果，针对该船舶及其上任何人的远程武器攻击都将以劣势进行。若攻击手位于船上，则此不利效果不适用。"
+			]
+		},
+		{
+			"ENG_name": "Dragon Sails",
+			"name": "龙鳞风帆",
+			"source": "GoS",
+			"page": 197,
+			"upgradeType": [
+				"SHP:M"
+			],
+			"entries": [
+				"这些帆由龙鳞编织而成，使其对伤害更具抗性。帆获得+3的AC加值，并且根据制作时使用的鳞片类型，它们对特定伤害类型具有抗性，如龙鳞风帆表格所示。",
+				{
+					"type": "table",
+					"caption": "龙鳞风帆",
+					"colStyles": [
+						"col-6 text-center",
+						"col-6 text-center"
+					],
+					"colLabels": [
+						"龙的类型",
+						"伤害类型"
+					],
+					"rows": [
+						[
+							"黑",
+							"强酸"
+						],
+						[
+							"蓝",
+							"闪电"
+						],
+						[
+							"黄铜",
+							"火焰"
+						],
+						[
+							"青铜",
+							"闪电"
+						],
+						[
+							"赤铜",
+							"强酸"
+						],
+						[
+							"金",
+							"火焰"
+						],
+						[
+							"绿",
+							"强酸"
+						],
+						[
+							"红",
+							"火焰"
+						],
+						[
+							"银",
+							"寒冷"
+						],
+						[
+							"白",
+							"寒冷"
+						]
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Ever-Full Sails",
+			"name": "顺风帆",
+			"source": "GoS",
+			"page": 197,
+			"upgradeType": [
+				"SHP:M"
+			],
+			"entries": [
+				"这些鼓起的帆由气之位面的云雾编织而成。风势在帆周围呼啸，使船舶能以60尺的速度移动，无论风向如何。"
+			]
+		},
+		{
+			"ENG_name": "Explosive Rounds",
+			"name": "爆炸弹",
+			"source": "GoS",
+			"page": 197,
+			"upgradeType": [
+				"SHP:W"
+			],
+			"entries": [
+				"借助强大的塑能魔法，这把武器的攻击被注入了不稳定的能量，会在火焰爆炸中释放。当此武器命中时，会造成额外{@damage 2d6}的火焰伤害。"
+			]
+		},
+		{
+			"ENG_name": "Flamethrower",
+			"name": "投火机",
+			"source": "BGDIA",
+			"page": 221,
+			"upgradeType": [
+				"IWM:W"
+			],
+			"entries": [
+				"尽管对恶魔无效，这种武器对易燃的生物和物件非常有效。",
+				{
+					"ENG_name": "Flamethrower (Requires 1 Crew and Grants Half Cover)",
+					"name": "投火机（需要1名成员并提供半掩护）",
+					"type": "entries",
+					"entries": [
+						"火焰从武器的喷嘴中喷出，形成一条60尺长、5尺宽的线状区域。线状区域内的每个生物必须进行一次{@dc 15}的敏捷豁免检定，豁免失败则受到18（{@damage 4d8}）点火焰伤害，豁免成功则只受到一半伤害。火焰会引燃区域内未被携带或穿戴的可燃物件。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Frost-Locked Hull",
+			"name": "封冻船壳",
+			"source": "GoS",
+			"page": 196,
+			"upgradeType": [
+				"SHP:H"
+			],
+			"entries": [
+				"这个升级将船舶的船壳替换为从元素位面汲取的超自然冰晶。船壳和船舶的其他法术成分对寒冷伤害免疫，但对火焰伤害易伤。船舶还能以正常速度在任何厚度的冰面上移动，浮在冰面上的深度与在水中相同。"
+			]
+		},
+		{
+			"ENG_name": "Gilded Death Armor",
+			"name": "镀金死亡装甲",
+			"source": "BGDIA",
+			"page": 222,
+			"upgradeType": [
+				"IWM:A"
+			],
+			"entries": [
+				"从大魔鬼玛门那里偷来或交换来的黄金覆盖了载具的外表。这些黄金无法在不破坏载具的情况下移除，并且当炼狱战争机器生命值降至0时会化为尘埃。镀金死亡装甲赋予炼狱战争机器对钝击、穿刺和挥砍伤害的抗性。"
+			]
+		},
+		{
+			"ENG_name": "Grasping Rounds",
+			"name": "束缚弹",
+			"source": "GoS",
+			"page": 197,
+			"upgradeType": [
+				"SHP:W"
+			],
+			"entries": [
+				"这件武器会创造出灵体锁链尾随其射击，束缚住敌方的船舶。当此武器命中一艘船舶时，该载具必须成功通过{@dc 14}的力量豁免检定，否则无法从受击处移动。作为一个动作，攻击方的船舶可以终止此效果，而目标也可以通过消耗一个动作并成功通过{@dc 14}的力量检定来终止它。"
+			]
+		},
+		{
+			"ENG_name": "Guardian Figurehead",
+			"name": "守护者船首像",
+			"source": "GoS",
+			"page": 198,
+			"upgradeType": [
+				"SHP:F"
+			],
+			"entries": [
+				"这个船首像描绘了一个全副武装的骑士。作为动作，船舶可以激活此物品，使其活化为一个{@creature 铁魔像}。魔像在船舶的回合行动，当船长使用船舶的一个动作时。魔像保持活化状态1分钟。时间结束时，它会传送回船首像的位置。一旦船舶使用此动作，24小时内无法再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Infernal Screamer",
+			"name": "地狱尖嚎装置",
+			"source": "BGDIA",
+			"page": 221,
+			"upgradeType": [
+				"IWM:W"
+			],
+			"entries": [
+				"一个由融化的蜡构成的扭曲类人生物躯干从这个装置中突出，肩胛骨之间有一个带刺的手摇曲柄。当曲柄被转动时，这个形象会通过灵感应发出痛苦的尖嚎。",
+				{
+					"ENG_name": "Infernal Screamer (Requires 1 Crew and Grants Half Cover)",
+					"name": "地狱尖嚎装置（需要1名成员并提供半掩护）",
+					"type": "entries",
+					"entries": [
+						"地狱尖嚎装置的操作者以它120尺内能看见的一个生物为目标。目标必须进行一次{@dc 15}的感知豁免检定，豁免失败则受到26（{@damage 4d12}）点心灵伤害，豁免成功则只受一半伤害。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Living Vessel",
+			"name": "活体船只",
+			"source": "GoS",
+			"page": 196,
+			"upgradeType": [
+				"SHP:H"
+			],
+			"entries": [
+				"这艘船的船体是在妖精荒野中由雅灵造船大师指导下打造的。它是一个活体植物，从饮水和阳光中汲取养分。厚叶覆盖的藤蔓垂挂在船侧，受损时木材会渗出新鲜树液。该船只获得+2加值于所有体质检定或豁免检定。只要该船至少有1点生命值，它每分钟会恢复10点生命值。"
+			]
+		},
+		{
+			"ENG_name": "Necrotic Smoke Screen",
+			"name": "暗蚀烟幕",
+			"source": "BGDIA",
+			"page": 222,
+			"upgradeType": [
+				"IWM:G"
+			],
+			"entries": [
+				"载具的驾驶者可以以一个附赠动作启动这个魔法装置，使载具在其正前方或正后方释放出一个30尺立方的浓密烟雾。这片云雾是静止的，持续1分钟。其中的区域处于重度遮蔽状态。任何生物在回合中首次进入云雾或在其中开始其回合时，将受到21（{@damage 6d6}）点暗蚀伤害。强风可以驱散这片云雾。该装置需要24小时充能后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Red Dragon Figurehead",
+			"name": "红龙船首像",
+			"source": "GoS",
+			"page": 198,
+			"upgradeType": [
+				"SHP:F"
+			],
+			"entries": [
+				"这个船首像描绘了一条张口欲击的红龙。作为一个动作，船舶可以激活这个物品以创造一个从船首像发出的60尺锥状火焰。锥状区域内的每个生物和物件必须进行一次{@dc 12}的敏捷豁免检定，豁免失败则受到21（{@damage 6d6}）点火焰伤害，豁免成功则只受到一半伤害。一旦船舶使用这个动作，在1分钟内不能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Reinforced Hull",
+			"name": "加固船体",
+			"source": "GoS",
+			"page": 197,
+			"upgradeType": [
+				"SHP:H"
+			],
+			"entries": [
+				"一位船舶大师能够使用优质材料和巧妙设计使船体更加坚固。这种加固会使船体的生命值上限翻倍。"
+			]
+		},
+		{
+			"ENG_name": "Screaming Sails",
+			"name": "尖啸之帆",
+			"source": "GoS",
+			"page": 197,
+			"upgradeType": [
+				"SHP:M"
+			],
+			"entries": [
+				"这些帆由捕获的幽影能量编织而成，并与报丧妖的灵魂相连，当捕捉到风势时会发出哀鸣。作为动作，当船长位于帆5尺范围内时，可令帆释放出嚎叫。船上或船舶300尺内所有敌对生物必须成功通过{@dc 14}的感知豁免检定，否则受到{@damage 4d6}心灵伤害并陷入{@condition 恐慌}状态1分钟。此能力使用后需经过{@dice 2d6}小时才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Scything Oars",
+			"name": "刀锋船桨",
+			"source": "GoS",
+			"page": 197,
+			"upgradeType": [
+				"SHP:M"
+			],
+			"entries": [
+				"经过魔法强化的锐利船桨使得船只变得危险，难以接近。当船只使用这些船桨进行移动时，任何在移动过程中10英尺内的水中生物或物体都必须进行一次{@dc 10}敏捷豁免检定，失败则受到{@damage 2d6}点挥砍伤害，成功则受到一半的伤害。"
+			]
+		},
+		{
+			"ENG_name": "Smuggler's Banner",
+			"name": "走私者之帜",
+			"source": "GoS",
+			"page": 198,
+			"upgradeType": [
+				"SHP:O"
+			],
+			"entries": [
+				"这面旗帜是用来挂在船桅上的。它强大的魔法使它看起来像是一面旗帜或横幅，上面展示着对观看者友好的团体、船长或王国的标志。不同的观看者可能会看到不同的旗帜或纹章。",
+				"走私者之帜的真正力量在于它能够协助船舶快速逃脱。以一个动作，船舶和船上所有友方生物可传送至船长选择的已知目的地，最远3里。船上的敌对生物不会随船移动，并落入船舶原先所在的水域。一旦使用该物品进行传送，它在{@dice 2d6}天内无法再次以此方式传送。"
+			]
+		},
+		{
+			"ENG_name": "Soul Spike Armor",
+			"name": "灵魂尖刺装甲",
+			"source": "BGDIA",
+			"page": 222,
+			"upgradeType": [
+				"IWM:A"
+			],
+			"entries": [
+				"该载具表面覆盖着刻有亵渎符号的尖刺。被刺穿在这些尖刺上的发光幽体痛苦地哀嚎并伸手",
+				"如果一个非魔鬼的生物在炼狱战争机器30尺范围内死亡，其灵魂（如果有）将被从身体中撕裂并加入被尖刺刺穿的哀嚎群体中。只要灵魂仍被困住，该生物便无法以任何方式复活。被困的灵魂会在以下情况获得释放：载具被摧毁、锚定它的尖刺成为{@spell 移除诅咒}法术或类似魔法的目标、或尖刺被摧毁。每个尖刺是一个小型物件，护甲等级19，15点生命值，且对所有伤害（光耀伤害除外）具有抗性。"
+			]
+		},
+		{
+			"ENG_name": "Storm Giant Figurehead",
+			"name": "风暴巨人船首像",
+			"source": "GoS",
+			"page": 198,
+			"upgradeType": [
+				"SHP:F"
+			],
+			"entries": [
+				"这个船首像描绘了一位握着雷霆的暴风巨人。作为一个动作，船只可以激活这个物品以创造一个从船首像发出的60尺锥形区域。锥形区域内的每个生物必须进行一次{@dc 12}体质豁免检定，若豁免失败则受到14{@damage 4d6}点雷鸣伤害，成功则只受一半伤害。豁免失败的生物还会被推离船首像10尺。船舶使用此动作后，1分钟内无法再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Styx Sprayer",
+			"name": "冥河水喷枪",
+			"source": "BGDIA",
+			"page": 221,
+			"upgradeType": [
+				"IWM:W"
+			],
+			"entries": [
+				"喷枪的软管连接着装有 30 加仑{@adventure 冥河|BGDIA|3|冥河}水的水箱。每次攻击消耗10加仑水。需要通过冥河才能给水箱加水。",
+				{
+					"ENG_name": "Styx Sprayer (Requires 1 Crew and Grants Half Cover; 3 Uses)",
+					"name": "冥河水喷枪(需要1名成员并提供半掩护；3次使用次数）",
+					"type": "entries",
+					"entries": [
+						"{@atk rs} 命中{@hit 5}，射程30尺，单一生物。{@h}该生物被冥河之水击中并成为{@spell 弱智术}的目标（豁免检定{@dc 20}）。已经处于弱智状态的生物或适应冥河的生物对此效果免疫。若目标豁免失败且法术效果在30天内未被解除，该效果将变为永久，届时该生物将失去所有记忆并变成一具近乎无意识的躯壳。到那时，除了神力干预外没有任何方法能解除该效果。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Taskmaster's Drums",
+			"name": "牙王之鼓",
+			"source": "GoS",
+			"page": 198,
+			"upgradeType": [
+				"SHP:O"
+			],
+			"entries": [
+				"这个4尺高的青铜鼓配有一对铁槌。一个生物可以以一个动作激活鼓，使铁槌漂浮在鼓上方并敲击它产生雷鸣般的节奏。在接下来的1分钟内，只要船舶至少有一个动作，它就会获得一个额外的动作。一旦使用了这个物品，它就不能在{@dice 2d10}小时内再次激活。"
+			]
+		},
+		{
+			"ENG_name": "Teleporter",
+			"name": "传送器",
+			"source": "BGDIA",
+			"page": 222,
+			"upgradeType": [
+				"IWM:G"
+			],
+			"entries": [
+				"载具的驾驶者可以以一个附赠动作启动这个魔法装置，使载具传送到驾驶者可见且距离载具当前位置不超过300尺的一个未被占据空间。所有与载具接触的生物和物件会随之一同传送。此装置需要24小时充能后才能再次使用。"
+			]
+		},
+		{
+			"ENG_name": "Vigilant Watch",
+			"name": "警戒看守",
+			"source": "GoS",
+			"page": 197,
+			"upgradeType": [
+				"SHP:H"
+			],
+			"entries": [
+				"一排装满粘稠液体和眼魔眼球的水晶球体被安装在这艘船舶的船体上。{@condition 隐形}的生物在船上或距离船舶120英尺范围内时会被看见。"
+			]
+		}
+	]
+}

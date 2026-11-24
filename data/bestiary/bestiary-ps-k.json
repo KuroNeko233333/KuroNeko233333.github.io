@@ -1,0 +1,885 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM"
+			]
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Angel",
+			"name": "天使",
+			"source": "PSK",
+			"page": 27,
+			"_copy": {
+				"ENG_name": "Deva",
+				"name": "天神使徒",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "天神使徒",
+						"with": "天使"
+					},
+					"trait": {
+						"mode": "replaceArr",
+						"replace": "天使武器",
+						"items": {
+							"ENG_name": "Angelic Weapons",
+							"name": "天使武器",
+							"entries": [
+								"提婆的武器攻击是魔法攻击。当提婆用任何武器击中目标时，武器额外造成{@damage 1d10}点光耀伤害（包含在攻击中）。"
+							]
+						}
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "多重攻击",
+							"items": {
+								"ENG_name": "Multiattack",
+								"name": "多重攻击",
+								"entries": [
+									"天神使徒进行四次近战攻击。"
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "硬头锤",
+							"items": {
+								"ENG_name": "Shortsword",
+								"name": "短剑",
+								"entries": [
+									"{@atk mw} 命中{@hit 8}，触及 5 尺，单一目标。{@h}7 ({@damage 1d6 + 4}) 挥砍伤害加上 13 ({@damage 1d10}) 光耀伤害。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Construct (Animated Armor)",
+			"name": "构装生物（活化盔甲）",
+			"source": "PSK",
+			"page": 32,
+			"_copy": {
+				"ENG_name": "Animated Armor",
+				"name": "活化盔甲",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "护甲",
+						"with": "构装"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Construct (Helmed Horror)",
+			"name": "构装生物（恐怖铠甲）",
+			"source": "PSK",
+			"page": 32,
+			"_copy": {
+				"ENG_name": "Helmed Horror",
+				"name": "恐怖铠甲",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "恐怖铠甲",
+						"with": "构装"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Construct (Modron)",
+			"name": "构装生物（魔冢）",
+			"source": "PSK",
+			"page": 32,
+			"_copy": {
+				"ENG_name": "Monodrone",
+				"name": "单元冢",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "单元冢",
+						"with": "构装"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Construct (Shield Guardian)",
+			"name": "构装生物（盾卫者）",
+			"source": "PSK",
+			"page": 32,
+			"_copy": {
+				"ENG_name": "Shield Guardian",
+				"name": "构装盾卫",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "构装盾卫",
+							"with": "构装"
+						},
+						{
+							"mode": "replaceTxt",
+							"replace": "守护者",
+							"with": "构装"
+						}
+					]
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Demon",
+			"name": "恶魔",
+			"source": "PSK",
+			"page": 27,
+			"_copy": {
+				"ENG_name": "Erinyes",
+				"name": "罪魔",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "罪魔",
+						"with": "恶魔"
+					},
+					"trait": {
+						"mode": "replaceArr",
+						"replace": "地狱武器",
+						"items": {
+							"ENG_name": "Hellish Weapons",
+							"name": "地狱武器",
+							"entries": [
+								"恶魔的武器攻击是魔法攻击，并在命中时额外造成 13（{@damage 3d8}）点死灵伤害（已包含在攻击中）。"
+							]
+						}
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "长剑",
+							"items": {
+								"ENG_name": "Longsword",
+								"name": "长剑",
+								"entries": [
+									"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}8（{@damage 1d8 + 4}）挥砍伤害，如果双手持用则为9（{@damage 1d10 + 4}）挥砍伤害，外加13（{@damage 3d8}）暗蚀伤害。"
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "长弓",
+							"items": {
+								"ENG_name": "Longbow",
+								"name": "长弓",
+								"entries": [
+									"{@atk rw} 命中{@hit 7}，射程150/600尺，单一目标。{@h}7（{@damage 1d8 + 3}）点穿刺伤害加上13（{@damage 3d8}）暗蚀伤害。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Dragon",
+			"name": "龙",
+			"source": "PSK",
+			"page": 29,
+			"_copy": {
+				"ENG_name": "Adult Red Dragon",
+				"name": "成年红龙",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Fiery Bite {@recharge 5}",
+							"name": "炽热之咬 {@recharge 5}",
+							"entries": [
+								"{@atk mw} 命中{@hit 14}，触及10尺，单一目标。{@h}19 ({@damage 2d10 + 8}) 点穿刺伤害加上63 ({@damage 18d6}) 火焰伤害。这算作龙的吐息武器使用。"
+							]
+						}
+					}
+				},
+				"_preserve": {
+					"legendaryGroup": true
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Drake (Large)",
+			"name": "龙兽（大型）",
+			"source": "PSK",
+			"page": 29,
+			"_copy": {
+				"ENG_name": "Giant Eagle",
+				"name": "巨鹰",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鹰",
+						"with": "龙兽"
+					}
+				}
+			},
+			"languages": null,
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Drake (Small)",
+			"name": "幼龙（小型）",
+			"source": "PSK",
+			"page": 29,
+			"_copy": {
+				"ENG_name": "Pteranodon",
+				"name": "翼龙",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "翼龙",
+						"with": "龙兽"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Giant",
+			"name": "巨人",
+			"source": "PSK",
+			"page": 30,
+			"_copy": {
+				"ENG_name": "Stone Giant",
+				"name": "石巨人",
+				"source": "MM"
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Gremlin",
+			"name": "地精",
+			"type": "beast",
+			"source": "PSK",
+			"page": 26,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				11
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d8 + 5"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 12,
+			"dex": 13,
+			"con": 13,
+			"int": 3,
+			"wis": 13,
+			"cha": 6,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 11,
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Aether Scent",
+					"name": "以太之香",
+					"entries": [
+						"地精能通过嗅觉精确地定位出它周围30尺内的精制或未精制的以太。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}5 ({@damage 1d8 + 1}) 点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Siphon",
+					"name": "吸取",
+					"entries": [
+						"小妖精会从它能看到且距离5英尺内的一个以太供能的设备中吸取以太。如果该物品未被佩戴或携带，接触会自动吸取以太。如果该物品被某个生物佩戴或携带，该生物必须成功通过一次{@dc 11}敏捷豁免来防止被小妖精触及。",
+						"如果以太动力装置提供任何加成（对攻击检定、伤害检定、护甲等级等），则该加成减少1。如果装置有充能次数，它将失去1次充能。否则，它将停止工作1轮。如果无人干扰，地精可以完全破坏一个以太动力装置。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Hellion (Huge)",
+			"name": "地狱犬（巨型）",
+			"source": "PSK",
+			"page": 31,
+			"_copy": {
+				"ENG_name": "Remorhaz",
+				"name": "百足魔兽",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "百足魔兽",
+						"with": "小恶魔"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Hellion (Large)",
+			"name": "地狱犬（大型）",
+			"source": "PSK",
+			"page": 31,
+			"_copy": {
+				"ENG_name": "Young Remorhaz",
+				"name": "青年百足魔兽",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "百足魔兽",
+						"with": "小恶魔"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Hydra",
+			"name": "多头蛇",
+			"source": "PSK",
+			"page": 30,
+			"_copy": {
+				"ENG_name": "Hydra",
+				"name": "多头蛇",
+				"source": "MM"
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Lifecraft Elephant",
+			"name": "生命工艺象",
+			"type": "construct",
+			"source": "PSK",
+			"page": 33,
+			"_copy": {
+				"ENG_name": "Elephant",
+				"name": "大象",
+				"source": "MM"
+			},
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"中毒"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Servo",
+			"name": "自动机",
+			"type": "construct",
+			"source": "PSK",
+			"page": 32,
+			"size": [
+				"T"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 10,
+				"formula": "3d4 + 3"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 4,
+			"dex": 11,
+			"con": 12,
+			"int": 3,
+			"wis": 10,
+			"cha": 7,
+			"passive": 10,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"中毒"
+			],
+			"cr": "0",
+			"action": [
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 0}，触及范围5尺，单一目标。{@h}1点挥砍伤害。"
+					]
+				}
+			],
+			"familiar": true,
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Sky Leviathan",
+			"name": "天穹巨兽",
+			"type": "beast",
+			"source": "PSK",
+			"page": 28,
+			"size": [
+				"G"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 247,
+				"formula": "15d20 + 90"
+			},
+			"speed": {
+				"fly": {
+					"number": 50,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"str": 28,
+			"dex": 7,
+			"con": 22,
+			"int": 1,
+			"wis": 8,
+			"cha": 4,
+			"save": {
+				"con": "+10",
+				"wis": "+3"
+			},
+			"passive": 9,
+			"cr": "10",
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 9}，范围 10 英尺，单一目标。{@h}22（{@damage 3d8 + 9}）穿刺伤害。如果目标是大型或更小的生物，它必须成功进行一次{@dc 18}敏捷豁免，否则将被利维坦吞下。被吞下的生物处于{@condition 目盲}和{@condition 束缚}状态，它在利维坦外有{@quickref 掩护||3||全身掩护}，并且在利维坦的每一回合开始时受到 21（{@damage 6d6}）酸性伤害。",
+						"如果利维坦在单一回合内被其内部的生物造成30点或更多伤害，则利维坦必须在该回合结束时进行一次{@dc 21}体质豁免检定，否则将反刍所有被吞下的生物，这些生物会以{@condition 倒地}状态落在利维坦10尺范围内的空间内。如果利维坦死亡，被吞下的生物不再被它{@condition 束缚}，可以使用20尺的移动来从尸体中逃脱，以{@condition 倒地}状态离开。"
+					]
+				}
+			],
+			"actionTags": [
+				"吞咽"
+			],
+			"damageTags": [
+				"A",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"目盲",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Sky Whale",
+			"name": "天鲸",
+			"source": "PSK",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Giant Crocodile",
+				"name": "巨鳄",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鳄鱼",
+						"with": "鲸鱼"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "啃咬",
+							"items": {
+								"ENG_name": "Flipper",
+								"name": "鳍肢",
+								"entries": [
+									"{@atk mw} 命中{@hit 8}，范围 10 尺，目标不能处于{@condition 受擒}状态。{@h}14 ({@damage 2d8 + 5}) 钝击伤害。若目标是生物，则必须成功通过{@dc 16} 力量豁免，否则被击{@condition 倒地}。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"speed": {
+				"fly": {
+					"number": 50,
+					"condition": "(悬浮)"
+				},
+				"canHover": true
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Thopter (Bat)",
+			"name": "扑翼机（蝙蝠）",
+			"type": "construct",
+			"source": "PSK",
+			"page": 33,
+			"_copy": {
+				"ENG_name": "Bat",
+				"name": "蝙蝠",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "蝙蝠",
+						"with": "飞行器"
+					}
+				}
+			},
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"中毒"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Thopter (Blood Hawk)",
+			"name": "飞行兽（血鹰）",
+			"type": "construct",
+			"source": "PSK",
+			"page": 33,
+			"_copy": {
+				"ENG_name": "Blood Hawk",
+				"name": "血鹰",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "隼",
+						"with": "飞行器"
+					}
+				}
+			},
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"中毒"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Thopter (Eagle)",
+			"name": "鹰形飞行器",
+			"type": "construct",
+			"source": "PSK",
+			"page": 33,
+			"_copy": {
+				"ENG_name": "Eagle",
+				"name": "鹰",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鹰",
+						"with": "飞行器"
+					}
+				}
+			},
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"中毒"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Thopter (Hawk)",
+			"name": "扑翼机（鹰）",
+			"type": "construct",
+			"source": "PSK",
+			"page": 33,
+			"_copy": {
+				"ENG_name": "Hawk",
+				"name": "隼",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "隼",
+						"with": "飞行器"
+					}
+				}
+			},
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"中毒"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Thopter (Owl)",
+			"name": "猫头鹰飞艇",
+			"type": "construct",
+			"source": "PSK",
+			"page": 33,
+			"_copy": {
+				"ENG_name": "Owl",
+				"name": "猫头鹰",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "猫头鹰",
+						"with": "飞行器"
+					}
+				}
+			},
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"中毒"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Thopter (Pseudodragon)",
+			"name": "扑翼机（伪龙）",
+			"type": "construct",
+			"source": "PSK",
+			"page": 33,
+			"_copy": {
+				"ENG_name": "Pseudodragon",
+				"name": "伪龙",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "伪龙",
+						"with": "飞行器"
+					}
+				}
+			},
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"中毒"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Thopter (Raven)",
+			"name": "扑翼机（乌鸦）",
+			"type": "construct",
+			"source": "PSK",
+			"page": 33,
+			"_copy": {
+				"ENG_name": "Raven",
+				"name": "渡鸦",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "渡鸦",
+						"with": "飞行器"
+					}
+				}
+			},
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"中毒"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Thopter (Vulture)",
+			"name": "秃鹫飞艇",
+			"type": "construct",
+			"source": "PSK",
+			"page": 33,
+			"_copy": {
+				"ENG_name": "Vulture",
+				"name": "秃鹫",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "秃鹫",
+						"with": "飞行器"
+					}
+				}
+			},
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"中毒"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Wurm",
+			"name": "亚龙",
+			"source": "PSK",
+			"page": 31,
+			"_copy": {
+				"ENG_name": "Purple Worm",
+				"name": "紫虫",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "蠕虫",
+						"with": "亚龙"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		}
+	]
+}

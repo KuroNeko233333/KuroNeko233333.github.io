@@ -1,0 +1,38 @@
+{
+	"spellFluff": [
+		{
+			"ENG_name": "Dark Star",
+			"name": "暗黑星辰",
+			"source": "EGW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/EGW/Dark Star.webp"
+					},
+					"credit": "Axel Defois",
+					"width": 1496,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Reality Break",
+			"name": "崩坏现实",
+			"source": "EGW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/EGW/Reality Break.webp"
+					},
+					"credit": "Brian Valeza",
+					"width": 1496,
+					"height": 1000
+				}
+			]
+		}
+	]
+}

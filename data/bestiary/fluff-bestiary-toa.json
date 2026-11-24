@@ -1,0 +1,2345 @@
+{
+	"_meta": {
+		"internalCopies": [
+			"monsterFluff"
+		]
+	},
+	"monsterFluff": [
+		{
+			"ENG_name": "Acererak",
+			"name": "阿瑟瑞克",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"阿瑟瑞克是一位穿行于各个世界、以吞噬冒险者的灵魂为乐的大巫妖，他将这些冒险者引诱到遍布陷阱的地下城中，使他们遭受可怕的死亡。失落的奥姆城地下就是一座这样的地下城。这座地下城被称为九神之墓，因为阿瑟瑞克杀死了九名伪神，并将k们封印于其中。最近，他制造了一个叫做易魂装置的不死生物装置，把它藏在了九神之墓的中心。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Acererak's Traits",
+					"name": "阿瑟瑞克的特质",
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ideal",
+							"name": "理念",
+							"type": "item",
+							"entries": [
+								"\"当我可以成为神的创造者时，为什么要成为神？\""
+							]
+						},
+						{
+							"ENG_name": "Bond",
+							"name": "牵挂",
+							"type": "item",
+							"entries": [
+								"\"我建造地下城以诱捕并杀死强大的冒险者。他们的死亡与灵魂将成为我的养料。\""
+							]
+						},
+						{
+							"ENG_name": "Flaw",
+							"name": "缺陷",
+							"type": "item",
+							"entries": [
+								"\"我往往会低估敌人的决心。\""
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Acererak.webp"
+					},
+					"width": 422,
+					"height": 489
+				}
+			]
+		},
+		{
+			"ENG_name": "Albino Dwarf",
+			"name": "白化矮人",
+			"source": "ToA",
+			"entries": [
+				{
+					"ENG_name": "Albino Dwarf",
+					"name": "白化矮人",
+					"type": "section",
+					"entries": [
+						"楚尔特的白矮人们因火山运动逃离出了他们的地下家园，其中那些没有在南扎路港寻求庇护的白矮人选择了在丛林中谋生。他们用恐龙皮制作护甲；用恐龙骨、燧石和木头打造武器；并用骨头、羽毛、兽牙和石珠打造出华丽的首饰。白矮人们并未忘记如何熔炼金属，但他们很少有条件做这种事。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Albino Dwarf.webp"
+					},
+					"width": 1000,
+					"height": 1039
+				}
+			]
+		},
+		{
+			"ENG_name": "Albino Dwarf Spirit Warrior",
+			"name": "白矮人精魂武者",
+			"source": "ToA",
+			"_copy": {
+				"ENG_name": "Albino Dwarf",
+				"name": "白化矮人",
+				"source": "ToA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"ENG_name": "Albino Dwarf Spirit Warriors",
+								"name": "白矮人精魂武者",
+								"type": "section",
+								"entries": [
+									"有时一位白矮人与楚尔特的大地如此调和，以至于某位仁慈的自然精魂注意到了他，在他身上降下了一道护咒，赐予了他天生施法的能力。这些矮人精魂武者使用白矮人武者Albino Dwarf Warrior的数据，但他的挑战等级为1（200xp），并拥有天生施法特性。"
+								]
+							}
+						]
+					}
+				}
+			}
+		},
+		{
+			"ENG_name": "Albino Dwarf Warrior",
+			"name": "白矮人武者",
+			"source": "ToA",
+			"_copy": {
+				"ENG_name": "Albino Dwarf",
+				"name": "白化矮人",
+				"source": "ToA"
+			}
+		},
+		{
+			"ENG_name": "Aldani (Lobsterfolk)",
+			"name": "阿拉尼（龙虾人）",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"许多楚尔特人都能回忆起自己幼时听到过的龙虾人的传说，那是一种居住在楚尔特的河流与湖泊中的可怕龙虾人。已经很多年没人目击过龙虾人了，很多人都认为它们已经彻底消亡了。但事实上，有很多龙虾人活了下来，撤退到了位于楚尔特大陆中央的龙虾盆地中的湖泊内。",
+										"一个龙虾人看起来就像一只直立行走的巨大龙虾。它的脸部几乎完全被甲壳覆盖，看起来很像一个类人生物，除了它有着长长的柄状眼球之外。虽然有着可怕的外表，但龙虾人实际上会避免冲突。它们藏在自己的湖泊与河流中，隐居而排外。",
+										{
+											"ENG_name": "Aldani Bribes",
+											"name": "龙虾人的贿赂",
+											"type": "entries",
+											"entries": [
+												"如果被惊扰了，龙虾人会尝试将入侵者吓走，而非杀死他们。如果遭遇了难以被吓退的生物，它们便会提供贿赂来交换自己的安宁。这种贿赂的形式是龙虾人从河流与湖泊底部收集的财宝。",
+												{
+													"ENG_name": "Cursed by Ubtao",
+													"name": "乌塔欧的诅咒",
+													"type": "entries",
+													"entries": [
+														"龙虾人是楚尔特部落中的阿尔达尼部落的怪物后代。该部落的渔民数以千计地捕捞河中的龙虾，直至一只龙虾也没有剩下。他们的贪婪惹怒了乌塔欧，k诅咒了渔民，将他们变形成了龙虾人。渔民们接受了自己所受的惩罚以及自己的新形态。然而，他们受到了部落其他成员的鄙视，被迫生活在自己曾洗劫过的河流中。尽管阿尔达尼部落已经灭绝了，但这些龙虾人却生存到了现在。"
+													]
+												}
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Aldani (Lobsterfolk).webp"
+					},
+					"width": 1000,
+					"height": 947
+				}
+			]
+		},
+		{
+			"ENG_name": "Almiraj",
+			"name": "独角兔",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"独角兔（发音为AWL-meer-ahj）是一种体型较大而胆子很小的兔子，一尺长的螺旋状独角从它的前额伸出，神似独角兽的角。如果被迫要发动攻击，它会尝试用它的尖角刺向敌人。",
+										"在很久以前，独角兔被来自遥远的扎哈拉地区的商人带到了楚尔特。擅长于躲避捕食者的它们在整个热带半岛繁衍生息。它们居住在土洞里，并且可以被捕获和驯化。在DM的允许下，法术{@spell 寻获魔宠}可以召唤一只独角兔。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Almiraj.webp"
+					},
+					"width": 527,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Ankylosaurus Zombie",
+			"name": "甲龙丧尸",
+			"source": "ToA",
+			"entries": [
+				"这种生物很缓慢，对周围环境几乎浑然不觉。"
+			]
+		},
+		{
+			"ENG_name": "Artus Cimber",
+			"name": "阿图斯·辛贝尔",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"竖琴手同盟的前成员阿图斯·辛贝尔如今是冬之戒的持有者。他在楚尔特丛林中找到了这枚戒指，也在那里遇见了他的妻子艾丽珊达Alisanda。这枚戒指会使其穿戴者的年龄停止流逝，这使得阿图斯活过了远长于自己正常寿命的时光。戒指还阻隔了任何试图定位它或它的穿戴者的魔法效应。阿图斯将他亲爱而已逝的动物伙伴们的名字纹在了指节上方的位置\u2014\u2014它们是比尔特Byrt和勒格Lugg，一对会说话的袋熊。",
+										"阿图斯花费了大半生保护冬之戒，不让它落入邪恶之手，但他回到楚尔特的目的却是为了与奥法之劫中伴随着麦兹罗城一同消失的他的爱人艾丽珊达重聚。阿图斯不再被动等待艾利珊达与麦兹罗城的回归，而是主动寻找起将他们召回的方法。他相信一只远古的守秘纳迦\"萨迦·纳巴扎Saja N'baza\"可以帮助他。因此，他探索的重点是找到奥罗伦加城废墟的位置，据说那位纳迦就住在那里。他在南扎路港遇到了一位名为龙饵Dragonbait的类蜴人，这是命运送给他的旅伴。两人总在旅行中。所以，他们在冒险中出现的位置是随机决定的。",
+										{
+											"ENG_name": "Using Artus",
+											"name": "使用阿图斯",
+											"type": "entries",
+											"entries": [
+												"阿图斯从未到过奥姆城，也不知道这座城市在哪儿。但是，他拥有一件强大神器和一颗善良的心。如果角色们解释自己前来楚尔特的原因，那么阿图斯会暂时搁置他的个人目标，主动提出帮助他们找到奥姆城并摧毁易魂装置。",
+												"当阿图斯第一次被形式所迫而使用冬之戒时，他会警告角色们有邪恶势力正在寻找这枚戒指，所以他与冒险队同行之事可能会导致角色们身处险境。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Artus Cimber's Traits",
+					"name": "阿图斯·辛贝尔的特质",
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ideal",
+							"name": "理念",
+							"type": "item",
+							"entries": [
+								"\"保存知识和历史对我来说尤为重要。\""
+							]
+						},
+						{
+							"ENG_name": "Bond",
+							"name": "牵挂",
+							"type": "item",
+							"entries": [
+								"\"我渴望与我的妻子艾利珊达重逢。\""
+							]
+						},
+						{
+							"ENG_name": "Flaw",
+							"name": "缺陷",
+							"type": "item",
+							"entries": [
+								"\"我很难相信陌生人，尤其是冒险者。\""
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Artus Cimber.webp"
+					},
+					"width": 450,
+					"height": 747
+				}
+			]
+		},
+		{
+			"ENG_name": "Asharra",
+			"name": "阿莎尔",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"鸟羽人驰骋于呼啸涡旋之间\u2014\u2014这道由狂烈罡风与滂沱骤雨织就的无尽风暴，环抱着气元素位面中那片安宁的阿夸国度。这些鸟形类人生物在空中巡逻以守护家园的风之边境，抵御来自土元素位面的入侵者，譬如它们的死敌\u2014\u2014石像鬼。"
+									]
+								},
+								{
+									"ENG_name": "Biography",
+									"name": "传记",
+									"type": "entries",
+									"entries": [
+										"基尔·萨巴隐修地的传奇长老。人们称她为老师，并将她尊为活圣人。阿莎尔聪明、有抱负，有点支配欲，但并不残忍或麻木。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Asharra.webp"
+					},
+					"width": 1000,
+					"height": 758
+				}
+			]
+		},
+		{
+			"ENG_name": "Assassin Vine",
+			"name": "刺客藤",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"刺客藤是一种可移动的植物，通过绞碎猎物并将尸体埋在根部来作为肥料。它通常呆在原地不动，除非它需要狩猎。一株成熟的刺客藤以一条长约20尺的藤蔓为主体。主藤每隔6寸就长出一条较小的支藤，支藤长不过5尺。夏末时节，支藤上会结出一串串形似野生葡萄的小果实。这种水果很硬，带有浓浓的苦涩味。",
+										"温泉、火山口和其他热源附近生长着一种罕见的变种刺客藤。它生长于地下，通常会形成足够的尸体来支持一个繁荣的蘑菇及其他真菌群落，这些蘑菇和真菌长在刺客藤周围，并有助于它的隐藏。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Assassin Vine.webp"
+					},
+					"credit": "Zoltan Boros",
+					"width": 748,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Atropal",
+			"name": "萎缩者",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"萎缩者是一位邪恶神祇未完成的可怕造物，很久之前就被抛弃了。因为萎缩者从未真正活过，所以它无法被任何方式复活。即使神圣干预也无法赐予这个可恨而悲惨的恐怖生物真正的生命。",
+										"萎缩者是一件畸形的未完成品。它那潮湿、褶皱而浮肿的身躯上顶着一个没有毛发的硕大脑袋，一双呆滞而茫然的眼睛长在脑袋上。它不停地流着口水，嘴中发出污秽之言。它的胳膊相当细长，微型手指末端长着异常锋利的指甲。它从不走路，总是漂浮着，那萎缩的死腿垂在身下毫无用处。",
+										{
+											"ENG_name": "Negative Energy Connection",
+											"name": "负能量链接",
+											"type": "entries",
+											"entries": [
+												"萎缩者那干瘪的脐带似乎消失在空中。但实际上，它链接了负能量位面。这种联系给了萎缩者掌控死亡与不死生物的力量。斩首剑或其他斩首武器可以切断脐带，削弱萎缩者与负能量位面的联系。",
+												"萎缩者可以召唤死于负能量位面的生物的残留，并以邪灵形态表现出来。这些仆从只能依靠萎缩者的意志存在于负能量位面外，当萎缩者被摧毁时，它们将迅速消失。"
+											]
+										},
+										{
+											"ENG_name": "Undead Nature",
+											"name": "不死本质",
+											"type": "entries",
+											"entries": [
+												"萎缩者无需空气、饮食和睡眠。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Atropal.webp"
+					},
+					"width": 1000,
+					"height": 712
+				}
+			]
+		},
+		{
+			"ENG_name": "Azaka Stormfang",
+			"name": "婀扎卡·风暴之牙",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Azaka Stormfang.webp"
+					},
+					"width": 897,
+					"height": 510
+				}
+			]
+		},
+		{
+			"ENG_name": "Bag of Nails",
+			"name": "钉包",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"钉包渴望像真正的猎人那样死去。衰老已经缠上了他，现在他将所有生物视为猎物。",
+										"他解释说他来到奥姆是为了寻找一个传说中的宝藏，叫做月亮之脐。他曾希望能够利用它所谓的力量来找到他失散的儿子，但他早已对找到它感到绝望。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Bag of Nails.webp"
+					},
+					"width": 756,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Blind Artist",
+			"name": "盲眼画家",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Blind Artist.webp"
+					},
+					"width": 908,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Chwinga",
+			"name": "怯蕴阿灵",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"怯蕴阿灵（发音为 cheh-WING-ah）是一种微型元素精魂，居住在远离城市的植物、石头与河流中。怯蕴阿灵极度害羞，更倾向于在不会被看到的地方活动。",
+										"如果有两只或更多的怯蕴阿灵住在同一区域，那么它们会在不同的植物、石头或淡水的不同部分安家。没有任何两只怯蕴阿灵是一模一样的，但它们看起来都像一个6英寸高的活化玩偶，并且带着奇怪的面具，四肢细长，头发散乱。有时，凉爽的微风、甜美的花香以及起舞的萤火虫都是它们出现的预兆。仅仅是它们的存在，就能使自然环境更加茂盛，充满生机。",
+										{
+											"ENG_name": "Humanoid Fascination",
+											"name": "迷于类人",
+											"type": "entries",
+											"entries": [
+												"怯蕴阿灵会避开大部分其他生物，但它们对一切文明都感到十分好奇。它们十分困惑那些穿着盔甲、举着武器、挥舞着工具和煮着食物的生物们为什么那么做。当一只怯蕴阿灵与一名或多名类人生物偶遇时，满足好奇心会成为它的首要目的，并且它会跟踪这些生物一段时间以便观察他们。如果怯蕴阿灵喜欢某个特定的类人生物，它会用它的戏法来帮助他，或是在离开之际，给予喜爱之人一份魔法赠礼。让怯蕴阿灵喜欢上的特征因人而异。有时，一只怯蕴阿灵仅仅是喜欢这个类人生物走路的样子或者他梳理头发的方式。有时，怯蕴阿灵会被类人生物演奏音乐的技巧、或是能吃下大量食物所吸引。"
+											]
+										},
+										{
+											"ENG_name": "Elemental Nature",
+											"name": "元素本质",
+											"type": "entries",
+											"entries": [
+												"怯蕴阿灵需要睡眠，但无需空气和饮食。它们没有名字，也没有语言能力。当一只怯蕴阿灵死去时，它会转变成一捧花瓣、一小团花粉、一尊如它以前模样的小石像、一块有着大理石纹路的光滑石块、或是一滩淡水。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Chwinga.webp"
+					},
+					"width": 1100,
+					"height": 725
+				}
+			]
+		},
+		{
+			"ENG_name": "Clay Gladiator",
+			"name": "粘土角斗士",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"粘土角斗士在被攻击或被召唤到角斗场时会战斗。如果在角斗场外降至0生命值，角斗士会连同其所有物一起消失，然后在其牢房中以满生命值的状态重新出现，手持长矛和盾牌，并尽可能返回角斗场。如果在角斗场内被击败，角斗士会在重新出现在其牢房前留下其长矛。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Dragonbait",
+			"name": "龙饵",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"龙饵是一名善良斗士，也是一名类蜴人\u2014\u2014一个起源于遥远世界并且长寿的种族。很少有类蜴人在被遗忘的国度中居住，并且人们相信类蜴人族群并不存在于这个世界的任何一个角落。",
+										"类蜴人的语言混合着咔嚓声与口哨声，并高出人类的听觉范围，所以龙饵倾向于依靠气味来传达自己的情感。为了被大部分用语言沟通的生物所理解，他必须\"呼出\"一种气味。龙饵已知的气味包括：硫磺味（困惑）、玫瑰香（悲伤）、柠檬香（欢愉或满意）、烤面包味（愤怒）、紫罗兰香（危险或恐惧）、金银花香（温柔或关心）、焚香味（奉献或虔诚）、焦油香（胜利或庆祝）、火腿香（紧张或担心）。",
+										"龙饵身高4尺10寸，重150磅，皮肤干燥而褶皱。他手持一把神圣复仇者holy avenger长剑，并装备着一面绘有蓝红白三色涂漆的盾牌。尽管他与圣武士有着相同的特性，但龙饵并非他们中的一员。他使用一种名为圣感的能力，能探测出60尺内任何生物的阵营。",
+										{
+											"ENG_name": "An Unexpected Friendship",
+											"name": "意外之友",
+											"type": "entries",
+											"entries": [
+												"龙饵在南扎路港遇到了阿图斯·辛贝尔，两人很快知交莫逆。当阿图斯诉说出他不断寻找、只为与妻子艾丽珊达重逢之事时，龙饵用安静的仪态与不同寻常的交流方法安抚了他。龙饵只是微笑着点了点头，就同意帮助阿图斯。作为楚尔特的常客，这名类蜴人十分了解丛林中的危险。"
+											]
+										},
+										{
+											"ENG_name": "Using Dragonbait",
+											"name": "使用龙饵",
+											"type": "entries",
+											"entries": [
+												"龙饵从未去过奥姆城，他并不知道这座城市在哪里。如果玩家们扮演的角色说服了阿图斯·辛贝尔帮助他们摧毁易魂装置，则龙饵也会一同协助。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Dragonbait's Traits",
+					"name": "龙饵的特质",
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ideal",
+							"name": "理念",
+							"type": "item",
+							"entries": [
+								"龙饵思考着探索世界，见证更多世界奇迹、并在路上帮助他人等事宜，他散发出柠檬香味。（翻译：他有一颗探险者般的心。）"
+							]
+						},
+						{
+							"ENG_name": "Bond",
+							"name": "牵挂",
+							"type": "item",
+							"entries": [
+								"龙饵帮助一位朋友进行他的探索之旅，他散发出焚香的味道。（翻译：他会为了朋友赴汤蹈火。）"
+							]
+						},
+						{
+							"ENG_name": "Flaw",
+							"name": "缺陷",
+							"type": "item",
+							"entries": [
+								"龙饵前往其他人害怕步入之所在，他\"呼出\"一股火腿般的味道。（翻译：他从不担心风险，只会一往无前。）"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Dragonbait.webp"
+					},
+					"width": 761,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Eblis",
+			"name": "魔王鹤",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"魔王鹤（发音为EH-blee）。在人们众口相传的故事中，魔王鹤是因盗窃与绑架受到诸神降罪的奸邪之人所转世而生的物种。这些既聪明又邪恶的鹤类高达8尺，与大多数鸟类一样是卵生的，同时它们使用足与喙来操作其他物件。",
+										"魔王鹤总是试图忽悠别的生物帮它们做事，它们的目的通常都是自私自利的。它们的天性就是摧毁其他来犯的生物，并以诱骗类人生物进入死亡陷阱为乐，有时它们也会这样\"报答\"帮他们做事的生物。它们用草丛和芦苇搭建巢穴，并把宝藏藏于其中。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Eblis.webp"
+					},
+					"width": 647,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Ekene-Afa",
+			"name": "艾珂内-阿法",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Ekene-Afa.webp"
+					},
+					"width": 860,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Eku",
+			"name": "依库",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Eku.webp"
+					},
+					"width": 897,
+					"height": 510
+				}
+			]
+		},
+		{
+			"ENG_name": "Elok Jaharwon",
+			"name": "伊洛克·加哈望",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Elok Jaharwon.webp"
+					},
+					"width": 311,
+					"height": 525
+				}
+			]
+		},
+		{
+			"ENG_name": "Faroul",
+			"name": "法鲁尔",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Faroul and Gondolo.webp"
+					},
+					"width": 897,
+					"height": 510
+				}
+			]
+		},
+		{
+			"ENG_name": "Fenthaza",
+			"name": "芬萨札",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Fenthaza.webp"
+					},
+					"width": 599,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Flask of Wine",
+			"name": "酒瓶",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/River Mist and Flask of Wine.webp"
+					},
+					"width": 897,
+					"height": 510
+				}
+			]
+		},
+		{
+			"ENG_name": "Flying Monkey",
+			"name": "飞猴",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"飞猴比普通猴子更聪明和好奇一些，它们可以被驯养，并学会服从简单的命令。它们有很多颜色和种类，翅膀上长有羽毛，翼展大约5尺长。在DM的许可下，法术{@spell 寻获魔宠}可以召唤出一只飞猴。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Flying Monkey.webp"
+					},
+					"width": 734,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Giant Four-Armed Gargoyle",
+			"name": "四臂巨石像鬼",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"只有阿瑟瑞克知道如何制造这种生物。一只四臂巨石像鬼身高大约8~9尺，重量约五千磅。通常这种家伙被用作墓穴守卫，它的尖牙利爪被用来驱逐来犯者。关于石像鬼的更多信息见《怪物图鉴》。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Giant Four-Armed Gargoyle.webp"
+					},
+					"width": 1000,
+					"height": 642
+				}
+			]
+		},
+		{
+			"ENG_name": "Giant Snapping Turtle",
+			"name": "巨鳄龟",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"巨鳄龟的直径可达12尺。尽管看上去缓慢迟钝，但它们实际上可以做到夸张的加速，且对接近它们的体型更小的生物发起侵略性的攻击。巨龟的一口可以咬断一个人类的躯干，而它们对食物也不怎么挑剔。"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Girallon Zombie",
+			"name": "四臂猿怪丧尸",
+			"source": "ToA",
+			"entries": [
+				"四臂猿怪是长着白色皮毛的四臂猩猩猴，四臂猿怪丧尸比他们的非不死同类缓慢，但同样凶猛。赋予他们力量的死灵能量，点燃了他们凶残的心和对生肉的渴望。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Girallon Zombie.webp"
+					},
+					"width": 722,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Gondolo",
+			"name": "冈多洛",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Faroul and Gondolo.webp"
+					},
+					"width": 897,
+					"height": 510
+				}
+			]
+		},
+		{
+			"ENG_name": "Grabstab",
+			"name": "格拉布斯塔布",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Grabstab.webp"
+					},
+					"width": 712,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Hew Hackinstone",
+			"name": "休·哈金斯顿",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"这些狂战士来自蛮荒之地，性情难测，总是结成战团，走到哪儿就打到哪儿，到处寻衅挑事。"
+									]
+								},
+								{
+									"ENG_name": "Biography",
+									"name": "传记",
+									"type": "entries",
+									"entries": [
+										"三年前，休是一支试图重新开放巨龙之心矿井的矮人探险队的成员。这支探险队遇到了红龙火种。只有休一个人逃脱了，龙咬下了他的左臂。休想返回矿山并杀死巨龙，但他需要一群坚定的冒险家来帮助他。休嘴上说着他能带他们去任何他们想去的地方，但等到角色们正式雇用他作为向导之后，他就只会把他们带去巨龙之心矿井。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Hew Hackinstone.webp"
+					},
+					"width": 897,
+					"height": 510
+				}
+			]
+		},
+		{
+			"ENG_name": "Ifan Talro'a",
+			"name": "伊方·塔若阿",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Ifan Talro'a.webp"
+					},
+					"width": 840,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Jaculi",
+			"name": "幻色蛇",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"幻色蛇（发音为 jah-KOO-lee）通常是一条十五尺长的蛇，能够改变自身的颜色和纹理以伪装自身。当缠绕在石柱或树干上时，它会将自身的外表变得如同石头或木纹般，并以极强的力量和极高的精准度将自己像标枪一般射出去，向它的猎物发起袭击。",
+										"幻色蛇通常会在气候较潮湿的地方出现，且它们偏好雨林和阴冷的地下城。幻色蛇所蜕之皮是制造跳跑之靴和隐身斗篷的上佳材料。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Jaculi.webp"
+					},
+					"width": 1000,
+					"height": 827
+				}
+			]
+		},
+		{
+			"ENG_name": "Jessamine",
+			"name": "婕萨敏",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Jessamine.webp"
+					},
+					"width": 700,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Jobal",
+			"name": "乔巴",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Jobal.webp"
+					},
+					"width": 772,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Kamadan",
+			"name": "六岐蛇豹",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"六岐蛇豹（发音为 KAM-ah-dan）是一种猫科的掠食者，其形如猎豹，但是从它的肩处还长有六条蛇。尽管与移位兽有较少的相似之处，但实际上两种生物并无关系（但有些学者不这么认为）。",
+										"六岐蛇豹通常独行或与配偶一同狩猎。它们可以喷出大量催眠气体，这一行为在它们近战时十分常见。如果六岐蛇豹在其突袭范围内同时存在清醒和昏迷的敌人，它会尝试在处决昏迷敌人之前先尝试杀死尚且清醒的敌人。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Kamadan.webp"
+					},
+					"width": 1000,
+					"height": 1007
+				}
+			]
+		},
+		{
+			"ENG_name": "King of Feathers",
+			"name": "翎羽之王",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"被称为翎羽之王的巨型暴龙是奥姆无可争议的统治者。禁城的大多数居民都害怕它雷鸣般的脚步声，并且会远远避开它的巢穴所在地\u2014\u2014露天剧场。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/King of Feathers.webp"
+					},
+					"width": 1150,
+					"height": 771
+				}
+			]
+		},
+		{
+			"ENG_name": "Kupalué",
+			"name": "库帕鲁艾",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Qawasha and Kupalue.webp"
+					},
+					"width": 897,
+					"height": 510
+				}
+			]
+		},
+		{
+			"ENG_name": "Kwayothé",
+			"name": "克薇欧泽",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Kwayothe.webp"
+					},
+					"width": 730,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Laskilar",
+			"name": "拉斯基拉尔",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Laskilar.webp"
+					},
+					"width": 301,
+					"height": 525
+				}
+			]
+		},
+		{
+			"ENG_name": "Liara Portyr",
+			"name": "莉尔阿·波提尔",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"作为贝路利安堡的指挥官，莉尔阿的大部分时间都在和海盗达成协议，同时留意她的堡垒的安全问题。总之，她不怎么怀疑冒险者，而且会尽自己的最大努力来帮助冒险者们处理盘踞于丛林的种种威胁。",
+										"莉尔阿生于博德之门中的名门望族，而且已经在岗位上就任三年有余。对她来说，这个岗位就像是勇气的考验，不过对她的下属来说，贝路利安堡就是个放逐之地。莉尔阿安插在南扎路港的间谍为她提供了船只的运货清单和时刻表，而她又将这些东西转交给了贾哈卡锚地的海盗，以换取海盗们不攻击升着博德之门旗帜的船只。她自己也会分得一份海盗收入，其中部分用于取悦驻军们。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Liara Portyr's Traits",
+					"name": "莉尔阿·波提尔的特质",
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ideal",
+							"name": "理念",
+							"type": "item",
+							"entries": [
+								"\"人必须接受指挥。要么服从我的命令，要么死。\""
+							]
+						},
+						{
+							"ENG_name": "Bond",
+							"name": "牵挂",
+							"type": "item",
+							"entries": [
+								"\"以博德之门大公爵乌尔德·拉文加德的名义起誓，我将据守贝路利安堡。我一日在职，则堡垒一日不落！\""
+							]
+						},
+						{
+							"ENG_name": "Flaw",
+							"name": "缺陷",
+							"type": "item",
+							"entries": [
+								"\"世界就是要么你杀人，要么人杀你。对于无法守护自身者，我毫无同情也毫无愧疚。\""
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Liara Portyr.webp"
+					},
+					"width": 759,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Mantrap",
+			"name": "捕人草",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								"捕人草是一种巨大的食肉植物，其外形如同被放大的捕蝇草。为了捕捉猎物，捕人草会释放出一种花粉，利用其魔法效应引诱猎物。尽管它会吞噬触及范围内的所有温血生物，但它还是偏好类人生物。"
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Musharib",
+			"name": "穆沙瑞卜",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Musharib.webp"
+					},
+					"width": 897,
+					"height": 510
+				}
+			]
+		},
+		{
+			"ENG_name": "Mwaxanaré",
+			"name": "姆瓦克丝娜瑞",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"十七岁还是有些幼稚的年纪，但姆瓦克丝娜瑞公主（简称为娜尔）已经成为了奥姆王室尚存活的后裔中的最为年长者，同时也是他们已陷落王国的自然继承人。她和她六岁的弟弟纳是基尔·萨巴隐修地中的鸟羽人们的客人。鸟羽人们想要保护这对年轻的王室姐弟，直至奥姆城中的邪恶被消灭殆尽。",
+										"姆瓦克丝娜瑞为了自己的利益有些过于固执。她渴望取得她的王权，并会急切地利用冒险者来达成她的目的。她的声调显得有些高高在上，而对于那些顶撞她的举动，她的态度就不会那么友善了。",
+										"在与外层位面的古老存在\u2014\u2014艾夸的气之公爵达成协议后，公主成为了一名新生的魔契师。她对于肉体劳作的憎恶让她在{@spell 法师之手}和{@spell 隐形仆役}的应用上颇有心得。通过她的契约，她也获得了心灵感应的能力。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Mwaxanaré's Traits",
+					"name": "姆瓦克丝娜瑞的特质",
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ideal",
+							"name": "理念",
+							"type": "item",
+							"entries": [
+								"\"有朝一日，我将君临楚尔特。\""
+							]
+						},
+						{
+							"ENG_name": "Bond",
+							"name": "牵挂",
+							"type": "item",
+							"entries": [
+								"\"我已与艾夸的气之公爵达成协议，将使用祂们的力量来保护我的弟弟和那些守护我们的鸟羽人们。\""
+							]
+						},
+						{
+							"ENG_name": "Flaw",
+							"name": "缺陷",
+							"type": "item",
+							"entries": [
+								"\"我是一名公主，我应当享有与之对应的尊重与地位。我不是听令者，而是号令者。\""
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Mwaxanaré.webp"
+					},
+					"width": 843,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Na",
+			"name": "Na",
+			"source": "ToA",
+			"entries": [
+				"年轻的王子纳是一个AC 10、HP 3的非战斗人员。他的大部分时光都在鸟羽人这里度过，因此他将自己也认为是他们中的一员。他的穿着如同鸟羽人一般，而且更倾向于说气族语而非通用语。",
+				{
+					"ENG_name": "Na's Traits",
+					"name": "纳的特质",
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ideal",
+							"name": "理念",
+							"type": "item",
+							"entries": [
+								"\"我想成为一名鸟羽人，我想学习如何像鸟儿那样飞翔！\""
+							]
+						},
+						{
+							"ENG_name": "Bond",
+							"name": "牵挂",
+							"type": "item",
+							"entries": [
+								"\"我深爱我的姊姊，我深爱鸟羽人们。她们就是我的全部。\""
+							]
+						},
+						{
+							"ENG_name": "Flaw",
+							"name": "缺陷",
+							"type": "item",
+							"entries": [
+								"\"我对这个世界一无所知。\""
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Nanny Pu'pu",
+			"name": "普普奶奶",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Nanny Pu'pu.webp"
+					},
+					"width": 445,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Orvex Ocrammas",
+			"name": "奥尔威克斯·欧夸玛斯",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Orvex Ocrammas.webp"
+					},
+					"width": 750,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Pterafolk",
+			"name": "翼手兽",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"翼手兽（发音为 TAIR-eh-folk）是一种高10尺，长着翅膀的爬行类两足生物，原产于楚尔特半岛。这种恶毒的隐世者认为大部分其他生物都是它们的敌人。在楚尔特文化中，翼手兽经常被称为\"骇人一族\"，因为它们习惯从天而降，抓住任何它们能抓住的东西，然后把宝物和食物带回它们的栖息地。",
+										"翼手兽的翼展长20尺，能诞下幼鸟。古老的仪式曾赋予翼手兽以翼龙和无翅蜥蜴族的形态现身的能力，但这些仪式早已被遗忘。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Pterafolk.webp"
+					},
+					"width": 1000,
+					"height": 914
+				}
+			]
+		},
+		{
+			"ENG_name": "Qawasha",
+			"name": "卡瓦沙",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Qawasha and Kupalue.webp"
+					},
+					"width": 897,
+					"height": 510
+				}
+			]
+		},
+		{
+			"ENG_name": "Ras Nsi",
+			"name": "拉兹·纳斯",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"\"拉兹\"是类似于\"公爵\"的一个贵族头衔。拉兹·纳斯曾是一名楚尔特人圣武士、乌塔欧的选民、麦兹罗城的宣誓守护者。他背叛了自己的誓言，被放逐出了城市。拉兹·纳斯变成了一位复仇心切的军阀，带着一支不死生物军队试图征服麦兹罗城，但却被击败了。比起寻求救赎，他更想寻求复仇，于是被剥夺了神赐力量。那群不死生物大军脱离了他的控制，分散在楚尔特大陆的森林中。",
+										"撤退到奥姆城后，纳斯仍紧抓着自己的贵族头衔不放。他与住在奥姆城内的蛇人结盟，通过一个可怕仪式，变成了一只强大的恶咒蛇人\u2014\u2014保有自己的人类头颅和双手，同时获得了一副蛇形下半身。在乌塔欧离开这个世界后，拉兹·纳斯和他新的蛇人追随者们开始寻找将暗夜巨蛇丹达尔带到现世的方法。阿瑟瑞克承诺帮助他们，但要求拉兹·纳斯答应保护九神之墓。事实上，阿瑟瑞克并未打算遵守这一交易，而拉兹·纳斯也同样开始怀疑了。",
+										{
+											"ENG_name": "Strange Collection",
+											"name": "异国收藏",
+											"type": "entries",
+											"entries": [
+												"拉兹·纳斯拥有大量来自遥远地区的服饰与装备，其中很多都是从已死的探险者身上获取的。这些收藏包括一件精良的科米尔斗篷、一个桑比亚酒壶、一件珠宝装饰的安姆紧身上衣以及一个与上衣配套的腰包。他还携带着一柄焰舌长剑。"
+											]
+										},
+										{
+											"ENG_name": "Slow Death",
+											"name": "慢性死亡",
+											"type": "entries",
+											"entries": [
+												"拉兹·纳斯已经历过多次起死回生，因此，他正承受易魂装置所引发的死亡诅咒。他的生命值上限被降低了，麻风病似的伤痕布满了他的肌肤。讽刺的是，拉兹·纳斯并未意识到阿瑟瑞克就是诅咒的成因，他和蛇人都不知道九神之墓里到底有什么，只是通过墓名得知里面埋葬着死去的神。如果角色们让拉兹·纳斯明白他们的努力是在帮助他，那么他或许会被说服，不再阻拦角色们。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Ras Nsi's Traits",
+					"name": "拉兹·纳斯的特质",
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ideal",
+							"name": "理念",
+							"type": "item",
+							"entries": [
+								"\"我想毁灭这个世界，然后统治下一个。\""
+							]
+						},
+						{
+							"ENG_name": "Bond",
+							"name": "牵挂",
+							"type": "item",
+							"entries": [
+								"\"楚尔特的蛇人由我统治，他们会帮助我建立一个帝国。\""
+							]
+						},
+						{
+							"ENG_name": "Flaw",
+							"name": "缺陷",
+							"type": "item",
+							"entries": [
+								"\"为了拯救我自己，我可以做任何事，背叛任何人。\""
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Ras Nsi.webp"
+					},
+					"width": 1000,
+					"height": 646
+				}
+			]
+		},
+		{
+			"ENG_name": "River Mist",
+			"name": "河雾",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/River Mist and Flask of Wine.webp"
+					},
+					"width": 897,
+					"height": 510
+				}
+			]
+		},
+		{
+			"ENG_name": "Salida",
+			"name": "萨莉达",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Salida.webp"
+					},
+					"width": 896,
+					"height": 509
+				}
+			]
+		},
+		{
+			"ENG_name": "Shago",
+			"name": "鲨狗",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Shago.webp"
+					},
+					"width": 897,
+					"height": 510
+				}
+			]
+		},
+		{
+			"ENG_name": "Skeleton Key",
+			"name": "钥匙骷髅",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/065-502.webp"
+					},
+					"width": 1000,
+					"height": 642
+				}
+			]
+		},
+		{
+			"ENG_name": "Spiked Tomb Guardian",
+			"name": "尖刺陵墓守卫",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"在墓穴中死去的冒险家被陵墓矮人缝合起来，并用螺栓固定进盔甲中。一旦完成，这些蹒跚的魔像就被放进墓穴去追捕入侵者。",
+										"陵墓守卫是一个穿着板甲的血肉魔像，这让它具有AC 17"
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Stone Juggernaut",
+			"name": "岩石战车",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"岩石战车是一辆滚动的构装生物，拥有足以避开诸如深坑和裂隙之类的明显的危险地带的感知能力。它滚动着穿过开阔的战场或地下城的走廊，碾碎其路径上的一切。每辆岩石战车都有着独特的形状和外观。这辆可能长得像象牙被珠宝装饰的大象，另一辆可能像长着喷火眼睛和黑曜石牙齿的愤怒恶魔。",
+										"岩石战车确实够快，却缺少灵活性，在自己的回合里只能向一个方向移动。它对于不能被它碾压在下面的生物并没有什么威胁。它最好的战术便是撞向敌人，将其撞{@condition 倒地}并碾过去。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Stone Juggernaut.webp"
+					},
+					"width": 1200,
+					"height": 792
+				}
+			]
+		},
+		{
+			"ENG_name": "Su-monster",
+			"name": "苏怪",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"苏怪是一种狡猾而邪恶的灵长类动物，居住在被遗弃的荒野与洞穴中。其成年个体身长5尺，有着长而灵敏的尾巴。尽管苏怪可以使用尾巴或爪子来持握工具和武器，但它们还是更喜欢直接用爪子撕碎猎物。成年苏怪还可以发射出一股心灵能量，使猎物{@condition 震慑}，从而无法逃跑或自卫。",
+										"苏怪睡觉时，会用它的尾巴倒挂起来。清醒时，它也可以使用这个姿势进行毁灭性打击，同时使用全部四只爪子进行袭击。",
+										"通过使用它们灵敏的尾巴做出\"手势\"，苏怪可以无声地进行交流。它们杀的猎物通常比它们能吃下的更多，剩下的肉会埋起来，然后用猎物的财产标出位置。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Su-monster.webp"
+					},
+					"width": 562,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Tabaxi",
+			"name": "斑猫人",
+			"source": "ToA",
+			"entries": [
+				{
+					"ENG_name": "Tabaxi",
+					"name": "斑猫人",
+					"type": "section",
+					"entries": [
+						"斑猫人是一种来自马兹特克大陆的豹形类人生物。作为终极的流浪者，斑猫人很少会在同一个地方待很长时间。他们喜欢收藏有趣的古物、收集故事、前往世上的美景处一饱眼福。这种好奇心推动着他们，使他们不放过任何秘密、不让任何宝藏丢失或传说失传。他们信仰一位名为猫之主的变化无常的神。据说他正在这片世界上游荡。",
+						"斑猫猎人们受训以在荒野中生存，这使得他们成为了绝佳的向导。斑猫诗人们则以小型剧团的形式聚在一起，通过演奏音乐与讲述故事来赚得钱币，不管在哪个聚居地都能活得悠然自在。",
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										{
+											"ENG_name": "Names",
+											"name": "名字",
+											"type": "entries",
+											"entries": [
+												"一个斑猫人通常只有一个名字，由他或她的部落决定，决定名字所用的复杂公式包含了占星术、预言、部落历史以及其他种种因素。斑猫人无论男女都使用一样的名字，而他们中的大部分还会使用从自己的全名中截取或引申出的小名。斑猫人部落的名字通常取决于部落所处的地理位置或部落周围的环境。典型的斑猫人名字包括蛋巢（蛋）Nest of Eggs (\"Eggs\")，枯叶（叶） Dead Leaf (\"Leaf')，玛瑙眼（玛瑙） Eyes of Onyx (\"Onyx\")，迷失之矛（迷失）Lost Spear (\"Lost\")以及昼月（月）Daylight Moon(\"Moon\")。部落名包括远雨 Distant Rain，百羽 Hundred Feathers，眠溪Sleeping Creek，明崖Bright Cliffs与鼾山 Snoring Mountain。"
+											]
+										}
+									]
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Tabaxi Hunter",
+			"name": "斑猫猎人",
+			"source": "ToA",
+			"_copy": {
+				"ENG_name": "Tabaxi",
+				"name": "斑猫人",
+				"source": "ToA"
+			}
+		},
+		{
+			"ENG_name": "Tabaxi Minstrel",
+			"name": "斑猫诗人",
+			"source": "ToA",
+			"_copy": {
+				"ENG_name": "Tabaxi",
+				"name": "斑猫人",
+				"source": "ToA"
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Tabaxi Minstrel.webp"
+					},
+					"width": 636,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Tomb Dwarf",
+			"name": "陵墓矮人",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"阿瑟瑞克绑架了矮人矿工，并将他们变成了恶灵，以利用他们在地下建筑方面的特长。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Tomb Dwarf.webp"
+					},
+					"width": 810,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Tomb Guardian",
+			"name": "陵墓守卫",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"在墓穴中死去的冒险家被陵墓矮人缝合起来，并用螺栓固定进盔甲中。一旦完成，这些蹒跚的魔像就被放进墓穴去追捕入侵者。",
+										"陵墓守卫是一个穿着板甲的血肉魔像，这让它具有AC 17"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Tomb Guardian.webp"
+					},
+					"width": 559,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Tri-flower Frond",
+			"name": "三花株",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"一棵完全成熟的三花株高6到7尺。它有着三朵明亮的喇叭状花朵，每朵都和人类脑袋一样大，并且颜色各异：大红色、鲜橙色及亮黄色。每朵花都能用不同的可怕方式伤害其他生物。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Tri-flower Frond.webp"
+					},
+					"width": 730,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Tyrannosaurus Zombie",
+			"name": "暴龙丧尸",
+			"source": "ToA",
+			"entries": [
+				"暴龙丧尸的食道里满是较小的丧尸，它可以把它们吐出来。这些丧尸不在暴龙丧尸的控制之下。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Tyrannosaurus Zombie.webp"
+					},
+					"width": 2550,
+					"height": 3338
+				}
+			]
+		},
+		{
+			"ENG_name": "Valindra Shadowmantle",
+			"name": "瓦琳朵拉·暗影斗篷",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"巫妖本是强大法师的遗骸，他们主动选择不死之身，只为让自己永存。他们不惜一切代价增强力量，对生者的事务毫无兴趣，除非这些事妨碍到他们。他们阴险又疯狂，渴求那些早已被遗忘的知识，以及最可怖的秘密。死亡的阴影不再笼罩他们，因此能构思耗时数年、数十年，甚至数百年才会实现的阴谋。",
+										"巫妖是一个瘦削且骨骼突出的类人生物，其干枯的肉紧贴在骨头上。它的眼睛早已腐烂，但在其空洞的眼窝中燃烧着光点。它通常穿着破旧的华丽衣物，佩戴着随时间流逝而磨损和失去光泽的珠宝。"
+									]
+								},
+								{
+									"ENG_name": "Biography",
+									"name": "传记",
+									"type": "entries",
+									"entries": [
+										"瓦琳朵拉·暗影斗篷为萨扎斯坦工作，她是塞尔红袍法师中最强大的巫妖，但她自己并非红袍法师。她发现了乌塔欧之心并将其转换成她的爪牙寻找易魂装置时使用的基地。她直接听令于萨扎斯坦\u2014\u2014如果可能的话，控制易魂装置，否则将其摧毁。瓦琳朵拉在乌塔欧之心内创建了一个传送法阵，用于即时往返于塞尔（她的命匣的安全存放地），以便向萨扎斯坦提供报告并获取新指令。",
+										"探索乌塔欧之心的角色肯定会遇见瓦琳朵拉。她考虑过冒险者们的目标可能与她相同，所以她不一定对他们怀有敌意。她的任务是以任何方式拿下易魂装置；如果冒险者可以帮助她实现这一目标，她会利用他们。",
+										"凭借她那和活着的精灵一样的外貌，瓦琳朵拉可以很容易地隐藏她的巫妖特征以及她与塞尔的联系。她自己表现地像是一位想要\"封印\"易魂装置的大法师；这样，她就可以在安全地与世界相隔离的同时研究其独特的魔力。她认为，摧毁它应该是最后的手段。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Valindra Shadowmantle.webp"
+					},
+					"width": 839,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Volothamp \"Volo\" Geddarm",
+			"name": "瓦罗赞普\"瓦罗\"格达姆",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"喜欢吹牛的环球旅行家瓦罗赞普·格达姆前来楚尔特进行他的新作《瓦罗怪物指南》的签售。除了拜访南扎路港的七位贸易亲王（他对他们很了解）外，瓦罗正在当地的酒馆里推销他的作品，而冒险者们可能会在城市中的某地碰上他。瓦罗可以提供许多信息（虽然不一定准确），但他在任何情况下都不会加入冒险队伍。瓦罗可能会在拜访各位贸易亲王时允许冒险者同行。",
+										"在第一章结束时，好面子的瓦罗可能会愿意分享他来南扎路港后听到的{@dice 1d4 + 1}个有关丛林的传说。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Volo's Traits",
+					"name": "瓦罗的特质",
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ideal",
+							"name": "理念",
+							"type": "item",
+							"entries": [
+								"\"我不想探索丛林、失落城市和地下城。友好的小酒馆和下流的宴会厅更符合我的风格。\""
+							]
+						},
+						{
+							"ENG_name": "Bond",
+							"name": "牵挂",
+							"type": "item",
+							"entries": [
+								"\"正计划探险？你真的应该买一本我的新书《瓦罗怪物指南》!\""
+							]
+						},
+						{
+							"ENG_name": "Flaw",
+							"name": "缺陷",
+							"type": "item",
+							"entries": [
+								"\"我嗜好放纵和嘲笑，这使我树敌不少。我往往不受欢迎。\""
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Wakanga O'tamu",
+			"name": "瓦康嘎·欧塔姆",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Wakanga O'tamu.webp"
+					},
+					"width": 778,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Withers",
+			"name": "威瑟斯",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"在威瑟斯 Withers 变成不死生物之前，他是一位名叫戈拉 Gorra的奥姆城工程师。和奥姆城的所有公民一样，戈拉被奴役并被派去建造这座陵墓。当阿瑟瑞克把所有工人献祭到他们自己建造的地下城时，戈拉的陷阱表现得最好。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Withers.webp"
+					},
+					"width": 482,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Xandala",
+			"name": "藏妲拉",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"半精灵术士藏妲拉为了寻找一件由阿图斯·辛贝尔持有的神器\"冬之戒\"而来到楚尔特大陆。藏妲拉知道这件神器使阿图斯获得了超过一个世纪的生命，她渴求它的力量。如果她碰到冒险者们，藏妲拉会假称自己是阿图斯的女儿，并尝试说服他们帮她找到阿图斯。她的计划是对阿图斯使用{@spell 支配类人}，让他交出冬之戒，随后使用{@spell 飞行术}逃跑。",
+										"藏妲拉的术法起源来自于某条巨龙的血脉，她的某些位置的皮肤覆盖着薄薄的、富有光泽的鳞片。她有一条叫做\"夏天\"的伪龙伙伴，夏天认为藏妲拉关于冬之戒的计划十分危险，但是它已经放弃去说服藏妲拉了。在善良阵营角色的努力下，夏天可能转而对付藏妲拉。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Xandala's Traits",
+					"name": "藏妲拉的特质",
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ideal",
+							"name": "理念",
+							"type": "item",
+							"entries": [
+								"\"我的血脉中流淌着龙的血液。我注定要成就伟大。\""
+							]
+						},
+						{
+							"ENG_name": "Bond",
+							"name": "牵挂",
+							"type": "item",
+							"entries": [
+								"\"冬之戒会给我带来永生与力量。\""
+							]
+						},
+						{
+							"ENG_name": "Flaw",
+							"name": "缺陷",
+							"type": "item",
+							"entries": [
+								"\"我周围的人全是蠢货。\""
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Xandala.webp"
+					},
+					"width": 951,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Yellow Musk Creeper",
+			"name": "黄迷香爬藤",
+			"source": "ToA",
+			"_copy": {
+				"ENG_name": "Yellow Musk Vine",
+				"name": "黄迷香藤",
+				"source": "ToA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"黄迷香爬藤会破坏类人生物的大脑，然后在被它杀死的人体内植入球茎。24小时后，球茎会长成一株爬藤藤蔓，魔法般地活化了宿主的尸体，在幼体藤蔓的控制下，它变成了一只黄迷香丧尸。除了保护毫无防御能力的植物外，丧尸还充当幼体藤蔓的肥料，爬藤在七天内就会成长至完全形态。一旦它完全成熟，新的黄迷香爬藤就开始移动，并从丧尸宿主体内爆裂出来，让丧尸成为一具死尸。如果丧尸在爬藤出现之前被摧毁，该爬藤就会枯萎死亡。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Yellow Musk Creeper.webp"
+					},
+					"width": 627,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Yellow Musk Vine",
+			"name": "黄迷香藤",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "section",
+					"entries": [
+						"黄迷香爬藤是一种不洁的藤蔓，它的花朵类似兰花。这些花朵呈现明亮的黄色加上紫色的斑点，散发出一种吸引猎物的迷香。在阴暗的地方，黄迷香爬藤紧紧地攀附在墙壁、柱子、墓碑、门框或雕像上，一动不动，直到它发起攻击。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Yellow Musk Zombie",
+			"name": "黄迷香丧尸",
+			"source": "ToA",
+			"_copy": {
+				"ENG_name": "Yellow Musk Vine",
+				"name": "黄迷香藤",
+				"source": "ToA",
+				"_mod": {
+					"entries": {
+						"mode": "prependArr",
+						"items": [
+							{
+								"type": "section",
+								"entries": [
+									"一个中型类人变成的黄迷香丧尸使用本节介绍的数据卡，一个小型类人变成的黄迷香丧尸会成为一只小型亡灵，生命值为27（{@dice 6d6 + 6}）点，但其他数据相同。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Yellow Musk Zombie.webp"
+					},
+					"width": 726,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Yorb",
+			"name": "约伯",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Yorb.webp"
+					},
+					"width": 878,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Zaroum Al-Saryak",
+			"name": "扎如姆·艾萨亚克",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Zaroum Al-Saryak.webp"
+					},
+					"width": 498,
+					"height": 525
+				}
+			]
+		},
+		{
+			"ENG_name": "Zhanthi",
+			"name": "绛则",
+			"source": "ToA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Zhanthi.webp"
+					},
+					"width": 1157,
+					"height": 1599
+				}
+			]
+		},
+		{
+			"ENG_name": "Zindar",
+			"name": "金达尔",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"这位半金龙管理着南扎路港的码头并记录船舶舱单。作为一个能力出众的术士，金达尔的工作获得了贸易亲王们丰厚的报酬。他也是叶特凯社的一名关键成员，并是一个重要的信息来源，知道许多与这座城市有关的信息。金达尔对冒险者们\"情有独钟\"，但他深知楚尔特的危险，因此他明白，大多数踏上丛林探险之旅的人永远不会回来。",
+										"金达尔在他日常工作中广泛使用法术，施放传讯术Message向码头工人传递信息，侦测思想Detect Thoughts为了读取船长的想法，敲击术Knock为了开启货柜进行检查，鹰眼术Clairvoyance为了窥视船舱，支配野兽Dominate Beast安抚紧张的动物，诸如此类。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Zindar's Traits",
+					"name": "金达尔的特质",
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Ideal",
+							"name": "理念",
+							"type": "item",
+							"entries": [
+								"\"我为我的工作感到自豪，我喜欢确保我参与的所有商业交易都童叟无欺。\""
+							]
+						},
+						{
+							"ENG_name": "Bond",
+							"name": "牵挂",
+							"type": "item",
+							"entries": [
+								"\"南扎路港是我的家，我对那些会给这座城市及其居民带来危害的人无甚好感。\""
+							]
+						},
+						{
+							"ENG_name": "Flaw",
+							"name": "缺陷",
+							"type": "item",
+							"entries": [
+								"\"与其生气，不如报复。\""
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Zindar.webp"
+					},
+					"width": 581,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Zorbo",
+			"name": "佐博怪",
+			"source": "ToA",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"type": "entries",
+							"entries": [
+								{
+									"type": "entries",
+									"entries": [
+										"Zorbo（发音为ZOR-boh）是一种凶猛的杂食性动物，其大小和外形与树袋熊相似。它生活在树上和洞穴里，有长长的爪子，性情阴沉，而且喜好类人生物的肉。佐博怪会改变自己的天生护甲来适应周围的环境，它能用锋利的爪子削弱和摧毁盔甲、盾牌和防护性的魔法物品。"
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/ToA/Zorbo.webp"
+					},
+					"width": 1000,
+					"height": 998
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta name="catalog-web" content="1"><meta charset="utf-8"><meta name="catalog-index" content="gzip"><script>(()=>{
+// Local readers use the application's offline image cache. Pages uses the same
+// two image hosts as the existing static reader, without patching DOM prototypes.
+const web = !!document.querySelector('meta[name="catalog-web"]');
+const primary = 'https://5e.kiwee.top/img/';
+const mirror = 'https://raw.githubusercontent.com/5etools-mirror-3/5etools-img/main/';
+
+function mediaUrl(path) {
+  if (!path) return null;
+  const url = new URL(path,document.baseURI);
+  if (!['http:','https:'].includes(url.protocol)) return null;
+  if (web && url.origin === location.origin) {
+    const root = new URL('../',document.baseURI).pathname;
+    const rel = url.pathname.startsWith(root) ? url.pathname.slice(root.length) : url.pathname.slice(1);
+    if (rel.startsWith('img/')) return primary + rel.slice(4) + url.search;
+    if (rel.startsWith('__remote/')) return 'https://' + rel.slice(9) + url.search;
+  }
+  return url.href;
+}
+
+function tryImageMirror(img) {
+  if (!web || !img.src.startsWith(primary)) return false;
+  img.src = mirror + img.src.slice(primary.length);
+  return true;
+}
+// Inlined by the static builder, before the shared styles and page modules.
+const firstPaint = {"page":"classes.html","classes":"5791da7077da3b12e25e5c637c8070fb49d7a0e46d6cc10a00fa7e21fcb3b2de","portraits":{"%e5%a5%87%e6%a2%b0%e5%b8%88_tce":"../img/classes/TCE/Artificer.webp","%e5%a5%87%e6%a2%b0%e5%b8%88_efa":"../img/classes/EFA/Artificer.webp","%e9%87%8e%e8%9b%ae%e4%ba%ba_phb":"../img/classes/PHB/Barbarian.webp","%e9%87%8e%e8%9b%ae%e4%ba%ba_xphb":"../img/classes/XPHB/Barbarian.webp","%e5%90%9f%e6%b8%b8%e8%af%97%e4%ba%ba_phb":"../img/classes/PHB/Bard.webp","%e5%90%9f%e6%b8%b8%e8%af%97%e4%ba%ba_xphb":"../img/classes/XPHB/Bard.webp","%e7%89%a7%e5%b8%88_phb":"../img/classes/PHB/Cleric.webp","%e7%89%a7%e5%b8%88_xphb":"../img/classes/XPHB/Cleric.webp","%e5%be%b7%e9%b2%81%e4%bc%8a_phb":"../img/classes/PHB/Druid.webp","%e5%be%b7%e9%b2%81%e4%bc%8a_xphb":"../img/classes/XPHB/Druid.webp","%e6%88%98%e5%a3%ab_phb":"../img/classes/PHB/Fighter.webp","%e6%88%98%e5%a3%ab_xphb":"../img/classes/XPHB/Fighter.webp","%e6%ad%a6%e5%83%a7_phb":"../img/classes/PHB/Monk.webp","%e6%ad%a6%e5%83%a7_xphb":"../img/classes/XPHB/Monk.webp","%e5%9c%a3%e6%ad%a6%e5%a3%ab_phb":"../img/classes/PHB/Paladin.webp","%e5%9c%a3%e6%ad%a6%e5%a3%ab_xphb":"../img/classes/XPHB/Paladin.webp","%e6%b8%b8%e4%be%a0_phb":"../img/classes/PHB/Ranger.webp","%e6%b8%b8%e4%be%a0_xphb":"../img/classes/XPHB/Ranger.webp","%e6%b8%b8%e8%8d%a1%e8%80%85_phb":"../img/classes/PHB/Rogue.webp","%e6%b8%b8%e8%8d%a1%e8%80%85_xphb":"../img/classes/XPHB/Rogue.webp","%e4%b8%93%e5%ae%b6%e5%8d%8f%e5%8a%9b%e8%80%85_tce":"../img/classes/TCE/Expert%20Sidekick.webp","%e6%96%bd%e6%b3%95%e8%80%85%e5%8d%8f%e5%8a%9b%e8%80%85_tce":"../img/classes/TCE/Spellcaster%20Sidekick.webp","%e6%ad%a6%e8%80%85%e5%8d%8f%e5%8a%9b%e8%80%85_tce":"../img/classes/TCE/Warrior%20Sidekick.webp","%e6%9c%af%e5%a3%ab_phb":"../img/classes/PHB/Sorcerer.webp","%e6%9c%af%e5%a3%ab_xphb":"../img/classes/XPHB/Sorcerer.webp","%e9%ad%94%e5%a5%91%e5%b8%88_phb":"../img/classes/PHB/Warlock.webp","%e9%ad%94%e5%a5%91%e5%b8%88_xphb":"../img/classes/XPHB/Warlock.webp","%e6%b3%95%e5%b8%88_phb":"../img/classes/PHB/Wizard.webp","%e6%b3%95%e5%b8%88_xphb":"../img/classes/XPHB/Wizard.webp","%e6%8b%b3%e6%96%97%e5%a3%ab_pugilist2024":"../__remote/raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/Pugilist2024/Class/Pugilist.webp","%e5%bf%8d%e8%80%85_bbninja":"../__remote/raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BBNinja/ninja.webp","%e9%ad%94%e7%bd%91%e9%aa%91%e5%a3%ab_coh-weaveknight":"../__remote/raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/CoH-Weaveknight/img/11.webp","%e6%88%98%e5%a3%ab_dzc%3aana%3af":"../img/classes/PHB/Fighter.webp","%e6%ad%a6%e5%83%a7_dzc%3aana%3am":"../img/classes/PHB/Monk.webp","%e6%b8%b8%e8%8d%a1%e8%80%85_dzc%3aana%3aro":"../img/classes/PHB/Rogue.webp","%e9%87%8e%e8%9b%ae%e4%ba%ba_dzc%3aana%3ab":"../img/classes/PHB/Barbarian.webp","%e6%ad%bb%e7%81%b5%e5%b8%88_helodinn-necromancer":"../__remote/raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/Helodinn-Necromancer/how-is-she-standing.webp","%e6%9e%aa%e6%89%8b_zgtteot":"../__remote/raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ZGttEoT/classes/gunner1.webp","%e5%a4%a9%e8%b5%8b%e8%80%85_talpsi":"../__remote/raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/TalPsi/classes/The-Talent.webp","%e9%82%aa%e7%8b%b1%e4%bd%bf_illriggerrevised":"../__remote/raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/IllriggerRevised/book/000-00-001.cover.webp","%e9%87%8e%e5%85%bd%e4%b9%8b%e5%bf%83_bst":"../__remote/raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/BST/classes/00023.webp","%e9%93%b3%e5%a3%ab_valdagunslinger":"../__remote/raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/ValdaGunslinger/00-002.the-gunslinger.webp","%e8%8d%af%e5%89%82%e5%b8%88_guidedrakkenheim":"../__remote/raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/GuideDrakkenheim/Class/Apothecary.webp","%e6%80%aa%e7%89%a9%e7%8c%8e%e4%ba%ba_grimhollowpg24":"../__remote/raw.githubusercontent.com/TheGiddyLimit/homebrew-img/refs/heads/main/img/GrimHollowPG24/Class/Monster%20Hunter.webp","%e9%a9%af%e6%9c%8d%e5%b8%88_helianasguidetomonsterhunting":"../__remote/raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/HelianasGuidetoMonsterHunting/images/Classes/Tamer.webp","%e5%8f%97%e8%af%85%e4%b9%8b%e5%be%92_ultimateadventurer":"../__remote/raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/UltimateAdventurer/classes/accursed.webp","%e6%8b%b3%e6%96%97%e5%a3%ab_ultimateadventurer":"../__remote/raw.githubusercontent.com/TheGiddyLimit/homebrew-img/main/img/UltimateAdventurer/classes/pugilist.webp"},"defaults":{"all/":{"art":"../img/classes/XPHB/Barbarian.webp","scope":"1a808e07118dcc88c74ff8e6979f7a6535c70d6cf067564fbc66eae0d20cb6c7","card":"5e559e8a642ce8384c5d2d49e5e702a017fa810fb8789ccc5e5d009ce815e4af","body":"beaab504ff206aa08d5b655012876c8827fd4694ffd7f03882765b0987f19e0d","sources":null},"all/24":{"art":"../img/classes/XPHB/Barbarian.webp","scope":"81ee2ba6d7a1b9d4d7ce125912c61f8c26211be809812b3027ca1a72d50c3887","card":"5e559e8a642ce8384c5d2d49e5e702a017fa810fb8789ccc5e5d009ce815e4af","body":"beaab504ff206aa08d5b655012876c8827fd4694ffd7f03882765b0987f19e0d","sources":null},"all/14":{"art":"../img/classes/PHB/Barbarian.webp","scope":"a1743579767570d448a62e33a8c307af7be85acfbed64e5663ff2ff2af2d9d6c","card":"5fcf652704d0ed9513a82a00522c78f13e768b5ba468488ddf9ef2d70aa72594","body":"a35f4d92b249976565b5e8e46c2176315795f26adc4c2b1959bf25a8b5325fe6","sources":null},"rec/":{"art":"../img/classes/XPHB/Barbarian.webp","scope":"2c98b1d7c77c2508a3842e22eb015bd22b2abfe64e00f3da44a3c940f1bdb836","card":"5e559e8a642ce8384c5d2d49e5e702a017fa810fb8789ccc5e5d009ce815e4af","body":"beaab504ff206aa08d5b655012876c8827fd4694ffd7f03882765b0987f19e0d","sources":"7f487e33d5c1672034f803f8f45a7f96d804e8fa2238f5f4004ba9c6d36ba27c"},"rec/24":{"art":"../img/classes/XPHB/Barbarian.webp","scope":"754a0d5dfb92367a3cb31550a2f5e41c31e800f5a4bc6d260a5b6c7ac4b3c658","card":"5e559e8a642ce8384c5d2d49e5e702a017fa810fb8789ccc5e5d009ce815e4af","body":"beaab504ff206aa08d5b655012876c8827fd4694ffd7f03882765b0987f19e0d","sources":"7f487e33d5c1672034f803f8f45a7f96d804e8fa2238f5f4004ba9c6d36ba27c"},"rec/14":{"art":"../img/classes/PHB/Barbarian.webp","scope":"f2d5c8110f35bf953ec60fd7d7ab3f3a9b7c20892edc5a5551dd1b75cc674198","card":"5fcf652704d0ed9513a82a00522c78f13e768b5ba468488ddf9ef2d70aa72594","body":"a35f4d92b249976565b5e8e46c2176315795f26adc4c2b1959bf25a8b5325fe6","sources":"7f487e33d5c1672034f803f8f45a7f96d804e8fa2238f5f4004ba9c6d36ba27c"},"official/":{"art":"../img/classes/XPHB/Barbarian.webp","scope":"0a0d9db3387a7e88266aeb09faaf58f208ac7c34594ddd8b7a71be46ff5fcb22","card":"5e559e8a642ce8384c5d2d49e5e702a017fa810fb8789ccc5e5d009ce815e4af","body":"beaab504ff206aa08d5b655012876c8827fd4694ffd7f03882765b0987f19e0d","sources":"b56c60cf37301520e8c283a364502609deca54a90e086b407f3669b3071bf5f7"},"official/24":{"art":"../img/classes/XPHB/Barbarian.webp","scope":"9010ef45ba2484a2196994bcd50af5050245a161221fce3eaf52715954043ec5","card":"5e559e8a642ce8384c5d2d49e5e702a017fa810fb8789ccc5e5d009ce815e4af","body":"beaab504ff206aa08d5b655012876c8827fd4694ffd7f03882765b0987f19e0d","sources":"b56c60cf37301520e8c283a364502609deca54a90e086b407f3669b3071bf5f7"},"official/14":{"art":"../img/classes/PHB/Barbarian.webp","scope":"a337e13e782d8e74139500569c4eea306ac6ffe2f7b12ebad468158a714bbb5a","card":"5fcf652704d0ed9513a82a00522c78f13e768b5ba468488ddf9ef2d70aa72594","body":"a35f4d92b249976565b5e8e46c2176315795f26adc4c2b1959bf25a8b5325fe6","sources":"b56c60cf37301520e8c283a364502609deca54a90e086b407f3669b3071bf5f7"},"brew/":{"art":null,"scope":"3dcc9051853a97c706619372a57bfe7edc58bbff71d997c8116cac12b6e54d09","card":"d1d5bdfe36459fd206ef31b10a40ff4814270f18da9fd29afd1e46a726f696ba","body":"c4fedacb996f0de58ae89da1d43acebd588d3c54624ef1bf4eb237273b50e4d8","sources":"620ba67af0ae36e60cf6d071e3f4c8e18b4d8043f5332a6d1bdc6857f1162469"},"brew/24":{"art":null,"scope":"dc7832af0774da9982804c8f849ef4d2f8a1f057b6cd84ff8e9ca38fac2ed98b","card":"d1d5bdfe36459fd206ef31b10a40ff4814270f18da9fd29afd1e46a726f696ba","body":"c4fedacb996f0de58ae89da1d43acebd588d3c54624ef1bf4eb237273b50e4d8","sources":"620ba67af0ae36e60cf6d071e3f4c8e18b4d8043f5332a6d1bdc6857f1162469"},"brew/14":{"art":null,"scope":"2b39547d7caa220ec0e1d6c1ecf5d7ca0dcfc1eebd12047c067e9b3479b393a4","card":"d1d5bdfe36459fd206ef31b10a40ff4814270f18da9fd29afd1e46a726f696ba","body":"c4fedacb996f0de58ae89da1d43acebd588d3c54624ef1bf4eb237273b50e4d8","sources":"620ba67af0ae36e60cf6d071e3f4c8e18b4d8043f5332a6d1bdc6857f1162469"}}};
+const alias = /^#\/?(?:newsite\/)?([^#?]+\.html)(.*)$/.exec(location.hash);
+if (!alias || alias[1] === firstPaint.page) {
+    const warm = (rel, path, as) => {
+        if (!path) return;
+        const link = document.createElement("link");
+        link.rel = rel;
+        if (as) link.as = as;
+        if (as === "image") link.fetchPriority = "high";
+        if (as === "fetch") link.crossOrigin = "anonymous";
+        link.href = path;
+        document.head.append(link);
+    };
+    const object = key => key && warm("preload","data/objects/"+key+".json.gz","fetch");
+    if (firstPaint.hall) {
+        if (localStorage.getItem("ours.plain") === "1") {} else {
+        const prior = localStorage.getItem("ours.hallArt");
+        const paths = firstPaint.hall.filter(path => path !== prior);
+        const path = paths[Math.floor(Math.random() * paths.length)];
+        document.documentElement.dataset.hallArt = path;
+        if (matchMedia("(min-width: 640px)").matches) warm("preload",mediaUrl("../img/"+path),"image");
+        }   // 简洁版不预载大厅插图
+    } else {
+        const params = new URLSearchParams(location.search);
+        const hasSelection = ["sources","excludeSources","sourceScope"].some(key=>params.has(key));
+        let mode = params.get("mode") ?? (hasSelection ? "manual" : localStorage.getItem("ours.srcMode2"));
+        if (!["all","rec","official","brew","manual"].includes(mode)) mode = "rec";
+        if (mode === "manual" && !hasSelection && localStorage.getItem("ours.newsite.itemSources") == null) mode = "rec";
+        let edition = params.get("ed") ?? localStorage.getItem("ours.edMode2");
+        if (!["24","14",""].includes(edition)) edition = "24";
+        const hash = (alias ? alias[2] : location.hash).slice(1).split(",",1)[0].toLowerCase();
+        const start = mode === "manual" ? null : firstPaint.defaults[mode+"/"+edition];
+        const art = hash ? firstPaint.portraits[hash] : start?.art;
+        warm("preload",mediaUrl(art),"image");
+        object(firstPaint.classes);
+        object(start?.scope);
+        object(start?.sources);
+        if (!hash) {
+            object(start?.card);
+            object(start?.body);
+        }
+        warm("modulepreload","class-page.js");
+    }
+    warm("preload","data/index.json.gz","fetch");
+    object(firstPaint.hallStats);
+    warm("modulepreload","reading.js");
+}
+
+})();</script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>职业 · 5e全书</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="items.css">
+  <link rel="stylesheet" href="shell.css">
+  <link rel="stylesheet" href="card-view.css">
+  <link rel="stylesheet" href="option-view.css">
+  <link rel="stylesheet" href="reading.css">
+  <link rel="stylesheet" href="dm-tools.css">
+  <link rel="stylesheet" href="classes.css">
+  <script>document.documentElement.dataset.oursTheme=localStorage.getItem("ours.theme")==="night"?"night":"day";</script>
+  <script>try{if(localStorage.getItem("ours.plain")==="1")document.documentElement.dataset.oursPlain="1";}catch(e){}</script>
+  <link rel="stylesheet" href="statgen.css">
+  <link rel="stylesheet" href="motion.css">
+  <script src="shell.js" type="module"></script>
+</head>
+<body>
+  <nav id="bar" aria-label="主导航">
+    <a id="brand" href="index.html"><b></b><span>5e全书</span></a>
+    <div id="tabs" role="navigation" aria-label="页面"></div>
+    <button id="sbsearch" title="全站搜索（Ctrl+K）" aria-label="全站搜索"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3.5 3.5"/></svg><span>搜索法术、怪物、物品…</span><kbd>Ctrl K</kbd></button>
+    <button id="range" type="button" popovertarget="range-panel" title="资料范围和版本" aria-label="资料范围和版本"><small>范围</small><span id="range-mode"></span><b>·</b><span id="range-ed"></span><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 6.5 4 4 4-4"/></svg></button>
+    <button id="theme" title="切换日间 / 夜间" aria-label="切换日间 / 夜间"></button>
+    <button id="settings" title="资料状态与设置" aria-label="资料状态与设置"><svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M2.5 4.5h7M12.5 4.5h1M2.5 11.5h1M6.5 11.5h7"/><circle cx="11" cy="4.5" r="1.5"/><circle cx="5" cy="11.5" r="1.5"/></svg></button>
+  </nav>
+  <div id="range-panel" popover aria-label="资料范围和版本">
+    <p class="range-title">资料范围</p><div id="switch" aria-label="来源模式"></div><p id="range-note" class="setting-note"></p>
+    <p class="range-title">版本</p><div id="edsw" aria-label="版本"></div>
+  </div>
+  <div id="footsteps" hidden>
+    <button id="trail-back" type="button"><b>‹</b><span class="trail-verb">后退</span><span class="trail-to"></span></button>
+    <button id="trail-forward" type="button" hidden><span class="trail-verb">前进</span><span class="trail-to"></span><b>›</b></button>
+    <button id="trail-more" type="button" title="这个标签页里看过的条目" hidden>浏览记录 <small></small> ▾</button>
+  </div>
+  <div id="trail-menu" popover></div>
+  <header id="settings-panel" popover>
+    <h1>物品</h1>
+    <label>资料范围 <select id="mode" disabled>
+      <option value="rec">推荐</option><option value="official">常规</option>
+      <option value="all">全部</option><option value="brew">只看第三方</option>
+      <option value="manual">手动</option>
+    </select></label>
+    <p id="scope-note" class="setting-note"></p>
+    <label>版本 <select id="edition" disabled>
+      <option value="24">5.5e</option><option value="14">5e</option><option value="">两版</option>
+    </select></label>
+    <label id="plain-label" class="setting-plain"><input type="checkbox" id="plain"> 简洁版：大厅不显示图片和说明文字</label>
+    <label class="setting-plain"><input type="checkbox" id="motion" checked> 动画效果</label>
+    <details id="manual" hidden>
+      <summary>手动选书</summary>
+      <p id="manual-loading" role="status">正在读取书目…</p>
+      <fieldset id="manual-controls" disabled>
+        <div class="manual-search">
+          <input id="manual-query" type="search" placeholder="搜索中文书名、英文书名或缩写" aria-label="搜索书目" autocomplete="off">
+          <output id="manual-total" aria-live="polite"></output>
+        </div>
+        <div class="manual-presets" aria-label="快捷勾选">
+          <button type="button" data-manual-preset="rec">照推荐勾选</button>
+          <button type="button" data-manual-preset="official">只勾官方</button>
+          <button type="button" data-manual-preset="all">全选</button>
+          <button type="button" data-manual-preset="none">全不选</button>
+        </div>
+        <p class="setting-note">勾选 = 显示这些书的内容；排除 = 一定隐藏命中的条目，即使相关的其他书已勾选。</p>
+        <p id="manual-legacy-note" class="setting-note" hidden>这份旧选择没有勾选范围，仍会显示所有未排除的书。</p>
+        <div id="sources"></div>
+        <p id="manual-empty" class="setting-note" role="status" hidden>没有符合的书目。</p>
+      </fieldset>
+    </details>
+    <details id="version-info">
+      <summary>资料版本</summary><div><span id="revision">正在读取…</span><p id="status-note" role="status"></p></div>
+    </details>
+  </header>
+  <small id="status-alert" role="status"></small>
+  <main>
+    <section class="catalog" aria-label="物品目录">
+      <div class="catalog-head">
+        <div class="query"><button id="filter-button" title="筛选条件">筛选</button>
+          <label><input id="search" type="search" disabled aria-label="搜索列表" placeholder="搜名称（中英文都行）"></label>
+          <button id="reset-list" title="重置筛选">↺</button><button id="hide-list"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="11" rx="2"/><path d="M6 3v10m6-8-3 3 3 3"/></svg>收起列表</button></div>
+        <output id="count" aria-live="polite">正在读取…</output>
+        <div id="quick" class="quick-filters"><div id="quick-first"></div><div id="quick-second"></div><div id="quick-summary" hidden></div><div id="chips" hidden></div></div>
+        <div id="family-sort" hidden></div>
+        <div class="widget-storage"><select id="type"></select><select id="rarity"></select><input id="attuned" type="checkbox"></div>
+      </div>
+      <p id="list-outside" role="status" hidden></p>
+      <section id="mundane-section" class="list-section">
+        <div id="list" class="viewport" tabindex="0" aria-label="条目列表"><div id="space" class="space"><div id="rows" class="rows"></div></div></div></section>
+    </section>
+    <section class="document"><button id="show-list" hidden>显示列表</button><div id="detail-tools"><div id="detail-tabs"></div></div><article id="detail" aria-label="条目详情" tabindex="-1"></article></section>
+  </main>
+  <section id="reading" hidden aria-live="off"></section>
+  <dialog id="global-search" aria-label="全站搜索"><form method="dialog"><label><span>全站搜索</span><input type="search" id="global-query" role="combobox" aria-autocomplete="list" aria-controls="global-results" aria-expanded="false" placeholder="名称、来源或页码…" autocomplete="off"></label><button>关闭</button></form><p id="global-status" role="status"></p><div id="global-results" role="listbox" aria-label="搜索结果"></div></dialog>
+  <dialog id="filters" aria-labelledby="filter-title">
+    <form method="dialog" class="dialog-heading"><h2 id="filter-title">筛选</h2><button>完成</button></form>
+    <div class="filter-controls">
+      <label>条件 <select id="field"></select></label>
+      <label id="filter-kind">匹配 <select id="operator"><option value="include">包含</option><option value="exclude">排除</option><option value="neutral" hidden>忽略默认条件</option></select></label>
+      <label id="filter-value-label">值 <select id="filter-value"></select></label>
+      <label id="minimum-label" hidden>最小 <input id="minimum" type="number" step="any"><select id="minimum-rank" hidden></select></label>
+      <label id="maximum-label" hidden>最大 <input id="maximum" type="number" step="any"><select id="maximum-rank" hidden></select></label>
+      <button type="button" id="add-filter">添加条件</button>
+    </div>
+    <div id="conditions"></div>
+    <div class="columns" aria-label="排序"></div>
+    <div class="filter-controls">
+      <label>排序 <select id="order-field"></select></label><button id="reverse" type="button">升序</button>
+      <button type="button" id="reset">重置筛选与排序</button>
+    </div>
+  </dialog>
+  <div id="monster-tools" popover aria-label="怪物数值设置"></div>
+  <aside id="preview" aria-label="条目预览" hidden></aside>
+  <dialog id="image-view"><form method="dialog"><button autofocus>关闭大图</button></form><img alt=""></dialog>
+  <button id="dice-open" aria-label="打开骰盘" aria-controls="dice-box" aria-expanded="false"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3"><path d="M2 10l6-6 6 6"/></svg></button>
+  <section id="dice-box" aria-label="骰盘" hidden>
+    <div class="dice-head"><strong>Dice Roller</strong><button id="dice-close" type="button" aria-label="收起骰盘">×</button></div>
+    <div id="dice-log" role="log"></div>
+    <form id="dice-form"><input id="dice-input" aria-label="骰式" placeholder='7d6-1 or "/help"' autocomplete="off" spellcheck="false"></form>
+  </section>
+  <div id="roll-result" role="status" hidden></div>
+</body>
+</html>

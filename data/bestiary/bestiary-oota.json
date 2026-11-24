@@ -1,0 +1,6623 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"MM",
+				"MTF"
+			]
+		},
+		"internalCopies": [
+			"monster"
+		],
+		"otherSources": {
+			"monster": {
+				"MTF": "OotA",
+				"MM": "OotA"
+			}
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Aljanor Keenblade",
+			"name": "阿尔詹诺·基恩布莱德",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 149,
+			"_copy": {
+				"ENG_name": "Knight",
+				"name": "骑士",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "骑士",
+						"with": "阿尔贾诺尔",
+						"flags": "i"
+					}
+				}
+			},
+			"ac": [
+				10
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Amarith Coppervein",
+			"name": "阿玛瑞斯·铜脉",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 142,
+			"_copy": {
+				"ENG_name": "Veteran",
+				"name": "老兵",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Mountain Dwarf",
+						"name": "山地矮人",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "老兵",
+						"with": "阿玛瑞斯",
+						"flags": "i"
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "长剑",
+						"items": {
+							"ENG_name": "Warhammer",
+							"name": "战锤",
+							"entries": [
+								"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}7 ({@damage 1d8 + 3}) 钝击伤害，或者如果用双手使用则为8 ({@damage 1d10 + 3}) 钝击伤害。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Animated Drow Statue",
+			"name": "活化卓尔雕像",
+			"type": "elemental",
+			"source": "OotA",
+			"page": 96,
+			"_copy": {
+				"ENG_name": "Animated Armor",
+				"name": "活化盔甲",
+				"source": "MM",
+				"_mod": {
+					"*": [
+						{
+							"mode": "replaceTxt",
+							"replace": "护甲套装",
+							"with": "雕像"
+						},
+						{
+							"mode": "replaceTxt",
+							"replace": "护甲",
+							"with": "雕像"
+						}
+					]
+				}
+			},
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Asha Vandree",
+			"name": "阿莎·范德里",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 9,
+			"_copy": {
+				"ENG_name": "Priest",
+				"name": "祭司",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Drow (Levitate)",
+						"name": "卓尔（浮空术）",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "祭司",
+						"with": "阿莎",
+						"flags": "i"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"traitTags": [
+				"妖精血统",
+				"日照敏感"
+			],
+			"spellcastingTags": [
+				"CC",
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Awakened Zurkhwood",
+			"name": "觉醒的祖克木",
+			"type": "plant",
+			"source": "OotA",
+			"page": 230,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 59,
+				"formula": "7d12 + 14"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 19,
+			"dex": 6,
+			"con": 15,
+			"int": 10,
+			"wis": 10,
+			"cha": 7,
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 10,
+			"resist": [
+				"钝击",
+				"穿刺"
+			],
+			"vulnerable": [
+				"火焰"
+			],
+			"languages": [
+				"其制作者知晓的一种语言"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "False Appearance",
+					"name": "无定形",
+					"entries": [
+						"当树木静止不动时，它与普通的祖尔克木蘑菇无法区分。"
+					]
+				},
+				{
+					"ENG_name": "Mute",
+					"name": "哑巴",
+					"entries": [
+						"如果觉醒的祖尔克伍德是由蕈人君主创造的，它就不能说话。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及10尺，单一目标。{@h}14 ({@damage 3d6 + 4}) 点钝击伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"无定形"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Blurg",
+			"name": "布勒格",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 29,
+			"_copy": {
+				"ENG_name": "Orog",
+				"name": "魔兽人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔兽人",
+						"with": "布勒格",
+						"flags": "i"
+					},
+					"languages": [
+						{
+							"mode": "appendIfNotExistsArr",
+							"items": [
+								"矮人语",
+								"精灵语",
+								"地底通用语"
+							]
+						}
+					],
+					"spellcasting": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Innate Spellcasting",
+								"name": "天生施法",
+								"headerEntries": [
+									"Blurg 天生能够每天施放一次 {@spell 传送术} 法术，但预期的目的地必须在另一个 {@adventure 社团成员|OotA|1|光辉协会} 成员30尺范围内。这种传送效果可能会被干扰（见 \"{@adventure 费尔兹瑞斯|OotA|1|费尔兹瑞斯}\"），这就是为什么社会成员有时会出现在地下深处的偏远角落，与同伴分离。"
+								],
+								"daily": {
+									"1e": [
+										"{@spell 传送术}"
+									]
+								},
+								"hidden": [
+									"daily"
+								]
+							}
+						]
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"int": 18,
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Bridesmaid of Zuggtmoy",
+			"name": "祖格莫伊的伴娘",
+			"type": "plant",
+			"source": "OotA",
+			"page": 230,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d8"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 11,
+			"int": 14,
+			"wis": 8,
+			"cha": 18,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 9,
+			"languages": [
+				"能理解深渊语但无法说"
+			],
+			"cr": "1/8",
+			"trait": [
+				{
+					"ENG_name": "Fungus Stride",
+					"name": "菌跃",
+					"entries": [
+						"在其回合中，伴娘可以使用10尺的移动力，通过魔法步进入一个5尺内的活蘑菇或真菌区域，并从第一个区域60尺内的另一个蘑菇或真菌区域出现，出现在第二个蘑菇或真菌区域5尺内的未被占据的空间内。蘑菇和区域必须足够大或更大。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Hallucination Spores",
+					"name": "致幻孢子",
+					"entries": [
+						"伴生花向一个它可以看到的5英尺内的生物喷射孢子。目标必须成功通过一次{@dc 10}体质豁免检定，否则将被{@condition 中毒}1分钟。当目标以这种方式{@condition 中毒}时，它将被{@condition 失能}。目标可以在每个回合结束时重复进行豁免检定，成功则结束此效果。"
+					]
+				},
+				{
+					"ENG_name": "Infestation Spores (1/Day)",
+					"name": "侵染孢子 (1/日)",
+					"entries": [
+						"伴娘释放出孢子，这些孢子在它周围形成一个半径10英尺的球形云团，并持续1分钟。任何血肉之躯的生物在云团出现时身处其中，或后来进入云团，都必须进行一个{@dc 10}的体质豁免检定。检定成功者，24小时内不会被这些孢子感染。检定失败者，会感染一种名为祖格莫伊孢子的疾病，并且还会获得一种随机形式的永久疯狂（通过掷骰子在附录D中的祖格莫伊疯狂表中确定），这种疯狂状态将持续到该生物治愈疾病或死亡为止。以这种方式感染的生物无法再次被感染，并且必须在每24小时结束时重复进行豁免检定，若成功则感染结束。若失败，感染者的身体将逐渐被真菌侵占，若经过三次这样的失败检定，该生物将死亡，并在可能的情况下被复活为孢子仆从（参见《怪物图鉴》中的\"菌人\"条目）。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"CS"
+			],
+			"miscTags": [
+				"AOE",
+				"DIS"
+			],
+			"conditionInflict": [
+				"失能",
+				"中毒"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Buppido",
+			"name": "布皮多",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 6,
+			"_copy": {
+				"ENG_name": "Derro",
+				"name": "迪洛矮人",
+				"source": "OotA",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "迪洛矮人",
+						"with": "布皮多",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Cave Badger",
+			"name": "洞穴獾",
+			"source": "OotA",
+			"page": 96,
+			"_copy": {
+				"ENG_name": "Giant Badger",
+				"name": "巨獾",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Tunneler",
+							"name": "掘道者",
+							"entries": [
+								"当獾挖洞时，会留下隧道。"
+							]
+						}
+					}
+				}
+			},
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"speed": {
+				"walk": 30,
+				"burrow": 15
+			},
+			"senses": [
+				"黑暗视觉 30 尺",
+				"震颤感知 60 尺"
+			],
+			"tokenCustom": true,
+			"traitTags": [
+				"敏锐感官",
+				"掘道者"
+			],
+			"senseTags": [
+				"D",
+				"T"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Chamberlain of Zuggtmoy",
+			"name": "祖格莫伊的管家",
+			"type": "plant",
+			"source": "OotA",
+			"page": 230,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "6d10 + 12"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 17,
+			"dex": 7,
+			"con": 14,
+			"int": 11,
+			"wis": 8,
+			"cha": 12,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 9,
+			"resist": [
+				"钝击",
+				"穿刺"
+			],
+			"languages": [
+				"深渊语",
+				"地底通用语"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"ENG_name": "Mushroom Portal",
+					"name": "蘑菇之门",
+					"entries": [
+						"侍从被计为蘑菇，用于祖格托莫伊的伴娘的真菌步态特性。"
+					]
+				},
+				{
+					"ENG_name": "Poison Spores",
+					"name": "毒孢子",
+					"entries": [
+						"每当庭臣受到伤害时，它会释放出一团孢子。在此时位于庭臣5英尺范围内的生物必须成功通过一次{@dc 12}体质豁免检定，否则将陷入{@condition 中毒}状态1分钟。生物可以在其每个回合结束时重复进行豁免检定，成功则结束该效果。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"内务大臣进行两次猛击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}10（{@damage 2d6 + 3}）点钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Infestation Spores (1/Day)",
+					"name": "侵染孢子 (1/日)",
+					"entries": [
+						"室务官释放出孢子，形成一团以它为中心、半径10英尺的球形云雾，并持续存在1分钟。当云雾出现时处于其中或之后进入其中的任何血肉生物必须进行一次{@dc 12}体质豁免检定。若成功通过豁免，该生物在24小时内不会受到这些孢子的感染。若豁免失败，该生物将被一种名为\"祖格莫伊孢子\"的疾病感染，并获得一种随机的永久性疯狂状态（通过附表D中的\"祖格莫伊的疯狂\"表格掷骰决定），该状态将持续到该生物被治愈或死亡。当生物以这种方式感染时，它不会被再次感染，且必须在每24小时结束时重复进行豁免检定，成功则结束感染。若失败，被感染生物的身体将逐渐被真菌生长所占据，并且在三次这样的失败豁免后，该生物将死亡，并会复活为一个孢子仆从（前提是它属于可以被复活的生物类型，详见《怪物图鉴》中的\"真菌人\"条目）。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AB",
+				"U"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"AOE",
+				"DIS",
+				"MW"
+			],
+			"conditionInflict": [
+				"中毒"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Chuul Spore Servant",
+			"name": "甲伏怪孢子奴仆",
+			"type": "plant",
+			"source": "OotA",
+			"page": 228,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 93,
+				"formula": "11d10 + 33"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 19,
+			"dex": 10,
+			"con": 16,
+			"int": 2,
+			"wis": 6,
+			"cha": 1,
+			"senses": [
+				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+			],
+			"passive": 8,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"恐慌",
+				"麻痹",
+				"中毒"
+			],
+			"cr": "4",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"孢子仆从进行两次钳击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Pincer",
+					"name": "钳击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，范围 10 英尺，单一目标。{@h}11（{@damage 2d6 + 4}）钝击伤害。如果目标为大型或更小的生物且孢子仆从没有已{@condition 受擒}其他两个生物，则目标{@condition 受擒}（逃脱 {@dc 14}）。"
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"受擒"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Deepking Horgar Steelshadow V",
+			"name": "深王霍加·钢影五世",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"矮人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 82,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 20,
+					"from": [
+						"{@item 矮人板甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 52,
+				"formula": "8d8 + 16"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 19,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 11,
+			"cha": 15,
+			"save": {
+				"con": "+4",
+				"wis": "+2"
+			},
+			"passive": 10,
+			"languages": [
+				"龙语",
+				"巨人语",
+				"矮人语"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Duergar Resilience",
+					"name": "灰矮人体魄",
+					"entries": [
+						"霍加对毒素、法术和幻象的豁免检定有优势，并且能够抵抗被{@condition 魅惑}或{@condition 麻痹}。"
+					]
+				},
+				{
+					"ENG_name": "Sunlight Sensitivity",
+					"name": "日照敏感",
+					"entries": [
+						"在阳光中，霍加在攻击检定时处于不利状态，以及在依赖视力的感知（{@skill 察觉}）检定上也处于不利状态。"
+					]
+				},
+				{
+					"ENG_name": "Gauntlets of Ogre Power",
+					"name": "食人魔力量护手",
+					"entries": [
+						"霍加尔挥舞着{@item 食人魔力量护手}，使他的力量值达到19（+4）。"
+					]
+				},
+				{
+					"ENG_name": "Brave",
+					"name": "勇气",
+					"entries": [
+						"霍加尔在对抗{@condition 恐慌}状态的豁免检定中具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Enlarge (Recharges after a Short or Long Rest)",
+					"name": "变巨（短休或长休后充能）",
+					"entries": [
+						"在1分钟内，霍加尔会魔法性地增大体型，他穿戴或携带的任何物品也会随之增大。在体型增大期间，霍加尔变为大型生物，他在基于力量的武器攻击中的伤害骰加倍（包含在攻击中），并且在进行力量检定和力量豁免检定时具有优势。如果霍加尔没有足够的空间变为大型生物，他将达到可用空间内的最大尺寸。"
+					]
+				},
+				{
+					"ENG_name": "Invisibility (Recharges after a Short or Long Rest)",
+					"name": "隐形（短休或长休后充能）",
+					"entries": [
+						"霍加尔通过魔法变得{@condition 隐形}，直到他进行攻击、施放法术、使用他的放大能力，或直到他的{@status 专注}被打破，最长持续1小时（就像在{@status 专注||专注于}一个法术）。霍加尔穿戴或携带的任何装备也会随着他一起变得{@condition 隐形}。"
+					]
+				},
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"霍加进行两次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "+2 Warhammer",
+					"name": "+2 战锤",
+					"entries": [
+						"{@atk mw} {@hit 8} 进行攻击，射程 5 英尺，单一目标。{@h}10 ({@damage 1d8 + 6}) 点钝击伤害，如果用双手挥动则为 11 ({@damage 1d10 + 6}) 点钝击伤害。当霍加尔体型增大时，伤害分别增加到 15 ({@damage 2d8 + 6}) 点或 17 ({@damage 2d10 + 6}) 点钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Heavy Crossbow",
+					"name": "重弩",
+					"entries": [
+						"{@atk rw} 命中{@hit 2}，射程 100/400 尺，单一目标。{@h}5（{@damage 1d10}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Leadership (Recharges after a Short or Long Rest)",
+					"name": "领导（短休或长休后充能）",
+					"entries": [
+						"持续1分钟，霍加可以在霍加可见范围内30尺内，任何非敌对生物进行攻击判定或豁免检定时，发出一个特殊的命令或警告。如果该生物能够听到并理解霍加的话，它可以在其掷骰结果上加上一个{@dice d4}。一个生物一次只能从领导力骰中受益。如果霍加被{@condition 失能}，此效果结束。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Parry",
+					"name": "格挡",
+					"entries": [
+						"霍加尔在对抗一次命中他的近战攻击时，其护甲等级（AC）增加2。为此，霍加尔必须能够看到攻击者并且手持近战武器。"
+					]
+				}
+			],
+			"attachedItems": [
+				"+2 战锤|dmg",
+				"食人魔力量护手|dmg",
+				"重弩|phb"
+			],
+			"traitTags": [
+				"日照敏感"
+			],
+			"actionTags": [
+				"多重攻击",
+				"格挡"
+			],
+			"languageTags": [
+				"D",
+				"DR",
+				"GI"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"conditionInflict": [
+				"隐形"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Derro",
+			"name": "迪洛矮人",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"迪洛矮人"
+				]
+			},
+			"source": "OotA",
+			"page": 224,
+			"reprintedAs": [
+				"迪洛矮人|MTF"
+			],
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item 皮甲|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 13,
+				"formula": "3d6 + 3"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 12,
+			"int": 11,
+			"wis": 5,
+			"cha": 9,
+			"skill": {
+				"stealth": "+4"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 7,
+			"languages": [
+				"矮人语",
+				"地底通用语"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"ENG_name": "Insanity",
+					"name": "疯狂",
+					"entries": [
+						"德罗在对抗被{@condition 魅惑}或{@condition 恐慌}的豁免检定上具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"迪洛矮人对抗法术以及其他魔法效应所做的豁免具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Sunlight Sensitivity",
+					"name": "日照敏感",
+					"entries": [
+						"若身处日光下，迪洛矮人进行的攻击检定具有劣势，其依赖视觉进行的感知（{@skill 察觉}）检定将同样具有劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Hooked Shortspear",
+					"name": "钩矛",
+					"entries": [
+						"{@atk mw} 命中{@hit 2}，触及 5 英尺，单一目标。{@h}1 ({@damage 1d4 - 1}) 穿刺伤害。如果目标是生物，迪洛矮人可以选择不造成伤害而是试图绊倒目标，在这种情况下，目标必须成功通过一个 {@dc 9} 力量豁免否则 {@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "Light Repeating Crossbow",
+					"name": "轻型连弩",
+					"entries": [
+						"{@atk rw} 命中{@hit 4}，射程40/160尺，单一目标。{@h}6（{@damage 1d8 + 2}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"钩矛|OotA",
+				"轻型连弩|OotA"
+			],
+			"traitTags": [
+				"魔法抗性",
+				"日照敏感"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"D",
+				"U"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Derro Savant",
+			"name": "迪洛矮人学者",
+			"source": "OotA",
+			"page": 224,
+			"reprintedAs": [
+				"迪洛矮人学者|MTF"
+			],
+			"_copy": {
+				"ENG_name": "Derro",
+				"name": "迪洛矮人",
+				"source": "OotA"
+			},
+			"hp": {
+				"average": 49,
+				"formula": "11d6 + 11"
+			},
+			"cha": 14,
+			"cr": "3",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"德罗贤者是一位5级施法者。其施法能力是魅力（法术豁免难度{@dc 12}，法术攻击命中骰{@hit 4}）。德罗知晓以下术士法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 酸液飞溅}",
+								"{@spell 法师之手}",
+								"{@spell 传讯术}",
+								"{@spell 冷冻射线}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 燃烧之手}",
+								"{@spell 繁彩球}",
+								"{@spell 睡眠术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 隐形术}",
+								"{@spell 蛛行术}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell 闪现术}",
+								"{@spell 闪电束}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"spellcastingTags": [
+				"CS"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Droki",
+			"name": "卓奇",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"迪洛矮人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 231,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 镶钉皮甲|phb|镶钉皮甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 31,
+				"formula": "7d6 + 7"
+			},
+			"speed": {
+				"walk": {
+					"number": 30,
+					"condition": "（速度之靴下60尺）"
+				}
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 13,
+			"int": 10,
+			"wis": 5,
+			"cha": 16,
+			"skill": {
+				"stealth": "+5"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 7,
+			"languages": [
+				"矮人语",
+				"地底通用语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"德罗基的天生施法能力是魅力（法术豁免{@dc 13}）。他能够天生施放以下法术，无需任何材料成分："
+					],
+					"will": [
+						"{@spell 次级幻象}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 黑暗术}",
+							"{@spell 恐惧术}",
+							"{@spell 粉碎音波}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Special Equipment",
+					"name": "特殊装备",
+					"entries": [
+						"德罗基穿着{@item 速度之靴}。"
+					]
+				},
+				{
+					"ENG_name": "Insanity",
+					"name": "疯狂",
+					"entries": [
+						"Droki在对抗被{@condition 魅惑}或{@condition 恐慌}的豁免检定中具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Sneak Attack (1/Turn)",
+					"name": "偷袭 (1/回合)",
+					"entries": [
+						"当Droki以武器攻击命中目标并且攻击掷骰具有优势时，或者当目标在Droki的一个未处于{@condition 失能}状态的盟友5英尺范围内且Droki的攻击掷骰没有劣势时，Droki造成额外7（{@damage 2d6}）点伤害。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"迪洛矮人对抗法术以及其他魔法效应所做的豁免具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Sunlight Sensitivity",
+					"name": "日照敏感",
+					"entries": [
+						"若身处日光下，迪洛矮人进行的攻击检定具有劣势，其依赖视觉进行的感知（{@skill 察觉}）检定将同样具有劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"德罗基用他的短剑进行两次攻击"
+					]
+				},
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}6（{@damage 1d6 + 3}）点穿刺伤害。剑上涂有蛇毒，首次命中后毒药会失效。被毒药影响的目标必须进行一次{@dc 11}体质豁免，失败则受到10（{@damage 3d6}）毒素伤害，成功则伤害减半。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Parry",
+					"name": "格挡",
+					"entries": [
+						"德罗基在对抗一次命中他的近战攻击时，其护甲等级（AC）增加3。为此，德罗基必须能够看到攻击者并且手持近战武器。"
+					]
+				}
+			],
+			"attachedItems": [
+				"短剑|phb"
+			],
+			"traitTags": [
+				"魔法抗性",
+				"偷袭",
+				"日照敏感"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击",
+				"格挡"
+			],
+			"languageTags": [
+				"D",
+				"U"
+			],
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"damageTagsSpell": [
+				"T"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"恐慌"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Drow Acolyte",
+			"name": "卓尔侍僧",
+			"source": "OotA",
+			"page": 201,
+			"_copy": {
+				"ENG_name": "Acolyte",
+				"name": "侍僧",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Drow (Levitate)",
+						"name": "卓尔（浮空术）",
+						"source": "PHB"
+					}
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"traitTags": [
+				"妖精血统",
+				"日照敏感"
+			],
+			"spellcastingTags": [
+				"CC",
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Drow Assassin",
+			"name": "黑暗精灵刺客",
+			"source": "OotA",
+			"page": 140,
+			"_copy": {
+				"ENG_name": "Assassin",
+				"name": "刺客",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Drow (Levitate)",
+						"name": "卓尔（浮空术）",
+						"source": "PHB"
+					}
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"tokenCredit": "SagaSketchBook",
+			"tokenCustom": true,
+			"traitTags": [
+				"妖精血统",
+				"日照敏感"
+			],
+			"spellcastingTags": [
+				"CC",
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Drow Bandit",
+			"name": "卓尔匪徒",
+			"source": "OotA",
+			"page": 194,
+			"_copy": {
+				"ENG_name": "Bandit",
+				"name": "匪徒",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Drow (Levitate)",
+						"name": "卓尔（浮空术）",
+						"source": "PHB"
+					}
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"traitTags": [
+				"妖精血统",
+				"日照敏感"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Drow Commoner",
+			"name": "卓尔平民",
+			"source": "OotA",
+			"page": 194,
+			"_copy": {
+				"ENG_name": "Commoner",
+				"name": "平民",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Drow (Levitate)",
+						"name": "卓尔（浮空术）",
+						"source": "PHB"
+					}
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"traitTags": [
+				"妖精血统",
+				"日照敏感"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Drow Cultist",
+			"name": "卓尔邪教徒",
+			"source": "OotA",
+			"page": 196,
+			"_copy": {
+				"ENG_name": "Cultist",
+				"name": "邪教徒",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Drow (Levitate)",
+						"name": "卓尔（浮空术）",
+						"source": "PHB"
+					}
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"traitTags": [
+				"妖精血统",
+				"日照敏感"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Drow Guard",
+			"name": "卓尔警卫",
+			"source": "OotA",
+			"page": 195,
+			"_copy": {
+				"ENG_name": "Guard",
+				"name": "警卫",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Drow (Levitate)",
+						"name": "卓尔（浮空术）",
+						"source": "PHB"
+					}
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"traitTags": [
+				"妖精血统",
+				"日照敏感"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Drow Noble",
+			"name": "卓尔贵族",
+			"source": "OotA",
+			"page": 196,
+			"_copy": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Drow (Levitate)",
+						"name": "卓尔（浮空术）",
+						"source": "PHB"
+					}
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"traitTags": [
+				"妖精血统",
+				"日照敏感"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Drow Scout",
+			"name": "卓尔斥候",
+			"source": "OotA",
+			"page": 191,
+			"_copy": {
+				"ENG_name": "Scout",
+				"name": "斥候",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Drow (Levitate)",
+						"name": "卓尔（浮空术）",
+						"source": "PHB"
+					}
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"traitTags": [
+				"妖精血统",
+				"敏锐感官",
+				"日照敏感"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Drow Spore Servant",
+			"name": "卓尔孢子奴仆",
+			"type": "plant",
+			"source": "OotA",
+			"page": 229,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item 链甲衫|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 13,
+				"formula": "3d8"
+			},
+			"speed": {
+				"walk": 20
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 10,
+			"int": 2,
+			"wis": 6,
+			"cha": 1,
+			"senses": [
+				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+			],
+			"passive": 8,
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"恐慌",
+				"麻痹"
+			],
+			"cr": "1/8",
+			"action": [
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"短剑|phb"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Drow Spy",
+			"name": "卓尔间谍",
+			"source": "OotA",
+			"page": 195,
+			"_copy": {
+				"ENG_name": "Spy",
+				"name": "间谍",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Drow (Levitate)",
+						"name": "卓尔（浮空术）",
+						"source": "PHB"
+					}
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"traitTags": [
+				"妖精血统",
+				"偷袭",
+				"日照敏感"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Duergar Alchemist",
+			"name": "灰矮人炼金术士",
+			"source": "OotA",
+			"page": 76,
+			"_copy": {
+				"ENG_name": "Duergar",
+				"name": "灰矮人",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "replaceArr",
+						"replace": "标枪",
+						"items": [
+							{
+								"ENG_name": "Acid Vial",
+								"name": "强酸瓶",
+								"entries": [
+									"{@atk rw} 命中{@hit 4}，射程20尺，单一目标。{@h}7（{@damage 2d6}）强酸伤害。"
+								]
+							},
+							{
+								"ENG_name": "Alchemist's Fire",
+								"name": "炽火胶",
+								"entries": [
+									"{@atk rw} 命中{@hit 4}，射程 20 英尺，单一目标。 {@h}2 ({@damage 1d4}) 点火焰伤害在目标的每个回合开始时。生物可以使用其动作进行一次成功的 {@dc 10} 敏捷检定来扑灭火焰，从而结束此伤害。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"damageTags": [
+				"A",
+				"F",
+				"P"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Duergar Darkhaft",
+			"name": "灰矮人黑暗之手",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"矮人"
+				]
+			},
+			"source": "OotA",
+			"page": 226,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 鳞甲|phb}",
+						"{@item 盾牌|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 26,
+				"formula": "4d8 + 4"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 10,
+			"cha": 9,
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 10,
+			"resist": [
+				"毒素"
+			],
+			"languages": [
+				"矮人语",
+				"地底通用语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting (Psionics)",
+					"name": "天生施法（灵能）",
+					"type": "spellcasting",
+					"headerEntries": [
+						"达克哈夫特的天生施法能力是智力（法术豁免{@dc 10}），它可以天生施放以下法术，无需任何材料："
+					],
+					"will": [
+						"{@spell 交友术}",
+						"{@spell 法师之手}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 易容术}",
+							"{@spell 睡眠术}"
+						]
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Duergar Resilience",
+					"name": "灰矮人体魄",
+					"entries": [
+						"灰矮人抵抗中毒，法术和幻觉时，进行的豁免检定具有优势。抵抗{@condition 魅惑}和{@condition 麻痹}状态时，也是一样。"
+					]
+				},
+				{
+					"ENG_name": "Sunlight Sensitivity",
+					"name": "日照敏感",
+					"entries": [
+						"在阳光照射下，灰矮人进行的攻击检定具有劣势，此时其依赖视觉进行的感知（{@skill 察觉}）检定也具有劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Enlarge (Recharges after a Short or Long Rest)",
+					"name": "变巨（短休或长休后充能）",
+					"entries": [
+						"灰矮人用魔法将自己连同其装备或携带的所有东西一起变得巨大，并持续1分钟。变巨效应持续时，灰矮人体型变为大型，以力量为基础的武器攻击其伤害骰翻倍（已包含在攻击项中），且其进行的力量检定和力量豁免具有优势。当灰矮人所处的空间不足够容纳大型体型生物时，变巨的尺寸会按照空间可容纳的最大值来确定。"
+					]
+				},
+				{
+					"ENG_name": "War Pick",
+					"name": "战镐",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6 ({@damage 1d8 + 2}) 点穿刺伤害，或在体型增大时造成11 ({@damage 2d8 + 2}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Javelin",
+					"name": "标枪",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及5尺或射程30/120尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害，在变巨时为9（{@damage 2d6 + 2}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Invisibility (Recharges after a Short or Long Rest)",
+					"name": "隐形（短休或长休后充能）",
+					"entries": [
+						"灰矮人用魔法{@condition 隐形}，效果持续到它发动攻击，施展法术，使用变巨特质或者其{@status 专注}被打断（如同{@status 专注||专注于}一个法术）。如果持续专注于该法术，效果将至多持续1小时。灰矮人身上着装和携带的所有装备将随它一同{@condition 隐形}。"
+					]
+				}
+			],
+			"attachedItems": [
+				"标枪|phb",
+				"战镐|phb"
+			],
+			"traitTags": [
+				"日照敏感"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"D",
+				"U"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"隐形"
+			],
+			"conditionInflictSpell": [
+				"昏迷"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Duergar Keeper of the Flame",
+			"name": "灰矮人火焰守护者",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"矮人"
+				]
+			},
+			"source": "OotA",
+			"page": 226,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 鳞甲|phb}",
+						"{@item 盾牌|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 26,
+				"formula": "4d8 + 4"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 14,
+			"int": 11,
+			"wis": 10,
+			"cha": 9,
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 10,
+			"resist": [
+				"毒素"
+			],
+			"languages": [
+				"矮人语",
+				"地底通用语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting (Psionics)",
+					"name": "天生施法（灵能）",
+					"type": "spellcasting",
+					"headerEntries": [
+						"火焰守护者的天生施法能力是感知（法术豁免{@dc 12}）。它能够天生施放以下法术，无需任何成分："
+					],
+					"will": [
+						"{@spell 交友术}",
+						"{@spell 传讯术}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 命令术}"
+						]
+					},
+					"ability": "wis"
+				},
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"火焰守护者是一名3环法术施法者。其法术施法能力是感知（法术豁免{@dc 12}，法术攻击命中骰{@hit 4}）。火焰守护者准备了以下牧师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 神导术}",
+								"{@spell 修复术}",
+								"{@spell 圣火术}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 灾祸术}",
+								"{@spell 致伤术}",
+								"{@spell 虔诚护盾}"
+							]
+						},
+						"2": {
+							"slots": 2,
+							"spells": [
+								"{@spell 强化属性}",
+								"{@spell 灵体武器}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Duergar Resilience",
+					"name": "灰矮人体魄",
+					"entries": [
+						"灰矮人抵抗中毒，法术和幻觉时，进行的豁免检定具有优势。抵抗{@condition 魅惑}和{@condition 麻痹}状态时，也是一样。"
+					]
+				},
+				{
+					"ENG_name": "Sunlight Sensitivity",
+					"name": "日照敏感",
+					"entries": [
+						"在阳光照射下，灰矮人进行的攻击检定具有劣势，此时其依赖视觉进行的感知（{@skill 察觉}）检定也具有劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Enlarge (Recharges after a Short or Long Rest)",
+					"name": "变巨（短休或长休后充能）",
+					"entries": [
+						"灰矮人用魔法将自己连同其装备或携带的所有东西一起变得巨大，并持续1分钟。变巨效应持续时，灰矮人体型变为大型，以力量为基础的武器攻击其伤害骰翻倍（已包含在攻击项中），且其进行的力量检定和力量豁免具有优势。当灰矮人所处的空间不足够容纳大型体型生物时，变巨的尺寸会按照空间可容纳的最大值来确定。"
+					]
+				},
+				{
+					"ENG_name": "War Pick",
+					"name": "战镐",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6 ({@damage 1d8 + 2}) 点穿刺伤害，或在体型增大时造成11 ({@damage 2d8 + 2}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Javelin",
+					"name": "标枪",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及5尺或射程30/120尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害，在变巨时为9（{@damage 2d6 + 2}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Invisibility (Recharges after a Short or Long Rest)",
+					"name": "隐形（短休或长休后充能）",
+					"entries": [
+						"灰矮人用魔法{@condition 隐形}，效果持续到它发动攻击，施展法术，使用变巨特质或者其{@status 专注}被打断（如同{@status 专注||专注于}一个法术）。如果持续专注于该法术，效果将至多持续1小时。灰矮人身上着装和携带的所有装备将随它一同{@condition 隐形}。"
+					]
+				}
+			],
+			"attachedItems": [
+				"标枪|phb",
+				"战镐|phb"
+			],
+			"traitTags": [
+				"日照敏感"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"D",
+				"U"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"N",
+				"O",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC",
+				"I",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"隐形"
+			],
+			"conditionInflictSpell": [
+				"倒地"
+			],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Duergar Spore Servant",
+			"name": "灰矮人孢子奴仆",
+			"type": "plant",
+			"source": "OotA",
+			"page": 229,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 鳞甲|phb}",
+						"{@item 盾牌|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 26,
+				"formula": "4d8 + 8"
+			},
+			"speed": {
+				"walk": 15
+			},
+			"str": 14,
+			"dex": 11,
+			"con": 14,
+			"int": 2,
+			"wis": 6,
+			"cha": 1,
+			"senses": [
+				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+			],
+			"passive": 8,
+			"resist": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"恐慌",
+				"麻痹"
+			],
+			"cr": "1/2",
+			"action": [
+				{
+					"ENG_name": "War Pick",
+					"name": "战镐",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6 ({@damage 1d8 + 2}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"战镐|phb"
+			],
+			"senseTags": [
+				"B"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Eldeth Feldrun",
+			"name": "艾尔德丝·费尔德伦",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 6,
+			"_copy": {
+				"ENG_name": "Scout",
+				"name": "斥候",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Mountain Dwarf",
+						"name": "山地矮人",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "斥候",
+						"with": "埃尔迪斯",
+						"flags": "i"
+					}
+				}
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"X"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Emerald Enclave Scout",
+			"name": "翡翠联盟侦查兵",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"矮人"
+				]
+			},
+			"source": "OotA",
+			"page": 130,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 胸甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 19,
+				"formula": "3d8 + 6"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 14,
+			"int": 11,
+			"wis": 13,
+			"cha": 11,
+			"skill": {
+				"nature": "+4",
+				"perception": "+5",
+				"stealth": "+6",
+				"survival": "+5"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 15,
+			"resist": [
+				"毒素"
+			],
+			"languages": [
+				"通用语",
+				"矮人语"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Dwarven Resilience",
+					"name": "矮人体魄",
+					"entries": [
+						"侦察兵在对抗毒素的豁免检定上具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Keen Hearing and Sight",
+					"name": "敏锐视听觉",
+					"entries": [
+						"斥候依赖听觉或视觉所作的感知（{@skill 察觉}）检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"侦察兵进行两次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "War Pick",
+					"name": "战镐",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}7（{@damage 1d8 + 3}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Heavy Crossbow",
+					"name": "重弩",
+					"entries": [
+						"{@atk rw} 命中{@hit 3}，射程100/400尺，单一目标。{@h}5 ({@damage 1d10}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"重弩|phb",
+				"战镐|phb"
+			],
+			"traitTags": [
+				"敏锐感官"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Female Steeder",
+			"name": "雌性骑蛛",
+			"type": "beast",
+			"source": "OotA",
+			"page": 238,
+			"reprintedAs": [
+				"雌性骑蛛|MTF"
+			],
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 30,
+				"formula": "4d10 + 8"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 15,
+			"dex": 16,
+			"con": 14,
+			"int": 2,
+			"wis": 10,
+			"cha": 3,
+			"skill": {
+				"stealth": "+7"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 10,
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Spider Climb",
+					"name": "蛛行术",
+					"entries": [
+						"骑蛛可以在困难表面上攀爬，包括倒立在天花板上，且不需要进行属性检定。"
+					]
+				},
+				{
+					"ENG_name": "Leap",
+					"name": "跳跃",
+					"entries": [
+						"雌性斯提德可以在其回合中消耗所有移动力来跳跃至多90尺高或远，前提是其速度至少为30尺。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} {@hit 5}命中，触及5尺，一个生物。{@h}7（{@damage 1d8 + 3}）穿刺伤害，且目标必须进行一次{@dc 12}体质豁免检定，豁免失败则受到9（{@damage 2d8}）强酸伤害，豁免成功则伤害减半。"
+					]
+				},
+				{
+					"ENG_name": "Sticky Leg (Recharges when the Steeder Has No Creatures Grappled)",
+					"name": "粘性长腿（当斯提德没有擒抱生物时充能）",
+					"entries": [
+						"{@atk mw} {@hit 5} 命中，触及范围5尺，一个中等或更小的生物。{@h}目标被黏在雌性潜行蛛的腿上并处于{@condition 受擒}状态直到其逃脱（逃脱{@dc 12}）。"
+					]
+				}
+			],
+			"traitTags": [
+				"蛛行术"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"A",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"受擒"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Fiendish Giant Spider",
+			"name": "恶魔化巨人蜘蛛",
+			"source": "OotA",
+			"page": 97,
+			"_copy": {
+				"ENG_name": "Giant Wolf Spider",
+				"name": "巨狼蛛",
+				"source": "MM"
+			},
+			"resist": [
+				"寒冷",
+				"火焰",
+				"闪电"
+			],
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"中毒"
+			],
+			"cr": "1/2",
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Four-Armed Statue",
+			"name": "四臂雕像",
+			"source": "OotA",
+			"page": 206,
+			"_copy": {
+				"ENG_name": "Stone Golem",
+				"name": "石魔像",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔像",
+						"with": "雕像"
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "多重攻击",
+							"items": {
+								"ENG_name": "Multiattack",
+								"name": "多重攻击",
+								"entries": [
+									"雕像进行四次剑攻击。"
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "猛击",
+							"items": {
+								"ENG_name": "Sword",
+								"name": "剑",
+								"entries": [
+									"{@atk mw} 命中{@hit 10}，触及5尺，单一目标。{@h}10（{@damage 1d8 + 6}）挥砍伤害。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"damageTags": [
+				"S"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Gash",
+			"name": "撕裂",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 181,
+			"_copy": {
+				"ENG_name": "Gnoll",
+				"name": "鬣狗人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鬣狗人",
+						"with": "撕裂",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Wretched",
+							"name": "乞食",
+							"entries": [
+								"由于遭受的身体和精神上的虐待，加什在感知检定和感知豁免检定中处于劣势。一个{@spell 次等复原术}法术可以消除这些效果。"
+							]
+						}
+					}
+				}
+			},
+			"hp": {
+				"average": 11,
+				"formula": "5d8"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"languages": [
+				"鬣狗语",
+				"深渊语"
+			],
+			"languageTags": [
+				"AB",
+				"OTH"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Ghazrim DuLoc",
+			"name": "加兹里姆·杜洛克",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 141,
+			"_copy": {
+				"ENG_name": "Noble",
+				"name": "贵族",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "贵族",
+						"with": "加兹林",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Giant Riding Lizard",
+			"name": "乘用巨蜥",
+			"type": "beast",
+			"source": "OotA",
+			"page": 131,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 19,
+				"formula": "3d10 + 3"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 15,
+			"dex": 12,
+			"con": 13,
+			"int": 2,
+			"wis": 10,
+			"cha": 5,
+			"senses": [
+				"黑暗视觉 30 尺"
+			],
+			"passive": 10,
+			"cr": "1/4",
+			"trait": [
+				{
+					"ENG_name": "Spider Climb",
+					"name": "蛛行术",
+					"entries": [
+						"蜥蜴可以攀爬在难以攀爬的表面上，包括倒吊在天花板上，且不需要进行属性检定"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6 ({@damage 1d8 + 2}) 点穿刺伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"蛛行术"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Giant Rocktopus",
+			"name": "巨人岩石章鱼",
+			"source": "OotA",
+			"page": 28,
+			"_copy": {
+				"ENG_name": "Giant Octopus",
+				"name": "巨章鱼",
+				"source": "MM",
+				"_mod": {
+					"trait": [
+						{
+							"mode": "replaceArr",
+							"replace": "水下伪装",
+							"items": {
+								"ENG_name": "Camouflage",
+								"name": "伪装",
+								"entries": [
+									"这只章鱼在敏捷（{@skill 隐匿}）检定上有优势。"
+								]
+							}
+						},
+						{
+							"mode": "removeArr",
+							"names": [
+								"屏息",
+								"水下呼吸"
+							]
+						}
+					]
+				}
+			},
+			"speed": {
+				"walk": 20,
+				"climb": 10
+			},
+			"traitTags": [],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Glabbagool",
+			"name": "格拉巴布尔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 35,
+			"_copy": {
+				"ENG_name": "Gelatinous Cube",
+				"name": "凝胶方块",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "方块",
+						"with": "格拉巴布尔",
+						"flags": "i"
+					}
+				}
+			},
+			"int": 10,
+			"languages": [
+				"心灵感应 60 尺"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Glyphic Shroomlight",
+			"name": "符文蘑菇灯",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 103,
+			"_copy": {
+				"ENG_name": "Acolyte",
+				"name": "侍僧",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Deep Gnome",
+						"name": "地底侏儒",
+						"source": "DMG"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "老兵",
+						"with": "符文",
+						"flags": "i"
+					}
+				}
+			},
+			"tokenCredit": "Garcia",
+			"tokenCustom": true,
+			"spellcastingTags": [
+				"CC",
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Grazilaxx",
+			"name": "格拉齐拉克斯",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 29,
+			"_copy": {
+				"ENG_name": "Mind Flayer",
+				"name": "夺心魔",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "夺心魔",
+						"with": "格拉齐拉克斯",
+						"flags": "i"
+					},
+					"languages": [
+						{
+							"mode": "appendIfNotExistsArr",
+							"items": [
+								"矮人语",
+								"精灵语",
+								"地底通用语"
+							]
+						}
+					],
+					"spellcasting": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Innate Spellcasting",
+								"name": "天生施法",
+								"headerEntries": [
+									"格拉齐拉克斯天生能够每天施展一次{@spell 传送术}法术，但预期的目的地必须在另一个{@adventure 社团成员|OotA|1|光辉协会}的30尺范围内。这种传送效果可能会被干扰（见\"{@adventure 费尔兹瑞斯|OotA|1|费尔兹瑞斯}\"），这也是学会成员有时会出现在地下黑暗角落，与同伴分离的原因。"
+								],
+								"daily": {
+									"1e": [
+										"{@spell 传送术}"
+									]
+								},
+								"hidden": [
+									"daily"
+								]
+							}
+						]
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"int": 18,
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Grisha",
+			"name": "格里沙",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "人类",
+						"prefix": "达马拉人",
+						"prefixHidden": true
+					}
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 232,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item 链甲|phb}",
+						"{@item 盾牌|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 33,
+				"formula": "6d8 + 6"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 12,
+			"int": 11,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"wis": "+4",
+				"cha": "+5"
+			},
+			"skill": {
+				"persuasion": "+5",
+				"religion": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"通用语",
+				"地底通用语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"格里沙是一位6级施法者。他的施法能力是感知（法术豁免{@dc 12}，法术攻击命中{@hit 4}）。他准备了以下牧师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 神导术}",
+								"{@spell 光亮术}",
+								"{@spell 圣火术}",
+								"{@spell 奇术}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 疗伤术}",
+								"{@spell 神恩}",
+								"{@spell 致伤术}",
+								"{@spell 防护善恶}",
+								"{@spell 虔诚护盾}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 不灭明焰}",
+								"{@spell 定身类人}",
+								"{@spell 魔化武器}",
+								"{@spell 灵体武器}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 降咒}",
+								"{@spell 解除魔法}",
+								"{@spell 灵体卫士}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"格里沙使用他的+1连枷进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "+1 Flail",
+					"name": "+1 链枷",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}7（{@damage 1d8 + 3}）点钝击伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"+1 链枷|dmg"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"U"
+			],
+			"damageTags": [
+				"B"
+			],
+			"damageTagsSpell": [
+				"N",
+				"O",
+				"R"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Hanne Hallen",
+			"name": "汉娜·哈伦",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 171,
+			"_copy": {
+				"ENG_name": "Drow",
+				"name": "卓尔",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "卓尔",
+						"with": "汉妮",
+						"flags": "i"
+					},
+					"spellcasting": [
+						{
+							"mode": "appendArr",
+							"items": {
+								"ENG_name": "Spellcasting",
+								"name": "施法",
+								"headerEntries": [
+									"汉娜是一位1级施法者。她的施法能力是智力（法术豁免难度{@dc 13}，法术攻击命中骰{@hit 5}）。她准备了以下法师法术："
+								],
+								"spells": {
+									"0": {
+										"spells": [
+											"{@spell 次级幻象}",
+											"{@spell 冷冻射线}"
+										]
+									},
+									"1": {
+										"slots": 4,
+										"spells": [
+											"{@spell 护盾术}",
+											"{@spell 法师护甲}"
+										]
+									}
+								},
+								"ability": "int"
+							}
+						}
+					]
+				}
+			},
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"int": 17,
+			"skill": {
+				"perception": "+2",
+				"stealth": "+4",
+				"arcana": "+5",
+				"investigation": "+5"
+			},
+			"languages": [
+				"精灵语",
+				"地底通用语",
+				"通用语"
+			],
+			"tokenCustom": true,
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Hook Horror Spore Servant",
+			"name": "恐爪怪孢子奴仆",
+			"type": "plant",
+			"source": "OotA",
+			"page": 68,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d10 + 10"
+			},
+			"speed": {
+				"walk": 20,
+				"climb": 20
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 15,
+			"int": 2,
+			"wis": 6,
+			"cha": 1,
+			"senses": [
+				"30 尺盲视感官，该感官范围之外则视为目盲状态。"
+			],
+			"passive": 8,
+			"resist": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"目盲",
+				"魅惑",
+				"恐慌",
+				"麻痹"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"孢子仆从进行两次勾爪攻击。"
+					]
+				},
+				{
+					"ENG_name": "Hook",
+					"name": "钩爪",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及10尺，单一目标。{@h}11（{@damage 2d6 + 4}）点穿刺伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Ilvara Mizzrym",
+			"name": "伊尔瓦拉·米兹瑞姆",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 9,
+			"_copy": {
+				"ENG_name": "Drow Priestess of Lolth",
+				"name": "卓尔罗丝女祭司",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "卓尔",
+						"with": "伊尔瓦拉",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"ENG_name": "Special Equipment",
+							"name": "特殊装备",
+							"entries": [
+								"伊尔瓦拉除了她的鞭子之外，还挥舞着一根{@item 触须权杖}。"
+							]
+						}
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Infant Basilisk",
+			"name": "幼年蜥蜴怪",
+			"source": "OotA",
+			"page": 100,
+			"_copy": {
+				"ENG_name": "Basilisk",
+				"name": "石化蜥蜴",
+				"source": "MM"
+			},
+			"size": [
+				"T"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 4,
+				"formula": "1d4 + 2"
+			},
+			"speed": {
+				"walk": 10
+			},
+			"str": 10,
+			"cr": "0",
+			"trait": null,
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 2}，触及5尺，单一目标。{@h}1点穿刺伤害加上1点毒素伤害。"
+					]
+				}
+			],
+			"conditionInflict": [],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Infant Hook Horror",
+			"name": "幼体恐爪怪",
+			"source": "OotA",
+			"page": 34,
+			"_copy": {
+				"ENG_name": "Hook Horror",
+				"name": "恐爪怪",
+				"source": "MM"
+			},
+			"size": [
+				"T"
+			],
+			"ac": [
+				{
+					"ac": 10,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 4,
+				"formula": "1d4 + 2"
+			},
+			"speed": {
+				"walk": 10,
+				"climb": 10
+			},
+			"str": 9,
+			"cr": "0",
+			"action": null,
+			"actionTags": [],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Ixitxachitl",
+			"name": "伊希鳐鱼",
+			"type": "aberration",
+			"source": "OotA",
+			"page": 225,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 18,
+				"formula": "4d6 + 4"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 13,
+			"int": 12,
+			"wis": 13,
+			"cha": 7,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 11,
+			"languages": [
+				"深渊语",
+				"伊希鳐鱼语"
+			],
+			"cr": "1/4",
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}4（{@damage 1d6 + 1}）点穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Barbed Tail",
+					"name": "尾刺",
+					"entries": [
+						"当一个生物引发ixitxachitl的借机攻击时，ixitxachitl可以进行以下攻击，而不是使用它的咬击。",
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}7 ({@damage 1d8 + 3}) 点穿刺伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"OTH"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Ixitxachitl Cleric",
+			"name": "伊希鳐鱼牧师",
+			"type": "aberration",
+			"source": "OotA",
+			"page": 225,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 18,
+				"formula": "4d6 + 4"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 30
+			},
+			"str": 12,
+			"dex": 16,
+			"con": 13,
+			"int": 12,
+			"wis": 13,
+			"cha": 7,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 11,
+			"languages": [
+				"深渊语",
+				"伊希鳐鱼语"
+			],
+			"cr": "1/4",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"伊克西卡奇特尔是一个5级施法者，使用感知作为施法能力（法术豁免{@dc 11}，法术攻击命中{@hit 3}）。伊克西卡奇特尔准备了以下牧师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 神导术}",
+								"{@spell 奇术}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 魅惑类人}",
+								"{@spell 造水术/枯水术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 定身类人}",
+								"{@spell 沉默术}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell 解除魔法}",
+								"{@spell 巧言术}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}4（{@damage 1d6 + 1}）点穿刺伤害。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Barbed Tail",
+					"name": "尾刺",
+					"entries": [
+						"当一个生物引发ixitxachitl的借机攻击时，ixitxachitl可以进行以下攻击，而不是使用它的咬击。",
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}7 ({@damage 1d8 + 3}) 点穿刺伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"OTH"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"savingThrowForcedSpell": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Jade Giant Spider",
+			"name": "翡翠巨人蜘蛛",
+			"source": "OotA",
+			"page": 201,
+			"_copy": {
+				"ENG_name": "Stone Golem",
+				"name": "石魔像",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔像",
+						"with": "蜘蛛",
+						"flags": "i"
+					}
+				}
+			},
+			"hp": {
+				"average": 250,
+				"formula": "17d10 + 85"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"senses": [
+				"真实视觉 120 尺"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Jimjar",
+			"name": "吉姆贾尔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 6,
+			"_copy": {
+				"ENG_name": "Spy",
+				"name": "间谍",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Deep Gnome",
+						"name": "地底侏儒",
+						"source": "DMG"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "间谍",
+						"with": "吉姆贾尔",
+						"flags": "i"
+					}
+				}
+			},
+			"languages": [
+				"通用语",
+				"侏儒语",
+				"土族语",
+				"地底通用语"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Juvenile Hook Horror",
+			"name": "幼年恐爪怪",
+			"source": "OotA",
+			"page": 34,
+			"_copy": {
+				"ENG_name": "Hook Horror",
+				"name": "恐爪怪",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "replaceArr",
+						"replace": "钩爪",
+						"items": {
+							"ENG_name": "Hook",
+							"name": "钩爪",
+							"entries": [
+								"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+							]
+						}
+					}
+				}
+			},
+			"size": [
+				"M"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 39,
+				"formula": "6d8 + 12"
+			},
+			"speed": {
+				"walk": 20,
+				"climb": 20
+			},
+			"str": 15,
+			"cr": "2",
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Khalessa Draga",
+			"name": "卡莱莎·德拉加",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 149,
+			"_copy": {
+				"ENG_name": "Spy",
+				"name": "间谍",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "High Elf",
+						"name": "高等精灵",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "间谍",
+						"with": "卡莱莎",
+						"flags": "i"
+					},
+					"languages": {
+						"mode": "appendIfNotExistsArr",
+						"items": "地底通用语"
+					},
+					"trait": {
+						"mode": "prependArr",
+						"items": {
+							"ENG_name": "Special Equipment",
+							"name": "特殊装备",
+							"entries": [
+								"卡莱莎·德拉加拥有一顶{@item 易容帽}，她在与卓尔同行时用它伪装成女性卓尔，并且穿着一件{@item 魔斗篷（精灵斗篷）|OotA|魔斗篷}。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"languages": [
+				"通用语",
+				"精灵语",
+				"地底通用语"
+			],
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"卡莱莎可以天生施放以下法术，无需任何材料成分："
+					],
+					"will": [
+						"{@spell 舞光术}"
+					],
+					"ability": "int"
+				}
+			],
+			"traitTags": [
+				"妖精血统",
+				"偷袭"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Kinyel Druu'giir",
+			"name": "金耶尔·德鲁吉尔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 134,
+			"_copy": {
+				"ENG_name": "Drow Assassin",
+				"name": "黑暗精灵刺客",
+				"source": "OotA",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "刺客",
+						"with": "金耶尔",
+						"flags": "i"
+					}
+				}
+			},
+			"traitTags": [
+				"妖精血统",
+				"偷袭",
+				"日照敏感"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Kurr",
+			"name": "库尔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 179,
+			"_copy": {
+				"ENG_name": "Gnoll Fang of Yeenoghu",
+				"name": "鬣狗人·耶诺古毒牙",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鬣狗人",
+						"with": "库尔",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Lords' Alliance Guard",
+			"name": "领主联盟守卫",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"矮人"
+				]
+			},
+			"source": "OotA",
+			"page": 131,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item 链甲衫|phb}",
+						"{@item 盾牌|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d8 + 2"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"perception": "+2"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 12,
+			"cr": "1/4",
+			"trait": [
+				{
+					"ENG_name": "Dwarven Resilience",
+					"name": "矮人体魄",
+					"entries": [
+						"守卫对毒素豁免检定有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Halberd",
+					"name": "长戟",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及10尺，单一目标。{@h}7 ({@damage 1d10 + 2}) 挥砍伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"长戟|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RCH"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Lords' Alliance Spy",
+			"name": "领主联盟间谍",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "OotA",
+			"page": 131,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"{@item 皮甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "6d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 15,
+			"con": 10,
+			"int": 12,
+			"wis": 14,
+			"cha": 16,
+			"skill": {
+				"deception": "+5",
+				"insight": "+4",
+				"investigation": "+5",
+				"perception": "+6",
+				"persuasion": "+5",
+				"sleight of hand": "+4",
+				"stealth": "+4"
+			},
+			"passive": 16,
+			"languages": [
+				"通用语",
+				"矮人语"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Cunning Action",
+					"name": "灵巧动作",
+					"entries": [
+						"在每个回合中，间谍可以使用一个附赠动作来执行{@action 疾走}、{@action 撤离}或{@action 躲藏}动作。"
+					]
+				},
+				{
+					"ENG_name": "Sneak Attack (1/Turn)",
+					"name": "偷袭 (1/回合)",
+					"entries": [
+						"当间谍用武器攻击命中目标且攻击掷骰有优势时，或当目标处于间谍的未处于{@condition 失能}状态的盟友5英尺内且间谍的攻击掷骰没有劣势时，间谍额外造成7点（{@damage 2d6}）伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"密探发动两次近战攻击。"
+					]
+				},
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Hand Crossbow",
+					"name": "手弩",
+					"entries": [
+						"{@atk rw} 命中{@hit 4}，射程30/120尺，单一目标。{@h}5 ({@damage 1d6 + 2}) 点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"手弩|phb",
+				"短剑|phb"
+			],
+			"traitTags": [
+				"偷袭"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Lorthuun",
+			"name": "洛瑟恩",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 141,
+			"_copy": {
+				"ENG_name": "Beholder",
+				"name": "眼魔",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "眼魔",
+						"with": "洛瑟恩",
+						"flags": "i"
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "眼波射线",
+						"items": {
+							"ENG_name": "Eye Rays",
+							"name": "眼波射线",
+							"entries": [
+								"眼魔从下列选项中随机选择发射三束魔法眼波射线（重复则重骰），并指定身边120尺内它可以看到的一到三个目标：",
+								{
+									"type": "list",
+									"style": "list-hang-notitle",
+									"items": [
+										{
+											"ENG_name": "1. Charm Ray",
+											"name": "1. 魅惑射线",
+											"type": "itemSub",
+											"entry": "目标必须进行一次{@dc 16}的感知豁免，豁免失败者将在1小时内受眼魔{@condition 魅惑}，或是直至其受到来自眼魔的伤害。"
+										},
+										{
+											"ENG_name": "2. Paralyzing Ray",
+											"name": "2. 麻痹射线",
+											"type": "itemSub",
+											"entry": "目标必须进行一次{@dc 16}的体质豁免，豁免失败者将陷入1分钟的{@condition 麻痹}状态。该目标可以在每个其自己回合结束时再进行一次该豁免，豁免成功则终止该效应。"
+										},
+										{
+											"ENG_name": "3. Fear Ray",
+											"name": "3. 恐惧射线",
+											"type": "itemSub",
+											"entry": "目标必须进行一次{@dc 16}的感知豁免，豁免失败者将陷入1分钟的{@condition 恐慌}状态。该目标可以在每个其自己回合结束时再进行一次该豁免，豁免成功则终止该效应。"
+										},
+										{
+											"ENG_name": "4. Slowing Ray",
+											"name": "4. 缓慢射线",
+											"type": "itemSub",
+											"entry": "目标必须进行一次{@dc 16}的敏捷豁免，豁免失败者将在1分钟内速度减半。此外该生物无法执行反应，也无法在其回合里同时执行一个动作与一个附赠动作，而只能两者选其一。该生物可以在每个其自己回合结束时再进行一次该豁免，豁免成功则终止该效应。"
+										},
+										{
+											"ENG_name": "5. Enervation Ray",
+											"name": "5. 弱能射线",
+											"type": "itemSub",
+											"entry": "目标必须进行一次{@dc 16}的体质豁免，豁免失败者将受到36（{@damage 8d8}）点暗蚀伤害，豁免成功则伤害减半。"
+										},
+										{
+											"ENG_name": "6. Telekinetic Ray",
+											"name": "6. 念力射线",
+											"type": "itemSub",
+											"entries": [
+												"如果目标是一个生物，它必须进行一次{@dc 16}的力量豁免，豁免失败者将被眼魔抓起并向任意方向移动至多30尺。目标被眼魔射线的念力抓住并陷入{@condition 束缚}，直至眼魔的下一回合开始时，或直至该眼魔陷入{@condition 失能}。",
+												"如果目标是一个未被着装或携带，且不超过300磅重的物件，则眼魔可以直接将它向任意方向移动至多30尺。该眼魔也可以使用该射线精确控制物件，比如操作简单的工具或是打开一扇门或一个容器。"
+											]
+										}
+									]
+								}
+							]
+						}
+					}
+				}
+			},
+			"cr": "9",
+			"damageTags": [
+				"N",
+				"P"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Male Steeder",
+			"name": "雄性骑蛛",
+			"type": "beast",
+			"source": "OotA",
+			"page": 231,
+			"reprintedAs": [
+				"雄性骑蛛|MTF"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 13,
+				"formula": "2d8 + 4"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 15,
+			"dex": 12,
+			"con": 14,
+			"int": 2,
+			"wis": 10,
+			"cha": 3,
+			"skill": {
+				"stealth": "+5"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 10,
+			"cr": "1/4",
+			"trait": [
+				{
+					"ENG_name": "Spider Climb",
+					"name": "蛛行术",
+					"entries": [
+						"骑蛛可以在困难表面上攀爬，包括倒立在天花板上，且不需要进行属性检定。"
+					]
+				},
+				{
+					"ENG_name": "Leap",
+					"name": "跳跃",
+					"entries": [
+						"该蛛形生物可以在其回合消耗所有移动力来跳跃至多60尺高或远，前提是其速度至少为30尺。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} {@hit 4} 命中，触及5尺，一个生物。{@h}7（{@damage 1d8 + 2}）穿刺伤害，且目标必须进行一次{@dc 12}体质豁免检定，豁免失败时受到4（{@damage 1d8}）强酸伤害，豁免成功则伤害减半。"
+					]
+				},
+				{
+					"ENG_name": "Sticky Leg (Recharges when the Steeder Has No Creatures Grappled)",
+					"name": "粘性长腿（当斯提德没有擒抱生物时充能）",
+					"entries": [
+						"{@atk mw} {@hit 4} 命中，触及范围5尺，一个小型或微型生物。{@h}目标被黏在潜行蛛的腿上并处于{@condition 受擒}状态直到其逃脱（逃脱{@dc 12}）。"
+					]
+				}
+			],
+			"traitTags": [
+				"蛛行术"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"damageTags": [
+				"A",
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"受擒"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Mev Flintknapper",
+			"name": "梅夫·弗林特纳普",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 103,
+			"_copy": {
+				"ENG_name": "Veteran",
+				"name": "老兵",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Deep Gnome",
+						"name": "地底侏儒",
+						"source": "DMG"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "老兵",
+						"with": "美夫",
+						"flags": "i"
+					}
+				}
+			},
+			"tokenCustom": true,
+			"spellcastingTags": [
+				"CC",
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Narrak",
+			"name": "纳拉克",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"迪洛矮人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 232,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				12,
+				{
+					"ac": 15,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 40,
+				"formula": "9d6 + 9"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 14,
+			"con": 13,
+			"int": 14,
+			"wis": 5,
+			"cha": 16,
+			"skill": {
+				"arcana": "+4",
+				"stealth": "+4"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 7,
+			"languages": [
+				"矮人语",
+				"地底通用语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"纳拉克是一名5级施法者。他的施法能力是魅力（豁免{@dc 13}，法术攻击命中{@hit 5}）。纳拉克有两个2级的法术位，这些法术位在完成短休或长休后会恢复，并且他知道以下魔契师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 魔能爆}",
+								"{@spell 交友术}",
+								"{@spell 毒气喷涌}"
+							]
+						},
+						"2": {
+							"lower": 1,
+							"slots": 2,
+							"spells": [
+								"{@spell 黯冰狱铠}",
+								"{@spell 魅惑类人}",
+								"{@spell 脆弱诅咒}",
+								"{@spell 定身类人}",
+								"{@spell 衰弱射线}",
+								"{@spell 蛛行术}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Insanity",
+					"name": "疯狂",
+					"entries": [
+						"纳拉克在对抗被{@condition 魅惑}或{@condition 恐慌}状态的豁免检定中具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"纳拉克在对抗法术和其他魔法效果的豁免检定上有优势。"
+					]
+				},
+				{
+					"ENG_name": "Sunlight Sensitivity",
+					"name": "日照敏感",
+					"entries": [
+						"在日光下，Narrak在攻击检定上，以及依赖视力的感知（{@skill 察觉}）技能检定上都有劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Armor of Shadows (Recharges after a Short or Long Rest)",
+					"name": "暗影护甲（短休或长休后充能）",
+					"entries": [
+						"纳拉克对自己施放了{@spell 法师护甲}"
+					]
+				},
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及 5 尺，单一目标。{@h}5（{@damage 1d6 + 2}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "One with Shadows",
+					"name": "融身入影",
+					"entries": [
+						"当Narrak处于昏暗或黑暗中时，他可以变得{@condition 隐形}。除非他移动或采取行动或反应，否则他将一直保持这种状态。"
+					]
+				}
+			],
+			"attachedItems": [
+				"短剑|phb"
+			],
+			"traitTags": [
+				"魔法抗性",
+				"日照敏感"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"D",
+				"U"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"C",
+				"I",
+				"N",
+				"O"
+			],
+			"spellcastingTags": [
+				"CL"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"魅惑",
+				"麻痹"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"感知"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Ougalop",
+			"name": "欧加洛普",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 142,
+			"_copy": {
+				"ENG_name": "Kuo-Toa",
+				"name": "寇涛",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "寇涛鱼人",
+						"with": "欧加洛普",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Peebles",
+			"name": "皮布尔斯",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 134,
+			"_copy": {
+				"ENG_name": "Spy",
+				"name": "间谍",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Deep Gnome",
+						"name": "地底侏儒",
+						"source": "DMG"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "间谍",
+						"with": "皮布尔斯",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Prince Derendil",
+			"name": "德伦迪尔王子",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 6,
+			"_copy": {
+				"ENG_name": "Quaggoth",
+				"name": "幽邃熊怪",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "幽邃熊怪",
+						"with": "德伦迪尔王子",
+						"flags": "i"
+					}
+				}
+			},
+			"languages": [
+				"精灵语",
+				"地底通用语"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Princess Ebonmire",
+			"name": "乌木公主",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 111,
+			"_copy": {
+				"ENG_name": "Black Pudding",
+				"name": "黑布丁",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "布丁",
+						"with": "乌木公主",
+						"flags": "i"
+					}
+				}
+			},
+			"int": 6,
+			"action": [
+				{
+					"ENG_name": "Pseudopod",
+					"name": "伪足",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 5}，触及5尺或30尺，单一目标。{@h}6 ({@damage 1d6 + 3}) 钝击伤害加上18 ({@damage 4d8}) 强酸伤害。此外，目标穿戴的非魔法盔甲部分溶解，对其提供的AC造成永久且累积的\u22121减值。如果减值使其AC降至10，则盔甲被破坏。"
+					]
+				}
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Quenthel Baenre",
+			"name": "奎恩瑟·班瑞",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 204,
+			"_copy": {
+				"ENG_name": "Drow Priestess of Lolth",
+				"name": "卓尔罗丝女祭司",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "卓尔",
+						"with": "昆瑟尔",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Special Equipment",
+							"name": "特殊装备",
+							"entries": [
+								"昆瑟尔挥舞着一根{@item 触须权杖}。"
+							]
+						}
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "多重攻击",
+							"items": {
+								"ENG_name": "Multiattack",
+								"name": "多重攻击",
+								"entries": [
+									"奎恩瑟·班瑞进行三次触须权杖攻击。"
+								]
+							}
+						},
+						{
+							"mode": "appendArr",
+							"items": [
+								{
+									"ENG_name": "Tentacle Rod",
+									"name": "触须权杖",
+									"entries": [
+										"{@atk mw} {@hit 9} 命中，触及5尺，单一目标。{@h}5（{@damage 1d6 + 2}）穿刺伤害。若她用三根触须全部命中目标，目标必须进行一次{@dc 15}体质豁免检定。失败时，该生物的速度减半，在敏捷豁免检定上具有劣势，且1分钟内无法使用反应。此外，在其每回合中，它只能执行一个动作或一个附赠动作，而不能同时执行两者。在其每回合结束时，它可以重复该豁免检定，成功则终止此效应。"
+									]
+								},
+								{
+									"ENG_name": "Throne Activation",
+									"name": "宝座激活",
+									"entries": [
+										"当昆舍尔坐在她的王座上时，她可以在她的回合中使用一个动作来施展{@spell 解离术}（豁免 {@dc 19}）。豁免失败的目标将受到{@damage 10d6 + 40}点力场伤害。如果此伤害将目标的生命值降至0，它将被解离。"
+									]
+								}
+							]
+						}
+					]
+				}
+			},
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"{@item +3 鳞甲}"
+					]
+				}
+			],
+			"hp": {
+				"average": 132,
+				"formula": "24d8 + 24"
+			},
+			"int": 18,
+			"wis": 20,
+			"save": {
+				"con": "+8",
+				"wis": "+12",
+				"cha": "+11"
+			},
+			"skill": {
+				"insight": "+12",
+				"perception": "+12",
+				"religion": "+11",
+				"stealth": "+9"
+			},
+			"cr": "22",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"昆提尔的施法属性是魅力（法术豁免{@dc 19}）。她天生可以施展以下法术，无需材料成分："
+					],
+					"will": [
+						"{@spell 舞光术}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 黑暗术}",
+							"{@spell 妖火}",
+							"{@spell 浮空术}（仅自身）"
+						]
+					},
+					"ability": "cha"
+				},
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"奎恩瑟·班瑞是一个20级的施法者。她的施法属性是感知（豁免{@dc 20}，法术攻击命中{@hit 12}）。奎恩瑟·班瑞可以随意施放任何{@filter 牧师法术高达9级|spells|level=0;1;2;3;4;5;6;7;8;9|class=牧师}。"
+					],
+					"will": [
+						"援助术",
+						"活化死尸",
+						"反魔法场",
+						"星界投影",
+						"卜筮术",
+						"生命灵光",
+						"净化灵光",
+						"活力灵光",
+						"灾祸术",
+						"放逐术",
+						"希望信标",
+						"降咒",
+						"剑刃护壁",
+						"祝福术",
+						"目盲术/耳聋术",
+						"安定心神",
+						"典礼术",
+						"鹰眼术",
+						"命令术",
+						"通神术",
+						"咒唤圣光",
+						"疫病术",
+						"不灭明焰",
+						"操控水体",
+						"操控天气",
+						"造粮术",
+						"造水术/枯水术",
+						"唤起死灵",
+						"疗伤术",
+						"拂晓",
+						"昼明术",
+						"防死结界",
+						"侦测善恶",
+						"侦测魔法",
+						"侦测毒性和疾病",
+						"驱逐善恶",
+						"解除魔法",
+						"预言术",
+						"圣言术",
+						"地震术",
+						"强化属性",
+						"以太化",
+						"假死术",
+						"寻路术",
+						"寻找陷阱",
+						"火焰风暴",
+						"焰击术",
+						"禁制术",
+						"行动自如",
+						"异界之门",
+						"指使术",
+						"遗体防腐",
+						"守卫刻文",
+						"高等复原术",
+						"信仰守卫",
+						"神导术",
+						"光导箭",
+						"圣居",
+						"重伤术",
+						"医疗术",
+						"治愈真言",
+						"英雄宴",
+						"定身类人",
+						"圣洁灵光",
+						"神圣武器",
+						"致伤术",
+						"疫病虫群",
+						"通晓传奇",
+						"次等复原术",
+						"生命转换",
+						"光亮术",
+						"生物定位术",
+						"物件定位术",
+						"防护法阵",
+						"群体疗伤术",
+						"群体医疗术",
+						"群体治愈真言",
+						"融身入石",
+						"修复术",
+						"异界誓盟",
+						"异界誓缚",
+						"位面转移",
+						"律令医疗",
+						"治疗祷言",
+						"防护能量",
+						"防护善恶",
+						"防护毒素",
+						"净化饮食",
+						"死者复活",
+						"再生术",
+						"移除诅咒",
+						"抵抗术",
+						"复生术",
+						"回生术",
+						"圣火术",
+						"庇护术",
+						"探知术",
+						"短讯术",
+						"虔诚护盾",
+						"沉默术",
+						"维生术",
+						"死者交谈",
+						"灵体卫士",
+						"魂灵环绕",
+						"灵体武器",
+						"塑石术",
+						"天界召唤术",
+						"阳炎射线",
+						"阳炎爆",
+						"徽记术",
+						"神庙术",
+						"奇术",
+						"亡者丧钟",
+						"巧言术",
+						"完全复生术",
+						"真知术",
+						"守护之链",
+						"水上行走",
+						"光耀祷词",
+						"回返真言",
+						"诚实之域"
+					],
+					"ability": "wis",
+					"hidden": [
+						"will"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"conditionInflictSpell": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"力竭",
+				"恐慌",
+				"受擒",
+				"失能",
+				"隐形",
+				"麻痹",
+				"石化",
+				"中毒",
+				"倒地",
+				"束缚",
+				"震慑",
+				"昏迷"
+			],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"体质",
+				"敏捷",
+				"智力",
+				"力量",
+				"感知"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Regenerating Black Pudding",
+			"name": "再生黑色布丁",
+			"source": "OotA",
+			"page": 211,
+			"_copy": {
+				"ENG_name": "Black Pudding",
+				"name": "黑布丁",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Regeneration",
+							"name": "再生",
+							"entries": [
+								"布丁在其回合开始时恢复10点生命值。如果布丁受到火焰伤害，则布丁的下一个回合开始时此特性不会生效。布丁只有在其回合开始时生命值为0且没有再生时才会死亡。"
+							]
+						}
+					}
+				}
+			},
+			"int": 6,
+			"cr": "5",
+			"traitTags": [
+				"无定形",
+				"再生",
+				"蛛行术"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Rihuud",
+			"name": "里胡德",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 59,
+			"_copy": {
+				"ENG_name": "Stone Giant",
+				"name": "石巨人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "巨人",
+						"with": "里胡德",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Two Heads",
+							"name": "双头",
+							"entries": [
+								"Rihuud在感知（{@skill 察觉}）检定和对抗{@condition 目盲}、{@condition 魅惑}、{@condition 耳聋}、{@condition 恐慌}、{@condition 震慑}或被击{@condition 昏迷}的豁免检定上具有优势。"
+							]
+						}
+					},
+					"action": [
+						{
+							"mode": "replaceArr",
+							"replace": "多重攻击",
+							"items": {
+								"ENG_name": "Multiattack",
+								"name": "多重攻击",
+								"entries": [
+									"Rihuud进行两次徒手打击。"
+								]
+							}
+						},
+						{
+							"mode": "replaceArr",
+							"replace": "巨棒",
+							"items": {
+								"ENG_name": "Unarmed Strike",
+								"name": "徒手打击",
+								"entries": [
+									"{@atk mw} 命中{@hit 9}，触及10尺，单一目标。{@h}13（{@damage 2d6 + 6}）钝击伤害。"
+								]
+							}
+						}
+					]
+				}
+			},
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Ront",
+			"name": "荣特",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 7,
+			"_copy": {
+				"ENG_name": "Orc",
+				"name": "兽人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "兽人",
+						"with": "荣特",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Rumpadump",
+			"name": "Rumpadump",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 72,
+			"_copy": {
+				"ENG_name": "Myconid Sprout",
+				"name": "蕈人幼体",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "蕈人",
+						"with": "Rumpadump",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Rystia Zav",
+			"name": "瑞斯蒂亚·扎夫",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 135,
+			"_copy": {
+				"ENG_name": "Spy",
+				"name": "间谍",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "间谍",
+						"with": "瑞斯蒂亚",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Sarith Kzekarit",
+			"name": "萨里斯·克泽卡里特",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 7,
+			"_copy": {
+				"ENG_name": "Drow",
+				"name": "卓尔",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "卓尔",
+						"with": "萨里斯",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shedrak of the Eyes",
+			"name": "眼睛之沙德拉克",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 176,
+			"_copy": {
+				"ENG_name": "Mage",
+				"name": "魔法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "魔法师",
+						"with": "舍德拉克",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"trait": [
+				{
+					"ENG_name": "Eye Tattoos",
+					"name": "眼睛纹身",
+					"entries": [
+						"谢德拉克的秃头上纹有十个小眼睛，这使他能够像看到可见的生物和物体一样看到{@condition 隐形}的生物和物体。"
+					]
+				}
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shuushar the Awakened",
+			"name": "觉醒者舒沙尔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 7,
+			"_copy": {
+				"ENG_name": "Kuo-Toa",
+				"name": "寇涛",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "寇涛鱼人",
+						"with": "舒沙尔",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Skriss",
+			"name": "斯克里斯",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 29,
+			"_copy": {
+				"ENG_name": "Troglodyte",
+				"name": "穴蜥人",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "穴蜥人",
+						"with": "斯克里斯",
+						"flags": "i"
+					},
+					"languages": [
+						{
+							"mode": "appendIfNotExistsArr",
+							"items": [
+								"矮人语",
+								"精灵语",
+								"地底通用语"
+							]
+						}
+					],
+					"spellcasting": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Innate Spellcasting",
+								"name": "天生施法",
+								"headerEntries": [
+									"斯克里斯天生能够每天施放一次{@spell 传送术}法术，但预期的目的地必须在另一个{@adventure 社团成员|OotA|1|光辉协会}成员30尺范围内。这种传送效果可能会被干扰（见\"{@adventure 费尔兹瑞斯|OotA|1|费尔兹瑞斯}\"），这就是为什么社会成员有时会出现在地下深处的偏远角落，与同伴分离。"
+								],
+								"daily": {
+									"1e": [
+										"{@spell 传送术}"
+									]
+								},
+								"hidden": [
+									"daily"
+								]
+							}
+						]
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"int": 18,
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Sladis Vadir",
+			"name": "斯拉迪斯·瓦迪尔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 135,
+			"_copy": {
+				"ENG_name": "Druid",
+				"name": "德鲁伊",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "High Elf",
+						"name": "高等精灵",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "德鲁伊",
+						"with": "斯拉迪斯",
+						"flags": "i"
+					},
+					"languages": {
+						"mode": "appendIfNotExistsArr",
+						"items": "地底通用语"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"G"
+			],
+			"traitTags": [
+				"妖精血统"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Sloopidoop",
+			"name": "斯卢皮杜普",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 29,
+			"_copy": {
+				"ENG_name": "Kuo-toa Archpriest",
+				"name": "寇涛大祭司",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "寇涛鱼人",
+						"with": "斯卢皮杜普",
+						"flags": "i"
+					},
+					"languages": [
+						{
+							"mode": "appendIfNotExistsArr",
+							"items": [
+								"矮人语",
+								"精灵语",
+								"地底通用语"
+							]
+						}
+					],
+					"spellcasting": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Innate Spellcasting",
+								"name": "天生施法",
+								"headerEntries": [
+									"斯卢皮杜普能够每天天生施放一次{@spell 传送术}法术，但预期的目的地必须在另一个{@adventure 社团成员|OotA|1|光辉协会}的30尺范围内。这个传送效果可能会被干扰（见\"{@adventure 费尔兹瑞斯|OotA|1|费尔兹瑞斯}\"），这就是协会成员有时最终出现在地下黑暗角落，与同伴分离的原因。"
+								],
+								"daily": {
+									"1e": [
+										"{@spell 传送术}"
+									]
+								},
+								"hidden": [
+									"daily"
+								]
+							}
+						]
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"int": 18,
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Sovereign Basidia",
+			"name": "君主巴斯狄亚",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 88,
+			"_copy": {
+				"ENG_name": "Myconid Sovereign",
+				"name": "蕈人王",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "蕈人",
+						"with": "巴西迪亚",
+						"flags": "i"
+					}
+				}
+			},
+			"damageTags": [
+				"B",
+				"I"
+			],
+			"conditionInflict": [
+				"失能",
+				"中毒",
+				"震慑"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Spider King",
+			"name": "蜘蛛王",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 74,
+			"_copy": {
+				"ENG_name": "Giant Spider",
+				"name": "巨蜘蛛",
+				"source": "MM",
+				"_mod": {
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Two Heads",
+							"name": "双头",
+							"entries": [
+								"由于它有两个头，蜘蛛王在感知（{@skill 察觉}）检定以及对抗被{@condition 目盲}、{@condition 魅惑}、{@condition 耳聋}、{@condition 恐慌}、{@condition 昏迷}和击昏{@condition 震慑}的豁免检定中具有优势。"
+							]
+						}
+					}
+				}
+			},
+			"hp": {
+				"average": 44,
+				"formula": "4d10 + 4"
+			},
+			"save": {
+				"con": "+3",
+				"wis": "+2"
+			},
+			"skill": {
+				"stealth": "+7",
+				"perception": "+4"
+			},
+			"passive": 14,
+			"traitTags": [
+				"蛛行术",
+				"蛛网感知",
+				"蛛网行者"
+			],
+			"senseTags": [
+				"B",
+				"D"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Spiderbait",
+			"name": "蜘蛛诱饵",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 31,
+			"_copy": {
+				"ENG_name": "Goblin",
+				"name": "地精",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "地精",
+						"with": "蜘蛛诱饵",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Thrill-Seeker",
+							"name": "惊险追求者",
+							"entries": [
+								"蜘蛛诱饵在避免被{@status 突袭}的检定上具有优势。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"skill": {
+				"acrobatics": "+6",
+				"athletics": "+3",
+				"stealth": "+6"
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Stool",
+			"name": "圆凳",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 7,
+			"_copy": {
+				"ENG_name": "Myconid Sprout",
+				"name": "蕈人幼体",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "蕈人",
+						"with": "圆凳",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Svirfneblin Wererat",
+			"name": "斯涅布力狼鼠人",
+			"source": "OotA",
+			"page": 97,
+			"_copy": {
+				"ENG_name": "Wererat",
+				"name": "鼠人",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Deep Gnome",
+						"name": "地底侏儒",
+						"source": "DMG"
+					}
+				]
+			},
+			"tokenCustom": true,
+			"senseTags": [
+				"SD"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "The Pudding King",
+			"name": "布丁王",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"侏儒",
+					"变形生物"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 233,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				13,
+				{
+					"ac": 16,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 49,
+				"formula": "9d6 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 14,
+			"int": 12,
+			"wis": 8,
+			"cha": 17,
+			"save": {
+				"con": "+6",
+				"cha": "+7"
+			},
+			"skill": {
+				"arcana": "+4",
+				"perception": "+2",
+				"stealth": "+6",
+				"survival": "+2"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 12,
+			"resist": [
+				"强酸",
+				"毒素"
+			],
+			"conditionImmune": [
+				"中毒"
+			],
+			"languages": [
+				"深渊语",
+				"侏儒语",
+				"土族语",
+				"地底通用语"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"布丁王的天生施法能力是智力（法术豁免{@dc 12}）。他能够天生施放以下法术，无需任何材料成分："
+					],
+					"will": [
+						"{@spell 回避侦测}(仅自身)"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 目盲术/耳聋术}",
+							"{@spell 朦胧术}",
+							"{@spell 易容术}"
+						]
+					},
+					"ability": "int"
+				},
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"布丁王是一个9级施法者。他的施法能力是魅力（法术豁免{@dc 14}，法术攻击命中{@hit 6}）。布丁王知道以下巫师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 酸液飞溅}",
+								"{@spell 光亮术}",
+								"{@spell 法师之手}",
+								"{@spell 毒气喷涌}",
+								"{@spell 魔法伎俩}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 虚假生命}",
+								"{@spell 法师护甲}",
+								"{@spell 致病射线}",
+								"{@spell 护盾术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 疯狂冠冕}",
+								"{@spell 迷踪步}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 气化形体}",
+								"{@spell 臭云术}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 枯萎术}",
+								"{@spell 困惑术}"
+							]
+						},
+						"5": {
+							"slots": 1,
+							"spells": [
+								"{@spell 死云术}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Stone Camouflage",
+					"name": "岩地伪装",
+					"entries": [
+						"布丁王在岩石地形中进行敏捷（{@skill 隐匿}）检定以隐藏时具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Gnome Cunning",
+					"name": "侏儒狡黠",
+					"entries": [
+						"布丁王在对抗魔法的感知、感知和魅力豁免检定中具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Insanity",
+					"name": "疯狂",
+					"entries": [
+						"布丁王在对抗被{@condition 魅惑}或{@condition 恐慌}的豁免检定上有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "War Pick",
+					"name": "战镐",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}4 ({@damage 1d8}) 点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Change Shape",
+					"name": "变形",
+					"entries": [
+						"布丁王能够魔法性地转变成一个{@filter 泥怪|bestiary|type=ooze}，或者恢复其真实形态。如果他死亡，他将恢复真实形态。他穿戴或携带的任何装备都会被新形态吸收。在软泥怪形态下，布丁王保留了他的阵营、生命值、生命骰、以及感知、感知和魅力得分，以及这个动作。他的其他具体数值和能力被新形态的所取代。"
+					]
+				},
+				{
+					"ENG_name": "Create Green Slime (Recharges after a Long Rest)",
+					"name": "创造绿色粘液（长休后重充）",
+					"entries": [
+						"布丁王创造了一滩绿色粘液（见《地下城主指南》第5章中的\"地下城危险\"）。粘液出现在布丁王30尺范围内的墙壁、天花板或地板的某个区域。"
+					]
+				}
+			],
+			"attachedItems": [
+				"战镐|phb"
+			],
+			"traitTags": [
+				"伪装"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"变形生物"
+			],
+			"languageTags": [
+				"AB",
+				"G",
+				"T",
+				"U"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"A",
+				"I",
+				"N"
+			],
+			"spellcastingTags": [
+				"CS",
+				"I"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"目盲",
+				"魅惑",
+				"耳聋",
+				"中毒"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"敏捷",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Themberchaud",
+			"name": "瑟姆贝尔乔德",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 53,
+			"_copy": {
+				"ENG_name": "Adult Red Dragon",
+				"name": "成年红龙",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "龙",
+						"with": "瑟姆贝尔乔德",
+						"flags": "i"
+					}
+				}
+			},
+			"damageTagsLegendary": [],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Topsy",
+			"name": "托普西",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Wererat",
+				"name": "鼠人",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Deep Gnome",
+						"name": "地底侏儒",
+						"source": "DMG"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鼠人",
+						"with": "托普西",
+						"flags": "i"
+					}
+				}
+			},
+			"languages": [
+				"侏儒语",
+				"土族语",
+				"地底通用语"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Troglodyte Champion of Laogzed",
+			"name": "拉欧利的冠军战士",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"穴蜥人"
+				]
+			},
+			"source": "OotA",
+			"page": 229,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 59,
+				"formula": "7d8 + 28"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 18,
+			"int": 8,
+			"wis": 12,
+			"cha": 12,
+			"skill": {
+				"athletics": "+6",
+				"intimidation": "+3",
+				"stealth": "+3"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 11,
+			"languages": [
+				"穴蜥人语"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"ENG_name": "Chameleon Skin",
+					"name": "变色皮肤",
+					"entries": [
+						"穴蜥人进行躲藏而作的敏捷（{@skill 隐匿}）检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Stench",
+					"name": "恶臭",
+					"entries": [
+						"除了穴蜥人之外的任何生物，如果在其回合开始时位于穴蜥人5尺范围内，必须成功进行一次{@dc 14}体质豁免检定，否则直到该生物下个回合开始时都会处于{@condition 中毒}状态。如果豁免成功，该生物对所有穴蜥人的恶臭免疫1小时。"
+					]
+				},
+				{
+					"ENG_name": "Sunlight Sensitivity",
+					"name": "日照敏感",
+					"entries": [
+						"处于阳光下的穴蜥人在进行攻击检定，以及进行依赖视觉的感知（{@skill 察觉}）检定时具有劣势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"穴蜥人进行三次攻击：一次用咬击，另外两次使用爪击或大棒。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}6（{@damage 1d4 + 4}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}6（{@damage 1d4 + 4}）点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Greatclub",
+					"name": "巨棒",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}8 ({@damage 1d8 + 4}) 钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Acid Spray {@recharge}",
+					"name": "酸液喷射{@recharge}",
+					"entries": [
+						"穴居人向一条15尺长、5尺宽的直线吐出酸液。该直线上的每个生物必须进行一次{@dc 14}敏捷豁免，若豁免失败则受到10（{@damage 3d6}）点酸液伤害，若豁免成功则受到一半伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"巨棒|phb"
+			],
+			"traitTags": [
+				"日照敏感"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"conditionInflict": [
+				"中毒"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true
+		},
+		{
+			"ENG_name": "Turvy",
+			"name": "特威",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 8,
+			"_copy": {
+				"ENG_name": "Wererat",
+				"name": "鼠人",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Deep Gnome",
+						"name": "地底侏儒",
+						"source": "DMG"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "鼠人",
+						"with": "特威",
+						"flags": "i"
+					}
+				}
+			},
+			"languages": [
+				"侏儒语",
+				"土族语",
+				"地底通用语"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Two-Headed Troll",
+			"name": "双头巨魔",
+			"source": "OotA",
+			"page": 211,
+			"_copy": {
+				"ENG_name": "Troll",
+				"name": "巨魔",
+				"source": "MM"
+			},
+			"bonus": [
+				{
+					"ENG_name": "Extra Bite",
+					"name": "额外啃咬",
+					"entries": [
+						"作为其多重攻击的一部分，巨魔可以发动一次啃咬攻击。"
+					]
+				}
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Vampiric Ixitxachitl",
+			"name": "伊希鳐鱼吸血鬼",
+			"type": "aberration",
+			"source": "OotA",
+			"page": 226,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 44,
+				"formula": "8d8 + 8"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 30
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 13,
+			"int": 12,
+			"wis": 13,
+			"cha": 7,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 11,
+			"languages": [
+				"深渊语",
+				"伊希鳐鱼语"
+			],
+			"cr": "2",
+			"action": [
+				{
+					"ENG_name": "Vampiric Bite",
+					"name": "吸血啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6（{@damage 1d8 + 2}）穿刺伤害。目标必须成功通过一个 {@dc 11} 的体质豁免检定，否则其生命值上限将减少等同于所受伤害的数值，而伊西斯查奇尔将恢复等同于该数值的生命值。此减少效果持续至目标完成一次长休。如果目标的生命值上限减少至0，则目标死亡。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Barbed Tail",
+					"name": "尾刺",
+					"entries": [
+						"当一个生物引发ixitxachitl的借机攻击时，ixitxachitl可以进行以下攻击，而不是使用它的咬击。",
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}9（{@damage 1d10 + 4}）点穿刺伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"OTH"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"HPR",
+				"MW"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Vampiric Ixitxachitl Cleric",
+			"name": "伊希鳐鱼吸血鬼牧师",
+			"type": "aberration",
+			"source": "OotA",
+			"page": 226,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 44,
+				"formula": "8d8 + 8"
+			},
+			"speed": {
+				"walk": 0,
+				"swim": 30
+			},
+			"str": 14,
+			"dex": 18,
+			"con": 13,
+			"int": 12,
+			"wis": 13,
+			"cha": 7,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 11,
+			"languages": [
+				"深渊语",
+				"伊希鳐鱼语"
+			],
+			"cr": "2",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"伊克西卡奇特尔是一个5级施法者，使用感知作为施法能力（法术豁免{@dc 11}，法术攻击命中{@hit 3}）。伊克西卡奇特尔准备了以下牧师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 神导术}",
+								"{@spell 奇术}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 魅惑类人}",
+								"{@spell 造水术/枯水术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 定身类人}",
+								"{@spell 沉默术}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell 解除魔法}",
+								"{@spell 巧言术}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Vampiric Bite",
+					"name": "吸血啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}6（{@damage 1d8 + 2}）穿刺伤害。目标必须成功通过一个 {@dc 11} 的体质豁免检定，否则其生命值上限将减少等同于所受伤害的数值，而伊西斯查奇尔将恢复等同于该数值的生命值。此减少效果持续至目标完成一次长休。如果目标的生命值上限减少至0，则目标死亡。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Barbed Tail",
+					"name": "尾刺",
+					"entries": [
+						"当一个生物引发ixitxachitl的借机攻击时，ixitxachitl可以进行以下攻击，而不是使用它的咬击。",
+						"{@atk mw} 命中{@hit 6}，触及5尺，单一目标。{@h}9（{@damage 1d10 + 4}）点穿刺伤害。"
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"AB",
+				"OTH"
+			],
+			"damageTags": [
+				"P"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"HPR",
+				"MW"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"savingThrowForcedSpell": [
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Veldyskar",
+			"name": "维尔迪斯卡尔",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 151,
+			"_copy": {
+				"ENG_name": "Basilisk",
+				"name": "石化蜥蜴",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "石化蜥蜴",
+						"with": "维尔迪斯卡尔",
+						"flags": "i"
+					}
+				}
+			},
+			"int": 10,
+			"languages": [
+				"通用语",
+				"矮人语",
+				"巨人语",
+				"地底通用语"
+			],
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"维尔迪斯卡尔天生能够施放以下法术，无需任何材料成分："
+					],
+					"daily": {
+						"1": [
+							"{@spell 高等复原术}"
+						]
+					}
+				}
+			],
+			"tokenCustom": true,
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Veteran of the Gauntlet",
+			"name": "试炼场老兵",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "OotA",
+			"page": 130,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"{@item 板条甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 58,
+				"formula": "9d8 + 18"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 13,
+			"con": 14,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"skill": {
+				"athletics": "+5",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"通用语",
+				"矮人语"
+			],
+			"cr": "3",
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"老兵发动两次长剑攻击。如果它拔出了一柄短剑，那么它还可以发动一次短剑攻击。"
+					]
+				},
+				{
+					"ENG_name": "Longsword",
+					"name": "长剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}7 ({@damage 1d8 + 3}) 点挥砍伤害，如果用双手使用，则为8 ({@damage 1d10 + 3}) 点挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Shortsword",
+					"name": "短剑",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一目标。{@h}6（{@damage 1d6 + 3}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Heavy Crossbow",
+					"name": "重弩",
+					"entries": [
+						"{@atk rw} 命中{@hit 3}，射程100/400尺，单一目标。{@h}6（{@damage 1d10 + 1}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"重弩|phb",
+				"长剑|phb",
+				"短剑|phb"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"D"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Viln Tirin",
+			"name": "维尔恩·提林",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 202,
+			"_copy": {
+				"ENG_name": "Bandit Captain",
+				"name": "匪帮队长",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Drow (Levitate)",
+						"name": "卓尔（浮空术）",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "首领",
+						"with": "维尔恩",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Special Equipment",
+							"name": "特殊装备",
+							"entries": [
+								"维尔恩携带一把 {@item 急速弯刀} 并且可以在她的回合中作为一个额外动作进行一次攻击。维尔恩还携带四把涂有 {@item 紫虫毒液} 的 {@item 匕首|PHB|匕首}。匕首刀刃上的毒药只能在一次攻击中有效，无论毒药是否生效。"
+							]
+						}
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "弯刀",
+						"items": {
+							"ENG_name": "Scimitar",
+							"name": "弯刀",
+							"entries": [
+								"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}8 ({@damage 1d6 + 5}) 挥砍伤害。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"cr": "5",
+			"tokenCustom": true,
+			"traitTags": [
+				"妖精血统",
+				"日照敏感"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Vizeran DeVir",
+			"name": "Vizeran DeVir",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 155,
+			"_copy": {
+				"ENG_name": "Archmage",
+				"name": "大法师",
+				"source": "MM",
+				"_templates": [
+					{
+						"ENG_name": "Drow (Levitate)",
+						"name": "卓尔（浮空术）",
+						"source": "PHB"
+					}
+				],
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "大法师",
+						"with": "维泽兰",
+						"flags": "i"
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"traitTags": [
+				"妖精血统",
+				"魔法抗性",
+				"日照敏感"
+			],
+			"spellcastingTags": [
+				"CW",
+				"I"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Xazax the Eyemonger",
+			"name": "Xazax the Eyemonger",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 142,
+			"_copy": {
+				"ENG_name": "Beholder",
+				"name": "眼魔",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "眼魔",
+						"with": "扎扎克斯",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Y",
+			"name": "Y",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 29,
+			"_copy": {
+				"ENG_name": "Derro Savant",
+				"name": "迪洛矮人学者",
+				"source": "OotA",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "德洛学者",
+						"with": "Y",
+						"flags": "i"
+					},
+					"languages": [
+						{
+							"mode": "appendIfNotExistsArr",
+							"items": [
+								"矮人语",
+								"精灵语",
+								"地底通用语"
+							]
+						}
+					],
+					"spellcasting": {
+						"mode": "appendArr",
+						"items": [
+							{
+								"ENG_name": "Innate Spellcasting",
+								"name": "天生施法",
+								"headerEntries": [
+									"Y天生能够每天施放一次{@spell 传送术}法术，但预定的目的地必须在另一个{@adventure 社团成员|OotA|1|光辉协会}的30尺范围内。这个传送效果可能会被干扰（见\"{@adventure 费尔兹瑞斯|OotA|1|费尔兹瑞斯}\"），这就是社会成员有时最终出现在地下黑暗的遥远角落，与同伴分离的原因。"
+								],
+								"daily": {
+									"1e": [
+										"{@spell 传送术}"
+									]
+								},
+								"hidden": [
+									"daily"
+								]
+							}
+						]
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"int": 18,
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Yantha Coaxrock",
+			"name": "Yantha Coaxrock",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 138,
+			"_copy": {
+				"ENG_name": "Deep Gnome (Svirfneblin)",
+				"name": "地底侏儒（斯涅布力）",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "侏儒",
+						"with": "Yantha",
+						"flags": "i"
+					}
+				}
+			},
+			"int": 16,
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"扬塔是一位5级施法者。她的施法能力是智力（法术豁免 {@dc 13}）。她准备以下法师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 舞光术}",
+								"{@spell 交友术}",
+								"{@spell 修复术}",
+								"{@spell 魔法伎俩}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 通晓语言}",
+								"{@spell 侦测魔法}",
+								"{@spell 谭森浮碟术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 侦测思想}",
+								"{@spell 定身类人}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell 短讯术}"
+							]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"tokenCredit": "Paizo",
+			"tokenCustom": true,
+			"spellcastingTags": [
+				"CW"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Yestabrod",
+			"name": "叶斯塔布朗",
+			"type": "monstrosity",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 233,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d10 + 20"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 10,
+			"con": 14,
+			"int": 13,
+			"wis": 15,
+			"cha": 10,
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 12,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"中毒"
+			],
+			"languages": [
+				"深渊语",
+				"心灵感应 60 尺"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"ENG_name": "Legendary Resistance (1/Day)",
+					"name": "传奇抗性（1/日）",
+					"entries": [
+						"如果Yestabrod未能通过豁免检定，它可以选择成功。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}8 ({@damage 3d4 + 1}) 点钝击伤害加上7 ({@damage 3d4}) 点毒素伤害。"
+					]
+				},
+				{
+					"ENG_name": "Caustic Spores (1/Day)",
+					"name": "腐蚀孢子 (1/日)",
+					"entries": [
+						"耶斯塔布罗德在30英尺的锥形范围内释放孢子。该区域内的每个生物必须在耶斯塔布罗德回合开始时进行一次{@dc 12}敏捷豁免检定，若失败则受到{@damage 1d6}点酸蚀伤害。生物可以在自己回合结束时重复进行豁免检定，若成功则结束该效果。"
+					]
+				},
+				{
+					"ENG_name": "Infestation Spores (1/Day)",
+					"name": "侵染孢子 (1/日)",
+					"entries": [
+						"Yestabrod释放孢子，这些孢子在以它为中心的10尺半径的球形区域内爆发成云，云持续1分钟。任何在云出现时在云中的肉身生物，或者后来进入云中的生物，必须进行一次{@dc 12}体质豁免检定。成功则该生物在24小时内不会被这些孢子感染。失败则该生物被一种名为Zuggtmoy孢子的疾病感染，并且还会获得一种随机的无限期疯狂形式（通过在附录D中的Zuggtmoy疯狂表掷骰决定），直到生物被治愈该疾病或死亡。以这种方式感染时，生物不会被再次感染，并且必须在每24小时结束时重复进行豁免检定，成功则结束感染。失败时，感染生物的身体将逐渐被真菌生长所占据，连续三次失败后，生物死亡并被重新活化为孢子仆从，如果它是可以成为的那种生物（见《怪物手册》中的\"Myconids\"条目）。"
+					]
+				}
+			],
+			"legendaryActions": 2,
+			"legendary": [
+				{
+					"ENG_name": "Corpse Burst",
+					"name": "尸爆",
+					"entries": [
+						"血块、内脏和酸液从距离Yestabrod 20尺内的尸体中爆发出来。尸体周围10尺内的生物必须成功进行一次{@dc 12}敏捷豁免检定，否则将受到7 ({@damage 2d6})点强酸伤害。"
+					]
+				},
+				{
+					"ENG_name": "Foul Absorption",
+					"name": "吸污",
+					"entries": [
+						"耶斯塔布罗德从5英尺内的尸体中吸收腐烂，恢复 {@dice 1d8 + 2} 点生命值"
+					]
+				}
+			],
+			"traitTags": [
+				"传奇抗性"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"AB",
+				"TP"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"I"
+			],
+			"miscTags": [
+				"AOE",
+				"DIS",
+				"MW"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Young Basilisk",
+			"name": "幼年蛇发女妖",
+			"source": "OotA",
+			"page": 100,
+			"_copy": {
+				"ENG_name": "Basilisk",
+				"name": "石化蜥蜴",
+				"source": "MM"
+			},
+			"size": [
+				"S"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "4d6 + 8"
+			},
+			"speed": {
+				"walk": 15
+			},
+			"str": 13,
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Petrifying Gaze",
+					"name": "石化凝视",
+					"entries": [
+						"如果一个生物在其回合开始时位于石化蜥蜴15尺内，且双方都能看见彼此，若石化蜥蜴未处于{@condition 失能}状态，它可以强迫该生物进行一次{@dc 12}的体质豁免。豁免失败，该生物将开始魔法般地变为石头并被{@condition 束缚}。它必须在其下一回合结束时重复此豁免。豁免成功，此效应结束。豁免失败，该生物将被{@condition 石化}，直到被{@spell 高等复原术}法术或其他魔法解救。",
+						"未{@status 突袭}的生物可以避开石化蜥蜴的目光，以免除在其回合开始时进行的豁免。此时，该生物视为不能看见该石化蜥蜴，直至其下一回合开始时再选择是否避开石化蜥蜴的目光。该生物在任何时候看向石化蜥蜴时，必须立即进行该豁免。",
+						"如果石化蜥蜴在明亮光照下于其身边30尺内看到自己的镜中倒影，则它将误把自己当做敌人而指定自己为凝视的目标。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}3（{@damage 1d4 + 1}）点穿刺伤害加上2（{@damage 1d4}）毒素伤害。"
+					]
+				}
+			],
+			"conditionInflict": [
+				"石化",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Young Hook Horror",
+			"name": "青年恐爪怪",
+			"source": "OotA",
+			"page": 34,
+			"_copy": {
+				"ENG_name": "Hook Horror",
+				"name": "恐爪怪",
+				"source": "MM",
+				"_mod": {
+					"action": {
+						"mode": "replaceArr",
+						"replace": "钩爪",
+						"items": {
+							"ENG_name": "Hook",
+							"name": "钩爪",
+							"entries": [
+								"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}3 ({@damage 1d4 + 1}) 点穿刺伤害。"
+							]
+						}
+					}
+				}
+			},
+			"size": [
+				"S"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 11,
+				"formula": "2d6 + 4"
+			},
+			"speed": {
+				"walk": 15,
+				"climb": 15
+			},
+			"str": 12,
+			"cr": "1/4",
+			"hasToken": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Yuk Yuk",
+			"name": "育克育克",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 31,
+			"_copy": {
+				"ENG_name": "Goblin",
+				"name": "地精",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "地精",
+						"with": "育克育克",
+						"flags": "i"
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Thrill-Seeker",
+							"name": "惊险追求者",
+							"entries": [
+								"育克育克在避免被{@status 突袭}的检定上具有优势。"
+							]
+						}
+					}
+				}
+			},
+			"alignment": [
+				"N"
+			],
+			"skill": {
+				"acrobatics": "+6",
+				"athletics": "+3",
+				"stealth": "+6"
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Zhentarim Thug",
+			"name": "散塔林暴徒",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"source": "OotA",
+			"page": 131,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"{@item 皮甲|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 32,
+				"formula": "5d8 + 10"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 11,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 11,
+			"skill": {
+				"intimidation": "+2"
+			},
+			"passive": 10,
+			"languages": [
+				"通用语"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"ENG_name": "Pack Tactics",
+					"name": "集群战术",
+					"entries": [
+						"暴徒至少有一个未处于{@condition 失能}的盟友在目标生物5尺内时，它对该生物发动的攻击检定有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"暴徒进行两次近战攻击"
+					]
+				},
+				{
+					"ENG_name": "Mace",
+					"name": "硬头锤",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}5（{@damage 1d6 + 2}）点钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Heavy Crossbow",
+					"name": "重弩",
+					"entries": [
+						"{@atk rw} 命中{@hit 2}，射程 100/400 尺，单一目标。{@h}5（{@damage 1d10}）点穿刺伤害。"
+					]
+				}
+			],
+			"attachedItems": [
+				"重弩|phb",
+				"硬头锤|phb"
+			],
+			"traitTags": [
+				"集群战术"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RNG",
+				"RW"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Zilchyn Q'Leptin",
+			"name": "齐尔钦·奎普廷",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "OotA",
+			"page": 137,
+			"_copy": {
+				"ENG_name": "Drow Mage",
+				"name": "卓尔魔法师",
+				"source": "MM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "卓尔",
+						"with": "齐尔钦",
+						"flags": "i"
+					}
+				}
+			},
+			"hasToken": true,
+			"hasFluffImages": true
+		}
+	]
+}

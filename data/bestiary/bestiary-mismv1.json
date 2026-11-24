@@ -1,0 +1,979 @@
+{
+	"monster": [
+		{
+			"ENG_name": "Coral",
+			"name": "珊瑚",
+			"type": "fey",
+			"isNamedCreature": true,
+			"source": "MisMV1",
+			"page": 4,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 135,
+				"formula": "18d10 + 36"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 60,
+				"swim": 60
+			},
+			"str": 20,
+			"dex": 13,
+			"con": 15,
+			"int": 14,
+			"wis": 18,
+			"cha": 19,
+			"save": {
+				"dex": "+5",
+				"con": "+6",
+				"wis": "+8",
+				"cha": "+8"
+			},
+			"skill": {
+				"arcana": "+6",
+				"insight": "+8",
+				"perception": "+8"
+			},
+			"senses": [
+				"盲视 60 尺"
+			],
+			"passive": 18,
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"中毒"
+			],
+			"languages": [
+				"通用语",
+				"原初语",
+				"木族语"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"珊瑚为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"珊瑚进行两次蹄击并使用尾击。"
+					]
+				},
+				{
+					"ENG_name": "Hoof",
+					"name": "蹄击",
+					"entries": [
+						"{@atk mw}：命中{@hit 9} ，触及 5 尺，单一目标。 {@h}：12 ({@damage 2d6 + 5}) 钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Tail Thump",
+					"name": "尾击",
+					"entries": [
+						"珊瑚向下猛击她的尾巴，向距离她 60 英尺以内她能看到的一个生物释放出一股魔法力量。 目标必须进行{@dc 16} 的敏捷豁免，豁免失败时，目标将受到 22（{@damage 4d10}）点力场伤害并陷入{@condition 倒地}状态。 豁免成功后，目标只会受到一半的伤害。 如果此伤害使目标的生命值降至 0，则目标死亡，其身体化为微尘。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Bubbles of Whimsy (2/Day)",
+					"name": "奇妙泡泡（2 次/天）",
+					"entries": [
+						"珊瑚从她的角中产生一连串神奇的泡泡。 这些气泡会飘向珊瑚可以在她 60 英尺范围内看到的生物。 掷 {@dice d6} 以确定气泡的效果：",
+						{
+							"type": "list",
+							"items": [
+								{
+									"ENG_name": "1-2: Bolstering Treat",
+									"name": "1-2：营养供给",
+									"type": "item",
+									"entries": [
+										"泡泡会变成 {@dice 1d4}个饼干，出现在目标所处空间中。 目标可以立即使用它的反应吃掉其中一块饼干，它会获得 11 ({@dice 2d8 + 2}) 点临时生命值。 任何剩余的饼干都很美味，但吃下后不会得到任何好处。"
+									]
+								},
+								{
+									"ENG_name": "3-4: Sparkle Burst",
+									"name": "3-4：火花爆发",
+									"type": "item",
+									"entries": [
+										"气泡绽放出闪光，在向外爆裂之前围绕目标旋转。 目标周围 5 英尺范围内的每个生物都必须成功通过 {@dc 16} 的体质豁免，否则在珊瑚的下一轮开始之前陷入{@condition 目盲}。"
+									]
+								},
+								{
+									"ENG_name": "5-6: Stink Bomb Shield",
+									"name": "5-6：臭弹护盾",
+									"type": "item",
+									"entries": [
+										"气泡会变成一团散发恶臭的气体，包围并保护目标。 目标将获得{@quickref 掩护||3||半身掩护}，直到珊瑚的下一回合开始时气泡消失。"
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Gift of Speech (1/Day)",
+					"name": "演讲礼物（1 次/天）",
+					"entries": [
+						"珊瑚以 10 英尺内她能看到的一只野兽为目标。 目标获得理解并说通用语或木族语（由珊瑚所选择）的能力，持续 10 分钟。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"senseTags": [
+				"B"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"P",
+				"S"
+			],
+			"damageTags": [
+				"B",
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"目盲",
+				"倒地"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Dandylion",
+			"name": "蒲公英狮",
+			"type": "fey",
+			"source": "MisMV1",
+			"page": 6,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"C",
+				"N"
+			],
+			"alignmentPrefix": "通常",
+			"ac": [
+				14
+			],
+			"hp": {
+				"average": 90,
+				"formula": "12d10 + 24"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 22,
+			"dex": 19,
+			"con": 14,
+			"int": 16,
+			"wis": 17,
+			"cha": 18,
+			"save": {
+				"str": "+9",
+				"cha": "+7"
+			},
+			"skill": {
+				"nature": "+9",
+				"perception": "+6",
+				"survival": "+6"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 16,
+			"languages": [
+				"通用语",
+				"木族语"
+			],
+			"cr": "6",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"蒲公英狮施展下列法术之一，它不需要材料成分并使用魅力作为施法关键属性（法术豁免{@dc 15}）："
+					],
+					"will": [
+						"{@spell 德鲁伊伎俩}",
+						"{@spell 神导术}",
+						"{@spell 净化饮食}"
+					],
+					"daily": {
+						"1": [
+							"{@spell 植物交谈}"
+						],
+						"2e": [
+							"{@spell 纠缠术}",
+							"{@spell 神莓术}"
+						]
+					},
+					"ability": "cha",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"蒲公英狮为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Pack Tactics",
+					"name": "集群战术",
+					"entries": [
+						"蒲公英狮至少有一个未处于{@condition 失能}的盟友在目标生物5尺内时，它对该生物发动的攻击检定有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"蒲公英狮发动一次啃咬与一次爪击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw}：命中{@hit 9}，触及5尺，单一目标。{@h}：13（{@damage 2d6 + 6}）点穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw}：命中{@hit 9}，触及5尺，单一目标。{@h}：20（{@damage 4d6 + 6}）点挥砍伤害。如果蒲公英狮在发动攻击前朝着目标生物直线移动了至少20尺并立刻发动攻击，则目标必须通过{@dc 17}力量豁免，否则就会陷入{@condition 倒地}。如果目标已经{@condition 倒地}，则蒲公英狮可以用附赠动作发动一次啃咬攻击。"
+					]
+				},
+				{
+					"ENG_name": "Rejuvenating Seedpods (2/Day)",
+					"name": "复苏之种荚（2/日）",
+					"entries": [
+						"蒲公英狮从其尾部释放出一阵填充以自身为中心10尺半径球形空间的种荚。球形内每一个蒲公英狮选择的生物能够立刻结束作用于其身的下列一种状态（由目标生物自选）：{@condition 目盲}、{@condition 耳聋}、{@condition 麻痹}或{@condition 中毒}。另外，球形内的土地会被滋润，这将使区域内枯萎的蔬果恢复健康，另所有谷物在下一年里产出两倍于正常量的谷物。"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"ENG_name": "Roar of Pride",
+					"name": "骄傲之咆哮",
+					"entries": [
+						"当一个蒲公英狮60尺内的生物用一次攻击掷骰命中了它，蒲公英狮可以释放出一阵愤怒的咆哮。触发这次反应的生物必须通过{@dc 15}感知豁免，否则就会陷入{@condition 恐慌}状态，直到蒲公英狮的下个回合结束。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性",
+				"集群战术"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"S"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"conditionInflictSpell": [
+				"束缚"
+			],
+			"savingThrowForced": [
+				"力量",
+				"感知"
+			],
+			"savingThrowForcedSpell": [
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Rain",
+			"name": "雨",
+			"type": "celestial",
+			"isNamedCreature": true,
+			"source": "MisMV1",
+			"page": 8,
+			"size": [
+				"S"
+			],
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 60,
+				"formula": "11d6 + 22"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 120
+			},
+			"str": 10,
+			"dex": 11,
+			"con": 14,
+			"int": 14,
+			"wis": 18,
+			"cha": 15,
+			"save": {
+				"dex": "+3",
+				"con": "+5",
+				"wis": "+7"
+			},
+			"skill": {
+				"acrobatics": "+3",
+				"insight": "+7",
+				"stealth": "+3"
+			},
+			"passive": 14,
+			"resist": [
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"immune": [
+				"火焰",
+				"毒素",
+				"光耀"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"麻痹",
+				"中毒"
+			],
+			"languages": [
+				"天界语",
+				"通用语"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Fiery Wings",
+					"name": "火焰之翼",
+					"entries": [
+						"云雨的翅膀由火焰组成，它们放射出15尺半径的明亮光照与额外15尺半径的微光光照。在云雨的每回合开始时，她5尺内的每个她选择的生物会受到3（{@damage 1d6}）点火焰伤害。一个以近战攻击命中云雨的生物受到3（{@damage 1d6}）点火焰伤害"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"云雨为抵抗法术和其他魔法效应而作的豁免检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"云雨发动两次蹄击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Hoof",
+					"name": "蹄击",
+					"entries": [
+						"{@atk mw}：命中{@hit 3}，触及5尺，单一目标。{@h}：5（{@damage 2d4}）点钝击伤害。"
+					]
+				},
+				{
+					"ENG_name": "Haloed Horn Burst {@recharge 5}",
+					"name": "独角光环爆发{@recharge 5}",
+					"entries": [
+						"云雨使用其光环独角产生下列魔法效果之一："
+					]
+				},
+				{
+					"ENG_name": "Glitterstorm",
+					"name": "闪光风暴",
+					"entries": [
+						"云雨释放出一道宽5尺，长30尺的彩虹光束。区域内的每个生物必须通过{@dc 15}敏捷豁免，否则就会在豁免失败时受到21（{@damage 6d6}）点光耀伤害，或在成功豁免时受到一半伤害。邪恶阵营的生物对此豁免具有劣势。如果该效应的伤害将一个生物的HP降低至0，则目标生物死亡并被变为闪闪发光的花朵。"
+					]
+				},
+				{
+					"ENG_name": "Healing Rainbows",
+					"name": "治愈之虹",
+					"entries": [
+						"云雨释放出一道带有复苏之力的多彩光波，光波照耀30尺锥形区域。区域内每一个云雨选择的生物恢复18（{@dice 4d8}）点生命值。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Nimble Escape",
+					"name": "迅捷逃逸",
+					"entries": [
+						"雨可以执行{@action 撤离}或{@action 躲藏}动作。"
+					]
+				}
+			],
+			"traitTags": [
+				"魔法抗性"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"CE"
+			],
+			"damageTags": [
+				"B",
+				"F",
+				"R"
+			],
+			"miscTags": [
+				"AOE",
+				"MW"
+			],
+			"savingThrowForced": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Scrapper",
+			"name": "废铁战械",
+			"type": "construct",
+			"source": "MisMV1",
+			"page": 10,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 126,
+				"formula": "12d10 + 60"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 20,
+			"dex": 10,
+			"con": 20,
+			"int": 3,
+			"wis": 10,
+			"cha": 1,
+			"skill": {
+				"perception": "+6"
+			},
+			"senses": [
+				"黑暗视觉 120 尺"
+			],
+			"passive": 16,
+			"resist": [
+				"闪电"
+			],
+			"immune": [
+				"毒素",
+				"心灵"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒"
+			],
+			"languages": [
+				"能理解其创造者的语言但无法说话"
+			],
+			"cr": "8",
+			"trait": [
+				{
+					"ENG_name": "Electrified Chassis",
+					"name": "带电外壳",
+					"entries": [
+						"一个在战械5尺内以近战攻击命中它的生物受到19（{@damage 3d12}）闪电伤害。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"战械发动两次尖刺拳击攻击。它也可以将其中一次攻击替换为线缆攻击。"
+					]
+				},
+				{
+					"ENG_name": "Spike Punch",
+					"name": "尖刺拳击",
+					"entries": [
+						"{@atk mw}：命中{@hit 8}，触及5尺，单一目标。{@h}：14（{@damage 2d8 + 5}）钝击伤害外加5（{@damage 1d10}）穿刺伤害。"
+					]
+				},
+				{
+					"ENG_name": "Wires",
+					"name": "线缆",
+					"entries": [
+						"{@atk mw}：命中{@hit 8}，触及20尺，单一大型或更小的生物。{@h}：目标{@condition 受擒}（逃脱{@dc 16}）且必须进行一次{@dc 16}的力量豁免否则将被拉至废铁5尺内的一处未被占据的空间并受到19（{@damage 3d12}）闪电伤害。战械一次只能以此法令一个生物{@condition 受擒}。"
+					]
+				},
+				{
+					"ENG_name": "Eye Beam {@recharge 5}",
+					"name": "眼部光束{@recharge 5}",
+					"entries": [
+						"战械对120尺内一个它可见的目标射出一道魔法性的光束。目标必须进行一次{@dc 16}的敏捷豁免，豁免失败受到44（{@damage 8d10}）力场伤害，豁免成功伤害减半。"
+					]
+				}
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"CS"
+			],
+			"damageTags": [
+				"B",
+				"L",
+				"O",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"savingThrowForced": [
+				"敏捷",
+				"力量"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Seth the Shapeshifting Dragon",
+			"name": "变形龙塞斯",
+			"type": "dragon",
+			"isNamedCreature": true,
+			"source": "MisMV1",
+			"page": 12,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"average": 153,
+				"formula": "18d8 + 72"
+			},
+			"speed": {
+				"walk": 50,
+				"swim": 50
+			},
+			"str": 16,
+			"dex": 25,
+			"con": 19,
+			"int": 13,
+			"wis": 15,
+			"cha": 14,
+			"save": {
+				"str": "+7",
+				"dex": "+11",
+				"con": "+8"
+			},
+			"skill": {
+				"perception": "+6",
+				"stealth": "+11"
+			},
+			"senses": [
+				"盲视 30 尺",
+				"黑暗视觉 120 尺"
+			],
+			"passive": 16,
+			"resist": [
+				"寒冷",
+				"火焰"
+			],
+			"immune": [
+				"毒素"
+			],
+			"conditionImmune": [
+				"受擒",
+				"中毒",
+				"束缚"
+			],
+			"languages": [
+				"水族语",
+				"通用语",
+				"龙语"
+			],
+			"cr": "10",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"塞斯可以在空气和水中呼吸。"
+					]
+				},
+				{
+					"ENG_name": "Invisible in Water",
+					"name": "隐于水中",
+					"entries": [
+						"塞斯在完全浸入水中时处于{@condition 隐形}状态。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"塞斯发动一次啃咬和两次爪击攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw}：命中{@hit 11}，触及10尺，单一目标。{@h}：10（{@damage 1d6 + 7}）穿刺伤害外加9（{@damage 2d8}）寒冷伤害。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw}： 命中{@hit 11}，触及5尺，单一目标。{@h}：14（{@damage 2d6 + 7}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Riptide Breath {@recharge 5}",
+					"name": "激流吐息 {@recharge 5}",
+					"entries": [
+						"塞斯呼出一道冰冷的水流覆盖一处30尺锥形区域。区域内的任何生物都必须进行一次{@dc 16}的体质豁免，豁免失败受到36（{@damage 8d8}）寒冷伤害并陷入{@condition 失能}直到其下回合结束。豁免成功则伤害减半且不会失能。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Change Shape",
+					"name": "变形",
+					"entries": [
+						"塞斯魔法地将自己化为一个小型类人，或一个微型或小型的野兽。它保留其游戏数据（除了体型以外）。在塞斯的生命值降低至0或它使用一个附赠动作结束变形时，变形效果终止。"
+					]
+				},
+				{
+					"ENG_name": "Superspeed (2/Day)",
+					"name": "极速化（2/每日）",
+					"entries": [
+						"塞斯的速度在其维持{@status 专注}（如同{@status 专注||专注于}一道法术）期间翻倍。当他以此法增加速度后，任何对他发动的攻击检定都具有劣势，且他变得部分虚体化，令他可以如同穿过困难地形般穿过生物或物件占据的空间。塞斯在一个物件中结束回合时受到5（{@damage 1d10}）力场伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"水陆两栖"
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"吐息武器",
+				"多重攻击",
+				"变形生物"
+			],
+			"languageTags": [
+				"AQ",
+				"C",
+				"DR"
+			],
+			"damageTags": [
+				"C",
+				"O",
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"失能"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Sheldon the Blueberry Dragon",
+			"name": "蓝莓龙希尔顿",
+			"type": "dragon",
+			"isNamedCreature": true,
+			"source": "MisMV1",
+			"page": 14,
+			"size": [
+				"L"
+			],
+			"alignment": [
+				"N",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 142,
+				"formula": "15d10 + 60"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 19,
+			"dex": 13,
+			"con": 18,
+			"int": 17,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"dex": "+4",
+				"con": "+7",
+				"int": "+6"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"athletics": "+7",
+				"performance": "+6"
+			},
+			"senses": [
+				"盲视 30 尺",
+				"黑暗视觉 120 尺"
+			],
+			"passive": 12,
+			"resist": [
+				"力场",
+				"心灵"
+			],
+			"languages": [
+				"通用语",
+				"龙语",
+				"心灵感应 120 尺"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting (Psionics)",
+					"name": "施法（灵能）",
+					"type": "spellcasting",
+					"headerEntries": [
+						"希尔顿施展以下一个法术，无需任何法术成分，并以智力作为施法关键属性（法术豁免{@dc 14}）："
+					],
+					"will": [
+						"{@spell 光亮术}",
+						"{@spell 法师之手}（生成隐形的手）"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 任意门}",
+							"{@spell 心灵遥控}"
+						]
+					},
+					"ability": "int",
+					"displayAs": "action"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Space Dweller",
+					"name": "太空居民",
+					"entries": [
+						"希尔顿可以在真空中呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"希尔顿可以选择发动两次啃咬攻击，或是两次丢你蓝莓攻击，或两者各发动一次。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw}：命中{@hit 7}，触及5尺，单一目标。{@h}：7（{@damage 1d6 + 4}）点穿刺伤害，外加4（{@damage 1d8}）点心灵伤害。"
+					]
+				},
+				{
+					"ENG_name": "Blueberry Fling",
+					"name": "丢你蓝莓",
+					"entries": [
+						"{@atk rw}：命中{@hit 7}，射程30尺，单一生物。{@h}：11（{@damage 2d6 + 4}）点蓝莓伤害。（译者：确实是blueberry，一种新的伤害类型）"
+					]
+				},
+				{
+					"ENG_name": "Jetstream Breath {@recharge 5}",
+					"name": "急流吐息{@recharge 5}",
+					"entries": [
+						"希尔顿呼出一阵魔法性的微风，其覆盖60尺长、5尺宽的线状区域。区域内的每个生物都必须进行一次{@dc 15}的力量豁免，豁免失败者将受到21（{@damage 6d6}）点力场伤害，并被向着远离希尔顿的方向推开15尺远并陷入 {@condition 倒地}。豁免成功则伤害减半。"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"ENG_name": "Wind Dash (2/Day)",
+					"name": "疾风冲刺（2/每日）",
+					"entries": [
+						"希尔顿召唤出一阵强风驱使自己飞行。他可以飞行至多等同于他的速度的距离，且此移动不会引发借机攻击。在飞行结束后，强风会在希尔顿周围爆散开来，迫使希尔顿周围5尺范围内的生物必须通过一次{@dc 15}的力量豁免，否则将会陷入{@condition 倒地}状态。"
+					]
+				}
+			],
+			"senseTags": [
+				"B",
+				"SD"
+			],
+			"actionTags": [
+				"吐息武器",
+				"多重攻击"
+			],
+			"languageTags": [
+				"C",
+				"DR",
+				"TP"
+			],
+			"damageTags": [
+				"O",
+				"P",
+				"Y"
+			],
+			"damageTagsSpell": [
+				"O"
+			],
+			"spellcastingTags": [
+				"P"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"conditionInflictSpell": [
+				"束缚"
+			],
+			"savingThrowForced": [
+				"力量"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"translator": "不全书"
+		}
+	]
+}

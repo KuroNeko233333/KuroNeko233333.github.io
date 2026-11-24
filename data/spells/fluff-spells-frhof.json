@@ -1,0 +1,76 @@
+{
+	"spellFluff": [
+		{
+			"ENG_name": "Alustriel's Mooncloak",
+			"name": "艾拉斯卓的月辉之篷",
+			"source": "FRHoF",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/FRHoF/Alustriel's Mooncloak.webp"
+					},
+					"credit": "Irina Nordsol",
+					"title": "艾拉斯卓使用其月辉之篷庇护盟友",
+					"width": 1700,
+					"height": 1197
+				}
+			]
+		},
+		{
+			"ENG_name": "Blade of Disaster",
+			"name": "灾厄之刃",
+			"source": "FRHoF",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/FRHoF/Blade of Disaster.webp"
+					},
+					"credit": "Swatches Studio",
+					"title": "普雷斯托施展法术灾厄之刃大战文格尔",
+					"width": 1700,
+					"height": 1197
+				}
+			]
+		},
+		{
+			"ENG_name": "Elminster's Effulgent Spheres",
+			"name": "伊尔明斯特的绚丽光球",
+			"source": "FRHoF",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/FRHoF/Elminster's Effulgent Spheres.webp"
+					},
+					"credit": "Borja Pindado",
+					"title": "伊尔明斯特的绚丽光球堪称攻防一体的艺术品",
+					"width": 1700,
+					"height": 1090
+				}
+			]
+		},
+		{
+			"ENG_name": "Songal's Elemental Suffusion",
+			"name": "桑缟的元灵显圣",
+			"source": "FRHoF",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "spells/FRHoF/Songal's Elemental Suffusion.webp"
+					},
+					"credit": "Tneh Keong",
+					"title": "苏丹娜桑缟能号令巨灵的元素之力环绕己身",
+					"width": 850,
+					"height": 2085
+				}
+			]
+		}
+	]
+}

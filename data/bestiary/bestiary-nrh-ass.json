@@ -1,0 +1,98 @@
+{
+	"_meta": {
+		"otherSources": {
+			"monster": {
+				"NRH-TCMC": "NRH-ASS",
+				"MM": "NRH-ASS"
+			}
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Goon",
+			"name": "打手",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"任意种族"
+				]
+			},
+			"source": "NRH-ASS",
+			"page": 7,
+			"otherSources": [
+				{
+					"source": "NRH-AT",
+					"page": 11
+				}
+			],
+			"referenceSources": [
+				"NRH-AT"
+			],
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 12,
+					"from": [
+						"{@item 皮甲|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 9,
+				"formula": "2d8"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 12,
+			"con": 10,
+			"int": 10,
+			"wis": 11,
+			"cha": 10,
+			"passive": 10,
+			"languages": [
+				"通用语"
+			],
+			"cr": "1/8",
+			"trait": [
+				{
+					"ENG_name": "Goon Grit",
+					"name": "地精坚韧",
+					"entries": [
+						"该暴徒在对抗{@condition 魅惑}、恐吓或说服的豁免检定上具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Scimitar",
+					"name": "弯刀",
+					"entries": [
+						"{@atk mw} 命中{@hit 3}，触及5尺，单一目标。{@h}4（{@damage 1d6 + 1}）点挥砍伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"弯刀|phb"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true
+		}
+	]
+}

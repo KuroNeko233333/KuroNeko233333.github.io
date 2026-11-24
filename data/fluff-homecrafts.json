@@ -1,0 +1,1303 @@
+{
+	"crochetPatternFluff": [
+		{
+			"ENG_name": "Bag of Holding",
+			"name": "次元袋",
+			"source": "CaBoMP",
+			"entries": [
+				"对于任何冒险者来说，最大的挑战之一就是将你的{@item 地城套组|XPHB}精简到真正的必需品。五十尺的{@item 绳索|XPHB}？{@item 铁蒺藜|XPHB}？攀爬用的木桩？无论你选择舍弃什么，那似乎总是你最终发现最需要的东西。（是的，如果需要，确实可以钩织出五十尺的{@item 绳索|XPHB}，但你不会想这么做的，尤其是在被一只{@creature 枭熊}追赶的时候！）",
+				"难怪{@item 次元袋}（次元袋）以其近乎无限的储藏容量和魔法最大重量，在每个领域都如此受冒险者珍视。有了这样一个附魔的便携袋，你可以带上解决最不可能出现的问题的方案，并且仍有充足的空间来存放全新的宝藏！",
+				"虽然你需要找到一位技艺精湛的附魔师来解锁它无尽的容量，但这张图样将为你铺就缝制属于你自己的{@item 次元袋}之路。其时尚的设计为你的日常冒险用品提供了充足的空间，并配有牢固的肩带以便轻松携带。只需确保仔细遵循图样，以免意外地得到一个不想要的{@item 吞噬袋}。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/089.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/090.webp"
+					},
+					"credit": "Lydia Viatoris",
+					"width": 2312,
+					"height": 1727
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/091.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1994,
+					"height": 1771
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/092.webp"
+					},
+					"credit": "Lydia Viatoris",
+					"width": 2189,
+					"height": 1825
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/093.webp"
+					},
+					"title": "带戒指的侧边条。",
+					"credit": "Lydia Viatoris",
+					"width": 1076,
+					"height": 1328
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/094.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				}
+			]
+		},
+		{
+			"ENG_name": "Beholder",
+			"name": "眼魔",
+			"source": "CaBoMP",
+			"entries": [
+				"眼魔的无数眼睛进行着坚韧的观察，通过它们强大的异域智力过滤消息。它们的十根眼柄各自发射出一种不同的魔法射线，没有一种是令人愉快的。再加上它们能从其巨大的中央眼睛施放的反魔法锥，这构成了一场极度不公平的战斗。",
+				"如果可能，与{@creature 眼魔}战斗的一个可靠策略是给它一个不是你自己的其他东西去专注。奉承是另一个历史悠久的战术，因为大多数眼魔都有行星般大小的自我。这个模式对这两种技巧都很有用。它对于钩针玩偶来说太大了，因为没有任何微缩形态能够捕捉眼魔真正的力量。解剖学上正确且气势恢宏，它是一件肯定能满足眼魔膨胀自我的礼物。它也肯定会取悦你所爱的人\u2014\u2014如果你足够幸运，附近没有需要安抚的眼魔的话。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/017.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/018.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1151,
+					"height": 1629
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/019.webp"
+					},
+					"credit": "Sharon Posey",
+					"width": 914,
+					"height": 460
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/020.webp"
+					},
+					"credit": "Sharon Posey",
+					"width": 858,
+					"height": 724
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/021.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 2518,
+					"height": 1586
+				}
+			]
+		},
+		{
+			"ENG_name": "Bracers of Archery",
+			"name": "射手护腕",
+			"source": "CaBoMP",
+			"entries": [
+				"魔法的一个流行用途是让你无需投入无尽的练习和研究时间就能掌握一项技能。{@item 射手护腕}就是这种惑控风格的范例之一，赋予佩戴者立即使用{@item 长弓|XPHB|长}和{@item 短弓|XPHB|短弓}如同自幼训练之人般的熟练度。的确，佩戴它们时射出的每一箭都比平时更具威力，这使得即使是训练有素的弓箭手也对它们垂涎不已。",
+				"也就是说，一种更强大的魔法来自于通过你自己的辛勤工作和献身精神来发展对一项技能的掌握。你内心建立的知识将永远伴随着你。",
+				"这个初学者图案将是提升你钩针编织技能的绝佳一步。这个吸引人的设计将培养你的换线技巧专精，而系带闭合使护腕可调节以适应不同尺寸和功能。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/068.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/069.webp"
+					},
+					"title": "射箭护腕的边界。",
+					"credit": "Lydia Viatoris",
+					"width": 434,
+					"height": 786
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/070.webp"
+					},
+					"title": "射手套腕的边界带有孔眼。",
+					"credit": "Lydia Viatoris",
+					"width": 415,
+					"height": 751
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/071.webp"
+					},
+					"credit": "Lydia Viatoris",
+					"width": 1837,
+					"height": 2175
+				}
+			]
+		},
+		{
+			"ENG_name": "D20 Pillow",
+			"name": "D20骰子抱枕",
+			"source": "CaBoMP",
+			"entries": [
+				"机会游戏在许多冒险者中很受欢迎，原因很好。它们帮助在闲暇时光中消磨时间，在队伍成员间建立友好的牵绊，甚至可能让幸运的赢家赚到一些额外的钱币。",
+				"骰子和卡片在冒险者中如此受欢迎并不奇怪，因为命运在任务的成功中扮演着重要角色。无论熟练程度如何或经过数十年的训练，任务中总有一丝混沌之触。学会充分利用这些厄运是冒险者训练的另一部分，这一部分可能出人意料地难以精通。",
+				"这种图案让你能以柔和友好的方式将这种随机性融入日常生活。无论你选择小型还是大型骰子，都可以用它来回答诸如\"轮到谁去拿零食了？\"这类重要问题。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/106.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/107.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1326,
+					"height": 1577
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/108_3.webp"
+					},
+					"credit": "Alysia Sly",
+					"width": 4072,
+					"height": 980
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/108.webp"
+					},
+					"credit": "Alysia Sly",
+					"width": 2041,
+					"height": 1957
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/108_2.webp"
+					},
+					"credit": "Alysia Sly",
+					"width": 2041,
+					"height": 1957
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/page_140.webp"
+					},
+					"credit": "Alysia Sly",
+					"width": 1720,
+					"height": 2323
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/page_141.webp"
+					},
+					"credit": "Alysia Sly",
+					"width": 1991,
+					"height": 2005
+				}
+			]
+		},
+		{
+			"ENG_name": "Displacer Beast",
+			"name": "移位兽",
+			"source": "CaBoMP",
+			"entries": [
+				"{@creature 移位兽||移位兽}总是令人不安。那些末端带有异界吸盘的双尾。那六对腿只会留下最微弱的痕迹来追踪。它们永远、永远不在你以为它们会在的地方！这足以让任何{@class 游侠}考虑永远挂起他们的弓。",
+				"它们很美，有着无声潜步的优雅姿态，以及它们光泽皮毛捕捉穿过树叶的光照的方式。更不用说它们的小猫了！你从未见过任何东西能像两只在新鲜落雪中玩耍的移位兽幼崽那样可爱，它们眨着眼睛四处蹦跳，每一次猛扑都会创造出可爱的分身。这个图案捕捉了它们顽皮一面的全部荣耀，从它们活泼的表情到前爪欢快的轻弹。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/022.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/023.webp"
+					},
+					"title": "钉住口鼻部到头部。",
+					"credit": "Sharon Posey",
+					"width": 863,
+					"height": 736
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/024.webp"
+					},
+					"title": "将鼻子钉在口套上。",
+					"credit": "Sharon Posey",
+					"width": 883,
+					"height": 753
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/025.webp"
+					},
+					"title": "将眼睑钉在头部。",
+					"credit": "Sharon Posey",
+					"width": 900,
+					"height": 767
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/page_34.webp"
+					},
+					"title": "为触须正面制作一个落英形状。",
+					"credit": "Sharon Posey",
+					"width": 860,
+					"height": 469
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/029.webp"
+					},
+					"title": "这是组装完第2-5排触须后金属丝应有的样子。",
+					"credit": "Sharon Posey",
+					"width": 1023,
+					"height": 867
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/page_35.webp"
+					},
+					"title": "添加一个缝合以关闭触须。",
+					"credit": "Sharon Posey",
+					"width": 1032,
+					"height": 947
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/031.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1361,
+					"height": 1948
+				}
+			]
+		},
+		{
+			"ENG_name": "Eye and Hand of Vecna",
+			"name": "维克那法眼和魔掌",
+			"source": "CaBoMP",
+			"entries": [
+				"钩针编织艺术不必局限于活体生物。在这个图样中，你将找到蕴含难以言喻力量的不死神器，这些是（但愿如此！）{@creature 维克那，大巫妖|VEoR}如今仅存的遗存。这位传说中由法师转变而来的不死生物的力量，在其败亡后依然灌注于他的{@item 维克那法眼||眼睛}和{@item 维克那魔掌||手}中，而那些拿起这些神器的人，便能获取其中一小部分力量\u2014\u2014当然，代价是可怕的。正如维克那曾乐于用巨大宝藏的承诺将冒险者引诱至恶魔般的地下城，这些神器延续了他诱惑未来的英雄走向末日的遗赠。与任一物品建立牵挂的人，可能会获得强大的法术、力量与免疫，但也将获得一种扭曲的道德观，一种与维克那自身扭曲灵魂紧密映射的道德观。",
+				"一旦这些图案完成，务必在每次接近你的造物时进行一次仔细检查。已知原件会在意想不到的地方和时间重现。意外同调到其中任何一个都将确实是一场巨大的厄运。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/041.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/042.webp"
+					},
+					"credit": "Rebecca Stone",
+					"width": 903,
+					"height": 869
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/043.webp"
+					},
+					"credit": "Rebecca Stone",
+					"width": 963,
+					"height": 1143
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/044.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				}
+			]
+		},
+		{
+			"ENG_name": "Gelatinous Cube",
+			"name": "凝胶方块",
+			"source": "CaBoMP",
+			"entries": [
+				"这些近乎透明的泥怪在诸界的黑暗密闭空间中增殖，对地城探索者而言始终是个长期存在的问题。仿佛时刻保持感官警觉，留意每一丝暗影移动、怪味、怪声、隐藏的陷阱和暗门还不够，凝胶方块还要求你提防空中的微弱晃动和异常干净的石制品。比试图看见它们更恼人的，是失败后被一种感觉像温热的酸性黄油的东西吞噬。至少，在它开始溶解你的袜子和下面的皮肤之前是这样。",
+				"这个毛绒玩具图案会融化你的心脏，而不是你的血肉。它的设计融合了许多凝胶方块会携带的几种类型的物件，例如骨头和武器。其大小刚好可以放入一个{@item 地城套组|XPHB}，而且设计的挑战性会让头脑和手指在那些午夜监视期间都保持警觉。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/012.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/013.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1361,
+					"height": 1588
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/014.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 865,
+					"height": 1258
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/015.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1138,
+					"height": 1245
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/016.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1159,
+					"height": 1268
+				}
+			]
+		},
+		{
+			"ENG_name": "Gloves of Missile Snaring",
+			"name": "辟矢夺箭手套",
+			"source": "CaBoMP",
+			"entries": [
+				"在一个理想的领域里，这件魔法物品会完全无用，因为你永远不会遇到有投射物向你投掷的日子。不幸的是，躲避投射物是许多冒险者一项令人遗憾的常见活动。每份工作都有其职业危害。",
+				"幸运的是，{@item 辟矢夺箭手套}能协助偏转多种{@item 箭|XPHB|箭矢}、{@item 弩矢|XPHB|弩矢}、{@item 矛|XPHB|三叉枪}、{@item 标枪|XPHB|标枪}以及其他投掷武器。有时，它们甚至能让你捕获该武器，让你有机会将其加入你的储备或朝其来向掷回。",
+				"这个图案独特的蛛网设计会鼓励你的对手在朝你的方向发射尖锐物件前三思，而暖和的魔网将协助堡垒你的手足够迅捷，以便在危险来临时快速反应。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/080.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/081.webp"
+					},
+					"credit": "Lydia Viatoris",
+					"width": 2000,
+					"height": 1998
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/082.webp"
+					},
+					"credit": "Lydia Viatoris",
+					"width": 2000,
+					"height": 1998
+				}
+			]
+		},
+		{
+			"ENG_name": "Mantle of Spell Resistance",
+			"name": "法术抗性斗篷",
+			"source": "CaBoMP",
+			"entries": [
+				"你无需是施法者也能利用此物品的魔法词条，这就是为什么你可以安全地反驳任何坚持认为它应自动属于他们那份任务战利品的{@class 术士}、{@class 魔契师}或其他奥术师。任何将这件附魔斗篷的深海军蓝色褶皱披在肩上的人都可以正确地与之同调，在抵抗任何朝他们投来的不想要的咒语时立即获得优势。幸运的是，魔法足够聪明，能够区分有益和有害法术，因此你不必每次需要{@spell 疗伤术}来让你保持在战斗中时都将其移除。",
+				"除了其奥术优势外，这件迷人的披肩为城市与野外穿着都勾勒出别致的轮廓。独特的灰色镶边与扇形下摆将为你的旅行装和华服增添风采，使其适合任何场合。最棒的是，宽大的翻领可以根据需要翻起，以进一步保护你的脖颈免受刺骨寒风和{@spell 冷冻射线}的伤害。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/085.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/086.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1384,
+					"height": 1779
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/087.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1283,
+					"height": 1508
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/088.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				}
+			]
+		},
+		{
+			"ENG_name": "Mimic Dice Bag",
+			"name": "拟身怪骰子袋",
+			"source": "CaBoMP",
+			"entries": [
+				"当冒险者们相遇时，一个最受欢迎的善意吹嘘话题就是比较他们遇到过的最奇怪的{@creature 拟身怪}形态。这些古怪的生物以其能够呈现不同形态的能力而闻名\u2014\u2014这是一种狩猎策略，虽然被动，但考虑到个体拟身怪及其群落在各个领域的持续扩张，似乎相当有效。",
+				"尽管门和宝箱是它们最常见的形态，但拟身怪能够模仿几乎任何无生命的物件。事实上，据传特别聪明的拟身怪甚至会呈现出拟身怪风格物件的外貌，欺骗那些认为形状像拟身怪的东西不可能是拟身怪的过路人。",
+				"这种图案汲取了所有这些特质，创造出一个迷人的小箱子，非常适合存放像游戏骰子这样的微型宝藏。柔软的牙齿便于取用，而警惕的眼睛会让其他人在自己伸手进去之前三思。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/129.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/130.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1236,
+					"height": 1506
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/131.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1246,
+					"height": 1551
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/132.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "book/CaBoMP/095.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				}
+			]
+		},
+		{
+			"ENG_name": "Mind Flayer",
+			"name": "夺心魔",
+			"source": "CaBoMP",
+			"entries": [
+				"数千年前，灵吸怪统治着一个横跨众星之海的庞大帝国。他们是诸位面的天罚，使用他们的鹦鹉螺舰船穿越存在位面，从数百个世界中捕获有智慧的类人生物。灵吸怪以这些俘虏们的大脑为食，这鼓舞人心的名字便是他们今天广为人知的名称：{@creature 夺心魔||夺心魔们}。",
+				"无人在那些天里敢于挑战它们，更不用说以如此柔软的尺寸描绘它们异域的形体了。",
+				"尽管他们星界暴政的掌控已被破碎，每位冒险者都应熟悉灵吸怪的关键特质\u2014\u2014球状颅骨、光滑触须、紫色光泽和穿刺的黑眼睛\u2014\u2014并对他们复苏活动的迹象保持警觉。这个图案既能让你熟悉他们的物理形态，也能制作出一个可爱的玩具，必定会对任何偶然发现它的夺心魔造成心灵伤害。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/032.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/033.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1282,
+					"height": 1649
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/034.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1418,
+					"height": 1709
+				}
+			]
+		},
+		{
+			"ENG_name": "Minsc's Hat of Winter Warming",
+			"name": "明斯克的暖冬帽",
+			"source": "CaBoMP",
+			"entries": [
+				"莱瑟曼游侠{@creature 明斯克和布！|MaBJoV|明斯克}因其勇气、坦率以及无论邪恶出现在何处都致力于将其粉碎的献身精神，在费伦的剑湾（以及更远的地方！）广受爱戴。关于他事迹的吟游诗人故事总会提及他的招牌风格：他威严的身姿、他的仓鼠同伴{@creature 明斯克和布！|MaBJoV|布布}，以及覆盖在他光秃秃头皮上那标志性的紫色刺青。",
+				"虽然这个图案无法赋予你明斯克的体型（或仓鼠），但在你进行冬季冒险时，它会赋予你一些他的温暖和视觉上的潇洒气质。（如果你需要前者，可以尝试巨神兵灵药；后者则近乎不可能复制，因为据称布布是现存唯一的微型化{@creature 巨型太空仓鼠|BAM}。）",
+				"戴上这顶独特的帽子，将自豪地宣告你随时随地痛击邪恶的承诺\u2014\u2014并警告作恶者，若他们胆敢在你面前犯罪，你将毫不犹豫地直取要害！"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/072.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/073.webp"
+					},
+					"credit": "Lydia Viatoris",
+					"width": 849,
+					"height": 778
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/074.webp"
+					},
+					"credit": "Lydia Viatoris",
+					"width": 1664,
+					"height": 2400
+				}
+			]
+		},
+		{
+			"ENG_name": "Owlbear Cub",
+			"name": "枭熊幼崽",
+			"source": "CaBoMP",
+			"entries": [
+				"{@creature 枭熊||枭熊们} 可能很好地诠释了\"危险地可爱\"这句话。他们是凶猛的掠食者，有着锋利的喙、凶恶的爪子和暴躁的脾气。他们的巢穴闻起来像腐烂的肉。他们以好斗闻名，并且喜欢睡在被他们吞噬的猎物的骨头上。",
+				"尽管如此，你很难找到一个不对这些神秘生物怀有偏爱的冒险者。也许是那些看起来摸起来会非常柔软的绒毛。也许是想象着依偎在它们身边打盹，手指陷入它们温暖的皮毛。又或许是希望能养一只作为忠诚的同伴，既友好又凶猛。（注：这样做可能会导致你失去一两根手指，所以请自行斟酌。）",
+				"无论它们吸引力背后的魔法是什么，很少有冒险者会拒绝拥有一只属于自己的枭熊，尤其是一只可以安全依偎的枭熊。这个模式提供了所有的可爱，却没有一丝撕咬。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/035.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/036.webp"
+					},
+					"credit": "Rebecca Stone",
+					"width": 1032,
+					"height": 950
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/038.webp"
+					},
+					"credit": "Rebecca Stone",
+					"width": 903,
+					"height": 629
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/039.webp"
+					},
+					"credit": "Rebecca Stone",
+					"width": 1047,
+					"height": 1194
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/037.webp"
+					},
+					"credit": "Rebecca Stone",
+					"width": 883,
+					"height": 800
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/040.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				}
+			]
+		},
+		{
+			"ENG_name": "Platinum Dragon Cowl",
+			"name": "白金龙兜帽",
+			"source": "CaBoMP",
+			"entries": [
+				"白金龙是{@deity 巴哈姆特|非人类|PHB}的众多名字之一，他是金属龙的创立者和雇主。他现在居住于天界山的七重天堂，行走于不朽与神性之间。他的信徒，无论是龙族血脉还是凡人，都拥抱他的荣誉和正义美德。据传，在面对极致的邪恶并献上重大的牺牲时，他的追随者可以召唤他的援助降临物质领域。在这些时刻，巴哈姆特显现为{@creature 巴哈姆特的化身|FTD|白金龙}，一种辉煌的形态，甚至高耸于最远古的龙类之上。他闪耀的鳞片是只有最稀有且最值得的冒险者才能目睹的景象，在物质位面中唤起巴哈姆特的力量和命流。",
+				"这种图案捕捉了巴哈姆特在此刻外貌所展现的敬畏与美丽。柔软的锁喉怪小队即使是新手也能掌握其技能，而炫目的鳞片则增添了光泽和视觉复杂度。这件引人注目的碎片必将激励所有目睹其威严者的尊重与钦佩，正如金属龙之王所应得的那样。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/064.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/065.webp"
+					},
+					"title": "将鳞片附着在兜帽上。",
+					"credit": "Lydia Viatoris",
+					"width": 1211,
+					"height": 908
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/066.webp"
+					},
+					"title": "安装剩余的鳞片。",
+					"credit": "Lydia Viatoris",
+					"width": 1060,
+					"height": 720
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/067.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				}
+			]
+		},
+		{
+			"ENG_name": "Purple Worm Scarf",
+			"name": "紫虫围巾",
+			"source": "CaBoMP",
+			"entries": [
+				"幽暗地域中最令人惊叹和恐惧的事物之一便是{@creature 紫虫}。这些超巨型的蠕虫能够掘穿坚硬的岩石，盲目地吞噬它们路途上的一切。它们能一口吞下一匹马（或一个人），将不幸的餐点困在它们充满强酸的胃里等待最终消化。",
+				"好像这还不够，紫虫们喜欢一场热闹的聚会。它们会被各种响声吸引，并且会在你来得及尖叫\"快跑！\"之前就摧毁任何喧闹聚会。由于它们会消化掉啃穿的岩石，它们会在身后留下可以在地下蜿蜒数英里的宽阔隧道。",
+				"这条围巾在严寒天气中唤起紫虫的法力，在你的脖颈周围开辟出一条温暖的隧道。它时髦的风采会像蠕虫接近时的穿云裂石之音一样引人注目，但这围巾将激励钦佩而非引发恐惧。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/075.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/page_94_3.webp"
+					},
+					"title": "尾击摆动。",
+					"credit": "Lydia Viatoris",
+					"width": 1112,
+					"height": 976
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/078.webp"
+					},
+					"credit": "Lydia Viatoris",
+					"width": 865,
+					"height": 564
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/079.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				}
+			]
+		},
+		{
+			"ENG_name": "Quiver of Ehlonna",
+			"name": "艾罗娜的箭袋",
+			"source": "CaBoMP",
+			"entries": [
+				"作为灰鹰林地与森林的女神，{@deity 艾罗娜|灰鹰|XDMG}对任何{@class 游侠}都有着特殊的吸引力，尤其是那些曾在坚毅松林学习过或漫步于瑟拉冬森林小径的游侠。{@item 艾罗娜的箭袋}对任何弓箭手而言都是一种祝福，因为它轻巧的小型框架内能容纳数量可观的箭矢、弩矢和其他远程武器。",
+				"这个图案将赋予你一个不同但同样至关重要的容器，确保你在日常使命中永远不会缺少容易的水分补充。这个箭袋高9英寸（23厘米），宽6英寸（15厘米），可容纳一个相似尺寸的可重复填充的水瓶或任何类似的饮料容器。其坚固的底部防止滑落，而复杂的图案肯定会吸引其他冒险者的眼睛。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/061.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/062.webp"
+					},
+					"title": "这是挎包背带在第2行之后的样子。",
+					"credit": "Lydia Viatoris",
+					"width": 865,
+					"height": 641
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/063.webp"
+					},
+					"title": "{@note 在第10轮后遵循此模式。}",
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				}
+			]
+		},
+		{
+			"ENG_name": "Red Dragon",
+			"name": "红龙",
+			"source": "CaBoMP",
+			"entries": [
+				"只有愚者才会轻视任何龙的力量、威严与伟力。然而，在这个骄傲的神系中，{@creature 成年红龙||红龙}因其唤起的敬畏、崇敬与恐惧而占据着一个特殊的位置。被{@creature 成年蓝龙||蓝龙的}闪电、{@creature 成年绿龙||成年绿龙}毒素或任何其他龙族吐息武器全力击中的人同样会死亡，但{@creature 成年红龙||红龙的}火焰威胁中蕴含着某种东西，能超越一切地激发想象。",
+				"无论出于何种原因，红龙或许是平民中最令人畏惧的类型，也是任何渴望被称为\"屠龙者\"的冒险者最梦寐以求的目标。这个图样将帮助你以一种全新的方式征服这头强大的生物，将其有力的飞翼和坚固的鳞片转化为复杂的针法，以展示你最精湛的纤维技艺。只需记住，如果你打算将完成的杰作放置在其原生火焰之中，请使用防火材料\u2014\u2014与它的灵感来源不同，这只红龙遗憾地缺乏火焰免疫。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/045.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/046.webp"
+					},
+					"title": "子行 94A，显示第20个短针用蓝色记号扣标记。",
+					"credit": "Rebecca Stone",
+					"width": 891,
+					"height": 721
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/051.webp"
+					},
+					"title": "子行94B开始，显示钩爪插入标记针脚，ch12留在身体内侧。",
+					"credit": "Rebecca Stone",
+					"width": 1147,
+					"height": 929
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/050.webp"
+					},
+					"title": "子行94B结束，显示12个短针（从标记的针目开始）和14个锁针。",
+					"credit": "Rebecca Stone",
+					"width": 1147,
+					"height": 929
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/047.webp"
+					},
+					"title": "94C起始，内部链条展示。",
+					"credit": "Rebecca Stone",
+					"width": 865,
+					"height": 700
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/page_62.webp"
+					},
+					"title": "这两张照片展示了你的工作在94轮结束时应该呈现的样子。",
+					"credit": "Rebecca Stone",
+					"width": 1032,
+					"height": 1535
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/052.webp"
+					},
+					"credit": "Rebecca Stone",
+					"width": 942,
+					"height": 1043
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/053.webp"
+					},
+					"credit": "Rebecca Stone",
+					"width": 1016,
+					"height": 522
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/055.webp"
+					},
+					"credit": "Rebecca Stone",
+					"width": 1072,
+					"height": 868
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/054.webp"
+					},
+					"credit": "Rebecca Stone",
+					"width": 1113,
+					"height": 1050
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/page_69.webp"
+					},
+					"credit": "Rebecca Stone",
+					"width": 1058,
+					"height": 1422
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/056.webp"
+					},
+					"credit": "Rebecca Stone",
+					"width": 989,
+					"height": 720
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/059.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 2518,
+					"height": 1586
+				}
+			]
+		},
+		{
+			"ENG_name": "Schools of Magic Granny Squares",
+			"name": "魔法学派奶奶方格",
+			"source": "CaBoMP",
+			"entries": [
+				"防护、咒法、塑能等等：魔法学派在不同的国度呈现出不同的形态，但将奥术法术工作大致分为八种类型的概念在所有国度中都是通用的。毫无疑问，像魔邓肯或伊尔明斯特这样的神秘专家，或许能借助宇宙幻象和一份长达千页的阅读清单，以极其详尽的细节解释这种跨维度现象的魔法基础。唉，这样的沉思远远超出了一本手作书的范围\u2014\u2014尽管在你制作这些设计时，它们可能会成为一段有趣的谈资。",
+				"这个初学者图案会让你以让{@book 斯翠海文|SCC}的学生都嫉妒的速度精通所有八个魔法学派。制作出的方格可以单独用作简易杯垫，也可以缝合在一起做成盖毯或墙饰。一旦精通，你就可以用它们为其他项目增添一抹魔法色彩，用你最喜欢的魔法来装饰任何你想要的东西。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/096.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/097.webp"
+					},
+					"title": "防护",
+					"credit": "Lydia Viatoris",
+					"width": 2000,
+					"height": 1998
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/098.webp"
+					},
+					"title": "死灵",
+					"credit": "Lydia Viatoris",
+					"width": 2000,
+					"height": 1998
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/099.webp"
+					},
+					"title": "幻术",
+					"credit": "Lydia Viatoris",
+					"width": 2000,
+					"height": 1998
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/100.webp"
+					},
+					"title": "惑控",
+					"credit": "Lydia Viatoris",
+					"width": 2000,
+					"height": 1998
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/101.webp"
+					},
+					"title": "塑能",
+					"credit": "Lydia Viatoris",
+					"width": 2000,
+					"height": 1998
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/102.webp"
+					},
+					"title": "变化",
+					"credit": "Lydia Viatoris",
+					"width": 2000,
+					"height": 1998
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/103.webp"
+					},
+					"title": "咒法",
+					"credit": "Lydia Viatoris",
+					"width": 2000,
+					"height": 1998
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/104.webp"
+					},
+					"title": "预言术",
+					"credit": "Lydia Viatoris",
+					"width": 2000,
+					"height": 1998
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/105.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				}
+			]
+		},
+		{
+			"ENG_name": "Soul Coin Coaster",
+			"name": "灵魂币杯垫",
+			"source": "CaBoMP",
+			"entries": [
+				"任何拥有纯洁之心与善良意图的冒险者都不会想让{@item 灵魂币|BGDIA|灵魂币}杂乱地堆满他们的家。这些炼狱金属制成的圆盘各自束缚着一个灵魂，注定要在魔鬼与邪魔之间交易，直到被释放或可悲地消耗掉。灵魂的情感\u2014\u2014绝望、狂暴、悲痛\u2014\u2014会渗透给任何触碰它们的人。即使未被触碰，它们也会散发出一种令人不适的灵光，就像身处一个几乎听不见的尖叫声中。",
+				"缝制成灵魂币样式的杯垫，另一方面，比启发它们的钱币要欢快得多。这些方便的物件会保护你的家具，并为你分享自己与阿弗纳斯相关的冒险故事提供完美的开场白。它们的纱线结构保证只吸收液体，而非灵魂。{@sup [{@footnote *1|Guarantee does not apply if soul coin coasters have been enchanted in any way. Not recommended for use under {@item 隐形药水||隐形药水}, for reasons that should be easy to see.}]} 紧急情况下，它们可以被投掷出去，以干扰各种{@creature 小魔鬼||小魔鬼}和低等魔鬼；众所周知，将其与一个{@spell 次级幻象}法术结合使用，甚至可以愚弄一个{@creature 小魔鬼}，至少是暂时的。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/133.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/134.webp"
+					},
+					"credit": "Lydia Viatoris",
+					"width": 2096,
+					"height": 1905
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/135.webp"
+					},
+					"title": "在稳定器上绘制设计图。",
+					"credit": "Lydia Viatoris",
+					"width": 1104,
+					"height": 942
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/136.webp"
+					},
+					"title": "一旦你完成了设计，就洗掉稳定剂。",
+					"credit": "Lydia Viatoris",
+					"width": 1049,
+					"height": 895
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/137.webp"
+					},
+					"title": "在中央设计的两侧各创建2个半圆。",
+					"credit": "Lydia Viatoris",
+					"width": 978,
+					"height": 834
+				}
+			]
+		},
+		{
+			"ENG_name": "Spellbook Pouch Belt Bag",
+			"name": "法术书小包腰带袋",
+			"source": "CaBoMP",
+			"entries": [
+				"每位法师都知道将他们的{@item 法术书|PHB}和法术成分随身携带的重要性。这个方便的腰带包将让你以时尚的方式做到这两点。其扇形折叠设计为玫瑰花瓣或皮克精之尘小瓶等精致物品提供了额外的缓冲层。安全纽扣和双钩会促使扒手寻找更容易的目标，而装饰边则能让你的法术书稳固就位。",
+				"此图案的尺寸适用于一本标准的旅行用{@item 法术书|PHB}。使用尺寸或装饰异常华丽的典籍的法师可能需要做一些修改。我不建议使用这个袋子来携带{@item 爆鸣专论|TCE}或{@item 静语卷册}：前者很可能会点燃羊毛，而后者太大（而且，说实话，太恶心）无法整齐地放入。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/083.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1780,
+					"height": 2244
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "crochetpatterns/CaBoMP/084.webp"
+					},
+					"credit": "Mithy Evans",
+					"width": 1994,
+					"height": 1733
+				}
+			]
+		}
+	]
+}

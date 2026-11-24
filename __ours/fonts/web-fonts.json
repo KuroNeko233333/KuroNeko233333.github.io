@@ -1,0 +1,46 @@
+{
+  "characters_in_site": 5693,
+  "families": {
+    "Book Text": {
+      "source": "NotoSerifSC-VF.ttf",
+      "slices": 36,
+      "characters": 5688,
+      "bytes": 2331712,
+      "first_slice_bytes": 86108,
+      "largest_slice_bytes": 86108,
+      "not_in_font_sample": "�🌿",
+      "not_in_font": 76
+    },
+    "Book UI": {
+      "source": "NotoSansSC-VF.ttf",
+      "slices": 36,
+      "characters": 5687,
+      "bytes": 1735676,
+      "first_slice_bytes": 64196,
+      "largest_slice_bytes": 64196,
+      "not_in_font_sample": "鿿�",
+      "not_in_font": 77
+    },
+    "Book Symbols": {
+      "source": [
+        "notosans/NotoSans[wdth,wght].ttf",
+        "notosansmath/NotoSansMath-Regular.ttf",
+        "notosanssymbols2/NotoSansSymbols2-Regular.ttf",
+        "notosanssymbols/NotoSansSymbols[wght].ttf",
+        "notosansrunic/NotoSansRunic-Regular.ttf",
+        "notosanskhmer/NotoSansKhmer[wdth,wght].ttf"
+      ],
+      "bytes": 12072,
+      "characters": "əɪɫʃʊˈː̴̵̶̷̸̡̧̗̙̣̥̫̭̯̹̼͓͔͕͖͚̂̅̉̋̍̎̏̒̓̽̀́͂̓͊͋͛̕͜͝͠ͅ  ​‍⁄₀₁₂₃₄₅₆₇₈₉⅓⅔⅕⅖⅗⅘⅙⅚⅛⅜⅝⅞⸳↳↵↺↻▸▾☾☑✎✏✦❄❤❮❯⠿⌄⚔ᚱᛈᛊ᧿",
+      "still_missing": ""
+    },
+    "Book Latin": {
+      "source": [
+        "sourceserif4/SourceSerif4[opsz,wght].ttf",
+        "sourceserif4/SourceSerif4-Italic[opsz,wght].ttf"
+      ],
+      "bytes": 77988
+    }
+  },
+  "css_sha256": "4aeb27582bfdbaaa1dc77728a00c8130c45370bcda0d9cadfa9390004a7dae8e"
+}

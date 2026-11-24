@@ -1,0 +1,1253 @@
+{
+	"spell": [
+		{
+			"ENG_name": "Alustriel's Mooncloak",
+			"name": "艾拉斯卓的月辉之篷",
+			"source": "FRHoF",
+			"page": 142,
+			"level": 5,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "emanation",
+				"distance": {
+					"type": "feet",
+					"amount": 20
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "一块价值50+GP的月石",
+					"cost": 5000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"月光从天而降，在持续时间内以{@variantrule 微光光照|XPHB}光照笼罩源自你的20尺{@variantrule 光环 [效应区域]|XPHB|光环}区域。你和你的盟友在位于该区域期间获得{@variantrule 掩护|XPHB|半身掩护}及对寒冷、闪电及光耀伤害的{@variantrule 抗性|XPHB}。",
+				"在法术持续时间内，你可以使用以下选项之一（但这将令此法术立即结束）：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Liberation",
+							"name": "解放",
+							"type": "item",
+							"entries": [
+								"当你失败于一次用于避免或结束{@condition 恐慌|XPHB}、{@condition 受擒|XPHB}及{@condition 束缚|XPHB}的豁免时，你可以用一个{@variantrule 反应|XPHB}来将本次豁免改为成功。"
+							]
+						},
+						{
+							"ENG_name": "Respite",
+							"name": "回春",
+							"type": "item",
+							"entries": [
+								"以一个{@action 魔法|XPHB}动作，你或区域内的一名盟友恢复等于{@dice 4d10}+你的施法属性调整值点{@variantrule 生命值|XPHB}。"
+							]
+						}
+					]
+				}
+			],
+			"damageResist": [
+				"寒冷",
+				"闪电",
+				"光耀"
+			],
+			"miscTags": [
+				"HL",
+				"LGT",
+				"UA"
+			],
+			"areaTags": [
+				"S"
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Backlash",
+			"name": "反冲术",
+			"source": "FRHoF",
+			"page": 142,
+			"level": 4,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "reaction",
+					"condition": "当你受到伤害时，作为对该次伤害的回应执行"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你将破坏性的能量抵御并弹开，令该次你受到的伤害降低{@dice 4d6}+你的施法属性调整值点。",
+				"若触发该次反应的伤害来自一名位于施法距离内的生物，则你可以迫使该生物进行一次体质豁免。豁免失败则其受到{@damage 4d6}力场伤害，豁免成功则仅受半伤。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"你使用的法术位每比四环高一环，法术能减免的伤害量和造成的力场伤害就都增加{@scaledamage 4d6|4-9|1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Blade of Disaster",
+			"name": "灾厄之刃",
+			"source": "FRHoF",
+			"page": 143,
+			"level": 9,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你创造一道形如剑刃的位面裂隙，持续直至法术结束。裂隙出现在施法距离内由你选择的一处空间，且你可以立即发动两次近战法术攻击，每次攻击都要指定裂隙5尺内的一名生物或物件。若命中，则目标受到{@damage 10d6}力场伤害。该攻击在{@dice d20}投出18或更高即算作掷出{@variantrule 重击|XPHB}。",
+				"在你的后续回合中，你可以用一个{@variantrule 附赠动作|XPHB}让裂隙移动至多60尺，再发动两次攻击，每次攻击依旧要指定裂隙5尺内的一名生物或物件。",
+				"该剑刃可以无害地通过任何屏障，包括由类似法术{@spell 力场墙|XPHB}所创造的那些。"
+			],
+			"damageInflict": [
+				"force"
+			],
+			"spellAttack": [
+				"M"
+			],
+			"miscTags": [
+				"OBJ",
+				"UBA"
+			],
+			"areaTags": [
+				"MT"
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Cacophonic Shield",
+			"name": "噪鸣护盾",
+			"source": "FRHoF",
+			"page": 143,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "emanation",
+				"distance": {
+					"type": "feet",
+					"amount": 10
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"雷鸣般的巨声于法术持续时间内回响在源自你的半径10尺的{@variantrule 光环 [效应区域]|XPHB|光环}区域。每当{@variantrule 光环 [效应区域]|XPHB|光环}区域进入一名你可见生物所在的空间时、一名你可见的生物进入{@variantrule 光环 [效应区域]|XPHB|光环}区域或是在该区域结束其回合时，该生物都要进行一次体质豁免检定。失败则该生物受到{@damage 3d6}雷鸣伤害且陷入{@condition 耳聋|XPHB}状态，持续至你的下一回合开始。豁免成功则仅受半伤。一名生物一回合只进行一次该豁免。你在施展该法术时可以指定哪些生物不受其影响。",
+				"此外，你获得对雷鸣伤害的{@variantrule 抗性|XPHB}，且对你发动的远程攻击检定均具有{@variantrule 劣势|XPHB}。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"你使用的法术位每比三环高一环，法术的伤害就增加{@scaledamage 3d6|3-9|1d6}。"
+					]
+				}
+			],
+			"damageResist": [
+				"雷鸣"
+			],
+			"damageInflict": [
+				"thunder"
+			],
+			"conditionInflict": [
+				"耳聋"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"S"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Conjure Constructs",
+			"name": "咒唤机群",
+			"source": "FRHoF",
+			"page": 143,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一个黄铜齿轮"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你咒唤一群无形且守序的灵体，其于施法距离内的一处未占据空间中显现为中型的、由一队魔冢或其它构装组成的机群。机群存在直至法术结束。当你施展该法术时、或是在后续回合中以一个{@action 魔法|XPHB}动作，你可以令机群指定其5尺内的一个生物或物件，创造下列效果之一：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Clockwork Force",
+							"name": "机关之力",
+							"type": "item",
+							"entries": [
+								"目标进行一次敏捷豁免检定，豁免失败受{@damage 3d6}力场伤害，豁免成功则伤害减半。"
+							]
+						},
+						{
+							"ENG_name": "Orderly Ward",
+							"name": "秩序守护",
+							"type": "item",
+							"entries": [
+								"目标获得等于{@dice 1d6}+你的施法属性调整值点{@variantrule 临时生命值|XPHB}。"
+							]
+						}
+					]
+				},
+				"当你在你的回合移动时，你可以令机群也移动至多30尺到一处你可见的未占据空间中。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"你使用的法术位每比三环高一环，法术的伤害和{@variantrule 临时生命值|XPHB}就增加{@scaledamage 3d6|3-9|1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"miscTags": [
+				"OBJ",
+				"SGT",
+				"THP"
+			],
+			"areaTags": [
+				"C"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Death Armor",
+			"name": "死佑护甲",
+			"source": "FRHoF",
+			"page": 143,
+			"level": 2,
+			"school": "N",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "一块价值50+GP的缟玛瑙，作为法术的耗材",
+					"cost": 5000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"墨色的灵光在法术持续时间内环绕你触碰的一名生物。该生物进行的{@variantrule 死亡豁免检定|XPHB|死亡豁免检定}具有{@variantrule 优势|XPHB}，且每回合一次，当位于法术目标5尺内的生物用近战攻击检定命中法术目标时，该攻击者受{@damage 2d4}暗蚀伤害。"
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"miscTags": [
+				"ADV"
+			],
+			"areaTags": [
+				"S",
+				"ST"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Deryan's Helpful Homunculi",
+			"name": "德莱雅的人工生命小帮手",
+			"source": "FRHoF",
+			"page": 143,
+			"level": 2,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "价值100+GP的宝石粉末，作为法术的耗材；外加一套你熟练的工匠工具",
+					"cost": 10000,
+					"consume": true
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 8
+					}
+				}
+			],
+			"meta": {
+				"ritual": true
+			},
+			"entries": [
+				"你召唤一群灵体小帮手，持续至法术结束。小帮手们看起来像是人工生命体或是其它由你选择的构装，但其不具备实体，亦无法被伤害。小帮手们视为具有对{@skill 奥秘|XPHB}技能以及用来施展该法术的那套{@item 工匠工具|XPHB}的熟练项。",
+				"若你正在制造一件物品，这些灵体小帮手整体可被视为一名协助者，减半你制作这件物品的时间。"
+			],
+			"miscTags": [
+				"SMN"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Dirge",
+			"name": "悲恸挽歌",
+			"source": "FRHoF",
+			"page": 144,
+			"level": 6,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "emanation",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"致死的伟力在持续时间内覆盖源自你的60尺{@variantrule 光环 [效应区域]|XPHB|光环}区域。",
+				"你在施展该法术时可以指定哪些生物不受其影响。任何其余的生物在位于{@variantrule 光环 [效应区域]|XPHB|光环}内期间都无法恢复{@variantrule 生命值|XPHB}。当{@variantrule 光环 [效应区域]|XPHB|光环}进入一名生物的占据空间，或是一名生物进入{@variantrule 光环 [效应区域]|XPHB|光环}或是在光环之中结束自己的回合时，此生物都要进行一次体质豁免检定。豁免失败则受{@damage 3d10}暗蚀伤害且陷入{@condition 倒地|XPHB}状态。豁免成功则仅受半伤且{@variantrule 速度|XPHB}减半。一名生物一回合只进行一次此豁免。",
+				{
+					"ENG_name": "Casting as a Circle Spell",
+					"name": "结阵施法",
+					"type": "entries",
+					"entries": [
+						"将该法术被作为结阵法术施展需要至少两名辅施法者参与。此时其持续时间变为{@status 专注|XPHB}，至多10分钟。",
+						"于对抗此法术的豁免中失败的生物还会再获得1级{@condition 力竭|XPHB}等级。该生物具有{@condition 力竭|XPHB}等级期间，其无法通过完成{@variantrule 长休|XPHB}恢复失去的{@variantrule 生命值|XPHB}或移除其{@condition 力竭|XPHB}等级。",
+						"施展该法术时，每一名辅施法者都必须消耗一枚环阶四环及以上的法术位，否则法术失败。"
+					]
+				}
+			],
+			"damageInflict": [
+				"necrotic"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"S"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Doomtide",
+			"name": "厄难黑潮",
+			"source": "FRHoF",
+			"page": 144,
+			"level": 4,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "煤灰或烟灰，以及一片鳗鱼干"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你指定施法距离内一点，在以该点为中心、半径 20 尺{@variantrule 球状 [效应区域]|XPHB|球状}区域内，创造一片墨色雾气。黑雾在法术持续时间内维持存在，其区域视为魔法{@variantrule 黑暗|XPHB}。但仍会被强风吹散（比如{@spell 造风术|XPHB}）并解除法术。",
+				"黑雾出现时，每名位于其{@variantrule 球状 [效应区域]|XPHB|球状}区域内的生物都进行一次感知豁免，豁免失败者受到{@damage 5d6}点心灵伤害，且在进行豁免检定受{@dice 1d6}减值，直至其下一回合结束。，豁免成功则仅受半伤。每当{@variantrule 球状 [效应区域]|XPHB|球状}区域移动到一名生物区域内时、一名生物进入{@variantrule 球状 [效应区域]|XPHB|球状}区域时或是在该{@variantrule 球状 [效应区域]|XPHB|球状}区域结束其回合时，该生物同样需要进行一次豁免。一名生物一回合只进行一次该豁免。",
+				"在你的每个回合开始时，{@variantrule 球状 [效应区域]|XPHB|球状}区域会往远离你的方向移动10尺。",
+				{
+					"ENG_name": "Casting as a Circle Spell",
+					"name": "结阵施法",
+					"type": "entries",
+					"entries": [
+						"将该法术被作为结阵法术施展需要至少五名辅施法者参与。除了通常的法术成分，你还需要提供一项特殊成分（三枚来自喧癫空隧的黑珍珠，串成串），作为该法术的耗材。该法术的施法距离增加至1英里，且持续时间增加为直至被解除（无需维持{@status 专注|XPHB}）。如果该法术的任意一名施法者参与施展了另一道作为结阵法术施展的{@spell 厄难黑潮|FRHoF}，则该法术会提前结束。",
+						"施展该法术时，每一名辅施法者都必须消耗一枚三环及以上的法术位，否则法术失败。"
+					]
+				}
+			],
+			"damageInflict": [
+				"psychic"
+			],
+			"savingThrow": [
+				"wisdom"
+			],
+			"areaTags": [
+				"S"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Elminster's Effulgent Spheres",
+			"name": "伊尔明斯特的绚丽光球",
+			"source": "FRHoF",
+			"page": 144,
+			"level": 6,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "一块价值1,000+GP的欧珀",
+					"cost": 100000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"六枚颜色各异的彩色光球在持续时间内围绕着你旋转。",
+				"在这些光球存在期间，你可以消耗一枚光球制造以下一种效应：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Absorb Energy",
+							"name": "吸收能量",
+							"type": "item",
+							"entries": [
+								"当你受到强酸、寒冷、火焰、闪电或雷鸣伤害时，你可以执行一个{@variantrule 反应|XPHB}并消耗其中一枚光球，令你获得对触发此反应的那种伤害的{@variantrule 抗性|XPHB}，直至你的下一回合开始。"
+							]
+						},
+						{
+							"ENG_name": "Energy Blast",
+							"name": "光能爆",
+							"type": "item",
+							"entries": [
+								"以一个{@variantrule 附赠动作|XPHB}，你可以令一枚光球飞向位于你120尺内的一个目标。发动一次远程法术攻击。若命中，则目标受到{@damage 3d6}点强酸、寒冷、火焰、闪电或雷鸣伤害（由你选择）。无论这次攻击命中与否，这枚光球都会被消耗。"
+							]
+						}
+					]
+				},
+				"此法术会在你消耗完所有光球后提前结束。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"你使用的法术位每比六环高一环，创造的光球就多一颗。"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"UA",
+				"UBA"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Elminster's Elusion",
+			"name": "伊尔明斯特的法术闪避",
+			"source": "FRHoF",
+			"page": 144,
+			"level": 2,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 10
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"奥术法阵令你能在持续时间内抵抗魔法。你对抗法术和其他魔法效应时进行的豁免检定具有{@variantrule 优势|XPHB}。此外，若你对抗豁免成功受半数伤害的法术或魔法效应时，若豁免成功则不受伤害。"
+			],
+			"miscTags": [
+				"ADV"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Holy Star of Mystra",
+			"name": "密斯特拉圣星",
+			"source": "FRHoF",
+			"page": 145,
+			"level": 8,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你创造一枚闪耀的、悬在你上方的能量微尘，持续至法术结束。微尘散发5尺{@variantrule 明亮光照|XPHB}及其外5尺{@variantrule 微光光照|XPHB}。",
+				"当你施展此法术时，以及后续回合中作为一个{@variantrule 附赠动作|XPHB}，你可以自微尘释放出一道闪耀能量束，以120尺内的一名生物为目标。你进行一次远程法术攻击，若命中，则目标受到{@dice 4d10}+你的施法属性调整值点力场或光耀伤害（由你选择）。",
+				"此外，微尘存在期间你还具有{@variantrule 掩护|XPHB|四分之三掩护}；若你成功通过一道七环或更低环阶、只以你作为目标、还并不制造效应区域的法术的豁免时，你可以执行{@variantrule 反应|XPHB}来将这道法术反射回其施法者；此时该施法者必须对抗其自身的法术豁免DC进行豁免检定。"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"LGT",
+				"UBA"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Laeral's Silver Lance",
+			"name": "莱拉的银辉长枪",
+			"source": "FRHoF",
+			"page": 145,
+			"level": 3,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "line",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "一枚价值250+GP的银针",
+					"cost": 25000
+				}
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"银色能量自你之处爆发，复盖一处120尺长、5尺宽的{@variantrule 线状 [效应区域]|XPHB|线状}区域。每名位于{@variantrule 线状 [效应区域]|XPHB|线状}区域内的由你选择的生物都进行一次力量豁免检定。豁免失败者受到{@damage 3d10}力场伤害且陷入{@condition 倒地|XPHB}状态。豁免成功仅受半伤。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"你使用的法术位每比三环高一环，法术的伤害就增加{@scaledamage 3d10|3-9|1d10}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrow": [
+				"strength"
+			],
+			"areaTags": [
+				"L"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Simbul's Synostodweomer",
+			"name": "欣布的法愈秘术",
+			"source": "FRHoF",
+			"page": 145,
+			"level": 7,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "touch"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"你将魔法性的治愈能量注入你触碰的一名生物，持续至法术结束。每当该生物使用法术位施展一道法术时，它都可以立即掷等于该法术位的环阶枚{@variantrule 生命值骰|XPHB}，并恢复等于掷骰结果+你的施法属性调整值点{@variantrule 生命值|XPHB}；这些生命骰将因此消耗。"
+			],
+			"miscTags": [
+				"HL"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Songal's Elemental Suffusion",
+			"name": "桑缟的元灵显圣",
+			"source": "FRHoF",
+			"page": 145,
+			"level": 5,
+			"school": "T",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": {
+					"text": "一枚价值100+GP的珍珠",
+					"cost": 10000
+				}
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你将属于巨灵的元素之力注入自身。你获得以下增益，直至法术结束：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Elemental Immunity",
+							"name": "元素减免",
+							"type": "item",
+							"entries": [
+								"当你施展该法术时，选择下列一种伤害类型：强酸、寒冷、火焰、闪电或雷鸣。你获得对所选伤害类型的{@variantrule 抗性|XPHB}。"
+							]
+						},
+						{
+							"ENG_name": "Elemental Pulse",
+							"name": "元素波动",
+							"type": "item",
+							"entries": [
+								"在你施展该法术时，以及此后你的每个回合开始时，你都会释放出元素能量的爆发，覆盖源自自身的15尺{@variantrule 光环 [效应区域]|XPHB|光环}区域。区域内每名由你选择的生物都要进行一次敏捷豁免，豁免失败者受到{@damage 2d6}点强酸、寒冷、火焰、闪电或雷鸣伤害（由你选择）并陷入{@condition 倒地|XPHB}状态，豁免成功则仅受半伤。"
+							]
+						},
+						{
+							"ENG_name": "Flight",
+							"name": "飞行",
+							"type": "item",
+							"entries": [
+								"你获得30尺{@variantrule 飞行速度|XPHB}且可悬浮。"
+							]
+						}
+					]
+				},
+				{
+					"ENG_name": "Casting as a Circle Spell",
+					"name": "结阵施法",
+					"type": "entries",
+					"entries": [
+						"若该法术被作为结阵法术施展，则其施法时间变为1分钟，且持续时间增加至{@status 专注|XPHB}，至多10分钟。每有一名辅施法者参与，你就可以额外选择一名生物（至多额外选择九名生物）。受选择的生物亦会在法术持续时间内获得其增益。",
+						"施展该法术时，每一名辅施法者都必须消耗一枚二环及以上的法术位，否则法术失败。"
+					]
+				}
+			],
+			"damageInflict": [
+				"acid",
+				"cold",
+				"fire",
+				"lightning",
+				"thunder"
+			],
+			"conditionInflict": [
+				"倒地"
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Spellfire Flare",
+			"name": "咒火闪焰",
+			"source": "FRHoF",
+			"page": 146,
+			"level": 1,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你释放出一道耀眼的焰能爆。对施法距离内的一个目标发动一次远程法术攻击；结算该次攻击检定时目标无法从{@variantrule 掩护|XPHB|半身掩护}和{@variantrule 掩护|XPHB|四分之三掩护}中获益。若命中，则目标受到{@damage 2d10}光耀伤害。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"你使用的法术位每比一环高一环，你便可额外发射一道焰能爆。你可以令这发新的焰能爆瞄准你原先的目标或是另一个目标。每道焰能爆都需要分别进行攻击。"
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Spellfire Storm",
+			"name": "咒火风暴",
+			"source": "FRHoF",
+			"page": 146,
+			"level": 4,
+			"school": "V",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"你咒唤一道咒火光柱，覆盖以施法范围内一点为中心，半径20尺、高20尺{@variantrule 柱状 [效应区域]|XPHB|柱状}区域。该{@variantrule 柱状 [效应区域]|XPHB|柱状}区域内视为{@variantrule 明亮光照|XPHB}，且在该区域出现时位于其中的每名生物都进行一次体质豁免，豁免失败则受到{@damage 4d10}光耀伤害，豁免成功则伤害减半。在生物进入法术区域或在其内结束回合时，目标生物也需要进行该体质豁免。一名生物每回合仅需进行一次该豁免检定。",
+				"此外，当一名位于{@variantrule 柱状 [效应区域]|XPHB|柱状}区域内的生物施展一道法术时，它必须进行一次体质豁免。豁免失败则法术消散且毫无效果，并且用于施展法术的动作、{@variantrule 附赠动作|XPHB}或{@variantrule 反应|XPHB}随之浪费。如果那道法术是使用法术位施展的，则法术位并不会被消耗。",
+				"你在施展该法术时可以指定哪些生物不受其影响。",
+				{
+					"ENG_name": "Casting as a Circle Spell",
+					"name": "结阵施法",
+					"type": "entries",
+					"entries": [
+						"除了通常的法术成分，你还需要提供一项特殊成分（一枚价值25,000+GP的星蓝宝石），作为该法术的耗材。该法术的施法距离变为1英里，且无需{@status 专注|XPHB}。施展该法术时，每一名辅施法者都必须消耗一枚三环及以上的法术位，否则法术失败。"
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"你使用的法术位每比四环高一环，法术的伤害就增加{@scaledamage 4d10|4-9|1d10}。",
+						"辅施法者的数量还能影响此法术的效应区域及持续时间（如下表所示）。如果该法术的任意一名施法者参与施展了另一道作为结阵法术施展的咒火风暴，则该法术会提前结束。",
+						{
+							"type": "table",
+							"colStyles": [
+								"col-2 text-center",
+								"col-8",
+								"col-2"
+							],
+							"colLabels": [
+								"辅施法者数量",
+								"效应区域",
+								"持续时间"
+							],
+							"rows": [
+								[
+									"1-3",
+									"半径40尺、高40尺{@variantrule 柱状 [效应区域]|XPHB|柱状}区域",
+									"1小时"
+								],
+								[
+									"4-6",
+									"半径60尺、高60尺{@variantrule 柱状 [效应区域]|XPHB|柱状}区域",
+									"8小时"
+								],
+								[
+									"7+",
+									"半径100尺、高100尺{@variantrule 柱状 [效应区域]|XPHB|柱状}区域",
+									"24小时"
+								]
+							]
+						}
+					]
+				}
+			],
+			"damageInflict": [
+				"radiant"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"miscTags": [
+				"LGT"
+			],
+			"areaTags": [
+				"Y"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Syluné's Viper",
+			"name": "希伦的剧毒灵蛇",
+			"source": "FRHoF",
+			"page": 147,
+			"level": 3,
+			"school": "C",
+			"time": [
+				{
+					"number": 1,
+					"unit": "bonus"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "self"
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一枚蛇牙"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "hour",
+						"amount": 1
+					}
+				}
+			],
+			"entries": [
+				"一条闪烁的灵体毒蛇将于法术的持续时间内环绕在你的身侧。你获得15点{@variantrule 临时生命值|XPHB}；此法术会在你不具有剩余的{@variantrule 临时生命值|XPHB}时提前结束。",
+				"你在此法术生效期间获得以下增益：",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"ENG_name": "Climbing",
+							"name": "攀爬",
+							"type": "item",
+							"entries": [
+								"你获得{@variantrule 攀爬速度|XPHB}（等同于你的{@variantrule 速度|XPHB}）。"
+							]
+						},
+						{
+							"ENG_name": "Venomous Bite",
+							"name": "剧毒啃咬",
+							"type": "item",
+							"entries": [
+								"以一个{@action 魔法|XPHB}动作，你能用这条毒蛇对50尺内的一名生物发动一次远程法术攻击。若命中，则目标受到{@damage 1d6}力场伤害且陷入{@condition 中毒|XPHB}状态直至你的下一回合开始。目标还会在{@condition 中毒|XPHB}期间陷入{@condition 失能|XPHB}状态。"
+							]
+						}
+					]
+				}
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"你使用的法术位每比三环高一环，你从法术获得的{@variantrule 临时生命值|XPHB}就增加5，且剧毒啃咬的伤害也增加{@scaledamage 1d6|3-9|1d6}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"conditionInflict": [
+				"失能",
+				"中毒"
+			],
+			"spellAttack": [
+				"R"
+			],
+			"miscTags": [
+				"THP",
+				"UA"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Wardaway",
+			"name": "制敌术",
+			"source": "FRHoF",
+			"page": 147,
+			"level": 1,
+			"school": "A",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 60
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "一个黏土做的小手塑像"
+			},
+			"duration": [
+				{
+					"type": "instant"
+				}
+			],
+			"entries": [
+				"你向施法距离内的一名生物掷出一片令其晕眩的魔法力场。目标进行一次体质豁免（构装和亡灵自动豁免成功）。",
+				"豁免失败则目标受{@damage 2d4}力场伤害，其{@variantrule 速度|XPHB}减半至你的下一回合开始，且目标在其下一回合中仅可以执行一个动作或一个{@variantrule 附赠动作|XPHB}（但不能同时执行二者）。豁免成功则仅受半伤。"
+			],
+			"entriesHigherLevel": [
+				{
+					"ENG_name": "Using a Higher-Level Spell Slot",
+					"name": "升环施法",
+					"type": "entries",
+					"entries": [
+						"你使用的法术位每比一环高一环，法术的伤害就增加{@scaledamage 2d4|1-9|2d4}。"
+					]
+				}
+			],
+			"damageInflict": [
+				"force"
+			],
+			"savingThrow": [
+				"constitution"
+			],
+			"areaTags": [
+				"ST"
+			],
+			"translator": "不全书"
+		}
+	]
+}

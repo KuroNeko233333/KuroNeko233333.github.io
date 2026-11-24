@@ -1,0 +1,141 @@
+{
+	"monsterFluff": [
+		{
+			"ENG_name": "Dankwood Duergar",
+			"name": "阴林灰矮人",
+			"source": "MGELFT",
+			"entries": [
+				"阴林（Darkwood）灰矮人住在地下的洞穴里，不断地寻找宝藏和发现魔法，并声称自己所有。和他们的矮人亲戚一样，阴林的灰矮人也是手工艺大师，但他们对自己的作品似乎从来都不满意。",
+				"有人说，他们不断的撅嘴让他们拥有了在短时间内体型和力量翻倍的魔法能力。这就是在大发脾气！"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MGELFT/Dankwood Duergar.webp"
+					},
+					"credit": "Emi Tanji",
+					"expectsLightBackground": true,
+					"width": 539,
+					"height": 249
+				}
+			]
+		},
+		{
+			"ENG_name": "Dankwood Grung",
+			"name": "阴林格龙蛙人",
+			"source": "MGELFT",
+			"entries": [
+				"阴暗森林的格朗族有多种颜色，并且在他们的社群中扮演不同的角色：",
+				{
+					"type": "list",
+					"items": [
+						"绿色：战士、猎人和工人",
+						"蓝色：工匠和厨师",
+						"紫色：领袖和指挥官",
+						"红色：学者和魔法使用者",
+						"橙色：超级精英战士",
+						"黄金：大老板"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MGELFT/Dankwood Grung.webp"
+					},
+					"credit": "Emi Tanji",
+					"expectsLightBackground": true,
+					"width": 822,
+					"height": 656
+				}
+			]
+		},
+		{
+			"ENG_name": "King Robbit the Slimy",
+			"name": "黏黏国王罗比特",
+			"source": "MGELFT",
+			"entries": [
+				"罗比特国王有一只小蜗牛，他非常喜欢它。 如果你把蜗牛最喜欢的零食或玩具带给它，罗比特国王会愿意帮忙。"
+			]
+		},
+		{
+			"ENG_name": "Sludge Hag",
+			"name": "泥鬼婆",
+			"source": "MGELFT",
+			"entries": [
+				"在看到泥鬼婆之前，你早就能闻到她的气味。 只要有泥鬼婆在，就会有一股超级臭的味道，就像臭鸡蛋混合着老花露水的超级臭味。 泥鬼婆还会在她们栖息的地方留下油乎乎、黑糊糊的痕迹，靠近的小动物身上会沾上油乎乎的粘液 ，需要其他生物的帮助才能洗干净。",
+				"有传言说，泥鬼婆曾经是纯洁的妖精，因为虐待环境而被黏糊糊的淤泥包裹于其中。 另一个传言则说，泥鬼婆的皮肤非常瘙痒 ，而黏糊糊的东西能让她们感到放松。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MGELFT/Sludge Hag.webp"
+					},
+					"credit": "Emi Tanji",
+					"expectsLightBackground": true,
+					"width": 456,
+					"height": 288
+				}
+			]
+		},
+		{
+			"ENG_name": "Spiderfrog",
+			"name": "蜘蛙",
+			"source": "MGELFT",
+			"entries": [
+				"蜘蛙是阴林独有的，可能是也可能不是由古怪的地精法师杜恩瓦格 Doonwaggle创造的。 无论如何，它们高亢的吱吱的声音表明，尽管它们尽管难以捕捉，但它们的数量却非常庞大。",
+				"如果您有幸遇到一枚被遗弃的蜘蛙卵，善意地饲养它将会给你带来最有帮助的家庭伴侣。 蜘蛙善于除害，晚上它们会整齐的织网，因为它们更喜欢在多汁的大树叶的庇护下睡觉。"
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MGELFT/Spiderfrog.webp"
+					},
+					"credit": "Emi Tanji",
+					"expectsLightBackground": true,
+					"width": 273,
+					"height": 243
+				}
+			]
+		},
+		{
+			"ENG_name": "Yeti Tyke",
+			"name": "雪怪幼崽",
+			"source": "MGELFT",
+			"entries": [
+				"这个雪怪家族通常不会冒险去阴林，它们的家在北方冰天雪地的雪山上，那里空气凉爽，它们蓬松的白色绒毛是完美的伪装 。",
+				"一只与家人失散的雪怪幼崽害怕、饥饿，正在寻找一张友好的面孔。 它响亮悲伤的嚎叫声能够找到它目前藏身之处。",
+				"要想把受惊的雪怪幼崽哄出来，你可以尝试 以下方法：",
+				{
+					"type": "list",
+					"items": [
+						"雪怪的嗅觉非常灵敏，一块臭烘烘的小吃可能会起到作用！",
+						"你们可能语言不通，但一些雪怪的嚎叫声和雪怪的手势一定会表明你没有恶意。 （确保你要展示一下怎么做！）。",
+						"这只雪怪幼崽想念它的家人，有没有办法把自己伪装成失散多年的雪怪亲戚？"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/MGELFT/Yeti Tyke.webp"
+					},
+					"credit": "Emi Tanji",
+					"expectsLightBackground": true,
+					"width": 370,
+					"height": 418
+				}
+			]
+		}
+	]
+}

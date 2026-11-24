@@ -1,0 +1,43 @@
+/* Native spell nodes, shared by full details and compact hover previews. */
+html:root .bk-spell { color: var(--v3-ink); background-color: var(--v3-card); }
+html:root .bk-spell-info { container-type: inline-size; }
+html:root .bk-spell-head { display: grid; grid-template-columns: 52px minmax(0, 1fr) auto; gap: 10px; align-items: center; width: 100%; }
+html:root .bk-spell-name { min-width: 0; }
+html:root .bk-spell .ve-stats__h-name { font-family: var(--bk-heading-font) !important; font-weight: 900 !important; color: var(--bk-head); }
+html:root .bk-spell .ve-stats__eh-name { font-family: Georgia, serif !important; font-style: italic; font-weight: 400 !important; color: var(--v3-ink2); }
+html:root .bk-sigil { display: grid; place-items: center; width: 52px; height: 52px; border: 1.5px solid var(--bk-gold); border-radius: 50%; color: var(--bk-head); background: radial-gradient(circle at 50% 40%, color-mix(in srgb, var(--bk-gold) 18%, transparent), transparent 70%), radial-gradient(closest-side, var(--bk-glow), transparent); }
+html:root .bk-sigil svg { width: 28px; height: 28px; }
+html:root .bk-spell-type { display: flex; align-items: center; gap: 6px; color: var(--v3-ink2); font-size: 13px; font-weight: 400; line-height: 20px; }
+html:root .bk-spell-type > i { font-style: normal; }
+html:root .bk-spell-tag { border-radius: 999px; padding: 0 6px; font-size: 12px; font-weight: 700; color: var(--v3-ink2); background: var(--v3-deep); }
+html:root .bk-lvl { text-align: center; padding-inline: 4px; font-variant-numeric: tabular-nums; }
+html:root .bk-lvl b { display: block; color: var(--bk-num); font: 900 24px/1.1 var(--bk-heading-font); }
+html:root .bk-lvl small { display: block; color: var(--v3-ink2); font-family: var(--font); font-size: 11px !important; font-weight: 400; line-height: 1.5; }
+html:root .bk-spell .ve-stats__th-name > .ve-split-v-end { gap: 8px; }
+html:root .bk-spell .stats__wrp-h-source { flex: none; align-self: start; }
+html:root .bk-spell .bk-spell-props-row > td { padding-top: 6px !important; padding-bottom: 4px !important; }
+html:root .bk-spell .bk-spell-cells { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border: 1px solid color-mix(in srgb, var(--bk-gold) 45%, var(--v3-rule)); border-radius: 6px; overflow: hidden; background: var(--v3-card); box-shadow: none; margin-block: 2px; }
+html:root .bk-spell .bk-spell-cell { min-width: 0; padding: 5px 9px; border: 0; border-left: 1px solid var(--v3-rule); font-size: 14px; line-height: 1.5; color: var(--v3-ink); font-weight: 700; }
+html:root .bk-spell .bk-spell-cell:first-child { border-left: 0; }
+html:root .bk-spell .bk-spell-cell > small { display: block; margin: 0; font-size: 11px !important; font-weight: 400; color: var(--v3-ink2); }
+html:root .bk-spell .bk-spell-cell > small b { font-weight: 400; }
+html:root .bk-spell .bk-spell-foot { display: grid; grid-template-columns: 100px minmax(0, 1fr); gap: 6px; }
+html:root .bk-spell .bk-spell-foot > :first-child { font-size: 12px; font-weight: 700; color: var(--v3-ink2); }
+html:root .bk-spell .bk-spell-foot-first { position: relative; margin-top: 8px; padding-top: 8px; }
+html:root .bk-spell .bk-spell-foot-first::before { content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--bk-gold) 12%, var(--bk-gold) 88%, transparent); }
+html:root .bk-spell .bk-spell-foot-first::after { content: ''; position: absolute; top: -3px; left: 50%; width: 6px; height: 6px; border: 1px solid var(--bk-gold); background: var(--v3-card); transform: rotate(45deg); }
+html:root .bk-spell .bk-spell-source { font-size: 12px; color: var(--v3-ink2); }
+html:root .bk-spell .entry-title-inner { font-family: var(--bk-heading-font); font-weight: 900; color: var(--bk-head); }
+html:root .bk-spell .bk-spell-en { font: italic 400 13px Georgia, serif; color: var(--v3-ink2); }
+html:root.ours-l5[data-ours-page="spells"] #listcontainer .list .bk-school { display: inline-flex; align-items: center; gap: 3px; width: 74px; color: var(--v3-ink2) !important; font-size: 12px; }
+html:root .bk-school svg, html:root .bk-school-option svg { flex: none; width: 16px; height: 16px; color: var(--bk-head); }
+html:root .bk-school-option { display: flex; align-items: center; gap: 5px; }
+/* Keep every native preview row on the same inset, including prose and footer. */
+@layer vetools {
+  html:root .ve-hwin table.bk-spell.bk-spell-preview > tbody > tr > :is(th, td) { padding-inline: 12px !important; }
+}
+@container (width < 560px) {
+  html:root .bk-spell .bk-spell-cells { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  html:root .bk-spell .bk-spell-cell:nth-child(3) { border-left: 0; }
+  html:root .bk-spell .bk-spell-cell:nth-child(n+3) { border-top: 1px solid var(--v3-rule); }
+}

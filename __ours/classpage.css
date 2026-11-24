@@ -1,0 +1,125 @@
+/* 职业扉页：CSS 网格重排已有节点；正文和完整属性的原有渲染不动。 */
+html.nt4 .ntc-head.bk-hero {
+  display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 12px;
+  padding: 4px 10px; margin-bottom: 0; border: 1px solid var(--bk-class-border);
+  border-radius: 6px; background: var(--v3-card); box-shadow: var(--bk-shadow); border-bottom-color: var(--bk-class-border) !important;
+}
+html.nt4 .bk-hero::before, html.nt4 .bk-hero::after { display: none; }
+html.nt4 .bk-hero .ntc-head__row {
+  display: grid; grid-template-columns: auto auto minmax(0, 1fr); grid-template-rows: auto auto;
+  gap: 0 8px; min-width: 0; min-height: 0; align-content: start; position: relative; box-sizing: border-box;
+}
+html.nt4 .bk-hero .ntc-title { grid-row: 1; grid-column: 1; font-size: 32px; line-height: 36px; }
+html.nt4 .bk-hero .ntc-title__en { margin-left: 7px; font-size: .55em; }
+html.nt4 .bk-hero .n4-ed { grid-row: 1; grid-column: 2; gap: 4px; }
+html.nt4 .bk-hero .n4-edsw button.on { background: var(--v3-deep); color: var(--bk-head); }
+html.nt4 .bk-hero .ntc-actions { grid-row: 1; grid-column: 3; justify-self: end; margin: 0; }
+html.nt4 .bk-hero .bk-facts { grid-row: 2; grid-column: 1 / -1; flex-wrap: nowrap; gap: 0; align-items: center; min-height: 38px; }
+html.nt4 .bk-facts .n4-fact { min-width: 0; padding: 0 9px; line-height: 18px; white-space: normal; }
+html.nt4 .bk-facts .n4-fact:first-child { padding-left: 0; }
+html.nt4 .bk-facts .n4-fact > i { display: block; margin: 0; font-size: 11px; line-height: 14px; letter-spacing: .08em; color: var(--v3-ink2); }
+html.nt4 .bk-hero .bk-fact-value { display: block; font-size: 14px; font-weight: 700; color: var(--v3-ink); }
+html.nt4 .bk-hero .bk-hit-die .bk-fact-value { font: 900 24px/24px var(--bk-heading-font); color: var(--bk-num); font-variant-numeric: tabular-nums; }
+html.nt4 .bk-facts .n4-more { flex: none; margin-left: auto; padding: 0 4px; }
+html.nt4 .bk-hero .ntc-props { grid-column: 1 / -1; padding-bottom: 0; border: 0; }
+html.nt4 .bk-hero .bk-class-avatar-row { padding-left: 72px; }
+html.nt4 .bk-class-art { position: absolute; margin: 0; box-sizing: border-box; aspect-ratio: var(--bk-art-ratio, 3 / 4); background: radial-gradient(ellipse, var(--bk-portrait-glow), transparent 72%); }
+html.nt4 .bk-class-art img { display: block; width: 100%; height: auto; object-fit: contain; object-position: center; cursor: pointer; }
+html.nt4 .bk-class-art[data-layout="avatar"] { height: 60px; aspect-ratio: 1; border: 1px solid var(--bk-gold); border-radius: 50%; overflow: hidden; }
+html.nt4 .bk-class-art[data-layout="avatar"] img { position: absolute; left: 50%; top: 50%; width: calc(100% * var(--bk-avatar-zoom, 3)); max-width: none; height: auto; object-fit: cover; transform: translate(calc(-1 * var(--bk-avatar-x, 50%)), calc(-1 * var(--bk-avatar-y, 22%))); }
+html.nt4[data-ours-theme="night"] .bk-class-art[data-layout="side"][data-edition="14"] img {
+  mask-image: linear-gradient(to right, transparent, var(--bk-class-mask) 16%, var(--bk-class-mask) 84%, transparent), linear-gradient(to bottom, transparent, var(--bk-class-mask) 10%, var(--bk-class-mask) 90%, transparent);
+  mask-composite: intersect; filter: brightness(.92);
+}
+html.nt4 .bk-class-art:focus-visible { outline: 2px solid var(--bk-gold); outline-offset: 2px; }
+html.nt4 .bk-class-art[data-kind="placeholder"] { border: 1px solid var(--bk-gold); background: repeating-linear-gradient(45deg, transparent 0 16px, var(--bk-die) 16px 17px), var(--v3-card); }
+html.nt4 .bk-class-art[data-kind="placeholder"]::after { content: ""; position: absolute; width: 36px; height: 36px; left: calc(50% - 18px); top: calc(50% - 18px); border: 1px solid var(--bk-gold); box-shadow: inset 0 0 0 8px var(--v3-card), inset 0 0 0 9px var(--bk-gold); transform: rotate(45deg); }
+html.nt4 .bk-subs { margin-top: 6px; gap: 4px 10px; }
+html.nt4 .bk-subs .ntc-h { font-family: var(--bk-heading-font); color: var(--bk-head); }
+html.nt4 .bk-subs .n4-browse { height: 30px; font-family: var(--bk-heading-font); color: var(--bk-head); box-shadow: inset 0 0 0 1px var(--bk-class-border); }
+html.nt4 .bk-subs .n4-browse__n { font: 12px var(--nt-font); }
+html.nt4 .bk-subs .n4-browse:hover, html.nt4 .bk-subs .n4-browse.on { background: var(--v3-deep); }
+html.nt4 .bk-subs .n4-card { border-radius: 6px; background: var(--v3-card); box-shadow: inset 0 0 0 1px var(--bk-class-border); }
+html.nt4 .bk-subs .n4-card.on { background: var(--v3-deep); box-shadow: inset 3px 0 0 var(--bk-gold), inset 0 0 0 1px var(--bk-class-border); }
+html.nt4 .bk-subs .n4-card.on .n4-card__n { color: var(--bk-head); font-weight: 700; }
+html.nt4 .bk-subs .n4-card:hover { background: var(--v3-card); box-shadow: inset 0 0 0 1px var(--bk-gold); }
+html.nt4 .bk-subs .n4-card.on:hover { background: var(--v3-deep); box-shadow: inset 3px 0 0 var(--bk-gold), inset 0 0 0 1px var(--bk-gold); }
+html.nt4 .bk-subs .n4-card__n { font-size: 14px; }
+html.nt4 .ntc:has(.bk-hero) .ntc-sec--table { margin-top: 6px; position: relative; }
+html.nt4 .ntc:has(.bk-hero) #classtable .ve-cls-tbl { width: max-content !important; border-top: 1px solid var(--bk-gold); border-bottom: 1px solid var(--bk-gold); }
+html.nt4 .ntc:has(.bk-hero) #classtable .ve-cls-tbl.bk-full-caster { min-width: 0; }
+html.nt4 .ntc:has(.bk-hero) #classtable .ve-cls-tbl.n4-has-sc { width: fit-content !important; max-width: 100%; }
+html.nt4 .ntc:has(.bk-hero) #classtable .bk-full-caster :is(td,th).ve-cls-tbl__col-generic-center { width: 40px; min-width: 36px; padding-left: 2px; padding-right: 2px; }
+html.nt4 .ntc:has(.bk-hero) #classtable .bk-full-caster :is(td,th).bk-slot-col { box-sizing: border-box; width: 38px; min-width: 38px; max-width: 44px; padding-left: 3px; padding-right: 3px; }
+html.nt4 .ntc:has(.bk-hero) #classtable .ve-cls-tbl th { white-space: nowrap; }
+html.nt4 .ntc:has(.bk-hero) #classtable .ve-cls-tbl > tbody > tr > td { height: 26px; font-variant-numeric: tabular-nums; }
+html.nt4 .ntc:has(.bk-hero) #classtable .ve-cls-tbl > tbody > tr > th { font-size: 11px; font-weight: 700; color: var(--v3-ink2); background: var(--v3-card); padding-top: 0; padding-bottom: 0; border-bottom-color: var(--bk-gold); }
+html.nt4 .ntc:has(.bk-hero) #classtable .ve-cls-tbl > tbody > tr:has(> th.ve-cls-tbl__col-level) > th { height: 24px; border-bottom: 1px solid var(--bk-gold); }
+html.nt4 .ntc:has(.bk-hero) #classtable .ve-cls-tbl th[colspan]:not(.ve-cls-tbl__disp-name):not(.ve-tbl-border) { font-size: 11px; line-height: 16px; padding-top: 0; padding-bottom: 0; color: var(--v3-ink2); }
+html.nt4 .ntc:has(.bk-hero) #classtable .ve-cls-tbl > tbody > tr:nth-child(even) > td { background: var(--bk-row-stripe); }
+html.nt4 .ntc:has(.bk-hero) #classtable .ve-cls-tbl td.ve-cls-tbl__col-level { font: 900 14px var(--bk-heading-font); color: var(--bk-num); }
+html.nt4 .ntc:has(.bk-hero) #classtable a { color: var(--v3-link); text-decoration: none; }
+html.nt4 .ntc:has(.bk-hero) #classtable a:hover { text-decoration: underline; }
+html.nt4 .ntc:has(.bk-hero) #classtable .n4-scf { background: var(--v3-deep); color: var(--bk-head); }
+html.nt4 .ntc:has(.bk-hero) #classtable .n4-scf__of { opacity: 1; color: var(--v3-ink2); border-color: var(--v3-rule); }
+html.nt4 #classtable td:nth-child(3):has(.n4-scfs) { white-space: normal; }
+html.nt4 #classtable { container-type: inline-size; }
+html.nt4 .ntc:has(.bk-hero) .ntc-sec--table:has(.bk-full-caster.n4-has-sc) {
+  max-width: clamp(1016px, calc(100vw - 570px), 1240px);
+}
+html.nt4 #classtable .n4-scfs {
+  /* The feature column gives way first: chips wrap instead of pushing the table past its box. */
+  display: inline;
+}
+html.nt4 #classtable .n4-scf { display: inline-flex; align-items: center; flex: none; vertical-align: middle; }
+.bk-sc-chip-name { min-width: 0; max-width: 20ch; overflow: hidden; overflow-wrap: anywhere; text-overflow: ellipsis; }
+.n4-scf__of { max-width: 14ch; overflow: hidden; text-overflow: ellipsis; }
+.bk-sc-chip-level { flex: none; margin-left: 5px; font-size: 11px; font-weight: 500; color: var(--v3-ink2); white-space: nowrap; }
+html.nt4 .ntc:has(.bk-hero) #classtable .n4-scf.bk-sc-replaced { color: var(--v3-ink2); }
+#subclasstabs .bk-sc-edition { margin-left: 5px; font-size: 11px; line-height: 16px; flex: none; }
+html.nt3 .bk-sc-edition.nt-tag--14 { background: var(--bk-tag-off14-bg); color: var(--bk-tag-off14-ink); }
+.bk-sc-level-tag {
+  display: inline-block; margin-inline-start: .5em; margin-inline-end: auto; padding: 0 5px; border-radius: 4px;
+  color: var(--v3-ink2); background: var(--v3-deep); font: 500 12px/18px var(--nt-font);
+}
+html.nt3 #pagecontent [class*="cls__feature-"][class*="subclass"] { --bk-sc-heading-ink: var(--v3-link); }
+html.nt3 #pagecontent [class*="cls__feature-"][class*="subclass-reprint"] { --bk-sc-heading-ink: var(--v3-k-off14); }
+html.nt3 #pagecontent [class*="cls__feature-"][class*="brew-subclass"] { --bk-sc-heading-ink: var(--v3-k-ours); }
+html.nt3 #pagecontent [class*="cls__feature-"][class*="ua-subclass"] { --bk-sc-heading-ink: var(--v3-k-ua); }
+html.nt3 :is(#pagecontent tr[data-subclass-id], .cls-comp__wrp-features) .ve-rd__h > .entry-title-inner {
+  color: var(--bk-sc-heading-ink, var(--bk-head));
+}
+html.nt3 :is(#pagecontent, .cls-comp__wrp-features) .ve-rd__b:has(> .ve-rd__h > .bk-sc-replaced),
+html.nt3 :is(#pagecontent, .cls-comp__wrp-features) .ve-rd__h:has(> .bk-sc-replaced) > .entry-title-inner { color: var(--v3-ink2); }
+#pagecontent .bk-sc-edition-note {
+  margin: 4px 0 8px; padding-inline-start: 8px; border-inline-start: 1px solid var(--bk-gold);
+  color: var(--v3-ink2); font-size: 16px; line-height: 1.65;
+}
+html.nt4 #pagecontent .n4-flash { animation-duration: .15s; }
+/* Native utility rules use !important inside the vetools layer. */
+@layer vetools {
+ html.nt4 .bk-hero .ntc-actions .ve-btn { padding: 0 5px !important; font-size: 12px !important; color: var(--v3-ink2) !important; }
+ html.nt4 .bk-subs #subclasstabs .ve-btn { height: 30px !important; line-height: 28px !important; border: 1px solid var(--bk-class-border) !important; border-radius: 6px !important; background: var(--v3-card) !important; color: var(--v3-ink) !important; box-shadow: none !important; font-size: 14px !important; transition: border-color .15s; }
+ html.nt4 .bk-subs #subclasstabs .ve-btn > .ve-ml-1 { font-size: 11px !important; color: var(--v3-ink2) !important; opacity: 1 !important; }
+ html.nt4 .bk-subs #subclasstabs .ve-btn[class*="cls__btn-sc--active"] { color: var(--bk-head) !important; background: var(--v3-deep) !important; font-weight: 700 !important; box-shadow: inset 3px 0 0 var(--bk-gold) !important; }
+ html.nt4 .bk-subs #subclasstabs .ve-btn[class*="cls__btn-sc--active"] * { color: inherit !important; }
+ html.nt4 .bk-subs #subclasstabs .ve-btn:hover { border-color: var(--bk-gold) !important; }
+}
+.bk-class-image { box-sizing: border-box; width: 100vw; height: 100vh; max-width: none; max-height: none; margin: 0; padding: 30px; border: 0; background: var(--bk-page-modal-overlay); color: var(--v3-ink); }
+.bk-class-image[open] { display: grid; place-items: center; }
+.bk-class-image::backdrop { background: var(--bk-page-legacy-dialog-overlay); }
+.bk-class-image img { max-width: 94vw; max-height: calc(100vh - 60px); object-fit: contain; border-radius: 6px; }
+.bk-class-image > button { position: absolute; right: 20px; top: 12px; padding: 5px 12px; border: 1px solid var(--bk-gold); border-radius: 6px; background: var(--v3-card); color: var(--v3-ink); cursor: pointer; }
+@media (max-width: 899px) {
+ html.nt4 .bk-hero .ntc-props { grid-row: 3; }
+ html.nt4 .bk-hero .ntc-head__row { grid-template-columns: auto minmax(0,1fr); }
+ html.nt4 .bk-hero .ntc-title { white-space: normal; }
+ html.nt4 .bk-hero .ntc-actions { grid-column: 1 / -1; grid-row: 2; justify-self: start; }
+ html.nt4 .bk-hero .bk-facts { grid-row: 3; flex-wrap: wrap; padding-top: 3px; }
+}
+@media (prefers-reduced-motion: reduce) {
+ html.nt4 :is(.bk-hero, .bk-subs, #classtable, #pagecontent .n4-flash), html.nt4 :is(.bk-hero, .bk-subs, #classtable) * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
+}
+
+/* A "子职特性" level that only another (unselected) subclass uses: hidden by ours.js. */
+#pagecontent tr[data-ours-idle] { display: none; }

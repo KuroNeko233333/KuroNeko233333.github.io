@@ -1,0 +1,1073 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monster": [
+				"VGM"
+			]
+		},
+		"otherSources": {
+			"monster": {
+				"GoS": "LR",
+				"MM": "LR",
+				"VGM": "LR",
+				"MTF": "LR",
+				"TftYP": "LR"
+			}
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Amble",
+			"name": "安布尔",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"龟人"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "LR",
+			"page": 15,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"天生护甲",
+						"{@item 防护戒指}"
+					]
+				}
+			],
+			"hp": {
+				"average": 90,
+				"formula": "12d8 + 36"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 16,
+			"int": 10,
+			"wis": 18,
+			"cha": 14,
+			"save": {
+				"str": "+6",
+				"dex": "+4",
+				"con": "+7",
+				"int": "+4",
+				"wis": "+8",
+				"cha": "+6"
+			},
+			"skill": {
+				"animal handling": "+8",
+				"insight": "+8",
+				"medicine": "+8",
+				"perception": "+8",
+				"survival": "+8"
+			},
+			"passive": 18,
+			"languages": [
+				"水族语",
+				"通用语",
+				"德鲁伊语"
+			],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"安布尔是一位12环法术施法者。他们的法术施法能力是感知（法术豁免难度{@dc 16}，法术攻击命中{@hit 8}）。安布尔准备了以下德鲁伊法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 神导术}",
+								"{@spell 修复术}",
+								"{@spell 操水术|XGE}",
+								"{@spell 橡棍术}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 吸收元素|XGE}",
+								"{@spell 疗伤术}",
+								"{@spell 纠缠术}",
+								"{@spell 动物交谈}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 黑暗视觉}",
+								"{@spell 定身类人}",
+								"{@spell 次等复原术}",
+								"{@spell 月华之光}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 咒唤兽群}",
+								"{@spell 解除魔法}",
+								"{@spell 水下呼吸}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 魅惑怪物|XGE}",
+								"{@spell 行动自如}"
+							]
+						},
+						"5": {
+							"slots": 2,
+							"spells": [
+								"{@spell 高等复原术}",
+								"{@spell 群体疗伤术}"
+							]
+						},
+						"6": {
+							"slots": 1,
+							"spells": [
+								"{@spell 咒唤妖精}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Hearth of Moonlight and Shadow",
+					"name": "月光阴影的炉心",
+					"entries": [
+						"在短休或长休开始时，Amble可以触摸空间中的一个点，一个{@condition 隐形}的，30英尺半径的魔法球体就会出现，以该点为中心。{@quickref 掩护||3||全身掩护}可以阻挡这个球体。",
+						"在球体范围内，Amble及其盟友在敏捷（{@skill 隐匿}）和感知（{@skill 察觉}）检定上获得+5加值，并且球体内的任何明火发出的光亮都不会被外界看到。",
+						"球体在休息结束时消失，或者当Amble离开球体时消失。"
+					]
+				},
+				{
+					"ENG_name": "Hold Breath",
+					"name": "屏息",
+					"entries": [
+						"安布尔可以一次性憋气长达1小时。"
+					]
+				},
+				{
+					"ENG_name": "Balm of the Summer Court (12d6)",
+					"name": "仲夏王庭香膏（12d6）",
+					"entries": [
+						"（作为一个附赠动作）Amble可以选择他们能够看到的120尺范围内的一个生物，并花费他们骰池中最多{@dice 6d6}的骰子。掷出花费的骰子并将它们相加。目标恢复等于总和的生命值。目标还根据花费的每个骰子获得1点临时生命值。Amble在完成长休后恢复所有消耗的骰子。"
+					]
+				},
+				{
+					"ENG_name": "Hidden Paths (4/Day)",
+					"name": "隐秘路径（每日4次）",
+					"entries": [
+						"（作为附赠动作）Amble可以传送至他们能看到的、未被占据的空间，最多60尺。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Change Shape (2/Day)",
+					"name": "变形 (2/日)",
+					"entries": [
+						"Amble 魔法般地变化成挑战等级为1或更少的野兽，并可以保持这种形态长达6小时。Amble的装备与他们的新形态融合。如果Amble死亡或进入{@condition 昏迷}状态，他们将恢复其真实形态。Amble可以在他们的回合上使用附赠动作恢复其真实形态。",
+						"Amble的游戏具体数值被野兽的具体数值所替代，但他们保留自己的阵营、个性以及感知、感知和魅力得分。Amble还保留他们所有的技能和豁免检定熟练度，此外还获得了生物的熟练度。如果生物具有与Amble相同的熟练度，并且在其统计栏中的加值更高，则使用生物的加值代替Amble的。",
+						"当安布尔变形时，他们将获得野兽的生命值和生命骰。当安布尔恢复到他们的正常形态时，他们将回到变形前的生命值数量。然而，如果安布尔因为生命值降至0而恢复原形，任何超出的伤害都会延续到他们的正常形态。",
+						"安布尔不能施放法术，且他们说话或进行任何需要手的动作的能力，仅限于他们野兽形态的能力。然而，变形不会打破安布尔对已经施放的法术的{@status 专注}，也不会阻止他们进行法术的一部分动作。"
+					]
+				},
+				{
+					"ENG_name": "Claws",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}，触及范围5尺，单一目标。{@h}4（{@damage 1d4 + 2}）挥砍伤害。"
+					]
+				},
+				{
+					"ENG_name": "Club",
+					"name": "短棒",
+					"entries": [
+						"{@atk mw} 命中{@hit 6}（使用权杖命中{@hit 8}），触及5尺，单一目标。{@h}5（{@damage 1d6 + 2}）钝击伤害，或使用权杖时8（{@damage 1d8 + 4}）钝击伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"短棒|phb"
+			],
+			"traitTags": [
+				"屏息"
+			],
+			"actionTags": [
+				"变形生物"
+			],
+			"languageTags": [
+				"AQ",
+				"C",
+				"DU"
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"damageTagsSpell": [
+				"R"
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"miscTags": [
+				"AOE",
+				"MLW",
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"魅惑",
+				"麻痹",
+				"束缚"
+			],
+			"savingThrowForcedSpell": [
+				"体质",
+				"力量",
+				"感知"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Fhenimore",
+			"name": "费诺摩尔",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "LR",
+			"page": 20,
+			"_copy": {
+				"ENG_name": "Kraken Priest",
+				"name": "克拉肯祭司",
+				"source": "VGM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "祭司",
+						"with": "费诺摩尔",
+						"flags": "i"
+					},
+					"_": {
+						"mode": "replaceSpells",
+						"daily": {
+							"1e": [
+								{
+									"replace": "{@spell 召雷术}",
+									"with": "{@spell 闪电束}"
+								}
+							]
+						}
+					},
+					"trait": {
+						"mode": "appendArr",
+						"items": {
+							"ENG_name": "Blood Frenzy",
+							"name": "血腥狂怒",
+							"entries": [
+								"费恩莫尔对任何未满生命值的生物进行近战攻击检定时具有优势。"
+							]
+						}
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "克拉肯之声（在短休或长休后充能）",
+						"items": [
+							{
+								"ENG_name": "Multiattack",
+								"name": "多重攻击",
+								"entries": [
+									"Fhenimore可以用她的咬击攻击一次，并使用雷霆之触攻击一次。"
+								]
+							},
+							{
+								"ENG_name": "Bite",
+								"name": "啃咬",
+								"entries": [
+									"{@atk mw} 命中{@hit 7}，触及5尺，单一目标。{@h}8（{@damage 1d10 + 3}）点穿刺伤害。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"str": 16,
+			"languages": [
+				"通用语",
+				"水族语"
+			],
+			"tokenCustom": true,
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"T"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Gar Shatterkeel",
+			"name": "戈尔·碎骨",
+			"type": "humanoid",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "LR",
+			"page": 18,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 144,
+				"formula": "17d8 + 68"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 16,
+			"con": 18,
+			"int": 12,
+			"wis": 20,
+			"cha": 14,
+			"skill": {
+				"nature": "+11",
+				"perception": "+10",
+				"survival": "+10"
+			},
+			"passive": 20,
+			"resist": [
+				"寒冷"
+			],
+			"languages": [
+				"水族语",
+				"通用语"
+			],
+			"cr": "15",
+			"spellcasting": [
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Gar 是一名13级的施法者。他的施法能力是感知（法术豁免难度{@dc 18}，法术攻击命中需要{@hit 10}）。他准备了以下德鲁伊法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 霜噬|XGE}",
+								"{@spell 修复术}",
+								"{@spell 抵抗术}",
+								"{@spell 操水术|XGE}",
+								"{@spell 鸣雷破|XGE}*"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 造水术/枯水术}",
+								"{@spell 魅惑类人}",
+								"{@spell 疗伤术}",
+								"{@spell 雷鸣波}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 黑暗视觉}",
+								"{@spell 定身类人}",
+								"{@spell 镜影术}*",
+								"{@spell 迷踪步}*",
+								"{@spell 行动无踪}",
+								"{@spell 防护毒素}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell 咒唤兽群}",
+								"{@spell 解除魔法}",
+								"{@spell 潮涌|XGE}",
+								"{@spell 水下呼吸}*",
+								"{@spell 水上行走}*"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell 魅惑怪物|XGE}",
+								"{@spell 操控水体}*",
+								"{@spell 支配野兽}",
+								"{@spell 行动自如}*",
+								"{@spell 碧水法球|XGE}"
+							]
+						},
+						"5": {
+							"slots": 2,
+							"spells": [
+								"{@spell 咒唤元素}*",
+								"{@spell 大漩涡|XGE}",
+								"{@spell 探知术}*",
+								"{@spell 树跃术}"
+							]
+						},
+						"6": {
+							"slots": 1,
+							"spells": [
+								"{@spell 医疗术}"
+							]
+						},
+						"7": {
+							"slots": 1,
+							"spells": [
+								"{@spell 位面转移}"
+							]
+						}
+					},
+					"footerEntries": [
+						"*环法术不计入已准备的法术。"
+					],
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"Gar 可以呼吸空气和水。"
+					]
+				},
+				{
+					"ENG_name": "Legendary Resistance (3/Day)",
+					"name": "传奇抗性 (3/日)",
+					"entries": [
+						"如果Gar未能通过豁免检定，他可以选择成功。"
+					]
+				},
+				{
+					"ENG_name": "Water Walk",
+					"name": "水上行走",
+					"entries": [
+						"加尔能够在液态表面上站立和移动，就像它们是坚实的地面一样。"
+					]
+				},
+				{
+					"ENG_name": "Watery Fall",
+					"name": "化水落",
+					"entries": [
+						"当Gar的生命值降至0点时，他的身体崩溃成一滩墨水般的水，迅速散开。除了{@item 波涛}和他的爪子，他所穿戴或携带的任何物品都被留下了。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"加尔进行两次近战攻击，一次用他的爪子，一次用{@item 波涛}。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"{@atk mw} 命中{@hit 8}，触及5尺，单一目标。{@h}10 ({@damage 2d6 + 3})钝击伤害，并且目标{@condition 受擒}（逃脱{@dc 16}）。直到抓住结束，Gar不能使用他的爪子攻击其他生物。"
+					]
+				},
+				{
+					"ENG_name": "Wave",
+					"name": "波涛",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 11}，触及5尺或20/60尺，单一目标。{@h}9（{@damage 1d6 + 6}）点穿刺伤害，或双手使用时10（{@damage 1d8 + 6}）点穿刺伤害。如果Gar用这个武器打出重击，目标将额外承受等同于其生命值最大值一半的暗蚀伤害。"
+					]
+				},
+				{
+					"ENG_name": "Umberlee's Wake {@recharge 5}",
+					"name": "乌姆贝尔的觉醒 {@recharge 5}",
+					"entries": [
+						"力量以150英尺范围内的某一点为中心，向外扩散，形成一个半径60英尺的球形区域，乌姆柏莉的意志影响了所有身处她水域拥抱之中的生物。该区域内的每个生物必须成功通过一次{@dc 18}的体质豁免。豁免失败时，该生物无法使用反应，其速度减半，并且在它的回合内不能进行多于一次的攻击。此外，该生物在它的回合内只能使用一个动作或一个附赠动作，而不能同时使用两者。这些效果持续1分钟。该生物可以在每个回合结束时重复进行豁免检定，若成功通过则效果结束。此效果仅影响淹没在水中或漂浮在水中的目标。加·碎岩与任何为他服务的亡灵免疫此效果。"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"ENG_name": "Move",
+					"name": "移动",
+					"entries": [
+						"Gar 可以移动至其速度值，且不引发借机攻击。"
+					]
+				},
+				{
+					"ENG_name": "Claw",
+					"name": "爪击",
+					"entries": [
+						"加尔用他的爪子进行一次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Wave (Costs 2 Actions)",
+					"name": "波动（消耗2次动作）",
+					"entries": [
+						"加尔使用{@item 波涛}进行一次攻击，具有优势。"
+					]
+				}
+			],
+			"legendaryGroup": {
+				"ENG_name": "Gar Shatterkeel",
+				"name": "戈尔·碎骨",
+				"source": "LR"
+			},
+			"attachedItems": [
+				"波涛|dmg"
+			],
+			"traitTags": [
+				"水陆两栖",
+				"传奇抗性"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"T"
+			],
+			"spellcastingTags": [
+				"CD"
+			],
+			"miscTags": [
+				"AOE",
+				"MW",
+				"RW"
+			],
+			"conditionInflict": [
+				"受擒"
+			],
+			"conditionInflictLegendary": [
+				"束缚"
+			],
+			"conditionInflictSpell": [
+				"魅惑",
+				"麻痹",
+				"倒地",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质"
+			],
+			"savingThrowForcedLegendary": [
+				"力量"
+			],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"体质",
+				"敏捷",
+				"力量",
+				"感知"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		},
+		{
+			"ENG_name": "Shoalar Quanderil",
+			"name": "修拉·坎德拉",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "元素裔",
+						"prefix": "饮水"
+					}
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "LR",
+			"page": 23,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				11,
+				{
+					"ac": 14,
+					"condition": "{@spell 法师护甲}时",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d8 + 30"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 12,
+			"dex": 12,
+			"con": 16,
+			"int": 14,
+			"wis": 10,
+			"cha": 18,
+			"skill": {
+				"arcana": "+6",
+				"deception": "+8",
+				"insight": "+4",
+				"persuasion": "+8"
+			},
+			"passive": 10,
+			"resist": [
+				"强酸",
+				"闪电",
+				"雷鸣"
+			],
+			"languages": [
+				"水族语",
+				"通用语"
+			],
+			"cr": "4",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"肖拉的天生施法能力是体质（法术豁免{@dc 14}，法术攻击命中需要{@hit 6}）。他天生能够施放以下法术："
+					],
+					"will": [
+						"{@spell 操水术|XGE}"
+					],
+					"daily": {
+						"1": [
+							"{@spell 造水术/枯水术}"
+						]
+					},
+					"ability": "con"
+				},
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Shoalar是一名7级施法者。他的施法能力是魅力（法术豁免难度{@dc 15}，法术攻击命中需要{@hit 7}）。他知道以下巫师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 酸液飞溅}",
+								"{@spell 颤栗之触}",
+								"{@spell 光亮术}",
+								"{@spell 魔法伎俩}",
+								"{@spell 冷冻射线}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell 易容术}",
+								"{@spell 法师护甲}",
+								"{@spell 护盾术}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell 定身类人}",
+								"{@spell 迷踪步}"
+							]
+						},
+						"3": {
+							"slots": 2,
+							"spells": [
+								"{@spell 闪电束}",
+								"{@spell 潮涌|XGE}"
+							]
+						},
+						"4": {
+							"slots": 1,
+							"spells": [
+								"{@spell 碧水法球|XGE}"
+							]
+						}
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"肖拉尔能呼吸空气和水。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Dagger",
+					"name": "匕首",
+					"entries": [
+						"{@atk mw,rw} 命中{@hit 4}，触及5尺或20/60尺，单一目标。{@h}3（{@damage 1d4 + 1}）点穿刺伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"匕首|phb"
+			],
+			"traitTags": [
+				"水陆两栖"
+			],
+			"languageTags": [
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"P"
+			],
+			"damageTagsSpell": [
+				"A",
+				"B",
+				"C",
+				"L",
+				"N"
+			],
+			"spellcastingTags": [
+				"CS",
+				"I"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"savingThrowForcedSpell": [
+				"敏捷",
+				"力量",
+				"感知"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Whymsee",
+			"name": "Whymsee",
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"人类"
+				]
+			},
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "LR",
+			"page": 20,
+			"_copy": {
+				"ENG_name": "Kraken Priest",
+				"name": "克拉肯祭司",
+				"source": "VGM",
+				"_mod": {
+					"*": {
+						"mode": "replaceTxt",
+						"replace": "祭司",
+						"with": "Whymsee",
+						"flags": "i"
+					},
+					"_": {
+						"mode": "replaceSpells",
+						"daily": {
+							"1e": [
+								{
+									"replace": "{@spell 召雷术}",
+									"with": "{@spell 闪电束}"
+								}
+							]
+						}
+					},
+					"action": {
+						"mode": "replaceArr",
+						"replace": "克拉肯之声（在短休或长休后充能）",
+						"items": [
+							{
+								"ENG_name": "Ink Cloud",
+								"name": "墨汁云",
+								"entries": [
+									"在水下时，Whymsee可以喷出一片半径20尺的墨汁云。云雾会绕过转角扩散，该区域对克拉肯祭司或克拉肯以外的生物来说是{@quickref 视野与光照||2||重度遮蔽}。每个在云雾中结束其回合的非克拉肯祭司或克拉肯的生物必须成功通过一次{@dc 14}的体质豁免检定，豁免失败则受到9（{@damage 2d8}）毒素伤害，豁免成功则承受一半伤害。一股强流可以驱散云雾，否则云雾会在Whymsee的下个回合结束时消失。"
+								]
+							},
+							{
+								"ENG_name": "Shell Defense",
+								"name": "龟壳防御",
+								"entries": [
+									"Whymsee 缩进她的壳中。在她出来之前，她的护甲等级获得 +4 加值，并且在力量和体质豁免检定上拥有优势。在壳中时，Whymsee 处于{@condition 倒地}状态，她的速度变为 0 且不能增加，她在敏捷豁免检定上处于劣势，不能进行反应，并且她唯一能采取的动作是使用一个附赠动作来出现。"
+								]
+							}
+						]
+					}
+				}
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"languages": [
+				"通用语",
+				"水族语"
+			],
+			"tokenCustom": true,
+			"languageTags": [
+				"AQ",
+				"C"
+			],
+			"damageTags": [
+				"I",
+				"T"
+			],
+			"miscTags": [
+				"AOE"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Young Kraken",
+			"name": "青年克拉肯",
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"泰坦"
+				]
+			},
+			"source": "LR",
+			"page": 21,
+			"size": [
+				"H"
+			],
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"天生护甲"
+					]
+				}
+			],
+			"hp": {
+				"average": 207,
+				"formula": "18d12 + 90"
+			},
+			"speed": {
+				"walk": 20,
+				"swim": 50
+			},
+			"str": 24,
+			"dex": 11,
+			"con": 20,
+			"int": 19,
+			"wis": 15,
+			"cha": 17,
+			"save": {
+				"str": "+12",
+				"dex": "+5",
+				"con": "+10",
+				"int": "+9",
+				"wis": "+7"
+			},
+			"senses": [
+				"真实视觉 120 尺"
+			],
+			"passive": 14,
+			"immune": [
+				"闪电",
+				{
+					"immune": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "来自非魔法攻击",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"恐慌",
+				"麻痹"
+			],
+			"languages": [
+				"深渊语",
+				"天界语",
+				"炼狱语",
+				"原初语",
+				"心灵感应 60 尺，但不会说。"
+			],
+			"cr": "14",
+			"trait": [
+				{
+					"ENG_name": "Amphibious",
+					"name": "水陆两栖",
+					"entries": [
+						"克拉肯可以在空气和水中呼吸。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"克拉肯能发动两次触须攻击，每次触须攻击都可以替换为一次抛掷攻击。"
+					]
+				},
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及 5 尺，单一目标。{@h}20（{@damage 3d8 + 7}）点穿刺伤害。",
+						"如果目标是中等大小或更小的生物，并且被克拉肯怪{@condition 受擒}，则该生物被吞噬，抓握结束。在被吞噬时，生物处于{@condition 目盲}和{@condition 束缚}状态，它对克拉肯怪外部的攻击和其他效果有{@quickref 掩护||3||全身掩护}，并且在克拉肯怪的每个回合开始时受到21点（{@damage 6d6}）酸液伤害。同时可以吞噬一个中等大小或两个更小的生物。",
+						"如果克拉肯在单一回合内从其内部的生物受到35点或更多的伤害，则克拉肯必须在该回合结束时成功进行一次{@dc 23}体质豁免检定，否则将吐出所有被吞噬的生物，这些生物会以{@condition 倒地}状态落在克拉肯10尺范围内的空间中。如果克拉肯死亡，被吞噬的生物不再被它{@condition 束缚}，可以使用10尺的移动距离从尸体中逃脱，以{@condition 倒地}状态离开。"
+					]
+				},
+				{
+					"ENG_name": "Tentacle",
+					"name": "触须",
+					"entries": [
+						"{@atk mw} 命中{@hit 12}，触及20尺，单一目标。{@h}17（{@damage 3d6 + 7}）钝击伤害，并且目标{@condition 受擒}（逃脱{@dc 20}）。抓握持续期间，目标{@condition 束缚}。克拉肯怪有十个触手，每个触手都可以抓握单一目标。"
+					]
+				},
+				{
+					"ENG_name": "Fling",
+					"name": "抛掷",
+					"entries": [
+						"一只被克拉肯抓住的中型或更小的物体或处于{@condition 受擒}状态的生物会被抛掷至40英尺内的随机方向并被击倒{@condition 倒地}。如果被抛掷的目标撞击到坚固的表面，目标将受到每抛出10英尺3（{@damage 1d6}）的钝击伤害。如果目标被抛向另一只生物，那只生物必须成功通过一次{@dc 13}敏捷豁免否则受到相同的伤害并被击倒{@condition 倒地}。"
+					]
+				},
+				{
+					"ENG_name": "Lightning Strike",
+					"name": "闪电打击",
+					"entries": [
+						"克拉肯通过魔法创造了一道闪电，可以打击它能看到的90尺内的任何目标。目标必须进行一次敏捷豁免，难度为{@dc 18}，如果失败，则受到22点（{@damage 4d10}）的闪电伤害，如果成功，则只受到一半的伤害。"
+					]
+				}
+			],
+			"traitTags": [
+				"水陆两栖"
+			],
+			"senseTags": [
+				"U"
+			],
+			"actionTags": [
+				"多重攻击",
+				"吞咽",
+				"触须"
+			],
+			"languageTags": [
+				"AB",
+				"CE",
+				"CS",
+				"I",
+				"P",
+				"TP"
+			],
+			"damageTags": [
+				"A",
+				"B",
+				"L",
+				"P"
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"目盲",
+				"受擒",
+				"倒地",
+				"束缚"
+			],
+			"savingThrowForced": [
+				"体质",
+				"敏捷"
+			],
+			"hasToken": true,
+			"hasFluffImages": true
+		}
+	]
+}

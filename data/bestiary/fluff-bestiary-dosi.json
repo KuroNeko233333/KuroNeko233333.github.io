@@ -1,0 +1,168 @@
+{
+	"_meta": {
+		"dependencies": {
+			"monsterFluff": [
+				"MM"
+			]
+		}
+	},
+	"monsterFluff": [
+		{
+			"ENG_name": "Fume Drake",
+			"name": "烟雾龙兽",
+			"source": "DoSI",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"烟雾龙兽是从死去巨龙的绵长魔法能量中诞生的调皮生物，他们外形像由绿色烟雾构成的无腿小龙。以使其他生物感到痛苦和困惑为乐。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Kobold Tinkerer",
+			"name": "狗头人修补匠",
+			"source": "DoSI",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"狗头人是一种卵生类人生物，通常为巨龙服务。身体孱弱的它们不得不团结一致以保持力量。",
+						"少数狗头人天生有皮翼且可以飞行，被视为是龙神的赠礼。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Merrow Extortionist",
+			"name": "迈罗人鱼敲诈者",
+			"source": "DoSI",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/DoSI/Merrow Extortionist.webp"
+					},
+					"credit": "Linda Lithén",
+					"width": 1700,
+					"height": 1404
+				}
+			]
+		},
+		{
+			"ENG_name": "Runara",
+			"name": "茹娜拉",
+			"source": "DoSI",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"尽管她伪装为人类且致力于和平，但这位巨龙之憩的领袖实际实是一条成年青铜龙\u2014\u2014是可怕的敌人或可靠的盟友。她的能力远超这里所展现的。"
+					]
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"ENG_name": "Bronze Dragons",
+							"name": "青铜龙",
+							"type": "entries",
+							"entries": [
+								"许多青铜龙都是友好的沿海居民，喜欢观看忙碌的船只与水手们。"
+							]
+						}
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/DoSI/Runara.webp"
+					},
+					"credit": "David Auden Nash",
+					"width": 1700,
+					"height": 1176
+				}
+			]
+		},
+		{
+			"ENG_name": "Sinensa",
+			"name": "塞娜萨",
+			"source": "DoSI",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"蕈人是幽暗地域中拥有智能，又能够行走的真菌生物。蕈人们一生追寻生命启迪而反对暴力，它们愿意与人和平共处。成年的蕈人群居生活工作，并进行一种被称为\"念和\"的集体冥想。在这种冥想中，它们寻求通过共同的幻觉超脱世俗。",
+						"像赛娜萨这样的蕈人王会使用至幻孢子来帮蕈人们念和。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Spore Servant Octopus",
+			"name": "孢子仆从八爪鱼",
+			"source": "DoSI",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"孢子仆从是由蕈人首领的魔法孢子复活的死亡生物。在陷入目前的昏迷状态之前，海藻洞窟的蕈人王最后做的事便是用一只死去的巨型章鱼创造了一个孢子奴仆，在蕈人王昏迷期间保护洞窟。与活的章鱼不同，这个守卫只能对其触手进行基本控制：不会用触手缠绕入侵者将其束缚，只会简单地抽打他们。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/DoSI/Spore Servant Octopus.webp"
+					},
+					"credit": "Linda Lithén",
+					"width": 1700,
+					"height": 974
+				}
+			]
+		},
+		{
+			"ENG_name": "Tarak",
+			"name": "塔拉克",
+			"source": "DoSI",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"在来到巨龙休息处前，塔拉克曾是一名罪犯。现在他全身心投入了研习草药和医疗之中。他通常不带武器，但他的房间里有几把隐藏的匕首（在巨龙之憩的区域 A1）"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Varnoth",
+			"name": "瓦努斯",
+			"source": "DoSI",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"一名强壮的佣兵团团长，瓦努斯温德是一名老练的专业武者。她通常不带武器，但是她把旧的佩剑放在的房间（巨龙之憩区域 A1）的枕头底下。"
+					]
+				}
+			]
+		},
+		{
+			"ENG_name": "Violet Fungus",
+			"name": "紫腐菌",
+			"source": "DoSI",
+			"_copy": {
+				"ENG_name": "Violet Fungus",
+				"name": "紫腐菌",
+				"source": "MM"
+			}
+		}
+	]
+}

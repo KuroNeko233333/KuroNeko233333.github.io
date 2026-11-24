@@ -1,0 +1,705 @@
+/* 精装典籍主题变量：按用途分组；同一日夜色对只保留一个变量。 */
+/* Quick-filter ink and paper switch together: colour crossfades dip below AA. */
+html.nt3.ours-l5 .l5-chip { transition: border-color 120ms ease, box-shadow 120ms ease; }
+@media (prefers-reduced-motion: reduce) { html.nt3.ours-l5 .l5-chip { transition: none; } }
+:root { --bk-portrait-glow: color-mix(in srgb, var(--bk-gold) 22%, transparent); }
+:root {
+  --bk-img-base: var(--v3-deep);
+  --bk-img-light: color-mix(in srgb, var(--bk-gold) 28%, transparent);
+  --bk-img-line: color-mix(in srgb, var(--bk-gold) 29%, var(--bk-img-base));
+}
+:root { --bk-class-border: color-mix(in srgb, var(--v3-rule) 65%, var(--bk-gold)); --bk-class-mask: #000; }
+:root[data-ours-theme="night"] { --bk-portrait-glow: var(--bk-glow); }
+/* 怪物详情末尾也会露出遭遇构筑按钮，使用既有暖色按钮变量。 */
+@layer vetools {
+ html.nt3[data-ours-page="bestiary"] .ve-btn-success { color: var(--v3-paper) !important; background-color: var(--bk-head) !important; border-color: var(--bk-head) !important; }
+}
+/* 表格：第二行的暖色条纹，随规范底色切换。 */
+:root { --bk-row-stripe: color-mix(in srgb, var(--v3-deep) 70%, var(--v3-card)); }
+/* 按钮：夜间主按钮悬停，保持金色并稍微提亮。 */
+:root[data-ours-theme="night"] { --bk-btn-primary-hover-bg: color-mix(in srgb, var(--bk-gold) 88%, var(--v3-ink)); }
+/* 精装书架与纸面。布面封皮的实物色不随主题改变。 */
+html.ours-bk {
+  --bk-shelf-top: #c59b67; --bk-shelf-face: #a27146; --bk-shelf-edge: #74462d;
+  --bk-shelf-shadow: #60391e45;
+  --bk-cover-wine: #822d26; --bk-cover-blue: #244c70; --bk-cover-green: #315d49;
+  --bk-cover-violet: #523666; --bk-cover-brown: #71503a;
+  --bk-cover-ink: #fff6e6; --bk-cover-gold: #e0be80; --bk-cover-dark: #160d08;
+  --bk-cover-spine: #170b0755; --bk-cover-shine: #fff6e64d;
+  --bk-readaloud-bg: #fff4d9;
+}
+html.ours-bk[data-ours-theme="night"] {
+  --bk-shelf-top: #795239; --bk-shelf-face: #503321; --bk-shelf-edge: #321e14;
+  --bk-shelf-shadow: #0b0604a6;
+  --bk-readaloud-bg: #3a2b20;
+}
+html.ours-bk[data-ours-theme="night"] #pagecontent.bk5-doc { --bk-page-book-inset-bg: #35261c; }
+/* 页面底色、遮罩与书页：日间 */
+:root {
+  --bk-page-scroll-thumb: #d9c8a0;
+  --bk-page-scroll-thumb-hover: #c4b081;
+  --bk-page-modal-overlay: rgba(50, 25, 5, .28);
+  --bk-page-tile-hover-bg: #fff6e2;
+  --bk-page-feature-flash: rgba(201, 165, 90, .38);
+  --bk-page-upcast-bg: rgba(130, 60, 0, .05);
+  --bk-page-book-inset-bg: #f3e6cc;
+  --bk-page-legacy-menu-bg: #241b14;
+  --bk-page-legacy-input-bg: rgba(255, 255, 255, .6);
+  --bk-page-legacy-dialog-overlay: rgba(15, 8, 20, .55);
+  --bk-page-rating-gradient-start: #241a30;
+  --bk-page-rating-gradient-end: #3a2346;
+  --bk-page-rating-track-bg: rgba(127, 127, 127, .2);
+  --bk-page-rating-comment-bg: rgba(217, 164, 65, .1);
+  --bk-page-hall-hero-glow: rgba(255, 200, 120, .25);
+  --bk-page-hall-hero-start: #1d1229;
+  --bk-page-hall-hero-middle: #3d1f4a;
+  --bk-page-hall-hero-end: #6b2f4d;
+  --bk-page-hall-aura: rgba(246, 210, 122, .35);
+  --bk-page-hall-book-count-bg: rgba(0, 0, 0, .28);
+  --bk-page-hall-tile-glow: rgba(217, 164, 65, .25);
+  --bk-page-class-group-heading-bg: rgba(217, 164, 65, .22);
+  --bk-page-loading-overlay: rgba(10, 8, 6, .45);
+  --bk-page-loading-card-bg: #1d1813;
+}
+/* 页面底色、遮罩与书页：夜间 */
+:root[data-ours-theme="night"] {
+  --bk-page-scroll-thumb: var(--v3-panel);
+  --bk-page-scroll-thumb-hover: var(--v3-panel);
+  --bk-page-modal-overlay: color-mix(in srgb, var(--bk-head) 28%, transparent);
+  --bk-page-tile-hover-bg: var(--v3-card);
+  --bk-page-feature-flash: color-mix(in srgb, var(--v3-ink) 38%, transparent);
+  --bk-page-upcast-bg: color-mix(in srgb, var(--bk-head) 5%, transparent);
+  --bk-page-book-inset-bg: var(--v3-card);
+  --bk-page-legacy-menu-bg: var(--v3-deep);
+  --bk-page-legacy-input-bg: color-mix(in srgb, var(--v3-ink) 60%, transparent);
+  --bk-page-legacy-dialog-overlay: color-mix(in srgb, var(--bk-head) 55%, transparent);
+  --bk-page-rating-gradient-start: var(--v3-deep);
+  --bk-page-rating-gradient-end: var(--v3-deep);
+  --bk-page-rating-track-bg: color-mix(in srgb, var(--bk-head) 20%, transparent);
+  --bk-page-rating-comment-bg: color-mix(in srgb, var(--v3-ink) 10%, transparent);
+  --bk-page-hall-hero-glow: color-mix(in srgb, var(--v3-ink) 25%, transparent);
+  --bk-page-hall-hero-start: var(--v3-deep);
+  --bk-page-hall-hero-middle: var(--v3-deep);
+  --bk-page-hall-hero-end: var(--v3-deep);
+  --bk-page-hall-aura: color-mix(in srgb, var(--v3-ink) 35%, transparent);
+  --bk-page-hall-book-count-bg: color-mix(in srgb, var(--bk-head) 28%, transparent);
+  --bk-page-hall-tile-glow: color-mix(in srgb, var(--v3-ink) 25%, transparent);
+  --bk-page-class-group-heading-bg: color-mix(in srgb, var(--v3-ink) 22%, transparent);
+  --bk-page-loading-overlay: color-mix(in srgb, var(--bk-head) 45%, transparent);
+  --bk-page-loading-card-bg: var(--v3-deep);
+}
+/* 文字与强调：日间 */
+:root {
+  --bk-text-selection-bg: rgba(201, 165, 90, .4);
+  --bk-text-link-hover: #1d4f7c;
+  --bk-text-table-heading: #4b3a26;
+  --bk-text-class-english: #b59a72;
+  --bk-text-on-accent: #fff;
+  --bk-text-title-source: #c2b497;
+  --bk-text-on-heading-fill: #fff6e0;
+  --bk-text-book-chip-count: #f3d7c7;
+  --bk-text-book-cover: #fff6e6;
+  --bk-text-legacy-bar: #f3e9d2;
+  --bk-text-legacy-brand: #f6dfa4;
+  --bk-text-legacy-control: #e8dcc0;
+  --bk-text-legacy-dialog: #f1e3c4;
+  --bk-text-legacy-gold-emphasis: #f6d27a;
+  --bk-text-gem-empty: #555;
+  --bk-text-rating-panel: #efe5cf;
+  --bk-text-legacy-hall: #f6ecd6;
+  --bk-text-hall-title: #fff3d0;
+  --bk-text-hall-tile-icon: #7d4466;
+  --bk-text-hall-tile-icon-night-fallback: #e5a8c8;
+  --bk-text-class-group-heading: #8a5a1c;
+  --bk-text-class-group-secondary: #888;
+  --bk-text-edition-count: #4a90c8;
+}
+/* 文字与强调：夜间 */
+:root[data-ours-theme="night"] {
+  --bk-text-selection-bg: color-mix(in srgb, var(--v3-ink) 40%, transparent);
+  --bk-text-link-hover: var(--v3-ink2);
+  --bk-text-table-heading: var(--v3-ink2);
+  --bk-text-class-english: var(--v3-ink2);
+  --bk-text-on-accent: var(--v3-ink2);
+  --bk-text-title-source: var(--v3-ink2);
+  --bk-text-on-heading-fill: var(--v3-ink2);
+  --bk-text-book-chip-count: var(--v3-ink2);
+  --bk-text-book-cover: var(--v3-ink2);
+  --bk-text-legacy-bar: var(--v3-ink2);
+  --bk-text-legacy-brand: var(--v3-ink2);
+  --bk-text-legacy-control: var(--v3-ink2);
+  --bk-text-legacy-dialog: var(--v3-ink2);
+  --bk-text-legacy-gold-emphasis: var(--v3-ink2);
+  --bk-text-gem-empty: var(--v3-ink2);
+  --bk-text-rating-panel: var(--v3-ink2);
+  --bk-text-legacy-hall: var(--v3-ink2);
+  --bk-text-hall-title: var(--v3-ink2);
+  --bk-text-hall-tile-icon: var(--v3-ink2);
+  --bk-text-hall-tile-icon-night-fallback: var(--v3-ink2);
+  --bk-text-class-group-heading: var(--v3-ink2);
+  --bk-text-class-group-secondary: var(--v3-ink2);
+  --bk-text-edition-count: var(--v3-ink2);
+}
+/* 顶栏与状态：日间 */
+:root {
+  --bk-nav-legacy-gradient-start: #1b1626;
+  --bk-nav-legacy-gradient-end: #4a2b55;
+  --bk-nav-legacy-hover: rgba(255, 255, 255, .12);
+  --bk-nav-legacy-header-start: #2b1836;
+  --bk-nav-legacy-header-middle: #5a2f5f;
+  --bk-nav-legacy-header-end: #7d4466;
+  --bk-nav-legacy-pressed-bg: rgba(0, 0, 0, .35);
+  --bk-nav-status-online-bg: #49d17a;
+  --bk-nav-status-offline-bg: #e0a93b;
+  --bk-nav-status-busy-bg: #59a6ff;
+  --bk-nav-brand-ink: #fbe9c3;
+  --bk-nav-hover: rgba(255, 236, 200, .1);
+  --bk-nav-brand-mark: #e5bd62;
+  --bk-nav-tab-hover: rgba(255, 236, 200, .12);
+  --bk-nav-source-selected-bg: #e5bd62;
+  --bk-nav-close-hover: rgba(255, 236, 200, .18);
+  --bk-nav-control-bg: rgba(20, 4, 0, .34);
+  --bk-nav-source-selected-ink: #3a1a08;
+  --bk-nav-edition-selected-bg: #bcd6ee;
+  --bk-nav-edition-selected-ink: #12324f;
+  --bk-nav-menu-hover: rgba(255, 236, 200, .14);
+  --bk-nav-status-ready-bg: #5d9a6c;
+}
+/* 顶栏与状态：夜间 */
+:root[data-ours-theme="night"] {
+  --bk-nav-legacy-gradient-start: var(--v3-deep);
+  --bk-nav-legacy-gradient-end: var(--v3-deep);
+  --bk-nav-legacy-hover: color-mix(in srgb, var(--v3-ink) 12%, transparent);
+  --bk-nav-legacy-header-start: var(--v3-deep);
+  --bk-nav-legacy-header-middle: var(--v3-deep);
+  --bk-nav-legacy-header-end: var(--v3-deep);
+  --bk-nav-legacy-pressed-bg: color-mix(in srgb, var(--bk-head) 35%, transparent);
+  --bk-nav-status-online-bg: var(--v3-panel);
+  --bk-nav-status-offline-bg: var(--v3-panel);
+  --bk-nav-status-busy-bg: var(--v3-deep);
+  --bk-nav-brand-ink: var(--v3-ink2);
+  --bk-nav-hover: color-mix(in srgb, var(--v3-ink) 10%, transparent);
+  --bk-nav-brand-mark: var(--v3-ink2);
+  --bk-nav-tab-hover: color-mix(in srgb, var(--v3-ink) 12%, transparent);
+  --bk-nav-source-selected-bg: var(--v3-panel);
+  --bk-nav-close-hover: color-mix(in srgb, var(--v3-ink) 18%, transparent);
+  --bk-nav-control-bg: color-mix(in srgb, var(--bk-head) 34%, transparent);
+  --bk-nav-source-selected-ink: var(--v3-ink2);
+  --bk-nav-edition-selected-bg: var(--v3-panel);
+  --bk-nav-edition-selected-ink: var(--v3-ink2);
+  --bk-nav-menu-hover: color-mix(in srgb, var(--v3-ink) 14%, transparent);
+  --bk-nav-status-ready-bg: var(--v3-deep);
+}
+/* 来源标签：日间 */
+:root {
+  --bk-tag-off24-bg: #d6e5f2;
+  --bk-tag-source-dark-mix: #1c1208;
+  --bk-tag-off24-ink: #1f4f7d;
+  --bk-tag-off14-bg: rgba(110, 86, 40, .14);
+  --bk-tag-off14-ink: #5d5140;
+}
+/* 来源标签：夜间 */
+:root[data-ours-theme="night"] {
+  --bk-tag-off24-bg: var(--v3-card);
+  --bk-tag-source-dark-mix: var(--v3-ink2);
+  --bk-tag-off24-ink: var(--v3-ink2);
+  --bk-tag-off14-bg: color-mix(in srgb, var(--bk-head) 14%, transparent);
+  --bk-tag-off14-ink: var(--v3-ink2);
+}
+/* 表格与列表：日间 */
+:root {
+  --bk-table-list-hover: rgba(130, 32, 0, .055);
+  --bk-table-row-stripe: rgba(201, 165, 90, .1);
+  --bk-table-class-row-stripe: rgba(201, 165, 90, .11);
+  --bk-table-class-row-hover: rgba(42, 106, 163, .1);
+  --bk-table-list-paper-hover: rgba(255, 250, 240, .7);
+  --bk-table-legacy-header-wash: rgba(217, 164, 65, .15);
+  --bk-table-rating-divider: rgba(255, 255, 255, .07);
+}
+/* 表格与列表：夜间 */
+:root[data-ours-theme="night"] {
+  --bk-table-list-hover: color-mix(in srgb, var(--bk-head) 5.5%, transparent);
+  --bk-table-row-stripe: color-mix(in srgb, var(--v3-ink) 10%, transparent);
+  --bk-table-class-row-stripe: color-mix(in srgb, var(--v3-ink) 11%, transparent);
+  --bk-table-class-row-hover: color-mix(in srgb, var(--bk-head) 10%, transparent);
+  --bk-table-list-paper-hover: color-mix(in srgb, var(--v3-ink) 70%, transparent);
+  --bk-table-legacy-header-wash: color-mix(in srgb, var(--v3-ink) 15%, transparent);
+  --bk-table-rating-divider: color-mix(in srgb, var(--v3-ink) 7%, transparent);
+}
+/* 按钮与切换控件：日间 */
+:root {
+  --bk-btn-hover-wash: rgba(130, 32, 0, .06);
+  --bk-btn-selected-wash: rgba(130, 32, 0, .08);
+  --bk-btn-dice-hover-bg: rgba(130, 32, 0, .16);
+  --bk-btn-default-hover-bg: #f6ecd6;
+  --bk-btn-navigation-hover: rgba(130, 32, 0, .07);
+  --bk-btn-subclass-bg: #f1e5c8;
+  --bk-btn-subclass-hover-bg: #ead9b2;
+  --bk-btn-subclass-stale-bg: #5d8a74;
+  --bk-btn-class-tabs-bg: rgba(130, 60, 0, .08);
+  --bk-btn-class-edition-track: rgba(130, 60, 0, .09);
+  --bk-btn-edition-old-bg: rgba(110, 86, 40, .2);
+  --bk-btn-edition-old-ink: #4f4433;
+  --bk-btn-card-hover-bg: #fff;
+  --bk-btn-subclass-add-hover: rgba(130, 32, 0, .09);
+  --bk-btn-keyboard-hint-bg: rgba(130, 60, 0, .07);
+  --bk-btn-legacy-gold-gradient: #f6d27a;
+  --bk-btn-legacy-primary-ink: #3a2410;
+  --bk-btn-legacy-recessed-bg: rgba(0, 0, 0, .25);
+  --bk-btn-legacy-idle-bg: rgba(127, 127, 127, .08);
+  --bk-btn-legacy-hover-bg: rgba(217, 164, 65, .18);
+  --bk-btn-rating-hover-bg: rgba(255, 255, 255, .14);
+  --bk-btn-legacy-edition-gradient-start: #9fd3ff;
+  --bk-btn-legacy-edition-gradient-end: #4a90c8;
+  --bk-btn-legacy-edition-ink: #0f2233;
+}
+/* 按钮与切换控件：夜间 */
+:root[data-ours-theme="night"] {
+  --bk-btn-hover-wash: color-mix(in srgb, var(--bk-head) 6%, transparent);
+  --bk-btn-selected-wash: color-mix(in srgb, var(--bk-head) 8%, transparent);
+  --bk-btn-dice-hover-bg: color-mix(in srgb, var(--bk-head) 16%, transparent);
+  --bk-btn-default-hover-bg: var(--v3-card);
+  --bk-btn-navigation-hover: color-mix(in srgb, var(--bk-head) 7%, transparent);
+  --bk-btn-subclass-bg: var(--v3-card);
+  --bk-btn-subclass-hover-bg: var(--v3-panel);
+  --bk-btn-subclass-stale-bg: var(--v3-deep);
+  --bk-btn-class-tabs-bg: color-mix(in srgb, var(--bk-head) 8%, transparent);
+  --bk-btn-class-edition-track: color-mix(in srgb, var(--bk-head) 9%, transparent);
+  --bk-btn-edition-old-bg: color-mix(in srgb, var(--bk-head) 20%, transparent);
+  --bk-btn-edition-old-ink: var(--v3-ink2);
+  --bk-btn-card-hover-bg: var(--v3-card);
+  --bk-btn-subclass-add-hover: color-mix(in srgb, var(--bk-head) 9%, transparent);
+  --bk-btn-keyboard-hint-bg: color-mix(in srgb, var(--bk-head) 7%, transparent);
+  --bk-btn-legacy-gold-gradient: var(--v3-panel);
+  --bk-btn-legacy-primary-ink: var(--v3-ink2);
+  --bk-btn-legacy-recessed-bg: color-mix(in srgb, var(--bk-head) 25%, transparent);
+  --bk-btn-legacy-idle-bg: color-mix(in srgb, var(--bk-head) 8%, transparent);
+  --bk-btn-legacy-hover-bg: color-mix(in srgb, var(--v3-ink) 18%, transparent);
+  --bk-btn-rating-hover-bg: color-mix(in srgb, var(--v3-ink) 14%, transparent);
+  --bk-btn-legacy-edition-gradient-start: var(--v3-panel);
+  --bk-btn-legacy-edition-gradient-end: var(--v3-deep);
+  --bk-btn-legacy-edition-ink: var(--v3-ink2);
+}
+/* 阴影与高光：日间 */
+:root {
+  --bk-shadow-surface-soft: rgba(70, 40, 10, .08);
+  --bk-shadow-outline-soft: rgba(120, 84, 20, .16);
+  --bk-shadow-surface-medium: rgba(70, 40, 10, .1);
+  --bk-shadow-surface-faint: rgba(70, 40, 10, .07);
+  --bk-shadow-surface-large: rgba(70, 40, 10, .15);
+  --bk-shadow-outline-medium: rgba(120, 84, 20, .18);
+  --bk-shadow-search-large: rgba(50, 25, 5, .3);
+  --bk-shadow-search-soft: rgba(50, 25, 5, .16);
+  --bk-shadow-search-outline: rgba(120, 84, 20, .2);
+  --bk-shadow-button-outline: #d3bf8c;
+  --bk-shadow-search-focus-ring: rgba(42, 106, 163, .2);
+  --bk-shadow-elevation-soft: rgba(70, 40, 10, .08);
+  --bk-shadow-subclass-active: rgba(50, 25, 5, .22);
+  --bk-shadow-tab-active: rgba(70, 40, 10, .1);
+  --bk-shadow-card-outline: #e4d3ae;
+  --bk-shadow-card-rest: rgba(70, 40, 10, .06);
+  --bk-shadow-card-hover: rgba(70, 40, 10, .09);
+  --bk-shadow-menu-large: rgba(60, 30, 10, .16);
+  --bk-shadow-menu-outline: rgba(110, 70, 20, .16);
+  --bk-shadow-book-contact: rgba(60, 30, 10, .18);
+  --bk-shadow-book-raised: rgba(60, 30, 10, .14);
+  --bk-shadow-book-spine: rgba(0, 0, 0, .18);
+  --bk-shadow-book-hover: rgba(60, 30, 10, .2);
+  --bk-shadow-book-cover-frame: rgba(255, 255, 255, .15);
+  --bk-shadow-book-thumbnail: rgba(60, 30, 10, .25);
+  --bk-shadow-legacy-panel: rgba(30, 10, 40, .18);
+  --bk-shadow-legacy-night-panel: rgba(0, 0, 0, .5);
+  --bk-shadow-header-gold-edge: rgba(217, 164, 65, .6);
+  --bk-shadow-text-strong: rgba(0, 0, 0, .35);
+  --bk-shadow-legacy-button-glow: rgba(246, 210, 122, .6);
+  --bk-shadow-status-online-glow: #49d17a;
+  --bk-shadow-dialog-large: rgba(0, 0, 0, .45);
+  --bk-shadow-gem-inner-highlight: rgba(255, 255, 255, .35);
+  --bk-shadow-gem-legendary-glow: rgba(255, 138, 0, .7);
+  --bk-shadow-gem-legendary-highlight: rgba(255, 255, 255, .5);
+  --bk-shadow-gem-epic-glow: rgba(163, 53, 238, .5);
+  --bk-shadow-rating-label: rgba(0, 0, 0, .4);
+  --bk-shadow-rating-hover-frame: #999;
+  --bk-shadow-tile-rest: rgba(0, 0, 0, .08);
+  --bk-shadow-tile-hover: rgba(60, 20, 70, .25);
+  --bk-shadow-edition-glow: rgba(120, 190, 255, .55);
+  --bk-shadow-menu-soft: rgba(60, 30, 10, .1);
+}
+/* 阴影与高光：夜间 */
+:root[data-ours-theme="night"] {
+  --bk-shadow-surface-soft: color-mix(in srgb, var(--bk-head) 8%, transparent);
+  --bk-shadow-outline-soft: color-mix(in srgb, var(--bk-head) 16%, transparent);
+  --bk-shadow-surface-medium: color-mix(in srgb, var(--bk-head) 10%, transparent);
+  --bk-shadow-surface-faint: color-mix(in srgb, var(--bk-head) 7%, transparent);
+  --bk-shadow-surface-large: color-mix(in srgb, var(--bk-head) 15%, transparent);
+  --bk-shadow-outline-medium: color-mix(in srgb, var(--bk-head) 18%, transparent);
+  --bk-shadow-search-large: color-mix(in srgb, var(--bk-head) 30%, transparent);
+  --bk-shadow-search-soft: color-mix(in srgb, var(--bk-head) 16%, transparent);
+  --bk-shadow-search-outline: color-mix(in srgb, var(--bk-head) 20%, transparent);
+  --bk-shadow-button-outline: rgba(0,0,0,1);
+  --bk-shadow-search-focus-ring: rgba(0,0,0,0.2);
+  --bk-shadow-elevation-soft: rgba(0,0,0,0.08);
+  --bk-shadow-subclass-active: rgba(0,0,0,0.22);
+  --bk-shadow-tab-active: rgba(0,0,0,0.1);
+  --bk-shadow-card-outline: rgba(0,0,0,1);
+  --bk-shadow-card-rest: rgba(0,0,0,0.06);
+  --bk-shadow-card-hover: rgba(0,0,0,0.09);
+  --bk-shadow-menu-large: rgba(0,0,0,0.16);
+  --bk-shadow-menu-outline: rgba(0,0,0,0.16);
+  --bk-shadow-book-contact: rgba(0,0,0,0.18);
+  --bk-shadow-book-raised: rgba(0,0,0,0.14);
+  --bk-shadow-book-spine: rgba(0,0,0,0.18);
+  --bk-shadow-book-hover: rgba(0,0,0,0.2);
+  --bk-shadow-book-cover-frame: rgba(0,0,0,0.15);
+  --bk-shadow-book-thumbnail: rgba(0,0,0,0.25);
+  --bk-shadow-legacy-panel: rgba(0,0,0,0.18);
+  --bk-shadow-legacy-night-panel: rgba(0,0,0,0.5);
+  --bk-shadow-header-gold-edge: rgba(0,0,0,0.6);
+  --bk-shadow-text-strong: rgba(0,0,0,0.35);
+  --bk-shadow-legacy-button-glow: rgba(0,0,0,0.6);
+  --bk-shadow-status-online-glow: rgba(0,0,0,1);
+  --bk-shadow-dialog-large: rgba(0,0,0,0.45);
+  --bk-shadow-gem-inner-highlight: rgba(0,0,0,0.35);
+  --bk-shadow-gem-legendary-glow: rgba(0,0,0,0.7);
+  --bk-shadow-gem-legendary-highlight: rgba(0,0,0,0.5);
+  --bk-shadow-gem-epic-glow: rgba(0,0,0,0.5);
+  --bk-shadow-rating-label: rgba(0,0,0,0.4);
+  --bk-shadow-rating-hover-frame: rgba(0,0,0,1);
+  --bk-shadow-tile-rest: rgba(0,0,0,0.08);
+  --bk-shadow-tile-hover: rgba(0,0,0,0.25);
+  --bk-shadow-edition-glow: rgba(0,0,0,0.55);
+  --bk-shadow-menu-soft: rgba(0,0,0,0.1);
+}
+/* 边线与分隔：日间 */
+:root {
+  --bk-line-link-hover: rgba(42, 106, 163, .5);
+  --bk-line-help-underline: rgba(120, 84, 20, .45);
+  --bk-line-heading-soft: rgba(201, 165, 90, .5);
+  --bk-line-class-table-heading: #d9c797;
+  --bk-line-class-table-row: rgba(128, 92, 24, .12);
+  --bk-line-section-heading: rgba(201, 165, 90, .45);
+  --bk-line-directory-link-hover: rgba(130, 32, 0, .35);
+  --bk-line-page-footer: #e4d3ae;
+  --bk-line-book-cover-accent: rgba(255, 240, 200, .55);
+  --bk-line-legacy-gold-frame: rgba(217, 164, 65, .45);
+  --bk-line-legacy-control: rgba(255, 255, 255, .2);
+  --bk-line-legacy-menu-frame: #8a6d3b;
+  --bk-line-legacy-chip: rgba(255, 255, 255, .15);
+  --bk-line-legacy-primary-button: #b8862e;
+  --bk-line-legacy-panel-frame: rgba(217, 164, 65, .5);
+  --bk-line-rating-button: rgba(255, 255, 255, .25);
+  --bk-line-rating-comment: rgba(217, 164, 65, .6);
+  --bk-line-rating-card: rgba(217, 164, 65, .4);
+  --bk-line-loading-spinner-active: #f1c66b;
+}
+/* 边线与分隔：夜间 */
+:root[data-ours-theme="night"] {
+  --nt-cell: color-mix(in srgb, var(--bk-head) 18%, transparent);
+  --bk-line-link-hover: color-mix(in srgb, var(--bk-head) 50%, transparent);
+  --bk-line-help-underline: color-mix(in srgb, var(--bk-head) 45%, transparent);
+  --bk-line-heading-soft: color-mix(in srgb, var(--v3-ink) 50%, transparent);
+  --bk-line-class-table-heading: var(--v3-rule);
+  --bk-line-class-table-row: color-mix(in srgb, var(--bk-head) 12%, transparent);
+  --bk-line-section-heading: color-mix(in srgb, var(--v3-ink) 45%, transparent);
+  --bk-line-directory-link-hover: color-mix(in srgb, var(--bk-head) 35%, transparent);
+  --bk-line-page-footer: var(--v3-rule);
+  --bk-line-book-cover-accent: color-mix(in srgb, var(--v3-ink) 55%, transparent);
+  --bk-line-legacy-gold-frame: color-mix(in srgb, var(--v3-ink) 45%, transparent);
+  --bk-line-legacy-control: color-mix(in srgb, var(--v3-ink) 20%, transparent);
+  --bk-line-legacy-menu-frame: var(--v3-rule);
+  --bk-line-legacy-chip: color-mix(in srgb, var(--v3-ink) 15%, transparent);
+  --bk-line-legacy-primary-button: var(--v3-rule);
+  --bk-line-legacy-panel-frame: color-mix(in srgb, var(--v3-ink) 50%, transparent);
+  --bk-line-rating-button: color-mix(in srgb, var(--v3-ink) 25%, transparent);
+  --bk-line-rating-comment: color-mix(in srgb, var(--v3-ink) 60%, transparent);
+  --bk-line-rating-card: color-mix(in srgb, var(--v3-ink) 40%, transparent);
+  --bk-line-loading-spinner-active: var(--v3-rule);
+}
+/* 书封装饰：日间 */
+:root {
+  --bk-book-cover-fallback-bg: #6b3a2a;
+  --bk-book-cover-gradient-mix: #000;
+}
+/* 书封装饰：夜间 */
+:root[data-ours-theme="night"] {
+  --bk-book-cover-fallback-bg: var(--v3-deep);
+  --bk-book-cover-gradient-mix: var(--v3-deep);
+}
+/* 职业特性背景：日间 */
+:root {
+  --bk-class-feature-fresh-bg: #2a6aa3;
+  --bk-class-feature-reprinted-bg: #607d94;
+  --bk-class-feature-brew-bg: #753c8a;
+  --bk-class-feature-playtest-bg: #2b7d55;
+}
+/* 职业特性背景：夜间 */
+:root[data-ours-theme="night"] {
+  --bk-class-feature-fresh-bg: var(--v3-deep);
+  --bk-class-feature-reprinted-bg: var(--v3-deep);
+  --bk-class-feature-brew-bg: var(--v3-deep);
+  --bk-class-feature-playtest-bg: var(--v3-deep);
+}
+/* 评分兼容组件：日间 */
+:root {
+  --bk-rating-legendary: #ff8a00;
+  --bk-rating-epic: #a335ee;
+  --bk-rating-fine: #1f7ae0;
+  --bk-rating-good: #23a04a;
+  --bk-rating-common: #8d8d8d;
+  --bk-rating-legendary-gradient: #ffb347;
+  --bk-rating-epic-gradient: #c77dff;
+  --bk-rating-fine-gradient: #5aa9ff;
+  --bk-rating-good-gradient: #5fd17f;
+  --bk-rating-common-gradient: #b9b9b9;
+  --bk-rating-unknown-marker: #999;
+  --bk-rating-gem-legendary-gradient: #ffc46b;
+  --bk-rating-gem-epic-gradient: #cf8bff;
+  --bk-rating-gem-fine-gradient: #67b2ff;
+  --bk-rating-gem-good-gradient: #6ad98a;
+  --bk-rating-gem-common-gradient: #c4c4c4;
+  --bk-rating-gem-empty-bg: #ccc;
+}
+/* 评分兼容组件：夜间 */
+:root[data-ours-theme="night"] {
+  --bk-rating-legendary: var(--v3-deep);
+  --bk-rating-epic: var(--v3-deep);
+  --bk-rating-fine: var(--v3-deep);
+  --bk-rating-good: var(--v3-deep);
+  --bk-rating-common: var(--v3-deep);
+  --bk-rating-legendary-gradient: var(--v3-panel);
+  --bk-rating-epic-gradient: var(--v3-deep);
+  --bk-rating-fine-gradient: var(--v3-deep);
+  --bk-rating-good-gradient: var(--v3-panel);
+  --bk-rating-common-gradient: var(--v3-panel);
+  --bk-rating-unknown-marker: var(--v3-deep);
+  --bk-rating-gem-legendary-gradient: var(--v3-panel);
+  --bk-rating-gem-epic-gradient: var(--v3-deep);
+  --bk-rating-gem-fine-gradient: var(--v3-panel);
+  --bk-rating-gem-good-gradient: var(--v3-panel);
+  --bk-rating-gem-common-gradient: var(--v3-panel);
+  --bk-rating-gem-empty-bg: var(--v3-panel);
+}
+
+@font-face {
+  font-family: "Book Headings";
+  src: url("/__ours/fonts/book-headings.woff2") format("woff2");
+  font-weight: 600 900;
+  font-style: normal;
+  font-display: swap;
+}
+:root, html.nt3 {
+  --v3-paper: #fbf3e1; --v3-card: #fffaf0; --v3-panel: #f4e9d0; --v3-deep: #ecdfc0;
+  --v3-ink: #2b2420; --v3-ink2: #6e604f; --v3-ink3: #a29480;
+  --bk-head: #7b1e12; --bk-num: #7b1e12; --bk-die: rgba(123,30,18,.08);
+  --v3-red: var(--bk-head); --v3-gold: #b08d48; --bk-gold: var(--v3-gold);
+  --v3-rule: #e2d3ab; --v3-rule2: #ece1c3; --v3-link: #225e96;
+  --nt-cell: rgba(128, 92, 24, .18);
+  --v3-k-off24: #225e96; --v3-k-off14: #4f6b82; --v3-k-ours: #753c8a; --v3-k-3p: #88415f; --v3-k-ua: #2b7d55;
+  --bk-bar: #4a1710; --bk-bar-ink: #f3dfc0; --bk-glow: transparent;
+  --bk-shadow: 0 18px 40px -26px rgba(90,58,26,.55);
+  --bk-selected-ink: #fffaf0; --bk-source-mix: #1c1208;
+  --bk-heading-font: "Book Headings", "Noto Serif SC", "Source Han Serif SC", "Songti SC", "STSong", serif;
+  --nt-tex: var(--v3-ink); --nt-tex2: var(--v3-ink2); --nt-tex3: var(--v3-ink2); --nt-tex4: var(--v3-ink3); --nt-texnav: var(--v3-ink2);
+  --nt-bg: var(--v3-paper); --nt-surface: var(--v3-card); --nt-bg2: var(--v3-panel); --nt-bg3: var(--v3-deep);
+  --nt-ico: var(--v3-ink2); --nt-line: var(--v3-rule); --nt-line2: var(--v3-rule2); --nt-line3: var(--v3-gold);
+  --nt-blue: var(--v3-link); --nt-focus: var(--v3-link); --nt-blue-bg: var(--v3-card);
+  --nt-hover: var(--bk-die); --nt-active: var(--bk-die);
+  --paper: var(--v3-paper); --card: var(--v3-card); --nav: var(--bk-bar); --nav-ink: var(--bk-bar-ink); --nav-ink2: var(--bk-bar-ink);
+  --tex: var(--v3-ink); --tex2: var(--v3-ink2); --tex3: var(--v3-ink2); --texnav: var(--v3-ink2); --ico: var(--v3-ink2); --line2: var(--v3-rule2);
+  --gold: var(--v3-gold); --red: var(--bk-head); --blue: var(--v3-link); --hover: var(--bk-die); --act: var(--bk-die);
+  --ours-ink: var(--v3-ink); --ours-paper: var(--v3-card); --ours-line: var(--v3-rule); --ours-gold: var(--v3-gold);
+  color-scheme: light;
+}
+:root[data-ours-theme="night"], html.nt3[data-ours-theme="night"] {
+  --v3-paper: #17120e; --v3-card: #1e1813; --v3-panel: #211a14; --v3-deep: #2b221a;
+  --v3-ink: #ebe0cd; --v3-ink2: #b3a28b; --v3-ink3: #7e6f5c;
+  --bk-head: #eab987; --bk-num: #f29b6c; --bk-die: rgba(242,155,108,.12);
+  --v3-gold: #c9a15a; --v3-rule: #3a2e22; --v3-rule2: #2c231a; --v3-link: #8fbbe6;
+  --v3-k-off24: #8fbbe6; --v3-k-off14: #a9bccb; --v3-k-ours: #c99ddb; --v3-k-3p: #e3a2c6; --v3-k-ua: #7cc49c;
+  --bk-bar: #0b0806; --bk-bar-ink: #e6c99b; --bk-glow: rgba(226,110,48,.30);
+  --bk-shadow: 0 24px 50px -24px rgba(0,0,0,.85);
+  --bk-selected-ink: #17120e; --bk-source-mix: #fffaf0;
+  color-scheme: dark;
+}
+/* Theme aliases stay live; no per-element repaint or layout work on toggles. */
+html.nt3 {
+  --nt-tag-gray: color-mix(in srgb, var(--v3-ink2) 13%, transparent); --nt-tag-gray-t: var(--v3-ink2);
+  --nt-tag-brown: color-mix(in srgb, var(--v3-k-3p) 12%, transparent); --nt-tag-brown-t: var(--v3-k-3p);
+  --nt-tag-blue: color-mix(in srgb, var(--v3-k-off24) 12%, transparent); --nt-tag-blue-t: var(--v3-k-off24);
+  --nt-tag-green: color-mix(in srgb, var(--v3-k-ua) 12%, transparent); --nt-tag-green-t: var(--v3-k-ua);
+  --nt-tag-purple: color-mix(in srgb, var(--v3-k-ours) 12%, transparent); --nt-tag-purple-t: var(--v3-k-ours);
+  --nt-tag-pink: var(--nt-tag-brown); --nt-tag-pink-t: var(--nt-tag-brown-t);
+  --nt-tag-red: var(--bk-die); --nt-tag-red-t: var(--bk-head);
+  --nt-tag-yellow: var(--v3-deep); --nt-tag-yellow-t: var(--v3-ink);
+  --nt-tag-orange: var(--bk-die); --nt-tag-orange-t: var(--bk-head);
+  --nt-blue-bg2: var(--nt-tag-blue); --nt-blue-tex: var(--nt-tag-blue-t);
+  font-variant-numeric: tabular-nums;
+}
+html.nt3 body { color: var(--v3-ink); background-color: var(--v3-paper); }
+html.nt3 #theme-toggle {
+  flex: none; border: 1px solid var(--v3-gold); border-radius: 6px; padding: 4px 7px;
+  color: var(--bk-bar-ink); background: transparent; font: 13px var(--font); cursor: pointer;
+}
+html.nt3 #theme-toggle:hover { background: var(--bk-die); }
+html.nt3 :is(h1, h2, h3, .ntc-title, .ntc-h, .ve-stats__h-name, .ve-rd__h, .ve-rd__h-inner, .ve-rd__entry-title-inner, .bk5-title, .bk5-h, .home5-title) {
+  font-family: var(--bk-heading-font) !important; font-weight: 900 !important; color: var(--bk-head);
+}
+html.nt3 :is(.ntc-title__en, .ve-stats__eh-name) {
+  font-family: Georgia, serif !important; font-style: italic; color: var(--v3-ink2) !important; font-weight: 400 !important;
+}
+html.nt3 .ntc-title__en { font-size: .55em; }
+html.nt3 :is(.ve-rd__h--0, .ve-rd__h--1, .ntc-h) { border-bottom: 1px solid var(--bk-gold); letter-spacing: .1em; }
+/* Ornament uses the existing header area, without changing its geometry. */
+html.nt3 :is(.ntc-head, .ve-stats__th-name), html.nt4.ours-l5 #pagecontent .ve-stats__th-name { position: relative; border-bottom-color: transparent !important; }
+html.nt3 :is(.ntc-head, .ve-stats__th-name)::before {
+  content: ""; position: absolute; bottom: -1px; left: 0; right: 0; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--bk-gold) 12%, var(--bk-gold) 88%, transparent); pointer-events: none;
+}
+html.nt3 :is(.ntc-head, .ve-stats__th-name)::after {
+  content: ""; position: absolute; bottom: -4px; left: 50%; width: 6px; height: 6px;
+  background: var(--v3-paper); border: 1px solid var(--bk-gold); transform: rotate(45deg); pointer-events: none;
+}
+html.nt3 :is(.ve-roller, .render-roller, [data-packed-dice]) {
+  color: var(--bk-num) !important; background-color: var(--bk-die); border-radius: 4px; font-weight: 700; font-variant-numeric: tabular-nums;
+}
+html.nt3 :is(.ve-ability-score__score, .ve-stats__ability-score, .ntc-prop__v > .ve-bold) { font-family: var(--bk-heading-font); color: var(--bk-num); }
+html.nt3 :is(.stats-tbl-ability-scores__lbl-score[class*="ve-stats__disp-as-score"] > div, .ve-cls-tbl > tbody > tr > td:first-child) { font-family: var(--bk-heading-font); font-weight: 900; color: var(--bk-num); }
+html.nt3 .nt-tag[style*="--src"] { color: color-mix(in srgb, var(--src) 50%, var(--bk-source-mix)); background: color-mix(in srgb, var(--src) 12%, transparent); }
+html.nt3 .ntc-sec--sub .ve-btn.ve-active { color: var(--bk-selected-ink) !important; }
+html.nt3 :is(.bk5-chip.on, .bk5-chip.on b) { color: var(--bk-selected-ink); }
+html.nt3 :is(.ve-form-control, .ve-btn-default, .ve-dropdown-menu, .ve-ui-modal__inner, .ve-hwin, .ve-hwin__body, .ve-stats, .ve-fltr__wrp-pills, .ve-fltr__wrp-mini-pills, select, option) {
+  color: var(--v3-ink); background-color: var(--v3-card); border-color: var(--v3-rule);
+}
+html.nt3 #listcontainer { background-color: var(--v3-panel); }
+html.nt3 :is(.ve-muted, .ve-text-muted, .ve-fltr__summary_item, .ve-stats__h-source, .ve-stats__h-source-abbreviation) { color: var(--v3-ink2) !important; }
+html.nt3 :is([class*="ve-source__"], .sp__school-abj, .sp__school-con, .sp__school-div, .sp__school-enc, .sp__school-evo, .sp__school-ill, .sp__school-nec, .sp__school-tra) { color: var(--v3-link) !important; }
+html.nt3 [class*="ve-source__Ours"] { color: var(--v3-k-ours) !important; }
+html.nt3[data-ours-theme="night"] :is(.ve-ui-modal__inner, .ve-ui-modal__scroller, .ve-hwin, .ve-hwin__body, .ve-stats, .ve-fltr__wrp-pills, .ve-dropdown-menu, .ve-context-menu, .ve-fltr__wrp-filter, .ve-fltr__wrp-filter-group, .ve-form-control, .ve-btn-default) {
+  color: var(--v3-ink) !important; background-color: var(--v3-card) !important; border-color: var(--v3-rule) !important;
+}
+html.nt3[data-ours-theme="night"] :is(.ve-stats tr, .ve-stats td, .ve-stats th, .ve-rd__table td, .ve-rd__table th) { background-color: var(--v3-card); border-color: var(--v3-rule); }
+html.nt3[data-ours-theme="night"] :is(.ve-rd__table tr:nth-child(even) td, .ve-cls-tbl tr:nth-child(even) td) { background-color: var(--v3-deep); }
+html.nt3[data-ours-theme="night"] :is(.ve-fltr__pill, .ve-fltr__mini-pill) { color: var(--v3-ink); background-color: var(--v3-deep); }
+html.nt3[data-ours-theme="night"] :is(.ve-fltr__pill:is([data-state="yes"], [state="yes"]), .ve-fltr__mini-pill:is([data-state="yes"], [state="yes"])) { color: var(--v3-link); background-color: var(--nt-tag-blue); }
+html.nt3[data-ours-theme="night"] :is(.ve-fltr__pill[data-state="no"], .ve-fltr__mini-pill[data-state="no"]) { color: var(--bk-head); background-color: var(--bk-die); }
+@media (prefers-reduced-motion: reduce) {
+  html.nt3 *, html.nt3 *::before, html.nt3 *::after { animation: none !important; transition: none !important; }
+}
+
+/* The upstream !important utilities live in vetools. Join that layer so our
+   scoped selectors can override colours without disturbing display/layout. */
+@layer vetools {
+  html.nt3 :is(.ve-stats__h-name, .ve-rd__h, .ntc-title, .ntc-h, .bk5-title, .bk5-h) { font-weight: 900 !important; }
+  html.nt3 .ve-lst__wrp-search-visible { color: var(--v3-ink2) !important; opacity: 1 !important; }
+  html.nt3 [class*="ve-source__"] { color: var(--v3-k-off24) !important; }
+  html.nt3 [class*="ve-source__Ours"] { color: var(--v3-k-ours) !important; }
+  html.nt3 [class*="ve-source__UA"] { color: var(--v3-k-ua) !important; }
+  html.nt3 .ve-btn-primary { color: var(--bk-selected-ink) !important; background-color: var(--v3-link) !important; }
+  html.nt3[data-ours-theme="night"] #listcontainer .ve-lst__row-inner { background-color: transparent !important; }
+  html.nt3[data-ours-theme="night"] #listcontainer .list-multi-selected > .ve-lst__row-inner { background-color: var(--v3-card) !important; }
+  html.nt3 .ve-sp__school--a { color: var(--bk-school-a) !important; }
+  html.nt3 .ve-sp__school--c { color: var(--bk-school-c) !important; }
+  html.nt3 .ve-sp__school--d { color: var(--bk-school-d) !important; }
+  html.nt3 .ve-sp__school--e { color: var(--bk-school-e) !important; }
+  html.nt3 .ve-sp__school--i { color: var(--bk-school-i) !important; }
+  html.nt3 .ve-sp__school--n { color: var(--bk-school-n) !important; }
+  html.nt3 .ve-sp__school--t { color: var(--bk-school-t) !important; }
+  html.nt3 .ve-sp__school--v { color: var(--bk-school-v) !important; }
+}
+html.nt3 { --bk-school-a: #225e96; --bk-school-c: #89440a; --bk-school-d: #22645b; --bk-school-e: #88415f; --bk-school-i: #69447e; --bk-school-n: #655d51; --bk-school-t: #795511; --bk-school-v: #9a342b; --bk-class-active: #2a6aa3; }
+html.nt3[data-ours-theme="night"] { --bk-school-a: #8fbbe6; --bk-school-c: #eab987; --bk-school-d: #7cc4b4; --bk-school-e: #e3a2c6; --bk-school-i: #c99ddb; --bk-school-n: #b3a28b; --bk-school-t: #d6ba72; --bk-school-v: #ef9d90; --bk-class-active: var(--v3-link); }
+html.nt3 .ntc-sec--sub .ve-btn[class*="cls__btn-sc--active"] { background-color: var(--bk-class-active) !important; color: var(--bk-selected-ink) !important; }
+html.nt3 :is(.oh-kicker,.oh-search span,.oh-search kbd,.oh-books,.oh-card__n,.oh-card__sub) { color: var(--v3-ink2); }
+html.nt3 .n4-ltabs button:not(.on) { color: var(--v3-ink); }
+html.nt3 .n4-ltabs button:not(.on) > span { color: var(--v3-ink); }
+
+@layer vetools {
+  html.nt3[data-ours-theme="night"] #listcontainer .ve-lst__row { background-color: var(--v3-panel) !important; }
+  html.nt3 :is(.stats__wrp-h-source, .stats__wrp-h-source *, .ve-stats__wrp-h-source, .ve-stats__wrp-h-source *) { opacity: 1 !important; color: var(--v3-ink2) !important; }
+}
+html.nt3 :is(.stats__wrp-h-source, .ve-stats__wrp-h-source) { opacity: 1 !important; color: var(--v3-ink2); }
+
+@layer vetools {
+ html.nt3 :is(.ve-muted, .ve-text-muted) { color: var(--v3-ink2) !important; }
+ html.nt3 :is(.ntc-sec--sub .ve-btn[class*="cls__btn-sc--active"], .ntc-sec--sub .ve-btn[class*="cls__btn-sc--active"] *) { color: var(--bk-selected-ink) !important; opacity: 1 !important; }
+ html.nt3 #pagecontent span[style*="color: red"], html.nt3 #pagecontent span[style*="color:red"] { color: var(--bk-head) !important; }
+}
+
+html.nt3 .ve-rd__title-link { opacity: 1 !important; color: var(--v3-ink2) !important; }
+
+html.nt3 { --nt-tex4: var(--v3-ink2); --tex4: var(--v3-ink2); }
+html.nt3 .ve-rd__title-link * { color: var(--v3-ink2) !important; opacity: 1 !important; }
+html.nt3 ::placeholder { color: var(--v3-ink3); }
+/* 表格：属性表按心智属性一行着色，避免把表头算作第一行数据。 */
+html.nt3 { --bk-art-clear: transparent; --bk-hall-brightness: 1; --bk-hall-thumb-brightness: 1; }
+html.nt3[data-ours-theme="night"] { --bk-hall-brightness: .85; --bk-hall-thumb-brightness: .8; }
+html.nt3 :is(.ve-stats td.ve-stats__disp-as-score--mental, .ve-stats td.ve-stats__disp-as-bonus--mental) {
+  background-color: var(--bk-row-stripe) !important;
+}
+html.nt3 :is(.ve-rd__table, .ve-cls-tbl) > tbody > tr:nth-child(even) > :is(td, th) {
+  background-color: var(--bk-row-stripe);
+}
+/* 按钮：只改变夜间原生主按钮和激活态；来源、版本标识沿用各自颜色。 */
+html.nt3 .ve-fltr__btn_nest {
+  background-color: var(--v3-deep) !important; color: var(--v3-ink) !important; border-color: var(--v3-rule) !important;
+}
+html.nt3 :is(.bk__head--active, .bk__head-section--active) {
+  background-color: var(--v3-deep) !important; color: var(--v3-ink) !important;
+}
+@layer vetools {
+  html.nt3[data-ours-theme="night"] :is(.ve-btn-primary, .ve-btn-info, .ve-btn.ve-active, .ve-btn[aria-pressed="true"], .ve-btn[class*="cls__btn-"][class*="--active"], .ve-fltr__pill:is([data-state="yes"], [state="yes"]), .ve-fltr__mini-pill:is([data-state="yes"], [state="yes"])) {
+    background-color: var(--bk-gold) !important; color: var(--v3-paper) !important;
+    border-color: var(--bk-gold) !important; box-shadow: inset 0 0 0 1px var(--bk-gold) !important;
+  }
+  html.nt3[data-ours-theme="night"] :is(.ve-btn-primary, .ve-btn-info, .ve-btn.ve-active, .ve-btn[aria-pressed="true"], .ve-btn[class*="cls__btn-"][class*="--active"], .ve-fltr__pill:is([data-state="yes"], [state="yes"]), .ve-fltr__mini-pill:is([data-state="yes"], [state="yes"])):hover {
+    background-color: var(--bk-btn-primary-hover-bg) !important;
+  }
+  html.nt3[data-ours-theme="night"] :is(.ve-btn-primary, .ve-btn-info, .ve-btn.ve-active, .ve-btn[aria-pressed="true"], .ve-btn[class*="cls__btn-"][class*="--active"], .ve-fltr__pill:is([data-state="yes"], [state="yes"]), .ve-fltr__mini-pill:is([data-state="yes"], [state="yes"])) * {
+    color: var(--v3-paper) !important;
+  }
+  html.nt3[data-ours-theme="night"] .ve-btn-primary--half {
+    background-image: repeating-linear-gradient(135deg, var(--bk-gold) 0 16px, color-mix(in srgb, var(--bk-gold) 75%, var(--v3-paper)) 16px 32px) !important;
+  }
+}
+html.nt3 * { scrollbar-color: var(--v3-gold) transparent; }
+html.nt3 ::-webkit-scrollbar-thumb { background: var(--v3-gold); }
+html.nt3 ::-webkit-scrollbar-thumb:hover { background: var(--bk-head); }
+html.nt3 :is(.bk5-crumbs__sep, [class*="bk-contents__sub_spacer"]) { color: var(--v3-ink2); }
+html.nt3 .tab .x { opacity: 1; }
+html.nt3 .tab.on .x { opacity: 1; color: var(--v3-ink2); }
+html.nt3 #sbsearch kbd { opacity: 1; }
+/* The web download prompt is mounted later, with its own legacy day CSS. */
+html.nt3 #ours-lc { background: var(--v3-card); color: var(--v3-ink); box-shadow: var(--bk-shadow); transition-duration: .15s; }
+html.nt3 #ours-lc b { color: var(--bk-head); }
+html.nt3 #ours-lc .t { color: var(--v3-ink2); }
+html.nt3 #ours-lc .n { color: var(--v3-ink); }
+html.nt3 #ours-lc .ring { border-color: var(--bk-die); border-top-color: var(--bk-head); }
+html.nt3 #ours-lb { transition-duration: .15s; }
+html.nt3 #ours-lb > i { background: var(--bk-gold); box-shadow: 0 0 6px color-mix(in srgb, var(--bk-gold) 70%, transparent); transition-duration: .15s; }
+
+/* Task 13: shared rarity ink; 12% badge tints, independently checked on four papers. */
+:root {
+ --bk-rar-common: #605647; --bk-rar-uncommon: #23642e; --bk-rar-rare: #2453a0;
+ --bk-rar-very: #71359f; --bk-rar-legendary: #87400e; --bk-rar-artifact: #922318;
+ --bk-rar-common-bg: color-mix(in srgb, var(--bk-rar-common) 12%, transparent);
+ --bk-rar-uncommon-bg: color-mix(in srgb, var(--bk-rar-uncommon) 12%, transparent);
+ --bk-rar-rare-bg: color-mix(in srgb, var(--bk-rar-rare) 12%, transparent);
+ --bk-rar-very-bg: color-mix(in srgb, var(--bk-rar-very) 12%, transparent);
+ --bk-rar-legendary-bg: color-mix(in srgb, var(--bk-rar-legendary) 12%, transparent);
+ --bk-rar-artifact-bg: color-mix(in srgb, var(--bk-rar-artifact) 12%, transparent);
+ --bk-rarity-common: var(--bk-rar-common); --bk-rarity-uncommon: var(--bk-rar-uncommon);
+ --bk-rarity-rare: var(--bk-rar-rare); --bk-rarity-very: var(--bk-rar-very);
+ --bk-rarity-legendary: var(--bk-rar-legendary); --bk-rarity-artifact: var(--bk-rar-artifact);
+}
+:root[data-ours-theme="night"] {
+ --bk-rar-common: #b9ae9d; --bk-rar-uncommon: #8bd298; --bk-rar-rare: #9dbbfa;
+ --bk-rar-very: #cd9cf4; --bk-rar-legendary: #efb381; --bk-rar-artifact: #ee9e96;
+}
+@layer vetools {
+  html.nt3 :is(.ve-itm__rarity-common, .ve-itm__rarity-alt-common) { color: var(--bk-rarity-common) !important; }
+  html.nt3 :is(.ve-itm__rarity-uncommon, .ve-itm__rarity-alt-uncommon) { color: var(--bk-rarity-uncommon) !important; }
+  html.nt3 :is(.ve-itm__rarity-rare, .ve-itm__rarity-alt-rare) { color: var(--bk-rarity-rare) !important; }
+  html.nt3 :is(.ve-itm__rarity-very, .ve-itm__rarity-alt-very) { color: var(--bk-rarity-very) !important; }
+  html.nt3 :is(.ve-itm__rarity-legendary, .ve-itm__rarity-alt-legendary) { color: var(--bk-rarity-legendary) !important; }
+  html.nt3 :is(.ve-itm__rarity-artifact, .ve-itm__rarity-alt-artifact) { color: var(--bk-rarity-artifact) !important; }
+}

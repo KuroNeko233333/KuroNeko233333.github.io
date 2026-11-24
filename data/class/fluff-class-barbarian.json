@@ -1,0 +1,638 @@
+{
+	"_meta": {
+		"internalCopies": [
+			"subclassFluff"
+		]
+	},
+	"classFluff": [
+		{
+			"ENG_name": "Barbarian",
+			"name": "野蛮人",
+			"source": "PHB",
+			"entries": [
+				{
+					"ENG_name": "Barbarian",
+					"name": "野蛮人",
+					"type": "section",
+					"entries": [
+						"披裘执斧的高个男人奔走于暴风雪中，大笑着冲向那些胆敢在其族人饲养的赤鹿群中偷猎的霜巨人。",
+						"半兽人向其挑战者发出咆哮。为了维护自己在这个狂野部族中的权威，她已经徒手扯断了六个对手的脖子，而她正打算对这最后一个对手故技重施。",
+						"矮人口沫横飞的把头盔拍在一名卓尔敌人脸上，转身又用铠甲包裹的肘部撞向另一名敌人。",
+						"野蛮人们各不相同，但却都有着标志性的暴怒：不受控、不止息、不加思索的怒火。野蛮人的愤怒不只是一种情感，而是猎食者在绝境中激发的凶暴，是暴风雨般不顾一切的猛袭，也是大海中翻滚不息的波涛。",
+						"一些野蛮人认为他们的愤怒之力来自于和猛兽之灵的交流，其他人则认为那来自于对世间无尽苦痛的愤恨。而这种狂暴不止为每个野蛮人点燃其战斗狂热，更是他们灵活闪避，抵挡伤害和增强力量的源泉。",
+						{
+							"ENG_name": "Primal Instinct",
+							"name": "原始直觉",
+							"type": "entries",
+							"entries": [
+								"城市中的人们以其有别于动物的文明生活方式为傲，仿佛否认自身的天性是多么有优越感的事。但文明在野蛮人眼中不但不值得骄傲，更是一种贫弱的表现。因而他们全心全意接受自身的动物本能\u2014\u2014敏锐的直觉，原始的冲动，以及熊熊的怒火。野蛮人不喜被围墙和人群包围的生活。他们活跃在故乡的自然环境里（苔原，森林或草原），而那正是其部族生活捕猎之地。",
+								"野蛮人活跃在混乱的战斗中。他们可以进入狂暴状态，让愤怒驱使自己而获得超人的力量和抗性。野蛮人在充分休息之前只能保持很短时间的狂暴状态，但通常这段时间已经足以让他们击败敌人。"
+							]
+						},
+						{
+							"ENG_name": "A Life of Danger",
+							"name": "危险的生活",
+							"type": "entries",
+							"entries": [
+								"并非每个被文明社会的年轻人称作\"野蛮人\"的部族成员都是野蛮人。这其中真正的野蛮人就像城市里老练的战士一样少见。而这少数的野蛮人则扮演者族人的保护者和战斗领导者的角色。荒野生活充满了危险，他们必须面对敌对的部族，致命的气候，以及各种可怕的怪物。而野蛮人会迅猛的冲向那些危险，以保护自己的族人不受威胁。",
+								"野蛮人面对危险时的英勇让他们非常适合冒险。不断迁徙本就是其部族的生活方式，因此居无定所的冒险生活也不会对野蛮人造成困扰。某些野蛮人会怀念部族中亲密的家族关系，但最终也会发现冒险团队的成员间建立的情谊也同样珍贵。"
+							]
+						},
+						{
+							"ENG_name": "Creating a Barbarian",
+							"name": "创建野蛮人",
+							"type": "entries",
+							"entries": [
+								"创造一名野蛮人时，可以先思考其来历及其归属地。与DM商议确定角色的起源。你是来自远方，对战役环境非常陌生的异乡人？或是对战役发生的凶险边境十分熟悉的野蛮人？",
+								"你为何选择了冒险生活？你是被财富的许诺吸引到了城市，还是和城市的士兵们共同对抗敌人？也许怪物的入侵把你赶出了故乡，成了流离失所的难民？或许你在战争中被俘，被抓到\"文明\"地区后刚刚重获自由。或者，你因为犯下罪行，触犯禁忌而被族人驱逐。又或者你就是刚被政变推翻的部落领袖？",
+								{
+									"ENG_name": "Quick Build",
+									"name": "快速建卡",
+									"type": "entries",
+									"entries": [
+										"你可以按以下建议快速创建一名野蛮人。首先，将你最高的属性分配给力量，次高的分配给体质。然后选择{@background 化外之民}背景。"
+									]
+								}
+							]
+						}
+					],
+					"source": "PHB",
+					"page": 46
+				},
+				{
+					"type": "section",
+					"entries": [
+						{
+							"type": "quote",
+							"entries": [
+								"我见证了野蛮人在战斗中不屈不挠的表现，令我我好奇的是\u2014\u2014他们狂暴的核心力量源于什么？"
+							],
+							"by": "大法师赛雷特"
+						},
+						"普通人所展现出的愤怒与野蛮人的狂暴在本质上相同，就像和煦微风与狂风骤雨的关系。野蛮人的驱动力来自超越纯粹的情感，使它表现得更加可怕。愤怒的动力可能完全源于心灵，又或者来自与动物精魂的链接，处于狂暴中的野蛮人建立联系能够展现出超自然的力量与耐力。爆发是暂时的，但当它持续时，就会控制野蛮人的身体和心灵，驱使野蛮人忽略危险和伤害，直到最后一名敌人倒下。",
+						"扮演野蛮人角色是很诱人的事，能够简单直白地塑造一个经典形象\u2014\u2014残暴、通常还很蠢、在其他人小心翼翼时直接莽上去。但不是这世界上所有的野蛮人都是从同一块布上剪下来的（指如出一辙），所以你当然可以自己掂量着扮演。无论哪种方式，考虑添加一些修饰，使你的野蛮人独具特色；参见以下章节一些想法。",
+						{
+							"type": "quote",
+							"entries": [
+								"哇啦啦！我很生气！真好笑，我没感到自己变强了。可能是因为我总是在生气，也总是在最佳状态。合情合理。"
+							],
+							"by": "珊娜萨"
+						},
+						{
+							"ENG_name": "Personal Totems",
+							"name": "个人图腾",
+							"type": "entries",
+							"entries": [
+								"野蛮人倾向于轻装前行，很少携带个人物品或其他不必要的装备。他们中的少数人随身携带的物品通常包括具有特殊意义的小东西。一枚个人图腾正是这样意义重大的东西\u2014\u2014因为它有一个神秘起源，或者与角色生命中的某个重要瞬间相关，也许是有关野蛮人过去的一段回忆，或预示前方等待着他的命运。",
+								"这种个人图腾可能与野蛮人的动物精魂有关，或者实际上可能是该动物图腾，但这种联系并非必然。例如，一个有熊图腾精魂的野蛮人，仍然可以把鹰的羽毛作为个人图腾。",
+								"不妨为你的角色创造一个或多个个人图腾\u2014\u2014这些物品与角色的过去或未来存在某种特殊联系。思考一下，这些图腾将如何影响角色的行为。",
+								{
+									"type": "table",
+									"caption": "个人图腾",
+									"colLabels": [
+										"{@dice d6}",
+										"图腾"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"一条独狼身上的一簇毛，你在一次捕猎中和它成了朋友。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"智慧的萨满给你了三只鹰的羽毛，告诉你它们将决定你的命运。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"用幼年穴熊的爪子做成的项链，你还是个孩子的时候单杀了它。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"装着三块石头的小皮袋，代表了你的祖先。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"你杀死的第一只野兽的几块骨头，用彩色毛绳绑在一起。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"你的动物精魂形状的一块鸡蛋大小的石头，有一天出现在你的腰袋里。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Tattoos",
+							"name": "纹身",
+							"type": "entries",
+							"entries": [
+								"许多蛮族氏族的成员都会用纹身来装饰自己的身体，每个纹身都代表着纹身者或其祖先生命中的一个重要时刻，或者象征着一种感觉或一种态度。 与个人图腾一样，野蛮人的纹身可能与动物精神有关，也可能无关。",
+								"野蛮人展示的每个纹身都有助于表明该人的身份。如果你的角色有纹身，它们看起来是什么样子，它们代表什么？",
+								{
+									"type": "table",
+									"caption": "纹身",
+									"colLabels": [
+										"{@dice d6}",
+										"刺青"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"张开的鹰翅，纹在你的上背部。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"穴熊的爪子，纹在你的手背上。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"你的氏族的标志以藤蔓图案排列在你手臂上。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"麋鹿的鹿角，纹在你的背上。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"你的动物精魄的图像，在你的惯用手臂和手上。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"狼的眼睛纹在你的背上，帮助你洞察并驱散邪灵。"
+										]
+									]
+								}
+							]
+						},
+						{
+							"ENG_name": "Superstitions",
+							"name": "迷信",
+							"type": "entries",
+							"entries": [
+								"野蛮人对生活的理解差异很大。 有些人追随神灵，并在自然循环和他们遇到的动物中寻求神灵的指导。这些野蛮人相信神灵居住在世界上的植物和动物中，他们向它们寻求预兆和力量。",
+								"其他野蛮人只相信他们血管中流动的血液和他们手中握着的钢铁。 他们对看不见的世界没有任何用处，而是像他们效仿的野兽一样，依靠自己的感官捕猎和生存。",
+								"这两种态度都会引起迷信。 这些信仰通常在家庭内部传承，或者在氏族或狩猎团体的成员之间共享。",
+								"如果你的野蛮人角色有任何迷信，这些迷信是你的家庭在你身上根深蒂固的，还是个人经历的结果？",
+								{
+									"type": "table",
+									"caption": "迷信",
+									"colLabels": [
+										"{@dice d6}",
+										"迷信"
+									],
+									"colStyles": [
+										"col-1 text-center",
+										"col-11"
+									],
+									"rows": [
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 1
+												}
+											},
+											"如果你打扰了死者的遗骸，你就会继承他们生前所遭受的所有烦恼。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 2
+												}
+											},
+											"永远不要相信巫师。 他们都是伪装的魔鬼，尤其是友善的巫师。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 3
+												}
+											},
+											"矮人失去了灵魂，几乎就像不死族一样。 这就是他们住在地下的原因。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 4
+												}
+											},
+											"魔法物品会带来麻烦。千万别在距离你十英尺范围内的魔法物体旁睡觉。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 5
+												}
+											},
+											"当你走过墓地时，一定要戴上银饰，否则鬼魂可能会跳进你的身体。"
+										],
+										[
+											{
+												"type": "cell",
+												"roll": {
+													"exact": 6
+												}
+											},
+											"如果一个精灵直视你的眼睛，那她正在试图读取你的思想。"
+										]
+									]
+								}
+							]
+						}
+					],
+					"source": "XGE",
+					"page": 8
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/PHB/Barbarian.webp"
+					},
+					"width": 959,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Barbarian",
+			"name": "野蛮人",
+			"source": "XPHB",
+			"entries": [
+				{
+					"ENG_name": "Barbarian",
+					"name": "野蛮人",
+					"type": "section",
+					"source": "XPHB",
+					"page": 50,
+					"entries": [
+						"野蛮人是绝强的战士，他们与多元宇宙原力联结，以名为狂暴的方式展现力量。狂暴绝不仅仅是一种情绪\u2014\u2014局限于肤浅的愤怒\u2014\u2014那是掠食者凶性的具现；那是暴风雨狂怒的化身；那是汪洋间混乱的凝结。",
+						"一些野蛮人将他们的狂暴拟人化，视作凶暴的精魄或是崇敬的先祖。另一些或是认为这份狂暴与世间的痛苦与苦难相联系；或是认为其来自于狂野魔法的无情纠缠；或是将其视作内心深处的真我流露。狂暴对野蛮人来说，不仅是点燃战斗狂热的伟力，更是他们与众不同反应力和超乎寻常感知力的源泉。",
+						"野蛮人常常在社群中负责担当守护者或是领导者的职位。他们一头冲进危险，这样他们所保护的人们就不再需要面对危险。这份面对威胁毫不动摇的勇气令野蛮人非常适应冒险生活。"
+					]
+				}
+			],
+			"images": [
+				{
+					"type": "image",
+					"title": "一位原始狂暴的凶猛战士",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Barbarian.webp"
+					},
+					"credit": "Denman Rooke",
+					"width": 1700,
+					"height": 2265
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/039-03-015.barbarian-weapons.webp"
+					},
+					"credit": "Wayne England",
+					"width": 850,
+					"height": 1057
+				}
+			]
+		}
+	],
+	"subclassFluff": [
+		{
+			"ENG_name": "Path of the Totem Warrior",
+			"name": "图腾武者道途",
+			"shortName": "图腾武者",
+			"source": "PHB",
+			"className": "野蛮人",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/PHB/Totem Warrior Barbarian.webp"
+					},
+					"width": 903,
+					"height": 1000
+				}
+			]
+		},
+		{
+			"ENG_name": "Barbarian",
+			"name": "野蛮人",
+			"shortName": "野蛮人",
+			"source": "XGE",
+			"className": "野蛮人",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/XGE/Barbarian.webp"
+					},
+					"width": 1000,
+					"height": 491
+				}
+			]
+		},
+		{
+			"ENG_name": "Path of the Ancestral Guardian",
+			"name": "先祖守卫道途",
+			"shortName": "先祖守卫",
+			"source": "XGE",
+			"className": "野蛮人",
+			"classSource": "PHB",
+			"_copy": {
+				"ENG_name": "Barbarian",
+				"name": "野蛮人",
+				"shortName": "野蛮人",
+				"source": "XGE",
+				"className": "野蛮人",
+				"classSource": "PHB"
+			},
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"所以先祖这个词意思就是在你出生之前就在搞生殖事儿做出更多人的人？像是......有多少人？",
+						"那先祖这也干太多生殖事儿了。",
+						"呃，你真恶心。"
+					],
+					"by": "珊娜萨"
+				}
+			]
+		},
+		{
+			"ENG_name": "Path of the Storm Herald",
+			"name": "风暴先驱道途",
+			"shortName": "风暴先声",
+			"source": "XGE",
+			"className": "野蛮人",
+			"classSource": "PHB",
+			"_copy": {
+				"ENG_name": "Barbarian",
+				"name": "野蛮人",
+				"shortName": "野蛮人",
+				"source": "XGE",
+				"className": "野蛮人",
+				"classSource": "PHB",
+				"_mod": {
+					"images": {
+						"mode": "appendArr",
+						"items": {
+							"type": "image",
+							"href": {
+								"type": "internal",
+								"path": "classes/XGE/Storm Herald Barbarian.webp"
+							},
+							"width": 1000,
+							"height": 491
+						}
+					}
+				}
+			},
+			"entries": [
+				{
+					"type": "quote",
+					"entries": [
+						"你知道住在地下最大的好处是什么么？没有天气！你可别把这点给我毁了。"
+					],
+					"by": "珊娜萨"
+				}
+			]
+		},
+		{
+			"ENG_name": "Path of the Zealot",
+			"name": "狂热者道途",
+			"shortName": "狂热者",
+			"source": "XGE",
+			"className": "野蛮人",
+			"classSource": "PHB",
+			"_copy": {
+				"ENG_name": "Barbarian",
+				"name": "野蛮人",
+				"shortName": "野蛮人",
+				"source": "XGE",
+				"className": "野蛮人",
+				"classSource": "PHB"
+			}
+		},
+		{
+			"ENG_name": "Path of the Beast",
+			"name": "野兽道途",
+			"shortName": "野兽",
+			"source": "TCE",
+			"className": "野蛮人",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/TCE/Beast Barbarian.webp"
+					},
+					"width": 1000,
+					"height": 834
+				}
+			]
+		},
+		{
+			"ENG_name": "Path of Wild Magic",
+			"name": "狂野魔法道途",
+			"shortName": "狂野魔法",
+			"source": "TCE",
+			"className": "野蛮人",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/TCE/Wild Magic Barbarian.webp"
+					},
+					"width": 1000,
+					"height": 831
+				}
+			]
+		},
+		{
+			"ENG_name": "Path of the Giant",
+			"name": "巨人道途",
+			"shortName": "巨人",
+			"source": "BGG",
+			"className": "野蛮人",
+			"classSource": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "classes/BGG/Giant Barbarian.webp"
+					},
+					"width": 850,
+					"height": 1222
+				}
+			]
+		},
+		{
+			"ENG_name": "Path of the Berserker",
+			"name": "狂战士道途",
+			"shortName": "狂战士",
+			"source": "XPHB",
+			"className": "野蛮人",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"title": "狂战士道途子职",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Berserker Barbarian.webp"
+					},
+					"credit": "Nathaniel Himawan",
+					"width": 850,
+					"height": 2316
+				}
+			]
+		},
+		{
+			"ENG_name": "Path of the Wild Heart",
+			"name": "兽心道途",
+			"shortName": "兽心",
+			"source": "XPHB",
+			"className": "野蛮人",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"title": "兽心道途子职",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Wild Heart Barbarian.webp"
+					},
+					"credit": "Alditha Siregar",
+					"width": 850,
+					"height": 2108
+				}
+			]
+		},
+		{
+			"ENG_name": "Path of the World Tree",
+			"name": "世界树道途",
+			"shortName": "世界树",
+			"source": "XPHB",
+			"className": "野蛮人",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"title": "世界树道途子职",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/World Tree Barbarian.webp"
+					},
+					"credit": "Marcela Medeiros",
+					"width": 850,
+					"height": 2013
+				}
+			]
+		},
+		{
+			"ENG_name": "Path of the Zealot",
+			"name": "狂热者道途",
+			"shortName": "狂热者",
+			"source": "XPHB",
+			"className": "野蛮人",
+			"classSource": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"title": "狂热者道途子职",
+					"href": {
+						"type": "internal",
+						"path": "classes/XPHB/Zealot Barbarian.webp"
+					},
+					"credit": "Ignatius Budi",
+					"width": 850,
+					"height": 2141
+				}
+			]
+		}
+	]
+}

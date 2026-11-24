@@ -1,0 +1,383 @@
+{
+	"_meta": {
+		"otherSources": {
+			"monster": {
+				"MM": "RtG"
+			}
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Dirt-Under-Nails",
+			"name": "指甲里的泥垢",
+			"type": "plant",
+			"isNpc": true,
+			"isNamedCreature": true,
+			"source": "RtG",
+			"page": 32,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"average": 78,
+				"formula": "12d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 15,
+			"int": 12,
+			"wis": 12,
+			"cha": 18,
+			"save": {
+				"wis": "+4",
+				"cha": "+7"
+			},
+			"skill": {
+				"arcana": "+4",
+				"deception": "+7",
+				"persuasion": "+7",
+				"religion": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 11,
+			"resist": [
+				{
+					"resist": [
+						"钝击",
+						"穿刺",
+						"挥砍"
+					],
+					"note": "非银质武器且非魔法攻击的",
+					"cond": true
+				}
+			],
+			"immune": [
+				"毒素"
+			],
+			"vulnerable": [
+				"火焰"
+			],
+			"conditionImmune": [
+				"中毒"
+			],
+			"languages": [
+				"心灵感应 60 尺"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"ENG_name": "Innate Spellcasting",
+					"name": "天生施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"魔契师的天生施法属性是魅力。它可以天生施放以下法术（法术豁免{@dc 15}），且无需任何材质成分："
+					],
+					"will": [
+						"{@spell 变身术}",
+						"{@spell 虚假生命}",
+						"{@spell 浮空术}（仅自身）",
+						"{@spell 法师护甲}（仅自身）",
+						"{@spell 无声幻影}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell 弱智术}",
+							"{@spell 死亡一指}",
+							"{@spell 位面转移}"
+						]
+					},
+					"ability": "叉"
+				},
+				{
+					"ENG_name": "Spellcasting",
+					"name": "施法",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Dirt-Under-Nails 是一个17级的施法者。他的施法能力是魅力（法术豁免难度{@dc 17}，法术攻击命中{@hit 9}）。当他完成短休或长休时，他恢复消耗的法术位。他知道以下魔契师法术："
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell 颤栗之触}",
+								"{@spell 魔能爆}",
+								"{@spell 交友术}",
+								"{@spell 法师之手}",
+								"{@spell 次级幻象}",
+								"{@spell 魔法伎俩}",
+								"{@spell 电爪}"
+							]
+						},
+						"5": {
+							"lower": 1,
+							"slots": 4,
+							"spells": [
+								"{@spell 黯冰狱铠}",
+								"{@spell 放逐术}",
+								"{@spell 燃烧之手}",
+								"{@spell 死云术}",
+								"{@spell 焰击术}",
+								"{@spell 防护法阵}",
+								"{@spell 灼热射线}",
+								"{@spell 探知术}",
+								"{@spell 臭云术}",
+								"{@spell 暗示术}"
+							]
+						}
+					},
+					"ability": "叉"
+				}
+			],
+			"trait": [
+				{
+					"ENG_name": "Dark One's Own Luck (Recharges after a Short or Long Rest)",
+					"name": "黑暗强运（短休或长休后充能）",
+					"entries": [
+						"当魔契师进行属性检定或豁免检定时，它可以向该掷骰添加一个{@dice d10}。它可以在掷骰后、任何效应生效前选择是否使用该特性。"
+					]
+				},
+				{
+					"ENG_name": "Regeneration",
+					"name": "再生",
+					"entries": [
+						"指甲下土在接触地面的情况下，在其回合开始时恢复10点生命值。如果指甲下土受到火焰伤害，这个特性在他的下一个回合开始时不会生效。指甲下土只有在其回合开始时生命值为0并且没有再生时才会死亡。"
+					]
+				},
+				{
+					"ENG_name": "Shared Senses",
+					"name": "共享感知",
+					"entries": [
+						"Dirt-Under-Nails 能看见和听见任何在120尺范围内的植物所看见和听见的东西。此外，Dirt-Under-Nails 可以在这个范围内与任何植物进行心灵感应交流。"
+					]
+				},
+				{
+					"ENG_name": "Special Equipment (+2 Rod of the Pact Keeper)",
+					"name": "特殊装备（+2 契约守护者的法杖）",
+					"entries": [
+						"持有这根{@item +2 契约掌控者权杖||权杖}时，Dirt-Under-Nails在施法攻击检定以及他的魔契师法术的豁免难度等级上获得+2的加值（包含在下面的修正中）。此外，他可以在持有法杖时作为动作恢复一个魔契师法术位。直到完成一次长休息后，他才能再次使用这个特性。"
+					]
+				},
+				{
+					"ENG_name": "Tree Stride",
+					"name": "树跃术",
+					"entries": [
+						"在每个回合中，泥指甲可以使用10尺的移动力，通过魔法踏进距离他5尺内的一丛蘑菇，并从距离它60尺内的第二丛蘑菇中出现，出现在第二丛蘑菇5尺内的未被占据的空间。两丛蘑菇都必须是大型或更大的。泥指甲使用这个能力时不需要看到第二丛蘑菇。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Mace",
+					"name": "硬头锤",
+					"entries": [
+						"{@atk mw} {@hit 3} 命中，触及5尺，单一目标。{@h}3（{@damage 1d6}）钝击伤害加10（{@damage 3d6}）火焰伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"硬头锤|phb"
+			],
+			"traitTags": [
+				"再生",
+				"树跃术"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"damageTags": [
+				"B",
+				"F"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C",
+				"F",
+				"I",
+				"L",
+				"N",
+				"O",
+				"P",
+				"R",
+				"S",
+				"Y"
+			],
+			"spellcastingTags": [
+				"CL",
+				"I"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"conditionInflictSpell": [
+				"失能"
+			],
+			"savingThrowForcedSpell": [
+				"魅力",
+				"体质",
+				"敏捷",
+				"智力",
+				"感知"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Rotter",
+			"name": "腐朽者",
+			"type": "construct",
+			"source": "RtG",
+			"page": 34,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"天生护甲",
+						"{@item 盾牌|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 75,
+				"formula": "10d8 + 30"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 16,
+			"int": 10,
+			"wis": 13,
+			"cha": 8,
+			"skill": {
+				"athletics": "+7",
+				"perception": "+4",
+				"stealth": "+4"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 14,
+			"resist": [
+				"钝击",
+				"穿刺"
+			],
+			"immune": [
+				"毒素"
+			],
+			"vulnerable": [
+				"火焰"
+			],
+			"conditionImmune": [
+				"魅惑",
+				"恐慌",
+				"中毒"
+			],
+			"languages": [
+				"心灵感应 60 尺"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"ENG_name": "Magic Club",
+					"name": "魔法短棒",
+					"entries": [
+						"在腐烂者的手中，它的棍棒是魔法武器，并且造成额外 7（{@damage 3d4}）点伤害（包含在它的攻击中）。"
+					]
+				},
+				{
+					"ENG_name": "Plant Camouflage",
+					"name": "植被伪装",
+					"entries": [
+						"在有足够遮蔽植物的地形中，腐朽者在进行敏捷（{@skill 隐匿}）检定时具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Regeneration",
+					"name": "再生",
+					"entries": [
+						"该腐尸在回合开始时，如果接触地面则恢复10点生命值。如果腐尸受到火焰伤害，则在腐尸下一个回合开始时，此特性不会生效。腐尸只有在回合开始时生命值为0且不进行再生时才会死亡。"
+					]
+				},
+				{
+					"ENG_name": "Shared Senses",
+					"name": "共享感知",
+					"entries": [
+						"腐烂者能够看到和听到120尺范围内任何植物所能看到的和听到的。此外，腐烂者可以在这个范围内与任何植物进行心灵感应交流。"
+					]
+				},
+				{
+					"ENG_name": "Tree Stride",
+					"name": "树跃术",
+					"entries": [
+						"每当它的回合，腐尸可以使用其10尺的移动能力，通过魔法步伐进入它5尺范围内的一丛蘑菇，并从60尺范围内的第二丛蘑菇中出现，出现在第二丛蘑菇5尺范围内的未被占据的空间内。两丛蘑菇都必须是大型或更大。腐尸使用这个能力时不需要看到第二丛蘑菇。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Multiattack",
+					"name": "多重攻击",
+					"entries": [
+						"腐烂者用它的棍棒进行两次攻击。"
+					]
+				},
+				{
+					"ENG_name": "Club",
+					"name": "短棒",
+					"entries": [
+						"{@atk mw} {@hit 7}命中，触及5尺，单一目标。{@h}14（{@damage 4d4 + 4}）钝击伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"attachedItems": [
+				"短棒|phb"
+			],
+			"traitTags": [
+				"伪装",
+				"再生",
+				"树跃术"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"多重攻击"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MLW",
+				"MW"
+			],
+			"hasToken": true
+		}
+	]
+}

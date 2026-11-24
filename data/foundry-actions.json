@@ -1,0 +1,184 @@
+{
+	"action": [
+		{
+			"ENG_name": "Attack",
+			"name": "攻击",
+			"source": "PHB",
+			"activities": [
+				{
+					"type": "utility",
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Climb onto a Bigger Creature",
+			"name": "爬到更大生物身上",
+			"source": "DMG",
+			"activities": [
+				{
+					"type": "utility",
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Disarm",
+			"name": "缴械",
+			"source": "DMG",
+			"activities": [
+				{
+					"type": "utility",
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Grapple",
+			"name": "擒抱",
+			"source": "PHB",
+			"activities": [
+				{
+					"type": "utility",
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Mark",
+			"name": "标记",
+			"source": "DMG",
+			"activities": [
+				{
+					"type": "utility",
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Opportunity Attack",
+			"name": "借机攻击",
+			"source": "PHB",
+			"activities": [
+				{
+					"type": "utility",
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Overrun",
+			"name": "强冲",
+			"source": "DMG",
+			"activities": [
+				{
+					"type": "utility",
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Shove",
+			"name": "推撞",
+			"source": "PHB",
+			"activities": [
+				{
+					"type": "utility",
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Shove Aside",
+			"name": "挪移",
+			"source": "DMG",
+			"activities": [
+				{
+					"type": "utility",
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Tumble",
+			"name": "翻滚",
+			"source": "DMG",
+			"activities": [
+				{
+					"type": "utility",
+					"target": {
+						"affects": {
+							"count": "1",
+							"type": "creature"
+						}
+					}
+				}
+			],
+			"migrationVersion": 3,
+			"translator": "不全书"
+		}
+	]
+}

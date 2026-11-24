@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta name="catalog-web" content="1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>冒险模组 · 5e全书</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="items.css">
+  <link rel="stylesheet" href="shell.css">
+  <link rel="stylesheet" href="card-view.css">
+  <link rel="stylesheet" href="option-view.css">
+  <link rel="stylesheet" href="reading.css">
+  <link rel="stylesheet" href="dm-tools.css">
+  <link rel="stylesheet" href="classes.css">
+  <script>document.documentElement.dataset.oursTheme=localStorage.getItem("ours.theme")==="night"?"night":"day";</script>
+  <script>try{if(localStorage.getItem("ours.plain")==="1")document.documentElement.dataset.oursPlain="1";}catch(e){}</script>
+  <link rel="stylesheet" href="statgen.css">
+  <link rel="stylesheet" href="motion.css">
+  <script src="shell.js" type="module"></script>
+</head>
+<body>
+  <nav id="bar" aria-label="主导航">
+    <a id="brand" href="index.html"><b></b><span>5e全书</span></a>
+    <div id="tabs" role="navigation" aria-label="页面"></div>
+    <button id="sbsearch" title="全站搜索（Ctrl+K）" aria-label="全站搜索"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="7" cy="7" r="4.5"/><path d="m10.5 10.5 3.5 3.5"/></svg><span>搜索法术、怪物、物品…</span><kbd>Ctrl K</kbd></button>
+    <button id="range" type="button" popovertarget="range-panel" title="资料范围和版本" aria-label="资料范围和版本"><small>范围</small><span id="range-mode"></span><b>·</b><span id="range-ed"></span><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m4 6.5 4 4 4-4"/></svg></button>
+    <button id="theme" title="切换日间 / 夜间" aria-label="切换日间 / 夜间"></button>
+    <button id="settings" title="资料状态与设置" aria-label="资料状态与设置"><svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" aria-hidden="true"><path d="M2.5 4.5h7M12.5 4.5h1M2.5 11.5h1M6.5 11.5h7"/><circle cx="11" cy="4.5" r="1.5"/><circle cx="5" cy="11.5" r="1.5"/></svg></button>
+  </nav>
+  <div id="range-panel" popover aria-label="资料范围和版本">
+    <p class="range-title">资料范围</p><div id="switch" aria-label="来源模式"></div><p id="range-note" class="setting-note"></p>
+    <p class="range-title">版本</p><div id="edsw" aria-label="版本"></div>
+  </div>
+  <div id="footsteps" hidden>
+    <button id="trail-back" type="button"><b>‹</b><span class="trail-verb">后退</span><span class="trail-to"></span></button>
+    <button id="trail-forward" type="button" hidden><span class="trail-verb">前进</span><span class="trail-to"></span><b>›</b></button>
+    <button id="trail-more" type="button" title="这个标签页里看过的条目" hidden>浏览记录 <small></small> ▾</button>
+  </div>
+  <div id="trail-menu" popover></div>
+  <header id="settings-panel" popover>
+    <h1>物品</h1>
+    <label>资料范围 <select id="mode" disabled>
+      <option value="rec">推荐</option><option value="official">常规</option>
+      <option value="all">全部</option><option value="brew">只看第三方</option>
+      <option value="manual">手动</option>
+    </select></label>
+    <p id="scope-note" class="setting-note"></p>
+    <label>版本 <select id="edition" disabled>
+      <option value="24">5.5e</option><option value="14">5e</option><option value="">两版</option>
+    </select></label>
+    <label id="plain-label" class="setting-plain"><input type="checkbox" id="plain"> 简洁版：大厅不显示图片和说明文字</label>
+    <label class="setting-plain"><input type="checkbox" id="motion" checked> 动画效果</label>
+    <details id="manual" hidden>
+      <summary>手动选书</summary>
+      <p id="manual-loading" role="status">正在读取书目…</p>
+      <fieldset id="manual-controls" disabled>
+        <div class="manual-search">
+          <input id="manual-query" type="search" placeholder="搜索中文书名、英文书名或缩写" aria-label="搜索书目" autocomplete="off">
+          <output id="manual-total" aria-live="polite"></output>
+        </div>
+        <div class="manual-presets" aria-label="快捷勾选">
+          <button type="button" data-manual-preset="rec">照推荐勾选</button>
+          <button type="button" data-manual-preset="official">只勾官方</button>
+          <button type="button" data-manual-preset="all">全选</button>
+          <button type="button" data-manual-preset="none">全不选</button>
+        </div>
+        <p class="setting-note">勾选 = 显示这些书的内容；排除 = 一定隐藏命中的条目，即使相关的其他书已勾选。</p>
+        <p id="manual-legacy-note" class="setting-note" hidden>这份旧选择没有勾选范围，仍会显示所有未排除的书。</p>
+        <div id="sources"></div>
+        <p id="manual-empty" class="setting-note" role="status" hidden>没有符合的书目。</p>
+      </fieldset>
+    </details>
+    <details id="version-info">
+      <summary>资料版本</summary><div><span id="revision">正在读取…</span><p id="status-note" role="status"></p></div>
+    </details>
+  </header>
+  <small id="status-alert" role="status"></small>
+  <main>
+    <section class="catalog" aria-label="物品目录">
+      <div class="catalog-head">
+        <div class="query"><button id="filter-button" title="筛选条件">筛选</button>
+          <label><input id="search" type="search" disabled aria-label="搜索列表" placeholder="搜名称（中英文都行）"></label>
+          <button id="reset-list" title="重置筛选">↺</button><button id="hide-list"><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" aria-hidden="true"><rect x="1.5" y="2.5" width="13" height="11" rx="2"/><path d="M6 3v10m6-8-3 3 3 3"/></svg>收起列表</button></div>
+        <output id="count" aria-live="polite">正在读取…</output>
+        <div id="quick" class="quick-filters"><div id="quick-first"></div><div id="quick-second"></div><div id="quick-summary" hidden></div><div id="chips" hidden></div></div>
+        <div id="family-sort" hidden></div>
+        <div class="widget-storage"><select id="type"></select><select id="rarity"></select><input id="attuned" type="checkbox"></div>
+      </div>
+      <p id="list-outside" role="status" hidden></p>
+      <section id="mundane-section" class="list-section">
+        <div id="list" class="viewport" tabindex="0" aria-label="条目列表"><div id="space" class="space"><div id="rows" class="rows"></div></div></div></section>
+    </section>
+    <section class="document"><button id="show-list" hidden>显示列表</button><div id="detail-tools"><div id="detail-tabs"></div></div><article id="detail" aria-label="条目详情" tabindex="-1"></article></section>
+  </main>
+  <section id="reading" hidden aria-live="off"></section>
+  <dialog id="global-search" aria-label="全站搜索"><form method="dialog"><label><span>全站搜索</span><input type="search" id="global-query" role="combobox" aria-autocomplete="list" aria-controls="global-results" aria-expanded="false" placeholder="名称、来源或页码…" autocomplete="off"></label><button>关闭</button></form><p id="global-status" role="status"></p><div id="global-results" role="listbox" aria-label="搜索结果"></div></dialog>
+  <dialog id="filters" aria-labelledby="filter-title">
+    <form method="dialog" class="dialog-heading"><h2 id="filter-title">筛选</h2><button>完成</button></form>
+    <div class="filter-controls">
+      <label>条件 <select id="field"></select></label>
+      <label id="filter-kind">匹配 <select id="operator"><option value="include">包含</option><option value="exclude">排除</option><option value="neutral" hidden>忽略默认条件</option></select></label>
+      <label id="filter-value-label">值 <select id="filter-value"></select></label>
+      <label id="minimum-label" hidden>最小 <input id="minimum" type="number" step="any"><select id="minimum-rank" hidden></select></label>
+      <label id="maximum-label" hidden>最大 <input id="maximum" type="number" step="any"><select id="maximum-rank" hidden></select></label>
+      <button type="button" id="add-filter">添加条件</button>
+    </div>
+    <div id="conditions"></div>
+    <div class="columns" aria-label="排序"></div>
+    <div class="filter-controls">
+      <label>排序 <select id="order-field"></select></label><button id="reverse" type="button">升序</button>
+      <button type="button" id="reset">重置筛选与排序</button>
+    </div>
+  </dialog>
+  <div id="monster-tools" popover aria-label="怪物数值设置"></div>
+  <aside id="preview" aria-label="条目预览" hidden></aside>
+  <dialog id="image-view"><form method="dialog"><button autofocus>关闭大图</button></form><img alt=""></dialog>
+  <button id="dice-open" aria-label="打开骰盘" aria-controls="dice-box" aria-expanded="false"><svg width="14" height="14" viewBox="0 0 16 16" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3"><path d="M2 10l6-6 6 6"/></svg></button>
+  <section id="dice-box" aria-label="骰盘" hidden>
+    <div class="dice-head"><strong>Dice Roller</strong><button id="dice-close" type="button" aria-label="收起骰盘">×</button></div>
+    <div id="dice-log" role="log"></div>
+    <form id="dice-form"><input id="dice-input" aria-label="骰式" placeholder='7d6-1 or "/help"' autocomplete="off" spellcheck="false"></form>
+  </section>
+  <div id="roll-result" role="status" hidden></div>
+</body>
+</html>

@@ -1,0 +1,6046 @@
+{
+	"optionalfeature": [
+		{
+			"ENG_name": "Agonizing Blast",
+			"name": "苦痛魔爆",
+			"source": "PHB",
+			"page": 110,
+			"srd": true,
+			"reprintedAs": [
+				"苦痛魔爆|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"魔能爆#c"
+					]
+				}
+			],
+			"entries": [
+				"施展{@spell 魔能爆}时，你可以将魅力调整值加到其每次命中所造成的伤害中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Agonizing Blast",
+			"name": "苦痛魔爆",
+			"source": "XPHB",
+			"page": 155,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						{
+							"choose": "level=0|class=Warlock",
+							"entry": "一道能造成伤害的魔契师戏法",
+							"entrySummary": "能造成伤害的魔契师戏法"
+						}
+					],
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"选择一项你已知的{@filter 魔契师戏法|spells|level=0|class=魔契师|damage type=强酸;钝击;冷冻;火焰;力场;闪电;暗蚀;穿刺;毒素;心灵;光耀;斩击;雷鸣}且造成伤害的法术。你可以将你的魅力调整值添加到该法术的伤害掷骰上。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Repeatable",
+							"name": "复选",
+							"type": "entries",
+							"entries": [
+								"你可以多次选择本祈唤。每次这么做时，你都必须选择不同的满足先决的戏法。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Ambush",
+			"name": "伏击",
+			"source": "TCE",
+			"page": 42,
+			"reprintedAs": [
+				"伏击|XPHB"
+			],
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"当你进行一次敏捷（{@skill 隐匿}）检定或先攻检定时，你可以消耗一枚卓越骰，并将消耗的卓越骰加入本次检定中，前提是你并未{@condition 失能}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Ambush",
+			"name": "伏击",
+			"source": "XPHB",
+			"page": 94,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"当你进行一次敏捷（{@skill 隐匿|XPHB}）检定或一个{@variantrule 先攻|XPHB}骰时，你可以消耗一个卓越骰并将该骰子加到骰上，除非你处于{@condition 失能|XPHB}状态。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Arcane Propulsion Armor",
+			"name": "奥能动力甲",
+			"source": "TCE",
+			"page": 20,
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 14,
+						"class": {
+							"ENG_name": "Artificer",
+							"name": "奇械师",
+							"source": "TCE"
+						}
+					},
+					"item": [
+						"一套盔甲（需要同调）"
+					]
+				}
+			],
+			"entries": [
+				"这套盔甲的穿戴者获得以下好处：",
+				{
+					"type": "list",
+					"items": [
+						"穿戴者的步行速度增加5尺。",
+						"盔甲将附带一对手套，每一只手套在你没有持握物品时皆可被作为一件魔法近战武器持用。穿戴者熟练于这对手套，且每只手套在其命中后会造成{@damage 1d8}点力场伤害。此手套具有投掷属性，其普通射程为20尺，最大射程为60尺。投掷时，手套会脱离并飞向攻击的目标，然后立即返回穿戴者身上并重新连接。",
+						"除非你自愿，否则此盔甲无法移除。",
+						"如果你有肢体缺失，盔甲能够代替你所有缺失的肢体手、臂、脚、腿或类似组件。可以使你如同正常肢体一样使用代替后的它们。"
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Archery",
+			"name": "箭术",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 91
+				}
+			],
+			"reprintedAs": [
+				{
+					"uid": "箭术|XPHB",
+					"tag": "feat"
+				}
+			],
+			"featureType": [
+				"FS:F",
+				"FS:R"
+			],
+			"entries": [
+				"你使用远程武器进行攻击检定时具有+2加值。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Armor of Magical Strength",
+			"name": "魔法力量护甲",
+			"source": "TCE",
+			"page": 20,
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"一套盔甲（需要同调）"
+					]
+				}
+			],
+			"entries": [
+				"此盔甲拥有6发充能。穿戴者能以下列方式消耗充能：",
+				{
+					"type": "list",
+					"items": [
+						"当着装者进行力量检定或力量豁免投掷时，可以消耗1点充能，将等同于其智力修正值的加值加到投掷上。",
+						"当着装者将被撞击{@condition 倒地}时，它可以用一个反应，消耗1发充能避免被撞击倒地。"
+					]
+				},
+				"此盔甲在每天的黎明时会恢复{@dice 1d6}发已被消耗的充能。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Armor of Shadows",
+			"name": "幽影护甲",
+			"source": "PHB",
+			"page": 110,
+			"srd": true,
+			"reprintedAs": [
+				"幽影护甲|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"法师护甲"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以随意以自身为目标施展{@spell 法师护甲}，且无需消耗法术位和材料成分。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Armor of Shadows",
+			"name": "幽影护甲",
+			"source": "XPHB",
+			"page": 155,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"法师护甲|xphb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以不消耗法术位对自己施放{@spell 法师护甲|XPHB}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Ascendant Step",
+			"name": "星移步法",
+			"source": "PHB",
+			"page": 110,
+			"srd": true,
+			"reprintedAs": [
+				"星移步法|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"浮空术"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以随意以自身为目标施展{@spell 浮空术}，且无需消耗法术位和材料成分。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Ascendant Step",
+			"name": "星移步法",
+			"source": "XPHB",
+			"page": 155,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"浮空术|xphb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以不消耗法术位对自己施放{@spell 浮空术|XPHB}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Aspect of the Moon",
+			"name": "月之仪态",
+			"source": "XGE",
+			"page": 56,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "书之魔契"
+				}
+			],
+			"entries": [
+				"你不再需要睡眠，同样不能以任何方式被强迫睡眠。为了获得长休的益处，你可以在8小时内执行一些轻度活动，像是阅读你的影之书或是放哨之类的。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Bait and Switch",
+			"name": "换位诈术",
+			"source": "TCE",
+			"page": 42,
+			"reprintedAs": [
+				"换位诈术|XPHB"
+			],
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"在你自己的回合中，若你身旁有某名生物距你5尺内，你就能够消耗一枚卓越骰来与那名生物互换位置，前提是你消耗至少5尺移动力且那名生物是自愿且并未{@condition 失能}。这次移动不会引发借机攻击。",
+				"投掷那枚被消耗的卓越骰。直到你的下个回合开始前，你或被互换位置的另一生物（由你选择）的AC获得等于该卓越骰结果的加值。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Bait and Switch",
+			"name": "换位诈术",
+			"source": "XPHB",
+			"page": 94,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你的回合中，若你处于某个生物 5 尺范围内，你可够消耗一枚卓越骰和至少 5 尺的移动力，来与那个生物互换位置。该生物需要自愿且不处于{@condition 失能|XPHB}状态。这次移动不会引发{@action 借机攻击|XPHB|借机攻击}。",
+				"投掷那枚被消耗的卓越骰。直到你的下个回合开始前，你或被互换位置的另一生物（由你选择）的AC获得等于该卓越骰结果的加值。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Banishing Arrow",
+			"name": "放逐矢",
+			"source": "XGE",
+			"page": 29,
+			"reprintedAs": [
+				"放逐弹|AU"
+			],
+			"featureType": [
+				"AS"
+			],
+			"consumes": {
+				"ENG_name": "Arcane Shot",
+				"name": "奥术射击"
+			},
+			"entries": [
+				"你用你的防护魔法来暂时放逐你的目标到一片妖精荒野的无害区域内。被这根箭矢击中的生物必须通过一次魅力豁免。豁免失败将被放逐。当被这种方式放逐时，目标速度降为0，陷入{@condition 失能}。而在目标下一个回合结束时，它将重新出现在被放逐前的位置上。如果该位置被占据，则它在最近的未被占据空间出现。",
+				"当你在此职业上达到18级后，目标被箭攻击命中时还会额外受到{@damage 2d6}点力场伤害。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Banishing Shot",
+			"name": "放逐弹",
+			"source": "AU",
+			"featureType": [
+				"AS"
+			],
+			"consumes": {
+				"ENG_name": "Arcane Shot",
+				"name": "奥术射击"
+			},
+			"entries": [
+				"你的弹药将目标暂时隔离在无害的半位面中。你命中的生物额外受到等于一枚奥术射击骰的心灵伤害，且必须成功通过一次魅力豁免，否则被放逐。被放逐期间，目标陷入{@condition 失能|XPHB}状态且{@variantrule 速度|XPHB}降至0。目标在其下个回合结束时重新出现在其原本所在的空间或最近的未占据空间（若原空间已被占据）。"
+			]
+		},
+		{
+			"ENG_name": "Beast Speech",
+			"name": "野兽之语",
+			"source": "PHB",
+			"page": 110,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"动物交谈"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以随意施展{@spell 动物交谈}，且无需消耗法术位。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Beguiling Arrow",
+			"name": "欺诈矢",
+			"source": "XGE",
+			"page": 29,
+			"reprintedAs": [
+				"欺诈弹|AU"
+			],
+			"featureType": [
+				"AS"
+			],
+			"consumes": {
+				"ENG_name": "Arcane Shot",
+				"name": "奥术射击"
+			},
+			"entries": [
+				"你的惑控魔法让箭矢暂时欺骗目标。被这根箭矢击中的生物会额外受到{@damage 2d6}点心灵伤害，之后，选择那目标周围30尺范围内的一个你的盟友。受击目标必须通过一次感知豁免，若豁免失败将被所选盟友{@condition 魅惑}。这一魅惑效应会持续到你的下一回合开始前，但倘若所选盟友攻击了被{@condition 魅惑}的目标、对受击目标造成了伤害、或强制受击目标进行一次豁免时，这一效果将提前结束。",
+				"当你在此职业上达到18级后，箭矢的额外心灵伤害增加为{@damage 4d6}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Beguiling Influence",
+			"name": "诱导话术",
+			"source": "PHB",
+			"page": 110,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"skillProficiencies": [
+				{
+					"deception": true,
+					"persuasion": true
+				}
+			],
+			"entries": [
+				"你获得{@skill 欺瞒}和{@skill 游说}技能的熟练项。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Beguiling Shot",
+			"name": "欺诈弹",
+			"source": "AU",
+			"featureType": [
+				"AS"
+			],
+			"consumes": {
+				"ENG_name": "Arcane Shot",
+				"name": "奥术射击"
+			},
+			"entries": [
+				"你的弹药魅惑了你的目标。被你击中的生物受到额外的心灵伤害，数值等于你投掷两次奥术射击骰的结果，并且必须成功通过一次感知豁免，否则直到你的下个回合开始前，它将陷入{@condition 魅惑|XPHB}状态，并将你或目标30尺内你的一名盟友（由你选择）视为魅惑者。如果魅惑者攻击目标、对其造成伤害或强迫其进行豁免检定，{@condition 魅惑|XPHB}状态将提前结束。"
+			]
+		},
+		{
+			"ENG_name": "Bewitching Whispers",
+			"name": "惑人低语",
+			"source": "PHB",
+			"page": 110,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"强迫术"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以消耗你的魔契师法术位施展一道{@spell 强迫术}。你必须完成一次长休才能再次施展该法术。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Blessed Warrior",
+			"name": "受祝福的勇士",
+			"source": "TCE",
+			"page": 52,
+			"reprintedAs": [
+				{
+					"uid": "受祝福的勇士|XPHB",
+					"tag": "feat"
+				}
+			],
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"FS:P"
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=cleric",
+								"count": 2
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				"从{@filter 牧师法术列表|spells|level=0|class=牧师}中选择两种戏法。你习得这些作为圣武士法术的戏法，这些戏法的施法属性是魅力。当你提升此职业的等级时，你能够将一个已知戏法替换为牧师法术列表中的另一个戏法。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Blind Fighting",
+			"name": "盲斗",
+			"source": "TCE",
+			"page": 41,
+			"reprintedAs": [
+				{
+					"uid": "盲斗|XPHB",
+					"tag": "feat"
+				}
+			],
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"FS:F",
+				"FS:P",
+				"FS:R"
+			],
+			"senses": [
+				{
+					"blindsight": 10
+				}
+			],
+			"entries": [
+				"你获得10尺的{@sense 盲视}感官。在此范围内，你可以切实的看见非{@quickref 掩护||3||全身掩护}的任何东西，即使你处于{@condition 目盲}状态或是身处黑暗之中。不仅如此，你还可以看见此范围内的{@condition 隐形}生物（除非对你而言该生物成功躲藏了起来）。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Bond of the Talisman",
+			"name": "护符牵绊",
+			"source": "TCE",
+			"page": 70,
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					},
+					"pact": "符之魔契"
+				}
+			],
+			"entries": [
+				"当除你以外的人佩戴你的护身符时，只要你们存在于同一位面，你可以用一个动作将你传送至它们周围未被占据的空间内。佩戴该护身符的人也能做同样的事，用他们的动作来传送到你身边。该传送能力可使用的次数等于你的熟练加值，且所有已消耗的次数会在你完成一次长休之后完全恢复。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Book of Ancient Secrets",
+			"name": "远古奥秘之书",
+			"source": "PHB",
+			"page": 110,
+			"srd": true,
+			"reprintedAs": [
+				"书之魔契|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "书之魔契"
+				}
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"ritual": [
+								{
+									"choose": "Components & Miscellaneous=仪式|level=1",
+									"count": 2
+								}
+							]
+						}
+					}
+				}
+			],
+			"entries": [
+				"现在你可以把魔法仪式抄录进你的\"影之书\"。你可以从任意职业法术列表中选择两道{@filter 任何职业法术列表中的1环仪式法术|spells|Components & Miscellaneous=仪式|level=1}（两法术可以属于不同法术列表）。所选法术将记录在\"影之书\"中，且不计入你的已知法术数量内。只要\"影之书\"在你的手中，你便可以施展所选的仪式法术。你不能通过仪式外的方式施展这些法术，除非你已经通过其他方式习得了这些法术。此外，你还可以把带有仪式描述的魔契师法术作为仪式法术进行施展。",
+				"冒险过程中，你还可以添加其他仪式法术到你的\"影之书\"中。当你发现一个这样的法术时，如果该法术的环阶等于或低于你魔契师等级的一半（向上取整），并且你能抽出时间抄录此法术，则你可以把此法术添加进\"影之书\"。抄录法术时其每环阶需要花费2小时时间和价值50 gp的珍稀墨水。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Boots of the Winding Path",
+			"name": "折返之靴",
+			"source": "TCE",
+			"page": 21,
+			"otherSources": [
+				{
+					"source": "ERLW",
+					"page": 62
+				}
+			],
+			"reprintedAs": [
+				{
+					"uid": "折返之靴|EFA",
+					"tag": "item"
+				}
+			],
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"ENG_name": "Artificer",
+							"name": "奇械师",
+							"source": "TCE"
+						}
+					},
+					"item": [
+						"一双靴子（需要同调）"
+					]
+				}
+			],
+			"entries": [
+				"穿着这双靴子时，那名生物能以一个附赠动作传送到一处距离该生物15尺范围内的可以看到的未占据空间中。不过，该生物必须在本回合内的某个时间点里曾占据过这个空间。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Brace",
+			"name": "警戒",
+			"source": "TCE",
+			"page": 42,
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"当一名你可见的生物移动进你持握近战武器的触及范围时，你能用一个反应消耗一枚卓越骰对该生物进行一次武器攻击。如果攻击命中，将消耗的卓越骰加入此次攻击的伤害掷骰中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Breath of Winter",
+			"name": "寒冬之息",
+			"source": "PHB",
+			"page": 81,
+			"featureType": [
+				"ED"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"ENG_name": "Monk",
+							"name": "武僧"
+						},
+						"subclass": {
+							"ENG_name": "Four Elements",
+							"name": "四象"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"resource": {
+								"6": [
+									"寒冰锥"
+								]
+							}
+						}
+					},
+					"resourceName": "Ki",
+					"ability": "wis"
+				}
+			],
+			"entries": [
+				"你可以消耗6点气施展法术{@spell 寒冰锥}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Bursting Arrow",
+			"name": "爆裂矢",
+			"source": "XGE",
+			"page": 29,
+			"reprintedAs": [
+				"爆裂弹|AU"
+			],
+			"featureType": [
+				"AS"
+			],
+			"consumes": {
+				"ENG_name": "Arcane Shot",
+				"name": "奥术射击"
+			},
+			"entries": [
+				"你将塑能学派的强烈力场魔法能量注入到箭中，而这股能量将在你的攻击后爆炸。紧随这发箭矢击中生物之后，目标与其周围10尺范围内的所有的生物都将分别受到{@damage 2d6}点力场伤害。",
+				"当你在此职业上达到18级后，箭矢的爆炸力场伤害增加为{@damage 4d6}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Bursting Shot",
+			"name": "爆裂弹",
+			"source": "AU",
+			"featureType": [
+				"AS"
+			],
+			"consumes": {
+				"ENG_name": "Arcane Shot",
+				"name": "奥术射击"
+			},
+			"entries": [
+				"你将爆炸性的力场能量注入弹药。在你对目标生物造成伤害后，目标与源自目标的10尺{@variantrule 光环 [效应区域]|XPHB|光环}内的每名生物立即受到等于两枚奥术射击骰的力场伤害。"
+			]
+		},
+		{
+			"ENG_name": "Careful Spell",
+			"name": "谨慎法术",
+			"source": "PHB",
+			"page": 102,
+			"srd": true,
+			"reprintedAs": [
+				"谨慎法术|XPHB"
+			],
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点"
+			},
+			"entries": [
+				"施展一个让其他生物进行豁免的法术时，你可以让其中一些生物免受法术的全额威力。实现该效应需要你使用1术法点，并指定一定数量的目标生物，其最大数量等于你的魅力调整值（至少为1）。而被指定的生物将直接成功通过法术的豁免检定。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Careful Spell",
+			"name": "谨慎法术",
+			"source": "XPHB",
+			"page": 141,
+			"srd52": true,
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点"
+			},
+			"entries": [
+				"当你施展一个强迫其他生物进行豁免的法术时，你可以保护某些生物免受法术的危害。你消耗1术法点并选择最多等同于你魅力调整值数量的生物（至少1个）。被选择的生物自动通过法术的豁免检定。如果法术在豁免成功后仍然造成半伤，这些生物不会承受任何伤害。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Celebrated in House",
+			"name": "家族中庆祝",
+			"source": "EFA",
+			"page": 68,
+			"featureType": [
+				"RP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "与一个{@book 龙纹家族|EFA|5|龙纹家族声望}的声望达到25+",
+						"entrySummary": "龙纹家族声望 25+"
+					}
+				}
+			],
+			"entries": [
+				"当你从你的家族请求一个恩赐（如\"{@optfeature 家族青睐|EFA}\"中所述），它可以采取以下额外形式之一：",
+				{
+					"type": "list",
+					"items": [
+						"该家族的龙纹成员为你施放一个与该家族标记相关的3环或4环法术，无需花费。",
+						"该家族的一名成员为你施放一个不同的6环或更低等级的法术，花费为通常的一半。",
+						"在你为家族执行的下一个任务期间（最多1周），你将获得一名保镖。这名保镖\u2014\u2014一个{@variantrule 挑战等级|XPHB}不超过你等级一半（向上取整）的生物\u2014\u2014适合你的家族。"
+					]
+				},
+				"此外，你的家族津贴增加以支持你的富裕生活方式（4 GP每日）。"
+			]
+		},
+		{
+			"ENG_name": "Chains of Carceri",
+			"name": "卡瑟利之链",
+			"source": "PHB",
+			"page": 110,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "链之魔契",
+					"level": {
+						"level": 15,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"定身怪物"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以随意施展针对于天界生物、邪魔、或元素生物的{@spell 定身怪物}，且无需消耗法术位和材料成分。你必须完成一次长休才能再次对同一生物使用此祈唤。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Clench of the North Wind",
+			"name": "北风之握",
+			"source": "PHB",
+			"page": 81,
+			"featureType": [
+				"ED"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"ENG_name": "Monk",
+							"name": "武僧"
+						},
+						"subclass": {
+							"ENG_name": "Four Elements",
+							"name": "四象"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"resource": {
+								"3": [
+									"定身类人"
+								]
+							}
+						}
+					},
+					"resourceName": "Ki",
+					"ability": "wis"
+				}
+			],
+			"entries": [
+				"你可以消耗3点气施展法术{@spell 定身类人}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Cloak of Flies",
+			"name": "飞蝇斗篷",
+			"source": "XGE",
+			"page": 56,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"entries": [
+				"以一个附赠动作，你周身环绕起外观如同纷飞蚊蝇般的魔法灵光。灵光以你为中心向四周散发5尺距离，其无法穿透{@quickref 掩护||3||全身掩护}。灵光会一直持续到你陷入{@condition 失能}、或以一个附赠动作主动解消它为止。",
+				"这一灵光会使你在魅力（{@skill 威吓}）检定具有优势，但你进行的其他任何魅力检定都将具有劣势。任何在灵光内开始其回合的生物，会受到等同于你魅力调整值点的毒素伤害（最低0点伤害）。",
+				"使用本祈唤后，直到你完成一次短休或长休前，你都无法再次使用它。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Cloud Rune",
+			"name": "云雾符文",
+			"source": "TCE",
+			"page": 44,
+			"featureType": [
+				"RN"
+			],
+			"entries": [
+				"此符文模拟了那些云巨人所使用的欺诈魔法。若你穿着或携带着一个铭刻着此符文的物品，你进行的敏捷（{@skill 巧手}）检定与魅力（{@skill 欺瞒}）检定具有优势。",
+				"此外，当你或你周围30尺内范围内你可见的生物被一次攻击检定命中时，你可以用反应，激活此符文并选择另一个距你30尺内的、除攻击者以外的生物。该次攻击的目标将改为那个生物，使用同样的检定值。这一魔法可转移的攻击效应与该次攻击的攻击距离无关。一旦你激活了此符文，直到你完成一次短休或长休为止你都不能再次激活它。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Commander's Strike",
+			"name": "指挥官奇袭",
+			"source": "PHB",
+			"page": 74,
+			"reprintedAs": [
+				"指挥官奇袭|XPHB"
+			],
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你在自己回合内执行{@action 攻击}动作时，可以放弃一次攻击并使用附赠动作指挥一名盟友发动奇袭。使用此战技时，你消耗一粒卓越骰，并指定一名能看见你或能听到你声音的盟友。所选盟友可以立即使用反应发动一次武器攻击，并将消耗的卓越骰加在此次攻击的伤害掷骰中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Commander's Strike",
+			"name": "指挥官奇袭",
+			"source": "XPHB",
+			"page": 94,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你在自己回合内执行{@action 攻击|XPHB}动作时，你可以替换掉一次你的攻击变为指挥一名伙伴发动奇袭。使用此战技时，你消耗一枚卓越骰，并指定一名能看见你或能听到你声音的伙伴。所选生物可以立即使用其{@variantrule 反应|XPHB}发动一次武器攻击或{@variantrule 徒手打击|XPHB}，若命中，将消耗的卓越骰加在此次攻击的伤害掷骰中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Commanding Presence",
+			"name": "领导风范",
+			"source": "TCE",
+			"page": 42,
+			"reprintedAs": [
+				"领导风范|XPHB"
+			],
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"当你进行一次魅力（{@skill 威吓}）、魅力（{@skill 表演}）或魅力（{@skill 游说}）检定时，你能够消耗一枚卓越骰，将消耗的卓越骰加入此次属性检定中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Commanding Presence",
+			"name": "领导风范",
+			"source": "XPHB",
+			"page": 95,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"当你进行一次魅力（{@skill 威吓|XPHB}、{@skill 表演|XPHB}或{@skill 游说|XPHB}）检定时，你能够消耗一枚卓越骰，将消耗的卓越骰加入此次属性检定中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Defense",
+			"name": "防御",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 84
+				},
+				{
+					"source": "PHB",
+					"page": 91
+				}
+			],
+			"reprintedAs": [
+				{
+					"uid": "防御|XPHB",
+					"tag": "feat"
+				}
+			],
+			"featureType": [
+				"FS:F",
+				"FS:P",
+				"FS:R"
+			],
+			"entries": [
+				"着装护甲时，你的AC获得 +1加值。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Devil's Sight",
+			"name": "魔鬼视界",
+			"source": "PHB",
+			"page": 110,
+			"srd": true,
+			"reprintedAs": [
+				"魔鬼视界|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以在黑暗中正常视物，拥有120尺的可视距离，无论其属于魔法黑暗还是非魔法黑暗。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Devil's Sight",
+			"name": "魔鬼视界",
+			"source": "XPHB",
+			"page": 155,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你在{@variantrule 微光光照|XPHB}光照和{@variantrule 黑暗|XPHB}中拥有 120 尺的可视距离，而无论其属于魔法性的还是非魔法性的。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Devouring Blade",
+			"name": "灭世魔刃",
+			"source": "XPHB",
+			"page": 155,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					},
+					"optionalfeature": [
+						"饥渴魔刃|xphb"
+					]
+				}
+			],
+			"entries": [
+				"{@optfeature 饥渴魔刃|XPHB}祈唤为你提供的额外攻击次数变为两次而非一次。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Disarming Attack",
+			"name": "缴械攻击",
+			"source": "PHB",
+			"page": 74,
+			"reprintedAs": [
+				"缴械攻击|XPHB"
+			],
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你以武器攻击命中敌人时，可消耗一粒卓越骰以尝试缴械目标，使其丢弃手中持握的一件物品。使用此战技时，你将消耗的卓越骰加在此次攻击的伤害掷骰中，并迫使目标必须进行一次力量豁免。豁免失败则其丢弃手中持握的一件物品（由你选择）。被丢弃的物品将掉落在该生物脚下。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Disarming Attack",
+			"name": "缴械攻击",
+			"source": "XPHB",
+			"page": 95,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你以攻击检定命中一个生物时，可消耗一枚卓越骰以尝试缴械目标。将消耗的卓越骰加在此次攻击的伤害掷骰中。目标必须通过一次力量豁免，豁免失败则其丢弃手中持握的一件物品（由你选择）。被丢弃的物品将掉落在该生物处于的空间中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Distant Spell",
+			"name": "远程法术",
+			"source": "PHB",
+			"page": 102,
+			"srd": true,
+			"reprintedAs": [
+				"远程法术|XPHB"
+			],
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点"
+			},
+			"entries": [
+				"施展一道施法距离不小于5尺的法术时，你可以使用1术法点使该法术的施法距离翻倍。",
+				"施展一道施法距离为触及的法术时，你可以使用1术法点将法术的施法距离改为30尺。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Distant Spell",
+			"name": "远程法术",
+			"source": "XPHB",
+			"page": 141,
+			"srd52": true,
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点"
+			},
+			"entries": [
+				"当你施展一个射程至少为5尺的法术时，你可以消耗1术法点来将法术的射程翻倍。当你施展一个射程为触碰的法术时，你可以消耗1术法点来将法术的射程改为30尺。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Distracting Strike",
+			"name": "扰乱打击",
+			"source": "PHB",
+			"page": 74,
+			"reprintedAs": [
+				"扰乱打击|XPHB"
+			],
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你以武器攻击命中敌人时，可以消耗一粒卓越骰以扰乱该目标，让你的盟友有机可乘。使用此战技时，你将消耗的卓越骰加在此次攻击的伤害掷骰中。此后直至你下一回合开始，下一次由除你之外的生物对目标发动的攻击检定具有优势。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Distracting Strike",
+			"name": "扰乱打击",
+			"source": "XPHB",
+			"page": 95,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你以攻击检定命中一个生物时，可以消耗一枚卓越骰以扰乱该目标，让你的盟友有机可乘。将消耗的卓越骰加在此次攻击的伤害掷骰中。此后直到你下个回合开始前，下一次由除你之外的生物对目标进行的攻击检定具有{@variantrule 优势|XPHB}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Dreadful Word",
+			"name": "恐惧箴言",
+			"source": "PHB",
+			"page": 110,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"困惑术"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以消耗你的魔契师法术位施展一道{@spell 困惑术}。你必须完成一次长休才能再次以此法施展该法术。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Druidic Warrior",
+			"name": "德鲁伊教战士",
+			"source": "TCE",
+			"page": 57,
+			"reprintedAs": [
+				{
+					"uid": "德鲁伊教战士|XPHB",
+					"tag": "feat"
+				}
+			],
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"FS:R"
+			],
+			"additionalSpells": [
+				{
+					"ability": "wis",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0|class=druid",
+								"count": 2
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				"你学会两道{@filter 德鲁伊法术列表|spells|level=0|class=德鲁伊}。它们对你视作游侠法术，感知是你施展他们的施法属性。当你升级时，你可以将其中一个戏法替换为德鲁伊法术列表中的另一个戏法。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Dueling",
+			"name": "对决",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"otherSources": [
+				{
+					"source": "XGE",
+					"page": 15
+				},
+				{
+					"source": "PHB",
+					"page": 84
+				},
+				{
+					"source": "PHB",
+					"page": 91
+				}
+			],
+			"reprintedAs": [
+				{
+					"uid": "对决|XPHB",
+					"tag": "feat"
+				}
+			],
+			"featureType": [
+				"FS:F",
+				"FS:B",
+				"FS:P",
+				"FS:R"
+			],
+			"entries": [
+				"单手持用一把近战武器，且并未同时持用其他武器时，你用该武器攻击的伤害掷骰获得 +2加值。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Eldritch Mind",
+			"name": "魔能意志",
+			"source": "TCE",
+			"page": 71,
+			"reprintedAs": [
+				"魔能意志|XPHB"
+			],
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你为保持法术的{@status 专注}所进行的体质豁免具有优势。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Eldritch Mind",
+			"name": "魔能意志",
+			"source": "XPHB",
+			"page": 155,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你为维持{@status 专注|XPHB}的所做的体质豁免具有{@variantrule 优势|XPHB}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Eldritch Sight",
+			"name": "魔能视界",
+			"source": "PHB",
+			"page": 110,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"侦测魔法"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以随意施展法术{@spell 侦测魔法}，且无需消耗法术位。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Eldritch Smite",
+			"name": "魔能斩",
+			"source": "XGE",
+			"page": 56,
+			"reprintedAs": [
+				"魔能斩|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "刃之魔契",
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"entries": [
+				"每回合一次，当你用契约武器命中一个生物时，你可以消耗一个魔契师法术位，以此对目标造成额外{@damage 1d8}+每法术位等级{@damage 1d8}点的力场伤害，如果目标的体型在巨型或以下，则你还可以将他击入{@condition 倒地}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Eldritch Smite",
+			"name": "魔能斩",
+			"source": "XPHB",
+			"page": 155,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					},
+					"optionalfeature": [
+						"刃之魔契|xphb"
+					]
+				}
+			],
+			"entries": [
+				"每回合一次，当你用契约武器命中一个生物时，你可以消耗一枚契约魔法特性的法术位，以此对目标造成额外{@damage 1d8}+每法术位环阶{@dice 1d8} 点的力场伤害，如果目标的体型在巨型或以下，则你还可以令目标陷入{@condition 倒地|XPHB}状态。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Eldritch Spear",
+			"name": "魔能长枪",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"reprintedAs": [
+				"魔能长枪|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"魔能爆#c"
+					]
+				}
+			],
+			"entries": [
+				"施展{@spell 魔能爆}时，射程变为300尺。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Eldritch Spear",
+			"name": "魔能长枪",
+			"source": "XPHB",
+			"page": 155,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						{
+							"choose": "level=0|class=Warlock",
+							"entry": "一道能造成伤害的魔契师戏法",
+							"entrySummary": "能造成伤害的魔契师戏法"
+						}
+					],
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"选择一道你已知的造成伤害且射程至少为 10 尺的{@filter 魔契师戏法|spells|level=0|class=魔契师|damage type=强酸;钝击;冷冻;火焰;力场;闪电;暗蚀;穿刺;毒素;心灵;光耀;斩击;雷鸣|range=点}。当你施展此法术时，其射程增加等于你魔契师等级 30 倍的尺数。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Repeatable",
+							"name": "复选",
+							"type": "entries",
+							"entries": [
+								"你可以多次选择本祈唤。每次这么做时，你都必须选择不同的满足先决的戏法。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Elemental Attunement",
+			"name": "元素同调",
+			"source": "PHB",
+			"page": 81,
+			"featureType": [
+				"ED"
+			],
+			"entries": [
+				"你可以用动作短暂操控身边30尺内的元素之力，并产生下列效应之一：",
+				{
+					"type": "list",
+					"items": [
+						"用土、水、气、火创造一次无害的瞬间视听效应，比如火花闪现、清风吹拂、青雾飘散、岩石轰隆。",
+						"瞬间点燃或吹熄蜡烛，火炬或小型营火。",
+						"加热或降温至多1磅无生命的物质，至多持续1小时。",
+						"将土，水，雾或火按照你的心意塑形成至多1尺立方的粗糙形状，至多持续1分钟。"
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Empowered Spell",
+			"name": "强效法术",
+			"source": "PHB",
+			"page": 102,
+			"srd": true,
+			"reprintedAs": [
+				"强效法术|XPHB"
+			],
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点"
+			},
+			"entries": [
+				"为法术进行伤害掷骰时，你可以使用1术法点重掷其中一定数量的骰子。重掷骰子的最大数等于你的魅力调整值（至少为1），且你必须接受新的结果。",
+				"强效法术超魔可以与其他超魔法选项合用。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Empowered Spell",
+			"name": "强效法术",
+			"source": "XPHB",
+			"page": 142,
+			"srd52": true,
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点"
+			},
+			"entries": [
+				"当你为一个法术进行伤害掷骰时，你可以消耗1术法点来重掷最多等同于你魅力调整值数量的伤害骰（至少一个），你必须使用新的结果。",
+				"即使你已经在一道法术上使用了其他超魔，你仍然可以使用强效法术。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Enfeebling Arrow",
+			"name": "虚弱矢",
+			"source": "XGE",
+			"page": 29,
+			"reprintedAs": [
+				"虚弱弹|AU"
+			],
+			"featureType": [
+				"AS"
+			],
+			"consumes": {
+				"ENG_name": "Arcane Shot",
+				"name": "奥术射击"
+			},
+			"entries": [
+				"你让死灵魔法缠绕在你的箭矢上。被这根箭矢击中的生物将额外受到{@damage 2d6}点暗蚀伤害。且目标必须通过一次体质豁免，豁免失败时他的武器攻击造成的伤害将减半，持续直至你的下个回合开始前。",
+				"当你在此职业上达到18级后，箭矢的额外暗蚀伤害增加为{@damage 4d6}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Enfeebling Shot",
+			"name": "虚弱弹",
+			"source": "AU",
+			"featureType": [
+				"AS"
+			],
+			"consumes": {
+				"ENG_name": "Arcane Shot",
+				"name": "奥术射击"
+			},
+			"entries": [
+				"你的弹药会削弱目标的力量。被你击中的生物受到额外黯蚀伤害，数值等于你投掷两次奥术射击骰的结果。目标还必须成功通过一次体质豁免，否则直到其下一回合结束前获得{@condition 中毒|XPHB}状态。每当以此方式获得{@condition 中毒|XPHB}状态的目标用攻击检定命中时，它会从该次攻击的总伤害中减去相当于你投掷一次奥术射击骰的数值。"
+			]
+		},
+		{
+			"ENG_name": "Enhanced Arcane Focus",
+			"name": "增强奥术法器",
+			"source": "TCE",
+			"page": 21,
+			"otherSources": [
+				{
+					"source": "ERLW",
+					"page": 62
+				}
+			],
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"一根权杖、法杖、或魔杖（需要同调）"
+					]
+				}
+			],
+			"entries": [
+				"当持握此物品时，那个生物的法术攻击检定获得+1加值，在进行法术法术攻击时无视 {@quickref 掩护||3||半身掩护}。",
+				"当你的奇械师职业等级达到10级后，该加值变成+2。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Enhanced Defense",
+			"name": "增强防御",
+			"source": "TCE",
+			"page": 21,
+			"otherSources": [
+				{
+					"source": "ERLW",
+					"page": 62
+				}
+			],
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"一套盔甲或一面盾牌"
+					]
+				}
+			],
+			"entries": [
+				"穿着这套注法盔甲、或持用这面注法盾牌时，那个生物在AC上获得+1加值。",
+				"当你的奇械师职业等级达到10级后，该加值变成+2。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Enhanced Weapon",
+			"name": "增强武器",
+			"source": "TCE",
+			"page": 21,
+			"otherSources": [
+				{
+					"source": "ERLW",
+					"page": 62
+				}
+			],
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"一把简易武器或军用武器"
+					]
+				}
+			],
+			"entries": [
+				"在用此魔法武器发动的攻击检定和伤害掷骰获得+1加值。",
+				"当你的奇械师职业等级达到10级后，该加值变成+2。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Eternal Mountain Defense",
+			"name": "苍山庇佑",
+			"source": "PHB",
+			"page": 81,
+			"featureType": [
+				"ED"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"ENG_name": "Monk",
+							"name": "武僧"
+						},
+						"subclass": {
+							"ENG_name": "Four Elements",
+							"name": "四象"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"resource": {
+								"5": [
+									"石肤术"
+								]
+							}
+						}
+					},
+					"resourceName": "Ki",
+					"ability": "wis"
+				}
+			],
+			"entries": [
+				"你可以消耗5点气对自身施展{@spell 石肤术}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Evasive Footwork",
+			"name": "灵巧步法",
+			"source": "PHB",
+			"page": 74,
+			"reprintedAs": [
+				"灵巧步法|XPHB"
+			],
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你在移动时，可以消耗一粒卓越骰，并将其加入你的AC中，直至你完成移动。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Evasive Footwork",
+			"name": "灵巧步法",
+			"source": "XPHB",
+			"page": 95,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一枚卓越骰并执行{@action 撤离|XPHB}动作，并将卓越骰结果加入你的AC中，直到你下回合开始为止。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Extended Spell",
+			"name": "延效法术",
+			"source": "PHB",
+			"page": 102,
+			"srd": true,
+			"reprintedAs": [
+				"延效法术|XPHB"
+			],
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点",
+				"amount": 1
+			},
+			"entries": [
+				"施展一道持续时间不短于1分钟的法术时，你可以使用1术法点使法术的持续时间翻倍，但其最终结果不能超过24小时。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Extended Spell",
+			"name": "延效法术",
+			"source": "XPHB",
+			"page": 142,
+			"srd52": true,
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点",
+				"amount": 1
+			},
+			"entries": [
+				"当你施展一个持续时间为1分钟或更长的法术时，你可以消耗1术法点使其持续时间翻倍，最多变为24小时。",
+				"如果被你延效的法术需要{@status 专注|XPHB}，你在为维持此法术{@status 专注|XPHB}所做的豁免上具有{@variantrule 优势|XPHB}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Eyes of the Rune Keeper",
+			"name": "符文守护者之眼",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你可以读懂任何文字。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Fangs of the Fire Snake",
+			"name": "火蛇利牙",
+			"source": "PHB",
+			"page": 81,
+			"featureType": [
+				"ED"
+			],
+			"entries": [
+				"你在自己回合内执行{@action 攻击}动作时，可以消耗1点气使得火焰触须从四肢喷涌而出。在本回合余下时间里，你进行徒手打击时的触及范围增加10尺。而这些攻击造成的伤害变为火焰伤害，而非钝击伤害。若在攻击命中时再消耗1点气，则该次攻击还可额外造成{@damage 1d10}点火焰伤害。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Far Scribe",
+			"name": "遥远音讯",
+			"source": "TCE",
+			"page": 71,
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					},
+					"pact": "书之魔契"
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"短讯术"
+						]
+					}
+				}
+			],
+			"entries": [
+				"一张新的书页出现在你的影之书中。在你的允许之下，一个生物可以使用一个动作来将他的名字写在这一页上，这一页能包括的名字数量等于你的熟练加值",
+				"你可以以一个名字在这一页上的生物为目标，施展法术{@spell 短讯术}，无需法术位与法术的材料成分。不过，你必须将传讯写在这一页上来施展它。目标将在他们的意识中听到这个传讯，且如果目标回复了传讯，他们的回复将会出现在书页上而不是在你的意识中。这些文字会在一分钟后消失。",
+				"你也可以使用一个动作，触摸书页上的一条名字，魔法性的消除它。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Favored in House",
+			"name": "家族青睐",
+			"source": "EFA",
+			"page": 67,
+			"featureType": [
+				"RP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "与一个{@book 龙纹家族|EFA|5|龙纹家族声望}的声望达到3+",
+						"entrySummary": "龙纹家族声望 3+"
+					}
+				}
+			],
+			"entries": [
+				"你可以向你的家族请求一个恩赐，其可以取以下形式之一：",
+				{
+					"type": "list",
+					"items": [
+						"该家族的一名成员为你施放一个不同的3环或更低环阶法术，花费减半。"
+					]
+				},
+				"你可以请求这样的恩赐次数等同于你的声望值。如果你的声望值低于你已请求的恩赐总数，家族中更高阶的成员可能会向你讨还恩赐，派你执行家族或个人的商业任务。",
+				"此外，你的家族会支付给你一笔维持俭朴生活方式（1 GP每日）的津贴。"
+			]
+		},
+		{
+			"ENG_name": "Feinting Attack",
+			"name": "诡诈攻击",
+			"source": "PHB",
+			"page": 74,
+			"reprintedAs": [
+				"诡诈攻击|XPHB"
+			],
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你可以在自己回合内消耗一粒卓越骰，以此指定你身边5尺范围内一个生物为目标，并使用附赠动作对其虚晃一招。你在本回合内对该生物发动的下一次攻击检定具有优势。如果该攻击命中，则将消耗的卓越骰加在此次攻击的伤害掷骰中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Feinting Attack",
+			"name": "诡诈攻击",
+			"source": "XPHB",
+			"page": 95,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一枚卓越骰并指定一个位于你 5 尺范围内的生物为目标，对其虚晃一招。你在本回合内对该生物发动的下一次攻击检定具有{@variantrule 优势|XPHB}。如果该攻击命中，则将消耗的卓越骰加在此次攻击的伤害掷骰中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Fiendish Vigor",
+			"name": "邪魔活力",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"reprintedAs": [
+				"邪魔活力|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"虚假生命"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以随意施展1环法术{@spell 虚假生命}，且无需消耗法术位和材料成分。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Fiendish Vigor",
+			"name": "邪魔活力",
+			"source": "XPHB",
+			"page": 155,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"虚假生命|xphb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以施展{@spell 虚假生命|XPHB}且无需消耗法术位。当你以此特性施展该法术时，你不需要掷骰来决定{@variantrule 临时生命值|XPHB} ，你自动在此骰子上获得最大值。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Fire Rune",
+			"name": "火焰符文",
+			"source": "TCE",
+			"page": 44,
+			"featureType": [
+				"RN"
+			],
+			"entries": [
+				"此符文的魔法可以引导伟大铁匠的高超技艺。若你穿着或携带着一个铭刻着此符文的物品，你进行与你熟练的工具相关的属性检定时，你的熟练加值翻倍。",
+				"此外，当你使用武器发动攻击，并命中生物时，你可以激活此符文来召唤出炽热的镣铐：攻击目标将额外受到{@damage 2d6}点火焰伤害，并需要通过一次力量豁免，若豁免失败将被炽热的镣铐{@condition 束缚}住，持续1分钟。被炽热镣铐{@condition 束缚}期间，目标在自己的每回合开始时将受到{@damage 2d6}点火焰伤害。目标可以在每个自己回合结束时重复此豁免检定，豁免成功时镣铐将提前消失。一旦你激活了此符文，直到你完成一次短休或长休为止你都不能再次激活它。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Fist of Four Thunders",
+			"name": "四雷拳",
+			"source": "PHB",
+			"page": 81,
+			"featureType": [
+				"ED"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"resource": {
+								"2": [
+									"雷鸣波"
+								]
+							}
+						}
+					},
+					"resourceName": "Ki",
+					"ability": "wis"
+				}
+			],
+			"entries": [
+				"你可以消耗2点气施展{@spell 雷鸣波}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Flames of the Phoenix",
+			"name": "凤凰烈焰",
+			"source": "PHB",
+			"page": 81,
+			"featureType": [
+				"ED"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Monk",
+							"name": "武僧"
+						},
+						"subclass": {
+							"ENG_name": "Four Elements",
+							"name": "四象"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"resource": {
+								"4": [
+									"火球术"
+								]
+							}
+						}
+					},
+					"resourceName": "Ki",
+					"ability": "wis"
+				}
+			],
+			"entries": [
+				"你可以消耗4点气施展{@spell 火球术}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Frost Rune",
+			"name": "寒霜符文",
+			"source": "TCE",
+			"page": 45,
+			"featureType": [
+				"RN"
+			],
+			"entries": [
+				"此符文的魔力能唤起那些寒冷荒野的生存者\u2014\u2014比如霜巨人\u2014\u2014的力量。若你穿着或携带着一个铭刻着此符文的物品，你进行的感知（{@skill 驯兽}）检定与魅力（{@skill 威吓}）检定具有优势。",
+				"此外，你可以用一个附赠动作，激活此符文以强化你的体能。接下来的十分钟内，你进行的使用力量属性或体质属性的属性检定与相关豁免检定都将具有+2的加值。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Gaze of Two Minds",
+			"name": "共视感官",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"reprintedAs": [
+				"共视感官|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"你用动作触碰一个自愿的类人生物，并与其建立起感官的连接。连接状态持续到你下回合结束时终止。其间，只要你与该生物还处于同一位面中，就可以用动作继续维持连接，使其持续时间延长至你下回合结束时终止。以所连接生物的感官进行观察时，你将拥有该生物所有的特殊感官收益，但你对于自身所处的环境则视为等同与处于{@condition 目盲}和{@condition 耳聋}状态。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Gaze of Two Minds",
+			"name": "共视感官",
+			"source": "XPHB",
+			"page": 156,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"你能够以{@variantrule 附赠动作|XPHB}触碰一个自愿的生物，并与其建立起感官的连接。连接状态持续到你下回合结束时终止。其间，只要你与该生物还处于同一位面中，你就可以用{@variantrule 附赠动作|XPHB}继续维持连接，使其持续时间延长至你下回合结束时终止。如果你不再使用这种方式延续持续时间，这种连接便会结束。",
+				"以所连接生物的感官进行观察时，你将拥有该生物所有的特殊感官的增益，且如果你们之间的距离不超过60尺，你就可以如同在该生物的位置上般施展法术。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Ghostly Gaze",
+			"name": "幽魂凝视",
+			"source": "XGE",
+			"page": 56,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"entries": [
+				"以一个动作，你获得可以看穿30尺范围内固态物件的能力。如果你不具有黑暗视觉，你会获得相同范围的{@sense 黑暗视觉}。这种特殊的感官将持续至多1分钟，如果你的{@status 专注}终止它也会提前终止（如同你正{@status 专注||专注于}一个法术）。在此期间，你看到的物件都将呈现出影子般的、透明的画面。",
+				"使用本祈唤后，直到你完成一次短休或长休前，你都无法再次使用它。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Gift of the Depths",
+			"name": "深海赠礼",
+			"source": "XGE",
+			"page": 57,
+			"reprintedAs": [
+				"深海赠礼|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"水下呼吸"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以在水下呼吸，且你获得等于你步行速度的游泳速度。",
+				"此外，你还可以施展一次法术{@spell 水下呼吸}，且无需消耗法术位。完成一次长休后，你重获如此施展该法术的能力。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Gift of the Depths",
+			"name": "深海赠礼",
+			"source": "XPHB",
+			"page": 156,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"水下呼吸|xphb"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以在水下呼吸，且你具有等于你{@variantrule 速度|XPHB}的{@variantrule 游泳速度|XPHB}。",
+				"此外，你还可以施展一次{@spell 水下呼吸|XPHB}且无需消耗法术位。完成一次{@variantrule 长休|XPHB}时，你重获以此法施展该法术的能力。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Gift of the Ever-Living Ones",
+			"name": "永生者赠礼",
+			"source": "XGE",
+			"page": 57,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "链之魔契"
+				}
+			],
+			"entries": [
+				"当你被恢复生命值时，只要此时你的魔宠与你之间的距离不超过100尺，所有决定你恢复生命值点数的骰，都被视为骰出了最大值。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Gift of the Protectors",
+			"name": "守护馈赠",
+			"source": "TCE",
+			"page": 71,
+			"reprintedAs": [
+				"守护馈赠|XPHB"
+			],
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					},
+					"pact": "书之魔契"
+				}
+			],
+			"entries": [
+				"一张新的书页出现在你的影之书中。在你的允许之下，一个生物可以使用一个动作来将他的名字写在这一页上，这一页能包括的名字数量等于你的熟练加值",
+				"当一个名字在这一页上的生物生命值降为0，但是没有立刻死亡时，这个生物的生命值魔法性的变为1点。当这个魔法效应被触发后，该效应无法再被任何生物触发，直到你完成一次长休。",
+				"你也可以使用一个动作，触摸书页上的一条名字，魔法性的消除它。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Gift of the Protectors",
+			"name": "守护馈赠",
+			"source": "XPHB",
+			"page": 156,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					},
+					"optionalfeature": [
+						"书之魔契|xphb"
+					]
+				}
+			],
+			"entries": [
+				"你召唤影之书时，一张新的书页会在其中出现。在你的允许之下，一个生物可以使用一个动作来将他的名字写在这一页上，这一页能包括的名字数量等于你的魅力调整值（至少为 1）。",
+				"当一个名字在这一页上的生物{@variantrule 生命值|XPHB}降为 0，但是还没有立刻死亡，这个生物的{@variantrule 生命值|XPHB|生命值}魔法地变为 1。每当这个魔法效应被触发，直至你完成{@variantrule 长休|XPHB}，没有任何生物可以再次触发该效应。",
+				"你能够以一个{@action 魔法|XPHB}动作，以触摸的形式消除一个在书页上的名字。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Goading Attack",
+			"name": "挑衅攻击",
+			"source": "PHB",
+			"page": 74,
+			"reprintedAs": [
+				"挑衅攻击|XPHB"
+			],
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你以武器攻击命中敌人时，可以消耗一粒卓越骰以尝试挑衅该目标。使用此战技时，你将所消耗的卓越骰加在此次攻击的伤害掷骰中，并迫使目标进行一次感知豁免。豁免失败者攻击除你之外的生物时，其进行的攻击检定具有劣势，直至你的下一回合结束。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Goading Attack",
+			"name": "挑衅攻击",
+			"source": "XPHB",
+			"page": 95,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你以攻击检定命中一个生物时，可以消耗一枚卓越骰以尝试挑衅该目标攻击你。所消耗的卓越骰还会被加到此次攻击的伤害掷骰中。目标必须通过一次感知豁免，豁免失败者对除你之外的生物进行的攻击检定具有{@variantrule 劣势|XPHB}，直到你的下个回合结束。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Gong of the Summit",
+			"name": "狮吼功",
+			"source": "PHB",
+			"page": 81,
+			"featureType": [
+				"ED"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"ENG_name": "Monk",
+							"name": "武僧"
+						},
+						"subclass": {
+							"ENG_name": "Four Elements",
+							"name": "四象"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"resource": {
+								"3": [
+									"粉碎音波"
+								]
+							}
+						}
+					},
+					"resourceName": "Ki",
+					"ability": "wis"
+				}
+			],
+			"entries": [
+				"你可以消耗3点气施展{@spell 粉碎音波}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Grappling Strike",
+			"name": "擒拿击",
+			"source": "TCE",
+			"page": 42,
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"当你以一次近战攻击命中一名生物时，你能够立即消耗一枚卓越骰，以一个附赠动作对目标进行一次擒抱（见玩家手册的擒抱规则）。将消耗的卓越骰加入你的力量（{@skill 运动}）检定中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Grasp of Hadar",
+			"name": "哈达之攫",
+			"source": "XGE",
+			"page": 57,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"魔能爆#c"
+					]
+				}
+			],
+			"entries": [
+				"每个你的回合一次，当你用{@spell 魔能爆}击中一个生物时，你可以让此生物直线向你移动10尺。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Grasping Arrow",
+			"name": "缠绕矢",
+			"source": "XGE",
+			"page": 29,
+			"reprintedAs": [
+				"缠绕弹|AU"
+			],
+			"featureType": [
+				"AS"
+			],
+			"consumes": {
+				"ENG_name": "Arcane Shot",
+				"name": "奥术射击"
+			},
+			"entries": [
+				"当这根箭矢打击它的目标时，咒法魔法会创造一团毒性荆棘紧紧缠绕目标。被这根箭矢击中的生物将额外受到{@damage 2d6}点毒素伤害，且它的速度减少10尺。此外，被击中的生物在每个回合首次移动时（至少1尺距离；不包括传送），他也会受到{@damage 2d6}点挥砍伤害。被击中的生物或其他能触碰到它的角色可以用一个动作来尝试解除荆棘，此时，它们需要通过一个对抗你的奥术射击DC的力量（{@skill 运动}）检定来解除荆棘。荆棘会在1分钟后消失。如果你再次使用该选项，它将提前消失。",
+				"当你在此职业上达到18级后，箭矢的额外毒素伤害和挥砍伤害增加为{@damage 4d6}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Grasping Shot",
+			"name": "缠绕弹",
+			"source": "AU",
+			"featureType": [
+				"AS"
+			],
+			"consumes": {
+				"ENG_name": "Arcane Shot",
+				"name": "奥术射击"
+			},
+			"entries": [
+				"你的弹药在目标周围创造出抓握荆棘。被你击中的生物受到等同于你奥术射击骰一次掷骰结果的额外挥砍伤害，并且必须成功通过一次力量豁免，否则将陷入{@condition 束缚|XPHB}状态，持续1分钟或直到你再次使用此选项。目标或一个在其触及范围内的生物可以花费一个动作，进行一次力量（{@skill 运动|XPHB}）检定，对抗你的奥术射击豁免DC，检定成功则移除荆棘并结束目标身上的{@condition 束缚|XPHB}状态。"
+			]
+		},
+		{
+			"ENG_name": "Great Weapon Fighting",
+			"name": "巨武器战斗",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 84
+				}
+			],
+			"reprintedAs": [
+				{
+					"uid": "巨武器战斗|XPHB",
+					"tag": "feat"
+				}
+			],
+			"featureType": [
+				"FS:F",
+				"FS:P"
+			],
+			"entries": [
+				"双手持用一把近战武器发动攻击时，若你的伤害掷骰掷出1或2，则可以选择重掷。不过哪怕其仍是1或2，你都必须接受重掷的数值。此外，该武器必须具有双手或两用属性。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Heightened Spell",
+			"name": "升阶法术",
+			"source": "PHB",
+			"page": 102,
+			"srd": true,
+			"reprintedAs": [
+				"升阶法术|XPHB"
+			],
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点",
+				"amount": 3
+			},
+			"entries": [
+				"施展一个迫使一个生物进行豁免以抵御其效应的法术时，你可以花费3术法点使该法术所有目标中的一个首次进行对抗该法术的豁免时具有劣势。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Heightened Spell",
+			"name": "升阶法术",
+			"source": "XPHB",
+			"page": 142,
+			"srd52": true,
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点",
+				"amount": 2
+			},
+			"entries": [
+				"当你施展一道迫使生物进行豁免的法术时，你可以消耗2术法点来使法术影响的某一名生物对此法术的豁免具有{@variantrule 劣势|XPHB}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Helm of Awareness",
+			"name": "警觉之盔",
+			"source": "TCE",
+			"page": 21,
+			"reprintedAs": [
+				{
+					"uid": "警觉之盔|EFA",
+					"tag": "item"
+				}
+			],
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 10,
+						"class": {
+							"ENG_name": "Artificer",
+							"name": "奇械师",
+							"source": "TCE"
+						}
+					},
+					"item": [
+						"一件头盔（需要同调）"
+					]
+				}
+			],
+			"entries": [
+				"穿戴此头盔时，那个生物在先攻检定上具有优势。此外，穿戴者只要未处于{@condition 失能}状态，就无法被{@status 突袭}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Hill Rune",
+			"name": "山丘符文",
+			"source": "TCE",
+			"page": 45,
+			"featureType": [
+				"RN"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Fighter",
+							"name": "战士"
+						},
+						"subclass": {
+							"ENG_name": "Rune Knight",
+							"name": "符文骑士",
+							"source": "TCE"
+						}
+					}
+				}
+			],
+			"entries": [
+				"此符文的魔力可以赋予你如山丘巨人一般的坚韧。若你穿着或携带着一个铭刻着此符文的物品，你对抗{@condition 中毒}状态所进行的豁免检定将具有优势，你获得毒素伤害的抗性。",
+				"此外，你可以使用附赠动作激活此符文，以此获得钝击、挥砍和穿刺伤害抗性，持续1分钟。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Homunculus Servant",
+			"name": "人工生命仆从",
+			"source": "TCE",
+			"page": 21,
+			"otherSources": [
+				{
+					"source": "ERLW",
+					"page": 62
+				}
+			],
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"一颗价值至少100gp的宝石或水晶"
+					]
+				}
+			],
+			"entries": [
+				"你习得了如何魔法性的创造一个为你服务的特殊{@creature 人工生命仆从|TCE|人工生命体}。你在注法中使用的物品将作为人工生命的心脏使用，而它的身体会立即围绕这颗心脏成型。",
+				"你可以决定人工生命的外观。有些奇械师喜欢看上去像机械的鸟，也有些喜欢长翅膀的小瓶或是活化的微型小坩埚。",
+				"人工生命对你和你的同伴友善，且服从你的命令。人工生命的游戏数据见下，它的数据中某几项会适用你的熟练加值（PB)。",
+				"在战斗中，人工生命使用你的先攻，并且在你的回合后立即行动。它能自由移动和执行反应，但除非你以一个附赠动作命令它进行数据中列出的动作或其他动作，否则它在回合中只能进行{@action 回避}动作。如果你处于{@condition 失能}状态，人工生命可以进行任何动作，而不仅仅是{@action 回避}。",
+				"如果对人工生命施展{@spell 修复术}，它将恢复{@dice 2d6}生命值。如果你或人工生命死亡，它将消失，只有心脏会留在它之前占据的地方。"
+			],
+			"hasFluffImages": true,
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Improved Pact Weapon",
+			"name": "进阶契约武器",
+			"source": "XGE",
+			"page": 57,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "刃之魔契"
+				}
+			],
+			"entries": [
+				"你可以使用你刃之魔契职业特性召唤出来的任何武器作为你施展魔契师法术的法器使用。",
+				"此外，若你的契约武器不是一件在攻击检定与其伤害掷骰上具有加值的魔法武器，你的契约武器在攻击检定与其伤害骰上获得+1加值。",
+				"不仅如此，当你塑造新的武器时，你可以塑造出一把{@item 短弓|phb}、{@item 长弓|phb}、{@item 轻弩|phb}、或{@item 重弩|phb}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Interception",
+			"name": "拦截",
+			"source": "TCE",
+			"page": 41,
+			"reprintedAs": [
+				{
+					"uid": "拦截|XPHB",
+					"tag": "feat"
+				}
+			],
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"FS:F",
+				"FS:P"
+			],
+			"entries": [
+				"当一个你可见的生物攻击除你以外且距离你5尺以内的其他目标时，你能以一个反应将目标受到的伤害减少{@dice 1d10}+你的熟练加值（最多减到0伤害）。当你手持一面{@item 盾牌|phb}或者一件{@filter 简易或军用武器|items|source=phb|category=基础|type=军用武器;简易武器}时才能执行此反应。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Investment of the Chain Master",
+			"name": "链主赋能",
+			"source": "TCE",
+			"page": 71,
+			"reprintedAs": [
+				"链主赋能|XPHB"
+			],
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "链之魔契"
+				}
+			],
+			"entries": [
+				"当你施展{@spell 寻获魔宠}时，你将一定程度的魔能力量灌注给被召唤的魔宠，给予这个生物以下的能力：",
+				{
+					"type": "list",
+					"items": [
+						"该魔宠获得40尺的飞行速度、或40尺的游泳速度（由你选择）。",
+						"你可以使用一个附赠动作，指挥你的魔宠进行一次{@action 攻击}动作。",
+						"该魔宠的武器攻击被视为魔法性的，用于克服对于非魔法攻击的免疫和抗性。",
+						"若该魔宠强迫一个生物进行豁免检定，它使用你的法术豁免DC。",
+						"若该魔宠受到伤害，你可以使用你的反应给予它仅对于那次伤害的抗性。"
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Investment of the Chain Master",
+			"name": "链主赋能",
+			"source": "XPHB",
+			"page": 156,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					},
+					"optionalfeature": [
+						"链之魔契|xphb"
+					]
+				}
+			],
+			"entries": [
+				"当你施展{@spell 寻获魔宠|XPHB}时，你将一定程度的魔能力量灌注给被召唤的魔宠，给予这个生物以下增益：",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Aerial or Aquatic",
+							"name": "翔空/潜渊",
+							"type": "entries",
+							"entries": [
+								"该魔宠获得 40 尺的{@variantrule 飞行速度|XPHB}或{@variantrule 游泳速度|XPHB}（由你选择）。"
+							]
+						},
+						{
+							"ENG_name": "Quick Attack",
+							"name": "迅捷打击",
+							"type": "entries",
+							"entries": [
+								"以一个{@variantrule 附赠动作|XPHB}，你可以指挥你的魔宠执行{@action 攻击|XPHB}动作。"
+							]
+						},
+						{
+							"ENG_name": "Necrotic or Radiant Damage",
+							"name": "光影注能",
+							"type": "entries",
+							"entries": [
+								"该魔宠造成钝击、穿刺或挥砍伤害时，你可以改为令其造成光耀或暗蚀伤害。"
+							]
+						},
+						{
+							"ENG_name": "Your Save DC",
+							"name": "你的豁免DC",
+							"type": "entries",
+							"entries": [
+								"若该魔宠强迫一个生物进行豁免检定，它使用你的法术豁免DC。"
+							]
+						},
+						{
+							"ENG_name": "Resistance",
+							"name": "抗性",
+							"type": "entries",
+							"entries": [
+								"若该魔宠受到伤害，则你可以使用{@variantrule 反应|XPHB}给予它对于那次伤害的{@variantrule 抗性|XPHB}。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Lance of Lethargy",
+			"name": "怠惰之枪",
+			"source": "XGE",
+			"page": 57,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"魔能爆#c"
+					]
+				}
+			],
+			"entries": [
+				"每个你的回合一次，当你用{@spell 魔能爆}击中一个生物时，你可以使目标的速度降低10尺，持续直至你的下个回合结束。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Lessons of the First Ones",
+			"name": "原初之一的教习",
+			"source": "XPHB",
+			"page": 156,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"featProgression": [
+				{
+					"ENG_name": "Origin Feat",
+					"name": "起源专长",
+					"category": [
+						"O"
+					],
+					"progression": {
+						"*": 1
+					}
+				}
+			],
+			"entries": [
+				"你从多元宇宙中的一位亘古存在那里收获了知识，令你习得一项由你选择的{@filter 起源专长|feats|category=o}。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Repeatable",
+							"name": "复选",
+							"type": "entries",
+							"entries": [
+								"你可以多次选择本祈唤。每次这么做时，你都必须选择不同的起源专长。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Lifedrinker",
+			"name": "饮命者",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"reprintedAs": [
+				"饮命者|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 12,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					},
+					"pact": "刃之魔契"
+				}
+			],
+			"entries": [
+				"你使用契约武器命中某个生物时，额外造成相当于你魅力调整值的暗蚀伤害（最少为1）。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Lifedrinker",
+			"name": "饮命者",
+			"source": "XPHB",
+			"page": 156,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					},
+					"optionalfeature": [
+						"刃之魔契|xphb"
+					]
+				}
+			],
+			"entries": [
+				"每回合一次，当你用契约武器命中一个生物时，你可以对其额外造成{@damage 1d6}的暗蚀、心灵或光耀伤害（由你选择），且你可以投掷并消耗一颗你的{@variantrule 生命值骰|XPHB}，恢复等于其骰值再加上你的体质调整值的{@variantrule 生命值|XPHB}（最小为 1 {@variantrule 生命值|XPHB|生命值}）。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Lunging Attack",
+			"name": "突刺攻击",
+			"source": "PHB",
+			"page": 74,
+			"reprintedAs": [
+				"突刺攻击|XPHB"
+			],
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你在自己回合内发动近战武器攻击时，可以消耗一粒卓越骰并令该攻击的触及范围增加５尺。如果该攻击命中，则将所消耗的卓越骰加在此次攻击的伤害掷骰中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Lunging Attack",
+			"name": "突刺攻击",
+			"source": "XPHB",
+			"page": 95,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一枚卓越骰并执行{@action 疾走|XPHB}动作。若你在本回合中直线移动至少5尺后立即以{@action 攻击|XPHB}动作中的一次近战攻击命中，你可以将消耗的卓越骰加在此次攻击的伤害掷骰中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Maddening Hex",
+			"name": "癫狂巫咒",
+			"source": "XGE",
+			"page": 57,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					},
+					"spell": [
+						"脆弱诅咒/诅咒#x"
+					]
+				}
+			],
+			"entries": [
+				"以一个附赠动作，你可以向着你的法术{@spell 脆弱诅咒}或咒剑诅咒Hexblade's Curse 、凶兆符记Sign of Ill Omen等魔契师特性所诅咒的目标施加一种精神干扰。此时，你对受咒目标与所有它周围5尺范围内的、由你所选择的生物造成一定心灵伤害，其伤害值等同于 你的魅力调整值 点（最低1点伤害）。使用此祈唤时，你必须能看到诅咒目标，且它与你之间的距离不能超过30尺。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Maneuvering Attack",
+			"name": "灵动攻击",
+			"source": "PHB",
+			"page": 74,
+			"reprintedAs": [
+				"灵动攻击|XPHB"
+			],
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你以武器攻击命中敌人时，可以消耗一粒卓越骰以让盟友移动到更有利的位置。使用此战技时，你将所消耗的卓越骰加在此次攻击的伤害掷骰中，并指定一个能看见你或听到你声音的盟友。该盟友可以立即用其反应移动至多等于其速度一半的距离。本次移动不会引发本次所攻击目标的借机攻击。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Maneuvering Attack",
+			"name": "灵动攻击",
+			"source": "XPHB",
+			"page": 95,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你以攻击检定命中一个生物时，可以消耗一枚卓越骰以让战友移动到更有利的位置。将所消耗的卓越骰加在此次攻击的伤害掷骰中，并指定一个能看见你或听到你声音的自愿生物。该生物可以用其{@variantrule 反应|XPHB}移动至多等于其{@variantrule 速度|XPHB}一半的距离。本次移动不会引发本次所攻击目标的{@action 借机攻击|XPHB}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Mask of Many Faces",
+			"name": "千面之脸",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"reprintedAs": [
+				"千面之脸|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"易容术"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以随意施展{@spell 易容术}，且无需消耗法术位。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Mask of Many Faces",
+			"name": "千面之脸",
+			"source": "XPHB",
+			"page": 156,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"易容术|xphb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以施展{@spell 易容术|XPHB}且无需消耗法术位。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Master of Myriad Forms",
+			"name": "万形之主",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"reprintedAs": [
+				"万形之主|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"变身术"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以随意施展{@spell 变身术}，且无需消耗法术位。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Master of Myriad Forms",
+			"name": "万形之主",
+			"source": "XPHB",
+			"page": 156,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"变身术|xphb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以施展{@spell 变身术|XPHB}且无需消耗法术位。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Menacing Attack",
+			"name": "恐吓攻击",
+			"source": "PHB",
+			"page": 74,
+			"reprintedAs": [
+				"恐吓攻击|XPHB"
+			],
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你以武器攻击命中敌人时，可消耗一粒卓越骰以尝试恐吓该目标。使用此战技时，你将所消耗的卓越骰加在此次攻击的伤害掷骰中，并迫使目标进行一次感知豁免。豁免失败者将陷入对你{@condition 恐慌}的状态，直至你下一回合结束。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Menacing Attack",
+			"name": "恐吓攻击",
+			"source": "XPHB",
+			"page": 95,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你以攻击检定命中一个生物时，可消耗一枚卓越骰以尝试恐吓该目标。所消耗的卓越骰还会被加到此次攻击的伤害掷骰中。目标必须通过一次感知豁免，豁免失败则陷入{@condition 恐慌|XPHB}状态，直到你下个回合结束为止。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Mind Sharpener",
+			"name": "思维砥石",
+			"source": "TCE",
+			"page": 22,
+			"reprintedAs": [
+				{
+					"uid": "思维砥石|EFA",
+					"tag": "item"
+				}
+			],
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"一套盔甲或法袍"
+					]
+				}
+			],
+			"entries": [
+				"这件注法物品能够向穿戴者发送震动，使其能够重新集中专注。此物品具有4发充能，当穿戴者在维持法术{@status 专注}时所作的一次体质豁免中失败时，穿戴者能够以一个反应，消耗1发充能将结果改为成功。此物品在每天的黎明时会恢复{@dice 1d4}发已被消耗的充能。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Minions of Chaos",
+			"name": "混沌手下",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"咒唤元素"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以消耗你的魔契师法术位施展一道{@spell 咒唤元素}。你必须完成一次长休才能再次施展该法术。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Mire the Mind",
+			"name": "心灵泥沼",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"缓慢术"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以消耗你的魔契师法术位施展一道{@spell 缓慢术}。你必须完成一次长休才能再次施展该法术。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Mist Stance",
+			"name": "云雾势",
+			"source": "PHB",
+			"page": 81,
+			"featureType": [
+				"ED"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Monk",
+							"name": "武僧"
+						},
+						"subclass": {
+							"ENG_name": "Four Elements",
+							"name": "四象"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"resource": {
+								"4": [
+									"气化形体"
+								]
+							}
+						}
+					},
+					"resourceName": "Ki",
+					"ability": "wis"
+				}
+			],
+			"entries": [
+				"你可以消耗4点气对自身施展{@spell 气化形体}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Misty Visions",
+			"name": "迷雾幻影",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"reprintedAs": [
+				"迷雾幻影|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"无声幻影"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以随意施展{@spell 无声幻影}，且无需消耗法术位和材料成分。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Misty Visions",
+			"name": "迷雾幻影",
+			"source": "XPHB",
+			"page": 156,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"无声幻影|xphb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以施展{@spell 无声幻影|XPHB}且无需消耗法术位。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "One with Shadows",
+			"name": "融身入影",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"reprintedAs": [
+				"融身入影|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"entries": [
+				"身处微光或黑暗环境时，你可以使用动作进入{@condition 隐形}，其效应持续至你进行移动、执行动作或执行反应时终止。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "One with Shadows",
+			"name": "融身入影",
+			"source": "XPHB",
+			"page": 156,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"隐形术|xphb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"身处{@variantrule 微光光照|XPHB}或{@variantrule 黑暗|XPHB}环境时，你可以对自身施展{@spell 隐形术|XPHB}且无需消耗法术位。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Otherworldly Leap",
+			"name": "超凡跳跃",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"reprintedAs": [
+				"超凡跳跃|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"跳跃术"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以随意以自身为目标施展{@spell 跳跃术}，且无需消耗法术位和材料成分。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Otherworldly Leap",
+			"name": "超凡跳跃",
+			"source": "XPHB",
+			"page": 156,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"跳跃术|xphb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你能够以自身为目标施展{@spell 跳跃术|XPHB}且无需消耗法术位。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Pact of the Blade",
+			"name": "刃之魔契",
+			"source": "PHB",
+			"page": 107,
+			"srd": true,
+			"reprintedAs": [
+				"刃之魔契|XPHB"
+			],
+			"featureType": [
+				"PB"
+			],
+			"entries": [
+				"你可以用一个动作从空着的手中创造一把契约武器。你每次创造契约武器时都可以从近战武器列表中选择它的形态（见第5章的武器选项）。当你使用该武器时，将视为拥有该武器的熟练项。在攻击对非魔法攻击或伤害具有抗性或免疫的目标时，该武器将视为魔法武器。",
+				"你的契约武器在离你5尺外的区域停留超过1分钟或更长时间，其将自然消失。当你再次创造契约武器、解散契约武器（无需动作）或是死亡的情况下，契约武器也会消失不见。",
+				"你可以通过一个特殊的仪式把持有的魔法武器变为你的契约武器。该仪式花费1小时，并且可以在短休时进行。仪式完成后，你随时可以解散该武器，以将其转移到一个异次元空间之中。而当你创造契约武器时改为将其召唤出来。该仪式无法对神器或智能武器起作用。如果你死亡；或是花费1小时对另外一把武器举行了仪式；或是你通过1小时的仪式打破该契约，则该武器便不再是你的契约武器。如果在它处于异次元空间时你打破契约，那么该武器将会出现在你的脚边。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Pact of the Blade",
+			"name": "刃之魔契",
+			"source": "XPHB",
+			"page": 156,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"entries": [
+				"以一个{@variantrule 附赠动作|XPHB}，你在手中咒唤出一把契约武器（一把已与你建立连结的简易或军用近战武器）或者与一把你所触摸的魔法武器建立连结。你不能与一把已经被其他生物同调或是和另一魔契师建立连结的魔法武器建立连结。直到连结结束，你拥有其熟练，且你可以将其用作施法的{@variantrule 法器|XPHB}。",
+				"当你用你连结的武器发动攻击时，你能使用魅力调整值进行攻击检定和伤害掷骰，取代使用力量或敏捷，且你可以令该武器造成暗蚀、心灵或光耀伤害，来取代原先的伤害类型。",
+				"你与武器的连结会在你再次使用此特性的{@variantrule 附赠动作|XPHB}时，武器在你5尺外1分钟或更久或是你死亡时结束。一个被咒唤出的武器会在连结结束时消失。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Pact of the Chain",
+			"name": "链之魔契",
+			"source": "PHB",
+			"page": 107,
+			"srd": true,
+			"reprintedAs": [
+				"链之魔契|XPHB"
+			],
+			"featureType": [
+				"PB"
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"ritual": [
+								"寻获魔宠"
+							]
+						}
+					}
+				}
+			],
+			"entries": [
+				"你习得法术{@spell 寻获魔宠}，并可以把它作为一个仪式施展。此法术不计入你的已知法术数量。",
+				"施展该法术时，你可以为你的魔宠选择通常的某一形态，或是下列特殊形态之一：{@creature 小魔鬼}、{@creature 伪龙}、{@creature 小恶魔}、或{@creature 小仙灵}。",
+				"此外，当你执行{@action 攻击}动作时可以放弃所有攻击中的一次攻击，转而让你的魔宠使用其反应发动一次攻击。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Pact of the Chain",
+			"name": "链之魔契",
+			"source": "XPHB",
+			"page": 157,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"innate": {
+						"_": {
+							"ritual": [
+								"寻获魔宠|xphb"
+							]
+						}
+					}
+				}
+			],
+			"entries": [
+				"你习得法术{@spell 寻获魔宠|XPHB}且能以一个{@action 魔法|XPHB}动作施展它，且无需消耗法术位。",
+				"每当你施展该法术，并为你的魔宠选择形态时，除了通常的形态选项，你还可以改为选择下列特殊形态之一：{@creature 小魔鬼|XMM}、{@creature 伪龙|XMM}、{@creature 小恶魔|XMM}、{@creature 骷髅|XMM}、{@creature 史拉蟾蝌蚪|XMM}、{@creature 求索斯芬克斯|XMM}、{@creature 小仙灵|XMM}，或{@creature 毒蛇|XMM}（魔宠的数据见附录B）。",
+				"此外，当你执行{@action 攻击|XPHB}动作时可以放弃自己动作攻击中的一次攻击，转而让你的魔宠使用其{@variantrule 反应|XPHB}发动一次攻击。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Pact of the Talisman",
+			"name": "符之魔契",
+			"source": "TCE",
+			"page": 71,
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"PB"
+			],
+			"entries": [
+				"你的宗主赐予你一个护身符，一个当需要的时候可以帮助佩戴者的护身符。当佩戴者在一次属性检定中失败，他们可以在骰掷结果上增加一个{@dice d4}，这可能将结果变为成功。这一能力可使用的次数等于你的熟练加值，且所有已消耗的次数将会在你完成一次长休之后全部恢复。",
+				"如果你弄丢了护身符，你可以进行一个1小时的仪式从你的宗主那里得到一个替代品。这一仪式可以在一个短休或一个长休过程中完成，且它将会破坏之前的护身符。护身符将会在你死亡时消散为灰尘。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Pact of the Tome",
+			"name": "书之魔契",
+			"source": "PHB",
+			"page": 108,
+			"srd": true,
+			"reprintedAs": [
+				"书之魔契|XPHB"
+			],
+			"featureType": [
+				"PB"
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0",
+								"count": 3
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				"你的宗主给予你一本名为\"影之书\"的魔法书。获得该特性后，从任意职业法术列表中选择三个{@filter 戏法|spells|level=0}（这三个戏法不必来自同一个列表）。该魔法书在你身上时，你可以随意施展那些法术。它们不算入你的已知戏法数量中。这些法术就算本来不属于魔契师法术列表，你也将其视为魔契师法术。如果你丢失了自己的影之书，你可以举行一个1小时的仪式，并从你的宗主处获得一个替代品。仪式可以在短休或长休期间完成，而它会摧毁之前的魔法书。当你死亡时，该书也将化为灰烬。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Pact of the Tome",
+			"name": "书之魔契",
+			"source": "XPHB",
+			"page": 157,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"additionalSpells": [
+				{
+					"ability": "cha",
+					"known": {
+						"_": [
+							{
+								"choose": "level=0",
+								"count": 3
+							}
+						]
+					},
+					"prepared": {
+						"_": [
+							{
+								"choose": "level=1|components & miscellaneous=ritual",
+								"count": 2
+							}
+						]
+					}
+				}
+			],
+			"entries": [
+				"在一次{@variantrule 短休|XPHB|短}或{@variantrule 长休|XPHB}结束时，你将幽影聚在手中，编织为一本书册。这本书（由你决定外观）中承载着只有你能理解的骇人魔法，令你获得以下增益。书册会在你以此特性咒唤另一本书或死亡时消失。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Cantrips and Rituals",
+							"name": "戏法和仪式",
+							"type": "entries",
+							"entries": [
+								"书册出现时，选择三道{@filter 戏法|spells|level=0}和两道带有{@variantrule 仪式|XPHB}标签的{@filter 一环法术|spells|level=1|components & miscellaneous=仪式}。这些法术可以来自任何职业的法术列表，且不能是你已经准备了的法术。当这本书册在你的角色身上时，你总是准备了这些法术，且对你而言这些法术是魔契师法术。"
+							]
+						},
+						{
+							"ENG_name": "Spellcasting Focus",
+							"name": "法器",
+							"type": "entries",
+							"entries": [
+								"你可以将此书册作为施法{@variantrule 法器|XPHB}。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Parry",
+			"name": "格挡",
+			"source": "PHB",
+			"page": 74,
+			"reprintedAs": [
+				"格挡|XPHB"
+			],
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"其他生物的近战攻击对你造成伤害时，你可以用反应消耗一粒卓越骰以减少伤害。减少的数值为卓越骰骰值＋你的敏捷调整值。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Parry",
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"其他生物以一次近战攻击检定对你造成伤害时，你可以执行{@variantrule 反应|XPHB}消耗一枚卓越骰以减少伤害。减少的数值为卓越骰骰值＋你的力量或敏捷调整值（由你选择）。"
+			],
+			"featureType": [
+				"MV:B"
+			],
+			"name": "格挡",
+			"page": 95,
+			"source": "XPHB",
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Piercing Arrow",
+			"name": "穿梭矢",
+			"source": "XGE",
+			"page": 29,
+			"reprintedAs": [
+				"穿梭弹|AU"
+			],
+			"featureType": [
+				"AS"
+			],
+			"consumes": {
+				"ENG_name": "Arcane Shot",
+				"name": "奥术射击"
+			},
+			"entries": [
+				"你使用变化魔法，使你的箭矢获取以太之能。当你使用该选项时，你本次攻击不进行攻击检定，取而代之，这只箭会向前释放出划出一条1尺宽、30尺长的直线。这只箭会无害地穿过物品，且无视掩护。而每一个在这条直线上的生物都必须通过一次敏捷豁免。豁免失败时，生物会受到被箭矢攻击命中的伤害，外加{@damage 1d6}点额外的穿刺伤害。豁免成功则只会受到半数伤害。",
+				"当你在此职业上达到18级后，箭矢的额外穿刺伤害增加为{@damage 2d6}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Piercing Shot",
+			"name": "穿梭弹",
+			"source": "AU",
+			"featureType": [
+				"AS"
+			],
+			"consumes": {
+				"ENG_name": "Arcane Shot",
+				"name": "奥术射击"
+			},
+			"entries": [
+				"你赋予弹药以太能量。当你使用该选项时，你无需为此次攻击进行攻击检定。作为替代，弹药向前直射，以你为源点射出1尺宽，30尺长的{@variantrule 线状 [效应区域]|XPHB|线状}，随后弹药消失。该{@variantrule 线状 [效应区域]|XPHB|线状}能够穿越固体障碍，因此无视掩护。{@variantrule 线状 [效应区域]|XPHB|线状}内的每名生物必须进行一次敏捷豁免。豁免失败则该生物受到如同被此次攻击命中时的伤害加等于两枚奥术射击骰的穿刺伤害。豁免成功则其受半伤。"
+			]
+		},
+		{
+			"ENG_name": "Precision Attack",
+			"name": "精准攻击",
+			"source": "PHB",
+			"page": 74,
+			"reprintedAs": [
+				"精准攻击|XPHB"
+			],
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你进行武器攻击时，可以消耗一粒卓越骰以将其结果加在本次攻击的攻击检定中。你可以在进行攻击检定之前或之后使用此战技，不过必须在相应攻击效果生效之前作决定。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Precision Attack",
+			"name": "精准攻击",
+			"source": "XPHB",
+			"page": 95,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"当你的一次攻击检定失手时，可以消耗一枚卓越骰并将其结果加在本次攻击的攻击检定中，这可能会导致其命中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Preeminent in House",
+			"name": "家族中的佼佼者",
+			"source": "EFA",
+			"page": 68,
+			"featureType": [
+				"RP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "与一个{@book 龙纹家族|EFA|5|龙纹家族声望}的声望达到50+",
+						"entrySummary": "龙纹家族声望 50+"
+					}
+				}
+			],
+			"entries": [
+				"当你从你的家族请求一个恩赐（如\"{@optfeature 家族青睐|EFA}\"中所述），它可以采取以下额外形式之一：",
+				{
+					"type": "list",
+					"items": [
+						"该家族的龙纹成员为你施放一个与该家族标记相关的5环法术，无需花费。",
+						"该家族的一名成员为你施放一个不同的8环或更低环阶的法术，花费为通常的一半。"
+					]
+				},
+				"此外，你的家族津贴增加以支持你的奢华生活方式（10 GP每日）。"
+			]
+		},
+		{
+			"ENG_name": "Protection",
+			"name": "守护",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"otherSources": [
+				{
+					"source": "PHB",
+					"page": 84
+				}
+			],
+			"reprintedAs": [
+				{
+					"uid": "守护|XPHB",
+					"tag": "feat"
+				}
+			],
+			"featureType": [
+				"FS:F",
+				"FS:P"
+			],
+			"entries": [
+				"当某个你能看见的生物攻击你身边5尺内除你之外的目标时，你可以用反应迫使该攻击的攻击检定具有劣势。你必须持用盾牌以实现该效果。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Protection of the Talisman",
+			"name": "护符庇佑",
+			"source": "TCE",
+			"page": 71,
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					},
+					"pact": "符之魔契"
+				}
+			],
+			"entries": [
+				"当佩戴者在一次豁免检定中失败，他们可以在骰掷结果上增加一个{@dice d4}，这可能将结果变为成功。这一能力可使用的次数等于你的熟练加值，在你完成一次长休之后恢复所有已消耗的次数。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Pushing Attack",
+			"name": "推撞攻击",
+			"source": "PHB",
+			"page": 74,
+			"reprintedAs": [
+				"推撞攻击|XPHB"
+			],
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你以武器攻击命中敌人时，可以消耗一粒卓越骰以尝试将该目标推开。使用此战技时，你将所消耗的卓越骰加在此次攻击的伤害掷骰中。如果该目标为大型或更小体型，则其必须进行一次力量豁免。豁免失败者将被往远离你的方向推动至多15尺。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Pushing Attack",
+			"name": "推撞攻击",
+			"source": "XPHB",
+			"page": 95,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你以武器攻击或{@variantrule 徒手打击|XPHB}发动的攻击检定命中一个生物时，可以消耗一枚卓越骰以尝试将该目标推离。所消耗的卓越骰还会被加到此次攻击的伤害掷骰中。如果该目标体型为大型或更小，则必须通过一次力量豁免，豁免失败将被往远离你的方向直线推动至多 15 尺。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Quick Toss",
+			"name": "快手投掷",
+			"source": "TCE",
+			"page": 42,
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"以一个附赠动作，你能消耗一枚卓越骰，用一件具有投掷属性的武器发动一次远程攻击。你可以作为攻击的一部分拔出那把投掷武器。如果此次攻击命中，你能将消耗的卓越骰加入此武器的伤害掷骰中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Quickened Spell",
+			"name": "瞬发法术",
+			"source": "PHB",
+			"page": 102,
+			"srd": true,
+			"reprintedAs": [
+				"瞬发法术|XPHB"
+			],
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点",
+				"amount": 2
+			},
+			"entries": [
+				"施展一道施法时间为1动作的法术时，你可以使用2术法点将其施法时间改为1附赠动作。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Quickened Spell",
+			"name": "瞬发法术",
+			"source": "XPHB",
+			"page": 142,
+			"srd52": true,
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点",
+				"amount": 2
+			},
+			"entries": [
+				"当你施展一个施法时间为动作的法术时，你可以消耗2术法点来将其施法时间改为{@variantrule 附赠动作|XPHB}。如果你已经在同一回合内施展了一个一环或更高环的法术，你不能进行瞬发法术，并且你在使用瞬发法术后也不能在同一回合内施展一环或更高环的法术。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Radiant Weapon",
+			"name": "光耀武器",
+			"source": "TCE",
+			"page": 22,
+			"otherSources": [
+				{
+					"source": "ERLW",
+					"page": 62
+				}
+			],
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"ENG_name": "Artificer",
+							"name": "奇械师",
+							"source": "TCE"
+						}
+					},
+					"item": [
+						"一把简易武器或军用武器（需要同调）"
+					]
+				}
+			],
+			"entries": [
+				"用此魔法武器发动的攻击检定和伤害掷骰获得+1加值。当持握该武器时，持用者能以一个附赠动作让它放出半径30尺的明亮光照以及该范围外30尺范围的微光光照。持有者也能以一个附赠动作熄灭武器的光芒。",
+				"此武器具有4发充能，当该武器的持有者被近战攻击命中之后，持用者能够立即以一个反应，消耗1发充能让攻击者对抗你的法术豁免DC进行一次体质豁免，若豁免失败，攻击者将陷入{@condition 目盲}状态直到他的下个回合结束。此武器在每天的黎明时会恢复{@dice 1d4}发已被消耗的充能。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Rally",
+			"name": "重整旗鼓",
+			"source": "PHB",
+			"page": 74,
+			"reprintedAs": [
+				"重整旗鼓|XPHB"
+			],
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你在自己回合内可以使用一个附赠动作并消耗一粒卓越骰以鼓舞一名盟友的士气。选择一名能看见你或听到你声音的盟友，并使其获得数量等于卓越骰结果＋你的魅力调整值的临时生命值。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Rally",
+			"name": "重整旗鼓",
+			"source": "XPHB",
+			"page": 95,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"以一个{@variantrule 附赠动作|XPHB}，你可以消耗一枚卓越骰以鼓舞一名战友的士气。选择一名位于你30尺内的能看见你或听到你的盟友。该生物获得数量等于你战士等级的一半（向下取整）加卓越骰结果的{@variantrule 临时生命值|XPHB}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Rebuke of the Talisman",
+			"name": "符令责斥",
+			"source": "TCE",
+			"page": 71,
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "符之魔契"
+				}
+			],
+			"entries": [
+				"当该护符的佩戴者被一个位于你30尺以内你可见的攻击者命中时，你可以使用你的反应来对该攻击者造成等同于你熟练加值的心灵伤害，并将其推离护符佩戴者至多10尺距离。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Recognized in House",
+			"name": "家族认可",
+			"source": "EFA",
+			"page": 68,
+			"featureType": [
+				"RP"
+			],
+			"prerequisite": [
+				{
+					"otherSummary": {
+						"entry": "与一个{@book 龙纹家族|EFA|5|龙纹家族声望}的声望达到10+",
+						"entrySummary": "龙纹家族声望10+"
+					}
+				}
+			],
+			"entries": [
+				"当你从你的家族请求一个恩赐（如\"{@optfeature 家族青睐|EFA}\"中所述），它可以采取以下额外形式之一：",
+				{
+					"type": "list",
+					"items": [
+						"该家族的龙纹成员为你免费施放一个与该家族标记相关的2环法术。",
+						"该家族的一名成员为你施放一个不同的4环或更低环位的法术，花费为通常的一半。",
+						"每当你进行据点回合时，你可以向你的家族发布命令，如同它是你据点中的特色设施。你的家族决定了你可用的特色设施类型，如本章后续各家族描述中所述。"
+					]
+				},
+				"此外，你的家族津贴增加到足以支持你的舒适生活方式（2 GP每日）。"
+			]
+		},
+		{
+			"ENG_name": "Relentless Hex",
+			"name": "残酷巫咒",
+			"source": "XGE",
+			"page": 57,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					},
+					"spell": [
+						"脆弱诅咒/诅咒#x"
+					]
+				}
+			],
+			"entries": [
+				"你的诅咒为你与受咒目标间建立了短暂的联结。以一个附赠动作，你可以魔法性的传送到你的法术{@spell 脆弱诅咒}或 咒剑诅咒Hexblade's Curse 、凶兆符记Sign of Ill Omen 等魔契师特性所诅咒的目标，其周围5尺内的一处你可见的且未被占据空间内，传送距离最多30英尺。以此方式进行传送时，你必须能够看到那个受咒目标。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Repeating Shot",
+			"name": "连射武器",
+			"source": "TCE",
+			"page": 22,
+			"otherSources": [
+				{
+					"source": "ERLW",
+					"page": 62
+				}
+			],
+			"reprintedAs": [
+				{
+					"uid": "连射武器|EFA",
+					"tag": "item"
+				}
+			],
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"一把具有弹药特性的简易武器或军用武器（需要同调）"
+					]
+				}
+			],
+			"entries": [
+				"在用此魔法武器发动的远程攻击检定和其伤害掷骰上获得+1加值，并且无视其装填特性（若有）。",
+				"如果此武器缺乏弹药，则在你持用它发起远程攻击时，它会自动创造一枚独属于它的魔法弹药。此武器创造的弹药在击中目标或失手后都会立即消失。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Repelling Blast",
+			"name": "斥力魔爆",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"reprintedAs": [
+				"斥力魔爆|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						"魔能爆#c"
+					]
+				}
+			],
+			"entries": [
+				"施展{@spell 魔能爆}时，你可以将被命中的生物沿直线往远离你的方向推动至多10尺。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Repelling Blast",
+			"name": "斥力魔爆",
+			"source": "XPHB",
+			"page": 157,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"spell": [
+						{
+							"choose": "level=0|class=Warlock|spell attack=m;r;o",
+							"entry": "一道通过攻击检定造成伤害的魔契师戏法",
+							"entrySummary": "通过攻击检定造成伤害的魔契师戏法"
+						}
+					],
+					"level": {
+						"level": 2,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"entries": [
+				"选择一项你已知的{@filter 魔契师戏法|spells|level=0|class=魔契师|spell attack=m;r;o}且需要进行攻击检定的戏法。当你用该戏法命中一个大型或更小的生物时，你可以将该生物推离你至多10尺。",
+				{
+					"type": "entries",
+					"entries": [
+						{
+							"ENG_name": "Repeatable",
+							"name": "复选",
+							"type": "entries",
+							"entries": [
+								"你可以多次选择本祈唤。每次这么做时，你都必须选择不同的满足先决的戏法。"
+							]
+						}
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Replicate Magic Item",
+			"name": "仿制魔法物品",
+			"source": "TCE",
+			"page": 22,
+			"otherSources": [
+				{
+					"source": "ERLW",
+					"page": 63
+				}
+			],
+			"featureType": [
+				"AI"
+			],
+			"entries": [
+				"使用此注法时，你能够仿制出一件特定的魔法物品。你能够多次学习此注法；每次学习本注法时，你都需要选择一件物品作为仿制对象：从下面的可仿制物品表中选择一件魔法物品。如果表格的标题中有一个等级，那么你必须到达该等级才能在这个表格中选择魔法物品。另外，你也可以选择一个游戏中存在的{@filter 普通魔法物品|items|type=!potion;!scroll|rarity=common}（不包括卷轴或药水）作为仿制对象。",
+				"在表格中，物品的条目会告诉你该项目是否需要同调。有关该物品的更多信息，以及仿制该物品所需的物品类型，请参阅{@book 城主指南|DMG}中的物品描述。",
+				{
+					"type": "table",
+					"caption": "仿制魔法物品（2级奇械师）",
+					"colLabels": [
+						"魔法物品",
+						"同调"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"{@item 炼金壶}",
+							"No"
+						],
+						[
+							"{@item 次元袋}",
+							"No"
+						],
+						[
+							"{@item 水下呼吸帽}",
+							"No"
+						],
+						[
+							"{@item 夜视镜}",
+							"No"
+						],
+						[
+							"{@item 攀爬绳}",
+							"No"
+						],
+						[
+							"{@item 短讯石}",
+							"No"
+						],
+						[
+							"{@item 搜魔魔杖}",
+							"No"
+						],
+						[
+							"{@item 探秘魔杖}",
+							"No"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "仿制魔法物品（6级奇械师）",
+					"colLabels": [
+						"魔法物品",
+						"同调"
+					],
+					"colStyles": [
+						"col-10",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"{@item 精灵之靴}",
+							"No"
+						],
+						[
+							"{@item 精灵斗篷}",
+							"是"
+						],
+						[
+							"{@item 蝠鲼斗篷}",
+							"No"
+						],
+						[
+							"{@item 魅惑镜片}",
+							"是"
+						],
+						[
+							"{@item 窃贼手套}",
+							"No"
+						],
+						[
+							"{@item 显像提灯}",
+							"No"
+						],
+						[
+							"{@item 颤栗乐笙}",
+							"No"
+						],
+						[
+							"{@item 水上行走戒指}",
+							"No"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "仿制魔法物品（10级奇械师）",
+					"colLabels": [
+						"魔法物品",
+						"同调"
+					],
+					"colStyles": [
+						"col-11",
+						"col-2 text-center"
+					],
+					"rows": [
+						[
+							"{@item 跑跳之靴}",
+							"是"
+						],
+						[
+							"{@item 雪地之靴}",
+							"是"
+						],
+						[
+							"{@item 射手护腕}",
+							"是"
+						],
+						[
+							"{@item 护盾胸针}",
+							"是"
+						],
+						[
+							"{@item 防护斗篷}",
+							"是"
+						],
+						[
+							"{@item 鹰眼镜片}",
+							"是"
+						],
+						[
+							"{@item 食人魔力量护手}",
+							"是"
+						],
+						[
+							"{@item 辟矢夺箭手套}",
+							"是"
+						],
+						[
+							"{@item 攀泳手套}",
+							"是"
+						],
+						[
+							"{@item 易容帽}",
+							"是"
+						],
+						[
+							"{@item 智力头带}",
+							"是"
+						],
+						[
+							"{@item 心灵感应头盔}",
+							"是"
+						],
+						[
+							"{@item 读心勋章}",
+							"是"
+						],
+						[
+							"{@item 适应项链}",
+							"是"
+						],
+						[
+							"{@item 愈合护符}",
+							"是"
+						],
+						[
+							"{@item 唤鼠乐笙}",
+							"是"
+						],
+						[
+							"{@item 艾罗娜的箭袋}",
+							"No"
+						],
+						[
+							"{@item 跳跃戒指}",
+							"是"
+						],
+						[
+							"{@item 心灵护盾戒指}",
+							"是"
+						],
+						[
+							"{@item 蛛行便鞋}",
+							"是"
+						],
+						[
+							"{@item 生风铁肺|ERLW}（详见{@book 第五章|ERLW|13}）",
+							"是"
+						],
+						[
+							"{@item 飞翼之靴}",
+							"是"
+						]
+					]
+				},
+				{
+					"type": "table",
+					"caption": "仿制魔法物品（14级奇械师）",
+					"colLabels": [
+						"魔法物品",
+						"同调"
+					],
+					"colStyles": [
+						"col-11",
+						"col-1 text-center"
+					],
+					"rows": [
+						[
+							"{@item 健康护符}",
+							"是"
+						],
+						[
+							"{@item 喷流式奥能臂|ERLW}（详见{@book 第五章|ERLW|13}）",
+							"是"
+						],
+						[
+							"{@item 山丘巨人力量腰带}",
+							"是"
+						],
+						[
+							"{@item 浮空之靴}",
+							"是"
+						],
+						[
+							"{@item 速度之靴}",
+							"是"
+						],
+						[
+							"{@item 防御护腕}",
+							"是"
+						],
+						[
+							"{@item 蝙蝠斗篷}",
+							"是"
+						],
+						[
+							"{@item 次元镣铐}",
+							"No"
+						],
+						[
+							"{@item 真视宝石}",
+							"是"
+						],
+						[
+							"{@item 音爆号角}",
+							"No"
+						],
+						[
+							"{@item 自由行动戒指}",
+							"是"
+						],
+						[
+							"{@item 防护戒指}",
+							"是"
+						],
+						[
+							"{@item 公羊戒指}",
+							"是"
+						]
+					]
+				}
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Repulsion Shield",
+			"name": "斥力之盾",
+			"source": "TCE",
+			"page": 23,
+			"otherSources": [
+				{
+					"source": "ERLW",
+					"page": 63
+				}
+			],
+			"reprintedAs": [
+				{
+					"uid": "斥力之盾|EFA",
+					"tag": "item"
+				}
+			],
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"ENG_name": "Artificer",
+							"name": "奇械师",
+							"source": "TCE"
+						}
+					},
+					"item": [
+						"一面盾牌（需要同调）"
+					]
+				}
+			],
+			"entries": [
+				"持用这面盾牌时，那个生物的AC获得+1加值。",
+				"此盾牌有4发充能，当持用者被近战攻击命中后，持用者可以以一个反应消耗一发充能将攻击者击退至多15尺远。该盾牌在每日黎明时会恢复{@dice 1d4}发已被消耗的充能。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Resistant Armor",
+			"name": "抗力护甲",
+			"source": "TCE",
+			"page": 23,
+			"otherSources": [
+				{
+					"source": "ERLW",
+					"page": 63
+				}
+			],
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"ENG_name": "Artificer",
+							"name": "奇械师",
+							"source": "TCE"
+						}
+					},
+					"item": [
+						"一套盔甲（需要同调）"
+					]
+				}
+			],
+			"entries": [
+				"穿戴该盔甲的生物对以下伤害类型中的一种具有抗性（在你为这个物品注法时选择）：强酸、冷冻、火焰、力场、闪电、暗蚀、毒素、心灵、光耀、雷鸣。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Returning Weapon",
+			"name": "回力武器",
+			"source": "TCE",
+			"page": 23,
+			"otherSources": [
+				{
+					"source": "ERLW",
+					"page": 63
+				}
+			],
+			"reprintedAs": [
+				{
+					"uid": "回力武器|EFA",
+					"tag": "item"
+				}
+			],
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"item": [
+						"一把具有投掷属性的简易武器或军用武器"
+					]
+				}
+			],
+			"entries": [
+				"在用此魔法武器发动的攻击检定和伤害掷骰获得+1加值，并在使用它发动远程攻击后，它会立即回到持用者的手中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Ride the Wind",
+			"name": "攀云步",
+			"source": "PHB",
+			"page": 81,
+			"featureType": [
+				"ED"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 11,
+						"class": {
+							"ENG_name": "Monk",
+							"name": "武僧"
+						},
+						"subclass": {
+							"ENG_name": "Four Elements",
+							"name": "四象"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"resource": {
+								"4": [
+									"飞行术"
+								]
+							}
+						}
+					},
+					"resourceName": "Ki",
+					"ability": "wis"
+				}
+			],
+			"entries": [
+				"你可以消耗4点气对自身施展{@spell 飞行术}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Riposte",
+			"name": "反击",
+			"source": "PHB",
+			"page": 74,
+			"reprintedAs": [
+				"反击|XPHB"
+			],
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"当某生物对你发动近战攻击而未命中时，你可以使用反应并消耗一粒卓越骰对其发动一次近战武器攻击。如果该攻击命中，则将卓越骰加在此攻击的伤害掷骰中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Riposte",
+			"name": "反击",
+			"source": "XPHB",
+			"page": 95,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"当一个生物对你发动了一次近战攻击检定但失手时，你可以执行一个{@variantrule 反应|XPHB}并消耗一枚卓越骰使用武器或{@variantrule 徒手打击|XPHB}对其发动一次近战攻击检定。如果该攻击命中，则将卓越骰加在此攻击的伤害掷骰中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "River of Hungry Flame",
+			"name": "噬焰流",
+			"source": "PHB",
+			"page": 81,
+			"featureType": [
+				"ED"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"ENG_name": "Monk",
+							"name": "武僧"
+						},
+						"subclass": {
+							"ENG_name": "Four Elements",
+							"name": "四象"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"resource": {
+								"5": [
+									"火墙术"
+								]
+							}
+						}
+					},
+					"resourceName": "Ki",
+					"ability": "wis"
+				}
+			],
+			"entries": [
+				"你可以消耗5点气施展{@spell 火墙术}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Rush of the Gale Spirits",
+			"name": "风灵突进",
+			"source": "PHB",
+			"page": 81,
+			"featureType": [
+				"ED"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"resource": {
+								"2": [
+									"造风术"
+								]
+							}
+						}
+					},
+					"resourceName": "Ki",
+					"ability": "wis"
+				}
+			],
+			"entries": [
+				"你可以消耗2点气施展{@spell 造风术}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Sculptor of Flesh",
+			"name": "重塑血肉",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"变形术"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以消耗你的魔契师法术位施展一道{@spell 变形术}。你必须完成一次长休才能再次施展该法术。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Seeking Arrow",
+			"name": "追踪矢",
+			"source": "XGE",
+			"page": 30,
+			"reprintedAs": [
+				"追踪弹|AU"
+			],
+			"featureType": [
+				"AS"
+			],
+			"consumes": {
+				"ENG_name": "Arcane Shot",
+				"name": "奥术射击"
+			},
+			"entries": [
+				"利用预言魔法，你赋予你的箭自寻目标的能力。当你使用该选项时，你本次攻击不进行攻击检定，取而代之，选择一名在过去的1分钟里你见过的角色。这只箭会立刻飞向那名角色，如果可能的话，这只箭矢会绕开一切转角并忽视{@quickref 掩护||3||四分之三掩护}与{@quickref 掩护||3||半身掩护}。如果目标在箭的射程范围之外，或你与它之间没有合适箭矢飞行的畅通路径，箭会在飞行到最大距离后消失。否则目标必须通过一次敏捷豁免。豁免失败时，那个生物会受到被箭矢攻击命中的伤害，外加{@damage 1d6}点额外的力场伤害，且你可以得知目标所在的确切位置。豁免成功时，目标只会受到半数伤害，且你也无法得知其具体方位。",
+				"当你在此职业上达到18级后，箭矢的额外力场伤害增加为{@damage 2d6}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Seeking Shot",
+			"name": "追踪弹",
+			"source": "AU",
+			"featureType": [
+				"AS"
+			],
+			"consumes": {
+				"ENG_name": "Arcane Shot",
+				"name": "奥术射击"
+			},
+			"entries": [
+				"你的弹药能够追踪目标。当你使用该选项时，你无需为此次攻击进行攻击检定。作为替代，选择一名你在前1分钟内见过的生物。弹药向该生物飞去，绕过拐角（如果有必要）并无视{@table 掩护|XPHB|半身掩护}和{@table 掩护|XPHB|四分之三掩护}。若目标身处你武器的最大射程范围内，其进行一次敏捷豁免。豁免失败则目标受到如同被此次攻击命中时的伤害加等于两枚奥术射击骰的力场伤害，且你会知晓目标当前的位置。豁免成功则目标仅受半伤。如果目标在你武器的最大射程范围之外，则你的弹药会在射击至尽可能远的距离后消失。"
+			]
+		},
+		{
+			"ENG_name": "Seeking Spell",
+			"name": "追踪法术",
+			"source": "TCE",
+			"page": 66,
+			"reprintedAs": [
+				"追踪法术|XPHB"
+			],
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点",
+				"amount": 2
+			},
+			"entries": [
+				"当你为法术进行一次攻击检定但未命中时，你可以使用2术法点重投那枚{@dice d20}，你必须使用重投后的结果。",
+				"追踪法术超魔可以与其他超魔法选项合用。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Seeking Spell",
+			"name": "追踪法术",
+			"source": "XPHB",
+			"page": 142,
+			"srd52": true,
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点",
+				"amount": 1
+			},
+			"entries": [
+				"当你为一道法术进行一次攻击检定并未命中时，你可以使用1术法点重投那个{@dice d20}。你必须使用重投的结果。",
+				"即使你已经在一道法术上使用了其他超魔，你仍然可以使用追踪法术。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Shadow Arrow",
+			"name": "遮影矢",
+			"source": "XGE",
+			"page": 30,
+			"reprintedAs": [
+				"遮影弹|AU"
+			],
+			"featureType": [
+				"AS"
+			],
+			"consumes": {
+				"ENG_name": "Arcane Shot",
+				"name": "奥术射击"
+			},
+			"entries": [
+				"你让幻术魔法附着在你的箭上，使其能用暗影蒙蔽敌人的视野。被这根箭矢击中的生物将额外受到{@damage 2d6}点心灵伤害，且目标必须成功通过一次感知豁免。若豁免失败，目标将在你的下个回合开始前，无法看见其5尺之外的任何事物。",
+				"当你在此职业上达到18级后，箭矢的额外心灵伤害增加为{@damage 4d6}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Shadow Shot",
+			"name": "遮影弹",
+			"source": "AU",
+			"featureType": [
+				"AS"
+			],
+			"consumes": {
+				"ENG_name": "Arcane Shot",
+				"name": "奥术射击"
+			},
+			"entries": [
+				"你的弹药以阴影遮蔽敌人的视线。你命中的生物额外受到等于一枚奥术射击骰的心灵伤害，且必须成功通过一次感知豁免，否则陷入{@condition 目盲|XPHB}状态直至其下个回合结束。"
+			]
+		},
+		{
+			"ENG_name": "Shape the Flowing River",
+			"name": "身化长流",
+			"source": "PHB",
+			"page": 81,
+			"featureType": [
+				"ED"
+			],
+			"entries": [
+				"作为一个动作，你可以消耗1点气并指定你周边120尺内一块不大于30尺的冰或水的区域。你可以将该区域内的水凝为冰，反之亦可，并且还可以将区域内的冰塑造成任意的形状。你可以提高或降低冰的高度，创造或填平沟壑，竖起或放倒冰墙，或是塑造一根冰柱。这些造型的最大尺寸不能超过该区域最大边长的一半。例如，假设你影响一块30尺的方状区域，你可以竖起的冰柱高度至多为15尺，提升或降低区域内总体高度至多15尺，创造的沟壑最深15尺，等等。你不能通过塑形冰来困住或伤害区域内的生物。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Shroud of Shadow",
+			"name": "暗影寿衣",
+			"source": "XGE",
+			"page": 57,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"隐形术"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以随意施展{@spell 隐形术}法术，且无需消耗法术位。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Sign of Ill Omen",
+			"name": "凶兆符记",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"降咒"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以消耗你的魔契师法术位施展一道{@spell 降咒}。你必须完成一次长休才能再次施展该法术。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Spell-Refueling Ring",
+			"name": "法力恢复戒指",
+			"source": "TCE",
+			"page": 23,
+			"reprintedAs": [
+				{
+					"uid": "法力恢复戒指|EFA",
+					"tag": "item"
+				}
+			],
+			"featureType": [
+				"AI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 6,
+						"class": {
+							"ENG_name": "Artificer",
+							"name": "奇械师",
+							"source": "TCE"
+						}
+					},
+					"item": [
+						"一枚戒指（需要同调）"
+					]
+				}
+			],
+			"entries": [
+				"在佩戴此戒指期间，那个生物能够以一个动作恢复一个已被消耗掉的法术位。被恢复的法术位环阶必须是3环或更低环阶的法术位。一旦使用，此戒指在次日黎明前将无法再次使用。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Stone Rune",
+			"name": "岩石符文",
+			"source": "TCE",
+			"page": 45,
+			"featureType": [
+				"RN"
+			],
+			"senses": [
+				{
+					"darkvision": 120
+				}
+			],
+			"entries": [
+				"此符文的魔力可以引导与石巨人相关的智慧。若你穿着或携带着一个铭刻着此符文的物品，你进行的感知（{@skill 洞悉}）检定具有优势，且你获得120尺的{@sense 黑暗视觉}。",
+				"此外，当一个生物结束它的回合时，若其处于你周围30尺范围内，你便可以使用反应激活此符文，迫使那个生物进行一次感知豁免。若豁免失败，该生物将被你{@condition 魅惑}一分钟。被如此{@condition 魅惑}期间，该生物会感觉自己恍惚如处梦境般，陷入{@condition 失能}状态且移动速度降为0。目标可以在每个自己回合结束时重复进行此豁免检定，直到豁免成功时此效应提前结束。一旦你激活了此符文，直到你完成一次短休或长休为止你都不能再次激活它。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Storm Rune",
+			"name": "风暴符文",
+			"source": "TCE",
+			"page": 45,
+			"featureType": [
+				"RN"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Fighter",
+							"name": "战士"
+						},
+						"subclass": {
+							"ENG_name": "Rune Knight",
+							"name": "符文骑士",
+							"source": "TCE"
+						}
+					}
+				}
+			],
+			"entries": [
+				"使用此符文，你可以如一名风暴巨人预言者一般瞥见未来。若你穿着或携带着一个铭刻着此符文的物品，你进行的智力（{@skill 奥秘}）检定将具有优势，且只要你未处于{@condition 失能}状态，你将无法被{@status 突袭}。",
+				"此外，你可以使用附赠动作激活该符文以进入先知形态，持续1分钟。若你陷入{@condition 失能}状态，它也会提前结束。直到该形态结束为止，每当你或你周围60尺范围内可见的另一生物进行攻击检定、豁免检定、或属性检定时，你可以使用反应，使这次检定获得优势或劣势。一旦你激活了此符文，直到你完成一次短休或长休为止你都不能再次激活它。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Subtle Spell",
+			"name": "精妙法术",
+			"source": "PHB",
+			"page": 102,
+			"srd": true,
+			"reprintedAs": [
+				"精妙法术|XPHB"
+			],
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点"
+			},
+			"entries": [
+				"施展一道法术时，你可以使用1术法点，使其不再具有言语成分和姿势成分。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Subtle Spell",
+			"name": "精妙法术",
+			"source": "XPHB",
+			"page": 142,
+			"srd52": true,
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点"
+			},
+			"entries": [
+				"当你施展一道法术时，你可以消耗1术法点令该法术不再具有言语、姿势和材料成分（那些在法术中写明会被消耗或有具体价值的材料成分除外）。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Superior Technique",
+			"name": "卓越技巧",
+			"source": "TCE",
+			"page": 41,
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"FS:F"
+			],
+			"optionalfeatureProgression": [
+				{
+					"ENG_name": "Maneuvers",
+					"name": "战技",
+					"featureType": [
+						"MV:B"
+					],
+					"progression": {
+						"*": 1
+					}
+				}
+			],
+			"entries": [
+				"你从{@class 战士|phb|战斗大师|战斗大师|phb|2-0}武术范型的战技列表中习得一项{@filter 战技|optionalfeatures|feature type=MV:B}。如果该战技需要豁免，则豁免DC为8+你的熟练加值+你的力量或敏捷调整值（由你选择）。你获得一个d6的卓越骰（或在你以任何其他方式获得的卓越骰池中增加一颗卓越骰）。此卓越骰可用于启动你的战技。卓越骰一经使用即消耗，并在完成一次短休或长休后恢复。",
+				"你获得一枚{@dice d6}的卓越骰（或在你以任何其他方式获得的卓越骰池中增加一颗卓越骰）。此卓越骰可用于启动你的战技。此卓越骰一经使用即消耗，并在完成短休或长休后恢复。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Sweeping Attack",
+			"name": "横扫攻击",
+			"source": "PHB",
+			"page": 74,
+			"reprintedAs": [
+				"横扫攻击|XPHB"
+			],
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你以近战武器攻击命中敌人时，可以消耗一粒卓越骰以尝试连带伤害附近的另一个生物。使用此战技时，指定你触及范围内一个距离初始目标不超过5尺的生物。如果你原本的攻击检定足以命中第二个目标，则它将受到等同于你卓越骰结果的伤害。此伤害与你原本攻击的伤害类型相同。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Sweeping Attack",
+			"name": "横扫攻击",
+			"source": "XPHB",
+			"page": 95,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你以武器或{@variantrule 徒手打击|XPHB}发动的近战攻击检定命中一个生物时，可以消耗一枚卓越骰以尝试伤害另一个生物。指定一个处于你触及范围内并且距离初始目标不超过5尺的生物，如果你原本的攻击检定足以命中第二个目标，则它将受到等同于你卓越骰结果的伤害。此伤害与你原本攻击的伤害类型相同。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Sweeping Cinder Strike",
+			"name": "飞炎击",
+			"source": "PHB",
+			"page": 81,
+			"featureType": [
+				"ED"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"resource": {
+								"2": [
+									"燃烧之手"
+								]
+							}
+						}
+					},
+					"resourceName": "Ki",
+					"ability": "wis"
+				}
+			],
+			"entries": [
+				"你可以消耗2点气施展{@spell 燃烧之手}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Tactical Assessment",
+			"name": "战术预估",
+			"source": "TCE",
+			"page": 42,
+			"reprintedAs": [
+				"战术预估|XPHB"
+			],
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"当你进行一次智力（{@skill 调查}）、智力（{@skill 历史}）或感知（{@skill 洞悉}）检定时，你能够消耗一枚卓越骰，将消耗的卓越骰加入此次属性检定中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Tactical Assessment",
+			"name": "战术预估",
+			"source": "XPHB",
+			"page": 95,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"当你进行一次智力（调{@skill 历史|XPHB}或{@skill 调查|XPHB}）或感知（{@skill 洞悉|XPHB}）检定时，你能够消耗一枚卓越骰，将消耗的卓越骰加入此次属性检定中。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Thief of Five Fates",
+			"name": "命运窃贼",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"灾祸术"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以消耗你的魔契师法术位施展一道{@spell 灾祸术}。你必须完成一次长休才能再施展该法术。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Thirsting Blade",
+			"name": "饥渴魔刃",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"reprintedAs": [
+				"饥渴魔刃|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "刃之魔契",
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你自身回合内使用契约武器执行{@action 攻击}动作时，你可以发动两次攻击而非一次。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Thirsting Blade",
+			"name": "饥渴魔刃",
+			"source": "XPHB",
+			"page": 157,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					},
+					"optionalfeature": [
+						"刃之魔契|xphb"
+					]
+				}
+			],
+			"entries": [
+				"你获得额外攻击特性（仅可使用你的契约武器）。此特性令你在自己的回合内执行{@action 攻击|XPHB}动作时可以用该武器攻击两次而非一次。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Thrown Weapon Fighting",
+			"name": "投掷武器战斗",
+			"source": "TCE",
+			"page": 42,
+			"reprintedAs": [
+				{
+					"uid": "投掷武器战斗|XPHB",
+					"tag": "feat"
+				}
+			],
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"FS:F",
+				"FS:R"
+			],
+			"entries": [
+				"你可以在使用一件带有投掷属性武器进行攻击时，将那件武器作为攻击的一部分而拔出。",
+				"另外，在你以一件投掷武器于远程攻击中命中对手时，你的伤害掷骰+2。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Tomb of Levistus",
+			"name": "莱维斯图斯之墓",
+			"source": "XGE",
+			"page": 57,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"entries": [
+				"当你受到伤害时，你可以以一个反应将自己封锁在冰墓中，冰墓会在你的下一个回合结束时融解。你得到每魔契师等级10点的临时生命值，此临时生命值会尽可能的去抵消触发本反应的伤害。不过在受到伤害之后，你会立即获得火焰伤害的易伤，且速度降低至0，并且陷入{@condition 失能}状态。这些效果，以及剩余的全部临时生命值，都将在冰墓融解时结束。",
+				"使用本祈唤后，直到你完成一次短休或长休前，你都无法再次使用它。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Transmuted Spell",
+			"name": "转化法术",
+			"source": "TCE",
+			"page": 66,
+			"reprintedAs": [
+				"转化法术|XPHB"
+			],
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点"
+			},
+			"entries": [
+				"当你施展一道造成以下列表中某一种类型伤害的法术时，你可以使使用1术法点将法术的该种伤害类型转换为列表中的另一种伤害类型：强酸、冷冻、火焰、闪电、毒素、雷鸣。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Transmuted Spell",
+			"name": "转化法术",
+			"source": "XPHB",
+			"page": 142,
+			"srd52": true,
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点"
+			},
+			"entries": [
+				"当你施展一道造成以下列表中某一种类型伤害的法术时，你可以使使用1术法点将法术的该种伤害类型转换为列表中的另一种伤害类型：强酸、冷冻、火焰、闪电、毒素、雷鸣。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Trickster's Escape",
+			"name": "诡术师的逃脱术",
+			"source": "XGE",
+			"page": 57,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"行动自如"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以以自己为目标施展一次{@spell 行动自如}法术，且无需消耗法术位。完成一次长休后，你重获如此施展该法术的能力。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Trip Attack",
+			"name": "摔绊攻击",
+			"source": "PHB",
+			"page": 74,
+			"reprintedAs": [
+				"摔绊攻击|XPHB"
+			],
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你以武器攻击命中敌人时，可以消耗一粒卓越骰以尝试击倒该目标。使用此战技时，你将所消耗的卓越骰加在此次攻击的伤害骰中。如果该目标为大型或更小体型，则其必须进行一次力量豁免。豁免失败则其应击{@condition 倒地}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Trip Attack",
+			"name": "摔绊攻击",
+			"source": "XPHB",
+			"page": 95,
+			"featureType": [
+				"MV:B"
+			],
+			"consumes": {
+				"ENG_name": "Superiority Die",
+				"name": "卓越骰"
+			},
+			"entries": [
+				"你以武器或{@variantrule 徒手打击|XPHB}发动的攻击检定命中一个生物时，可以消耗一枚卓越骰并将所消耗的卓越骰加在此次攻击的伤害掷骰中。如果该目标体型为大型或更小，则必须通过一次力量豁免。豁免失败将陷入{@condition 倒地|XPHB}状态。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Twinned Spell",
+			"name": "孪生法术",
+			"source": "PHB",
+			"page": 102,
+			"srd": true,
+			"reprintedAs": [
+				"孪生法术|XPHB"
+			],
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点",
+				"amountMin": 1,
+				"amountMax": 9
+			},
+			"entries": [
+				"施展一道影响单一生物，且施法距离并非自身的法术时，你可以使用等于法术环阶的术法点（戏法消耗1点），并在法术施法距离内再指定另一个目标。",
+				"适用该超魔的法术在其当前环阶时不能同时指定多个生物为目标。比如，{@spell 魔法飞弹}和{@spell 灼热射线}不符合条件，而{@spell 冷冻射线}和{@spell 繁彩球}则符合条件。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Twinned Spell",
+			"name": "孪生法术",
+			"source": "XPHB",
+			"page": 142,
+			"srd52": true,
+			"featureType": [
+				"MM"
+			],
+			"consumes": {
+				"ENG_name": "Sorcery Point",
+				"name": "术法点"
+			},
+			"entries": [
+				"当你施展一道能因升环施法额外增加一名生物作为法术目标的法术，如{@spell 魅惑类人|XPHB}时，你可以消耗1术法点来将该法术的有效环阶提升一环。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Two-Weapon Fighting",
+			"name": "双武器战斗",
+			"source": "PHB",
+			"page": 72,
+			"srd": true,
+			"otherSources": [
+				{
+					"source": "XGE",
+					"page": 15
+				},
+				{
+					"source": "PHB",
+					"page": 91
+				}
+			],
+			"reprintedAs": [
+				{
+					"uid": "双武器战斗|XPHB",
+					"tag": "feat"
+				}
+			],
+			"featureType": [
+				"FS:F",
+				"FS:B",
+				"FS:R"
+			],
+			"entries": [
+				"当进行双持武器战斗时，你可以将相应属性调整值加到第二次攻击的伤害上。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Unarmed Fighting",
+			"name": "徒手战斗",
+			"source": "TCE",
+			"page": 42,
+			"reprintedAs": [
+				{
+					"uid": "徒手战斗|XPHB",
+					"tag": "feat"
+				}
+			],
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"FS:F"
+			],
+			"entries": [
+				"你的徒手打击可以造成{@damage 1d6}+你力量调整值的钝击伤害，如果你没有手持任何武器或{@item 盾牌|phb}进行攻击，伤害骰从{@damage d6}变成{@damage d8}。",
+				"每个你的回合开始时，你可以对被你{@condition 受擒}的生物造成{@damage 1d4}钝击伤害。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Unbroken Air",
+			"name": "凝气刚拳",
+			"source": "PHB",
+			"page": 81,
+			"featureType": [
+				"ED"
+			],
+			"entries": [
+				"你可以将大气凝聚成拳进行打击。作为一个动作，你可以消耗2点气并指定一个在你身边30尺内的生物。该生物必须进行一次力量豁免，豁免失败者将受到{@damage 3d10}点钝击伤害，此外你每额外消耗1点气则再增加{@damage 1d10}点钝击伤害，并且可以将目标从远离你的方向推开至多20尺再使其{@condition 倒地}。豁免成功则伤害减半，且不会被推离和{@condition 倒地}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Undying Servitude",
+			"name": "永恒奴役",
+			"source": "TCE",
+			"page": 71,
+			"isClassFeatureVariant": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 5,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"daily": {
+								"1e": [
+									"活化死尸"
+								]
+							}
+						}
+					}
+				}
+			],
+			"entries": [
+				"你可以在不消耗法术位的情况下使用{@spell 活化死尸}。每当你这么做时，你不能再次以这种形式使用该法术直到你完成一次长休。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Visions of Distant Realms",
+			"name": "穹宇尽视",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"reprintedAs": [
+				"穹宇尽视|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"秘法眼"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以随意施展{@spell 秘法眼}，且无需消耗法术位。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Visions of Distant Realms",
+			"name": "穹宇尽视",
+			"source": "XPHB",
+			"page": 157,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"秘法眼|xphb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以施展{@spell 秘法眼|XPHB}且无需消耗法术位。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Voice of the Chain Master",
+			"name": "缚主之音",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"pact": "链之魔契"
+				}
+			],
+			"entries": [
+				"只要你与你的魔宠处于同一位面，你就可以用心灵感应与其进行交流，以及使用其感官感知世界。此外，当你通过魔宠的感官感知时，你可以通过魔宠用你自己的声音说话，而不论你的魔宠是否能够说话。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Water Whip",
+			"name": "清流鞭",
+			"source": "PHB",
+			"page": 81,
+			"featureType": [
+				"ED"
+			],
+			"entries": [
+				"你可以用一个动作消耗2点气创造一根水鞭推拉目标使其失去平衡。指定你周边30尺区域内一个你能看见的生物，并迫使其进行一次敏捷豁免。豁免失败者将受到{@damage 3d10}点钝击伤害，此外你每额外消耗1点气则再增加{@damage 1d10}点钝击伤害，且你可以使目标{@condition 倒地}或者将其向你的方向拉近至多25尺。豁免成功则伤害减半，且不会被拉近和{@condition 倒地}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Wave of Rolling Earth",
+			"name": "滚石流",
+			"source": "PHB",
+			"page": 81,
+			"featureType": [
+				"ED"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 17,
+						"class": {
+							"ENG_name": "Monk",
+							"name": "武僧"
+						},
+						"subclass": {
+							"ENG_name": "Four Elements",
+							"name": "四象"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": {
+							"resource": {
+								"6": [
+									"石墙术"
+								]
+							}
+						}
+					},
+					"resourceName": "Ki",
+					"ability": "wis"
+				}
+			],
+			"entries": [
+				"你可以消耗6点气施展{@spell 石墙术}。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Whispers of the Grave",
+			"name": "坟墓低语",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"reprintedAs": [
+				"坟墓低语|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 9,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"死者交谈"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以随意施展法术{@spell 死者交谈}，且无需消耗法术位。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Whispers of the Grave",
+			"name": "坟墓低语",
+			"source": "XPHB",
+			"page": 157,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 7,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"additionalSpells": [
+				{
+					"innate": {
+						"_": [
+							"死者交谈|xphb"
+						]
+					}
+				}
+			],
+			"entries": [
+				"你可以施展{@spell 死者交谈|XPHB}且无需消耗法术位。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Witch Sight",
+			"name": "巫术视界",
+			"source": "PHB",
+			"page": 111,
+			"srd": true,
+			"reprintedAs": [
+				"巫术视界|XPHB"
+			],
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师"
+						}
+					}
+				}
+			],
+			"entries": [
+				"变形生物以及由幻术和变化系魔法变形的生物在你身边30尺视线范围内时，你将直接看出其真实形态。"
+			],
+			"translator": "不全书"
+		},
+		{
+			"ENG_name": "Witch Sight",
+			"name": "巫术视界",
+			"source": "XPHB",
+			"page": 157,
+			"srd52": true,
+			"featureType": [
+				"EI"
+			],
+			"prerequisite": [
+				{
+					"level": {
+						"level": 15,
+						"class": {
+							"ENG_name": "Warlock",
+							"name": "魔契师",
+							"source": "XPHB",
+							"visibleStats": true
+						}
+					}
+				}
+			],
+			"senses": [
+				{
+					"truesight": 30
+				}
+			],
+			"entries": [
+				"你具有 30 尺{@sense 真实视觉|XPHB}。"
+			],
+			"translator": "不全书"
+		}
+	]
+}

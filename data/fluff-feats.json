@@ -1,0 +1,763 @@
+{
+	"_meta": {
+		"internalCopies": [
+			"featFluff"
+		]
+	},
+	"featFluff": [
+		{
+			"ENG_name": "Aberrant Anatomy",
+			"name": "异变内构",
+			"source": "RHW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/RHW/Aberrant Anatomy.webp"
+					},
+					"title": "异变内构黑暗赠礼可能表现为一种明显的鱼龙种外观",
+					"credit": "Leroy Steinmann",
+					"width": 850,
+					"height": 2056
+				}
+			]
+		},
+		{
+			"ENG_name": "Abjuration Adept",
+			"name": "防护专家",
+			"source": "AU",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/AU/Abjuration Adept.webp"
+					},
+					"title": "任何英雄都可以借助魔法来增进自己的技艺。",
+					"credit": "Hendry Iwanaga",
+					"width": 850,
+					"height": 898
+				}
+			]
+		},
+		{
+			"ENG_name": "Adept of the Black Robes",
+			"name": "黑袍入道",
+			"source": "DSotDQ",
+			"_copy": {
+				"ENG_name": "Initiate of High Sorcery",
+				"name": "高等术法学徒",
+				"source": "DSotDQ"
+			}
+		},
+		{
+			"ENG_name": "Adept of the Red Robes",
+			"name": "红袍入道",
+			"source": "DSotDQ",
+			"_copy": {
+				"ENG_name": "Initiate of High Sorcery",
+				"name": "高等术法学徒",
+				"source": "DSotDQ"
+			}
+		},
+		{
+			"ENG_name": "Adept of the White Robes",
+			"name": "白袍入道",
+			"source": "DSotDQ",
+			"_copy": {
+				"ENG_name": "Initiate of High Sorcery",
+				"name": "高等术法学徒",
+				"source": "DSotDQ"
+			}
+		},
+		{
+			"ENG_name": "Boon of Fate",
+			"name": "扭曲命运之恩惠",
+			"source": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/XPHB/Boon of Fate.webp"
+					},
+					"credit": "Wayne England",
+					"width": 2063,
+					"height": 1123
+				}
+			]
+		},
+		{
+			"ENG_name": "Boon of Siberys",
+			"name": "西伯瑞斯之恩惠",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Siberys Mark of Detection.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 277,
+					"height": 287
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Siberys Mark of Making.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 252,
+					"height": 319
+				},
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Siberys Mark of Shadow.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 337,
+					"height": 250
+				}
+			]
+		},
+		{
+			"ENG_name": "Boon of Skill",
+			"name": "博学多才之恩惠",
+			"source": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/XPHB/Boon of Skill.webp"
+					},
+					"credit": "Wayne England",
+					"width": 1777,
+					"height": 1059
+				}
+			]
+		},
+		{
+			"ENG_name": "Eldritch Adept",
+			"name": "魔能导师",
+			"source": "TCE",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/TCE/Eldritch Adept.webp"
+					},
+					"credit": "Brian Valeza",
+					"width": 800,
+					"height": 1214
+				}
+			]
+		},
+		{
+			"ENG_name": "Elemental Familiar",
+			"name": "元素魔宠",
+			"source": "AU",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/AU/Elemental Familiar.webp"
+					},
+					"title": "灌注了元素之力的魔宠正在投入战斗。",
+					"credit": "Hendry Iwanaga",
+					"width": 1700,
+					"height": 1049
+				}
+			]
+		},
+		{
+			"ENG_name": "Fey-Touched",
+			"name": "妖精触碰",
+			"source": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/XPHB/Fey-Touched.webp"
+					},
+					"credit": "Wayne England",
+					"width": 1637,
+					"height": 1182
+				}
+			]
+		},
+		{
+			"ENG_name": "Fury of the Frost Giant",
+			"name": "霜巨人之狂怒",
+			"source": "BGG",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/BGG/Fury of the Frost Giant.webp"
+					},
+					"width": 850,
+					"height": 1172
+				}
+			]
+		},
+		{
+			"ENG_name": "Greater Mark of Detection",
+			"name": "高等侦测之纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Greater Mark of Detection.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 283,
+					"height": 284
+				}
+			]
+		},
+		{
+			"ENG_name": "Greater Mark of Finding",
+			"name": "高等探索之纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Greater Mark of Finding.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 632,
+					"height": 541
+				}
+			]
+		},
+		{
+			"ENG_name": "Greater Mark of Making",
+			"name": "高等创造之纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Greater Mark of Making.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 211,
+					"height": 307
+				}
+			]
+		},
+		{
+			"ENG_name": "Greater Mark of Passage",
+			"name": "高等通行之纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Greater Mark of Passage.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 592,
+					"height": 564
+				}
+			]
+		},
+		{
+			"ENG_name": "Greater Mark of Shadow",
+			"name": "高等阴影之纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Greater Mark of Shadow.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 306,
+					"height": 247
+				}
+			]
+		},
+		{
+			"ENG_name": "Greater Mark of Storm",
+			"name": "高等风暴之纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Greater Mark of Storm.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 484,
+					"height": 614
+				}
+			]
+		},
+		{
+			"ENG_name": "Healer",
+			"name": "医疗师",
+			"source": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/XPHB/Healer.webp"
+					},
+					"credit": "Wayne England",
+					"width": 1999,
+					"height": 938
+				}
+			]
+		},
+		{
+			"ENG_name": "Initiate of High Sorcery",
+			"name": "高等术法学徒",
+			"source": "DSotDQ",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/DSotDQ/Mage of High Sorcery.webp"
+					},
+					"title": "高等术法会的黑、红、白袍命令",
+					"credit": "Linda Lithén",
+					"width": 1700,
+					"height": 1223
+				}
+			]
+		},
+		{
+			"ENG_name": "Inspiring Leader",
+			"name": "领袖之证",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/PHB/Inspiring Leader.webp"
+					},
+					"width": 1000,
+					"height": 750
+				}
+			]
+		},
+		{
+			"ENG_name": "Living Shadow",
+			"name": "活体幽影",
+			"source": "RHW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/RHW/Living Shadow.webp"
+					},
+					"title": "活体幽影黑暗赠礼使一个人的影子拥有自己的外貌和意志",
+					"credit": "Bokun An",
+					"width": 850,
+					"height": 2177
+				}
+			]
+		},
+		{
+			"ENG_name": "Mark of Detection",
+			"name": "侦测龙纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Mark of Detection.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 500,
+					"height": 525
+				}
+			]
+		},
+		{
+			"ENG_name": "Mark of Finding",
+			"name": "探索龙纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Mark of Finding.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 500,
+					"height": 525
+				}
+			]
+		},
+		{
+			"ENG_name": "Mark of Handling",
+			"name": "畜牧龙纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Mark of Handling.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 500,
+					"height": 525
+				}
+			]
+		},
+		{
+			"ENG_name": "Mark of Healing",
+			"name": "医疗龙纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Mark of Healing.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 500,
+					"height": 525
+				}
+			]
+		},
+		{
+			"ENG_name": "Mark of Hospitality",
+			"name": "招待龙纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Mark of Hospitality.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 500,
+					"height": 525
+				}
+			]
+		},
+		{
+			"ENG_name": "Mark of Making",
+			"name": "创造龙纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Mark of Making.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 500,
+					"height": 525
+				}
+			]
+		},
+		{
+			"ENG_name": "Mark of Passage",
+			"name": "通行龙纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Mark of Passage.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 500,
+					"height": 525
+				}
+			]
+		},
+		{
+			"ENG_name": "Mark of Scribing",
+			"name": "抄录龙纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Mark of Scribing.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 500,
+					"height": 525
+				}
+			]
+		},
+		{
+			"ENG_name": "Mark of Sentinel",
+			"name": "守护龙纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Mark of Sentinel.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 500,
+					"height": 525
+				}
+			]
+		},
+		{
+			"ENG_name": "Mark of Shadow",
+			"name": "阴影龙纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Mark of Shadow.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 500,
+					"height": 525
+				}
+			]
+		},
+		{
+			"ENG_name": "Mark of Storm",
+			"name": "暴风龙纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Mark of Storm.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 500,
+					"height": 525
+				}
+			]
+		},
+		{
+			"ENG_name": "Mark of Warding",
+			"name": "警戒龙纹",
+			"source": "EFA",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/EFA/Mark of Warding.webp"
+					},
+					"credit": "Lee Moyer",
+					"width": 500,
+					"height": 525
+				}
+			]
+		},
+		{
+			"ENG_name": "Planar Wanderer",
+			"name": "位面漫游者",
+			"source": "SatO",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/SatO/Planar Wanderer.webp"
+					},
+					"title": "一位下层位面的位面制图师正向深狱炼魔问路",
+					"credit": "Michele Giorgi",
+					"width": 850,
+					"height": 1981
+				}
+			]
+		},
+		{
+			"ENG_name": "Poisoner",
+			"name": "毒师",
+			"source": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/XPHB/Poisoner.webp"
+					},
+					"credit": "Wayne England",
+					"width": 2098,
+					"height": 1275
+				}
+			]
+		},
+		{
+			"ENG_name": "Ritual Caster",
+			"name": "仪式施法者",
+			"source": "PHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/PHB/Ritual Caster.webp"
+					},
+					"width": 1000,
+					"height": 749
+				}
+			]
+		},
+		{
+			"ENG_name": "Ritual Caster",
+			"name": "仪式施法者",
+			"source": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/XPHB/Ritual Caster.webp"
+					},
+					"credit": "Wayne England",
+					"width": 1627,
+					"height": 1094
+				}
+			]
+		},
+		{
+			"ENG_name": "Servo Crafting",
+			"name": "制造自动机",
+			"source": "PSK",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/PSK/Servo Crafting.webp"
+					},
+					"title": "自动机",
+					"credit": "Igor Kieryluk",
+					"width": 739,
+					"height": 985
+				}
+			]
+		},
+		{
+			"ENG_name": "Spell Resistant",
+			"name": "法术抗性",
+			"source": "AU",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/AU/Spell Resistant.webp"
+					},
+					"title": "英雄与魔宠之间的羁绊，不输于任何一段友谊。",
+					"credit": "Erion Makuo",
+					"width": 1700,
+					"height": 1139
+				}
+			]
+		},
+		{
+			"ENG_name": "Telepathic",
+			"name": "心灵感应",
+			"source": "TCE",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/TCE/Telepathic.webp"
+					},
+					"title": "一位骑在独角兽上的拥有心灵感应的吟游诗人激励了她的法师伙伴",
+					"credit": "Zoltan Boros",
+					"width": 1200,
+					"height": 802
+				}
+			]
+		},
+		{
+			"ENG_name": "Two-Weapon Fighting",
+			"name": "双武器战斗",
+			"source": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/XPHB/Two-Weapon Fighting.webp"
+					},
+					"credit": "Wayne England",
+					"width": 1409,
+					"height": 1440
+				}
+			]
+		},
+		{
+			"ENG_name": "Watchers",
+			"name": "守望",
+			"source": "RHW",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/RHW/Watchers.webp"
+					},
+					"title": "守望者黑暗赠礼可能表现为任何东西，从简易的害兽到异域生物\u2014\u2014比如乌尔敦达的凝视猫。",
+					"credit": "Irina Nordsol",
+					"width": 850,
+					"height": 2068
+				}
+			]
+		},
+		{
+			"ENG_name": "Weapon Master",
+			"name": "武器大师",
+			"source": "XPHB",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "feats/XPHB/Weapon Master.webp"
+					},
+					"credit": "Wayne England",
+					"width": 850,
+					"height": 657
+				}
+			]
+		}
+	]
+}

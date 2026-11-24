@@ -1,0 +1,38 @@
+{
+	"monsterFluff": [
+		{
+			"ENG_name": "Gar Shatterkeel",
+			"name": "戈尔·碎骨",
+			"source": "LR",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/LR/Gar Shatterkeel.webp"
+					},
+					"credit": "Raymond Swanland",
+					"width": 1533,
+					"height": 956
+				}
+			]
+		},
+		{
+			"ENG_name": "Young Kraken",
+			"name": "青年克拉肯",
+			"source": "LR",
+			"images": [
+				{
+					"type": "image",
+					"href": {
+						"type": "internal",
+						"path": "bestiary/LR/Young Kraken.webp"
+					},
+					"credit": "Joachim Barrum",
+					"width": 914,
+					"height": 1000
+				}
+			]
+		}
+	]
+}

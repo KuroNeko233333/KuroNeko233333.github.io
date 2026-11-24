@@ -1,0 +1,181 @@
+{
+	"_meta": {
+		"otherSources": {
+			"monster": {
+				"NRH-TCMC": "NRH-AVitW",
+				"MM": "NRH-AVitW"
+			}
+		}
+	},
+	"monster": [
+		{
+			"ENG_name": "Chimeric Fox",
+			"name": "虚妄狐狸",
+			"type": "beast",
+			"source": "NRH-AVitW",
+			"page": 8,
+			"size": [
+				"T"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"average": 2,
+				"formula": "1d4"
+			},
+			"speed": {
+				"walk": 30,
+				"burrow": 5
+			},
+			"str": 2,
+			"dex": 16,
+			"con": 11,
+			"int": 3,
+			"wis": 12,
+			"cha": 6,
+			"skill": {
+				"perception": "+3",
+				"stealth": "+5"
+			},
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 13,
+			"cr": "0",
+			"trait": [
+				{
+					"ENG_name": "Chimeric Creation",
+					"name": "虚妄造物",
+					"entries": [
+						"狐狸的毛皮颜色会随着周围环境变化，这让它在敏捷（{@skill 隐匿})检定上获得优势。"
+					]
+				},
+				{
+					"ENG_name": "Keen Hearing",
+					"name": "敏锐听觉",
+					"entries": [
+						"狐狸进行的依靠听觉的感知（{@skill 察觉}）检定具有优势。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Bite",
+					"name": "啃咬",
+					"entries": [
+						"{@atk mw} 命中{@hit 5}，触及5尺，单一生物。{@h}1点穿刺伤害。"
+					]
+				}
+			],
+			"familiar": true,
+			"tokenCustom": true,
+			"traitTags": [
+				"敏锐感官"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"P"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		},
+		{
+			"ENG_name": "Scarlet Sentinel",
+			"name": "赤红哨兵",
+			"type": "construct",
+			"source": "NRH-AVitW",
+			"page": 10,
+			"size": [
+				"M"
+			],
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				8
+			],
+			"hp": {
+				"average": 39,
+				"formula": "6d8 + 12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 15,
+			"dex": 6,
+			"con": 14,
+			"int": 1,
+			"wis": 6,
+			"cha": 1,
+			"senses": [
+				"黑暗视觉 60 尺"
+			],
+			"passive": 8,
+			"conditionImmune": [
+				"魅惑",
+				"力竭",
+				"恐慌",
+				"麻痹",
+				"石化",
+				"中毒"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"ENG_name": "Immutable Form",
+					"name": "不变形态",
+					"entries": [
+						"赤红哨兵对任何改变其形态的法术或效果免疫。"
+					]
+				},
+				{
+					"ENG_name": "Magic Resistance",
+					"name": "魔法抗性",
+					"entries": [
+						"赤红哨兵在对抗法术和其他魔法效果的豁免检定上具有优势。"
+					]
+				},
+				{
+					"ENG_name": "Magic Weapons",
+					"name": "魔法武器",
+					"entries": [
+						"绯红哨兵的武器攻击具有魔法效果。"
+					]
+				}
+			],
+			"action": [
+				{
+					"ENG_name": "Slam",
+					"name": "猛击",
+					"entries": [
+						"{@atk mw} 命中{@hit 4}，触及5尺，单一目标。{@h}11（{@damage 2d8 + 2}）钝击伤害。"
+					]
+				}
+			],
+			"tokenCustom": true,
+			"traitTags": [
+				"不变形态",
+				"魔法抗性",
+				"魔法武器"
+			],
+			"senseTags": [
+				"D"
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasToken": true
+		}
+	]
+}
